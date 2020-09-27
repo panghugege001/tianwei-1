@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd">
+
+	<bean id="emailSender" class="dfh.utils.SSLMailSender">
+		<property name="smtp_host_name">
+			<value>${notify.sms.email.host.name}</value>
+		</property>
+		<property name="smtp_host_port">
+			<value>${notify.sms.email.port}</value>
+		</property>
+		<property name="smtp_auth_user">
+			<value>${notify.sms.email.user}</value>
+		</property>
+		<property name="smtp_auth_pwd">
+			<value>${notify.sms.email.password}</value>
+		</property>
+		<property name="smtp_transport_protocol">
+			<value>${notify.sms.email.transport.protocol}</value>
+		</property>
+		<property name="fromEmail">
+			<value>${notify.sms.email.fromEmail}</value>
+		</property>
+	</bean>
+	
+	<bean class="dfh.utils.AutoXimaAction" id="autoXimaBean" scope="prototype"/>
+	
+</beans>

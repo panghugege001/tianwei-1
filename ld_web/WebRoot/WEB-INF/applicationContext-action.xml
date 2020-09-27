@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd">
+		
+	<bean id="WeCustomerActionClass" class="dfh.action.weCustomer.WeCustomerAction" scope="prototype"/>
+
+	<bean id="JiuAnActionClass" class="dfh.action.pay.JiuAnAction" scope="prototype"/>
+
+	<bean id="gameAction" class="dfh.action.customer.GameAction" scope="prototype"/> 
+		
+	<bean id="AnnClass" class="dfh.action.announcement.AnnouncementAction" scope="prototype"/>
+	
+	<bean id="UserbankinfoActionClass" class="dfh.action.customer.UserbankinfoAction" scope="prototype"/>
+	
+	<bean id="creditlogsClass" class="dfh.action.customer.CreditlogsAction" scope="prototype"/>
+	
+	<bean id="bbsLoginClass" class="dfh.action.ea_bbs.BbsLoginAction" scope="prototype"/>
+	
+	<bean id="ximaActionClass" class="dfh.action.xima.XimaAction" scope="prototype"/>
+
+	<bean id="NetpayActionClass" class="dfh.action.pay.NetpayAction" scope="prototype"/>
+	
+	<bean id="MemberActionClass" class="dfh.action.customer.MemberAction" scope="prototype" >
+	</bean>
+	
+	<!-- sun 用户留言 -->
+	<bean id="GuestbookActionClass" class="dfh.action.customer.GuestbookAction" scope="prototype"/>
+	
+	<bean id="StationLettersClass" class="dfh.action.customer.StationLettersAction" scope="prototype">
+	</bean>	
+
+	<bean id="SelfHelpAction" class="dfh.action.customer.SelfHelpAction" scope="prototype" >
+	</bean>
+	
+	<bean id="MobileMemberActionClass" class="dfh.action.customer.MobileMemberAction" scope="prototype" >
+	</bean>
+	
+	<bean id="NTwoLiveActionClass" class="dfh.action.customer.NTwoLiveAction" scope="prototype"/>
+		
+	<bean id="JiuanAction" class="dfh.action.customer.JiuanAction" scope="prototype"/>
+	
+</beans>
