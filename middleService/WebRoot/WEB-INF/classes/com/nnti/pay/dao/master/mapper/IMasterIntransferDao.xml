@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.nnti.pay.dao.master.IMasterIntransferDao">
+	
+	<insert id="insert" parameterType="Intransfer">
+		INSERT 
+		INTO 
+		intransfer
+		(
+			<trim suffixOverrides=",">
+            	<if test="wherefrom != null">wherefrom,</if>
+            	<if test="whereto != null">whereto,</if>
+            	<if test="operator != null">operator,</if>
+            	<if test="remark != null">remark,</if>
+            	<if test="amount != null">amount,</if>
+            	<if test="fee != null">fee,</if>
+            	<if test="flag != null">flag,</if>
+            	<if test="pno != null">pno,</if>
+            	<if test="createTime != null">createTime,</if>
+				<if test="fromto != null">fromto,</if>
+            	<if test="transferflag != null">transferflag,</if>
+        	</trim>
+		)
+		VALUES 
+		(
+        	<trim suffixOverrides=",">
+            	<if test="wherefrom != null">#{wherefrom},</if>
+            	<if test="whereto != null">#{whereto},</if>
+				<if test="operator != null">#{operator},</if>
+            	<if test="remark != null">#{remark},</if>
+            	<if test="amount != null">#{amount},</if>
+            	<if test="fee != null">#{fee},</if>
+            	<if test="flag != null">#{flag},</if>
+            	<if test="pno != null">#{pno},</if>
+            	<if test="createTime != null">#{createTime},</if>
+            	<if test="fromto != null">#{fromto},</if>
+            	<if test="transferflag != null">#{transferflag},</if>
+        	</trim>
+        )
+	</insert>
+	
+    <insert id="createBatch" parameterType="java.util.List">
+		INSERT 
+		INTO 
+		intransfer
+		(
+        	pno,
+        	wherefrom,
+        	whereto,
+        	operator,
+        	remark,
+        	amount,
+        	fee,
+        	flag,
+        	createTime,
+        	fromto,
+        	transferflag
+        )
+        VALUES
+		<foreach collection="list" item="item" index="index" separator=",">
+		(
+			#{item.pno},
+			#{item.wherefrom},
+			#{item.whereto},
+			#{item.operator},
+			#{item.remark},
+			#{item.amount},
+			#{item.fee},
+            #{item.flag},
+            #{item.createTime},
+            #{item.fromto},
+            #{item.transferflag}
+		)
+        </foreach>
+    </insert>
+</mapper>

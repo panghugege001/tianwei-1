@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+	
+	<typeAliases>
+    	<package name="com.nnti.common.model.vo" />
+    	<package name="com.nnti.pay.model.vo" />
+    	<package name="com.nnti.personal.model.vo" />
+    	<package name="com.nnti.withdraw.model.vo" />
+		<package name="com.nnti.Privilege.model.vo" />
+	</typeAliases>
+	
+	<mappers>
+		<!--公共部分配置文件(主库)-->
+		<mapper resource="com/nnti/common/dao/master/mapper/IMasterActionLogDao.xml" />
+		<mapper resource="com/nnti/common/dao/master/mapper/IMasterBankInfoDao.xml" />
+		<mapper resource="com/nnti/common/dao/master/mapper/IMasterBigBangDao.xml" />
+		<mapper resource="com/nnti/common/dao/master/mapper/IMasterCashoutDao.xml" />
+		<mapper resource="com/nnti/common/dao/master/mapper/IMasterCreditLogDao.xml" />
+		<mapper resource="com/nnti/common/dao/master/mapper/IMasterCreditLogExtendDao.xml" />
+		<mapper resource="com/nnti/common/dao/master/mapper/IMasterDictionaryDao.xml" />
+		<mapper resource="com/nnti/common/dao/master/mapper/IMasterLosePromoDao.xml" />
+		<mapper resource="com/nnti/common/dao/master/mapper/IMasterOfferDao.xml" />
+		<mapper resource="com/nnti/common/dao/master/mapper/IMasterOperationLogDao.xml" />
+		<mapper resource="com/nnti/common/dao/master/mapper/IMasterPreferentialRecordDao.xml" />
+		<mapper resource="com/nnti/common/dao/master/mapper/IMasterPreferTransferRecordDao.xml" />
+		<mapper resource="com/nnti/common/dao/master/mapper/IMasterProposalDao.xml" />
+		<mapper resource="com/nnti/common/dao/master/mapper/IMasterProposalExtendDao.xml" />
+		<mapper resource="com/nnti/common/dao/master/mapper/IMasterQuestionDao.xml" />
+		<mapper resource="com/nnti/common/dao/master/mapper/IMasterQuestionStatusDao.xml" />
+		<mapper resource="com/nnti/common/dao/master/mapper/IMasterSelfRecordDao.xml" />
+		<mapper resource="com/nnti/common/dao/master/mapper/IMasterTransferDao.xml" />
+		<mapper resource="com/nnti/common/dao/master/mapper/IMasterUserDao.xml" />
+		<mapper resource="com/nnti/common/dao/master/mapper/IMasterUserStatusDao.xml" />
+		<mapper resource="com/nnti/common/dao/master/mapper/IMasterCmbTransferDao.xml" />
+		<mapper resource="com/nnti/common/dao/master/mapper/IMasterBankStatusDao.xml" />
+		<mapper resource="com/nnti/common/dao/master/mapper/IMasterSystemConfigDao.xml" />
+		<!--在线支付配置文件(主库)-->
+		<mapper resource="com/nnti/pay/dao/master/mapper/IMasterAlipayAccountDao.xml" />
+		<mapper resource="com/nnti/pay/dao/master/mapper/IMasterBankCreditlogsDao.xml" />
+		<mapper resource="com/nnti/pay/dao/master/mapper/IMasterDepositOrderDao.xml" />
+		<mapper resource="com/nnti/pay/dao/master/mapper/IMasterIntransferDao.xml" />
+		<mapper resource="com/nnti/pay/dao/master/mapper/IMasterMerchantPayDao.xml" />
+		<mapper resource="com/nnti/pay/dao/master/mapper/IMasterPayCreditDao.xml" />
+		<mapper resource="com/nnti/pay/dao/master/mapper/IMasterPayOrderBillNoDao.xml" />
+		<mapper resource="com/nnti/pay/dao/master/mapper/IMasterPayOrderDao.xml" />
+		<mapper resource="com/nnti/pay/dao/master/mapper/IMasterTaskDao.xml" />
+		<mapper resource="com/nnti/pay/dao/master/mapper/IMasterTotalDepositDao.xml" />
+		<!--个人中心配置文件(主库)-->
+		<mapper resource="com/nnti/personal/dao/master/mapper/IMasterPreferentialConfigDao.xml" />
+		<mapper resource="com/nnti/personal/dao/master/mapper/IMasterReplyInfoDao.xml" />
+		<mapper resource="com/nnti/personal/dao/master/mapper/IMasterTopicInfoDao.xml" />
+		<mapper resource="com/nnti/personal/dao/master/mapper/IMasterTopicStatusDao.xml" />
+		<mapper resource="com/nnti/personal/dao/master/mapper/IMasterExperienceConfigDao.xml" />
+		<mapper resource="com/nnti/personal/dao/master/mapper/IMasterAppPreferentialDao.xml" />
+		<mapper resource="com/nnti/personal/dao/master/mapper/IMasterCreditRecordDao.xml" />
+		<mapper resource="com/nnti/personal/dao/master/mapper/IMasterCollectPromoDao.xml" />
+		<mapper resource="com/nnti/personal/dao/master/mapper/IMasterCouponConfigDao.xml" />
+		<!--短信反转接口-->
+		<mapper resource="com/nnti/personal/dao/master/mapper/IMasterExperienceSmsDao.xml" />
+		<!--提款配置文件(主库)-->
+		<mapper resource="com/nnti/withdraw/dao/master/mapper/IMasterFPayDao.xml" />
+		<!--抢话费(主库)-->
+		<mapper resource="com/nnti/pay/dao/master/mapper/IMasterPhoneFeeDao.xml" />
+		<mapper resource="com/nnti/Privilege/dao/master/mapper/ActivityConfigMapper.xml" />
+		<mapper resource="com/nnti/common/dao/master/mapper/IMasterDBTestDao.xml" />
+		
+	</mappers>
+</configuration>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.nnti.personal.dao.master.IMasterCreditRecordDao">
+
+	<sql id="columns_sql">
+		id as id,
+		type as type,
+		platform as platform,
+		login_name as loginName,
+		amount as amount,
+		create_time as createTime,
+		execute_time as executeTime,
+		status as status,
+		remark as remark
+	</sql>
+
+	<insert id="insert" parameterType="CreditRecord">
+		INSERT
+		INTO
+		B_CREDIT_RECORD
+		(
+		<trim suffixOverrides=",">
+			<if test="id != null">id,</if>
+			<if test="type != null">type,</if>
+			<if test="platform != null">platform,</if>
+			<if test="loginName != null">login_name,</if>
+			<if test="amount != null">amount,</if>
+			<if test="createTime != null">create_time,</if>
+			<if test="executeTime != null">execute_time,</if>
+			<if test="status != null">status,</if>
+			<if test="remark != null">remark,</if>
+		</trim>
+		)
+		VALUES
+		(
+		<trim suffixOverrides=",">
+			<if test="id != null">#{id},</if>
+			<if test="type != null">#{type},</if>
+			<if test="platform != null">#{platform},</if>
+			<if test="loginName != null">#{loginName},</if>
+			<if test="amount != null">#{amount},</if>
+			<if test="createTime != null">#{createTime},</if>
+			<if test="executeTime != null">#{executeTime},</if>
+			<if test="status != null">#{status},</if>
+			<if test="remark != null">#{remark},</if>
+		</trim>
+		)
+	</insert>
+</mapper>

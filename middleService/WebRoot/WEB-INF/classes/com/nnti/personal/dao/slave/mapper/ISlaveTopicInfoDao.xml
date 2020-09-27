@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.nnti.personal.dao.slave.ISlaveTopicInfoDao">    
+	
+	<sql id="columns_sql">
+		id as id,
+		title as title,
+		content as content,
+		create_time as createTime,
+		create_uname as createUname,
+		ip_address as ipAddress,
+		flag as flag,
+		re_count as reCount,
+		topic_type as topicType,
+		user_name_type as userNameType,
+		topic_status as topicStatus
+	</sql>
+	
+	<select id="findTopicInfoByIdPage" parameterType="java.lang.Integer" resultType="TopicInfo">
+		select  
+		s.id,
+		IFNULL(t.content,s.content) content,
+		IFNULL(t.title,s.title) title,
+		IFNULL(t.create_time,s.create_time) createTime,
+		IFNULL(create_uname,'客户管理员') as createUname,
+		IFNULL(t.ip_address,s.ip_address) ipAddress
+		from topicstatus s left join topicinfo t on s.topic_id = t.id
+		where s.id = #{0}
+		union all 
+		select 
+		s.id,
+		IFNULL(r.content,r.content) content,
+		'' title,
+		r.create_time createTime,
+		'客户管理员' as createUname,
+		r.ip_address ipAddress
+		 from replyinfo r left join topicstatus s  on s.topic_id = r.topic_id
+		where s.id = #{0}
+	</select>
+	
+	<select id="findTopicInfoById" parameterType="java.lang.Integer" resultType="TopicInfo">
+		SELECT
+		<include refid="columns_sql" /> 
+		FROM
+		topicinfo t
+		WHERE t.id = #{0}
+	</select>
+	
+	<select id="findTopicByUserNamePage" parameterType="TopicInfo" resultType="TopicInfo">
+			SELECT
+				id,
+				title,
+				content,
+				createTime,
+				createUname,
+				ipAddress,
+				isUserRead,
+				topicStatus,
+				statusId
+			FROM
+				(
+					SELECT
+						t.id AS id,
+						ifnull(t.title, s.title) AS title,
+						ifnull(t.content, s.content) AS content,
+						ifnull(
+							t.create_time,
+							s.create_time
+						) AS createTime,
+						t.create_uname AS createUname,
+						ifnull(t.ip_address, s.ip_address) AS ipAddress,
+						s.is_user_read AS isUserRead,
+						ifnull(t.topic_status, 0) AS topicStatus,
+						s.id AS statusId
+					FROM
+						topicstatus s
+					LEFT JOIN topicinfo t ON s.topic_id = t.id
+					WHERE
+						(t.flag = 0 OR t.flag IS NULL)
+					AND s.receive_uname = #{createUname}
+					AND s.is_valid = 0
+					UNION ALL
+						(
+							SELECT
+								t.id AS id,
+								ifnull(t.title, s.title) AS title,
+								ifnull(t.content, s.content) AS content,
+								ifnull(
+									t.create_time,
+									s.create_time
+								) AS createTime,
+								t.create_uname AS createUname,
+								ifnull(t.ip_address, s.ip_address) AS ipAddress,
+								s.is_user_read AS isUserRead,
+								ifnull(t.topic_status, 0) AS topicStatus,
+								s.id AS statusId
+							FROM
+								topicstatus s
+							LEFT JOIN topicinfo t ON s.topic_id = t.id
+							WHERE
+								(t.flag = 0 OR t.flag IS NULL)
+							AND t.create_uname = #{createUname}
+							AND s.is_valid = 0
+						)
+				) a
+			ORDER BY
+		a.createTime DESC
+	</select>
+	
+	<select id="findMySelfTopicPage" parameterType="TopicInfo" resultType="TopicInfo">
+		SELECT
+		t.id as id,
+		t.title as title,
+		t.content as content,
+		t.create_time as createTime,
+		t.create_uname as createUname,
+		t.ip_address as ipAddress,
+		s.is_user_read as isUserRead,
+		t.topic_status as topicStatus,
+		s.id as statusId
+		FROM
+		topicstatus s LEFT JOIN topicinfo t ON s.topic_id = t.id 
+		WHERE 
+		t.create_uname = #{createUname} 
+		AND s.is_valid = 0
+		AND t.topic_type = 1
+		ORDER BY s.create_time DESC
+	</select>
+	
+	<select id="findPublicMsg" parameterType="java.util.Map" resultType="TopicInfo">
+		select 
+		<include refid="columns_sql" /> 
+		from topicinfo t 
+		where (user_name_type = #{level} or user_name_type = #{type}) 
+		and flag = 0
+		and create_time > #{createTime}
+		and t.id not in (select topic_id from topicstatus where receive_uname = #{loginName})
+	</select>
+</mapper>

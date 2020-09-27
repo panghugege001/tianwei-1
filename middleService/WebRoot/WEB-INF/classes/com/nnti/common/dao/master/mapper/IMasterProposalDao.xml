@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.nnti.common.dao.master.IMasterProposalDao">
+
+    <sql id="columns_sql">
+		pno as pno,
+		proposer as proposer,
+		createTime as createTime,
+		executeTime as executeTime,
+		type as type,
+		quickly as quickly,
+		loginname as loginName,
+		amount as amount,
+		agent as agent,
+		flag as flag,
+		whereisfrom as whereIsFrom,
+		remark as remark,
+		shippingcode as shippingCode,
+		giftamount as giftAmount,
+		saveway as saveway,
+		betmultiples as betMultiples,
+		generateType as generateType,
+		afterLocalAmount as afterLocalAmount,
+		afterRemoteAmount as afterRemoteAmount,
+		overtime as overtime,
+		mssgflag as mssgflag
+	</sql> 
+	
+	
+	<!-- 抱歉，你之前的秒付提款尚未审核完，暂时不能使用秒付提款 -->
+     <select id="existNotMsbankAuditedProposal" parameterType="java.util.Map" resultType="Proposal">
+        select
+        <include refid="columns_sql"/>
+        from
+        proposal
+        <where>
+            <if test="userList != null and userList.size() != 0">
+                loginname in
+                <foreach collection="userList" index="index" item="item" open="(" separator="," close=")">
+                    #{item.loginName}
+                </foreach>
+            </if>
+            <if test="loginname != null">AND loginname = #{loginname}</if>
+            <if test="passflag != null">AND passflag = #{passflag}</if>
+            <if test="mstype != null">AND mstype = #{mstype}</if>
+            <if test="msflag != null">AND msflag = #{msflag}</if>
+            <if test="unknowflag != null">AND unknowflag = #{unknowflag}</if>
+            <if test="createTime != null">AND createTime >= #{createTime}</if>
+             <if test="flagList != null and flagList.size() != 0">
+                AND flag in
+                <foreach collection="flagList" index="index" item="item" open="(" separator="," close=")">
+                    #{item}
+                </foreach>
+            </if>
+        </where>
+    </select>
+	
+	
+	
+   <select id="findProposalList" parameterType="java.util.Map" resultType="Proposal">
+        select
+        <include refid="columns_sql"/>
+        from
+        proposal
+        <where>
+            <if test="userList != null and userList.size() != 0">
+                loginname in
+                <foreach collection="userList" index="index" item="item" open="(" separator="," close=")">
+                    #{item.loginName}
+                </foreach>
+            </if>
+            <if test="loginname != null">AND loginname = #{loginname}</if>
+            <if test="flag != null">AND flag = #{flag}</if>
+            <if test="type != null">AND type = #{type}</if>
+            <if test="createTime != null">AND createTime >= #{createTime}</if>
+            <if test="shippingCode != null">AND shippingcode = #{shippingCode}</if>
+            <if test="typeList != null and typeList.size() != 0">
+                AND type in
+                <foreach collection="typeList" index="index" item="item" open="(" separator="," close=")">
+                    #{item}
+                </foreach>
+            </if>
+            <if test="flagList != null and flagList.size() != 0">
+                AND flag in
+                <foreach collection="flagList" index="index" item="item" open="(" separator="," close=")">
+                    #{item}
+                </foreach>
+            </if>
+        </where>
+    </select>
+
+
+
+
+    <select id="get" parameterType="java.lang.String" resultType="Proposal">
+    	select
+        <include refid="columns_sql"/>
+        from
+        proposal
+        <where>
+        	pno = #{0}
+        </where>
+    </select>
+
+
+	
+    <insert id="create" parameterType="Proposal">
+        insert
+        into
+        proposal
+        (
+        <trim suffixOverrides=",">
+            <if test="pno != null">pno,</if>
+            <if test="proposer != null">proposer,</if>
+            <if test="createTime != null">createTime,</if>
+            <if test="type != null">type,</if>
+            <if test="quickly != null">quickly,</if>
+            <if test="loginName != null">loginname,</if>
+            <if test="amount != null">amount,</if>
+            <if test="agent != null">agent,</if>
+            <if test="flag != null">flag,</if>
+            <if test="whereIsFrom != null">whereisfrom,</if>
+            <if test="remark != null">remark,</if>
+            <if test="generateType != null">generateType,</if>
+            <if test="betMultiples != null">betmultiples,</if>
+            <if test="giftAmount != null">giftamount,</if>
+            <if test="executeTime != null">executeTime,</if>
+            <if test="shippingCode != null">shippingcode,</if>
+            <if test="bankname != null">bankname,</if>
+            <if test="msflag != null">msflag,</if>
+            <if test="saveway != null">saveway,</if>
+            <if test="afterLocalAmount != null">afterLocalAmount,</if>
+            <if test="afterRemoteAmount != null">afterRemoteAmount,</if>
+        </trim>
+        )
+        VALUES
+        (
+        <trim suffixOverrides=",">
+            <if test="pno != null">#{pno},</if>
+            <if test="proposer != null">#{proposer},</if>
+            <if test="createTime != null">#{createTime},</if>
+            <if test="type != null">#{type},</if>
+            <if test="quickly != null">#{quickly},</if>
+            <if test="loginName != null">#{loginName},</if>
+            <if test="amount != null">#{amount},</if>
+            <if test="agent != null">#{agent},</if>
+            <if test="flag != null">#{flag},</if>
+            <if test="whereIsFrom != null">#{whereIsFrom},</if>
+            <if test="remark != null">#{remark},</if>
+            <if test="generateType != null">#{generateType},</if>
+            <if test="betMultiples != null">#{betMultiples},</if>
+            <if test="giftAmount != null">#{giftAmount},</if>
+            <if test="executeTime != null">#{executeTime},</if>
+            <if test="shippingCode != null">#{shippingCode},</if>
+            <if test="bankname != null">#{bankname},</if>
+            <if test="msflag != null">#{msflag},</if>
+            <if test="saveway != null">#{saveway},</if>
+            <if test="afterLocalAmount != null">#{afterLocalAmount},</if>
+            <if test="afterRemoteAmount != null">#{afterRemoteAmount},</if>
+        </trim>
+        )
+    </insert>
+	
+	<insert id="batchCreate" parameterType="Proposal">
+		insert 
+		into 
+		proposal
+		(
+        	pno,
+        	proposer,
+        	createTime,
+        	type,
+        	quickly,
+        	loginname,
+        	amount,
+        	agent,
+        	flag,
+        	whereisfrom,
+        	remark,
+        	generateType,
+        	msflag
+		)
+        VALUES
+		<foreach collection="list" item="item" index="index" separator=",">
+		(
+			#{item.pno},
+			#{item.proposer},
+			#{item.createTime},
+			#{item.type},
+			#{item.quickly},
+			#{item.loginName},
+            #{item.amount},
+            #{item.agent},
+            #{item.flag},
+            #{item.whereIsFrom},
+            #{item.remark},
+            #{item.generateType},
+            #{item.msflag}
+		)
+		</foreach>
+	</insert>
+	
+    <update id="update" parameterType="Proposal" >
+		update
+		proposal
+        <set>
+            <if test="flag != null">flag = #{flag},</if>
+            <if test="passflag != null">passflag = #{passflag},</if>
+            <if test="remark != null">remark = #{remark},</if>
+            <if test="mssgflag != null">mssgflag = #{mssgflag},</if>
+            <if test="msflag != null">msflag = #{msflag},</if>
+            <if test="mstype != null">mstype = #{mstype},</if>
+            <if test="createTime != null">createTime = #{createTime},</if>
+            <if test="executeTime != null">executeTime = #{executeTime},</if>
+            <if test="timecha != null">timecha = #{timecha},</if>
+            <if test="overtime != null">overtime = #{overtime},</if>
+            <if test="bankaccount != null">bankaccount = #{bankaccount},</if>
+        </set>
+        <where>
+			pno = #{pno}
+        </where>
+    </update>
+    
+    <update id="updateProposal" parameterType="java.util.Map">
+    	update
+    	proposal
+    	<set>
+    		<if test="flag != null">flag = #{flag},</if>
+    		<if test="loginName != null">loginname = #{loginName},</if>
+    		<if test="executeTime != null">executeTime = #{executeTime},</if>
+    		<if test="quickly != null">quickly = #{quickly},</if>
+    		<if test="agent != null">agent = #{agent},</if>
+    		<if test="remark != null">remark = #{remark},</if>
+    	</set>
+    	<where>
+			pno = #{pno}
+        </where>
+    </update>
+    
+	<delete id="delete" parameterType="Proposal">
+
+	</delete>
+</mapper>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.nnti.common.dao.slave.ISlaveTransferDao">
+
+	<sql id="columns_sql">
+		id as id,
+		source as source,
+		target as target,
+		remit as remit,
+		loginname as loginName,
+		createtime as createTime,
+		credit as credit,
+		newCredit as newCredit,
+		flag as flag,
+		paymentid as paymentId,
+		remark as remark	
+	</sql>
+	
+	<select id="findList" parameterType="java.util.Map" resultType="Transfer">
+		select
+		<include refid="columns_sql" />
+		from
+		transfer
+		<where>
+			<if test="loginName != null">loginname = #{loginName}</if>
+			<if test="createTime != null">and createTime > #{createTime}</if>
+			<if test="operateType != null and operateType != '' and operateType == 'experience'">
+				<if test="target != null">and (target = #{target} or source = #{target})</if>
+			</if>
+			<if test="operateType == null or operateType == ''">
+				<if test="target != null">and target = #{target}</if>
+			</if>
+			<if test="functionName == 'deposit'">
+				<if test="remark != null">and remark not like concat('%', #{remark}, '%')</if>
+			</if>
+		</where>
+		order by createtime desc
+	</select>
+	
+	
+	<select id="findUsedTransferList" parameterType="java.util.Map" resultType="Transfer">
+		select
+		<include refid="columns_sql" />
+		from
+		transfer
+		<where>
+			<if test="loginNameList != null">loginname in
+			<foreach collection="loginNameList" item="loginName" index="index"
+		            open="(" close=")" separator=",">
+		            #{loginName}
+	        </foreach>
+	        </if>
+			<if test="target != null">and target in 
+				<foreach collection="target" item="targetId" index="index"
+		            open="(" close=")" separator=",">
+		            #{targetId}
+	        	</foreach>
+			</if>
+			<if test="remark != null">and remark like concat('%', #{remark}, '%')</if>
+			<if test="createTime != null">and createtime > #{createTime}</if>
+		</where>
+		order by createtime desc
+	</select>
+	
+	
+</mapper>

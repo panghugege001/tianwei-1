@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.nnti.common.dao.master.IMasterCashoutDao">
+
+
+<sql id="columns_sql">
+		pno,
+		title,
+		loginname,
+		money,
+		accountName,
+		accountType,
+		accountCity,
+		bankAddress,
+		accountNo,
+		bank,
+		phone,
+		email,
+		ip,
+		remark,
+		notifyNote,
+		notifyPhone
+	</sql>
+	
+    <select id="get" parameterType="java.lang.String" resultType="Cashout">
+    	select
+        <include refid="columns_sql"/>
+        from
+        cashout
+        <where>
+        	pno = #{0}
+        </where>
+    </select>
+
+
+	
+	<insert id="create" parameterType="Cashout" useGeneratedKeys="false" keyProperty="pno">
+		INSERT
+		INTO
+		cashout
+		(
+			<trim suffixOverrides=",">
+       			<if test="pno != null">pno,</if>
+            	<if test="title != null">title,</if>
+            	<if test="loginname != null">loginname,</if>
+            	<if test="money != null">money,</if>
+            	<if test="accountName != null">accountName,</if>
+            	<if test="accountType != null">accountType,</if>
+            	<if test="accountCity != null">accountCity,</if>
+            	<if test="bankAddress != null">bankAddress,</if>
+            	<if test="accountNo != null">accountNo,</if>
+            	<if test="ip != null">ip,</if>
+            	<if test="remark != null">remark,</if>
+            	<if test="bank != null">bank,</if>
+        	</trim>
+		)
+		VALUES
+		(
+			<trim suffixOverrides=",">
+				<if test="pno != null">#{pno},</if>
+            	<if test="title != null">#{title},</if>
+            	<if test="loginname != null">#{loginname},</if>
+            	<if test="money != null">#{money},</if>
+            	<if test="accountName != null">#{accountName},</if>
+            	<if test="accountType != null">#{accountType},</if>
+				<if test="accountCity != null">#{accountCity},</if>
+				<if test="bankAddress != null">#{bankAddress},</if>
+				<if test="accountNo != null">#{accountNo},</if>
+				<if test="ip != null">#{ip},</if>
+				<if test="remark != null">#{remark},</if>
+				<if test="bank != null">#{bank},</if>
+        	</trim>
+        )
+    </insert>
+</mapper>

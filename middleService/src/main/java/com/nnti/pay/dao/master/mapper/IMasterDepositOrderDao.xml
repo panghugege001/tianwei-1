@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.nnti.pay.dao.master.IMasterDepositOrderDao">
+
+	<sql id="columns_sql">
+	    depositId as depositId,
+		loginName as loginName,
+		bankName as bankName,
+		bankNo as bankNo,
+		status as status,
+		createTime as createTime,
+		updateTime as updateTime,
+		remark as remark,
+		spare as spare,
+		spare1 as spare1,
+		accountName as accountName,
+		ubankname as ubankname,
+		uaccountname as uaccountname,
+		amount as amount,
+		ubankno as ubankno,
+		flag as flag,
+		type as type,
+		realname as realname
+	</sql> 
+
+
+
+	<select id="get" parameterType="java.lang.String" resultType="DepositOrder">
+		SELECT * FROM deposit_order
+		<where>depositId = #{0}</where>
+	</select>
+	
+	
+	 <select id="findByLoginName" parameterType="java.util.Map" resultType="DepositOrder">
+        select
+        <include refid="columns_sql"/>
+        from
+        deposit_order
+        <where>
+            <if test="loginName != null">loginName = #{loginName}</if>
+            <if test="status != null">AND status = #{status}</if>
+            <if test="type != null">AND type = #{type}</if>
+        </where>
+        ORDER BY createtime desc
+    </select>
+    
+    
+		
+    <update id="discardOrder" parameterType="DepositOrder" >
+		update
+		deposit_order
+        <set>
+            updateTime=#{updateTime},
+            <if test="status != null">status = #{status},</if>
+            <if test="remark != null">remark = #{remark},</if>
+        </set>
+        <where>
+			depositId = #{depositId}
+        </where>
+    </update>
+	
+	
+	
+	<insert id="insert" parameterType="DepositOrder">
+		INSERT 
+		INTO 
+		deposit_order
+		(
+        	<trim suffixOverrides=",">
+				<if test="loginName != null">loginName,</if>
+            	<if test="bankName != null">bankName,</if>
+            	<if test="depositId != null">depositId,</if>
+            	<if test="createTime != null">createTime,updateTime,</if>
+            	<if test="status != null">status,</if>
+				<if test="accountName != null">accountName,</if>
+            	<if test="bankNo != null">bankNo,</if>
+            	<if test="flag != null">flag,</if>
+            	<if test="type != null">type,</if>
+            	<if test="amount != null">amount,</if>
+            	<if test="remark != null">remark,</if>
+        	</trim>
+		) 
+		VALUES 
+		(
+			<trim suffixOverrides=",">
+            	<if test="loginName != null">#{loginName},</if>
+            	<if test="bankName != null">#{bankName},</if>
+            	<if test="depositId != null">#{depositId},</if>
+            	<if test="createTime != null">#{createTime}, #{updateTime},</if>
+				<if test="status != null">#{status},</if>
+            	<if test="accountName != null">#{accountName},</if>
+            	<if test="bankNo != null">#{bankNo},</if>
+            	<if test="flag != null">#{flag},</if>
+            	<if test="type != null">#{type},</if>
+            	<if test="amount != null">#{amount},</if>
+            	<if test="remark != null">#{remark},</if>
+        	</trim>
+		)
+    </insert>
+</mapper>

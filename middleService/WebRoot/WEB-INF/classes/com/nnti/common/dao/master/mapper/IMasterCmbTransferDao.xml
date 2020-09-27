@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.nnti.common.dao.master.IMasterCmbTransferDao">
+	
+	<insert id ="createCmbTransferList" parameterType="java.util.List">
+		<selectKey resultType="java.lang.Integer" keyProperty="transferId" order="AFTER">
+			SELECT LAST_INSERT_ID()
+		</selectKey>
+		INSERT
+		INTO
+		cmb_transfers
+		(
+			amount,
+			balance,
+			jylx,
+			notes,
+			accept_name,
+			accept_card_num,
+			pay_date,
+			admin_id,
+			status,
+			date,
+			timecha,
+			overtime,
+			uaccountname,
+			uaccountno,
+			loginname,
+			remark,
+			pay_type,
+			order_number
+		)
+		VALUES
+		<foreach collection="list" item="item" index="index" separator=",">
+		(
+			#{item.amount},
+			#{item.balance},
+			#{item.jylx},
+			#{item.notes},
+			(select username from bankinfo b where b.bankcard = #{item.acceptCardNum}),
+			#{item.acceptCardNum},
+			#{item.payDate},
+			#{item.adminId},
+			#{item.status},
+			#{item.date},
+			#{item.timeCha},	
+			#{item.overTime},
+			#{item.userAccountName},
+			#{item.uaccountno},
+			#{item.loginName},
+			#{item.remark},
+			#{item.payType},
+			#{item.orderNumber}		
+		)		
+		</foreach>
+    </insert>
+</mapper>

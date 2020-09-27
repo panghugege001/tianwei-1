@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.nnti.common.dao.slave.ISlaveUserBankInfoDao">
+	
+	<sql id="columns_sql">
+		id,
+		loginname ,
+		bankno,
+		bankname,
+		bankaddress,
+		addtime,
+		flag
+	</sql>
+	
+	<select id="findUserBankList" parameterType="java.util.Map" resultType="UserBankInfo">
+        select
+        <include refid="columns_sql"/>
+        from
+        userbankinfo
+        <where>
+            <if test="loginname != null">AND loginname = #{loginname}</if>
+            <if test="flag != null">AND flag = #{flag}</if>
+            <if test="bankname != null">AND bankname = #{bankname}</if>
+        </where>
+    </select>
+	<select id="findUserRepeatBankNo" resultType="java.lang.String"  parameterType="java.util.Map" >
+       SELECT  substring(bankno, 1, LENGTH(bankno)-2) from userbankinfo where bankname != #{bankname}
+        GROUP BY substring(bankno, 1, LENGTH(bankno)-2) having count(*) > 1
+    </select>
+</mapper>

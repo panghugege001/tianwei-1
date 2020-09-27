@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.nnti.pay.dao.master.IMasterMerchantPayDao">
+
+	<sql id="columns_sql">
+		id as id,
+		merchantCode as merchantCode,
+		createTime as createTime,
+		updateTime as updateTime,
+		updateBy as updateBy,
+		payName as payName,
+		as_name as asName,
+		show_name as showName,
+		type as type,
+		usetype as usetype,
+		signKey as signKey,
+		notifyUrl as notifyUrl,
+		shopUrl as shopUrl,
+		fee as fee,
+		paySwitch as paySwitch,
+		useable as useable,
+		amountCut as amountCut,
+		payPlatform as payPlatform,
+		pcFee as pcFee,
+		minPay as minPay,
+		maxPay as maxPay,
+		levels as levels,
+		apiUrl as apiUrl,
+		systemCode as systemCode,
+		appPay as appPay,
+		payUrl as payUrl,
+		payWay as payWay,
+		payCenterUrl as payCenterUrl,
+		remain as remain,
+		remark as remark,
+		phoneFee as	phoneFee
+	</sql>
+
+	<select id="get" parameterType="java.lang.Long" resultType="MerchantPay">
+		SELECT
+		<include refid="columns_sql" />
+		FROM
+		merchantpay
+		<where>
+			id = #{0}
+		</where>
+	</select>
+	
+	
+	<select id="controlSwitch" parameterType="java.lang.String" resultType="MerchantPay">
+		SELECT
+		<include refid="columns_sql" />
+		FROM
+		merchantpay
+		<where>
+			payWay = #{0}
+		</where>
+	</select>
+
+	<select id="findByCondition" parameterType="java.util.Map" resultType="MerchantPay">
+		SELECT
+		<include refid="columns_sql" />
+		FROM
+		merchantpay
+		<where>
+			<if test="merchantCode != null and merchantCode != ''">merchantCode = #{merchantCode}</if>
+			<if test="payPlatform != null and payPlatform != ''">AND payPlatform = #{payPlatform}</if>
+			<if test="paySwitch != null ">AND paySwitch = #{paySwitch}</if>
+			<if test="useable != null ">AND useable = #{useable}</if>
+			<if test="payWay != null ">AND payWay = #{payWay}</if>
+			<if test="payName != null and payName != ''">AND payName like "%"#{payName}</if>
+			<if test="usetype != null">
+				AND usetype in
+				<foreach collection="usetype" item="item" index="index" open="(" separator="," close=")">
+					#{item}
+				</foreach>
+			</if>
+		</where>
+	</select>
+	
+	<insert id="insert" parameterType="MerchantPay">
+		INSERT 
+		INTO 
+		merchantpay
+		(
+			<trim suffixOverrides=",">
+            	<if test="merchantCode != null">merchantCode,</if>
+            	<if test="createTime != null ">createTime,</if>
+            	<if test="updateTime != null ">updateTime,</if>
+            	<if test="updateBy != null and updateBy != ''">updateBy,</if>
+            	<if test="payName != null">payName,</if>
+            	<if test="showName != null">show_name,</if>
+            	<if test="asName != null">as_name,</if>
+            	<if test="type != null">type,</if>
+            	<if test="usetype != null">usetype,</if>
+            	<if test="signKey != null and signKey != ''">signKey,</if>
+            	<if test="notifyUrl != null and notifyUrl != ''">notifyUrl,</if>
+            	<if test="shopUrl != null and shopUrl != ''">shopUrl,</if>
+            	<if test="fee != null ">fee,</if>
+            	<if test="paySwitch != null ">paySwitch,</if>
+            	<if test="useable != null ">useable,</if>
+            	<if test="amountCut != null ">amountCut,</if>
+            	<if test="payPlatform != null and payPlatform != ''">payPlatform,</if>
+            	<if test="phoneFee != null ">phoneFee,</if>
+            	<if test="pcFee != null ">pcFee,</if>
+            	<if test="minPay != null ">minPay,</if>
+            	<if test="maxPay != null ">maxPay,</if>
+            	<if test="levels != null and levels != ''">levels,</if>
+            	<if test="apiUrl != null and apiUrl != ''">apiUrl,</if>
+            	<if test="systemCode != null and systemCode != ''">systemCode,</if>
+            	<if test="appPay != null ">appPay,</if>
+            	<if test="payUrl != null and payUrl != ''">payUrl,</if>
+            	<if test="payWay != null ">payWay,</if>
+            	<if test="payCenterUrl != null and payCenterUrl != ''">payCenterUrl,</if>
+            	<if test="remain != null and remain != ''">remain,</if>
+            	<if test="remark != null and remark != ''">remark,</if>
+        	</trim>
+        ) 
+        VALUES 
+        (
+			<trim suffixOverrides=",">
+            	<if test="merchantCode != null and merchantCode != ''">#{merchantCode},</if>
+            	<if test="createTime != null ">#{createTime},</if>
+            	<if test="updateTime != null ">#{updateTime},</if>
+				<if test="updateBy != null and updateBy != ''">#{updateBy},</if>
+            	<if test="payName != null and payName != ''">#{payName},</if>
+            	<if test="showName != null and showName != ''">#{show_name},</if>
+            	<if test="asName != null and asName != ''">#{asName},</if>
+            	<if test="type != null ">#{type},</if>
+            	<if test="usetype != null ">#{usetype},</if>
+            	<if test="signKey != null and signKey != ''">#{signKey},</if>
+            	<if test="notifyUrl != null and notifyUrl != ''">#{notifyUrl},</if>
+            	<if test="shopUrl != null and shopUrl != ''">#{shopUrl},</if>
+            	<if test="fee != null ">#{fee},</if>
+            	<if test="paySwitch != null ">#{paySwitch},</if>
+            	<if test="useable != null ">#{useable},</if>
+            	<if test="amountCut != null ">#{amountCut},</if>
+            	<if test="payPlatform != null and payPlatform != ''">#{payPlatform},</if>
+            	<if test="phoneFee != null ">#{phoneFee},</if>
+            	<if test="pcFee != null ">#{pcFee},</if>
+            	<if test="minPay != null ">#{minPay},</if>
+				<if test="maxPay != null ">#{maxPay},</if>
+            	<if test="levels != null and levels != ''">#{levels},</if>
+            	<if test="apiUrl != null and apiUrl != ''">#{apiUrl},</if>
+            	<if test="systemCode != null and systemCode != ''">#{systemCode},</if>
+            	<if test="appPay != null ">#{appPay},</if>
+            	<if test="payUrl != null and payUrl != ''">#{payUrl},</if>
+            	<if test="payWay != null ">#{payWay},</if>
+            	<if test="payCenterUrl != null and payCenterUrl != ''">#{payCenterUrl},</if>
+            	<if test="remain != null and remain != ''">#{remain},</if>
+            	<if test="remark != null and remark != ''">#{remark},</if>
+        	</trim>
+        )
+	</insert>
+	
+    <update id="update" parameterType="MerchantPay">
+		UPDATE 
+		merchantpay
+		<set>
+        	<if test="merchantCode != null and merchantCode != ''">merchantCode = #{merchantCode},</if>
+            <if test="createTime != null ">createTime = #{createTime},</if>
+            <if test="updateTime != null ">updateTime = #{updateTime},</if>
+            <if test="updateBy != null and updateBy != ''">updateBy = #{updateBy},</if>
+            <if test="payName != null">payName = #{payName},</if>
+            <if test="showName != null">show_name = #{showName},</if>
+            <if test="asName != null">as_name = #{asName},</if>
+            <if test="type != null ">type = #{type},</if>
+            <if test="usetype != null ">usetype = #{usetype},</if>
+            <if test="signKey != null and signKey != ''">signKey = #{signKey},</if>
+            <if test="notifyUrl != null and notifyUrl != ''">notifyUrl = #{notifyUrl},</if>
+            <if test="shopUrl != null and shopUrl != ''">shopUrl = #{shopUrl},</if>
+            <if test="fee != null ">fee = #{fee},</if>
+            <if test="paySwitch != null ">paySwitch = #{paySwitch},</if>
+            <if test="useable != null ">useable = #{useable},</if>
+            <if test="amountCut != null">amountCut = #{amountCut},</if>
+            <if test="payPlatform != null and payPlatform != ''">payPlatform = #{payPlatform},</if>
+            <if test="phoneFee != null ">phoneFee = #{phoneFee},</if>
+            <if test="pcFee != null ">pcFee = #{pcFee},</if>
+            <if test="minPay != null ">minPay = #{minPay},</if>
+            <if test="maxPay != null ">maxPay = #{maxPay},</if>
+            <if test="levels != null and levels != ''">levels = #{levels},</if>
+            <if test="apiUrl != null and apiUrl != ''">apiUrl = #{apiUrl},</if>
+            <if test="systemCode != null and systemCode != ''">systemCode = #{systemCode},</if>
+            <if test="appPay != null ">appPay = #{appPay},</if>
+            <if test="payUrl != null and payUrl != ''">payUrl = #{payUrl},</if>
+            <if test="payWay != null ">payWay = #{payWay},</if>
+            <if test="payCenterUrl != null and payCenterUrl != ''">payCenterUrl = #{payCenterUrl},</if>
+            <if test="remain != null">remain = #{remain},</if>
+			<if test="remark != null">remark = #{remark},</if>
+        </set>
+        <where>
+			id = #{id}
+        </where>
+	</update>
+	
+	<delete id="delete" parameterType="java.lang.Long">
+	
+	</delete>
+</mapper>

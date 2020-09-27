@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.nnti.common.dao.master.IMasterSystemConfigDao">
+	
+	<sql id="columns_sql">
+		id as id,
+		typeNo as typeNo,
+		typeName as typeName,
+		itemNo as itemNo,
+		value as value,
+		note as note,
+		flag as flag
+	</sql>
+	
+    <select id="get" parameterType="SystemConfig" resultType="SystemConfig">
+        select
+        <include refid="columns_sql" />
+		from
+		systemconfig
+		<where>
+			<if test="typeNo !=null">
+					typeNo = #{typeNo}
+			</if>
+			<if test="flag !=null">
+					and flag = #{flag}
+			</if>
+		</where>
+    </select>
+    
+    
+</mapper>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.nnti.common.dao.master.IMasterBigBangDao">
+
+	<update id="updateList" parameterType="java.util.Map">
+		update
+		ptbigbang
+		<set>
+			<if test="status != null">status = #{status},</if>
+			<if test="transferOutAmount != null">transferOutAmount = #{transferOutAmount},</if>
+		</set>
+		<where>
+			<if test="userName != null">username = #{userName}</if>
+			<if test="platform != null">
+				<choose>
+					<when test="platform == 'PT'">and (platform = #{platform} or platform is null)
+					</when>
+					<otherwise>and platform = #{platform}</otherwise>
+				</choose>
+			</if>
+			<if test="conditionStatus != null">and status = #{conditionStatus}</if>
+		</where>
+	</update>
+	
+	<update id="updateList4Slot" parameterType="java.util.Map">
+		update
+		ptbigbang
+		<set>
+			<if test="status != null">status = #{status},</if>
+			<if test="transferOutAmount != null">transferOutAmount = #{transferOutAmount},</if>
+		</set>
+		<where>
+			username = #{userName}
+			and platform in
+			<foreach item="platform" collection="platforms" open="(" separator="," close=")">
+				#{platform}
+			</foreach>
+			<if test="conditionStatus != null">and status = #{conditionStatus}</if>
+		</where>
+	</update>
+</mapper>

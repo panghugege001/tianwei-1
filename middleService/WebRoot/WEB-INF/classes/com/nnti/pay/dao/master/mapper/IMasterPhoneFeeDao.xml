@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.nnti.pay.dao.master.IMasterPhoneFeeDao">
+	<sql id="columns_sql">
+			order_no,
+			loginname,
+			phone_fee_config_id,
+			phone_fee_config_title,
+			phone_number,
+			amount,
+			create_time,
+			modify_time,
+			status,
+			sporder_id,
+			callback_time,
+			order_no_ref,
+			operator,
+			remark
+		</sql>
+	
+	<update id="update" parameterType="PhoneFeeRecord">
+		UPDATE
+		phone_fee_record
+		<set>
+			<if test="status != null">status = #{status},</if>
+			<if test="sporder_id != null">sporder_id = #{sporder_id},</if>
+			<if test="callback_time != null">callback_time = #{callback_time},</if>
+		</set>
+		<where>
+			order_no = #{order_no}
+		</where>
+	</update>
+	
+	<select id="findPhoneFeeRecord" parameterType="java.lang.String" resultType="PhoneFeeRecord">
+        select
+        <include refid="columns_sql"/>
+        from
+        	phone_fee_record
+        <where>
+        	order_no = #{0}
+        </where>
+    </select>
+</mapper>

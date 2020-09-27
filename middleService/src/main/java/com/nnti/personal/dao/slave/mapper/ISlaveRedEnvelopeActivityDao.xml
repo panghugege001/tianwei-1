@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.nnti.personal.dao.slave.ISlaveRedEnvelopeActivityDao">
+
+	<sql id="columns_sql">
+		id as id,
+		title as title,
+		min_bonus as minBonus,
+		max_bonus as maxBonus,
+		vip as vip,
+		times as times,
+		max_receive_times as maxReceiveTimes,
+		platform_id as platformId,
+		platform_name as platformName,
+		multiples as multiples,
+		deposit_amount as depositAmount,
+		deposit_start_time as depositStartTime,
+		deposit_end_time as depositEndTime,
+		bet_amount as betAmount,
+		bet_start_time as betStartTime,
+		bet_end_time as betEndTime,
+		start_time as startTime,
+		end_time as endTime,
+		delete_flag as deleteFlag,
+		create_user as createUser,
+		create_time as createTime,
+		update_user as updateUser,
+		update_time as updateTime
+	</sql>
+
+	<select id="findList" parameterType="java.util.Map" resultType="RedEnvelopeActivity">
+		select
+		<include refid="columns_sql" />
+		from
+		B_RED_ENVELOPE_ACTIVITY
+		where delete_flag = 'N'
+		<if test="null != title">and title = trim(#{title})</if>
+		<if test="null != vip">and vip like concat('%', #{vip}, '%')</if>
+		<if test="null != conditionTime"><![CDATA[and (start_time <= #{conditionTime} and #{conditionTime} <= end_time)]]></if>
+	</select>
+</mapper>

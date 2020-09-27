@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.nnti.common.dao.master.IMasterTransferDao">
+		
+	<insert id="create" parameterType="Transfer">
+		INSERT
+		INTO
+		transfer
+		(
+        	<trim suffixOverrides=",">
+       			<if test="id != null">id,</if>
+            	<if test="source != null">source,</if>
+            	<if test="target != null">target,</if>
+            	<if test="remit != null">remit,</if>
+            	<if test="loginName != null">loginname,</if>
+            	<if test="createTime != null">createtime,</if>
+            	<if test="credit != null">credit,</if>
+				<if test="newCredit != null">newCredit,</if>
+				<if test="flag != null">flag,</if>
+				<if test="paymentId != null">paymentid,</if>
+				<if test="remark != null">remark,</if>
+        	</trim>
+        )
+        VALUES
+        (
+        	<trim suffixOverrides=",">
+            	<if test="id != null">#{id},</if>
+            	<if test="source != null">#{source},</if>
+            	<if test="target != null">#{target},</if>
+            	<if test="remit != null">#{remit},</if>
+            	<if test="loginName != null">#{loginName},</if>
+            	<if test="createTime != null">#{createTime},</if>
+            	<if test="credit != null">#{credit},</if>
+            	<if test="newCredit != null">#{newCredit},</if>
+            	<if test="flag != null">#{flag},</if>
+            	<if test="paymentId != null">#{paymentId},</if>
+            	<if test="remark != null">#{remark},</if>
+        	</trim>
+        )
+	</insert>
+</mapper>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.nnti.common.dao.master.IMasterUserStatusDao">
+	
+	<sql id="columns_sql">
+		loginname as loginName,
+		loginerrornum as loginErrorNum,
+		slotaccount as slotAccount,
+		discussflag as discussFlag,
+		commission as commission,
+		payorderValue as payOrderValue,      
+		cashinwrong as cashInWrong,
+		smsflag as smsFlag,
+		touzhuflag as touZhuFlag,
+		validateCode as validateCode
+	</sql>
+	
+	<insert id="create" parameterType="UserStatus">
+		INSERT
+		INTO
+		userstatus
+		(
+		<trim suffixOverrides=",">
+			<if test="loginName != null">loginname,</if>
+            <if test="payOrderValue != null">payorderValue,</if>
+            <if test="cashInWrong != null">cashinwrong,</if>
+            <if test="mailFlag != null">cashinwrong,</if>
+            <if test="loginErrorNum != null">loginerrornum,</if>
+            <if test="validateCode != null">validatecode,</if>
+        </trim>
+        )
+        VALUES
+        (
+		<trim suffixOverrides=",">
+            <if test="loginName != null">#{loginName},</if>
+            <if test="payOrderValue != null">#{payOrderValue},</if>
+            <if test="cashInWrong != null">#{cashInWrong},</if>
+            <if test="loginErrorNum != null">#{loginErrorNum},</if>
+            <if test="validateCode != null">#{validateCode},</if>
+        </trim>
+        )
+    </insert>
+    
+    <update id="update" parameterType="UserStatus">
+		UPDATE
+		userstatus
+		<set>
+			<if test="payOrderValue != null">payorderValue = #{payOrderValue},</if>
+			<if test="loginErrorNum != null">loginerrornum = #{loginErrorNum},</if>
+			<if test="cashInWrong != null">cashinwrong = #{cashInWrong},</if>
+			<if test="slotAccount != null">slotaccount = slotaccount + #{slotAccount},</if>
+			<if test="touZhuFlag != null">touzhuflag = #{touZhuFlag},</if>
+			<if test="validateCode != null">validateCode = #{validateCode},</if>
+			<if test="smsFlag != null">smsflag = #{smsFlag},</if>
+        </set>
+        <where>
+			loginname = #{loginName}
+        </where>
+    </update>
+    
+    
+    
+    <select id="get" parameterType="java.lang.String" resultType="UserStatus">
+        select
+        <include refid="columns_sql" />
+		from
+		userstatus
+		<where>
+			loginname = #{0}
+		</where>
+    </select>
+</mapper>

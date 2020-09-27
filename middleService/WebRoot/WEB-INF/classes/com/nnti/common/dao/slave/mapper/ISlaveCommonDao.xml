@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.nnti.common.dao.slave.ISlaveCommonDao">
+
+    <select id="getDeposit" parameterType="java.util.Map" resultType="java.lang.Double">
+    	SELECT sum(a.money) as money FROM
+    	(
+    		SELECT sum(t.money) as money FROM payorder t where t.type = 0 and t.flag = 0 and t.loginname = #{loginName} and (t.createTime BETWEEN #{startTime} and #{endTime})
+    		union all
+    		SELECT sum(t.amount) as money FROM proposal t where t.type = 502 and t.flag = 2 and t.loginname = #{loginName} and (t.createTime BETWEEN #{startTime} and #{endTime})
+    	) a		
+    </select>
+
+	<select id="getWinLose" parameterType="java.util.Map" resultType="java.lang.Double">
+		select sum(profitall) as profitall from
+		(
+			select 0 - sum(money) as profitall from payorder t where type = 0 and flag = 0 and loginname = #{loginName} and (t.createTime BETWEEN #{startTime} and #{endTime})
+			union all
+			select 0 - sum(amount) as profitall from proposal t where type = 502 and flag = 2 and loginname = #{loginName} and (t.createTime BETWEEN #{startTime} and #{endTime})
+			union all
+			select sum(amount) as profitall from proposal t where type = 503 and flag = 2 and loginname = #{loginName} and (t.createTime BETWEEN #{startTime} and #{endTime})
+		) t		
+    </select>
+
+    <select id="sumProfitAmount" parameterType="java.util.Map" resultType="java.lang.Double">
+		SELECT
+		SUM(amount) as amount
+		FROM
+		agprofit
+		WHERE loginname = #{loginName}
+		<if test="startTime != null"><![CDATA[and createTime >= #{startTime}]]></if>
+		<if test="endTime != null"><![CDATA[and createTime <= #{endTime}]]></if>
+    </select>
+
+    <select id="sumProfitBetTotal" parameterType="java.util.Map" resultType="java.lang.Double">
+		SELECT
+		sum(bettotal) as bettotal
+		FROM
+		agprofit 
+		WHERE loginname = #{loginName}
+		<if test="startTime != null"><![CDATA[and createTime >= #{startTime}]]></if>
+		<if test="endTime != null"><![CDATA[and createTime <= #{endTime}]]></if>
+    </select>
+
+    <select id="sumPlatformBet" parameterType="java.util.Map" resultType="java.lang.Double">
+		select
+		sum(bet)
+		from
+		platform_data
+		<where>
+			<if test="platform != null">platform = #{platform}</if>
+			<if test="loginName != null">and loginname = #{loginName}</if>
+			<if test="startTime != null"><![CDATA[and starttime >= #{startTime}]]></if>
+		</where>
+	</select>
+	
+    <select id="sumMgBet" parameterType="java.util.Map" resultType="java.lang.Double">
+    	select 
+    		SUM(amnt) bet 
+    	from 
+    		mg_data 
+    	where
+    		 transType='bet'
+			<if test="loginname != null">and mbrCode = #{loginname}</if>
+			<if test="startTime != null"><![CDATA[and transTime >= #{startTime}]]></if>
+			<if test="endTime != null"><![CDATA[and transTime <= #{endTime}]]></if>
+			and transId not in (
+				select refTransId 
+				from mg_data 
+				where transType='refund' 
+				<if test="loginname != null">and mbrCode = #{loginname}</if>
+			)
+	</select>
+	
+    <select id="sumPngBet" parameterType="java.util.Map" resultType="java.lang.Double">
+    	select 
+    		SUM(roundLoss) bet 
+    	from 
+    		png_data_dy 
+    	where
+    		 status = '1'
+			<if test="loginname != null">and externalUserId = #{loginname}</if>
+			<if test="startTime != null"><![CDATA[and timeTransaction >= #{startTime}]]></if>
+			<if test="endTime != null"><![CDATA[and timeTransaction <= #{endTime}]]></if>
+	</select>
+	
+    <select id="sumSwBet" parameterType="java.util.Map" resultType="java.lang.Double">
+    	select 
+    		SUM(bet) bet 
+    	from 
+    		sw_data
+    	where
+    		 gamecode not in ('w_fufish-jp', 'sw_fufish_intw')
+			<if test="loginname != null">and playerCode = #{loginname}</if>
+			<if test="startTime != null"><![CDATA[and ts >= #{startTime}]]></if>
+			<if test="endTime != null"><![CDATA[and ts <= #{endTime}]]></if>
+	</select>
+	
+    <select id="sumAginBet" parameterType="java.util.Map" resultType="java.lang.Double">
+    	select 
+    		SUM(validBetAmount) bet 
+    	from 
+    		agdata
+    	where
+    		 platformType = 'AGIN'
+			<if test="loginname != null">and playName = #{loginname}</if>
+			<if test="startTime != null"><![CDATA[and recalcuTime >= #{startTime}]]></if>
+			<if test="endTime != null"><![CDATA[and recalcuTime <= #{endTime}]]></if>
+	</select>
+	
+</mapper>

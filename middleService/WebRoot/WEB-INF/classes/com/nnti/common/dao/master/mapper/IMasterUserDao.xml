@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.nnti.common.dao.master.IMasterUserDao">
+
+	<sql id="columns_sql">
+		loginname as loginName,
+		password as password,
+		credit as credit,
+		level as level,
+		agent as agent,
+		accountName as accountName,
+		phone as phone,
+		flag as flag,
+		aliasName as aliasName,
+		birthday as birthday,
+		email as email,
+		createtime as createTime,
+		role as role,
+		creditlimit as creditLimit,
+		creditday as creditDay,
+		creditdaydate as creditDayDate,
+		isCashin as isCashin,
+		warnflag as warnFlag,
+		registerIp as registerIp,
+		shippingcodePt as shippingCodePt,
+		postcode as postCode
+	</sql>
+
+	<insert id="create" parameterType="User">
+
+	</insert>
+
+	<update id="update" parameterType="User">
+		update
+		users
+		<set>
+			<if test="password != null">password = #{password},</if>
+			<if test="credit != null">credit = credit + #{credit},</if>
+			<if test="level != null">level = #{level},</if>
+			<if test="agent != null">agent = #{agent},</if>
+			<if test="accountName != null">accountName = #{accountName},</if>
+			<if test="phone != null">phone = #{phone},</if>
+			<if test="flag != null">flag = #{flag},</if>
+			<if test="aliasName != null">aliasName = #{aliasName},</if>
+			<if test="email != null">email = #{email},</if>
+			<if test="createTime != null">createtime = #{createTime},</if>
+			<if test="role != null">role = #{role},</if>
+			<if test="creditLimit != null">creditlimit = #{creditLimit},</if>
+			<if test="creditDay != null">creditday = creditday + #{creditDay},</if>
+			<if test="creditDayDate != null">creditdaydate = #{creditDayDate},</if>
+			<if test="isCashin != null">isCashin = #{isCashin},</if>
+			<if test="remark != null">remark = #{remark},</if>
+			<if test="shippingCodePt != null">shippingcodePt = #{shippingCodePt},</if>
+			<if test="warnFlag != null">warnflag = #{warnFlag},</if>
+		</set> 
+		<where>
+			loginname = #{loginName}
+		</where>
+	</update>
+
+	<update id="updateShippingCode" parameterType="java.util.Map">
+		update
+		users
+		set
+		credit = credit + #{credit},
+		<if test="creditDayDate != null">creditdaydate = #{creditDayDate},</if>
+		<if test="creditDay != null">creditday = creditday + #{creditDay},</if>
+		shippingcodePt = #{shippingCodePt}
+		where loginname = #{loginName}
+	</update>
+
+	<delete id="delete" parameterType="User">
+
+	</delete>
+
+	<select id="get" parameterType="java.lang.String" resultType="User">
+		SELECT
+		<include refid="columns_sql" />
+		FROM
+		users
+		WHERE loginname = #{0}
+	</select>
+
+	<select id="findUserList" parameterType="java.util.Map"
+		resultType="User">
+		SELECT
+		<include refid="columns_sql" />
+		from
+		users
+		<where>
+			<if test="functionName == 'deposit'">
+				accountName = #{accountName} or registerIp = #{registerIp}
+			</if>
+			<if test="functionName == null">
+				<if test="accountName != null">accountName = #{accountName}</if>
+				<if test="registerIp != null">and registerIp = #{registerIp}</if>
+			</if>
+			<if test="phone !=null ">and phone = #{phone}</if>
+		</where>
+	</select>
+</mapper>

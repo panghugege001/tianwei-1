@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.nnti.personal.dao.master.IMasterPreferentialConfigDao">
+
+	<sql id="columns_sql">
+		id as id,
+		platform_id as platformId,
+		platform_name as platformName,
+		title_id as titleId,
+		title_name as titleName,
+		alias_title as aliasTitle,
+		percent as percent,
+		bet_multiples as betMultiples,
+		limit_money as limitMoney,
+		amount as amount,
+		is_used as isUsed,
+		start_time as startTime,
+		end_time as endTime,
+		times as times,
+		times_flag as timesFlag,
+		vip as vip,
+		deposit_amount as depositAmount,
+		deposit_start_time as depositStartTime,
+		deposit_end_time as depositEndTime,
+		bet_amount as betAmount,
+		bet_start_time as betStartTime,
+		bet_end_time as betEndTime,
+		create_time as createTime,
+		update_time as updateTime,
+		delete_flag as deleteFlag,
+		is_phone as isPhone,
+		is_pass_sms as isPassSms,
+		machine_code_enabled as machineCodeEnabled,
+		machine_code_times as machineCodeTimes,
+		lowest_amount as lowestAmount,
+		group_id as groupId,
+		mutex_times as mutexTimes
+	</sql>
+
+	<select id="get" parameterType="java.lang.Long" resultType="PreferentialConfig">
+		select
+		<include refid="columns_sql" />
+		from
+		preferential_config
+		where id = #{0}
+	</select>
+
+	<select id="findList" parameterType="java.util.Map" resultType="PreferentialConfig">
+		select
+		<include refid="columns_sql" />
+		from
+		preferential_config
+		where is_used = 1 and delete_flag = 1
+		<if test="null != conditionTime"><![CDATA[and (start_time <= #{conditionTime} and #{conditionTime} <= end_time)]]></if>
+		<if test="null != vip">and vip like concat('%', #{vip}, '%')</if>
+		<if test="null != conditionType">and is_phone like concat('%', #{conditionType}, '%')</if>
+		<if test="null != platformId">and platform_id = #{platformId}</if>
+		<if test="null != groupId">and group_id = #{groupId}</if>
+		order by create_time desc
+	</select>
+</mapper>

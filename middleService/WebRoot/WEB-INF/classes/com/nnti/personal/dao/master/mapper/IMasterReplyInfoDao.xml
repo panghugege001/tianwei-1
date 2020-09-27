@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.nnti.personal.dao.master.IMasterReplyInfoDao">
+	
+	<delete id="delete" parameterType="java.lang.Integer">
+		delete 
+		from 
+		replyinfo
+		where topic_id = #{0}
+	</delete>
+	
+	<insert id="insert" parameterType="ReplyInfo">
+		INSERT
+		INTO
+		replyinfo
+		(
+			<trim suffixOverrides=",">
+				<if test="topicId != null">topic_id,</if>
+				<if test="content != null">content,</if>
+				<if test="createTime != null">create_time,</if>
+				<if test="createUname != null">create_uname,</if>
+				<if test="ipAddress != null">ip_address,</if>
+				<if test="replyType != null">reply_type,</if>
+			</trim>
+		)
+		VALUES 
+		(
+			<trim suffixOverrides=",">
+				<if test="topicId != null">#{topicId},</if>
+				<if test="content != null">#{content},</if>
+				<if test="createTime != null">#{createTime},</if>
+				<if test="createUname != null">#{createUname},</if>
+				<if test="ipAddress != null">#{ipAddress},</if>
+				<if test="replyType != null">#{replyType},</if>
+			</trim>
+		)
+	</insert>
+</mapper>

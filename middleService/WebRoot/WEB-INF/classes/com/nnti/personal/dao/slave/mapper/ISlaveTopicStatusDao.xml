@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.nnti.personal.dao.slave.ISlaveTopicStatusDao">
+	
+	<sql id="columns_sql">
+		id as id,
+		title as title,
+		content as content,
+		topic_id as topicId,
+		create_time as createTime,
+		ip_address as ipAddress,
+		receive_uname as receiveUname,
+		is_user_read as isUserRead,
+		is_valid as isValid
+	</sql>
+	
+	<select id="findUnReadNum" parameterType="TopicInfo" resultType="java.lang.Integer">
+		select 
+		count(1) 
+		from 
+		topicstatus s left join topicinfo t on s.topic_id = t.id
+		where receive_uname = #{receiveUname}
+		and is_user_read = 0 
+		and (t.flag = 0 or t.flag is null)
+	</select>
+	
+	<select id="findTopicStatusById" parameterType="java.lang.Integer" resultType="TopicStatus">
+		SELECT
+		<include refid="columns_sql" /> 
+		FROM 
+		topicstatus t 
+		WHERE t.id = #{0}
+	</select>
+</mapper>

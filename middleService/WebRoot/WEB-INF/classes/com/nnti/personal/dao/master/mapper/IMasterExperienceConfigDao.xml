@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.nnti.personal.dao.master.IMasterExperienceConfigDao">
+
+	<sql id="columns_sql">
+		id as id,
+		title as title,
+		alias_Title as aliasTitle,
+		create_time as createTime,
+		update_time as updateTime,
+		amount as amount,
+		max_money as maxMoney,
+		min_money as minMoney,
+		is_used as isUsed,
+		start_time as startTime,
+		end_time as endTime,
+		vip as vip,
+		times as times,
+		times_flag as timesFlag,
+		machine_code_enabled as machineCodeEnabled,
+		machine_code_times as machineCodeTimes,
+		platform_name as platformName,
+		is_phone as isPhone
+	</sql>
+
+	<select id="get" parameterType="java.lang.Integer" resultType="ExperienceGoldConfig">
+		select
+		<include refid="columns_sql" />
+		from
+		experience_gold_t
+		where id = #{0}
+	</select>
+
+	<select id="findList" parameterType="java.util.Map" resultType="ExperienceGoldConfig">
+		select
+		<include refid="columns_sql" />
+		from
+		experience_gold_t
+		where is_used = 1
+		<if test="null != conditionTime"><![CDATA[and (start_time <= #{conditionTime} and #{conditionTime} <= end_time)]]></if>
+		<if test="null != vip">and vip like concat('%', #{vip}, '%')</if>
+		<if test="null != channel">and is_phone like concat('%', #{channel}, '%')</if>
+		<if test="null != platformName">and platform_name = #{platformName}</if>
+		<if test="null != title">and title = #{title}</if>
+		order by create_time desc
+	</select>
+</mapper>

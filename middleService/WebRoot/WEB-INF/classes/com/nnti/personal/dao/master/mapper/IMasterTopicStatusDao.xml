@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.nnti.personal.dao.master.IMasterTopicStatusDao">
+	
+	<insert id="insert" parameterType="TopicStatus">
+		INSERT 
+		INTO 
+		topicstatus
+		(
+			<trim suffixOverrides=",">
+				<if test="topicId != null">topic_id,</if>
+				<if test="receiveUname != null">receive_uname,</if>
+				<if test="ipAddress != null">ip_address,</if>
+				<if test="isUserRead != null">is_user_read,</if>
+				<if test="createTime != null">create_time,</if>
+				<if test="isValid != null">is_valid,</if>
+			</trim>
+		)
+		VALUES 
+		(
+			<trim suffixOverrides=",">
+				<if test="topicId != null"> #{topicId},</if>
+				<if test="receiveUname != null">#{receiveUname},</if>
+				<if test="ipAddress != null">#{ipAddress},</if>
+				<if test="isUserRead != null">#{isUserRead},</if>
+				<if test="createTime != null">#{createTime},</if>
+				<if test="isValid != null">#{isValid},</if>
+			</trim>
+		)
+	</insert>
+	
+	<delete id="delete" parameterType="java.lang.Integer">
+		delete 
+		from 
+		topicstatus
+		where id = #{0}
+	</delete>
+	
+	<update id="update" parameterType="java.util.Map">
+		update 
+		topicstatus
+		<set>
+			<if test="isValid != null">is_valid = #{isValid},</if>
+            <if test="isUserRead != null">is_user_read = #{isUserRead},</if>
+        </set>
+        <where>
+			id = #{statusId}
+        </where>
+	</update>
+	
+	
+	<update id="deleteTopic" parameterType="java.util.Map">
+		update 
+		topicstatus
+		<set>
+			<if test="isValid != null">is_valid = #{isValid},</if>
+			is_user_read = 1,
+        </set>
+        <where>
+			id in
+			<foreach item="item" collection="ids" open="(" separator=","
+					close=")">
+					#{item}
+			</foreach>
+        </where>
+	</update>
+</mapper>

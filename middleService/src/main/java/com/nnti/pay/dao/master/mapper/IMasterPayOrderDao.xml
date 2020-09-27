@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.nnti.pay.dao.master.IMasterPayOrderDao">
+
+	<select id="get" parameterType="java.lang.String" resultType="PayOrder">
+		SELECT
+		*
+		FROM
+		payorder
+		<where>
+			billNo = #{billNo}
+		</where>
+	</select>
+	
+	<insert id="insert" parameterType="PayOrder">
+		INSERT 
+		INTO 
+		payorder
+		(
+			<trim suffixOverrides=",">
+            	<if test="billNo != null">billNo,</if>
+            	<if test="payPlatform != null">payPlatform,</if>
+            	<if test="money != null">money,</if>
+            	<if test="newAccount != null">newAccount,</if>
+            	<if test="passWord != null">passWord,</if>
+            	<if test="loginName != null">loginName,</if>
+            	<if test="aliasName != null">aliasName,</if>
+            	<if test="phone != null">phone,</if>
+            	<if test="email != null">email,</if>
+            	<if test="partner != null">partner,</if>
+            	<if test="attach != null">attach,</if>
+            	<if test="msg != null">msg,</if>
+            	<if test="md5Info != null">md5Info,</if>
+            	<if test="returnTime != null">returnTime,</if>
+            	<if test="ip != null">ip,</if>
+            	<if test="createTime != null">createTime,</if>
+            	<if test="flag != null">flag,</if>
+            	<if test="type != null">type,</if>
+            	<if test="merchants != null">merchants,</if>
+			</trim>
+        ) 
+        VALUES 
+        (
+        	<trim suffixOverrides=",">
+            	<if test="billNo != null">#{billNo},</if>
+				<if test="payPlatform != null">#{payPlatform},</if>
+            	<if test="money != null">#{money},</if>
+            	<if test="newAccount != null">#{newAccount},</if>
+            	<if test="passWord != null">#{passWord},</if>
+            	<if test="loginName != null">#{loginName},</if>
+            	<if test="aliasName != null">#{aliasName},</if>
+            	<if test="phone != null">#{phone},</if>
+            	<if test="email != null">#{email},</if>
+            	<if test="partner != null">#{partner},</if>
+            	<if test="attach != null">#{attach},</if>
+            	<if test="msg != null">#{msg},</if>
+            	<if test="md5Info != null">#{md5Info},</if>
+            	<if test="returnTime != null">#{returnTime},</if>
+            	<if test="ip != null">#{ip},</if>
+            	<if test="createTime != null">#{createTime},</if>
+            	<if test="flag != null">#{flag},</if>
+            	<if test="type != null">#{type},</if>
+            	<if test="merchants != null">#{merchants},</if>
+        	</trim>
+		)
+	</insert>
+	
+    <update id="update" parameterType="PayOrder">
+		UPDATE 
+		payorder
+		<set>
+			<if test="payPlatform != null">payPlatform = #{payPlatform},</if>
+            <if test="money != null">money = #{money},</if>
+            <if test="newAccount != null">newAccount = #{newAccount},</if>
+            <if test="passWord != null">passWord = #{passWord},</if>
+            <if test="loginName != null">loginName = #{loginName},</if>
+            <if test="aliasName != null">aliasName = #{aliasName},</if>
+            <if test="phone != null">phone =#{phone},</if>
+            <if test="email != null">email =#{email},</if>
+            <if test="partner != null">partner =#{partner},</if>
+            <if test="attach != null">attach =#{attach},</if>
+            <if test="msg != null">msg =#{msg},</if>
+            <if test="md5Info != null">md5Info =#{md5Info},</if>
+            <if test="returnTime != null">returnTime =#{returnTime},</if>
+            <if test="ip != null">ip =#{ip},</if>
+            <if test="createTime != null">createTime =#{createTime},</if>
+            <if test="flag != null">flag =#{flag},</if>
+			<if test="type != null">type =#{type},</if>
+		</set>
+		<where>
+			billNo = #{billNo}
+		</where>
+	</update>
+</mapper>

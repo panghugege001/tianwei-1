@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.nnti.common.dao.slave.ISlaveCmbTransferDao">
+
+	<sql id="columns_sql">
+		transfer_id as transferId,
+		amount as amount,
+		balance as
+		balance,
+		jylx as jylx,
+		notes as notes,
+		accept_name as acceptName,
+		accept_card_num as acceptCardNum,
+		pay_date as payDate,
+		admin_id as
+		adminId,
+		status as status,
+		date as date,
+		timecha as timeCha,
+		overtime as
+		overTime,
+		uaccountname as userAccountName,
+		loginname as loginName,
+		remark as remark,
+		pay_type as payType,
+		order_number as orderNumber
+	</sql>
+
+	<select id="findList" parameterType="java.util.Map" resultType="CmbTransfer">   
+		SELECT
+		<include refid="columns_sql" />
+		FROM
+		cmb_transfers
+		<where>
+			<if test="orderNumber != null">order_number = #{orderNumber} and </if>   
+			<if test="amount != null">amount = #{amount} and </if>
+			<if test="userAccountName != null">uaccountname = #{userAccountName} and</if> 
+			<if test="payDate != null">pay_date = #{payDate}</if>
+		</where>
+	</select>
+</mapper>

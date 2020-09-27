@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.nnti.common.dao.master.IMasterBankStatusDao">
+	
+	<sql id="columns_sql">
+		id as id,
+		bankname as bankName,
+		status as status,
+		createtime as createTime,
+		updatetime as updateTime,	
+	</sql>
+	
+
+       
+    
+	<select id="getWithDrawBankStatus" parameterType="BankStatus" resultType="String">
+        SELECT
+          status
+        from
+        t_bank_status
+        <where>
+        		<if test="bankName != null">bankname = #{bankName}</if>
+        </where>
+    </select>
+</mapper>

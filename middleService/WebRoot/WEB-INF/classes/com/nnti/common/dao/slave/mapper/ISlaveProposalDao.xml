@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.nnti.common.dao.slave.ISlaveProposalDao">
+
+    <sql id="columns_sql">
+		pno as pno,
+		proposer as proposer,
+		createTime as createTime,
+		executeTime as executeTime,
+		type as type,
+		quickly as quickly,
+		loginname as loginName,
+		amount as amount,
+		agent as agent,
+		flag as flag,
+		whereisfrom as whereIsFrom,
+		remark as remark,
+		shippingcode as shippingCode,
+		giftamount as giftAmount,
+		betmultiples as betMultiples,
+		generateType as generateType
+	</sql>
+
+    <select id="sumAmount" parameterType="Proposal" resultType="java.lang.Double">
+        SELECT
+        sum(amount)
+        FROM
+        proposal
+        <where>
+            <if test="loginName != null">loginname = #{loginName}</if>
+            <if test="type != null">AND type = #{type}</if>
+            <if test="flag != null">AND flag = #{flag}</if>
+            <if test="createTime != null">AND createTime >= #{createTime}</if>
+        </where>
+    </select>
+
+    <select id="preferentialTimes" parameterType="java.util.Map" resultType="java.lang.Integer">
+    	<if test="groupId != null and groupId != ''">
+    		select
+			count(1)
+			from
+			proposal t1, proposal_extend t2
+			where t1.pno = t2.pno
+			and t1.loginname = #{loginName}
+			and t1.flag = #{flag}
+			and t1.executeTime >= #{executeTime}
+			<![CDATA[and t2.platform <> #{noContain}]]>
+			and t2.preferential_id in (select id from preferential_config where group_id = #{groupId})
+    	</if>
+    	<if test="groupId == null or groupId == ''">
+			select
+			count(1)
+			from
+			proposal t1, proposal_extend t2
+			where t1.pno = t2.pno
+			and t1.loginname = #{loginName}
+			<if test="type != null">and t1.type = #{type}</if>
+			<if test="flag != null">and t1.flag = #{flag}</if>
+			<if test="executeTime != null">and t1.executeTime >= #{executeTime}</if>
+			<if test="platform != null">and t2.platform = #{platform}</if>
+			<if test="preferentialId != null">and t2.preferential_id = #{preferentialId}</if>
+    	</if>
+	</select>
+
+    <select id="findProposalList" parameterType="java.util.Map" resultType="Proposal">
+        select
+        <include refid="columns_sql"/>
+        from
+        proposal
+        <where>
+            <if test="userList != null and userList.size() != 0">
+                loginname in
+                <foreach collection="userList" index="index" item="item" open="(" separator="," close=")">
+                    #{item.loginName}
+                </foreach>
+            </if>
+            <if test="loginname != null">AND loginname = #{loginname}</if>
+            <if test="flag != null">AND flag = #{flag}</if>
+            <if test="type != null">AND type = #{type}</if>
+            <if test="createTime != null">AND createTime >= #{createTime}</if>
+            <if test="shippingCode != null">AND shippingcode = #{shippingCode}</if>
+            <if test="typeList != null and typeList.size() != 0">
+                AND type in
+                <foreach collection="typeList" index="index" item="item" open="(" separator="," close=")">
+                    #{item}
+                </foreach>
+            </if>
+            <if test="flagList != null and flagList.size() != 0">
+                AND flag in
+                <foreach collection="flagList" index="index" item="item" open="(" separator="," close=")">
+                    #{item}
+                </foreach>
+            </if>
+        </where>
+    </select>
+    
+    <select id="get" parameterType="java.lang.String" resultType="Proposal">
+    	select
+        <include refid="columns_sql"/>
+        from
+        proposal
+        <where>
+        	pno = #{0}
+        </where>
+    </select>
+    
+    <select id="getDepositAmount" parameterType="java.util.Map" resultType="java.lang.Double">
+        SELECT SUM(deptable.depamount) FROM ( 
+        	SELECT amount depamount , loginname from proposal 
+        	WHERE
+				type=502 and flag=2 
+        		and loginname = #{loginname}
+        		<if test="startTime != null">and createTime >= #{startTime}</if>
+        	UNION ALL  
+        	select money depamount , loginname FROM payorder 
+        	WHERE 
+        		type=0 and flag=0 and loginname = #{loginname}
+	        	<if test="startTime != null">and createTime >= #{startTime}</if>
+        	)deptable 
+    </select>
+    
+    <select id="getWithdrawAmount" parameterType="java.util.Map" resultType="java.lang.Double">
+        SELECT sum(amount) from proposal WHERE type=503 and flag=2  
+		and loginname = #{loginname}
+        <if test="startTime != null">and createTime >= #{startTime}</if>
+    </select>
+    
+    <select id="getYouHuiAmount" parameterType="java.util.Map" resultType="java.lang.Double">       	
+        SELECT SUM(p.amount) + p2.gift2 
+        FROM proposal p,
+        		(select SUM(giftamount) gift2 FROM proposal where loginname = #{loginname} and flag = #{pstatus} and giftamount > #{amount} )
+        	 p2
+		WHERE 
+			p.loginname = #{loginname} and p.flag = #{pstatus}
+        	and	(p.giftamount is null or p.giftamount = #{amount} ) 
+        	and p.type not in( #{depositcode} , #{withdrawalcode})  
+    </select>
+    
+    <select id="existNotAuditedProposal" parameterType="java.util.Map" resultType="java.lang.Integer">
+        select
+        count(1)
+        from
+        proposal
+        <where>
+            <if test="userList != null and userList.size() != 0">
+                loginname in
+                <foreach collection="userList" index="index" item="item" open="(" separator="," close=")">
+                    #{item.loginName}
+                </foreach>
+            </if>
+            <if test="flag != null">AND flag = #{flag}</if>
+            <if test="type != null">AND type = #{type}</if>
+            <if test="createTime != null">AND createTime >= #{createTime}</if>
+            <if test="typeList != null and typeList.size() != 0">
+                AND type in
+                <foreach collection="typeList" index="index" item="item" open="(" separator="," close=")">
+                    #{item}
+                </foreach>
+            </if>
+        </where>
+    </select>
+    
+    
+     <!-- 抱歉，你之前的秒付提款尚未审核完，暂时不能使用秒付提款 -->
+     <select id="existNotMsbankAuditedProposal" parameterType="java.util.Map" resultType="Proposal">
+        select
+        <include refid="columns_sql"/>
+        from
+        proposal
+        <where>
+            <if test="userList != null and userList.size() != 0">
+                loginname in
+                <foreach collection="userList" index="index" item="item" open="(" separator="," close=")">
+                    #{item.loginName}
+                </foreach>
+            </if>
+            <if test="loginname != null">AND loginname = #{loginname}</if>
+            <if test="passflag != null">AND passflag = #{passflag}</if>
+            <if test="mstype != null">AND mstype = #{mstype}</if>
+            <if test="msflag != null">AND msflag = #{msflag}</if>
+            <if test="unknowflag != null">AND unknowflag = #{unknowflag}</if>
+            <if test="createTime != null">AND createTime >= #{createTime}</if>
+             <if test="flagList != null and flagList.size() != 0">
+                AND flag in
+                <foreach collection="flagList" index="index" item="item" open="(" separator="," close=")">
+                    #{item}
+                </foreach>
+            </if>
+        </where>
+    </select>
+
+	<select id="single" parameterType="java.util.Map" resultType="Proposal">
+		select
+		<include refid="columns_sql" />
+		from
+		proposal
+		where 1 = 1
+		<if test="shippingCode != null">AND shippingcode = #{shippingCode}</if>
+		<if test="type != null">AND type = #{type}</if>
+	</select>
+	
+	<select id="findList" parameterType="java.util.Map" resultType="Proposal">
+		select
+		<include refid="columns_sql" />
+		from
+		proposal
+		<where>
+			<if test="loginName != null">loginname = #{loginName}</if>
+			<if test="type != null">AND type = #{type}</if>
+			<if test="startTime != null"><![CDATA[and createTime >= #{startTime}]]></if>
+			<if test="endTime != null"><![CDATA[and createTime <= #{endTime}]]></if>
+		</where>
+		order by createTime desc
+	</select>
+	
+	<select id="experienceGoldTimes" parameterType="java.util.Map" resultType="java.lang.Integer">
+		select
+		count(1)
+		from
+		proposal
+		where 1 = 1
+		<if test="loginName != null">AND loginname = #{loginName}</if>
+		<if test="type != null">AND type = #{type}</if>
+	</select>
+	
+	<select id="countFirstDeposit" parameterType="java.util.Map" resultType="java.lang.Integer">
+		select
+		count(1)
+		from
+		proposal p,proposal_extend pe
+		where p.pno = pe.pno and p.loginname = #{loginname}
+		<if test="preferentialList != null and preferentialList.size() != 0">
+			and preferential_id in
+            <foreach collection="preferentialList" index="index" item="item" open="(" separator="," close=")">
+                #{item}
+            </foreach>
+        </if>
+	</select>
+	
+	<select id="count" parameterType="java.util.Map" resultType="java.lang.Integer">
+		select
+		count(1)
+		from
+		proposal p,proposal_extend pe
+		where p.pno = pe.pno
+		<if test="platform != null and platform != ''">AND platform = #{platform}</if>
+		<if test="preferentialId != null">AND preferential_id = #{preferentialId}</if>
+	</select>
+</mapper>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.nnti.pay.dao.master.IMasterTotalDepositDao">
+	
+	<insert id="insert" parameterType="TotalDeposit">
+		INSERT 
+		INTO 
+		total_deposits
+		(
+			<trim suffixOverrides=",">
+            	<if test="loginname != null">loginname,</if>
+            	<if test="allDeposit != null">allDeposit,</if>
+            	<if test="oneDeposit != null">oneDeposit,</if>
+            	<if test="twoDeposit != null">twoDeposit,</if>
+            	<if test="extend1 != null">extend1,</if>
+            	<if test="extend2 != null">extend2,</if>
+            	<if test="extend3 != null">extend3,</if>
+            	<if test="createTime != null">createTime,</if>
+            	<if test="updateTime != null">updateTime</if>
+        	</trim>
+        ) 
+        VALUES 
+        (
+			<trim suffixOverrides=",">
+            	<if test="loginname != null">#{loginname},</if>
+            	<if test="allDeposit != null">#{allDeposit},</if>
+				<if test="oneDeposit != null">#{oneDeposit},</if>
+            	<if test="twoDeposit != null">#{twoDeposit},</if>
+            	<if test="extend1 != null">#{extend1},</if>
+            	<if test="extend2 != null">#{extend2},</if>
+            	<if test="extend3 != null">#{extend3},</if>
+            	<if test="createTime != null">#{createTime},</if>
+            	<if test="updateTime != null">#{updateTime}</if>
+        	</trim>
+		)
+	</insert>
+	
+    <update id="update" parameterType="TotalDeposit">
+		UPDATE 
+		total_deposits
+		<set>
+			<if test="loginname != null">loginname = #{loginname},</if>
+            <if test="allDeposit != null">allDeposit = #{allDeposit},</if>
+            <if test="oneDeposit != null">oneDeposit = #{oneDeposit},</if>
+            <if test="twoDeposit != null">twoDeposit = #{twoDeposit},</if>
+            <if test="extend1 != null">extend1 = #{extend1},</if>
+            <if test="extend2 != null">extend2 = #{extend2},</if>
+            <if test="extend3 != null">extend3 = #{extend3},</if>
+            <if test="createTime != null">createTime = #{createTime},</if>
+            <if test="updateTime != null">updateTime = #{updateTime}</if>
+		</set>
+        <where>
+			id = #{id}
+		</where>
+	</update>
+</mapper>

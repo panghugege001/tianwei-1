@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.nnti.common.dao.slave.ISlaveBankInfoDao">
+
+    <sql id="columns_sql">
+		Id as id,
+		username as userName,
+		bankname as bankName,
+		useable as useable,
+		amount as amount,
+		remark as remark,
+		banktype as bankType,
+		type as type
+	</sql>
+
+    <select id="findById" parameterType="java.lang.Integer" resultType="BankInfo">
+        select
+        <include refid="columns_sql"/>
+        from
+        bankinfo
+        WHERE id = #{0}
+    </select>
+    
+    <select id="getBank" parameterType="Map" resultType="BankInfo">
+        select
+        <include refid="columns_sql"/>
+        from
+        bankinfo
+        WHERE bankcard =  #{bankCard}
+    </select>
+    
+    
+    
+
+    <select id="findBankInfoList" parameterType="BankInfo" resultType="BankInfo">
+        select
+        <include refid="columns_sql"/>
+        from
+        bankinfo
+        <where>
+            <if test="type != null">type = #{type}</if>
+            <if test="useable != null">AND useable = #{useable}</if>
+        </where>
+    </select>
+
+    <select id="findBankInfoList2" parameterType="Map" resultType="BankInfo">
+        select
+        <include refid="columns_sql"/>
+        from
+        bankinfo
+        <where>
+            <if test="types != null">
+                type not in
+                <foreach item="item" collection="types" open="(" separator="," close=")">
+                    #{item}
+                </foreach>
+            </if>
+            <if test="useable != null">AND useable = #{useable}</if>
+            <if test="bankcard != null">AND bankcard = #{bankcard}</if>
+        </where>
+    </select>
+
+    <select id="findZfbBankInfo" parameterType="BankInfo" resultType="BankInfo">
+        SELECT * FROM bankinfo
+        <where>
+            <if test="type != null">type = #{type}</if>
+            <if test="isShow != null">AND isShow = #{isShow}</if>
+            <if test="useable != null">AND useable = #{useable}</if>
+            <if test="bankName != null">AND bankName = #{bankName}</if>
+            <if test="userName != null">AND userName = #{userName}</if>
+            <if test="userRole != null">AND userRole like #{userRole}</if>
+            <if test="zfbImgCode != null">AND zfbImgCode is not null AND zfbImgCode != ''</if>
+            <if test="zfbImgCode == null">AND (zfbImgCode is null OR zfbImgCode = '')</if>
+            AND scanAccount != #{scanAccount}
+            <if test="vpnName != null">AND vpnName = #{vpnName}</if>
+        </where>
+        ORDER BY rand()
+    </select>
+    
+     <select id="findDepositBankInfo" parameterType="BankInfo" resultType="BankInfo">
+        SELECT * FROM bankinfo
+        <where>
+        
+            <if test="type != null">type = #{type}</if>
+            <if test="isShow != null">AND isShow = #{isShow}</if>
+            <if test="useable != null">AND useable = #{useable}</if>
+            <if test="userRole != null">AND userRole like #{userRole}</if>
+            <if test="bankName != null">AND bankName = #{bankName} AND 1=1 </if>
+        </where>
+        ORDER BY rand()
+    </select>
+    
+    
+    
+</mapper>

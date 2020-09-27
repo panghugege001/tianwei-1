@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.nnti.common.dao.slave.ISlaveDictionaryDao">
+	
+    <sql id="columns_sql">
+        id as id,
+        dict_type as dictType,
+        dict_name as dictName,
+        dict_value as dictValue,
+        dict_desc as dictDesc,
+        dict_show as dictShow,
+        order_by as orderBy,
+        useable as useable
+    </sql>
+
+    <select id="get" parameterType="java.lang.Long" resultType="Dictionary">
+        SELECT
+        <include refid="columns_sql"/>
+        FROM
+        dictionary
+        <where>id = #{0}</where>
+    </select>
+
+    <select id="findByCondition" parameterType="Dictionary" resultType="Dictionary">
+        SELECT
+        <include refid="columns_sql"/>
+        FROM dictionary
+        <where>
+            <if test="dictType != null and dictType !='' ">dict_type = #{dictType}</if>
+            <if test="dictName != null and dictName !='' ">AND dict_name = #{dictName}</if>
+            <if test="useable != null and useable !=''">AND useable = #{useable}</if>
+            <if test="orderBy != null and orderBy !=''">AND order_by = #{orderBy}</if>
+        </where>
+        ORDER BY order_by ASC
+    </select>
+</mapper>

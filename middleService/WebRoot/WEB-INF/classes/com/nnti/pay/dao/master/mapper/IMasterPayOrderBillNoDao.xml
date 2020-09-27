@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.nnti.pay.dao.master.IMasterPayOrderBillNoDao">
+		
+	<insert id="insert" parameterType="PayOrderBillNo">
+		INSERT 
+		INTO 
+		payorderbillno
+		(
+        	<trim suffixOverrides=",">
+            	<if test="billNo != null">billNo,</if>
+            	<if test="loginName != null">loginName,</if>
+            	<if test="payPlatform != null">payPlatform,</if>
+            	<if test="money != null">money,</if>
+            	<if test="remark != null">remark,</if>
+        	</trim>
+        ) 
+        VALUES 
+        (
+        	<trim suffixOverrides=",">
+            	<if test="billNo != null">#{billNo},</if>
+            	<if test="loginName != null">#{loginName},</if>
+            	<if test="payPlatform != null">#{payPlatform},</if>
+            	<if test="money != null">#{money},</if>
+            	<if test="remark != null">#{remark},</if>
+        	</trim>
+		)
+	</insert>
+</mapper>

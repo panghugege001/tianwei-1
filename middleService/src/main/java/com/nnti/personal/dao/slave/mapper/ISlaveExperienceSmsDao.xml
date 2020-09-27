@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.nnti.personal.dao.slave.ISlaveExperienceSmsDao">
+
+	<sql id="columns_sql">
+		id as id ,
+		phone as phone ,
+		ip_address as ipAddress ,
+		gateway_id as gatewayId ,
+		create_time as createTime ,
+		send_time as
+		sendTime ,
+		sms_content as smsContent
+	</sql>
+	
+	
+
+	<select id="findExperienceSmsByPhone" parameterType="ExperienceSms"
+		resultType="ExperienceSms">
+		SELECT
+		<include refid="columns_sql" />
+		FROM
+		
+		experience_sms t
+		WHERE t.phone = #{phone}
+	</select>
+	
+	
+
+</mapper>

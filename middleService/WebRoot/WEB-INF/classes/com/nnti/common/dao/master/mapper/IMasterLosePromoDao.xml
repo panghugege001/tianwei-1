@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.nnti.common.dao.master.IMasterLosePromoDao">
+    
+	<update id="update" parameterType="java.util.Map">
+    	update
+    	losepromo
+    	set
+    	status = #{status}
+		<where>
+			<if test="userName != null">username = #{userName}</if>
+			<if test="platform != null">and platform = #{platform}</if>
+			<if test="conditionStatus != null">and status = #{conditionStatus}</if>
+		</where>
+    </update>
+</mapper>

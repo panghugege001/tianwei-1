@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.nnti.personal.dao.master.IMasterTopicInfoDao">    
+	
+	<insert id="insert" parameterType="TopicInfo">
+		INSERT 
+		INTO 
+		topicinfo
+		(
+			<trim suffixOverrides=",">
+				<if test="title != null">title,</if>
+				<if test="content != null">content,</if>
+				<if test="createTime != null">create_time,</if>
+				<if test="createUname != null">create_uname,</if>
+				<if test="ipAddress != null">ip_address,</if>
+				<if test="flag != null">flag,</if>
+				<if test="reCount != null">re_count,</if>
+				<if test="topicType != null">topic_type,</if>
+				<if test="userNameType != null">user_name_type,</if>
+				<if test="topicStatus != null">topic_status,</if>
+				<if test="isAdminRead != null">is_admin_read,</if>
+			</trim>
+		)
+		VALUES 
+		(
+			<trim suffixOverrides=",">
+				<if test="title != null">#{title},</if>
+				<if test="content != null">#{content},</if>
+				<if test="createTime != null">#{createTime},</if>
+				<if test="createUname != null">#{createUname},</if>
+				<if test="ipAddress != null">#{ipAddress},</if>
+				<if test="flag != null">#{flag},</if>
+				<if test="reCount != null">#{reCount},</if>
+				<if test="topicType != null">#{topicType},</if>
+				<if test="userNameType != null">#{userNameType},</if>
+				<if test="topicStatus != null">#{topicStatus},</if>
+				<if test="isAdminRead != null">#{isAdminRead},</if>
+			</trim>
+		)
+		<selectKey resultType="java.lang.Integer" keyProperty="id">  
+			SELECT LAST_INSERT_ID() AS ID
+        </selectKey>
+	</insert>
+	
+	<delete id="delete" parameterType="java.lang.Integer">
+		delete 
+		from 
+		topicinfo
+		where id = #{0}
+	</delete>
+</mapper>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.nnti.personal.dao.slave.ISlaveReplyInfoDao">
+	
+	<sql id="columns_sql">
+		id as id,
+		topic_id as topicId,
+		content as content,
+		create_time as create_time,
+		create_uname as createUname,
+		ip_address as ipAddress,
+		reply_type as replyType
+	</sql>
+</mapper>

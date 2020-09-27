@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.nnti.common.dao.slave.ISlaveCreditLogDao">
+	
+	<sql id="columns_sql">
+		id as id,
+		loginname as loginName,
+		createtime as createTime,
+		type as type,
+		credit as credit,
+		newCredit as newCredit,
+		remit as remit,
+		remark as remark
+	</sql>
+	
+	<select id="findCreditLogList" parameterType="CreditLog" resultType="CreditLog">
+		select
+		<include refid="columns_sql" />
+		from
+		creditlogs
+	</select>
+	
+	<select id="count" parameterType="CreditLog" resultType="java.lang.Integer">
+		select
+		count(1)
+		from
+		creditlogs
+    </select>    
+</mapper>

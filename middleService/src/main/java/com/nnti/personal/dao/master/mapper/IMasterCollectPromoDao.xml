@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.nnti.personal.dao.master.IMasterCollectPromoDao">
+
+	<sql id="columns_sql">
+		pno as pno,
+		username as userName,
+		amount as amount,
+		times as times,
+		status as status,
+		betting as betting,
+		creattime as createTime,
+		platform as platform,
+		remark as remark,
+		collectID as collectId
+	</sql>
+
+	<select id="findList" parameterType="java.util.Map" resultType="CollectPromo">
+		select
+		<include refid="columns_sql" />
+		from
+		collectpromo
+		where 1 = 1
+		<if test="null != userName">and username = #{userName}</if>
+		<if test="null != platform">and platform = #{platform}</if>
+		<if test="null != status">and status = #{status}</if>
+	</select>
+
+	<update id="update" parameterType="java.util.Map">
+		update
+		collectpromo
+		set
+		status = #{status}
+		<where>
+			<if test="null != userName">and username = #{userName}</if>
+			<if test="null != platform">and platform = #{platform}</if>
+			<if test="null != conditionStatus">and status = #{conditionStatus}</if>
+		</where>
+	</update>
+</mapper>

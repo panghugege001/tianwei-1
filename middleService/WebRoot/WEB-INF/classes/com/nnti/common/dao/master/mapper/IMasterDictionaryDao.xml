@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.nnti.common.dao.master.IMasterDictionaryDao">
+	
+    <insert id="insert" parameterType="Dictionary" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO dictionary (
+        <trim suffixOverrides=",">
+            <if test="dictType != null">dict_type,</if>
+            <if test="dictName != null">dict_name,</if>
+            <if test="dictValue != null">dict_value,</if>
+            <if test="dictDesc != null">dict_desc,</if>
+            <if test="orderBy != null">order_by,</if>
+            <if test="useable != null">useable,</if>
+        </trim>
+        ) VALUES (
+        <trim suffixOverrides=",">
+            <if test="dictType != null">#{dictType},</if>
+            <if test="dictName != null">#{dictName},</if>
+            <if test="dictValue != null">#{dictValue},</if>
+            <if test="dictDesc != null">#{dictDesc},</if>
+            <if test="orderBy != null">#{orderBy},</if>
+            <if test="useable != null">#{useable},</if>
+        </trim>
+        )
+    </insert>
+
+    <update id="update" parameterType="Dictionary">
+        UPDATE dictionary
+        <set>
+            <if test="dictType != null">dict_type = #{dictType},</if>
+            <if test="dictName != null">dict_name = #{dictName},</if>
+            <if test="dictValue != null">dict_value = #{dictValue},</if>
+            <if test="dictDesc != null">dict_desc = #{dictDesc},</if>
+            <if test="orderBy != null">order_by = #{orderBy},</if>
+            <if test="useable != null">useable = #{useable},</if>
+        </set>
+        <where>id = #{id}</where>
+    </update>
+
+    <delete id="delete" parameterType="java.lang.Long">
+        DELETE FROM dictionary
+        <where>id = #{id}</where>
+    </delete>
+</mapper>

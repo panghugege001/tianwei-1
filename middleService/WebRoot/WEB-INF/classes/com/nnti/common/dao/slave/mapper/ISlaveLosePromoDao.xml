@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.nnti.common.dao.slave.ISlaveLosePromoDao">
+	
+	<sql id="columns_sql">
+		pno as pno,
+		username as userName,
+		amount as amount,
+		deduct as deduct,
+		rate as rate,
+		promo as promo,
+		times as times,
+		status as status,
+		betting as betting,
+		creattime as creatTime,
+		gettime as getTime,
+		promodate as promoDate,
+		platform as platform,
+		remark as remark
+	</sql>
+	
+	<select id="findPageList" parameterType="java.util.Map" resultType="LosePromo">
+		select
+        <include refid="columns_sql" />
+		from
+        losepromo
+		<where>
+			<if test="userName != null">username = #{userName}</if>
+			<if test="null != conditionType and conditionType == 'gd'">
+				<![CDATA[ and (status <> '0' or (status = '0' and creattime ＞＝ #{creatTime})) ]]>
+			</if>
+        </where>
+        order by creattime desc
+	</select>
+	
+	<select id="findList" parameterType="java.util.Map" resultType="LosePromo">
+		select
+        <include refid="columns_sql" />
+		from
+        losepromo
+		<where>
+			<if test="userName != null">username = #{userName}</if>
+			<if test="platform != null">and platform = #{platform}</if>
+			<if test="status != null">and status = #{status}</if>
+		</where>
+	</select>	
+</mapper>

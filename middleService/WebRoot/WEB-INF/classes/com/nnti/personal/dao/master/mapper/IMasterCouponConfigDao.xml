@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.nnti.personal.dao.master.IMasterCouponConfigDao">
+
+	<sql id="columns_sql">
+		id as id,
+		platform_id as platformId,
+		platform_name as platformName,
+		coupon_type as couponType,
+		coupon_code as couponCode,
+		percent as percent,
+		gift_amount as giftAmount,
+		bet_multiples as betMultiples,
+		min_amount as minAmount,
+		max_amount as maxAmount,
+		limit_money as limitMoney,
+		remark as remark,
+		status as status,
+		is_delete as isDelete,
+		receive_time as receiveTime,
+		login_name as loginName,
+		create_time as createTime,
+		create_user as createUser,
+		delete_time as deleteTime,
+		delete_user as deleteUser,
+		audit_time as auditTime,
+		audit_user as auditUser
+	</sql>
+
+	<select id="findList" parameterType="java.util.Map" resultType="com.nnti.personal.model.vo.CouponConfig">
+		select
+		<include refid="columns_sql" />
+		from
+		coupon_config
+		where is_delete = 'N'
+		<if test="couponType != null and couponType != ''">and coupon_type = #{couponType}</if>
+		<if test="couponCode != null and couponCode != ''">and coupon_code = #{couponCode}</if>
+	</select>
+
+	<update id="update" parameterType="java.util.Map">
+		update
+		coupon_config
+		<set>
+			<if test="status != null and status != ''">status = #{status},</if>
+			<if test="loginName != null and loginName != ''">login_name = #{loginName},</if>
+			<if test="platformId != null and platformId != ''">platform_id = #{platformId},</if>
+			<if test="platformName != null and platformName != ''">platform_name = #{platformName},</if>
+			<if test="receiveTime != null">receive_time = #{receiveTime},</if>
+		</set>
+		<where>
+			id = #{id}
+		</where>
+	</update>
+</mapper>

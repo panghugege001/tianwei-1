@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.nnti.pay.dao.slave.ISlaveMerchantPayDao">
+	
+	<sql id="columns_sql">
+        id as id,
+        merchantCode as merchantCode,
+        createTime as createTime,
+        updateTime as updateTime,
+        updateBy as updateBy,
+        payName as payName,
+        as_name as asName,
+        show_name as showName,
+        type as type,
+        usetype as usetype,
+        signKey as signKey,
+        notifyUrl as notifyUrl,
+        shopUrl as shopUrl,
+        fee as fee,
+        paySwitch as paySwitch,
+        useable as useable,
+        amountCut as amountCut,
+        payPlatform as payPlatform,
+        pcFee as pcFee,
+        minPay as minPay,
+        maxPay as maxPay,
+        levels as levels,
+        apiUrl as apiUrl,
+        systemCode as systemCode,
+        appPay as appPay,
+        payUrl as payUrl,
+        payWay as payWay,
+        payCenterUrl as payCenterUrl,
+        remain as remain,
+        remark as remark,
+		phoneFee as	phoneFee
+	</sql>
+	
+	<select id="get" parameterType="java.lang.Long" resultType="MerchantPay">
+		SELECT
+		<include refid="columns_sql" />
+        FROM 
+        merchantpay
+		<where>
+			id = #{0}
+		</where>
+	</select>
+	
+    <select id="findByCondition" parameterType="java.util.Map" resultType="MerchantPay">
+		SELECT
+        <include refid="columns_sql" />
+		FROM 
+		merchantpay
+		<where>
+			<if test="merchantCode != null and merchantCode != ''">merchantCode = #{merchantCode}</if>
+            <if test="payPlatform != null and payPlatform != ''">AND payPlatform = #{payPlatform}</if>
+            <if test="paySwitch != null ">AND paySwitch = #{paySwitch}</if>
+            <if test="useable != null ">AND useable = #{useable}</if>
+            <if test="payWay != null ">AND payWay = #{payWay}</if>
+            <if test="payName != null and payName != ''">AND payName like "%"#{payName}</if>
+			<if test="usetype != null">
+				AND usetype in
+				<foreach collection="usetype" item="item" index="index" open="(" separator="," close=")">
+   					#{item}
+                </foreach>
+			</if>
+		</where>
+	</select>
+</mapper>

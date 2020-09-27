@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.nnti.common.dao.master.IMasterQuestionStatusDao">
+
+
+  <sql id="columns_sql">
+		loginname,
+		errortimes,
+		createtime,
+		updatetime,
+		remark
+	</sql>
+	
+	<select id="get" parameterType="java.lang.String" resultType="QuestionStatus">
+		select
+        <include refid="columns_sql" />
+		from
+        question_status
+		where loginname = #{0}
+    </select>
+	
+	<update id="update" parameterType="QuestionStatus">
+		update
+		question_status
+        <set>
+            <if test="errortimes != null">errortimes = #{errortimes},</if>
+            <if test="createtime != null">createtime = #{createtime},</if>
+            <if test="updatetime != null">updatetime = #{updatetime},</if>
+            <if test="remark != null">remark = #{remark},</if>
+        </set>
+        <where>
+			loginname = #{loginname}
+        </where>
+    </update>
+    
+    <update id="save" parameterType="QuestionStatus">
+    	INSERT
+		INTO
+		question_status
+		(
+			<trim suffixOverrides=",">
+       			<if test="loginname != null">loginname,</if>
+            	<if test="errortimes != null">errortimes,</if>
+            	<if test="createtime != null">createtime,</if>
+            	<if test="updatetime != null">updatetime,</if>
+            	<if test="remark != null">remark,</if>
+        	</trim>
+		)
+		VALUES
+		(
+			<trim suffixOverrides=",">
+				<if test="loginname != null">#{loginname},</if>
+            	<if test="errortimes != null">#{errortimes},</if>
+            	<if test="createtime != null">#{createtime},</if>
+            	<if test="updatetime != null">#{updatetime},</if>
+            	<if test="remark != null">#{remark},</if>
+        	</trim>
+        )
+    </update>
+	
+</mapper>

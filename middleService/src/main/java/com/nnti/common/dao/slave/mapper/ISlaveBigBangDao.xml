@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.nnti.common.dao.slave.ISlaveBigBangDao">
+
+	<sql id="columns_sql">
+		id as id,
+		username as userName,
+		netwin_lose as netWinLose,
+		startTime as startTime,
+		endTime as endTime,
+		createTime as createTime,
+		bonus as bonus,
+		status as status,
+		giftmoney as giftMoney,
+		times as times,
+		distributeTime as distributeTime,
+		getTime as getTime,
+		betAmount as betAmount,
+		remark as remark,
+		distributeDay as distributeDay,
+		<!-- transferOutAmount as transferOutAmount, -->
+		platform as platform
+	</sql>
+
+	<select id="count" parameterType="java.util.Map" resultType="java.lang.Integer">
+		select
+		count(1)
+		from
+		ptbigbang
+		<where>
+			<if test="userName != null">username = #{userName}</if>
+			<if test="platform != null">
+				<choose>
+					<when test="platform == 'PT'">and (platform = #{platform} or platform is null)</when>
+					<otherwise>and platform = #{platform}</otherwise>
+				</choose>
+			</if>
+			<if test="conditionStatus != null">and status = #{conditionStatus}></if>
+		</where>
+	</select>
+
+	<select id="findList" parameterType="java.util.Map" resultType="BigBang">
+		select
+		<include refid="columns_sql" />
+		from
+		ptbigbang
+		<where>
+			<if test="userName != null">username = #{userName}</if>
+			<if test="platform != null">
+				<choose>
+					<when test="platform == 'PT'">and (platform = #{platform} or platform is null)</when>
+					<otherwise>and platform = #{platform}</otherwise>
+				</choose>
+			</if>
+			<if test="conditionStatus != null">and status = #{conditionStatus}</if>
+		</where>
+	</select>
+	
+	<select id="findListBySlot" parameterType="java.util.Map" resultType="BigBang">
+		select
+		<include refid="columns_sql" />
+		from
+		ptbigbang
+		<where>
+			username = #{userName}
+			and platform in
+			<foreach item="platform" collection="platforms" open="(" separator="," close=")">
+				#{platform}
+			</foreach>
+			<if test="conditionStatus != null">and status = #{conditionStatus}</if>
+		</where>
+	</select>
+</mapper>

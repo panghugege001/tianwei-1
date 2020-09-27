@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.nnti.personal.dao.master.IMasterAppPreferentialDao">
+
+	<sql id="columns_sql">
+		id as id,
+		loginname as loginName,
+		transferId as transferId,
+		version as version,
+		createtime as createTime
+	</sql>
+
+<!-- 	<select id="get" parameterType="java.lang.Integer" resultType="AppPreferential"> -->
+<!-- 		select -->
+<!-- 		<include refid="columns_sql" /> -->
+<!-- 		from -->
+<!-- 		experience_gold_t -->
+<!-- 		where id = #{0} -->
+<!-- 	</select> -->
+
+	<select id="findAppPreferentialList" parameterType="java.util.Map" resultType="AppPreferential">
+		select
+		<include refid="columns_sql" />
+		from
+		app_preferential
+		where 1 = 1
+<!-- 		<if test="null != vip">and vip like concat('%', #{vip}, '%')</if> -->
+<!-- 		<if test="null != channel">and is_phone like concat('%', #{channel}, '%')</if> -->
+		<if test="null != loginName">and loginname = #{loginName}</if>
+		<if test="null != version">and version = #{version}</if>
+	</select>
+</mapper>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.nnti.common.dao.master.IMasterBankInfoDao">
+
+	<sql id="columns_sql">
+		Id as id,
+		username as userName,
+		bankname as bankName,
+		useable as useable,
+		amount as amount,
+		remark as remark,
+		banktype as bankType,
+		type as type,
+		paytype as paytype
+	</sql>
+
+	<update id="update" parameterType="BankInfo">
+		UPDATE
+		bankinfo
+		<set>
+			<if test="bankName != null">bankname = #{bankName},</if>
+			<if test="userName != null">username = #{userName},</if>
+			<if test="amount != null">amount = #{amount},</if>
+			<if test="useable != null">useable = #{useable},</if>
+			<if test="type != null">type = #{type},</if>
+			<if test="bankAmount != null">bankamount = #{bankAmount},</if>
+			<if test="isShow != null">isshow = #{isShow},</if>
+		</set>
+		<where>
+			Id = #{id}
+		</where>
+	</update>
+
+
+	<update id="update2" parameterType="java.util.Map">
+		update
+		bankinfo
+		<set>
+			<if test="bankName != null">bankname = #{bankName},</if>
+			<if test="userName != null">username = #{userName},</if>
+			<if test="amount != null">amount = #{amount},</if>
+			<if test="useable != null">useable = #{useable},</if>
+			<if test="type != null">type = #{type},</if>
+			<if test="bankAmount != null">bankamount = #{bankAmount},</if>
+			<if test="updatetime != null">updatetime = #{updatetime},</if>
+		</set>
+		<where>
+			id = #{id}
+		</where>
+	</update>
+
+
+
+
+	<select id="findBankInfoList2" parameterType="Map" resultType="BankInfo">
+		select
+		<include refid="columns_sql" />
+		from
+		bankinfo
+		<where>
+			<if test="types != null">
+				type not in
+				<foreach item="item" collection="types" open="(" separator=","
+					close=")">
+					#{item}
+				</foreach>
+			</if>
+			<if test="useable != null">AND useable = #{useable}</if>
+			<if test="bankcard != null">AND bankcard = #{bankcard}</if>
+		</where>
+	</select>
+
+	<!-- 判断是否达到秒存条件 -->
+	<select id="findBankinfoByParams" parameterType="Map"
+		resultType="BankInfo">
+		select
+		<include refid="columns_sql" />
+		from
+		bankinfo
+		<where>
+			<if test="vpnnames != null">
+				vpnname in
+				<foreach item="item" collection="vpnnames" open="(" separator=","
+					close=")">
+					#{item}
+				</foreach>
+			</if>
+			<if test="banknames != null">
+				 AND bankname in
+				<foreach item="item" collection="banknames" open="(" separator=","
+					close=")">
+					#{item}
+				</foreach>
+			</if>
+			<if test="type != null">AND type = #{type}</if>
+			<if test="isshow != null">AND isshow = #{isshow}</if>
+			<if test="useable != null">AND useable = #{useable}</if>
+			<if test="paytype != null">AND paytype = #{paytype}</if>
+			<if test="userrole !=null">AND userrole like CONCAT('%','${userrole}','%' ) </if>
+			 AND 1=1 order by rand()
+		</where>
+	</select>
+    <select id="findBankInfo" parameterType="Map"   resultType="BankCardinfo">
+		select id,issuebankname, cardname , cardlength, masteraccount, identifylegth ,identifycode, cardtype  from  bankCardinfo
+		<where>
+		     <if test="identifylegth != null">
+		     AND identifylegth = #{identifylegth}
+		     </if>
+		     <if test="identifycode != null">
+		     AND identifycode = #{identifycode}
+		     </if>
+		   
+		     
+		</where>
+	</select>
+	
+	<select id="findBankStatus"  parameterType="java.lang.String" resultType="int" >
+	    select count(1)  from t_bank_status  
+	     where  bankname  =  #{bankName}
+	</select>
+
+</mapper>

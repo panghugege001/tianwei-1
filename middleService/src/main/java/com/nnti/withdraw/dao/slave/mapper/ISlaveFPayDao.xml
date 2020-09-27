@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.nnti.withdraw.dao.slave.ISlaveFPayDao">
+
+    <sql id="columns_sql">
+		pno,
+		amout,
+		bankname,
+		card_number,
+		billno,
+		loginname,
+		accountName,
+		bankAddress,
+		phone,
+		createTime,
+		updateTime,
+		flag,
+		ip
+	</sql>
+
+    <select id="get" parameterType="java.lang.String" resultType="FPayorder">
+        select
+        <include refid="columns_sql" />
+        from
+        fpayorder
+		where pno = #{0}
+    </select>
+    
+    <select id="getByBillno" parameterType="java.lang.String" resultType="FPayorder">
+        select
+        <include refid="columns_sql" />
+        from
+        fpayorder
+		where billno = #{0}
+    </select>
+    
+    <insert id="create" parameterType="FPayorder">
+        insert
+        into
+        fpayorder
+        (
+        <trim suffixOverrides=",">
+            <if test="pno != null">pno,</if>
+            <if test="amout != null">amout,</if>
+            <if test="bankname != null">bankname,</if>
+            <if test="card_number != null">card_number,</if>
+            <if test="billno != null">billno,</if>
+            <if test="loginname != null">loginname,</if>
+            <if test="accountName != null">accountName,</if>
+            <if test="bankAddress != null">bankAddress,</if>
+            <if test="createTime != null">createTime,</if>
+            <if test="updateTime != null">updateTime,</if>
+            <if test="flag != null">flag,</if>
+            <if test="ip != null">ip,</if>
+        </trim>
+        )
+        VALUES
+        (
+        <trim suffixOverrides=",">
+            <if test="pno != null">#{pno},</if>
+            <if test="amout != null">#{amout},</if>
+            <if test="bankname != null">#{bankname},</if>
+            <if test="card_number != null">#{card_number},</if>
+            <if test="billno != null">#{billno},</if>
+            <if test="loginname != null">#{loginname},</if>
+            <if test="accountName != null">#{accountName},</if>
+            <if test="bankAddress != null">#{bankAddress},</if>
+            <if test="createTime != null">#{createTime},</if>
+            <if test="updateTime != null">#{updateTime},</if>
+            <if test="flag != null">#{flag},</if>
+            <if test="ip != null">#{ip},</if>
+        </trim>
+        )
+    </insert>
+    
+    <update id="update" parameterType="FPayorder">
+        UPDATE
+        fpayorder
+        <set>
+            <if test="flag != null">flag = #{flag},</if>
+            <if test="updateTime != null">updateTime = #{updateTime},</if>
+            <if test="remark != null">remark = #{remark},</if>
+        </set>
+        <where>
+            pno = #{pno}
+        </where>
+    </update>
+    
+</mapper>

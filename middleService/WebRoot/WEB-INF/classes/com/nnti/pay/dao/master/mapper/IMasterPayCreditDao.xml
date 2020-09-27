@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.nnti.pay.dao.master.IMasterPayCreditDao">
+	
+	<insert id="insert" parameterType="PayCredit">
+		INSERT 
+		INTO 
+		pay_credit
+		(
+			<trim suffixOverrides=",">
+            	<if test="payOrderNo!=null and payOrderNo!='' ">pay_order_no,</if>
+            	<if test="loginname!=null and loginname!='' ">loginname,</if>
+            	<if test="agentName!=null and agentName!='' ">agent_name,</if>
+            	<if test="intro!=null and intro!='' ">intro,</if>
+            	<if test="partner!=null and partner!='' ">partner,</if>
+            	<if test="userCreateTime!=null ">user_create_time,</if>
+            	<if test="payPlatform!=null and payPlatform!='' ">pay_platform,</if>
+            	<if test="payWay!=null">pay_way,</if>
+            	<if test="deposit!=null">deposit,</if>
+            	<if test="firstDeposit!=null ">first_deposit,</if>
+            	<if test="userFee!=null ">user_fee,</if>
+            	<if test="userGet!=null ">user_get,</if>
+            	<if test="bankFee!=null ">bank_fee,</if>
+            	<if test="bankGet!=null ">bank_get,</if>
+            	<if test="remark!=null and remark!=''">remark,</if>
+            	<if test="createTime!=null ">create_time,</if>
+        	</trim>
+        ) 
+        VALUES 
+		(
+        	<trim suffixOverrides=",">
+				<if test="payOrderNo!=null and payOrderNo!='' ">#{payOrderNo},</if>
+            	<if test="loginname!=null and loginname!='' ">#{loginname},</if>
+				<if test="agentName!=null and agentName!='' ">#{agentName},</if>
+            	<if test="intro!=null and intro!='' ">#{intro},</if>
+            	<if test="partner!=null and partner!='' ">#{partner},</if>
+            	<if test="userCreateTime!=null ">#{userCreateTime},</if>
+            	<if test="payPlatform!=null and payPlatform!='' ">#{payPlatform},</if>
+            	<if test="payWay!=null">#{payWay},</if>
+            	<if test="deposit!=null">#{deposit},</if>
+            	<if test="firstDeposit!=null ">#{firstDeposit},</if>
+            	<if test="userFee!=null ">#{userFee},</if>
+            	<if test="userGet!=null ">#{userGet},</if>
+            	<if test="bankFee!=null ">#{bankFee},</if>
+            	<if test="bankGet!=null ">#{bankGet},</if>
+            	<if test="remark!=null and remark!=''">#{remark},</if>
+            	<if test="createTime!=null ">#{createTime},</if>
+        	</trim>
+		)
+	</insert>
+</mapper>

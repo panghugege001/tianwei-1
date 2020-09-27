@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:task="http://www.springframework.org/schema/task" xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="
+	http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+    http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+    http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task-4.3.xsd
+    http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.3.xsd
+    http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd">
+    
+	<context:component-scan base-package="com.nnti.*.controller" />
+	<context:component-scan base-package="com.nnti.*.advice" />
+	<context:component-scan base-package="com.nnti.*.extend" />
+		
+	<mvc:annotation-driven />
+	
+	<mvc:default-servlet-handler />
+	
+	<!--配置视图解析器-->
+	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver" p:prefix="/WEB-INF/view/" p:suffix=".jsp" p:contentType="text/html;charset=utf-8" />
+	
+	<mvc:resources location="/resources/" mapping="/resources/**" />
+	<mvc:cors>
+		<mvc:mapping path="/**" />
+	</mvc:cors>
+
+	<!--springmvc上传文件时，需要配置MultipartResolver处理器-->
+	<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<!--指定所有上传文件的默认字符集编码-->
+		<property name="defaultEncoding" value="UTF-8" />
+		<!--指定所有上传文件的总大小不能超过1MB。注意maxUploadSize属性的限制不是针对单个文件，而是所有文件的容量之和-->
+		<property name="maxUploadSize" value="1024000" />
+	</bean>
+	
+	<!--使用J2SE提供的方式创建底层的Http请求连接-->
+	<bean id="ky.requestFactory" class="org.springframework.http.client.SimpleClientHttpRequestFactory">
+		<!--设置超时时间-->
+		<property name="readTimeout" value="10000" />
+		<!--设置连接时间-->
+		<property name="connectTimeout" value="5000" />
+	</bean>
+	
+	<!--RestTemplate是spring提供的用于访问Rest服务的客户端-->
+	<bean id="restTemplate" class="org.springframework.web.client.RestTemplate">
+		<constructor-arg ref="ky.requestFactory" />
+		<property name="messageConverters">
+			<list>
+				<bean class="org.springframework.http.converter.FormHttpMessageConverter" />
+				<bean class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter" />
+				<bean class="org.springframework.http.converter.StringHttpMessageConverter">
+					<property name="supportedMediaTypes">
+						<list>
+							<value>text/plain;charset=UTF-8</value>
+						</list>
+					</property>
+				</bean>
+			</list>
+		</property>
+	</bean>
+</beans>

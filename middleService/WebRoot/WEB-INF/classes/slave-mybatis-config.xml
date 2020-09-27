@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	
+	<typeAliases>
+    	<package name="com.nnti.common.model.vo" />
+    	<package name="com.nnti.pay.model.vo" />
+    	<package name="com.nnti.personal.model.vo" />
+    	<package name="com.nnti.withdraw.model.vo" />
+		<package name="com.nnti.Privilege.model.vo" />
+	</typeAliases>
+		
+	<plugins>
+		<plugin interceptor="com.nnti.common.page.PageHelper">
+			<property name="dialect" value="mysql" />
+			<!--该参数默认为false，设置为true时，会将RowBounds第一个参数offset当成pageNum页码使用，和startPage中的pageNum效果一样-->
+			<property name="offsetAsPageNum" value="true" />
+			<!--该参数默认为false，设置为true时，使用RowBounds分页会进行count查询-->
+			<property name="rowBoundsWithCount" value="true" />
+			<!--3.3.0版本可用-分页参数合理化，该参数默认为false，代表禁用-->
+            <!--启用合理化时，如果pageNum<1会查询第一页，如果pageNum>pages会查询最后一页-->
+            <!--禁用合理化时，如果pageNum<1或pageNum>pages会返回空数据-->
+			<property name="reasonable" value="true" />
+		</plugin>
+	</plugins>
+		
+	<mappers>
+		<!--公共部分配置文件(从库)-->
+		<mapper resource="com/nnti/common/dao/slave/mapper/ISlaveBankInfoDao.xml" />
+		<mapper resource="com/nnti/common/dao/slave/mapper/ISlaveBigBangDao.xml" />
+		<mapper resource="com/nnti/common/dao/slave/mapper/ISlaveCashoutDao.xml" />
+		<mapper resource="com/nnti/common/dao/slave/mapper/ISlaveCommonDao.xml" />
+		<mapper resource="com/nnti/common/dao/slave/mapper/ISlaveConstDao.xml" />
+		<mapper resource="com/nnti/common/dao/slave/mapper/ISlaveCreditLogDao.xml" />
+		<mapper resource="com/nnti/common/dao/slave/mapper/ISlaveCreditLogExtendDao.xml" />
+		<mapper resource="com/nnti/common/dao/slave/mapper/ISlaveDictionaryDao.xml" />
+		<mapper resource="com/nnti/common/dao/slave/mapper/ISlavePreferentialRecordDao.xml" />
+		<mapper resource="com/nnti/common/dao/slave/mapper/ISlaveProposalDao.xml" />
+		<mapper resource="com/nnti/common/dao/slave/mapper/ISlaveProposalExtendDao.xml" />
+		<mapper resource="com/nnti/common/dao/slave/mapper/ISlavePTProfitDao.xml" />
+		<mapper resource="com/nnti/common/dao/slave/mapper/ISlaveQuestionDao.xml" />
+		<mapper resource="com/nnti/common/dao/slave/mapper/ISlaveQuestionStatusDao.xml" />
+		<mapper resource="com/nnti/common/dao/slave/mapper/ISlaveTransferDao.xml" />
+		<mapper resource="com/nnti/common/dao/slave/mapper/ISlaveUserBankInfoDao.xml" />
+		<mapper resource="com/nnti/common/dao/slave/mapper/ISlaveAgentVipDao.xml" />
+		<mapper resource="com/nnti/common/dao/slave/mapper/ISlaveLosePromoDao.xml" />
+		<mapper resource="com/nnti/common/dao/slave/mapper/ISlaveSelfRecordDao.xml" />
+		<mapper resource="com/nnti/common/dao/slave/mapper/ISlaveCmbTransferDao.xml" />
+		<!--在线支付配置文件(从库)-->
+		<mapper resource="com/nnti/pay/dao/slave/mapper/ISlaveAlipayAccountDao.xml" />
+		<mapper resource="com/nnti/pay/dao/slave/mapper/ISlaveBankCreditlogsDao.xml" />
+		<mapper resource="com/nnti/pay/dao/slave/mapper/ISlaveDepositOrderDao.xml" />
+		<mapper resource="com/nnti/pay/dao/slave/mapper/ISlaveIntransferDao.xml" />
+		<mapper resource="com/nnti/pay/dao/slave/mapper/ISlaveMerchantPayDao.xml" />
+		<mapper resource="com/nnti/pay/dao/slave/mapper/ISlavePayCreditDao.xml" />
+		<mapper resource="com/nnti/pay/dao/slave/mapper/ISlavePayOrderBillNoDao.xml" />
+		<mapper resource="com/nnti/pay/dao/slave/mapper/ISlavePayOrderDao.xml" />
+		<mapper resource="com/nnti/pay/dao/slave/mapper/ISlaveTaskDao.xml" />
+		<mapper resource="com/nnti/pay/dao/slave/mapper/ISlaveTotalDepositDao.xml" />
+		<!--个人中心配置文件(从库)-->
+		<mapper resource="com/nnti/personal/dao/slave/mapper/ISlavePreferentialConfigDao.xml" />
+		<mapper resource="com/nnti/personal/dao/slave/mapper/ISlaveReplyInfoDao.xml" />
+		<mapper resource="com/nnti/personal/dao/slave/mapper/ISlaveTopicInfoDao.xml" />
+		<mapper resource="com/nnti/personal/dao/slave/mapper/ISlaveTopicStatusDao.xml" />
+		<!--短信反转接口-->
+		<mapper resource="com/nnti/personal/dao/slave/mapper/ISlaveExperienceSmsDao.xml" />
+		<!--提款配置文件(从库)-->
+		<mapper resource="com/nnti/withdraw/dao/slave/mapper/ISlaveFPayDao.xml" />
+		<mapper resource="com/nnti/Privilege/dao/master/mapper/ActivityConfigMapper.xml" />
+
+		<!--红包雨活动-->
+		<mapper resource="com/nnti/personal/dao/slave/mapper/ISlaveRedEnvelopeActivityDao.xml" />
+		<!--圣诞节活动-->
+		<mapper resource="com/nnti/personal/dao/slave/mapper/IChristmasActivitiesDao.xml" />
+	</mappers>
+	
+	
+</configuration>
