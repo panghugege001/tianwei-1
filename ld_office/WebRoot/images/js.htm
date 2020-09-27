@@ -1,0 +1,170 @@
+
+function checkthis(){
+		  	if (myform.username.value == ""){
+				alert("请填写用户名！")
+				myform.username.focus();
+				return false;
+			}else if (myform.password.value == ""){
+				alert("请填写密码！")
+				myform.password.focus();
+				return false;
+			}else{
+				return true;
+			}
+		  }
+		  
+		  function submitthis(){
+		  	if (checkform.rule.value == 0){
+				document.all.chkusername.innerHTML = '<img src=\"/images/e_ico.jpg\" width=\"14\" height=\"14\" hspace=\"4\" align=\"absmiddle\"><font color=\"red\">按要求填写</font>';
+				checkform.username.focus();
+				return false;
+			}else{
+				return true;
+			}
+		  }
+		  
+		  var http_request = false;
+
+function makeRequest(url) {
+
+ document.all.chkusername.innerHTML = '<img src=\"/images/load.gif\" width=\"14\" height=\"14\" hspace=\"4\" align=\"absmiddle\">检测中...';
+ http_request = false;
+
+ if (window.XMLHttpRequest) { 
+  http_request = new XMLHttpRequest();
+  if (http_request.overrideMimeType) {
+   http_request.overrideMimeType('text/xml');
+  }
+ } 
+ else if (window.ActiveXObject) { 
+  try {
+   http_request = new ActiveXObject("Msxml2.XMLHTTP");
+   http_request.setrequestheader("content-type","application/x-www-form-urlencoded; charset=utf-8");
+  } catch (e) {
+   try {
+    http_request = new ActiveXObject("Microsoft.XMLHTTP"); 
+
+   } catch (e) {}
+  }
+ }
+
+ if (!http_request) {
+  document.all.chkusername.innerHTML = '&nbsp;未知错误..';
+  checkform.rule.value = 0;
+  return false;
+ }
+ http_request.onreadystatechange = alertContents;
+ http_request.open('GET', url, true);
+ http_request.send(null);
+
+}
+
+function alertContents() {
+
+ if (http_request.readyState == 4) {
+  if (http_request.status == 200) {
+   var alertmsg = http_request.responseText 
+   if ( alertmsg.indexOf("error1") != -1 )
+    {
+     document.all.chkusername.innerHTML = '<img src=\"/images/e_ico.jpg\" width=\"14\" height=\"14\" hspace=\"4\" align=\"absmiddle\"><font color=\"red\">长度3-15</font>';
+    	checkform.rule.value = 0;
+	}
+   else
+    {
+      if (alertmsg.indexOf("error2") != -1 ) //同上
+      {
+       document.all.chkusername.innerHTML = '<img src=\"/images/e_ico.jpg\" width=\"14\" height=\"14\" hspace=\"4\" align=\"absmiddle\"><font color=\"red\">用户已存在</font>';
+     	checkform.rule.value = 0;
+	  }
+     else if (alertmsg.indexOf("yes") != -1 )  //还是同上
+      {
+       document.all.chkusername.innerHTML = '<img src=\"/images/s_ico.jpg\" width=\"14\" height=\"14\" hspace=\"4\" align=\"absmiddle\"><font color=\"green\">可以注册</font>';
+	   checkform.rule.value =1;
+      }
+    }
+    
+  } 
+  else {
+   document.all.chkusername.innerHTML = '&nbsp;未知错误..';//未知错误处理，这个错误原因也很多
+  }
+ }
+
+}
+
+
+//通用的ajax 仅抓取内容用
+
+
+
+function makeContent(url) {
+ http_request = false;
+
+ if (window.XMLHttpRequest) { 
+  http_request = new XMLHttpRequest();
+  if (http_request.overrideMimeType) {
+   http_request.overrideMimeType('text/xml');
+  }
+ } 
+ else if (window.ActiveXObject) { 
+  try {
+   http_request = new ActiveXObject("Msxml2.XMLHTTP");
+   http_request.setrequestheader("content-type","application/x-www-form-urlencoded; charset=utf-8");
+  } catch (e) {
+   try {
+    http_request = new ActiveXObject("Microsoft.XMLHTTP"); 
+
+   } catch (e) {}
+  }
+ }
+
+ if (!http_request) {
+  document.all.list.innerHTML = '列表获取错误..';
+  return false;
+ }
+ http_request.onreadystatechange = alertContent;
+ http_request.open('GET', url, true);
+ http_request.send(null);
+
+}
+
+function alertContent() {
+
+ if (http_request.readyState == 4) {
+  if (http_request.status == 200) {
+   document.all.list.innerHTML = http_request.responseText
+  } 
+  else {
+   document.all.list.innerHTML = '列表获取错误..';//未知错误处理，这个错误原因也很多
+  }
+ }
+
+}
+
+
+function takenews(a){
+	document.all.list.innerHTML = '<br><img src=\"images/load.gif\" align=\"absmiddle\"> 列表获取中...';
+	makeContent('list.asp?l='+a)
+}	  
+	
+function getmessage(value){
+	parent.document.all.mssagecount.innerHTML = "<a href=\"/bbs/message.asp\" target=\"_blank\"><font color=\"#466289\"><img src=\"image/mssage.gif\" width=\"14\" height=\"11\" hspace=\"3\" border=\"0\" align=\"absmiddle\">您有<strong><font color=\"#FF0000\">"+value+"</font></strong>条新消息</font></a> | "
+}
+
+
+function openmodel(filename,width,height,resizable)
+{
+	var ReV = window.showModalDialog(filename,"","dialogHeight: "+height+"px; dialogWidth: "+width+"px; dialogTop: px; dialogLeft: px; edge: Raised; center: Yes; help: No; resizable: "+resizable+"; status: No;");
+	//var ReV = window.open(filename,"","Height: "+height+"px; Width: "+width+"px; dialogTop: px; dialogLeft: px; edge: Raised; center: Yes; help: No; resizable: "+resizable+"; status: No;");
+	if (ReV == "OK")
+		window.location.reload();
+}
+
+function view(filename,whr){
+	var width = whr.split(".")[0]
+	var height = whr.split(".")[1]
+	var resizable = whr.split(".")[2]
+	var isresizable;
+	if (resizable == 0){isresizable = 'no'}
+	if (resizable == 1){isresizable = 'yes'}
+	openmodel(filename,width,height,isresizable)
+}

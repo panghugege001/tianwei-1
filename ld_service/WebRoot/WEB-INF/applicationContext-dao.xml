@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd">
+
+	<bean id="slaveDao" class="dfh.dao.SlaveDao" scope="prototype">
+		<property name="sessionFactory" ref="sessionFactorySlave" />
+	</bean>
+	
+	<bean id="universalDao" class="dfh.dao.UniversalDao" scope="prototype">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<bean id="userbankinfoDao" class="dfh.dao.UserbankinfoDao" scope="prototype">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<bean id="bankinfoDao" class="dfh.dao.BankinfoDao" scope="prototype">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	<bean id="bankStatusDao" class="dfh.dao.BankStatusDao" scope="prototype">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	<bean id="creditlogsDao" class="dfh.dao.CreditlogsDao" scope="prototype">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	<bean id="memberSignrecordDao" class="dfh.dao.MemberSignrecordDao" scope="prototype">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<bean id="logDao" class="dfh.dao.LogDao" scope="prototype">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<bean id="seqDao" class="dfh.dao.SeqDao" scope="prototype">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<bean id="proposalDao" class="dfh.dao.ProposalDao" scope="prototype">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<bean id="operatorDao" class="dfh.dao.OperatorDao" scope="prototype">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<bean id="gameinfoDao" class="dfh.dao.GGameinfoDao" scope="prototype">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<bean id="taskDao" class="dfh.dao.TaskDao" scope="prototype">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<bean id="annDao" class="dfh.dao.AnnouncementDao" scope="prototype">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<bean id="transferDao" class="dfh.dao.TransferDao" scope="prototype">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<bean id="userDao" class="dfh.dao.UserDao" scope="prototype">
+		<property name="sessionFactory" ref="sessionFactory" />
+		<property name="configurationEncryptor" ref="configurationEncryptor"></property>
+		<property name="logDao" ref="logDao"></property>
+	</bean>
+	<bean id="tradeDao" class="dfh.dao.TradeDao" scope="prototype">
+		<property name="sessionFactory" ref="sessionFactory" />
+		<property name="logDao" ref="logDao" />
+	</bean>
+	<bean id="agentDao" class="dfh.dao.AgentDao" scope="prototype">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<!-- ag试玩账号 -->
+	<bean id="agTryGameDao" class="dfh.dao.AgTryGameDao" scope="prototype">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+		<bean id="pt8CouponDao" class="dfh.dao.Pt8CouponDao" scope="prototype">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	<bean id="netPayDao" class="dfh.dao.NetPayDao" scope="prototype">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	<bean id="platformDao" class="dfh.dao.PlatformDao" scope="prototype">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	<bean id="validatedPayOrderDao" class="dfh.dao.ValidatedPayOrderDao" scope="prototype">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	<bean id="youHuiConfigDao" class="dfh.dao.YouHuiConfigDao" scope="prototype">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<bean id="allMatchDao" class="dfh.dao.AllMatchDao" scope="prototype">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<bean id="tokenInfoDao" class="dfh.dao.TokenInfoDao" scope="prototype">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<bean id="activityCalendarDao" class="dfh.dao.ActivityCalendarDao" scope="prototype">
+		<property name="sessionFactory" ref="sessionFactory"/>
+	</bean>
+
+</beans>

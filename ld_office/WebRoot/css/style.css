@@ -1,0 +1,82 @@
+*{margin:0; padding:0; border:0;}
+
+body{ background-image:url(../images/bg.gif); font-family:helvetica; background-color:#ca6433;}
+body #wrapper{	margin:auto;width:850px;}
+body #wrapper #header-two { width:850px; height:138px; background:url(../images/head3.jpg) top left no-repeat;}
+body #wrapper #header { width:850px; height:100px; background:url(../images/head2.jpg) top left no-repeat;}
+body #wrapper #header-two #head-logo-two { width:400px; padding-left:225px;}
+body #wrapper #header-two #reg { width:141px; float:right;}
+body #wrapper #header #head-logo { width:400px; margin:auto;}
+body #wrapper #header div.headbanner { width:97px; float:right; padding-right:149px;}
+body #wrapper #menu { width:850px; background-image:url(../images/menu/menu-m.gif);}
+body #wrapper #container { width:850px;}
+body #wrapper #container  div.message { width:850px; margin:9px 0px 0px 0px; font-size:12px;}
+body #wrapper #container div.left { width:200px; float:left; margin:10px 0px 0px 0px;}
+body #wrapper #container div.left div.leftcontent { width:180px; margin:auto; margin-top:2px;}
+body #wrapper #container div.left div.leftcontent div.lboxbg { width:170px; background-color:#ebbe85; margin:5px 0px 10px 0px;}
+body #wrapper #container div.right { width:642px; float:right; margin:10px 0px 0px 0px;}
+body #wrapper #container div.right div.mbanner { width:626px; margin:auto;}
+body #wrapper #container div.right div.bottombanner { width:616px; margin:auto; margin-top:10px; padding:0px 5px 0px 5px;}
+body #wrapper #container div.right div.bottombanner div.bbox { width:200px; float:left; padding:0px 2px 0px 3px;}
+body #wrapper #footer { width:850px; height:70px; margin:19px 0px 15px 0px; background-image:url(../images/footer/footer-mid.jpg);}
+body #wrapper #footer div.ftext ul{ list-style:none; text-align:center;}
+body #wrapper #footer div.ftext ul li { display:inline; line-height:35px; margin:0px 7px 0px 7px;}
+body #wrapper #footer div.ftext ul li a{ text-decoration:none; font-size:12px; color:#ffeeb3;}
+
+.ctextlog { font-size:12px; color:#000000; text-align:left; margin-left:2px;}
+.ctext { font-size:12px; color:#000000; text-align:left; letter-spacing:0.07em;}
+.ctextorange {font-size:12px; text-align:left; letter-spacing:0.07em; color:#ca6433;}
+.ctextlorange {font-size:12px; text-align:left; letter-spacing:0.07em; color:#4a2a00; font-weight:bold;}
+.ctext a{ color:#ff4800; text-decoration:none;}
+.ctextred { font-size:12px; color:#d90000; text-align:left;}
+.ctextlightred {font-size:14px; color:#e20000; text-align:left; font-weight:bold;}
+.ctextsmall { font-size:11px; color:#000000; text-align:left;}
+.ctitletext { font-size:14px; color:#000000; text-align:left; font-weight:bold;}
+.ctextwhite { font-size:12px; color:#FFFFFF; text-align:left;}
+.ctextwhitefooter { font-size:11px; color:#FFFFFF; text-align:left;}
+.ctextbrown { font-size:14px; color:#4c1500;  font-weight:bold;letter-spacing:0.07em;}
+.ctextbrown a{ font-size:14px; color:#4c1500;  font-weight:bold;}
+
+/* inner page*/
+body #wrapper #container div.right div.rcontainer{ width:600px; margin:auto; text-align:left; margin-top:10px;}
+body #wrapper #container div.right div.rcontainer div.thead { font-size:14px; color:#432000; text-align:left; font-weight:bold;}
+body #wrapper #container div.right div.rcontainer div.cholder{ width:580px; margin:auto; text-align:left; margin-top:5px;}
+body #wrapper #container div.right div.rcontainer div.choldertwo{ width:560px; margin:auto; text-align:left; margin-top:5px;}
+body #wrapper #container div.right div.rcontainer div.line { width:600px; border-top:1px solid #CCCCCC;}
+body #wrapper #container div.right div.rcontainer div.leftholder { width:150px; float:left; margin:5px 0px 0px 0px; text-align:left;}
+body #wrapper #container div.right div.rcontainer div.rightholder { width:440px; float:right; margin:5px 0px 0px 0px;}
+body #wrapper #container div.right div.rcontainer div.headbg { width:600px; height:30px; background:url(../images/bghead.jpg) top left repeat-x; line-height:30px;}
+body #wrapper #container div.right div.rcontainer div.bgbdy { width:600px; background-color:#f4f3f3; border-bottom:1px solid 939393; margin-bottom:10px;}
+body #wrapper #container div.right div.rcontainer div.bgbdy div.txtcontainer { width:580px; text-align:left; margin:auto; padding-top:10px; padding-bottom:10px;}
+
+
+body #floatbanner { width:65px; left:10px; position:fixed; margin:50px 0px 0px 30px; z-index:999; }
+#btn { background:url(../images/btn.jpg); width:60px; height:20px; border:none; font-size:12px;cursor:hand;}
+
+
+#loginwithdraw { background: url(../images/login-image/button.jpg); width:101px; height:25px;}
+.ctextbigtitle { font-size:18px; color:#000000; text-align:left; letter-spacing:0.07em;}
+#orangebg { background:url(../images/login-image/orange.jpg); width:180px; height:51px; line-height:25px;}
+#bluebg { background:url(../images/login-image/blue.jpg); width:180px; height:51px; line-height:25px;}
+#greenbg { background:url(../images/login-image/green.jpg); width:180px; height:51px; line-height:25px;}
+
+
+.wwctrl{
+color:red;
+width: 95%;
+float: left;
+font-size:12px;
+text-align:left;
+}
+.wwgrp{
+color:red;
+width: 95%;
+float: left;
+font-size:12px;
+text-align:left;
+}
+.errorMessage{
+color:red;
+font-size:12px;
+text-align:left;
+}

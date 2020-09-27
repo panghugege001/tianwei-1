@@ -1,0 +1,118 @@
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN" "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	
+	<package name="telvisit" namespace="/telvisit" extends="struts-default">
+		<global-results>
+			<result name="logout">/office/logout.jsp</result>
+			<result name="index">/office/index.jsp</result>
+			<result name="error">/office/error.jsp</result>
+		</global-results>
+		
+		<action name="generateTask" class="telvisitClass" method="generateTask">
+			<result name="input">/office/functions/generatetask.jsp</result>
+			<result>/office/success.jsp</result>
+		</action>
+		
+		<action name="getTaskList" class="telvisittaskClass" method="getTaskList">
+			<result>/office/functions/usetasklist.jsp</result>
+		</action>
+		
+		<action name="getTaskListForManage" class="telvisittaskClass" method="getTaskListForManage">
+			<result>/office/functions/managetask.jsp</result>
+		</action>
+		
+		<action name="modifyTelVisitTask" class="telvisittaskClass" method="modifyTelVisitTask">
+			<result name="input">/office/functions/modifyTelVisitTask.jsp</result>
+			
+		</action>
+		
+		<action name="updateTask" class="telvisittaskClass" method="updateTask">
+			<result name="input">/office/functions/modifyTelVisitTask.jsp</result>
+		</action>
+		
+		<action name="cancleTelVisitTask" class="telvisittaskClass" method="cancleTelVisitTask">
+			<result name="input">/office/functions/managetask.jsp
+			</result>
+		</action>
+		
+		<action name="getVisitTaskAll" class="telvisitClass" method="getVisitTaskAll">
+			<result>/office/functions/visittasklist.jsp</result>
+		</action>
+		
+		<action name="getVisitTaskAllForUnlock" class="telvisitClass" method="getVisitTaskAllForUnlock">
+			<result>/office/functions/visittasklistForUnlock.jsp</result>
+		</action>
+		
+		<action name="getVisitTaskForUnlockByCondition" class="telvisitClass" method="searchVisits">
+			<result>/office/functions/visittasklistForUnlock.jsp</result>
+		</action>
+		
+		<action name="getVisitTaskForNolockByCondition" class="telvisitClass" method="searchVisits">
+			<result>/office/functions/showTelVisitAll.jsp</result>
+		</action>
+		
+		<action name="getVisitTaskAllForNoUnlock" class="telvisitClass" method="getVisitTaskAllForNoUnlock">
+			<result>/office/functions/showTelVisitAll.jsp</result>
+		</action>
+		
+		<!-- 如果有多个客服对同一个大任务进行回访，则根据同一个任务的回访量排序展示 -->
+		
+		<action name="getCountNumberByOperator" class="telvisitClass" method="getCountNumberByOperator">
+			<result>/office/functions/countnumberdetail.jsp</result>
+		</action>
+		
+		
+		
+		<action name="getTelTaskCount" class="telvisittaskClass" method="getTelTaskCount">
+			<result name="input">/office/functions/countnumber.jsp</result>	
+		</action>
+		
+		<action name="nextpage" class="telvisitClass" method="getVisitTaskAll">
+			<result>/office/functions/visittasklist.jsp</result>
+		</action>
+		
+		<action name="nextpageForCount" class="telvisitClass" method="getVisitTaskAllForUnlock">
+			<result>/office/functions/visittasklistForUnlock.jsp</result>
+		</action>
+		
+		<action name="nextpageForCountNoUnlock" class="telvisitClass" method="getVisitTaskAllForUnlock">
+			<result>/office/functions/showTelVisitAll.jsp</result>
+		</action>
+		
+		<action name="startvisit" class="telvisitClass" method="startvisit">
+			<result>/office/functions/visittasklist.jsp</result>
+		</action>
+		
+		<action name="unlockTelVisit" class="telvisitClass" method="unlockTelVisit">
+			<result type="chain">nextpageForCount</result>	
+		</action>
+		
+		<action name="endvisit" class="telvisitClass" method="endvisit">
+			<result>/office/functions/visitresultconfirm.jsp</result>
+		</action>
+		
+		<action name="visitResult" class="telvisitClass" method="visitResult">
+			<result>/office/functions/visittasklist.jsp</result>
+			<result name="input">/office/functions/visitresultconfirm.jsp</result>
+		</action>
+		
+		<action name="getRemarks" class="telvisitClass" method="getRemarks">
+			<result>/office/functions/visitresult.jsp</result>
+		</action>
+		
+		<action name="getRemarksForLock" class="telvisitClass" method="getRemarks">
+			<result>/office/functions/visitresultforlock.jsp</result>
+		</action>
+		
+		<action name="getRemarksForSee" class="telvisitClass" method="getRemarks">
+			<result>/office/functions/visittasklistfornolock.jsp</result>
+		</action>
+		
+		<action name="searchVisits" class="telvisitClass" method="searchVisits">
+			<result>/office/functions/visittasklist.jsp</result>
+		</action>
+		
+		<action name="visitComplete" class="telvisitClass" method="visitComplete"></action>
+		
+	</package>
+</struts>

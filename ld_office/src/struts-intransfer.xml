@@ -1,0 +1,26 @@
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN" "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="intransfer" namespace="/intransfer" extends="struts-default">
+		<global-results>
+			<result name="logout">/office/logout.jsp</result>
+			<result name="index">/office/index.jsp</result>
+			<result name="error">/office/error.jsp</result>
+		</global-results>
+		
+		<!-- 增加内部转账记录 -->
+		<action name="addintransfer" class="intranferClass" method="addintransfer">
+			<result name="input">/office/functions/intransfer/intransfer.jsp
+			</result>
+		</action>
+
+		<!-- 支付中心 银行转账页面 -->
+		<action name="pay_intransfer" class="intranferClass" method="pay_intransfer">
+			<result name="input">/office/functions/pay/intransfer.jsp</result>
+		</action>
+		<action name="intransfer_tree" class="intranferClass" method="intransfer_tree">
+		</action>
+		<action name="intransfer_save" class="intranferClass" method="intransfer_save">
+		</action>
+		
+	</package>
+</struts>

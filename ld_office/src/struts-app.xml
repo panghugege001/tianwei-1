@@ -1,0 +1,190 @@
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN" "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="app" extends="struts-default" namespace="/app">
+		
+		<!-- 最新优惠配置开始处   -->
+		
+		<action name="queryLatestPreferentialList" class="appAction" method="queryLatestPreferentialList">
+			<result name="input">/app/listLatestPreferential.jsp</result>
+		</action>
+		<action name="addLatestPreferential" class="appAction" method="addLatestPreferential"></action>
+		<action name="activeLatestPreferential" class="appAction" method="activeLatestPreferential"></action>
+		<action name="deleteLatestPreferential" class="appAction" method="deleteLatestPreferential"></action>
+		<action name="singleLatestPreferential" class="appAction" method="singleLatestPreferential">
+			<result name="input">/app/listLatestPreferential.jsp</result>
+			<result name="success">/app/editLatestPreferential.jsp</result>
+		</action>
+		<action name="updateLatestPreferential" class="appAction" method="updateLatestPreferential"></action>
+		<action name="importConstraintAddressConfig" class="appAction" method="importConstraintAddressConfig">
+			<result name="input">/app/listConstraintAddressConfig.jsp</result>
+		</action>
+		<!-- 最新优惠配置结束处   -->
+		
+		<!-- 最新优惠评论配置开始处   -->
+		
+		<action name="queryPreferentialCommentList" class="appAction" method="queryPreferentialCommentList">
+			<result name="input">/app/listPreferentialComment.jsp</result>	
+		</action>
+		<action name="singlePreferentialComment" class="appAction" method="singlePreferentialComment">
+			<result name="input">/app/listPreferentialComment.jsp</result>
+			<result name="success">/app/viewPreferentialComment.jsp</result>
+		</action>
+		<action name="deletePreferentialComment" class="appAction" method="deletePreferentialComment"></action>
+		
+		<!-- 最新优惠评论配置结束处   -->
+		
+		
+		<action name="queryConstraintAddressConfigList" class="appAction" method="queryConstraintAddressConfigList">
+			<result name="input">/app/listConstraintAddressConfig.jsp</result>
+		</action>
+		
+		<action name="addConstraintAddressConfig" class="appAction" method="addConstraintAddressConfig"></action>
+		
+		<action name="queryConstraintAddressConfig" class="appAction" method="queryConstraintAddressConfig">
+			<result name="input">/app/listConstraintAddressConfig.jsp</result>
+			<result name="success">/app/editConstraintAddressConfig.jsp</result>
+		</action>
+		
+		<action name="updateConstraintAddressConfig" class="appAction" method="updateConstraintAddressConfig"></action>
+		
+		<action name="deleteConstraintAddressConfig" class="appAction" method="deleteConstraintAddressConfig"></action>
+		
+		<action name="reloadCache" class="appAction" method="reloadCache"></action>
+		
+		<action name="queryPreferentialConfigList" class="appAction" method="queryPreferentialConfigList">
+			<result name="input">/app/listPreferentialConfig.jsp</result>
+		</action>
+		
+		<action name="addPreferentialConfig" class="appAction" method="addPreferentialConfig"></action>
+		
+		<action name="activePreferentialConfig" class="appAction" method="activePreferentialConfig"></action>
+		
+		<action name="deletePreferentialConfig" class="appAction" method="deletePreferentialConfig"></action>
+		
+		<action name="queryPreferentialConfig" class="appAction" method="queryPreferentialConfig"></action>
+		
+		<action name="updatePreferentialConfig" class="appAction" method="updatePreferentialConfig"></action>
+		
+		
+		<!-- 活动专题配置开始处   -->
+		
+		<action name="querySpecialTopicList" class="appAction" method="querySpecialTopicList">
+			<result name="input">/app/listSpecialTopic.jsp</result>	
+		</action>
+		<action name="addSpecialTopic" class="appAction" method="addSpecialTopic"></action>
+		<action name="activeSpecialTopic" class="appAction" method="activeSpecialTopic"></action>
+		<action name="deleteSpecialTopic" class="appAction" method="deleteSpecialTopic"></action>
+		<action name="singleSpecialTopic" class="appAction" method="singleSpecialTopic">
+			<result name="input">/app/listSpecialTopic.jsp</result>
+			<result name="success">/app/editSpecialTopic.jsp</result>
+		</action>
+		<action name="updateSpecialTopic" class="appAction" method="updateSpecialTopic"></action>
+		
+		<!-- 活动专题配置结束处   -->		
+		
+		<!-- 中奖信息配置 Start  -->
+		
+		<action name="queryLatestWinInfoList" class="appAction" method="queryLatestWinInfoList">
+			<result name="input">/app/listLatestWinInfo.jsp</result>	
+		</action>
+		<action name="addLatestWinInfo" class="appAction" method="addLatestWinInfo"></action>
+		<action name="activeLatestWinInfo" class="appAction" method="activeLatestWinInfo"></action>
+		<action name="deleteLatestWinInfo" class="appAction" method="deleteLatestWinInfo"></action>
+		<action name="singleLatestWinInfo" class="appAction" method="singleLatestWinInfo">
+			<result name="input">/app/listLatestWinInfo.jsp</result>
+			<result name="success">/app/editLatestWinInfo.jsp</result>
+		</action>
+		<action name="updateLatestWinInfo" class="appAction" method="updateLatestWinInfo"></action>
+		
+		<!-- 中奖信息配置 End   -->		
+		
+		<!-- 用户信息配置开始处   -->
+		
+		<action name="queryUserStatusList" class="appAction" method="queryUserStatusList">
+			<result name="input">/app/listUserStatus.jsp</result>
+		</action>
+		<action name="activeUserDiscuss" class="appAction" method="activeUserDiscuss"></action>	
+		
+		<!-- 用户信息配置结束处   -->
+		
+		
+		<!-- 用户手机系统信息配置开始处   -->
+		<action name="queryUserDeviceInfoList" class="appAction" method="queryUserDeviceInfoList">
+			<result name="input">/app/listUserDeviceInfo.jsp</result>
+		</action>
+		
+		<!-- 用户手机系统信息配置结束处   -->
+		
+	</package>
+	
+	<!-- App打包管理 -->
+	<package name="appPak" extends="struts-default" namespace="/appPak">
+		<action name="queryAppPackageVersionList" class="appPakAction" method="queryAppPackageVersionList">
+			<result name="input">/app/pakManage/appPackageVersion.jsp</result>
+		</action>
+		<action name="singleAppPackageVersion" class="appPakAction" method="singleAppPackageVersion">
+			<result name="input">/app/pakManage/appPackageVersion.jsp</result>
+			<result name="success">/app/pakManage/editAppPackageVersion.jsp</result>
+		</action>
+		<action name="singleCopyAppPackageVersion" class="appPakAction" method="singleCopyAppPackageVersion">
+			<result name="input">/app/pakManage/appPackageVersion.jsp</result>
+			<result name="success">/app/pakManage/addCopyAppPackageVersion.jsp</result>
+		</action>
+		<action name="addAppPackageVersion" class="appPakAction" method="addAppPackageVersion"></action>
+		<action name="addCopyAppPackageVersion" class="appPakAction" method="addCopyAppPackageVersion"></action>
+		<action name="deleteAppPackageVersion" class="appPakAction" method="deleteAppPackageVersion"></action>
+		<action name="updateAppPackageVersion" class="appPakAction" method="updateAppPackageVersion"></action>
+		<action name="activeAppPackageVersion" class="appPakAction" method="activeAppPackageVersion"></action>
+		
+		<action name="queryAppPackageVersionCustomList" class="appPakAction" method="queryAppPackageVersionCustomList">
+			<result name="input">/app/pakManage/appPackageVersionCustom.jsp</result>
+		</action>
+		<action name="singleAppPackageVersionCustom" class="appPakAction" method="singleAppPackageVersionCustom">
+			<result name="input">/app/pakManage/appPackageVersionCustom.jsp</result>
+			<result name="success">/app/pakManage/editAppPackageVersionCustom.jsp</result>
+		</action>
+		<action name="addAppPackageVersionCustomList" class="appPakAction" method="addAppPackageVersionCustomList"></action>
+		<action name="deleteAppPackageVersionCustom" class="appPakAction" method="deleteAppPackageVersionCustom"></action>
+		<action name="deleteAppPackageVersionCustomList" class="appPakAction" method="deleteAppPackageVersionCustomList"></action>
+		<action name="updateAppPackageVersionCustom" class="appPakAction" method="updateAppPackageVersionCustom"></action>
+		<action name="activeAppPackageVersionCustom" class="appPakAction" method="activeAppPackageVersionCustom"></action>
+		
+		<action name="selectPackageVersionAgent" class="appPakAction" method="selectPackageVersionAgent">
+			<result name="input">/app/pakManage/appPackageVersionCustom.jsp</result>
+			<result name="success">/app/pakManage/selectAppPackageAgent.jsp</result>
+		</action>
+		<action name="queryAppPackageAgentList" class="appPakAction" method="queryAppPackageAgentList">
+		    <result name="input">/app/pakManage/selectAppPackageAgent.jsp</result>
+		</action>
+		<action name="processAppPackageVersionCustomList" class="appPakAction" method="processAppPackageVersionCustomList"></action>
+		<action name="processAppPackageVersionCustom" class="appPakAction" method="processAppPackageVersionCustom"></action>
+		<action name="resetPakingVersionCustomList" class="appPakAction" method="resetPakingVersionCustomList"></action>
+		<action name="enableForceUpgradeVersionCustomList" class="appPakAction" method="enableForceUpgradeVersionCustomList"></action>
+		<action name="disableForceUpgradeVersionCustomList" class="appPakAction" method="disableForceUpgradeVersionCustomList"></action>
+		
+		<!-- Some Rights -->
+		<action name="queryAppPackageVersionListSomeRights" class="appPakAction" method="queryAppPackageVersionList">
+			<result name="input">/app/pakManage/appPackageVersionSomeRights.jsp</result>
+		</action>
+		<action name="singleAppPackageVersionSomeRights" class="appPakAction" method="singleAppPackageVersion">
+			<result name="input">/app/pakManage/appPackageVersionSomeRights.jsp</result>
+			<result name="success">/app/pakManage/editAppPackageVersion.jsp</result>
+		</action>
+		<action name="singleCopyAppPackageVersionSomeRights" class="appPakAction" method="singleCopyAppPackageVersion">
+			<result name="input">/app/pakManage/appPackageVersionSomeRights.jsp</result>
+			<result name="success">/app/pakManage/addCopyAppPackageVersion.jsp</result>
+		</action>
+		<action name="queryAppPackageVersionCustomListSomeRights" class="appPakAction" method="queryAppPackageVersionCustomList">
+			<result name="input">/app/pakManage/appPackageVersionCustomSomeRights.jsp</result>
+		</action>
+		<action name="singleAppPackageVersionCustomSomeRights" class="appPakAction" method="singleAppPackageVersionCustom">
+			<result name="input">/app/pakManage/appPackageVersionCustomSomeRights.jsp</result>
+			<result name="success">/app/pakManage/editAppPackageVersionCustom.jsp</result>
+		</action>
+		<action name="selectPackageVersionAgentSomeRights" class="appPakAction" method="selectPackageVersionAgent">
+			<result name="input">/app/pakManage/appPackageVersionCustomSomeRights.jsp</result>
+			<result name="success">/app/pakManage/selectAppPackageAgent.jsp</result>
+		</action>
+	</package>
+	
+</struts>

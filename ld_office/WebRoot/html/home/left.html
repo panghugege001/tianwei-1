@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="http://apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+    <script src="/js/bootstrap-confirmation.min.js"></script>
+
+    <style type="text/css">
+        .nav-side-menu {
+            overflow: auto;
+            font-family: verdana;
+            font-size: 12px;
+            font-weight: 200;
+            background-color: #2e353d;
+            position: fixed;
+            top: 0px;
+            width: 300px;
+            height: 100%;
+            color: #e1ffff;
+        }
+        .nav-side-menu .brand {
+            background-color: #23282e;
+            line-height: 50px;
+            display: block;
+            text-align: center;
+            font-size: 14px;
+        }
+        .nav-side-menu .toggle-btn {
+            display: none;
+        }
+        .nav-side-menu ul,
+        .nav-side-menu li {
+            list-style: none;
+            padding: 0px;
+            margin: 0px;
+            line-height: 35px;
+            cursor: pointer;
+            /*
+              .collapsed{
+                 .arrow:before{
+                           font-family: FontAwesome;
+                           content: "\f053";
+                           display: inline-block;
+                           padding-left:10px;
+                           padding-right: 10px;
+                           vertical-align: middle;
+                           float:right;
+                      }
+               }
+          */
+        }
+        .nav-side-menu ul :not(collapsed) .arrow:before,
+        .nav-side-menu li :not(collapsed) .arrow:before {
+            font-family: FontAwesome;
+            content: "\f078";
+            display: inline-block;
+            padding-left: 10px;
+            padding-right: 10px;
+            vertical-align: middle;
+            float: right;
+        }
+        .nav-side-menu ul .active,
+        .nav-side-menu li .active {
+            border-left: 3px solid #d19b3d;
+            background-color: #4f5b69;
+        }
+        .nav-side-menu ul .sub-menu li.active,
+        .nav-side-menu li .sub-menu li.active {
+            color: #d19b3d;
+        }
+        .nav-side-menu ul .sub-menu li.active a,
+        .nav-side-menu li .sub-menu li.active a {
+            color: #d19b3d;
+        }
+        .nav-side-menu ul .sub-menu li,
+        .nav-side-menu li .sub-menu li {
+            background-color: #181c20;
+            border: none;
+            line-height: 28px;
+            border-bottom: 1px solid #23282e;
+            margin-left: 0px;
+        }
+        .nav-side-menu ul .sub-menu li:hover,
+        .nav-side-menu li .sub-menu li:hover {
+            background-color: #020203;
+        }
+        .nav-side-menu ul .sub-menu li:before,
+        .nav-side-menu li .sub-menu li:before {
+            font-family: FontAwesome;
+            content: "\f105";
+            display: inline-block;
+            padding-left: 10px;
+            padding-right: 10px;
+            vertical-align: middle;
+        }
+        .nav-side-menu li {
+            padding-left: 0px;
+            border-left: 3px solid #2e353d;
+            border-bottom: 1px solid #23282e;
+        }
+        .nav-side-menu li a {
+            text-decoration: none;
+            color: #e1ffff;
+            width: 100%;
+            height: 100%;
+        }
+        .nav-side-menu li a i {
+            padding-left: 10px;
+            width: 20px;
+            padding-right: 20px;
+        }
+        .nav-side-menu li:hover {
+            border-left: 3px solid #d19b3d;
+            background-color: #4f5b69;
+            -webkit-transition: all 1s ease;
+            -moz-transition: all 1s ease;
+            -o-transition: all 1s ease;
+            -ms-transition: all 1s ease;
+            transition: all 1s ease;
+        }
+        @media (max-width: 767px) {
+            .nav-side-menu {
+                position: relative;
+                width: 100%;
+                margin-bottom: 10px;
+            }
+            .nav-side-menu .toggle-btn {
+                display: block;
+                cursor: pointer;
+                position: absolute;
+                right: 10px;
+                top: 10px;
+                z-index: 10 !important;
+                padding: 3px;
+                background-color: #ffffff;
+                color: #000;
+                width: 40px;
+                text-align: center;
+            }
+            .brand {
+                text-align: left !important;
+                font-size: 22px;
+                padding-left: 20px;
+                line-height: 50px !important;
+            }
+        }
+        @media (min-width: 767px) {
+            .nav-side-menu .menu-list .menu-content {
+                display: block;
+            }
+        }
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-color: #23282e;
+        }
+
+    </style>
+
+</head>
+<body>
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+<div class="nav-side-menu">
+    <div class="brand"><b><span i18n_key="longduGlobalMgr">天威娱乐后台</span></b>&nbsp;&nbsp;&nbsp;&nbsp;<a id="a_logout"><span i18n_key="exit">退出</span></a>&nbsp;&nbsp;<a id="a_i18n_cn">中</a><span style="color: #23527c">|</span><a id="a_i18n_en">EN</a></div>
+    <div class="menu-list">
+        <ul id="menu-content" class="menu-content collapse in">
+
+        </ul>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(function(){
+
+        initMenu();
+
+        function initMenu() {
+            $.ajax({
+                type: "GET",
+                async: false,
+                url: "/permission/getPermissionList.do",
+                dataType: "json", //表示返回值类型，不必须
+                error: function(response) {
+                    alert(response.code);
+                },
+                success: function(response) {
+                    var permissionList = response.data;
+                    for (var index in permissionList) {
+                        if(permissionList[index].pid == 0) {
+                            $("#menu-content").append('<li data-toggle="collapse" data-target="#mainNav'+ index +'" class="collapsed active"><a href="#"><i class="'+ permissionList[index].icon +'"></i><span i18n_key="'+ permissionList[index].i18nKey +'">'+ permissionList[index].name +'</span><span class="arrow"></span></a></li><ul class="sub-menu collapse" id="mainNav'+ index +'"></ul>');
+                            var subPermissionList = permissionList[index].subPermissonList;
+                            for (var subIndex in subPermissionList) {
+                                $("#mainNav"+index).append('<li focused="false"><a i18n_key="'+ subPermissionList[subIndex].i18nKey +'" target="mainFrame" href="'+ subPermissionList[subIndex].url +'">'+ subPermissionList[subIndex].name +'</a></li>');
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        $("#a_logout").click(function () {
+            $.ajax({
+                type: "GET",
+                async: false,
+                url: "/operator/officeLogout.do",
+                dataType: "json", //表示返回值类型，不必须
+                error: function(response) {
+                    alert(response.code);
+                },
+                success: function(response) {
+                    var code  = response.code;
+                    if(code == "0000") {
+                        window.parent.location.href = "/office/index.jsp";
+                    }else {
+                        alert(response.desc);
+                    }
+                }
+            });
+        });
+
+        $("#a_i18n_en").click(function () {
+            localStorage.setItem("i18n_language","en");
+            i18n("en");
+        });
+
+        $("#a_i18n_cn").click(function () {
+            localStorage.setItem("i18n_language","zh-CN");
+            i18n("cn");
+        });
+
+        function i18n(language) {
+            var i18nKeyArray = "";
+            $("[i18n_key]").each(function() {
+                i18nKey = $(this).attr("i18n_key");
+                if( i18nKey != null && i18nKey != "" && i18nKey != "null") {
+                    i18nKeyArray = i18nKeyArray + i18nKey + ",";
+                }
+            });
+
+            if(i18nKeyArray == "") {
+                return;
+            }
+            i18nKeyArray = i18nKeyArray.substr(0,i18nKeyArray.length-1);
+
+            $.ajax({
+                type: "GET",
+                async: false,
+                url: "/i18n/getI18nMap.do",
+                data: {"language":language,"i18nKeyArray":i18nKeyArray},
+                dataType: "json", //表示返回值类型，不必须
+                error: function(response) {
+                    alert(response.code);
+                },
+                success: function(response) {
+                    var code  = response.code;
+                    if(code == "0000") {
+                        var i18nList = response.data;
+                        if(i18nList == null || i18nList.length == 0) {
+                            return;
+                        }
+                        for (var index in i18nList) {
+                            $("[i18n_key="+ i18nList[index].key +"]").text(i18nList[index].value);
+                        }
+
+                    }else {
+                        alert(response.desc);
+                    }
+                }
+            });
+        }
+
+        initI18n();
+
+        function initI18n() {
+            var language = getLanguage();
+            if(language != 'zh-CN' && language != 'zh') {
+                localStorage.setItem("i18n_language","en");
+                i18n("en");
+            }
+        }
+
+        function getLanguage(){
+            var language = localStorage.getItem("i18n_language");
+            if(language != null) {
+                return language;
+            }else if (navigator.languages != undefined) {
+                return navigator.languages[0];
+            }else if(navigator.browserLanguage != undefined) {
+                return navigator.browserLanguage;
+            }else if(navigator.systemLanguage != undefined) {
+                return navigator.systemLanguage;
+            }else {
+                return navigator.language;
+            }
+        }
+
+        $("[focused='false']").click(function () {
+            $("[focused='true']").css("background-color", "#181c20");
+            $("[focused='true']").attr("focused","false");
+            $(this).css("background-color", "#020203");
+            $(this).attr("focused","true");
+        });
+
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="http://apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+    <script src="/js/bootstrap-confirmation.min.js"></script>
+</head>
+<style type="text/css">
+    th, td {
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    th {
+        color: white;
+        background-color: #4f5b69;
+    }
+
+    .color_grey {
+        background-color: lightblue;
+    }
+
+    body {
+        font-family: 微软雅黑;
+    }
+
+</style>
+<body>
+
+<div class="container-fluid">
+    <div class="panel panel-primary" style="background-color: #4f5b69">
+        <div class="panel-body">
+            <form class="form-inline">
+                <div class="form-group">
+                    <input class="form-control" id="searchForm_id" placeholder="ID">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" id="searchForm_pid" placeholder="父ID">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" id="searchForm_name" placeholder="名称">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" id="searchForm_url" placeholder="URL地址">
+                </div>
+                <div class="form-group">
+                    <select id="searchForm_type" class="form-control">
+                        <option value="">所有类别</option>
+                        <option value="M">主菜单</option>
+                        <option value="S">二级菜单</option>
+                        <option value="O">操作</option>
+                    </select>
+                </div>
+                <a name="btn_searchPermission" href="#" class="btn btn-primary"><span class="glyphicon glyphicon-search"></span></a>
+                <a name="btn_searchPermission" href="#" class="btn btn-primary"><span class="glyphicon glyphicon-refresh"></span></a>
+                <a id="addPermission" href="#" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span></a>
+            </form>
+        </div>
+    </div>
+
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>父ID</th>
+            <th>名称</th>
+            <th>类别</th>
+            <th>URL地址</th>
+            <th>编码</th>
+            <th>国际化key</th>
+            <th colspan="5">操作</th>
+        </tr>
+        </thead>
+        <tbody id="tbody_permission">
+
+        </tbody>
+    </table>
+</div>
+
+<div class="modal fade" id="updatePermissionModal" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header" style="background-color: #4f5b69;color: white">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">修改权限</h4>
+            </div>
+            <div class="modal-body">
+                <form id="updatePermissionForm" class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <label for="updatePermissionForm_id" class="col-sm-2 control-label">父ID</label>
+                        <div class="col-sm-10">
+                            <input id="updatePermissionForm_id" type="text" class="form-control" placeholder="父ID" name="pid" disabled required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <div id="updatePermissionForm_id_alert" class="alert alert-danger" hidden>
+                                id is invalid
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="updatePermissionForm_pid" class="col-sm-2 control-label">父ID</label>
+                        <div class="col-sm-10">
+                            <input id="updatePermissionForm_pid" type="text" class="form-control" placeholder="父ID" name="pid" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <div id="updatePermissionForm_pid_alert" class="alert alert-danger" hidden>
+                                pid is invalid
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="updatePermissionForm_name" class="col-sm-2 control-label">名称</label>
+                        <div class="col-sm-10">
+                            <input id="updatePermissionForm_name" type="text" class="form-control" placeholder="权限名称" name="name" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <div id="updatePermissionForm_name_alert" class="alert alert-danger" hidden>
+                                name is invalid
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="updatePermissionForm_type" class="col-sm-2 control-label">权限类别</label>
+                        <div class="col-sm-10">
+                            <select id="updatePermissionForm_type" class="form-control">
+                                <option value="M">主菜单</option>
+                                <option value="S">二级菜单</option>
+                                <option value="O">操作</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <div id="updatePermissionForm_type_alert" class="alert alert-danger" hidden>
+                                type is not valid
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="updatePermissionForm_url" class="col-sm-2 control-label">URL地址</label>
+                        <div class="col-sm-10">
+                            <input id="updatePermissionForm_url" type="text" class="form-control" placeholder="URL地址" name="url" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <div id="updatePermissionForm_url_alert" class="alert alert-danger" hidden>
+                                url is invalid
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="updatePermissionForm_code" class="col-sm-2 control-label">编码</label>
+                        <div class="col-sm-10">
+                            <input id="updatePermissionForm_code" type="text" class="form-control" placeholder="编码" name="url" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <div id="updatePermissionForm_code_alert" class="alert alert-danger" hidden>
+                                code is invalid
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="updatePermissionForm_i18nKey" class="col-sm-2 control-label">国际化Key</label>
+                        <div class="col-sm-10">
+                            <input id="updatePermissionForm_i18nKey" type="text" class="form-control" placeholder="国际化Key" name="i18nKey" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <div id="updatePermissionForm_i18nKey_alert" class="alert alert-danger" hidden>
+                                url is invalid
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="updatePermissionForm_icon" class="col-sm-2 control-label">图标</label>
+                        <div class="col-sm-10">
+                            <input id="updatePermissionForm_icon" type="text" class="form-control" placeholder="图标" name="icon" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <div id="updatePermissionForm_icon_alert" class="alert alert-danger" hidden>
+                                icon is invalid
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="updatePermissionForm_description" class="col-sm-2 control-label">注释</label>
+                        <div class="col-sm-10">
+                            <input id="updatePermissionForm_description" type="text" class="form-control" placeholder="注释" name="description" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <div id="updatePermissionForm_description_alert" class="alert alert-danger" hidden>
+                                description is invalid
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <button id="updatePermissionForm_updateButton" type="button" class="btn btn-primary" style="background-color: #4f5b69">修改</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="addPermissionModal" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header" style="background-color: #4f5b69;color: white">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">新增权限</h4>
+            </div>
+            <div class="modal-body">
+                <form id="addPermissionForm" class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <label for="addPermissionForm_pid" class="col-sm-2 control-label">父ID</label>
+                        <div class="col-sm-10">
+                            <input id="addPermissionForm_pid" type="text" class="form-control" placeholder="父ID" name="pid" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <div id="addPermissionForm_pid_alert" class="alert alert-danger" hidden>
+                                pid is invalid
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="addPermissionForm_name" class="col-sm-2 control-label">名称</label>
+                        <div class="col-sm-10">
+                            <input id="addPermissionForm_name" type="text" class="form-control" placeholder="权限名称" name="name" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <div id="addPermissionForm_name_alert" class="alert alert-danger" hidden>
+                                name is invalid
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="addPermissionForm_type" class="col-sm-2 control-label">权限类别</label>
+                        <div class="col-sm-10">
+                            <select id="addPermissionForm_type" class="form-control">
+                                <option value="M">主菜单</option>
+                                <option value="S">二级菜单</option>
+                                <option value="O">操作</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <div id="addPermissionForm_type_alert" class="alert alert-danger" hidden>
+                                type is not valid
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="addPermissionForm_url" class="col-sm-2 control-label">URL地址</label>
+                        <div class="col-sm-10">
+                            <input id="addPermissionForm_url" type="text" class="form-control" placeholder="URL地址" name="url" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <div id="addPermissionForm_url_alert" class="alert alert-danger" hidden>
+                                url is invalid
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="addPermissionForm_code" class="col-sm-2 control-label">编码</label>
+                        <div class="col-sm-10">
+                            <input id="addPermissionForm_code" type="text" class="form-control" placeholder="编码" name="url" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <div id="addPermissionForm_code_alert" class="alert alert-danger" hidden>
+                                code is invalid
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="addPermissionForm_i18nKey" class="col-sm-2 control-label">国际化Key</label>
+                        <div class="col-sm-10">
+                            <input id="addPermissionForm_i18nKey" type="text" class="form-control" placeholder="国际化Key" name="i18nKey" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <div id="addPermissionForm_i18nKey_alert" class="alert alert-danger" hidden>
+                                url is invalid
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="addPermissionForm_icon" class="col-sm-2 control-label">图标</label>
+                        <div class="col-sm-10">
+                            <input id="addPermissionForm_icon" type="text" class="form-control" placeholder="图标" name="icon" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <div id="addPermissionForm_icon_alert" class="alert alert-danger" hidden>
+                                icon is invalid
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="addPermissionForm_description" class="col-sm-2 control-label">注释</label>
+                        <div class="col-sm-10">
+                            <input id="addPermissionForm_description" type="text" class="form-control" placeholder="注释" name="description" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <div id="addPermissionForm_description_alert" class="alert alert-danger" hidden>
+                                description is invalid
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <button id="addPermissionForm_addButton" type="button" class="btn btn-primary" style="background-color: #4f5b69">新增</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="confirmModal" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header" style="background-color: #4f5b69;color: white">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">确认删除吗?</h4>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal" id="btn_confirm_delete">删除</button>
+                <button type="button" class="btn btn-success" data-dismiss="modal">撤销</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="updatePermissionRoleModal" operator="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header" style="background-color: #4f5b69;color: white">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">修改权限角色</h4>
+            </div>
+            <div class="modal-body">
+                <table class="table table-bordered">
+                    <thead>
+                    <tr>
+                        <th>选择</th>
+                        <th>ID</th>
+                        <th>名称</th>
+                        <th>注释</th>
+                    </tr>
+                    </thead>
+                    <tbody id="tbody_updatePermissionRole">
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal" id="btn_updatePermissionRole">赋权</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(function(){
+
+        getAllPermission();
+
+        function getAllPermission() {
+            clearContent();
+            $.ajax({
+                type: "GET",
+                async: false,
+                url: "/permission/getAllPermission.do",
+                dataType: "json", //表示返回值类型，不必须
+                error: function(response) {
+                    alert(response.code);
+                },
+                success: function(response) {
+                    var permissionList = response.data;
+                    fillPermissionContent(permissionList);
+                }
+            });
+        }
+
+        function fillPermissionContent(permissionList) {
+            for (var index in permissionList) {
+                formatPermission(permissionList[index]);
+                if(permissionList[index].pid == 0) {
+                    $("#tbody_permission").append(
+                            '<tr name="tr_permission_'+ permissionList[index].id +'" >' +
+                                '<td class="color_grey">' + permissionList[index].id + '</td>' +
+                                '<td class="color_grey">' + permissionList[index].pid + '</td>' +
+                                '<td class="color_grey">' + permissionList[index].name + '</td>' +
+                                '<td class="color_grey">' + permissionList[index].type + '</td>' +
+                                '<td class="color_grey">' + permissionList[index].url + '</td>' +
+                                '<td class="color_grey">' + permissionList[index].code + '</td>' +
+                                '<td class="color_grey">' + permissionList[index].i18nKey + '</td>' +
+                                '<td class="color_grey"><button permissionId="'+ permissionList[index].id +'" name="btn_updatePermission" type="button" class="btn btn-primary btn-xs">修改</button></td>' +
+                                '<td class="color_grey"><button permissionId="'+ permissionList[index].id +'" name="btn_deletePermission" type="button" class="btn btn-danger btn-xs">删除</button></td>' +
+                                '<td class="color_grey"><button permissionId="'+ permissionList[index].id +'" upPermissionId="'+ permissionList[index].pid +'" name="btn_upSearch" type="button" class="btn btn-primary btn-xs">上级</button></td>' +
+                                '<td class="color_grey"><button permissionId="'+ permissionList[index].id +'" name="btn_downSearch" type="button" class="btn btn-primary btn-xs">下级</button></td>' +
+                                '<td class="color_grey"><button permissionId="'+ permissionList[index].id +'" name="btn_configPermission" type="button" class="btn btn-primary btn-xs">授权</button></td>' +
+                            '</tr>');
+                }else {
+                    $("#tbody_permission").append(
+                            '<tr name="tr_permission_'+ permissionList[index].id +'" class="info">' +
+                                '<td>' + permissionList[index].id + '</td>' +
+                                '<td>' + permissionList[index].pid + '</td>' +
+                                '<td>' + permissionList[index].name + '</td>' +
+                                '<td>' + permissionList[index].type + '</td>' +
+                                '<td>' + permissionList[index].url + '</td>' +
+                                '<td>' + permissionList[index].code + '</td>' +
+                                '<td>' + permissionList[index].i18nKey + '</td>' +
+                                '<td><button permissionId="'+ permissionList[index].id +'" name="btn_updatePermission" type="button" class="btn btn-primary btn-xs">修改</button></td>' +
+                                '<td><button permissionId="'+ permissionList[index].id +'" name="btn_deletePermission" type="button" class="btn btn-danger btn-xs">删除</button></td>' +
+                                '<td><button permissionId="'+ permissionList[index].id +'" upPermissionId="'+ permissionList[index].pid +'" name="btn_upSearch" type="button" class="btn btn-primary btn-xs">上级</button></td>' +
+                                '<td><button permissionId="'+ permissionList[index].id +'" name="btn_downSearch" type="button" class="btn btn-primary btn-xs">下级</button></td>' +
+                                '<td><button permissionId="'+ permissionList[index].id +'" name="btn_configPermission" type="button" class="btn btn-primary btn-xs">授权</button></td>' +
+                            '</tr>');
+                }
+            }
+        }
+
+        function formatPermission(permission) {
+            //auth type
+            if(permission.type == "M") {
+                permission.type = "主菜单";
+            }else if(permission.type == "S") {
+                permission.type = "二级菜单";
+            }else if(permission.type == "O") {
+                permission.type = "操作";
+            }
+            //icon
+            if(permission.icon == null) {
+                permission.icon = "";
+            }
+            //url
+            if(permission.i18nKey == null) {
+                permission.i18nKey = "";
+            }
+            //url
+            if(permission.url == null) {
+                permission.url = "";
+            }
+            //url
+            if(permission.code == null) {
+                permission.code = "";
+            }
+            //description
+            if(permission.description == null) {
+                permission.description = "";
+            }
+        }
+
+        $(document).on("click","[name=btn_updatePermission]",function(){
+            var permissionId = $(this).attr("permissionId");
+            var permission = getPermission(permissionId);
+            setUpdatePermissionFormVal(permission);
+            $("#updatePermissionModal").modal("show");
+        });
+
+        function setUpdatePermissionFormVal(permission) {
+            $("#updatePermissionForm_id").val(permission.id);
+            $("#updatePermissionForm_pid").val(permission.pid);
+            $("#updatePermissionForm_name").val(permission.name);
+            $("#updatePermissionForm_type").val(permission.type);
+            $("#updatePermissionForm_url").val(permission.url);
+            $("#updatePermissionForm_i18nKey").val(permission.i18nKey);
+            $("#updatePermissionForm_icon").val(permission.icon);
+            $("#updatePermissionForm_description").val(permission.description);
+        }
+
+        function emptyUpdatePermissionFormVal() {
+            $("#updatePermissionForm_id").val("");
+            $("#updatePermissionForm_pid").val("");
+            $("#updatePermissionForm_name").val("");
+            $("#updatePermissionForm_type").val("");
+            $("#updatePermissionForm_url").val("");
+            $("#updatePermissionForm_i18nKey").val("");
+            $("#updatePermissionForm_icon").val("");
+            $("#updatePermissionForm_description").val("");
+        }
+        
+        function getPermission(id) {
+            var permission = null;
+            $.ajax({
+                type: "GET",
+                async: false,
+                url: "/permission/getPermissionById.do?id=" + id,
+                dataType: "json", //表示返回值类型，不必须
+                error: function(response) {
+                    alert(response.code);
+                },
+                success: function(response) {
+                    permission = response.data;
+                }
+            });
+            return permission;
+        }
+
+        $("#updatePermissionForm_updateButton").click(function () {
+            var permission = null;
+            var id = $("#updatePermissionForm_id").val().trim();
+            var pid = $("#updatePermissionForm_pid").val().trim();
+            var name = $("#updatePermissionForm_name").val().trim();
+            var type = $("#updatePermissionForm_type").val().trim();
+            var url = $("#updatePermissionForm_url").val().trim();
+            var code = $("#updatePermissionForm_code").val().trim();
+            var i18nKey = $("#updatePermissionForm_i18nKey").val().trim();
+            var icon = $("#updatePermissionForm_icon").val().trim();
+            var description = $("#updatePermissionForm_description").val().trim();
+            $.ajax({
+                type: "POST",
+                async: false,
+                url: "/permission/updatePermission.do",
+                data: {"permission.id":id,"permission.pid":pid,"permission.name":name,"permission.type":type,"permission.url":url,"permission.code":code,"permission.i18nKey":i18nKey,"permission.icon":icon,"permission.description":description},
+                dataType: "json", //表示返回值类型，不必须
+                error: function(response) {
+                    alert(response.desc);
+                },
+                success: function(response) {
+                    emptyUpdatePermissionFormVal();
+                    $("#updatePermissionModal").modal("hide");
+                }
+            });
+            searchPermission();
+        });
+
+        $("#addPermissionForm_addButton").click(function () {
+            var pid = $("#addPermissionForm_pid").val().trim();
+            var name = $("#addPermissionForm_name").val().trim();
+            var type = $("#addPermissionForm_type").val().trim();
+            var url = $("#addPermissionForm_url").val().trim();
+            var code = $("#addPermissionForm_code").val().trim();
+            var i18nKey = $("#addPermissionForm_i18nKey").val().trim()
+            var icon = $("#addPermissionForm_icon").val().trim();
+            var description = $("#addPermissionForm_description").val().trim();
+            $.ajax({
+                type: "POST",
+                async: false,
+                url: "/permission/addPermission.do",
+                data: {"permission.pid":pid,"permission.name":name,"permission.type":type,"permission.url":url,"permission.code":code,"permission.i18nKey":i18nKey,"permission.icon":icon,"permission.description":description},
+                dataType: "json", //表示返回值类型，不必须
+                error: function(response) {
+                    alert(response.desc);
+                },
+                success: function(response) {
+                    emptyUpdatePermissionFormVal();
+                    $("#updatePermissionModal").modal("hide");
+                }
+            });
+            $("#addPermissionModal").modal("hide");
+            searchPermission();
+        });
+
+        var deletePermissionId = null;
+
+        $(document).on("click","[name=btn_deletePermission]",function(){
+            deletePermissionId = $(this).attr("permissionId");
+            $("#confirmModal").modal("show");
+        });
+
+        $("#btn_confirm_delete").click(function () {
+            deletePermission(deletePermissionId);
+        });
+
+        function deletePermission(id) {
+            $.ajax({
+                type: "POST",
+                async: false,
+                url: "/permission/deletePermission.do",
+                data: {"id":id},
+                dataType: "json", //表示返回值类型，不必须
+                error: function(response) {
+                    alert(response.desc);
+                },
+                success: function(response) {
+                    emptyUpdatePermissionFormVal();
+                    $("#updatePermissionModal").modal("hide");
+                }
+            });
+            searchPermission();
+        }
+        
+        $("#addPermission").click(function () {
+            $("#addPermissionModal").modal("show");
+        });
+
+        $(document).on("click","[name=btn_searchPermission]",function(){
+            searchPermission();
+        });
+
+        function searchPermission() {
+            clearContent();
+            var id = $("#searchForm_id").val().trim();
+            var pid = $("#searchForm_pid").val().trim();
+            var name = $("#searchForm_name").val().trim();
+            var type = $("#searchForm_type").val().trim();
+            var url = $("#searchForm_url").val().trim();
+
+            $.ajax({
+                type: "POST",
+                async: false,
+                url: "/permission/searchPermission.do",
+                data: {"permission.id":id,"permission.pid":pid,"permission.name":name,"permission.type":type,"permission.url":url},
+                dataType: "json", //表示返回值类型，不必须
+                error: function(response) {
+                    alert(response.code);
+                },
+                success: function(response) {
+                    var permissionList = response.data;
+                    fillPermissionContent(permissionList);
+                }
+            });
+        }
+
+        $(document).on("click","[name=btn_upSearch]",function(){
+            var upPermissionId = $(this).attr("upPermissionId");
+            if(upPermissionId == "0") {
+                return;
+            }
+            upSearch(upPermissionId);
+        });
+
+        function upSearch(id) {
+            clearContent();
+            $.ajax({
+                type: "POST",
+                async: false,
+                url: "/permission/upSearch.do",
+                data: {"permission.id":id},
+                dataType: "json", //表示返回值类型，不必须
+                error: function(response) {
+                    alert(response.code);
+                },
+                success: function(response) {
+                    var permissionList = response.data;
+                    fillPermissionContent(permissionList);
+                }
+            });
+        }
+
+        $(document).on("click","[name=btn_downSearch]",function(){
+            var permissionId = $(this).attr("permissionId");
+            downSearch(permissionId);
+        });
+
+        function downSearch(pid) {
+            clearContent();
+            $.ajax({
+                type: "POST",
+                async: false,
+                url: "/permission/downSearch.do",
+                data: {"permission.pid":pid},
+                dataType: "json", //表示返回值类型，不必须
+                error: function(response) {
+                    alert(response.code);
+                },
+                success: function(response) {
+                    var permissionList = response.data;
+                    fillPermissionContent(permissionList);
+                }
+            });
+        }
+
+        var updatePermissionId;
+
+        $(document).on("click","[name=btn_configPermission]",function(){
+            updatePermissionId = $(this).attr("permissionId");
+            getAllRolePermissionWithStatus(updatePermissionId);
+            $("#updatePermissionRoleModal").modal("show");
+        });
+
+        function getAllRolePermissionWithStatus(permissionId) {
+            $.ajax({
+                type: "POST",
+                async: false,
+                url: "/permission/getAllRolePermissionWithStatus.do",
+                data: {"permissionId":permissionId},
+                dataType: "json", //表示返回值类型，不必须
+                error: function(response) {
+                    alert(response.desc);
+                },
+                success: function(response) {
+                    var roleList = response.data;
+                    fillPermissionRoleContent(roleList);
+                }
+            });
+        }
+
+        function fillPermissionRoleContent(roleList) {
+            $("#tbody_updatePermissionRole").empty();
+            for (var index in roleList) {
+                formatRole(roleList[index]);
+                $("#tbody_updatePermissionRole").append(
+                        '<tr name="tr_role_'+ roleList[index].id +'" >' +
+                        '<td class="color_grey"><input name="roleIdCheckbox" type="checkbox" value="'+ roleList[index].id +'" '+ roleList[index].checked +'></td>' +
+                        '<td class="color_grey">' + roleList[index].id + '</td>' +
+                        '<td class="color_grey">' + roleList[index].name + '</td>' +
+                        '<td class="color_grey">' + roleList[index].description + '</td>' +
+                        '</tr>');
+            }
+        }
+
+        $("#btn_updatePermissionRole").click(function () {
+            var roleIdArray = "";
+            $('input[name="roleIdCheckbox"]:checked').each(function() {
+                roleIdArray = roleIdArray + this.value + ",";
+            });
+
+            if(roleIdArray != "") {
+                roleIdArray = roleIdArray.substr(0,roleIdArray.length-1);
+            }
+
+            $.ajax({
+                type: "POST",
+                async: false,
+                url: "/permission/updatePermissionRole.do",
+                data: {"permissionId":updatePermissionId,"roleIdArray":roleIdArray},
+                dataType: "json", //表示返回值类型，不必须
+                error: function(response) {
+                    alert(response.desc);
+                },
+                success: function(response) {
+                    $("#updateOperatorRoleModal").modal("hide");
+                }
+            });
+        });
+
+        function formatRole(role) {
+            if(role.description == null) {
+                role.description = "";
+            }
+        }
+
+        function clearContent() {
+            $("#tbody_permission").html("");
+        }
+
+
+    });
+</script>
+</body>
+</html>
+

@@ -1,0 +1,336 @@
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN" "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="batchxima" extends="struts-default" namespace="/batchxima">
+
+		<action name="addBatchSixXimaProposal" class="ximaBatchActionClass" method="addBatchXimaProposal" >
+			<interceptor-ref name ="fileUploadStack" />
+			<result name="input">/office/functions/xima/xima.jsp</result>
+			<result name="success">/office/functions/xima/xima.jsp</result>
+		</action>
+		<action name="excelsendMail" class="ximaBatchActionClass" method="excelsendMail">
+			<interceptor-ref name ="fileUploadStack" />
+			<result name="input">/office/functions/excelemail.jsp</result>
+			<result name="success">/office/functions/excelemail.jsp</result>
+		</action>
+
+
+		<action name="addBatchTwoXimaProposal" class="ximaBatchActionClass" method="addBatchXimaProposal">
+			<interceptor-ref name ="fileUploadStack" />
+			<result name="input">/office/functions/xima/xima.jsp</result>
+			<result name="success">/office/functions/xima/xima.jsp</result>
+		</action>
+		<action name="addSwFishBatchXimaProposalExcel" class="ximaBatchActionClass" method="addSwFishBatchXimaProposalExcel">
+			<interceptor-ref name ="fileUploadStack" />
+			<result name="input">/office/functions/xima/xima2.jsp</result>
+			<result name="success">/office/functions/xima/xima2.jsp</result>
+		</action>
+		<!-- start @author boots dt捕鱼  -->
+		<action name="addDTFishBatchXimaProposalExcel" class="ximaBatchActionClass" method="addDTFishBatchXimaProposalExcel">
+			<interceptor-ref name ="fileUploadStack" />
+			<result name="input">/office/functions/xima/xima2.jsp</result>
+			<result name="success">/office/functions/xima/xima2.jsp</result>
+		</action>
+		<action name="addDtBatchXimaProposal" class="ximaBatchActionClass" method="addDtBatchXimaProposal">
+			<result name="input">/office/functions/xima/xima.jsp</result>
+			<result name="success">/office/functions/xima/xima.jsp</result>
+		</action>
+
+		<action name="addAttachment" class="ximaBatchActionClass" method="addAttachment">
+			<interceptor-ref name ="fileUploadStack" />
+			<result name="input">/office/functions/shiwu.jsp</result>
+			<result name="success">/office/functions/shiwu.jsp</result>
+		</action>
+
+		<action name="addpesoAttachment" class="ximaBatchActionClass" method="addpesoAttachment">
+			<interceptor-ref name ="fileUploadStack" />
+			<result name="input">/office/functions/shiwupeso.jsp</result>
+			<result name="success">/office/functions/shiwupeso.jsp</result>
+		</action>
+
+		<action name="excBusinessProposal" class="ximaBatchActionClass" method="excBusinessProposal">
+			<interceptor-ref name ="fileUploadStack" />
+			<result name="input">/office/functions/bankinfo/businessproposalforcashout.jsp</result>
+			<result name="success">/office/functions/bankinfo/businessproposalforcashout.jsp</result>
+		</action>
+
+		<action name="addBatchFourXimaProposal" class="ximaBatchActionClass" method="addBatchXimaProposal">
+			<interceptor-ref name ="fileUploadStack" />
+			<result name="input">/office/functions/xima/xima.jsp</result>
+			<result name="success">/office/functions/xima/xima.jsp</result>
+		</action>
+
+		<action name="addMGSBatchXimaProposal" class="ximaBatchActionClass" method="addMGSBatchXimaProposal">
+			<result name="input">/office/functions/xima/xima.jsp</result>
+			<result name="success">/office/functions/xima/xima.jsp</result>
+		</action>
+		<!-- 大满贯洗码 -->
+		<action name="addMWGBatchXimaProposal" class="ximaBatchActionClass" method="addMWGBatchXimaProposal">
+			<result name="input">/office/functions/xima/xima.jsp</result>
+			<result name="success">/office/functions/xima/xima.jsp</result>
+		</action>
+		<action name="addPNGBatchXimaProposal" class="ximaBatchActionClass" method="addPNGBatchXimaProposal">
+			<result name="input">/office/functions/xima/xima.jsp</result>
+			<result name="success">/office/functions/xima/xima.jsp</result>
+		</action>
+
+		<action name="addSBABatchXimaProposalExcel" class="ximaBatchActionClass" method="addSBABatchXimaProposalExcel">
+			<result name="input">/office/functions/xima/xima.jsp</result>
+			<result name="success">/office/functions/xima/xima.jsp</result>
+		</action>
+		<!-- 沙巴体育洗码 -->
+		<action name="addSBABatchXimaProposal" class="ximaBatchActionClass" method="addSBABatchXimaProposal">
+			<result name="input">/office/functions/xima/xima.jsp</result>
+			<result name="success">/office/functions/xima/xima.jsp</result>
+		</action>
+		<!-- 平博体育 -->
+		<action name="addPBBatchXimaProposal" class="ximaBatchActionClass" method="addPBBatchXimaProposal">
+			<result name="input">/office/functions/xima/xima.jsp</result>
+			<result name="success">/office/functions/xima/xima.jsp</result>
+		</action>
+
+		<action name="addAGBatchFourXimaProposal" class="ximaBatchActionClass" method="addBatchXimaProposal">
+			<interceptor-ref name ="fileUploadStack" />
+			<result name="input">/office/functions/xima/xima.jsp</result>
+			<result name="success">/office/functions/xima/xima.jsp</result>
+		</action>
+		<action name="addAGBatchTwoXimaProposal" class="ximaBatchActionClass" method="addBatchXimaProposal">
+			<interceptor-ref name ="fileUploadStack" />
+			<result name="input">/office/functions/xima/xima.jsp</result>
+			<result name="success">/office/functions/xima/xima.jsp</result>
+		</action>
+
+		<action name="addAginSlotXimaProposal" class="ximaBatchActionClass" method="addAginSlotXimaProposal">
+			<interceptor-ref name ="fileUploadStack" />
+			<result name="input">/office/functions/xima/xima.jsp</result>
+			<result name="success">/office/functions/xima/xima.jsp</result>
+		</action>
+
+		<action name="addAGBatchSixXimaProposal" class="ximaBatchActionClass" method="addBatchXimaProposal">
+			<interceptor-ref name ="fileUploadStack" />
+			<result name="input">/office/functions/xima/xima.jsp</result>
+			<result name="success">/office/functions/xima/xima.jsp</result>
+		</action>
+
+		<action name="addPtBatchSixXimaProposal" class="ximaBatchActionClass" method="addBatchXimaPtProposal">
+			<interceptor-ref name ="fileUploadStack" />
+			<result name="input">/office/functions/xima/xima.jsp</result>
+			<result name="success">/office/functions/xima/xima.jsp</result>
+		</action>
+
+
+		<!-- start @author ck ptsky老虎机  -->
+		<action name="addNewPtSkyBatchXimaProposal" class="ximaBatchActionClass" method="addNewPtSkyBatchXimaProposal">
+			<interceptor-ref name ="fileUploadStack" />
+			<result name="input">/office/functions/xima/xima2.jsp</result>
+			<result name="success">/office/functions/xima/xima2.jsp</result>
+		</action>
+		<action name="addPTSkyBatchXimaProposalExcel" class="ximaBatchActionClass" method="addPTSkyBatchXimaProposalExcel">
+			<interceptor-ref name ="fileUploadStack" />
+			<result name="input">/office/functions/xima/xima2.jsp</result>
+			<result name="success">/office/functions/xima/xima2.jsp</result>
+		</action>
+		<!-- start @author ck ptsky老虎机  -->
+
+		<!-- start mg老虎机  -->
+		<action name="addNewMGSBatchXimaProposal" class="ximaBatchActionClass" method="addNewMGSBatchXimaProposal">
+			<result name="input">/office/functions/xima/xima2.jsp</result>
+			<result name="success">/office/functions/xima/xima2.jsp</result>
+		</action>
+		<!-- end mg老虎机  -->
+
+		<!-- start nt老虎机  -->
+		<action name="addNewNTBatchXimaProposal" class="ximaBatchActionClass" method="addNewNTBatchXimaProposal">
+			<result name="input">/office/functions/xima/xima2.jsp</result>
+			<result name="success">/office/functions/xima/xima2.jsp</result>
+		</action>
+
+		<!-- start @author boots dt老虎机  -->
+		<action name="addNewDTBatchXimaProposal" class="ximaBatchActionClass" method="addNewDTBatchXimaProposal">
+			<interceptor-ref name ="fileUploadStack" />
+			<result name="input">/office/functions/xima/xima2.jsp</result>
+			<result name="success">/office/functions/xima/xima2.jsp</result>
+		</action>
+		<!-- end @author boots dt老虎机  -->
+
+
+		<action name="addPNGBatchXimaProposal_V1" class="ximaBatchActionClass" method="addPNGBatchXimaProposal_V1">
+			<result name="input">/office/functions/xima/xima2.jsp</result>
+			<result name="success">/office/functions/xima/xima2.jsp</result>
+		</action>
+
+		<action name="addQTBatchXimaProposal_V1" class="ximaBatchActionClass" method="addQTBatchXimaProposal_V1">
+			<result name="input">/office/functions/xima/xima2.jsp</result>
+			<result name="success">/office/functions/xima/xima2.jsp</result>
+		</action>
+
+		<action name="addNewPtBatchSixXimaProposal" class="ximaBatchActionClass" method="addNewPtBatchSixXimaProposal">
+			<interceptor-ref name ="fileUploadStack" />
+			<result name="input">/office/functions/xima/xima.jsp</result>
+			<result name="success">/office/functions/xima/xima.jsp</result>
+		</action>
+		<action name="addNewPtBatchXimaProposalXXX" class="ximaBatchActionClass" method="addNewPtBatchXimaProposalXXX">
+			<interceptor-ref name ="fileUploadStack" />
+			<result name="input">/office/functions/xima/xima.jsp</result>
+			<result name="success">/office/functions/xima/xima.jsp</result>
+		</action>
+
+		<action name="addQTBatchXimaProposal" class="ximaBatchActionClass" method="autoXima4QT">
+			<interceptor-ref name ="fileUploadStack" />
+			<result name="input">/office/functions/xima/xima.jsp</result>
+			<result name="success">/office/functions/xima/xima.jsp</result>
+		</action>
+
+		<action name="addNTBatchXimaProposal" class="ximaBatchActionClass" method="addNTBatchXimaProposal">
+			<!-- <interceptor-ref name ="fileUploadStack" /> -->
+			<result name="input">/office/functions/xima/xima.jsp</result>
+			<result name="success">/office/functions/xima/xima.jsp</result>
+		</action>
+
+		<action name="addEBetAppBatchXimaProposal" class="ximaBatchActionClass" method="addEBetAppBatchXimaProposal">
+			<result name="input">/office/functions/xima/xima.jsp</result>
+			<result name="success">/office/functions/xima/xima.jsp</result>
+		</action>
+
+		<action name="addEaXimaProposal" class="ximaBatchActionClass" method="addEaXimaProposal"/>
+
+		<action name="addAgXimaProposal" class="ximaBatchActionClass" method="addAgXimaProposal"/>
+
+		<action name="addBbinXimaProposal" class="ximaBatchActionClass" method="addBbinXimaProposal"/>
+
+		<action name="addFishXimaProposal" class="ximaBatchActionClass" method="addFishXimaProposal">
+			<interceptor-ref name ="fileUploadStack" />
+			<result name="input">/office/functions/xima/xima.jsp</result>
+			<result name="success">/office/functions/xima/xima.jsp</result>
+		</action>
+
+		<action name="addAutoAginSlotXimaProposal" class="ximaBatchActionClass" method="addAutoAginSlotXimaProposal">
+			<interceptor-ref name ="fileUploadStack" />
+			<result name="input">/office/functions/xima/xima.jsp</result>
+			<result name="success">/office/functions/xima/xima.jsp</result>
+		</action>
+
+		<action name="checkXimaProposal" class="ximaBatchActionClass" method="checkNotExecProposal"></action>
+		<action name="execXimaProposal" class="ximaBatchActionClass" method="execXimaProposal">
+			<result name="input">/office/functions/xima/xima.jsp</result>
+			<result name="success">/office/functions/xima/xima.jsp</result>
+		</action>
+		<action name="sendmessage" class="ximaBatchActionClass" method="sendmessage"></action>
+
+		<action name="addCommissions" class="ximaBatchActionClass" method="addCommissions">
+			<interceptor-ref name ="fileUploadStack" />
+			<result name="input">/office/functions/commissions/commissions.jsp</result>
+			<result name="success">/office/functions/commissions/commissions.jsp</result>
+		</action>
+
+		<action name="addBatchProfitProposal" class="ximaBatchActionClass" method="addBatchProfitProposal">
+			<interceptor-ref name ="fileUploadStack" />
+			<result name="input">/office/functions/xima/profit.jsp</result>
+			<result name="success">/office/functions/xima/profit.jsp</result>
+		</action>
+
+		<action name="addBatchPrizeProposal" class="ximaBatchActionClass" method="addBatchPrizeProposal">
+			<interceptor-ref name ="fileUploadStack" />
+			<result name="input">/office/functions/xima/batchprize.jsp</result>
+			<result name="success">/office/functions/xima/batchprize.jsp</result>
+		</action>
+
+		<action name="addPhone" class="ximaBatchActionClass" method="addPhone">
+			<interceptor-ref name ="fileUploadStack" />
+			<result name="input">/office/functions/phoneLists.jsp</result>
+			<result name="success">/office/functions/phoneLists.jsp</result>
+		</action>
+
+		<action name="addMail" class="ximaBatchActionClass" method="addMail">
+			<interceptor-ref name ="fileUploadStack" />
+			<result name="input">/office/functions/checkMailLists.jsp</result>
+			<result name="success">/office/functions/checkMailLists.jsp</result>
+		</action>
+
+		<action name="downloadMailExcel" class="ximaBatchActionClass" method="downloadMailExcel">
+
+		</action>
+
+
+		<action name="addAgentCustomer" class="ximaBatchActionClass" method="addAgentCustomer">
+			<interceptor-ref name ="fileUploadStack" />
+			<result name="input">/office/functions/agentPhoneLists.jsp</result>
+			<result name="success">/office/functions/agentPhoneLists.jsp</result>
+		</action>
+
+		<action name="addAgTryRecord" class="ximaBatchActionClass" method="addAgTryRecord">
+			<interceptor-ref name ="fileUploadStack" />
+			<result name="input">/office/functions/agTryPoint.jsp</result>
+			<result name="success">/office/functions/agTryPoint.jsp</result>
+		</action>
+
+		<action name="execCommissions" class="ximaBatchActionClass" method="execCommissions"></action>
+
+		<action name="execProfit" class="ximaBatchActionClass" method="execProfit"></action>
+
+		<action name="execPrize" class="ximaBatchActionClass" method="execPrize"></action>
+
+		<action name="addPtCommissions" class="ximaBatchActionClass" method="addPtCommissions">
+		</action>
+		<action name="executePtCommissions" class="ximaBatchActionClass" method="executePtCommissions">
+		</action>
+
+		<action name="executeAgentVip" class="ximaBatchActionClass" method="executeAgentVip">
+		</action>
+
+		<action name="impPrivileges" class="ximaBatchActionClass" method="impPrivileges">
+			<interceptor-ref name ="fileUploadStack" />
+		</action>
+		<!-- 云谷彩票洗码 -->
+		<action name="addOGBatchXimaProposal" class="ximaBatchActionClass" method="addOGBatchXimaProposal">
+			<result name="input">/office/functions/xima/xima.jsp</result>
+			<result name="success">/office/functions/xima/xima.jsp</result>
+		</action>
+		<action name="addNTwoBatchBaobiaoXimaProposal" class="ximaBatchActionClass" method="addNTwoBatchBaobiaoXimaProposal">
+			<!-- <interceptor-ref name ="fileUploadStack" /> -->
+			<result name="input">/office/functions/xima/xima.jsp</result>
+			<result name="success">/office/functions/xima/xima.jsp</result>
+		</action>
+
+		<action name="addNTwoBatchXimaProposal" class="ximaBatchActionClass" method="addNTwoBatchXimaProposal">
+			<!-- <interceptor-ref name ="fileUploadStack" /> -->
+			<result name="input">/office/functions/xima/xima.jsp</result>
+			<result name="success">/office/functions/xima/xima.jsp</result>
+		</action>
+		<!-- 761棋牌 -->
+		<action name="add761BatchXimaProposal" class="ximaBatchActionClass" method="add761BatchXimaProposal">
+			<result name="input">/office/functions/xima/xima.jsp</result>
+			<result name="success">/office/functions/xima/xima.jsp</result>
+		</action>
+		<!-- BBIN洗码 -->
+		<action name="addBbinBatchXimaProposal" class="ximaBatchActionClass" method="addBbinBatchXimaProposal">
+			<result name="input">/office/functions/xima/xima.jsp</result>
+			<result name="success">/office/functions/xima/xima.jsp</result>
+		</action>
+		<!-- BBIN洗码 -->
+		<action name="addBbinBatchXimaBaobiaoProposal" class="ximaBatchActionClass" method="addBbinBatchXimaBaobiaoProposal">
+			<result name="input">/office/functions/xima/xima2.jsp</result>
+			<result name="success">/office/functions/xima/xima2.jsp</result>
+		</action>
+		<!-- 泛亚电竞 -->
+		<action name="addFanyaBatchXimaProposal" class="ximaBatchActionClass" method="addFanyaBatchXimaProposal">
+			<result name="input">/office/functions/xima/xima.jsp</result>
+			<result name="success">/office/functions/xima/xima.jsp</result>
+		</action>
+
+		<!-- 比特游戏 -->
+		<action name="addBITBatchXimaProposal" class="ximaBatchActionClass" method="addBITBatchXimaProposal">
+			<result name="input">/office/functions/xima/xima.jsp</result>
+			<result name="success">/office/functions/xima/xima.jsp</result>
+		</action>
+		<!-- 开元棋牌 -->
+		<action name="addKyqpBatchXimaProposal" class="ximaBatchActionClass" method="addKyqpBatchXimaProposal">
+			<result name="input">/office/functions/xima/xima.jsp</result>
+			<result name="success">/office/functions/xima/xima.jsp</result>
+		</action>
+		<!-- VR彩票 -->
+		<action name="addVRBatchXimaProposal" class="ximaBatchActionClass" method="addVRBatchXimaProposal">
+			<result name="input">/office/functions/xima/xima.jsp</result>
+			<result name="success">/office/functions/xima/xima.jsp</result>
+		</action>
+	</package>
+</struts>

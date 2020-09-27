@@ -1,0 +1,283 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=GB2312">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>本行转他行</title>
+<link href="/images/styleWeb0/css/ceb.css" rel="stylesheet" type="text/css">
+<script language="JavaScript" src="/js/menu.js"></script><script language="JavaScript" src="/js/ceb.js"></script><script language="JavaScript" src="/js/function.js"></script><script src="/pubFunP.js"></script><script language="JavaScript" src="/js/setDate.js"></script><script language="JavaScript" src="/js/ajaxTool.js"></script><script>
+function loads(){
+funcitonName="本行转他行";	//本交易名称
+flashCode = "";//??????交易的第一笔资交易号
+sTip = "交易可以实现民生银行系统内民生卡、活期一本通帐户下的本外币在约定时间转入他行卡、折或对公帐户。可以是同城，也可以是异地。为了方便客户输入帐户，您可以选择历史转入成功帐户，也可以手工输入转入帐户。为了防范业务风险，要求客户在签约时必须指定一个或多个对外转帐支付帐户和单笔最高限额、当日累计限额，且不得超过网银系统设定的限制，即单笔最高限额500000元人民币，当日累计2000000元人民币。如果签约时不指定对外转帐支付帐户，将不能使用对外转帐、网上支付功能。为了提高您转帐成功的几率，请在填写转入行名称时一定要详细具体，例如到支行、分理处、营业部等，否则容易造成转入行退款。由于我行目前他行电子汇款交易不是实时的，需要通过人民银行的交换中心完成，而人行交换中心在非工作时间（下班时间、节假日、双休日）休息，为了不耽误您转帐汇款，我行该交易在上述时间内不接受客户的转帐指令，请您选择约定转帐或在营业时间内做该交易，在此给您带来的不便请原谅！";
+sOtherFunction = "本行汇款|221200,帐户余额查询|210100";
+writeFunctionName();//输出本交易名称
+writeTip();//输出交易提示
+writeFunction();//输出相关交易
+setListTable(formTable);//设置表格样式
+
+}
+</script><script language="javascript">
+var counter;
+var state;//0:运行;1:已得到确定结果
+
+
+
+var lostTime;//倒计时
+
+var ajaxSendSpace1;
+var ajaxSendSpace2;
+var ajaxSendSpace3;
+var ajaxSendTimeout;
+
+function init ( ) 
+{
+	counter=0;
+	
+	return true;
+}
+function check ( ) 
+{
+	if(counter==0)
+	  counter = counter +1
+	else
+	 {
+		alert("交易已经提交，请点击\"确定\"后等待...");
+		return false;
+	 }
+	return true;
+}
+
+function goTx(code)
+{
+	parent.setTXCode(code);
+	parent.setPj("跨行账户管理","业务状态查询");
+	strURL="MainService?txcode="+code+"&ShowStyleData="+window.parent.document.all("ShowStyleData").value+"&userid=@";
+	window.parent.frames['txmain'].location=strURL;
+}
+function goTx1(code)
+{
+	parent.setTXCode(code);
+	parent.setPj("查询服务","电子回单查询/打印");
+	strURL="MainService?txcode="+code+"&ShowStyleData="+window.parent.document.all("ShowStyleData").value+"&userid=@";
+	window.parent.frames['txmain'].location=strURL;
+}
+function goTx2(code)
+{
+	parent.setTXCode(code);
+	  parent.setPj("查询服务 ","帐户明细查询");
+	strURL="MainService?txcode="+code+"&userid=@";
+	window.parent.frames['txmain'].location=strURL;
+}
+function display()
+{
+	var showObj = document.getElementById("dis");
+	//var picObj = document.getElementById("respic");
+	//var picObj2 = document.getElementById("respic2");
+	//picObj.style.display = "none";
+	//picObj2.style.display = "";
+	showObj.innerHTML = "将在"+(lostTime/1000)+"秒后自动跳转到结果页面，请您耐心等待交易倒计时结束，如果提前退出此页面可能会影响该笔交易电子回单的查询和打印。";
+}
+
+function showResult(result)
+{
+	var showObj = document.getElementById("lostTime");
+	var RowObj = document.getElementById("disRow");
+	var picObj = document.getElementById("respic");
+	if( result == "PR03" || result == "PR04" || result == "PR05" )
+	{
+		state = 1;
+		showObj.innerHTML = "交易成功";
+		RowObj.style.display = "none";
+		document.getElementById("chenggong").style.display="";
+       document.getElementById("shibai").style.display="none";
+       document.getElementById("respic").style.display="";
+
+	}
+	else if( result == "PR08"  )
+	{
+		state = 1;
+		showObj.innerHTML = "撤销成功";
+		RowObj.style.display = "none";
+	}
+	else if( result == "PR09"  )
+	{
+		state = 1;
+		showObj.innerHTML = "交易失败";
+		RowObj.style.display = "none";
+		picObj.style.display = "none";
+	}
+}
+
+function goNext()
+{
+	document.eservice.submit();
+}
+
+function recvState(status,responseText,responseXML)
+{
+	if( 200 == status && state == 0 )
+	{
+		var errCode = responseXML.getElementsByTagName("errCode")[0].firstChild.data;
+
+		if( errCode =="AAAAAAA" )
+		{
+			if( responseXML.getElementsByTagName("hl_StsId")[0].hasChildNodes() )
+			{
+				var result = responseXML.getElementsByTagName("hl_StsId")[0].firstChild.data;
+				showResult(result);
+			}
+		}
+	}
+}
+
+function onTimer()
+{
+	var txSerNo = document.eservice.txSerNo.value;
+	var payeeAcct = document.eservice.payeeAcct.value;
+	var payeeName = document.eservice.payeeName.value;
+	var hl_CdtrbrnchId = document.eservice.hl_CdtrbrnchId.value;
+	
+	if( lostTime*1 > 0 )
+	{
+		if( state == 0 )
+		{//只有在运行状态下循环倒计时
+
+
+
+			lostTime = lostTime-1000;
+			if( lostTime == ajaxSendSpace1 || lostTime == ajaxSendSpace2 || lostTime == ajaxSendSpace3 )
+			{//调用ajax
+				ajax_sendRequest("GET","/weblogic/servlets/EService/CSM/ajaxMainService?txcode=221304&txSerNo="+txSerNo+"&payeeAcct="+payeeAcct+"&payeeName="+payeeName+"&hl_CdtrbrnchId="+hl_CdtrbrnchId+"&hl_CdtrbrnchId=",ajaxSendTimeout*1,"",recvState) ;
+			}
+			display();
+			window.setTimeout("onTimer()",1000);
+		}
+	}
+	else
+	{//倒计时结束依然没有得到结果
+
+
+
+		state = 1;
+		var showObj = document.getElementById("lostTime");
+		var RowObj = document.getElementById("disRow");
+		var picObj = document.getElementById("respic");
+		var li1 = document.getElementById("li1");
+		var li2 = document.getElementById("li2");
+		
+		showObj.innerHTML = "结果未知";
+		RowObj.style.display = "none";
+		picObj.style.display = "none";
+		li1.style.display = "none";
+		li2.style.display = "";	
+	}
+}
+</script>
+</head>
+<script> function KeyDown(){ if((window.event.altKey)&&((window.event.keyCode==37)||(window.event.keyCode==39))) event.returnValue=false; if((event.keyCode==116)||(window.event.keyCode==122)) {event.keyCode=0;event.returnValue=false;}  if(((event.shiftKey)&&(event.keyCode==121))||((event.ctrlKey)&&(event.keyCode==78))) { event.returnValue=false;} }document.onkeydown=KeyDown; function click(e) {if (document.all) {if (event.button==2||event.button==3) {oncontextmenu='return false';}}}document.onmousedown=click;document.oncontextmenu = new Function("return false;");</script><body style="display:none" onload="loads();document.body.style.display='';return init();">
+<form action="MainService?id=cmbc&amp;ShowStyleData=K0&amp;channelID=&amp;languageType=" method="post" name="eservice">
+<input type="hidden" name="txcode" value="221304">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" id="mainTable">
+<tr>
+<td>
+<table width="100%" height="21" border="0" cellpadding="0" cellspacing="0">
+<tr class="mainBg">
+<td width="" valign="bottom" id="menuName" nowrap></td><td width="371" align="right" valign="bottom"></td><td align="right" valign="bottom" nowrap id="otherFunctions"></td><td width="26" align="center" valign="middle">
+											&nbsp;
+										</td>
+</tr>
+</table>
+<table width="100%" height="17" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="bottom" background="/images/styleWeb0/styleImages/mainbg.jpg">
+<table width="100" border="0" cellpadding="0" cellspacing="0">
+<tr valign="bottom">
+<td width="45" nowrap>
+														&nbsp;
+													</td><td width="0" class="help" nowrap id="help">交易提示</td><td width="5" nowrap>
+														&nbsp;
+													</td><td width="0" nowrap><img src="/images/ques.gif" width="15" height="16"></td><td width="10" nowrap>
+														&nbsp;
+													</td><td width="0" class="demo" nowrap onclick="opennewwindow()">同步演示</td><td width="5" nowrap>
+														&nbsp;
+													</td><td width="0" nowrap><img src="/images/edu.gif" width="16" height="16"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<input type="hidden" name="bankx_ajaxSendSpace1" value="3000"><input type="hidden" name="bankx_ajaxSendSpace2" value="7000"><input type="hidden" name="bankx_ajaxSendSpace3" value="15000"><input type="hidden" name="bankx_ajaxSendTimeout" value="9000"><input type="hidden" name="bankx_ajaxTotalTimeout" value="30000"><input type="hidden" name="txSerNo" value="201209251327701230100227"><input type="hidden" name="payeeAcct" value="6225682121003010671"><input type="hidden" name="payeeName" value="陈芳伟"><input type="hidden" name="hl_CdtrbrnchId" value="306581000003">
+<table width="100%" border="0" id="formTable">
+<tr>
+<td height="427">
+<table width="510" height="143" border="0" align="center" cellpadding="0" cellspacing="1" bgcolor="#03B4BC">
+<tr>
+<td height="141" valign="top" bgcolor="#FFFFFF">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td><img src="/images/j3.jpg" width="27" height="16"></td>
+</tr>
+<tr>
+<td height="110">
+<table width="400" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+<td width="55" align="center" id="respic"><img src="/images/chenggong.gif" width="32" height="28"></td><td width="445" align="left" valign="bottom" class="resutlTitle" id="lostTime">
+																				处理中。。。。。。	
+																			</td>
+</tr>
+<tr>
+<td height="10" colspan="2">&nbsp;</td>
+</tr>
+<tr id="disRow">
+<td height="40" colspan="2">
+<li>
+<span class="fontStyle" id="dis"></span>
+</li>
+</td>
+</tr>
+<tr id="shibai">
+<td height="40" colspan="2">
+<li id="li1">
+<span class="fontStyle">如果页面自动跳转失败或转账结果未知，请稍后使用<a href="javaScript:goTx('hl1000')">交易状态查询</a>进行查询。</span>
+</li>
+<li id="li2" style="display:none">
+<span class="fontStyle">您可以使用 <a href="javaScript:goTx('hl1000')">交易状态查询</a>  功能查询该笔交易是否成功，同时使用 <a href="javaScript:goTx2('210200')">账户明细查询</a> 核实资金是否转出成功。未核实前请勿重复转账。</span>
+</li>
+</td>
+</tr>
+<tr id="chenggong" style="display:none">
+<td height="60" colspan="2">
+<li>
+<span class="fontStyle">您可通过<a href="javaScript:goTx1('ph0100')">电子回单查询/打印</a>功能进行查询和打印。</span>
+</li>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td align="right" valign="bottom"><img src="/images/j4.jpg" width="27" height="16"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<script language="javascript">
+								lostTime = document.eservice.bankx_ajaxTotalTimeout.value*1;
+								ajaxSendSpace1 = lostTime - document.eservice.bankx_ajaxSendSpace1.value*1;
+								ajaxSendSpace2 = ajaxSendSpace1 - document.eservice.bankx_ajaxSendSpace2.value*1;
+								ajaxSendSpace3 = ajaxSendSpace2 - document.eservice.bankx_ajaxSendSpace3.value*1;
+								ajaxSendTimeout = document.eservice.bankx_ajaxSendTimeout.value;
+								state = 0;
+								display();
+								onTimer();
+								</script></td>
+</tr>
+</table>
+<input type=hidden name=space value=&nbsp;><input type=hidden name=ran value=19DAB0C20DAEF4750B5E237F2C16C1EA49546BCED697BACD></form> 
+</body>
+</html>
+

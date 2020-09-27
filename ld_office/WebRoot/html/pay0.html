@@ -1,0 +1,1790 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<META NAME="save" CONTENT="history">
+<title>本行转他行</title>
+<link href="/images/styleWeb0/css/ceb.css" rel="stylesheet" type="text/css">
+<STYLE>
+					.sHistory {behavior:url(#default#savehistory);}
+					.text {
+	BACKGROUND-COLOR: #FAFAFA;
+
+	FONT-SIZE: 9pt;
+
+	height: 14px;
+
+	border: 1px solid #CCCCCC;
+
+	behavior:url(#default#savehistory);
+
+}
+				</STYLE>
+<script language="JavaScript" src="/js/menu.js"></script><script language="JavaScript" src="/js/ceb.js"></script><script language="JavaScript" src="/js/function.js"></script><script src="/pubFunP.js"></script><script language="JavaScript" src="/js/setDate.js"></script><script language="JavaScript" src="/js/links.js"></script><script>
+function loads(){
+funcitonName="本行转他行";	//本交易名称
+flashCode = "";//??????交易的第一笔资交易号
+sTip = "他行汇款可以实现民生银行系统内民生卡、活期一本通帐户下的本币转入他行卡、折或对公帐户。#可以是同城，也可以是异地。同城收费标准：普通民生卡统一收取手续费2元/笔 ，贵宾卡不收取手续费。异地普通卡收费标准：手续费0.5元；另加电子汇划费：1万（含）以下，5元；1万－10万（含），10元；10万－50万（含），15元；50万－100万（含）20元；100万以上按汇划金额千分之0.02，最高不超过200元。异地贵宾钻石卡不收费。异地贵宾金卡收费标准：手续费免，汇划金额 100万（含）以下免电子汇划费，超过部分按普通卡标准收费。  异地贵宾银卡收费标准：手续费免，汇划金额50万（含）以下免电子汇划费，超过部分按普通卡标准收费。#为了方便客户输入帐户，您可以选择历史转入成功帐户，也可以手工输入转入帐户。#为了防范业务风险，要求客户在签约时必须指定一个或多个对外转帐支付帐户和单笔最高限额、当日累计限额，且不得超过网银系统设定的限制，即单笔最高限额500000元人民币，当日累计2000000元人民币。#如果签约时不指定对外转帐支付帐户，将不能使用对外转帐、网上支付功能。#为了提高您转帐成功的机率，请在填写转入行名称时一定要详细具体，例如到支行、分理处、营业部等，否则容易造成转入行退款。#由于我行目前他行电子汇款交易不是实时的，需要通过人民银行的交换中心完成，而人行交换中心在非工作时间（下班时间、节假日、双休日）休息，为了不耽误您转帐汇款，我行该交易在上述时间内不接受客户的转帐指令，请您选择约定转帐或在营业时间内做该交易，在此给您带来的不便请原谅！";
+sOtherFunction = "本行汇款|221200,帐户余额查询|210100";
+writeFunctionName();//输出本交易名称
+writeTip();//输出交易提示
+writeFunction();//输出相关交易
+setListTable(formTable);//设置表格样式
+setListTable(name_table);
+
+formatMoneyNum(document.eservice.payerAmt,12,2);
+formatMoneyChn(document.eservice.payerAmt,'dsp_chnAmt');
+}
+</script><script language="javascript">				
+var counter;
+var param2;
+var PathList=new Array();
+
+		PathList=[ new Array( 
+			"7",
+			"13",
+			"重庆同城票交—人行通"), new Array( 
+			"5",
+			"11",
+			"网银互联"), new Array( 
+			"4",
+			"10",
+			"上海同城支付"), new Array( 
+			"2",
+			"7",
+			"大额实时支付"), new Array( 
+			"1",
+			"6",
+			"小额实时支付"), new Array( 
+			"3",
+			"4",
+			"异地汇划"), new Array( 
+			"0",
+			"2",
+			"同城票交"),]
+	;
+var hisList = new Array();
+
+		hisList=[ new Array( 
+			"6225682121003010671",
+			"陈芳伟",
+			"广东发展银行股份有限公司运营作业部",
+			"306581000003",
+			"1",
+			"11",
+			""),];
+
+	;
+//模糊查询
+var suggest=new Array();	
+var intIndex=0;		
+
+suggest[intIndex++] =("105100000017&#160;中国建设银行股份有限公司总行")
+				
+suggest[intIndex++] =("103100000026&#160;中国农业银行股份有限公司")
+				
+suggest[intIndex++] =("102100099996&#160;中国工商银行")
+				
+suggest[intIndex++] =("301290000007&#160;交通银行")
+				
+suggest[intIndex++] =("302100011000&#160;中信银行股份有限公司")
+				
+suggest[intIndex++] =("303100000006&#160;中国光大银行")
+				
+suggest[intIndex++] =("304100040000&#160;华夏银行股份有限公司总行")
+				
+suggest[intIndex++] =("306581000003&#160;广东发展银行股份有限公司运营作业部")
+				
+suggest[intIndex++] =("307584007998&#160;深圳发展银行")
+				
+suggest[intIndex++] =("308584000013&#160;招商银行股份有限公司")
+				
+suggest[intIndex++] =("309391000011&#160;兴业银行总行")
+				
+suggest[intIndex++] =("313100000013&#160;北京银行")
+				
+suggest[intIndex++] =("313110000017&#160;天津银行股份有限公司")
+				
+suggest[intIndex++] =("313581003284&#160;广州银行")
+				
+suggest[intIndex++] =("313584099990&#160;平安银行")
+				
+suggest[intIndex++] =("313602088017&#160;东莞银行股份有限公司")
+				
+suggest[intIndex++] =("314581000011&#160;广州农村商业银行股份有限公司")
+				
+suggest[intIndex++] =("314588000016&#160;佛山顺德农村商业银行股份有限公司")
+				
+suggest[intIndex++] =("317110010019&#160;天津农村合作银行")
+				
+suggest[intIndex++] =("318110000014&#160;渤海银行股份有限公司")
+				
+suggest[intIndex++] =("402100000018&#160;北京农村商业银行股份有限公司")
+				
+suggest[intIndex++] =("402584009991&#160;深圳农村商业银行")
+				
+suggest[intIndex++] =("402602000018&#160;东莞农村商业银行股份有限公司")
+				
+suggest[intIndex++] =("403100000004&#160;中国邮政储蓄银行有限责任公司")
+				
+suggest[intIndex++] =("591110000016&#160;外换银行（中国）有限公司")
+				
+suggest[intIndex++] =("595100000007&#160;新韩银行（中国）有限公司")
+				
+suggest[intIndex++] =("104100000004&#160;中国银行")
+				
+suggest[intIndex++] =("597100000014&#160;韩亚银行（中国）有限公司")
+				
+suggest[intIndex++] =("313227000012&#160;锦州银行")
+				
+suggest[intIndex++] =("313222080002&#160;大连银行")
+				
+suggest[intIndex++] =("313223007007&#160;鞍山市商业银行")
+				
+suggest[intIndex++] =("313227600018&#160;葫芦岛银行股份有限公司")
+				
+suggest[intIndex++] =("313452060150&#160;青岛银行")
+				
+suggest[intIndex++] =("313453001017&#160;齐商银行")
+				
+suggest[intIndex++] =("313456000108&#160;烟台银行股份有限公司")
+				
+suggest[intIndex++] =("313461000012&#160;济宁银行股份有限公司")
+				
+suggest[intIndex++] =("313463000993&#160;泰安市商业银行")
+				
+suggest[intIndex++] =("313473070018&#160;临商银行股份有限公司")
+				
+suggest[intIndex++] =("313455000018&#160;东营市商业银行")
+				
+suggest[intIndex++] =("313465000010&#160;威海市商业银行")
+				
+suggest[intIndex++] =("313473200011&#160;日照银行股份有限公司")
+				
+suggest[intIndex++] =("313463400019&#160;莱商银行")
+				
+suggest[intIndex++] =("402361018886&#160;安徽省农村信用联社资金清算中心")
+				
+suggest[intIndex++] =("313551088886&#160;长沙银行股份有限公司")
+				
+suggest[intIndex++] =("313421087506&#160;南昌银行")
+				
+suggest[intIndex++] =("313433076801&#160;上饶银行")
+				
+suggest[intIndex++] =("313611001018&#160;广西北部湾银行")
+				
+suggest[intIndex++] =("322290000011&#160;上海农村商业银行")
+				
+suggest[intIndex++] =("313290000017&#160;上海银行")
+				
+suggest[intIndex++] =("310290000013&#160;上海浦东发展银行")
+				
+suggest[intIndex++] =("313305066661&#160;苏州银行股份有限公司")
+				
+suggest[intIndex++] =("314305670002&#160;张家港农村商业银行")
+				
+suggest[intIndex++] =("314305206650&#160;昆山农村商业银行")
+				
+suggest[intIndex++] =("313331000014&#160;杭州银行股份有限公司")
+				
+suggest[intIndex++] =("316331000018&#160;浙商银行")
+				
+suggest[intIndex++] =("313338707013&#160;浙江稠州商业银行")
+				
+suggest[intIndex++] =("313345010019&#160;浙江泰隆商业银行")
+				
+suggest[intIndex++] =("313333007331&#160;温州银行股份有限公司")
+				
+suggest[intIndex++] =("402332010004&#160;宁波鄞州农村合作银行")
+				
+suggest[intIndex++] =("313332082914&#160;宁波银行股份有限公司")
+				
+suggest[intIndex++] =("313336071575&#160;湖州银行股份有限公司")
+				
+suggest[intIndex++] =("313393080005&#160;厦门银行股份有限公司")
+				
+suggest[intIndex++] =("402871099996&#160;宁夏黄河农村商业银行股份有限公司")
+				
+suggest[intIndex++] =("402641000014&#160;海南省农村信用社联合社资金清算中心")
+				
+suggest[intIndex++] =("402521000032&#160;湖北省农村信用社联合社结算中心")
+				
+suggest[intIndex++] =("313882000012&#160;昆仑银行股份有限公司")
+				
+suggest[intIndex++] =("313168000003&#160;晋城市商业银行")
+				
+suggest[intIndex++] =("313881000002&#160;乌鲁木齐市商业银行清算中心")
+				
+suggest[intIndex++] =("313228000276&#160;营口银行股份有限公司资金清算中心")
+				
+suggest[intIndex++] =("313131000016&#160;邢台银行股份有限公司")
+				
+suggest[intIndex++] =("313513080408&#160;南阳市商业银行")
+				
+suggest[intIndex++] =("313229000008&#160;阜新银行结算中心")
+				
+suggest[intIndex++] =("313504000010&#160;漯河市商业银行")
+				
+suggest[intIndex++] =("313656000019&#160;攀枝花市商业银行")
+				
+suggest[intIndex++] =("313653000013&#160;重庆银行")
+				
+suggest[intIndex++] =("314653000011&#160;重庆农村商业银行股份有限公司")
+				
+suggest[intIndex++] =("313121006888&#160;河北银行股份有限公司")
+				
+suggest[intIndex++] =("313127000013&#160;邯郸市商业银行股份有限公司")
+				
+suggest[intIndex++] =("313141052422&#160;承德银行股份有限公司")
+				
+suggest[intIndex++] =("313138000019&#160;张家口市商业银行股份有限公司")
+				
+suggest[intIndex++] =("313143005157&#160;沧州银行")
+				
+suggest[intIndex++] =("313658000014&#160;德阳银行股份有限公司")
+				
+suggest[intIndex++] =("313659000016&#160;绵阳市商业银行")
+				
+suggest[intIndex++] =("313521000011&#160;汉口银行资金清算中心")
+				
+suggest[intIndex++] =("313731010015&#160;富滇银行股份有限公司运营管理部")
+				
+suggest[intIndex++] =("402731057238&#160;云南省农村信用社联合社")
+				
+suggest[intIndex++] =("313821001016&#160;兰州银行股份有限公司")
+				
+suggest[intIndex++] =("313871000007&#160;宁夏银行总行清算中心")
+				
+suggest[intIndex++] =("313851000018&#160;青海银行股份有限公司营业部")
+				
+suggest[intIndex++] =("313261099913&#160;龙江银行股份有限公司")
+				
+suggest[intIndex++] =("313261000018&#160;哈尔滨银行结算中心")
+				
+suggest[intIndex++] =("313491000232&#160;郑州银行")
+				
+suggest[intIndex++] =("313492070005&#160;开封市商业银行")
+				
+suggest[intIndex++] =("313493080539&#160;洛阳银行")
+				
+suggest[intIndex++] =("313506082510&#160;商丘市商业银行股份有限公司")
+				
+suggest[intIndex++] =("313701098010&#160;贵阳市商业银行")
+				
+suggest[intIndex++] =("313161000017&#160;晋商银行股份有限公司")
+				
+suggest[intIndex++] =("313191000011&#160;内蒙古银行")
+				
+suggest[intIndex++] =("313192000013&#160;包商银行股份有限公司")
+				
+suggest[intIndex++] =("313205057830&#160;鄂尔多斯银行股份有限公司")
+				
+suggest[intIndex++] =("313241066661&#160;吉林银行")
+				
+suggest[intIndex++] =("402611099974&#160;广西壮族自治区农村信用社联合社")
+				
+suggest[intIndex++] =("313614000012&#160;柳州银行股份有限公司清算中心")
+				
+suggest[intIndex++] =("596110000013&#160;企业银行（中国）有限公司")
+				
+suggest[intIndex++] =("313345001665&#160;台州银行股份有限公司")
+				
+suggest[intIndex++] =("313345400010&#160;浙江民泰商业银行")
+				
+suggest[intIndex++] =("313337009004&#160;绍兴银行股份有限公司营业部")
+				
+suggest[intIndex++] =("315456000105&#160;恒丰银行")
+				
+suggest[intIndex++] =("313468000015&#160;德州银行股份有限公司")
+				
+suggest[intIndex++] =("313458000013&#160;潍坊银行")
+				
+suggest[intIndex++] =("402301099998&#160;江苏省农村信用社联合社信息结算中心")
+				
+suggest[intIndex++] =("314305506621&#160;江苏常熟农村商业银行股份有限公司清算中心")
+				
+suggest[intIndex++] =("313301099999&#160;江苏银行股份有限公司")
+				
+suggest[intIndex++] =("313301008887&#160;南京银行股份有限公司")
+				
+suggest[intIndex++] =("314305400015&#160;吴江农村商业银行清算中心")
+				
+suggest[intIndex++] =("313428076517&#160;赣州银行股份有限公司")
+				
+suggest[intIndex++] =("319361000013&#160;徽商银行股份有限公司")
+				
+suggest[intIndex++] =("402391000068&#160;福建省农村信用社联合社")
+				
+suggest[intIndex++] =("313391080007&#160;福建海峡银行股份有限公司")
+				;
+
+function strSplit(str,flag)
+{
+	var list=new Array();
+	var i=0;
+	var start=0;
+	var end=0;
+	
+	while(  (end=str.indexOf(flag,start)) != -1  )
+	{	
+		list[i++]=str.substring(start,end);
+		start=end+1;
+	}
+	list[i++]=str.substring(start,str.length);
+					
+	return list;
+}
+				
+
+function init(){
+	
+	MulSelect(1);change();
+	
+//	document.all.formTable.rows(2).style.display="none";
+	document.all.his_label.style.display="none";
+  	document.all.payeeAcct_label.style.display="";
+	document.all.payeeName_label.style.display="";
+
+   	document.all.hisPayeeList.style.display="none";
+   	
+   	document.all.his_label1.style.display="none";
+	document.all.his_label2.style.display="";
+
+ 
+
+  	removedup(hisList,document.eservice.pathCode.value);
+   setHisMessage();
+	
+	counter=0;
+	 
+	return true;
+}
+function check(){
+	var i;
+	var FirstSelect= document.all.FirstSelect;
+	var SecondSelect= document.all.SecondSelect;
+   if ( document.all.flag[0].checked == true ) {
+        if ( isNull (document.eservice.payeeAcct, "请输入转入帐号" ) ) {
+            return false;
+        }
+        
+        if( !IsRight(document.eservice.payeeAcct.value) )
+        {
+        alert("转入帐号请输入数字或下划线或中间线或星号！");
+        return false;
+        }
+        
+        
+        if ( isNull (document.eservice.payeeName, "请输入转入帐户名称" ) ) {
+            return false;
+        }
+
+       document.eservice.payeeAcctAndType.options[0].selected = true;
+       document.eservice.payeeAcctAndType.options[0].value = document.eservice.payeeAcct.value + "|" + 	   	    document.eservice.payeeAcctType.value ;
+    }
+    
+    if( document.eservice.pathCode.value == "11" )
+    	{
+    		if((FirstSelect.selectedIndex)==0){
+				alert("请输入或选择转入账户开户行！");
+				return false;
+			}
+		}
+      
+      if(document.eservice.pathCode[document.eservice.pathCode.selectedIndex].value=="11"){
+      		document.eservice.BranchName.value=SecondSelect[SecondSelect.selectedIndex].text;
+      		document.eservice.BRCSBK.value=SecondSelect[SecondSelect.selectedIndex].value;
+      		
+			if(document.eservice.BRCSBK.value=="103100000026")
+			{
+				alert("由于系统原因，网银互联业务成功率较低，建议使用网银大小额汇路进行转帐！");
+				return false;
+			}
+      }
+      
+   		if ( isNull (document.eservice.BranchName, "请输入转入帐户开户行名称" ) ) {
+       	return false;
+   		} 
+   		
+   
+   document.eservice.payeeBranchName.value=document.eservice.BranchName.value;
+   
+   
+   
+   if( isNull(document.eservice.payerAmt,"请输入交易金额") ) return false;
+   if( !isNumber(document.eservice.payerAmt,"交易金额请输入数字") ) return false;
+    if(parseFloat(document.eservice.payerAmt.value.replace(/,/gi,"")) <= 0)  {alert("请输入零以上的金额");  return false;}
+   if(document.eservice.pathCode.value == "6")
+   {
+   		if( parseFloat(document.eservice.payerAmt.value.replace(/,/gi,"")) > 50000)
+   		{
+       	alert("小额支付每笔不得超过5万元人民币(含)!");
+       	document.eservice.payerAmt.focus();
+       	return false;
+   		}
+   	}
+   	
+   	if(document.eservice.pathCode.value == "2" || document.eservice.pathCode.value == "4")
+   	{
+   		document.eservice.BRCSBK.value="";
+   	}
+
+   	
+	for( i=0; i < PathList.length-1; i++ )
+	{
+		if( PathList[i][1] == document.eservice.pathCode.value )
+		{
+			document.eservice.pathName.value=PathList[i][2];
+			break;
+		}
+	}
+ 
+    if ( document.all.flag[1].checked == true ) {
+        str = "";
+        str1 = "";
+        payee = document.eservice.payeeAcctAndType;
+        
+        for ( i = 0; i < payee.length; i++ ) {
+            if ( payee.options[i].selected ){
+                s1 = payee.options[i].text;
+                break;
+            }       
+        }
+        var len = s1.length;
+        
+        for ( i = len - 1; i >= 0; i-- ) {
+            var buf = s1.charAt( i );
+            if ( buf == "/" ) {
+                break;
+            }
+            str = s1.substr( i, len - i );
+
+        }
+        
+        document.eservice.payeeName.value = str;
+    }
+
+
+					document.eservice.payerAmt.value=fmoney(document.eservice.payerAmt.value,2);
+				
+
+ 
+	if ( counter == 0) 
+		counter = counter +1;
+	else {
+		alert ("交易已提交，请点击\"确认\"后等待！");
+		return false;
+	}
+	
+	//记录本次选择信息,返回本页时备用
+	if (document.eservice.flag[0].checked)
+	{document.eservice.his_writeflag.value = "0";}
+	else
+	{document.eservice.his_writeflag.value = "1";}
+	
+	document.eservice.his_payeracct.value = document.eservice.acctAndTypeList.value;
+	document.eservice.his_payeeacct.value = document.eservice.payeeAcctAndType.value;
+	document.eservice.his_pathcode.value = document.eservice.pathCode.value;
+	document.eservice.his_custtype.value = document.eservice.rcvCustType.value;
+	document.eservice.his_remark.value = document.eservice.remark.value;
+	document.eservice.his_payerAmt.value = document.eservice.payerAmt.value;
+	document.eservice.his_payeeName.value=document.eservice.payeeName.value;
+	document.eservice.his_payeeAcct.value=document.eservice.payeeAcct.value;
+	document.eservice.his_BranchName.value=document.eservice.BranchName.value;
+	document.eservice.his_payeeBank.value=document.eservice.FirstSelect.value;
+	document.eservice.his_address.value=document.eservice.SecondSelect.value;
+	document.eservice.his_otherRemark.value=document.eservice.otherRemark.value;
+
+	return true; 
+}
+
+function DisplayField(dispflag)
+{
+	if ( dispflag=="1" )
+   {
+			   //新增修改
+				controlSearch1();
+				document.getElementById('MoHuSearch').disabled = 'disabled';
+				
+     	    	document.all.his_label.style.display="";
+     	    	document.all.payeeAcct_label.style.display="none";
+				document.all.payeeName_label.style.display="none";
+      	    	document.all.hisPayeeList.style.display="";
+      	    	document.all.send.style.display="none";
+      	    	document.all.a1.style.display="none";
+      	    	document.all.txt1.style.display="none";
+      	    	
+		    	document.all.formTable.rows(3).style.display="";
+      	    	document.all.formTable.rows(4).style.display="none";
+      	    	document.all.formTable.rows(5).style.display="none";
+
+      	    	document.all.payeeAcct_label.style.display="none";
+      	    	document.all.payeeAcct.style.display="none"
+      	    	
+      	    	document.all.payeeName_label.style.display="none";
+      	    	document.all.payeeName.style.display="none"  
+   }
+ 	
+ 	if ( dispflag=="0" )
+      	{
+      	      
+      	      //新增修改						
+				document.getElementById('MoHuSearch').disabled = '';
+						
+     	    	document.all.his_label.style.display="none";
+     	    	document.all.payeeAcct_label.style.display="";
+				document.all.payeeName_label.style.display="";
+
+      	    	document.all.hisPayeeList.style.display="none";
+      	    	document.all.send.style.display="";
+      	    	document.all.a1.style.display="";
+      	    	document.all.txt1.style.display="";
+      	    	
+		      	document.all.formTable.rows(3).style.display="none";
+      	    	document.all.formTable.rows(4).style.display="";
+      	    	document.all.formTable.rows(5).style.display="";
+ 
+      	    	document.all.payeeAcct_label.style.display="";
+      	    	document.all.payeeAcct.style.display=""
+      	    	
+      	    	document.all.payeeName_label.style.display="";
+      	    	document.all.payeeName.style.display=""
+      	}
+      	
+      		if( dispflag != document.eservice.his_writeflag.value )
+	{
+		document.all.payeeAcct.value = "";
+		document.all.payeeName.value = "";
+		document.all.BRCSBK.value = "";
+		document.all.BranchName.value = "";
+	}
+	document.eservice.his_writeflag.value = dispflag;
+      changePath();
+      return 0;
+}
+function setbranname( )
+{   
+	var i=0;
+	var payee = document.eservice.payeeAcctAndType;
+	if(document.eservice.pathCode.value == "6" || document.eservice.pathCode.value == "7" || document.eservice.pathCode.value == "10" || document.eservice.pathCode.value == "13")
+	{
+		if(document.eservice.flag[1].checked)
+		{
+	   		for ( i = 0; i < payee.length; i++ ) 
+	    	{
+	       	if ( payee.options[i].selected )
+	       	{
+	          	break;
+	        	}       
+	    	}
+	
+	   		if ( param2.length > 0 ) 
+	   		{
+	   		
+	           if(document.eservice.pathCode.value==param2[i][5]){
+	   		    document.all.BRCSBK.value = param2[i][3];
+	                 document.all.BranchName.value = param2[i][2];
+	   		    }
+	   		    else
+	   		    {
+	   		    document.all.BRCSBK.value = "";
+	                 document.all.BranchName.value = "";
+	   		    }
+	           
+	           
+	           
+	           if( document.eservice.pathCode.value == "10" ||document.eservice.pathCode.value == "13" )
+	           {
+	           	if( param2[i][4] == "0" )
+	           	{
+	         	 		document.all.rcvCustType.options[1].selected=true;
+	         	 	}
+	         	 	else
+	         	 	{
+	         	 		document.all.rcvCustType.options[0].selected=true;
+	         	 	}
+	         	 }
+	       } 
+	       else 
+	       {
+	           document.all.BRCSBK.value = document.eservice.brancode.value;
+	           document.all.BranchName.value = document.eservice.branname.value;
+	           
+	           if( document.eservice.pathCode.value == "10" ||　document.eservice.pathCode.value == "13" )
+	           {
+	           	if( document.eservice.custtype.value == "0" )
+	           	{
+	         	 		document.all.rcvCustType.options[1].selected=true;
+	         	 	}
+	         	 	else
+	         	 	{
+	         	 		document.all.rcvCustType.options[0].selected=true;
+	         	 	}
+	         	 }
+	       }
+	       if ( document.all.BRCSBK.value == "" || document.all.BRCSBK.value == "&nbsp;"
+	       	 || document.all.BranchName.value == "" || document.all.BranchName.value == "&nbsp;" ) 
+	       {
+	       	document.all.BRCSBK.value = "";
+	       	document.all.BranchName.value = "";
+	       	
+	       	document.all.send.style.display="";
+	       	document.all.a1.style.display="";
+	       	document.all.txt1.style.display="";
+				document.all.BranchName.disabled="disabled";
+	       }
+	       else
+	       {
+	       	document.all.send.style.display="none";
+	       	document.all.a1.style.display="none";
+	       	document.all.txt1.style.display="none";
+				document.all.BranchName.disabled="disabled";
+	       }
+		}
+	}
+	else if(document.eservice.pathCode.value == "2" || document.eservice.pathCode.value == "4" )
+		{
+	       if(document.eservice.flag[1].checked)
+	       {
+	        for ( i = 0; i < payee.length; i++ ) {
+	            if ( payee.options[i].selected ){
+	                break;
+	            }       
+	        }
+	
+	       if ( param2.length > 0 ) {
+	           if(document.eservice.pathCode.value==param2[i][5]){
+	                       document.all.BranchName.value = param2[i][2];
+	                       document.all.BranchName.disabled="disabled";
+	                     }
+	                     else
+	                     {
+	                     document.all.BranchName.value = "";
+	                     document.all.BranchName.disabled="";
+	                     }
+	           
+	       } else {
+	           document.all.BranchName.value = "";
+	           document.all.BranchName.disabled="";
+	       }
+	       
+	       if ( document.all.BranchName.value == "&nbsp;" ) {
+	         document.all.BranchName.value = ""; 
+	         document.all.BranchName.disabled="";
+	       }
+	      }
+	   }
+	else
+	{//网银互联
+	
+	if(document.eservice.flag[1].checked)
+	{
+	        for ( i = 0; i < payee.length; i++ ) {
+	            if ( payee.options[i].selected ){
+	                break;
+	            }       
+	        }
+	       
+	       
+	      
+		 var FirstSelect= document.all.FirstSelect;
+		 var SecondSelect= document.all.SecondSelect;
+		 FirstSelect.selectedIndex=0;//请选择
+		 if ( param2.length > 0 ) {
+	          if(param2[i][5]=="11"){
+	          
+	          document.all.BranchName.value = param2[i][2];
+                           
+              var m=1;
+             for ( j = 0; j < FirstSelect.length;j++ ) {
+             //能在分行列表中找到的
+	          if ( FirstSelect.options[j].text == document.all.BranchName.value ){
+	                m=0;
+	                break;
+	            }  
+	                            FirstSelect.selectedIndex=j;
+	                             MulSelect(1);change();
+	                             for ( k = 0; k < SecondSelect.length;k++ ) {
+	                             //能在支行列表中找到的
+	                             if ( SecondSelect.options[k].text == document.all.BranchName.value ){
+	                             m=2;
+	                              SecondSelect.selectedIndex=k;
+	                              break;
+	                              }  
+	                     }
+	                     if(m==2)
+	                     {
+							break;
+	                     }
+	           }
+	           
+               
+	            if (m==0)
+	            {
+	            //能在分行列表中找到的
+	            FirstSelect.selectedIndex=j;
+	            MulSelect(1);
+               change();
+	            SecondSelect.style.display="none";
+	            
+	            }
+	            else if(m==2)
+	            {
+	            //能在支行列表中找到的
+	            SecondSelect.style.display="";
+	            SecondSelect.selectedIndex=k;
+	            }
+
+	            else
+	            {
+	            //都找不到的
+
+
+
+	            FirstSelect.selectedIndex=0;//请选择
+               SecondSelect.style.display="none";
+	            }
+	          }  
+	          else
+	          {
+	          //不是网银互联
+	          FirstSelect.selectedIndex=0;//请选择
+               SecondSelect.style.display="none";
+	          }
+             
+               
+	       } 
+
+		
+		}
+	}
+}
+
+function dosend() {
+					if(document.eservice.pathCode.value == "13"){
+						window.open("/weblogic/servlets/EService/CSM/MainService?txcode=221303&openBranchName=&dj_flag=1","resultpage","width=500,height=400,resizable=no,scrollbars=no,status=no,toolbar=no,menubar=no,location=no");
+					}else
+						window.open("/weblogic/servlets/EService/CSM/MainService?txcode=221303&openBranchName=","resultpage","width=500,height=400,resizable=no,scrollbars=no,status=no,toolbar=no,menubar=no,location=no");
+						    
+				}
+		//改变汇路
+function changePath()
+{
+var payeeAcctAndType = document.eservice.payeeAcctAndType;
+	var selected=payeeAcctAndType.selectedIndex;
+	var selectvalue=payeeAcctAndType.value;
+   removedup(hisList,document.eservice.pathCode.value);
+	if( document.eservice.pathCode.value == "6" || document.eservice.pathCode.value == "7" )
+	{
+		document.all.rcvBranch_label1.style.display="";
+		document.all.rcvBranch_label2.style.display="none";
+		
+		document.all.send.style.display="";
+		document.all.a1.style.display="";
+		document.all.txt1.style.display="";
+		document.all.BranchName.disabled="disabled";
+		document.all.rcvCustType_label.style.display="none";
+		
+		document.all.his_label1.style.display="";
+		document.all.his_label2.style.display="none";
+		document.all.title11.style.display="none";
+		document.all.title22.style.display="";
+	}else if( document.eservice.pathCode.value == "13" )//重庆人行通
+	{
+		document.all.rcvBranch_label1.style.display="";
+		document.all.rcvBranch_label2.style.display="none";
+		
+		document.all.send.style.display="";
+		document.all.a1.style.display="";
+		document.all.txt1.style.display="";
+		document.all.BranchName.disabled="disabled";
+		document.all.rcvCustType_label.style.display="block";
+		
+		document.all.his_label1.style.display="";
+		document.all.his_label2.style.display="none";
+		document.all.title11.style.display="none";
+		document.all.title22.style.display="";
+	}else if( document.eservice.pathCode.value == "10" )
+	{
+		document.all.rcvBranch_label1.style.display="";
+		document.all.rcvBranch_label2.style.display="none";
+		
+		document.all.rcvCustType_label.style.display="";
+		
+		document.all.send.style.display="";
+		document.all.a1.style.display="";
+		document.all.txt1.style.display="";
+		document.all.BranchName.disabled="disabled";
+		
+		document.all.his_label1.style.display="";
+		document.all.his_label2.style.display="none";
+		document.all.title11.style.display="none";
+		document.all.title22.style.display="";
+
+	}
+	else if( document.eservice.pathCode.value == "11" )
+	{//网银互联
+	
+		document.all.rcvBranch_label1.style.display="none";
+		document.all.rcvBranch_label2.style.display="";
+		document.all.rcvCustType_label.style.display="none";
+		
+		document.all.his_label1.style.display="none";
+		document.all.his_label2.style.display="";
+		document.all.title11.style.display="";
+		document.all.title22.style.display="none";
+	}
+	else
+	{
+		document.all.rcvBranch_label1.style.display="";
+		document.all.rcvBranch_label2.style.display="none";
+		
+		document.all.send.style.display="none";
+		document.all.a1.style.display="none";
+		document.all.txt1.style.display="none";
+		document.all.BranchName.disabled="";
+		document.all.rcvCustType_label.style.display="none";
+		document.all.his_label1.style.display="";
+		document.all.his_label2.style.display="none";
+		document.all.title11.style.display="none";
+		document.all.title22.style.display="";
+	}
+	
+	var his_pathcode = document.eservice.his_pathcode.value;
+	var pathcode = document.eservice.pathCode.value;
+
+	if( his_pathcode == "-1" )
+	{
+		document.all.BRCSBK.value="";
+		document.all.BranchName.value="";
+	}
+	else
+	{
+		if( pathcode == "2" || pathcode == "4" )
+		{//新汇路是同城、异地
+			if( his_pathcode == "6" || his_pathcode == "7" || his_pathcode == "10" || his_pathcode == "11" || his_pathcode == "13"  )
+			{//历史汇路是大、小额或上海同城
+				//清除行号，保留行名
+				document.all.BRCSBK.value="";
+			}
+		}
+		else if( pathcode == "6" || pathcode == "7" || his_pathcode == "10" || his_pathcode == "13" )
+		{//新汇路是大、小额或上海同城
+			if( his_pathcode == "2" || his_pathcode == "4" || his_pathcode == "11" )
+			{//新汇路是同城、异地
+				//清除行号、行名,要求重新选择
+				document.all.BRCSBK.value="";
+				document.all.BranchName.value="";
+			}
+		}
+	}
+	document.eservice.his_pathcode.value = document.eservice.pathCode.value;
+    setSelected(selectvalue,payeeAcctAndType);
+	setbranname( );
+}
+
+function checkOther(){
+			var checkValue=document.eservice.remark.value;
+			if(checkValue != "其他")
+				document.all["otherRemark"].style.display="none";
+			else
+				document.all["otherRemark"].style.display="";
+					
+		}
+		
+
+function setSelected(str,obj)
+{
+	var i = 0;
+	var selected = 0;
+	
+	if( str == "-1" )
+	{
+		obj.options[0].selected = "selected";
+		return;
+	}
+	
+	for( i=0; i < obj.length; i++ )
+	{
+		if( str == obj.options[i].value )
+		{
+			obj.options[i].selected = "selected";
+			selected = 1;
+		}
+		else
+		{
+			obj.options[i].selected = "";
+		}
+	}
+	
+	if( selected == 0 )
+	{
+		obj.options[0].selected = "selected";
+	}
+}
+
+
+function setHisMessage()
+{
+
+	var his_payeracct = document.eservice.his_payeracct.value;
+	var payeracctSelect = document.eservice.acctAndTypeList;
+	
+	setSelected(his_payeracct,payeracctSelect);
+	
+	changePayerAcct();
+	
+	var his_pathcode = document.eservice.his_pathcode.value;
+
+if (document.eservice.his_writeflag.value=="-1"){document.eservice.his_writeflag.value="0"}
+		if (document.eservice.his_writeflag.value=="0") 
+		{
+		document.eservice.flag[0].checked=true;
+		DisplayField(0);
+		}
+
+	else
+	{
+		DisplayField(1);
+		document.eservice.flag[1].checked=true;
+		
+		
+	}
+	
+	changePath();
+
+	if( his_pathcode == "10" )
+	{
+		var his_custtype = document.eservice.his_custtype.value;
+		var rcvCustType = document.eservice.rcvCustType;
+	
+		setSelected(his_custtype,rcvCustType);
+	}
+	
+	var his_payeeBank= document.eservice.his_payeeBank.value;
+	var FirstSelect= document.eservice.FirstSelect;
+	setSelected(his_payeeBank,FirstSelect);
+	
+	MulSelect(1);change();
+	var his_address= document.eservice.his_address.value;
+	var SecondSelect= document.eservice.SecondSelect;
+	setSelected(his_address,SecondSelect);
+		
+	var his_remark = document.eservice.his_remark.value;
+	var remark = document.eservice.remark;
+	setSelected(his_remark,remark);
+	checkOther();
+	document.eservice.otherRemark.value = document.eservice.his_otherRemark.value;
+	
+	document.eservice.payerAmt.value = document.eservice.his_payerAmt.value;
+   formatMoneyChn(document.eservice.payerAmt,'dsp_chnAmt');
+	document.eservice.payeeName.value=document.eservice.his_payeeName.value;
+	document.eservice.payeeAcct.value=document.eservice.his_payeeAcct.value;
+	if( his_pathcode != "11" )
+	{ document.eservice.BranchName.value=document.eservice.his_BranchName.value;
+	  setSelected(document.all.BRCSBK.value,FirstSelect);
+	 }
+}
+
+function changePayerAcct()
+{
+	var index=0;
+	var i;
+	var list=strSplit(document.eservice.acctAndTypeList.value,"|");
+	var oldPathCode=document.eservice.his_pathcode.value;
+	
+	document.eservice.acctAndType.value=list[0]+"|"+list[1];
+	
+	//设置可用汇路列表
+	for( i=0; i < PathList.length-1; i++ )
+	{
+		if( list[2].charAt(1*PathList[i][0].toString()) == "1" )
+		{
+			document.eservice.pathCode.options[index]=new Option(PathList[i][2],PathList[i][1]);
+			index=index+1;
+		}
+	}
+	document.eservice.pathCode.length=index;
+	setSelected(oldPathCode,document.eservice.pathCode);
+	changePath();
+}
+
+function goShowSvcTx(code)
+{
+	parent.setTXCode(code);
+	parent.setPj("查询服务 ","对外转帐支付限额");
+	strURL="MainService?txcode="+code+"&ShowStyleData="+window.parent.document.all("ShowStyleData").value+"&userid=@";
+	window.parent.frames['txmain'].location=strURL;
+}
+
+			
+				
+
+function removedup(hisList1,pathcode)
+				{
+       var rowindex=-1;
+       var rowindex2=-1;
+       var rowindex3=-1;
+       var rowindex4=-1;
+       
+		var param= hisList1.slice(0); 
+	
+	   	param2=new Array();
+	   		var param3=new Array();
+	   		var param4=new Array();
+//等于网银互联的记录
+   	for( i=0; i < param.length-1; i++ )
+	{
+
+            if(param[i][5]!=pathcode) continue;
+                             rowindex2++;
+				param2[rowindex2] = new Array();
+				param2[rowindex2][0]=param[i][0];
+				param2[rowindex2][1]=param[i][1];
+				param2[rowindex2][2]=param[i][2];
+				param2[rowindex2][3]=param[i][3];
+				param2[rowindex2][4]=param[i][4];
+				param2[rowindex2][5]=param[i][5];
+                              
+	}		
+	//不等于网银互联的记录
+	   	for( i=0; i < param.length-1; i++ )
+	{
+        if(param[i][5]==pathcode) continue;
+             rowindex3++;
+				param3[rowindex3] = new Array();
+				param3[rowindex3][0]=param[i][0];
+				param3[rowindex3][1]=param[i][1];
+				param3[rowindex3][2]=param[i][2];
+				param3[rowindex3][3]=param[i][3];
+				param3[rowindex3][4]=param[i][4];
+				param3[rowindex3][5]=param[i][5];
+				param3[rowindex3][6]="";
+                                  
+	}	   
+	
+	
+	 for(  k = 0; k < param3.length ; k++ )
+	{
+        for( l = k+1; l < param3.length; l++ )
+					     {
+          if ((param3[k][0]==param3[l][0])&&(param3[k][1]==param3[l][1])){
+                                         
+                                         if (param3[k][6]=="d"){
+					                               continue;
+					                        }
+
+					   param3[l][6]="d";
+					               }
+
+
+					     }
+                           
+	}
+//不等于和等于的循环比较
+for( j=0; j < param3.length; j++ )
+	{
+	if (param3[j][6]=="d") continue;
+	 var m=1;
+      for( i=0;i<param2.length;i++ )
+           {
+   	             if(param3[j][0]==param2[i][0]&&param3[j][1]==param2[i][1])
+   	             { m=0;}
+           }
+           	if (m==1){
+   	          rowindex4++;
+				param4[rowindex4] = new Array();
+				param4[rowindex4][0]=param3[j][0];
+				param4[rowindex4][1]=param3[j][1];
+				param4[rowindex4][2]=param3[j][2];
+				param4[rowindex4][3]=param3[j][3];
+				param4[rowindex4][4]=param3[j][4];
+				param4[rowindex4][5]=param3[j][5];
+   		}
+           	
+	}
+		
+					    
+
+
+for( j=0; j < param4.length; j++ )
+	{
+
+
+   	          rowindex2++;
+				param2[rowindex2] = new Array();
+				param2[rowindex2][0]=param4[j][0];
+				param2[rowindex2][1]=param4[j][1];
+				param2[rowindex2][2]=param4[j][2];
+				param2[rowindex2][3]=param4[j][3];
+				param2[rowindex2][4]=param4[j][4];
+				param2[rowindex2][5]=param4[j][5];
+				
+
+             if (param2[rowindex2][0]=="&nbsp;"){param2[rowindex2][0]="";}
+             if (param2[rowindex2][1]=="&nbsp;"){param2[rowindex2][1]="";}
+           	
+	}
+	
+	
+	
+	
+	for( i=0; i < param2.length; i++ )
+	{
+       document.eservice.payeeAcctAndType.options[i]=new Option(param2[i][0]+"/"+param2[i][1],param2[i][0]+"|1");
+	}
+	var his_payeeacct = document.eservice.his_payeeacct.value;
+	var payeeAcctAndType = document.eservice.payeeAcctAndType;
+	setSelected(his_payeeacct,payeeAcctAndType);
+		
+	if(document.eservice.flag[1].checked)
+	{
+		var BranchName=document.eservice.his_BranchName.value.substring(document.eservice.his_BranchName.value.indexOf("|")+1,100);
+		
+		var his_payeeBank=document.eservice.his_payeeBank.value;
+       var his_payeeBranch=document.eservice.his_address.value;
+
+		var FirstSelect= document.all.FirstSelect;
+		var SecondSelect= document.all.SecondSelect;
+		
+		setSelected(his_payeeBank,document.eservice.FirstSelect);
+MulSelect(1);
+change();
+setSelected(his_payeeBranch,document.eservice.SecondSelect);
+		}
+		
+
+	}    //end    
+	
+	
+
+	function change()
+{   var SecondSelect=document.all.SecondSelect;
+        var FirstSelect=document.all.FirstSelect;
+
+         if(SecondSelect.options[SecondSelect.selectedIndex].value==FirstSelect.options[FirstSelect.selectedIndex].value)
+	{
+	SecondSelect.style.display='none';
+	}
+	else
+	{
+	SecondSelect.style.display='';
+	}
+
+}	
+
+	 function IsRight(str)  
+ {  
+ var number_chars = "*-_1234567890";  
+ var i;  
+ for (i = 0; i < str.length; i++)  
+ {  
+ if (number_chars.indexOf(str.charAt(i))==-1) 
+ return false;  
+ }  
+ return true;  
+ } 
+ 
+ function fmoney(s, n)  
+{  
+   n = n > 0 && n <= 20 ? n : 2;  
+   s = parseFloat((s + "").replace(/[^\d\.-]/g, "")).toFixed(n) + "";  
+   var l = s.split(".")[0].split("").reverse(),  
+   r = s.split(".")[1];  
+   t = "";  
+   for(i = 0; i < l.length; i ++ )  
+   {  
+      t += l[i] ;  
+   }  
+   return t.split("").reverse().join("") + "." + r;  
+}
+function controlSearch() {
+	var box = document.getElementById("MoHuSearch");	
+	if(box.checked == true)
+	{		
+		document.getElementById("div339").style.display = "";
+		document.getElementById("names").value="请输入开户行机构名称";		
+	}else
+	{		
+		document.getElementById("names").value="请输入开户行机构名称";
+		document.getElementById("div339").style.display = "none";		
+	}	
+}
+function controlSearch1() {
+	var box = document.getElementById("MoHuSearch");	
+	if(box.checked == true)
+	{		
+		document.getElementById("div339").style.display = "none";
+	}
+	box.checked = false;
+}
+// 选定div列表值，赋值给文本框
+function populateName(cell,flag){
+    inputField.value = cell.firstChild.nodeValue;
+    var tmpValue = inputField.value;     
+    clearNames();
+    
+    var FirstSelect = document.eservice.FirstSelect;   
+     
+    for( var i=0; i<FirstSelect.length; i++ )
+    {	 
+    	if(FirstSelect.options[i].value == tmpValue.substring(0,tmpValue.indexOf(" ")))    
+    	{
+    		FirstSelect.options[i].selected = "selected";
+    		MulSelect(1);change();    			
+			break;
+    	}	
+    }
+  controlSearch1();
+}   	
+</script>
+</head>
+<script> function KeyDown(){ if((window.event.altKey)&&((window.event.keyCode==37)||(window.event.keyCode==39))) event.returnValue=false; if((event.keyCode==116)||(window.event.keyCode==122)) {event.keyCode=0;event.returnValue=false;}  if(((event.shiftKey)&&(event.keyCode==121))||((event.ctrlKey)&&(event.keyCode==78))) { event.returnValue=false;} }document.onkeydown=KeyDown; function click(e) {if (document.all) {if (event.button==2||event.button==3) {oncontextmenu='return false';}}}document.onmousedown=click;document.oncontextmenu = new Function("return false;");</script><body style="display:none" onload="loads();document.body.style.display='';return init();">
+<form action="MainService?id=cmbc&amp;ShowStyleData=K0&amp;channelID=&amp;languageType=" method="post" name="eservice">
+<input type="hidden" name="txcode" value="221301"><input type="hidden" class="sHistory" name="payeeAcctType" value="1"><input type="hidden" class="sHistory" name="BRCSBK" id="BRCSBK" value=""><input type="hidden" class="sHistory" name="payeeBranchName" id="payeeBranchName" value=""><input type="hidden" class="sHistory" name="acctAndType" id="acctAndType" value=""><input type="hidden" class="sHistory" name="pathName" id="pathName" value=""><input type="hidden" class="sHistory" name="his_payeracct" value="-1"><input type="hidden" class="sHistory" name="his_writeflag" value="-1"><input type="hidden" class="sHistory" name="his_payeeacct" value="-1"><input type="hidden" class="sHistory" name="his_pathcode" value="-1"><input type="hidden" class="sHistory" name="his_custtype" value="-1"><input type="hidden" class="sHistory" name="his_remark" value="-1"><input type="hidden" class="sHistory" name="his_payerAmt" value=""><input type="hidden" class="sHistory" name="his_payeeName" value=""><input type="hidden" class="sHistory" name="his_payeeAcct" value=""><input type="hidden" class="sHistory" name="his_BranchName" value=""><input type="hidden" class="sHistory" name="his_payeeBank" value=""><input type="hidden" class="sHistory" name="his_address" value=""><input type="hidden" class="sHistory" name="his_otherRemark" value="">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" id="mainTable">
+<tr>
+<td>
+<table width="100%" height="21" border="0" cellpadding="0" cellspacing="0">
+<tr class="mainBg">
+<td width="" valign="bottom" id="menuName" nowrap></td><td width="371" align="right" valign="bottom"></td><td align="right" valign="bottom" nowrap id="otherFunctions"></td><td width="26" align="center" valign="middle">
+											&nbsp;
+										</td>
+</tr>
+</table>
+<table width="100%" height="17" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="bottom" background="/images/styleWeb0/styleImages/mainbg.jpg">
+<table width="100" border="0" cellpadding="0" cellspacing="0">
+<tr valign="bottom">
+<td width="45" nowrap>
+														&nbsp;
+													</td><td width="0" class="help" nowrap id="help">交易提示</td><td width="5" nowrap>
+														&nbsp;
+													</td><td width="0" nowrap><img src="/images/ques.gif" width="15" height="16"></td><td width="10" nowrap>
+														&nbsp;
+													</td><td width="0" class="demo" nowrap onclick="opennewwindow()">同步演示</td><td width="5" nowrap>
+														&nbsp;
+													</td><td width="0" nowrap><img src="/images/edu.gif" width="16" height="16"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" id="formTable">
+<tr>
+<th nowrap>转出帐号</th><td width="100%" colspan="3"><select name="acctAndTypeList" size="1" onchange="changePayerAcct()"><option value="6226220381489250|1|01100100">6226220381489250&nbsp;   
+   &nbsp;&nbsp;
+   民生卡</option></select>&nbsp;&nbsp;<font color="#ff0000">如果您想要使用的帐户不在列表中，请使用&ldquo;<a href="#" onclick="javascript:goShowSvcTx('210600')">对外转帐支付限额</a>&rdquo;交易查询帐户状态。</font></td>
+</tr>
+<tr>
+<th nowrap>请选择</th><td colspan="3"><input type="radio" name="flag" value="0" checked="1" onclick="return DisplayField('0');" class="sHistory">输入转入帐号
+											<input type="radio" name="flag" value="1" onclick="return DisplayField('1')" class="sHistory">选择转入帐号
+										</td>
+</tr>
+<tr>
+<th>汇路</th><td style="border-right-style:none"><select name="pathCode" size="1" style="width:160px" onchange="changePath();"></select>&nbsp;&nbsp;
+										</td><td id="his_label1" style="border-right-style:none"><font color="red">选择大、小额实时支付汇路进行跨行汇款，款项可迅速到达收款方银行帐户&nbsp;&nbsp;
+												<a href="#" onclick="javascript:window.open('http://www.cmbc.com.cn/dzyh_grwy/grwy_hlsm.shtml')">汇路说明</a>&nbsp;&nbsp;
+												<a href="#" onclick="javascript:window.open('http://www.cmbc.com.cn/e-service/dz_zfbz.shtml')">资费说明</a></font></td><td id="his_label2"><font color="red">使用网银互联汇路，可免去您选择帐户开户网点的烦恼，且实时入账&nbsp;&nbsp;
+												<a href="#" onclick="javascript:window.open('http://www.cmbc.com.cn/dzyh_grwy/grwy_hlsm.shtml')">汇路说明</a>&nbsp;&nbsp;
+												<a href="#" onclick="javascript:window.open('http://www.cmbc.com.cn/e-service/dz_zfbz.shtml')">资费说明</a></font></td>
+</tr>
+<tr id="his_label" style="display:none">
+<th nowrap>历史转入帐号</th><td colspan="3"><select id="hisPayeeList" name="payeeAcctAndType" size="1" style="display:none" onchange="setbranname( );"></select>&nbsp;&nbsp;
+										</td>
+</tr>
+<tr id="payeeAcct_label" style="">
+<th nowrap>
+											转入帐号
+										</th><td colspan="3"><input type="text" name="payeeAcct" size="30" maxlength="32" class="sHistory"></td>
+</tr>
+<tr id="payeeName_label" style="">
+<th nowrap>
+											户名
+										</th><td colspan="3"><input type="text" name="payeeName" size="31" maxlength="31" class="sHistory"></td>
+</tr>
+<tr id="rcvCustType_label">
+<th nowrap>
+											收款帐户类型
+										</th><td colspan="3"><select name="rcvCustType" size="1"><option value="2">对私</option><option value="1">对公</option></select>&nbsp;&nbsp;
+										</td>
+</tr>
+<tr id="rcvBranch_label1">
+<th nowrap>转入帐户开户行名称</th><td nowrap colspan="3"><input type="text" name="BranchName" size="42" maxlength="42" class="sHistory"><font id="txt1">请点击&nbsp;
+											<input name="send" type="button" class="button" value="查询" onclick="return dosend();">&nbsp;然后按&nbsp;
+											<a id="a1" href="#" onclick="javascript:window.open('/selectShow.html','大小额实时支付收款方开户行模糊查询操作指引','toolbar=no,status=no,resizable=yes,scrollbars=yes,width=840,height=500')">操作指引</a>&nbsp;进行操作</font></td>
+</tr>
+<tr id="rcvBranch_label2">
+<th nowrap>转入帐户开户行名称</th><td nowrap colspan="3"><select size="1" name="FirstSelect" onchange="MulSelect(1);change();" style="width:252px"></select>&nbsp;&nbsp;<select size="1" name="SecondSelect" onchange="MulSelect(2)" style="width:252px"></select><input type="checkbox" name="MoHuSearch" id="MoHuSearch" onclick="controlSearch()">模糊查询</input>
+<div align="left" style="width:100%;display:none" id="div339">&nbsp;开户行查询
+										    
+									 <input name="t_TAName" id="names" onkeyup="findNames(suggest,'');" type="text" value="请输入开户行机构名称" onfocus="document.eservice.t_TAName.value = ''; " size="35" style="color:#015C7F" autocomplete="off">
+<div style="height:200px;position:absolute; margin-top:-1px; display:none;overflow:scroll;overflow-x:hidden;overflow-y:auto;" id="popup">
+<table id="name_table" border="0" cellspacing="0" cellpadding="0" bgcolor="#ECF3E4">
+<tbody id="name_table_body"></tbody>
+</table>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<th nowrap>币种</th><td colspan="3"><select name="currAndCash" size="1"><option value="01|0">人民币 </option></select></td>
+</tr>
+<tr>
+<th nowrap>金额</th><td style="border-right-style:none"><input type="text" name="payerAmt" size="16" maxlength="16" class="sHistory" onKeypress="checkMoneyInput(this,12,2)" onkeyup="formatMoneyNum(this,12,2);formatMoneyChn(this,'dsp_chnAmt');" onchange="formatMoneyNum(this,12,2);formatMoneyChn(this,'dsp_chnAmt');">元</td><td colspan="2" id="title11"><font color="red">单笔交易额应小于等于您的账户在网银中设置的单笔交易金额上限并且小于等于5万元&nbsp;&nbsp;
+											</font></td><td colspan="2" id="title22">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										 </td>
+</tr>
+<tr>
+<th>金额大写</th><td colspan="3">
+<div style="height:1px;lineHeight:1px;" id="dsp_chnAmt"></div>
+</td>
+</tr>
+<tr>
+<th nowrap>
+<p>用途</p>
+</th><td colspan="3"><select name="remark" size="1" onchange="checkOther()"><option value="网银转帐"> 网银转帐</option><option value="工资"> 工资</option><option value="差旅费">差旅费</option><option value="劳务费">劳务费 </option><option value="货款">货款</option><option value="还款">还款</option><option value="税款">税款</option><option value="房租">房租</option><option value="水费">水费</option><option value="电费">电费</option><option value="煤气费">煤气费</option><option value="退款">退款</option><option value="手续费">手续费 </option><option value="罚款">罚款</option><option value="外汇卖出">外汇卖出</option><option value="外汇买入">外汇买入</option><option value="投资款">投资款</option><option value="借款">借款</option><option value="交通费">交通费</option><option value="运输费">运输费</option><option value="其他">其他</option></select>&nbsp;&nbsp;
+											<input type="text" name="otherRemark" id="otherRemark" maxlength="20" style="display:none"></td>
+</tr>
+<tr>
+<td colspan="3"><font style="color: #FF0000">*为了提高您跨行转账成功的机率，请在汇款前和转入行仔细核实转入账号、转入账户名称、转入账户开户行名称，开户行名称请填写具体到支行、分理处和营业部等，否则容易造成转入行退款，且汇款发生的手续费无法退回。如您需要查询到账情况，请和您在民生银行的开户行柜台联系。</font></td>
+</tr>
+<tr>
+<td colspan="3"><font color="red">*参阅手续费详情内容请点击如下链接<a href="#" onclick="javascript:window.open('http://www.cmbc.com.cn/e-service/dz_zfbz.shtml')">手续费</a></font></td>
+</tr>
+<tr>
+<td colspan="3"><font color="red">*如汇款人需要向邮政储蓄汇款，请向收款行确认已加入中国人民银行结算系统。</font></td>
+</tr>
+<tr>
+<td colspan="3"><font color="red">*深圳地区仅支持大、小额实时支付汇路，不支持异地汇划汇路</font></td>
+</tr>
+<tr>
+<td colspan="3"><font color="red">*网上支付跨行清算系统试运行期间我行网银互联汇路暂不收费，后期根据监管部门要求及同业收费情况制定我行收费标准并公告实施。</font></td>
+</tr>
+<tr>
+<td colspan="11" align="right"><input name="modify" type="submit" class="button" value=" 确 认 " onClick=" if(!check())  return false;"></td>
+</tr>
+</table>
+<script language="JavaScript">
+			var arrSel = ["FirstSelect","SecondSelect"];
+			arrText = [];
+			arrValue = [];
+			
+			
+		arrText[arrText.length] = [ "-选择-", "-选择-"];
+			arrValue[arrValue.length] = [ "", ""];
+		
+			arrText[arrText.length] = [ "中国建设银行股份有限公司总行", "中国建设银行股份有限公司总行"];
+			arrValue[arrValue.length] = [ "105100000017", "105100000017"];
+		
+			arrText[arrText.length] = [ "中国农业银行股份有限公司", "中国农业银行股份有限公司"];
+			arrValue[arrValue.length] = [ "103100000026", "103100000026"];
+		
+			arrText[arrText.length] = [ "中国工商银行", "中国工商银行"];
+			arrValue[arrValue.length] = [ "102100099996", "102100099996"];
+		
+			arrText[arrText.length] = [ "交通银行", "交通银行"];
+			arrValue[arrValue.length] = [ "301290000007", "301290000007"];
+		
+			arrText[arrText.length] = [ "中信银行股份有限公司", "中信银行股份有限公司"];
+			arrValue[arrValue.length] = [ "302100011000", "302100011000"];
+		
+			arrText[arrText.length] = [ "中国光大银行", "中国光大银行"];
+			arrValue[arrValue.length] = [ "303100000006", "303100000006"];
+		
+			arrText[arrText.length] = [ "华夏银行股份有限公司总行", "华夏银行股份有限公司总行"];
+			arrValue[arrValue.length] = [ "304100040000", "304100040000"];
+		
+			arrText[arrText.length] = [ "广东发展银行股份有限公司运营作业部", "广东发展银行股份有限公司运营作业部"];
+			arrValue[arrValue.length] = [ "306581000003", "306581000003"];
+		
+			arrText[arrText.length] = [ "深圳发展银行", "深圳发展银行"];
+			arrValue[arrValue.length] = [ "307584007998", "307584007998"];
+		
+			arrText[arrText.length] = [ "招商银行股份有限公司", "招商银行股份有限公司"];
+			arrValue[arrValue.length] = [ "308584000013", "308584000013"];
+		
+			arrText[arrText.length] = [ "兴业银行总行", "兴业银行总行"];
+			arrValue[arrValue.length] = [ "309391000011", "309391000011"];
+		
+			arrText[arrText.length] = [ "北京银行", "北京银行"];
+			arrValue[arrValue.length] = [ "313100000013", "313100000013"];
+		
+			arrText[arrText.length] = [ "天津银行股份有限公司", "天津银行股份有限公司"];
+			arrValue[arrValue.length] = [ "313110000017", "313110000017"];
+		
+			arrText[arrText.length] = [ "广州银行", "广州银行"];
+			arrValue[arrValue.length] = [ "313581003284", "313581003284"];
+		
+			arrText[arrText.length] = [ "平安银行", "平安银行"];
+			arrValue[arrValue.length] = [ "313584099990", "313584099990"];
+		
+			arrText[arrText.length] = [ "东莞银行股份有限公司", "东莞银行股份有限公司"];
+			arrValue[arrValue.length] = [ "313602088017", "313602088017"];
+		
+			arrText[arrText.length] = [ "广州农村商业银行股份有限公司", "广州农村商业银行股份有限公司"];
+			arrValue[arrValue.length] = [ "314581000011", "314581000011"];
+		
+			arrText[arrText.length] = [ "佛山顺德农村商业银行股份有限公司", "佛山顺德农村商业银行股份有限公司"];
+			arrValue[arrValue.length] = [ "314588000016", "314588000016"];
+		
+			arrText[arrText.length] = [ "天津农村合作银行", "天津农村合作银行"];
+			arrValue[arrValue.length] = [ "317110010019", "317110010019"];
+		
+			arrText[arrText.length] = [ "渤海银行股份有限公司", "渤海银行股份有限公司"];
+			arrValue[arrValue.length] = [ "318110000014", "318110000014"];
+		
+			arrText[arrText.length] = [ "北京农村商业银行股份有限公司", "北京农村商业银行股份有限公司"];
+			arrValue[arrValue.length] = [ "402100000018", "402100000018"];
+		
+			arrText[arrText.length] = [ "深圳农村商业银行", "深圳农村商业银行"];
+			arrValue[arrValue.length] = [ "402584009991", "402584009991"];
+		
+			arrText[arrText.length] = [ "东莞农村商业银行股份有限公司", "东莞农村商业银行股份有限公司"];
+			arrValue[arrValue.length] = [ "402602000018", "402602000018"];
+		
+			arrText[arrText.length] = [ "中国邮政储蓄银行有限责任公司", "中国邮政储蓄银行有限责任公司"];
+			arrValue[arrValue.length] = [ "403100000004", "403100000004"];
+		
+			arrText[arrText.length] = [ "外换银行（中国）有限公司", "外换银行（中国）有限公司"];
+			arrValue[arrValue.length] = [ "591110000016", "591110000016"];
+		
+			arrText[arrText.length] = [ "新韩银行（中国）有限公司", "新韩银行（中国）有限公司"];
+			arrValue[arrValue.length] = [ "595100000007", "595100000007"];
+		
+			arrText[arrText.length] = [ "中国银行", "中国银行"];
+			arrValue[arrValue.length] = [ "104100000004", "104100000004"];
+		
+			arrText[arrText.length] = [ "韩亚银行（中国）有限公司", "韩亚银行（中国）有限公司"];
+			arrValue[arrValue.length] = [ "597100000014", "597100000014"];
+		
+			arrText[arrText.length] = [ "锦州银行", "锦州银行"];
+			arrValue[arrValue.length] = [ "313227000012", "313227000012"];
+		
+			arrText[arrText.length] = [ "大连银行", "大连银行"];
+			arrValue[arrValue.length] = [ "313222080002", "313222080002"];
+		
+			arrText[arrText.length] = [ "鞍山市商业银行", "鞍山市商业银行"];
+			arrValue[arrValue.length] = [ "313223007007", "313223007007"];
+		
+			arrText[arrText.length] = [ "葫芦岛银行股份有限公司", "葫芦岛银行股份有限公司"];
+			arrValue[arrValue.length] = [ "313227600018", "313227600018"];
+		
+			arrText[arrText.length] = [ "青岛银行", "青岛银行"];
+			arrValue[arrValue.length] = [ "313452060150", "313452060150"];
+		
+			arrText[arrText.length] = [ "齐商银行", "齐商银行"];
+			arrValue[arrValue.length] = [ "313453001017", "313453001017"];
+		
+			arrText[arrText.length] = [ "烟台银行股份有限公司", "烟台银行股份有限公司"];
+			arrValue[arrValue.length] = [ "313456000108", "313456000108"];
+		
+			arrText[arrText.length] = [ "济宁银行股份有限公司", "济宁银行股份有限公司"];
+			arrValue[arrValue.length] = [ "313461000012", "313461000012"];
+		
+			arrText[arrText.length] = [ "泰安市商业银行", "泰安市商业银行"];
+			arrValue[arrValue.length] = [ "313463000993", "313463000993"];
+		
+			arrText[arrText.length] = [ "临商银行股份有限公司", "临商银行股份有限公司"];
+			arrValue[arrValue.length] = [ "313473070018", "313473070018"];
+		
+			arrText[arrText.length] = [ "东营市商业银行", "东营市商业银行"];
+			arrValue[arrValue.length] = [ "313455000018", "313455000018"];
+		
+			arrText[arrText.length] = [ "威海市商业银行", "威海市商业银行"];
+			arrValue[arrValue.length] = [ "313465000010", "313465000010"];
+		
+			arrText[arrText.length] = [ "日照银行股份有限公司", "日照银行股份有限公司"];
+			arrValue[arrValue.length] = [ "313473200011", "313473200011"];
+		
+			arrText[arrText.length] = [ "莱商银行", "莱商银行"];
+			arrValue[arrValue.length] = [ "313463400019", "313463400019"];
+		
+			arrText[arrText.length] = [ "安徽省农村信用联社资金清算中心", "安徽省农村信用联社资金清算中心"];
+			arrValue[arrValue.length] = [ "402361018886", "402361018886"];
+		
+			arrText[arrText.length] = [ "长沙银行股份有限公司", "长沙银行股份有限公司"];
+			arrValue[arrValue.length] = [ "313551088886", "313551088886"];
+		
+			arrText[arrText.length] = [ "南昌银行", "南昌银行"];
+			arrValue[arrValue.length] = [ "313421087506", "313421087506"];
+		
+			arrText[arrText.length] = [ "上饶银行", "上饶银行"];
+			arrValue[arrValue.length] = [ "313433076801", "313433076801"];
+		
+			arrText[arrText.length] = [ "广西北部湾银行", "广西北部湾银行"];
+			arrValue[arrValue.length] = [ "313611001018", "313611001018"];
+		
+			arrText[arrText.length] = [ "上海农村商业银行", "上海农村商业银行"];
+			arrValue[arrValue.length] = [ "322290000011", "322290000011"];
+		
+			arrText[arrText.length] = [ "上海银行", "上海银行"];
+			arrValue[arrValue.length] = [ "313290000017", "313290000017"];
+		
+			arrText[arrText.length] = [ "上海浦东发展银行", "上海浦东发展银行"];
+			arrValue[arrValue.length] = [ "310290000013", "310290000013"];
+		
+			arrText[arrText.length] = [ "苏州银行股份有限公司", "苏州银行股份有限公司"];
+			arrValue[arrValue.length] = [ "313305066661", "313305066661"];
+		
+			arrText[arrText.length] = [ "张家港农村商业银行", "张家港农村商业银行"];
+			arrValue[arrValue.length] = [ "314305670002", "314305670002"];
+		
+			arrText[arrText.length] = [ "昆山农村商业银行", "昆山农村商业银行"];
+			arrValue[arrValue.length] = [ "314305206650", "314305206650"];
+		
+			arrText[arrText.length] = [ "杭州银行股份有限公司", "杭州银行股份有限公司"];
+			arrValue[arrValue.length] = [ "313331000014", "313331000014"];
+		
+			arrText[arrText.length] = [ "浙商银行", "浙商银行"];
+			arrValue[arrValue.length] = [ "316331000018", "316331000018"];
+		
+			arrText[arrText.length] = [ "浙江稠州商业银行", "浙江稠州商业银行"];
+			arrValue[arrValue.length] = [ "313338707013", "313338707013"];
+		
+			arrText[arrText.length] = [ "浙江泰隆商业银行", "浙江泰隆商业银行"];
+			arrValue[arrValue.length] = [ "313345010019", "313345010019"];
+		
+			arrText[arrText.length] = [ "温州银行股份有限公司", "温州银行股份有限公司"];
+			arrValue[arrValue.length] = [ "313333007331", "313333007331"];
+		
+			arrText[arrText.length] = [ "宁波鄞州农村合作银行", "宁波鄞州农村合作银行"];
+			arrValue[arrValue.length] = [ "402332010004", "402332010004"];
+		
+			arrText[arrText.length] = [ "宁波银行股份有限公司", "宁波银行股份有限公司"];
+			arrValue[arrValue.length] = [ "313332082914", "313332082914"];
+		
+			arrText[arrText.length] = [ "湖州银行股份有限公司", "湖州银行股份有限公司"];
+			arrValue[arrValue.length] = [ "313336071575", "313336071575"];
+		
+			arrText[arrText.length] = [ "厦门银行股份有限公司", "厦门银行股份有限公司"];
+			arrValue[arrValue.length] = [ "313393080005", "313393080005"];
+		
+			arrText[arrText.length] = [ "宁夏黄河农村商业银行股份有限公司", "宁夏黄河农村商业银行股份有限公司"];
+			arrValue[arrValue.length] = [ "402871099996", "402871099996"];
+		
+			arrText[arrText.length] = [ "海南省农村信用社联合社资金清算中心", "海南省农村信用社联合社资金清算中心"];
+			arrValue[arrValue.length] = [ "402641000014", "402641000014"];
+		
+			arrText[arrText.length] = [ "湖北省农村信用社联合社结算中心", "湖北省农村信用社联合社结算中心"];
+			arrValue[arrValue.length] = [ "402521000032", "402521000032"];
+		
+			arrText[arrText.length] = [ "昆仑银行股份有限公司", "昆仑银行股份有限公司"];
+			arrValue[arrValue.length] = [ "313882000012", "313882000012"];
+		
+			arrText[arrText.length] = [ "晋城市商业银行", "晋城市商业银行"];
+			arrValue[arrValue.length] = [ "313168000003", "313168000003"];
+		
+			arrText[arrText.length] = [ "乌鲁木齐市商业银行清算中心", "乌鲁木齐市商业银行清算中心"];
+			arrValue[arrValue.length] = [ "313881000002", "313881000002"];
+		
+			arrText[arrText.length] = [ "营口银行股份有限公司资金清算中心", "营口银行股份有限公司资金清算中心"];
+			arrValue[arrValue.length] = [ "313228000276", "313228000276"];
+		
+			arrText[arrText.length] = [ "邢台银行股份有限公司", "邢台银行股份有限公司"];
+			arrValue[arrValue.length] = [ "313131000016", "313131000016"];
+		
+			arrText[arrText.length] = [ "南阳市商业银行", "南阳市商业银行"];
+			arrValue[arrValue.length] = [ "313513080408", "313513080408"];
+		
+			arrText[arrText.length] = [ "阜新银行结算中心", "阜新银行结算中心"];
+			arrValue[arrValue.length] = [ "313229000008", "313229000008"];
+		
+			arrText[arrText.length] = [ "漯河市商业银行", "漯河市商业银行"];
+			arrValue[arrValue.length] = [ "313504000010", "313504000010"];
+		
+			arrText[arrText.length] = [ "攀枝花市商业银行", "攀枝花市商业银行"];
+			arrValue[arrValue.length] = [ "313656000019", "313656000019"];
+		
+			arrText[arrText.length] = [ "重庆银行", "重庆银行"];
+			arrValue[arrValue.length] = [ "313653000013", "313653000013"];
+		
+			arrText[arrText.length] = [ "重庆农村商业银行股份有限公司", "重庆农村商业银行股份有限公司"];
+			arrValue[arrValue.length] = [ "314653000011", "314653000011"];
+		
+			arrText[arrText.length] = [ "河北银行股份有限公司", "河北银行股份有限公司"];
+			arrValue[arrValue.length] = [ "313121006888", "313121006888"];
+		
+			arrText[arrText.length] = [ "邯郸市商业银行股份有限公司", "邯郸市商业银行股份有限公司"];
+			arrValue[arrValue.length] = [ "313127000013", "313127000013"];
+		
+			arrText[arrText.length] = [ "承德银行股份有限公司", "承德银行股份有限公司"];
+			arrValue[arrValue.length] = [ "313141052422", "313141052422"];
+		
+			arrText[arrText.length] = [ "张家口市商业银行股份有限公司", "张家口市商业银行股份有限公司"];
+			arrValue[arrValue.length] = [ "313138000019", "313138000019"];
+		
+			arrText[arrText.length] = [ "沧州银行", "沧州银行"];
+			arrValue[arrValue.length] = [ "313143005157", "313143005157"];
+		
+			arrText[arrText.length] = [ "德阳银行股份有限公司", "德阳银行股份有限公司"];
+			arrValue[arrValue.length] = [ "313658000014", "313658000014"];
+		
+			arrText[arrText.length] = [ "绵阳市商业银行", "绵阳市商业银行"];
+			arrValue[arrValue.length] = [ "313659000016", "313659000016"];
+		
+			arrText[arrText.length] = [ "汉口银行资金清算中心", "汉口银行资金清算中心"];
+			arrValue[arrValue.length] = [ "313521000011", "313521000011"];
+		
+			arrText[arrText.length] = [ "富滇银行股份有限公司运营管理部", "富滇银行股份有限公司运营管理部"];
+			arrValue[arrValue.length] = [ "313731010015", "313731010015"];
+		
+			arrText[arrText.length] = [ "云南省农村信用社联合社", "云南省农村信用社联合社"];
+			arrValue[arrValue.length] = [ "402731057238", "402731057238"];
+		
+			arrText[arrText.length] = [ "兰州银行股份有限公司", "兰州银行股份有限公司"];
+			arrValue[arrValue.length] = [ "313821001016", "313821001016"];
+		
+			arrText[arrText.length] = [ "宁夏银行总行清算中心", "宁夏银行总行清算中心"];
+			arrValue[arrValue.length] = [ "313871000007", "313871000007"];
+		
+			arrText[arrText.length] = [ "青海银行股份有限公司营业部", "青海银行股份有限公司营业部"];
+			arrValue[arrValue.length] = [ "313851000018", "313851000018"];
+		
+			arrText[arrText.length] = [ "龙江银行股份有限公司", "龙江银行股份有限公司"];
+			arrValue[arrValue.length] = [ "313261099913", "313261099913"];
+		
+			arrText[arrText.length] = [ "哈尔滨银行结算中心", "哈尔滨银行结算中心"];
+			arrValue[arrValue.length] = [ "313261000018", "313261000018"];
+		
+			arrText[arrText.length] = [ "郑州银行", "郑州银行"];
+			arrValue[arrValue.length] = [ "313491000232", "313491000232"];
+		
+			arrText[arrText.length] = [ "开封市商业银行", "开封市商业银行"];
+			arrValue[arrValue.length] = [ "313492070005", "313492070005"];
+		
+			arrText[arrText.length] = [ "洛阳银行", "洛阳银行"];
+			arrValue[arrValue.length] = [ "313493080539", "313493080539"];
+		
+			arrText[arrText.length] = [ "商丘市商业银行股份有限公司", "商丘市商业银行股份有限公司"];
+			arrValue[arrValue.length] = [ "313506082510", "313506082510"];
+		
+			arrText[arrText.length] = [ "贵阳市商业银行", "贵阳市商业银行"];
+			arrValue[arrValue.length] = [ "313701098010", "313701098010"];
+		
+			arrText[arrText.length] = [ "晋商银行股份有限公司", "晋商银行股份有限公司"];
+			arrValue[arrValue.length] = [ "313161000017", "313161000017"];
+		
+			arrText[arrText.length] = [ "内蒙古银行", "内蒙古银行"];
+			arrValue[arrValue.length] = [ "313191000011", "313191000011"];
+		
+			arrText[arrText.length] = [ "包商银行股份有限公司", "包商银行股份有限公司"];
+			arrValue[arrValue.length] = [ "313192000013", "313192000013"];
+		
+			arrText[arrText.length] = [ "鄂尔多斯银行股份有限公司", "鄂尔多斯银行股份有限公司"];
+			arrValue[arrValue.length] = [ "313205057830", "313205057830"];
+		
+			arrText[arrText.length] = [ "吉林银行", "吉林银行"];
+			arrValue[arrValue.length] = [ "313241066661", "313241066661"];
+		
+			arrText[arrText.length] = [ "广西壮族自治区农村信用社联合社", "广西壮族自治区农村信用社联合社"];
+			arrValue[arrValue.length] = [ "402611099974", "402611099974"];
+		
+			arrText[arrText.length] = [ "柳州银行股份有限公司清算中心", "柳州银行股份有限公司清算中心"];
+			arrValue[arrValue.length] = [ "313614000012", "313614000012"];
+		
+			arrText[arrText.length] = [ "企业银行（中国）有限公司", "企业银行（中国）有限公司"];
+			arrValue[arrValue.length] = [ "596110000013", "596110000013"];
+		
+			arrText[arrText.length] = [ "台州银行股份有限公司", "台州银行股份有限公司"];
+			arrValue[arrValue.length] = [ "313345001665", "313345001665"];
+		
+			arrText[arrText.length] = [ "浙江民泰商业银行", "浙江民泰商业银行"];
+			arrValue[arrValue.length] = [ "313345400010", "313345400010"];
+		
+			arrText[arrText.length] = [ "绍兴银行股份有限公司营业部", "绍兴银行股份有限公司营业部"];
+			arrValue[arrValue.length] = [ "313337009004", "313337009004"];
+		
+			arrText[arrText.length] = [ "恒丰银行", "恒丰银行"];
+			arrValue[arrValue.length] = [ "315456000105", "315456000105"];
+		
+			arrText[arrText.length] = [ "德州银行股份有限公司", "德州银行股份有限公司"];
+			arrValue[arrValue.length] = [ "313468000015", "313468000015"];
+		
+			arrText[arrText.length] = [ "潍坊银行", "潍坊银行"];
+			arrValue[arrValue.length] = [ "313458000013", "313458000013"];
+		
+			arrText[arrText.length] = [ "江苏省农村信用社联合社信息结算中心", "江苏省农村信用社联合社信息结算中心"];
+			arrValue[arrValue.length] = [ "402301099998", "402301099998"];
+		
+			arrText[arrText.length] = [ "江苏常熟农村商业银行股份有限公司清算中心", "江苏常熟农村商业银行股份有限公司清算中心"];
+			arrValue[arrValue.length] = [ "314305506621", "314305506621"];
+		
+			arrText[arrText.length] = [ "江苏银行股份有限公司", "江苏银行股份有限公司"];
+			arrValue[arrValue.length] = [ "313301099999", "313301099999"];
+		
+			arrText[arrText.length] = [ "南京银行股份有限公司", "南京银行股份有限公司"];
+			arrValue[arrValue.length] = [ "313301008887", "313301008887"];
+		
+			arrText[arrText.length] = [ "吴江农村商业银行清算中心", "吴江农村商业银行清算中心"];
+			arrValue[arrValue.length] = [ "314305400015", "314305400015"];
+		
+			arrText[arrText.length] = [ "赣州银行股份有限公司", "赣州银行股份有限公司"];
+			arrValue[arrValue.length] = [ "313428076517", "313428076517"];
+		
+			arrText[arrText.length] = [ "徽商银行股份有限公司", "徽商银行股份有限公司"];
+			arrValue[arrValue.length] = [ "319361000013", "319361000013"];
+		
+			arrText[arrText.length] = [ "福建省农村信用社联合社", "福建省农村信用社联合社"];
+			arrValue[arrValue.length] = [ "402391000068", "402391000068"];
+		
+			arrText[arrText.length] = [ "福建海峡银行股份有限公司", "福建海峡银行股份有限公司"];
+			arrValue[arrValue.length] = [ "313391080007", "313391080007"];
+		
+
+			function MulSelect(num) {
+				var find = false;
+				var i,j,m,arrTemp = [];
+				for(i = 0;i < num;i++) {
+					arrTemp[i] = eval("document.eservice." +  arrSel[i]).value;
+				}
+				if(num < arrSel.length) {
+					with(eval("document.eservice." +  arrSel[num])) {
+						length = 0;
+						for(i = 0;i <  arrValue.length;i++) {
+							for(j = 0;j < num;j++) {
+								if(arrTemp[j] !=  arrValue[i][j]) break;
+							}
+							if(j != num) continue;
+							if( (length == 0) ||  (options[length-1].value != arrValue[i][num]) ) {
+								for(m = 0;m <  options.length;m++) {
+									 if(options[m].value == arrValue[i][num]) {
+										 find = true;
+									}
+								}
+								if(!find) {
+									 options[options.length] = new Option(arrText[i][num],arrValue[i][num]);
+								}
+							}
+						}
+						MulSelect((num + 1));
+					}
+				}
+			}
+			
+			MulSelect(0);
+			
+			function GetTextFromSelect(objSelect) {
+				var varText = "";
+				varText = eval("document.eservice." + objSelect +  ".options[document.eservice." + objSelect + ".selectedIndex].text");
+				return varText;
+			}
+			function GetValueFromSelect(objSelect) {
+				var varValue = "";
+				varValue = eval("document.eservice." + objSelect +  ".value");
+				return varValue;
+			}
+			function DoIt() {
+				var varSelcet = "";
+				varSelcet = "[" + GetTextFromSelect("FirstSelect")  + "][" + GetTextFromSelect("SecondSelect") + "]\n";
+				varSelcet += "[" +  GetValueFromSelect("FirstSelect") + "][" + GetValueFromSelect("SecondSelect") +  "]";
+				window.alert( varSelcet);
+				return true;
+			}
+			</script></td>
+</tr>
+</table>
+<input type=hidden name=space value=&nbsp;><input type=hidden name=ran value=F1584ADF08320B15FBD3923B25792316B53DF12FE51AB92C></form> 
+</body>
+</html>

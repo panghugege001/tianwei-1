@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<serviceGroup>
+	<service name="Axis2WebService" scope="transportsession">
+		<description>web service test</description>
+		<parameter name="ServiceClass" locked="false">
+			dfh.skydragon.webservice.Axis2WebServiceWS
+		</parameter>
+		<parameter name="ServiceObjectSupplier">
+			org.apache.axis2.extensions.spring.receivers.SpringServletContextObjectSupplier
+		</parameter>
+		<parameter name="SpringBeanName">axis2WebServiceWS</parameter>
+ 		<messageReceivers>
+			<messageReceiver mep="http://www.w3.org/2004/08/wsdl/in-only"
+				class="org.apache.axis2.rpc.receivers.RPCInOnlyMessageReceiver" />
+			<messageReceiver mep="http://www.w3.org/2004/08/wsdl/in-out"
+				class="org.apache.axis2.rpc.receivers.RPCMessageReceiver" />
+		</messageReceivers>
+	</service>
+	
+	<service name="UserWebService" scope="transportsession">
+		<description>userWebServiceWS</description>
+		<parameter name="ServiceClass" locked="false">
+			dfh.skydragon.webservice.UserWebServiceWS
+		</parameter>
+		<parameter name="ServiceObjectSupplier">
+			org.apache.axis2.extensions.spring.receivers.SpringServletContextObjectSupplier
+		</parameter>
+		<parameter name="SpringBeanName">userWebServiceWS</parameter>
+ 		<messageReceivers>
+			<messageReceiver mep="http://www.w3.org/2004/08/wsdl/in-only"
+				class="org.apache.axis2.rpc.receivers.RPCInOnlyMessageReceiver" />
+			<messageReceiver mep="http://www.w3.org/2004/08/wsdl/in-out"
+				class="org.apache.axis2.rpc.receivers.RPCMessageReceiver" />
+		</messageReceivers>
+	</service>
+
+	<service name="TokenWebService" scope="transportsession">
+		<description>tokenWebServiceWS</description>
+		<parameter name="ServiceClass" locked="false">
+			dfh.skydragon.webservice.TokenWebServiceWS
+		</parameter>
+		<parameter name="ServiceObjectSupplier">
+			org.apache.axis2.extensions.spring.receivers.SpringServletContextObjectSupplier
+		</parameter>
+		<parameter name="SpringBeanName">tokenWebServiceWS</parameter>
+		<messageReceivers>
+			<messageReceiver mep="http://www.w3.org/2004/08/wsdl/in-only"
+							 class="org.apache.axis2.rpc.receivers.RPCInOnlyMessageReceiver" />
+			<messageReceiver mep="http://www.w3.org/2004/08/wsdl/in-out"
+							 class="org.apache.axis2.rpc.receivers.RPCMessageReceiver" />
+		</messageReceivers>
+	</service>
+
+
+    <!-- 
+	<module ref="rampart" />
+	<parameter name="InflowSecurity">
+		<action>
+			<items>Timestamp Signature</items>
+			<signaturePropFile>service.properties</signaturePropFile>
+		</action>
+	</parameter>
+	<parameter name="OutflowSecurity">
+		<action>
+			<items>Timestamp Signature</items>
+			<user>service</user>
+			<passwordCallbackClass>
+				dfh.skydragon.webservice.security.RampartPasswordCB
+			</passwordCallbackClass>
+			<signaturePropFile>service.properties</signaturePropFile>
+			<signatureKeyIdentifier>
+				DirectReference
+			</signatureKeyIdentifier>
+		</action>
+	</parameter> --> 
+	
+	<!-- app端WebService配置，请勿删除   -->
+	<service name="AppWebService" scope="transportsession">
+		<description>appWebServiceWS</description>
+		<parameter name="ServiceClass" locked="false">app.webservice.AppWebServiceWS</parameter>
+		<parameter name="ServiceObjectSupplier">org.apache.axis2.extensions.spring.receivers.SpringServletContextObjectSupplier</parameter>
+		<parameter name="SpringBeanName">appWebServiceWS</parameter>
+		<messageReceivers>
+			<messageReceiver mep="http://www.w3.org/2004/08/wsdl/in-only" class="org.apache.axis2.rpc.receivers.RPCInOnlyMessageReceiver" />
+			<messageReceiver mep="http://www.w3.org/2004/08/wsdl/in-out" class="org.apache.axis2.rpc.receivers.RPCMessageReceiver" />
+		</messageReceivers>
+	</service>	
+</serviceGroup>

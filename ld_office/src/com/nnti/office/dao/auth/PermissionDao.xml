@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+<mapper namespace="com.nnti.office.dao.auth.PermissionDao">
+
+	<insert id="insertPermission" parameterType="Permission">
+		insert into t_permission
+		(
+			pid,
+			name,
+			type,
+			url,
+			code,
+			i18n_key,
+			icon,
+			description,
+			create_time				
+		)
+		values
+		(
+			#{pid},
+			#{name},
+			#{type},
+			#{url},
+			#{code},
+			#{i18nKey},
+			#{icon},
+			#{description},
+			#{createTime}
+		)
+	</insert>
+
+	<select id="getPermissonIdList" resultType="int">
+		select
+			permission_id
+		from
+			t_role_permission
+		where
+			role_id in
+			<foreach item="item" collection="list" open="(" separator="," close=")">
+            	#{item}
+            </foreach>
+	</select>
+	
+	<select id="getRolePermissonIdList" parameterType="int" resultType="int">
+		select
+			permission_id
+		from
+			t_role_permission
+		where
+			role_id = #{roleId}
+	</select>
+	
+	<select id="getPermissionList" resultType="Permission">
+		select
+			id,
+			pid,
+			name,
+			type,
+			i18n_key i18nKey,
+			url,
+			icon,
+			description,
+			create_time createTime
+		from
+			t_permission
+		where
+			id in
+			<foreach item="item" collection="list" open="(" separator="," close=")">
+            	#{item}
+            </foreach>
+	</select>
+	
+	<select id="getUserPermissionUrl" resultType="string">
+		select
+			url
+		from
+			t_permission
+		where
+			id in
+			<foreach item="item" collection="list" open="(" separator="," close=")">
+            	#{item}
+            </foreach>
+           	and url is not null
+	</select>
+	
+	<select id="getUserPermissionCode" resultType="string">
+		select
+			code
+		from
+			t_permission
+		where
+			id in
+			<foreach item="item" collection="list" open="(" separator="," close=")">
+            	#{item}
+            </foreach>
+           	and url is not null
+	</select>
+	
+	<select id="getAllPermission" resultType="Permission">
+		select
+			id,
+			pid,
+			name,
+			type,
+			url,
+			code,
+			i18n_key i18nKey,
+			icon,
+			description,
+			create_time createTime
+		from
+			t_permission
+	</select>
+	
+	<select id="searchPermission" parameterType="Permission" resultType="Permission">
+		select
+			id,
+			pid,
+			name,
+			type,
+			url,
+			code,
+			i18n_key i18nKey,
+			icon,
+			description,
+			create_time createTime
+		from
+			t_permission
+		where
+			1 = 1
+			<if test="id != null">
+				and id = #{id}
+			</if>
+			<if test="pid != null">
+				and pid = #{pid}
+			</if>
+			<if test="name != null and name != ''">
+				and name like CONCAT(CONCAT('%', #{name}),'%')
+			</if>
+			<if test="type != null and type != ''">
+				and type = #{type}
+			</if>
+			<if test="url != null and url != ''">
+				and url like CONCAT(CONCAT('%', #{url}),'%')
+			</if>
+	</select>
+	
+	<select id="getPermissionById" parameterType="int" resultType="Permission">
+		select
+			id,
+			pid,
+			name,
+			type,
+			url,
+			i18n_key i18nKey,
+			icon,
+			description,
+			create_time createTime
+		from
+			t_permission
+		where
+			id = #{id}
+	</select>
+	
+	<update id="updatePermission" parameterType="Permission">
+		update t_permission
+		<set>
+			<if test="pid != null">
+				pid=#{pid},
+			</if>
+			<if test="name != null and name != ''">
+				name=#{name},
+			</if>
+			<if test="type != null and type != ''">
+				type=#{type},
+			</if>
+			<if test="url != null and url != ''">
+				url=#{url},
+			</if>
+			<if test="code != null and code != ''">
+				code=#{code},
+			</if>
+			<if test="i18nKey != null and i18nKey != ''">
+				i18n_key=#{i18nKey},
+			</if>
+			<if test="icon != null and icon != ''">
+				icon=#{icon},
+			</if>
+			<if test="description != null and description != ''">
+				description=#{description}
+			</if>
+		</set>
+		where
+			id = #{id}
+	</update>
+	
+	<delete id="deletePermission" parameterType="int">
+		delete from t_permission
+		where
+			id = #{id}
+	</delete>
+	
+	<delete id="deleteRolePermissionByPermissionId" parameterType="int">
+		delete from t_role_permission
+		where
+			permission_id = #{permissionId}
+	</delete>
+	
+	<delete id="deleteRolePermissionByRoleId" parameterType="int">
+		delete from t_role_permission
+		where
+			role_id = #{roleId}
+	</delete>
+	
+	<insert id="batchInsertRolePermission" >
+		insert into t_role_permission
+			(
+				role_id,
+				permission_id,
+				create_time
+			)
+		values
+		<foreach item="item" collection="list" separator=",">
+			(
+				#{item.roleId},
+				#{item.permissionId},
+				#{item.createTime}
+			)
+		</foreach>
+	</insert>
+	
+	<delete id="batchDeleteRolePermission" parameterType="map">
+		delete from t_role_permission
+		where
+			role_id = #{roleId}
+			and permission_id in
+			<foreach item="item" collection="permissionIdList" open="(" separator="," close=")">
+            	#{item}
+            </foreach>
+	</delete>
+	
+	<delete id="batchDeletePermissionRole" parameterType="map">
+		delete from t_role_permission
+		where
+			permission_id = #{permissionId}
+			and role_id in
+			<foreach item="item" collection="roleIdList" open="(" separator="," close=")">
+            	#{item}
+            </foreach>
+	</delete>
+	
+	<select id="getAllProtectedUri" resultType="string">
+		select
+			url
+		from
+			t_permission
+		where
+			url is not null
+	</select>
+	
+	<select id="getSubPermission" parameterType="int" resultType="Permission">
+		select
+			id,
+			pid,
+			name,
+			type,
+			url,
+			i18n_key i18nKey,
+			icon,
+			description,
+			create_time createTime
+		from
+			t_permission
+		where
+			pid = #{pid}
+	</select>
+	
+	<select id="getRoleIdListOfPermission" parameterType="int" resultType="int">
+		select
+			role_id roleId
+		from
+			t_role_permission
+		where
+			permission_id = #{permissionId}
+	</select>
+	
+</mapper>

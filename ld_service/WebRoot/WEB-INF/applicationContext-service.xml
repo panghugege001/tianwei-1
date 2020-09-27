@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd">
+	
+	<bean id="slaveService" class="dfh.service.implementations.SlaveServiceImpl" scope="prototype">
+		<property name="slaveDao" ref="slaveDao" />
+	</bean>
+	
+	<bean id="customerService" class="dfh.service.implementations.CustomerServiceImpl" scope="prototype">
+		<property name="universalDao" ref="universalDao" />
+		<property name="logDao" ref="logDao" />
+		<property name="userDao" ref="userDao" />
+		<property name="tradeDao" ref="tradeDao" />
+		<property name="notifyService" ref="notifyService" />
+		<property name="memberService" ref="memberService"></property>
+		<property name="loginTokenService" ref="loginTokenService"></property>
+	</bean> 
+	<bean id="memberService" class="dfh.service.implementations.MemberSignrecordImpl" scope="prototype">
+		<property name="memberDao" ref="memberSignrecordDao"></property>
+	</bean>
+	<bean id="userbankinfoServiceImpl" class="dfh.service.implementations.UserbankinfoServiceImpl" scope="prototype">
+		<property name="userbankinfoDao" ref="userbankinfoDao"></property>
+	</bean>
+	<bean id="bankStatusService" class="dfh.service.implementations.BankStatusServiceImpl" scope="prototype">
+		<property name="bankStatusDao" ref="bankStatusDao"></property>
+	</bean>
+	<bean id="login" class="dfh.service.implementations.Login" scope="prototype">
+		<property name="logDao" ref="logDao"></property>
+		<property name="universalDao" ref="universalDao"></property>
+		<property name="notifyService" ref="notifyService" />
+	</bean>
+	<bean id="userWebSerivce" class="dfh.service.implementations.UserWebServiceImpl">
+		<property name="cs" ref="customerService" />
+		<property name="login" ref="login" />
+		<property name="memberService" ref="memberService"></property>
+		<property name="tokenService" ref="loginTokenService"></property>
+	</bean>
+
+	<bean id="activityCalendarService" class="dfh.service.implementations.ActivityCalendarServiceImpl" scope="prototype">
+		<property name="activityCalendarDao" ref="activityCalendarDao"/>
+	</bean>
+
+
+	<bean id="gameinfoService" class="dfh.service.implementations.GGameinfoServiceImpl" scope="prototype">
+		<property name="gameinfoDao" ref="gameinfoDao"></property>
+		<property name="userDao" ref="userDao"></property>
+		<property name="seqDao" ref="seqDao"></property>
+		<property name="taskDao" ref="taskDao"></property>
+		<property name="tradeDao" ref="tradeDao"></property>
+		<property name="platformDao" ref="platformDao"></property>
+		<property name="proposalDao" ref="proposalDao"></property>
+	</bean>
+	
+	<bean id="proposalService" class="dfh.service.implementations.ProposalServiceImpl" scope="prototype">
+		<property name="universalDao" ref="universalDao" />
+		<property name="userDao" ref="userDao" />
+		<property name="tradeDao" ref="tradeDao" />
+		<property name="operatorDao" ref="operatorDao" />
+		<property name="proposalDao" ref="proposalDao" />
+		<property name="logDao" ref="logDao" />
+		<property name="seqDao" ref="seqDao" />
+		<property name="taskDao" ref="taskDao" />
+		<property name="agentDao" ref="agentDao" />
+		<property name="transferDao" ref="transferDao" />
+		<property name="seqService" ref="seqService"></property>
+	</bean>
+	
+	<bean id="announcementService" class="dfh.service.implementations.AnnouncementServiceImpl" scope="prototype">
+		<property name="annDao" ref="annDao" />
+		<property name="tradeDao" ref="tradeDao" />
+		<property name="bankinfoDao" ref="bankinfoDao" />
+		<property name="logDao" ref="logDao" />
+	</bean>
+	
+	<bean id="seqService" class="dfh.service.implementations.SeqServiceImpl">
+		<property name="universalDao" ref="universalDao" />
+	</bean>
+	
+	<bean id="transferService" class="dfh.service.implementations.TransferServiceImpl" scope="prototype">
+		<property name="universalDao" ref="universalDao" />
+		<property name="userDao" ref="userDao" />
+		<property name="tradeDao" ref="tradeDao" />
+		<property name="transferDao" ref="transferDao" />
+		<property name="seqService" ref="seqService" />
+		<property name="pt8CouponService" ref="pt8CouponService" />
+		<property name="logDao" ref="logDao" />
+	</bean>
+	
+	<bean id="selfYouHuiService" class="dfh.service.implementations.SelfYouHuiServiceImpl" scope="prototype">
+		<property name="proposalService" ref="proposalService"></property>
+		<property name="cs" ref="customerService"></property>
+		<property name="seqService" ref="seqService"></property>
+		<property name="transferService" ref="transferService"></property>
+		
+		<property name="taskDao" ref="taskDao"></property>
+		<property name="logDao" ref="logDao"></property>
+		<property name="seqDao" ref="seqDao"></property>
+		<property name="tradeDao" ref="tradeDao"></property>
+		<property name="transferDao" ref="transferDao"></property>
+		<property name="youHuiConfigDao" ref="youHuiConfigDao"></property>
+	</bean>
+	 
+	<bean id="creditlogsService" class="dfh.service.implementations.CreditlogsServiceImpl" scope="prototype">
+		<property name="creditlogsDao" ref="creditlogsDao"></property>
+	</bean>
+	
+	<bean id="pt8CouponService" class="dfh.service.implementations.Pt8CouponServiceImpl" scope="prototype">
+		<property name="pt8CouponDao" ref="pt8CouponDao"></property>
+	</bean>
+	
+	<!-- ag试玩账号 -->
+	<bean id="agTryGameService" class="dfh.service.implementations.AgTryGameServiceImpl" scope="prototype">
+		<property name="agTryGameDao" ref="agTryGameDao"></property>
+		<property name="seqService" ref="seqService" />
+		<property name="notifyService" ref="notifyService" />
+	</bean>
+	
+	<bean id="agentService" class="dfh.service.implementations.AgentServiceImpl" scope="prototype">
+		<property name="agentReferralsStatistic" ref="agentReferralsStatisticService"></property>
+		<property name="customerService" ref="customerService"></property>
+	</bean>
+	
+	<bean id="agentReferralsStatisticService" class="dfh.service.implementations.AgentReferralsStatisticImpl" scope="prototype">
+		<property name="payorderDao" ref="netPayDao"></property>
+		<property name="proposalDao" ref="proposalDao"></property>
+	</bean>
+	
+	<bean id="notifyService" class="dfh.service.implementations.NotifyServiceImpl" scope="prototype">
+		<property name="userDao" ref="userDao"></property>
+		<property name="vcpServer">
+			<value>${notify.sms.vcpServer}</value>
+		</property>
+		<property name="vcpPort">
+			<value>${notify.sms.vcpPort}</value>
+		</property>
+		<property name="vcpUserID">
+			<value>${notify.sms.vcpUserID}</value>
+		</property>
+		<property name="vcpPassword">
+			<value>${notify.sms.vcpPassword}</value>
+		</property>
+		<!-- suthor:sun -->
+		<property name="emailServer">
+			<value>${notify.sms.emailServer}</value>
+		</property>
+		<property name="emailPort">
+			<value>${notify.sms.emailPort}</value>
+		</property>
+		<property name="emailUser">
+			<value>${notify.sms.emailUser}</value>
+		</property>
+		<property name="emailPassword">
+			<value>${notify.sms.emailPassword}</value>
+		</property>
+	</bean>
+	
+	<bean id="validatedPayOrderService" class="dfh.service.implementations.ValidatedPayOrderServiceImpl" scope="prototype">
+		<property name="payorderDao" ref="validatedPayOrderDao"></property>
+	</bean>
+	
+	<bean id="getPwdService" class="dfh.service.implementations.GetPwdBackServiceImpl">
+		<property name="cs" ref="customerService" />
+	</bean>
+	<bean id="upgradeService" class="dfh.service.implementations.UpgradeServiceImpl">
+		<property name="userDao" ref="userDao"/>
+		<property name="seqDao" ref="seqDao"/>
+		<property name="taskDao" ref="taskDao"/>
+		<property name="slaveDao" ref="slaveDao" />
+		<property name="tradeDao" ref="tradeDao"/>
+	</bean>
+	<bean id="queryBetrankService" class="dfh.service.implementations.QueryBetrankServiceImpl">
+		<property name="universalDao" ref="universalDao" />
+	</bean>
+	<bean id="allMatchService" class="dfh.service.implementations.AllMatchServiceImpl">
+		<property name="allMatchDao" ref="allMatchDao" />
+		<property name="universalDao" ref="universalDao" />
+	</bean>
+	<bean id="loginTokenService" class="dfh.service.implementations.LoginTokenServiceImpl" scope="prototype">
+		<property name="tokenInfoDao" ref="tokenInfoDao"/>
+		<property name="validatorFactory" ref="tokenValidatorFactory"/>
+	</bean>
+	<bean id="userLotteryService" class="dfh.service.implementations.UserLotteryServiceImpl" scope="prototype">
+		<property name="slaveDao" ref="slaveDao" />
+		<property name="universalDao" ref="universalDao" />  
+	</bean>
+	<bean id="aiSupportService" class="dfh.service.implementations.AiSupportServiceImpl" scope="prototype">
+		<property name="slaveDao" ref="slaveDao" />
+		<property name="cs" ref="customerService"></property>
+	</bean>
+</beans>

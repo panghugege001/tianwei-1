@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE validators PUBLIC "-//OpenSymphony Group//XWork Validator 1.0.2//EN"
+ "http://struts.apache.org/dtds/xwork-validator-1.0.2.dtd">
+
+<validators>
+	<field name="amount">
+		<field-validator type="required">
+			<message>请输入要增减的额度</message>
+		</field-validator>
+		<field-validator type="double">
+			<param name="minExclusive">0</param>
+			<message>额度至少大于 ${minExclusive}</message>
+		</field-validator>
+	</field>
+</validators>

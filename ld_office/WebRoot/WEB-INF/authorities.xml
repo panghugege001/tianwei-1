@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<!-- admin(管理员),finance(财务),sale(客服),finance_manager(财务经理)，sale_manager(客服经理),market(市场),vc(股东),另设all(所有),none(没有人),qc(质检),ad,om(运维工程师)  -->
+	<!-- all = boss,admin,sale_manager,sale,market_manager,market,finance_manager,finance,qc,om -->
+	<!-- Role list reference createSubOperator.jsp -->
+<root>
+	<folder name="账户" id="folda">
+		<function name="用户列表" href="/office/functions/user.jsp" access="boss,finance,finance_manager,sale_manager,sale,market,market_manager,ad,qc,card">
+			<subfunction name="vipLevel" describtion="会员等级" access="boss,finance_manager,sale_manager" />
+			<subfunction name="timeChoose" describtion="时间筛选" access="boss,finance_manager,sale_manager" /> 
+		</function>
+		<function name="换线用户" href="/office/functions/changeLineUserRecord.jsp" access="boss,finance,finance_manager,sale_manager,sale,market,market_manager,ad,qc,card" />
+		<function name="备份用户列表" href="/office/functions/user_backup.jsp" access="boss,finance,finance_manager,sale_manager,sale,market,market_manager,ad,qc" />
+		<!-- <function name="网站用户分析" href="/office/queryUserAnalyze.do" access="admin,finance_manager,sale_manager" />-->
+		<!-- <function name="生成试玩帐号" href="/office/functions/generate_free.jsp" access="admin,sale,sale_manager" />-->
+		<function name="重设密码" href="/office/functions/reset_password.jsp" access="boss,sale_manager,sale,market_manager,market" />
+		<function name="修改会员基本资料" href="/office/functions/modifyCustomerInfo.jsp" access="boss" />
+		
+		<function name="秒提限制" href="/office/functions/modifyCustomerMailFlag.jsp" access="boss,sale_manager,sale,finance,finance_manager,card" />
+		<function name="同步会员信息" href="/office/functions/synmemberinfotobbs.jsp" access="boss,admin,sale_manager,sale,market_manager,market" />
+		<function name="卡折号解绑" href="/office/functions/userbankinfounbanding.jsp" access="boss,admin,sale_manager,sale,market_manager,market,qc" />
+		<function name="玩家支付宝存款账号" href="/office/functions/userAlipayAccount.jsp" access="boss,admin,sale_manager,sale,market_manager,market,finance,finance_manager,qc,card" />
+		<function name="增加银行账户" href="/office/functions/bankinfo/addbankinfo.jsp" access="boss,admin,finance_manager,card,v_finance" />
+		<function name="管理银行账户" href="/office/functions/bankinfo/managebankinfo.jsp" access="boss,admin,finance_manager,finance,card,v_finance" />
+		<function name="远程银行账户" href="/office/functions/bankinfo/bankinfostatus.jsp" access="boss,admin,finance_manager,finance,card" />
+		<!-- <function name="银行卡管理" href="/office/functions/bankinfo/bankcard.jsp" access="boss,finance,finance_manager" /> -->
+		<!-- <function name="AG试玩帐号" href="/office/functions/manageAgTryInfo.jsp" access="boss,finance,finance_manager,sale_manager,sale,market,market_manager,ad,qc" /> -->
+		<function name="支付开关" href="/bankinfo/managemsbankswitch.do" access="boss,admin,finance_manager,finance,card" />
+		<function name="支付商户管理" href="/bankinfo/paymerchant.do" access="boss" />
+		<function name="系统参数配置" href="/bankinfo/querySystemConfig.do" access="boss,admin,finance_manager,sale_manager,market_manager" />
+		<function name="短信参数配置" href="/office/querySMSConfig.do" access="boss,admin,finance_manager,sale_manager,market_manager" />
+		<function name="提款银行状态配置" href="/bankinfo/getBankStatusList.do" access="boss,admin,finance_manager,finance,card" />
+	</folder>
+	<folder name="数据采集" id="foldb">
+		<function name="PT洗码数据采集" href="/office/functions/ptDataProfitNew.jsp" access="boss,admin,finance_leader,sale,sale_manager,finance,finance_manager,market,market_manager,vc,ad,qc,card" />
+		<function name="沙巴体育洗码数据采集" href="/office/functions/sbaData.jsp" access="boss,admin,finance_leader,sale,sale_manager,finance,finance_manager,market,market_manager,vc,ad,qc,card" />
+		<function name="棋乐游洗码数据采集" href="/office/functions/chessData.jsp" access="boss,admin,finance_leader,sale,sale_manager,finance,finance_manager,market,market_manager,vc,ad,qc,card" />
+		<function name="MG数据采集" href="/office/functions/mgData.jsp" access="boss,admin,finance_leader,sale,sale_manager,finance,finance_manager,market,market_manager,vc,ad,qc,card" />
+		<function name="SW数据采集" href="/office/functions/swData.jsp" access="boss,admin,finance_leader,sale,sale_manager,finance,finance_manager,market,market_manager,vc,ad,qc,card" />
+		<function name="AG数据采集" href="/office/functions/agDataProfit.jsp" access="boss,admin,sale,sale_manager,finance,finance_manager,market,market_manager,vc,ad" />		
+		<!-- <function name="BBIN数据采集" href="/office/functions/bbinDataProfit.jsp" access="boss,admin,sale,sale_manager,finance,finance_manager,market,market_manager,vc,ad" /> -->		
+	</folder>	 
+	<folder name="操作" id="foldb">
+		<!-- <function name="开户" href="/office/functions/newAccount.jsp" access="admin,sale,sale_manager" />-->
+		<function name="存款" href="/office/functions/cashin.jsp" access="boss,admin,sale,sale_manager" />
+		<!--<function name="存款受理" href="/office/functions/cashin/cashin.jsp" access="admin" />-->
+		<!-- <function name="取款" href="/office/functions/cashout.jsp" access="boss,admin,sale,sale_manager" /> -->
+		<function name="人民币事务提案" href="/office/functions/shiwu.jsp" access="boss,admin,finance,finance_manager,sale_manager,market,market_manager,ad,card,v_finance" />
+		<function name="PESO事务提案" href="/office/functions/shiwupeso.jsp" access="boss,admin,finance,finance_manager,sale_manager,market,market_manager,ad,card,v_finance" />
+		<!-- <function name="开户优惠" href="/office/functions/concessions.jsp" access="boss,admin,sale,sale_manager" /> -->
+		<!-- <function name="转账优惠" href="/office/functions/bankTransferCons.jsp" access="admin,sale,sale_manager" />
+-->
+		<!-- <function name="洗码优惠" href="/office/functions/xima.jsp" access="boss,admin,sale,sale_manager,finance,finance_manager" /> -->
+		<function name="批量洗码" href="/office/functions/xima/xima.jsp" access="boss,admin,finance_manager,finance,card" />
+		<function name="批量洗码(新)" href="/office/functions/xima/xima2.jsp" access="boss,admin,finance_manager,finance,card" />
+		<function name="负盈利反赠" href="/office/functions/xima/profit.jsp" access="boss,admin,finance_manager,finance,sale,sale_manager,qc" />
+		<function name="周周回馈" href="/office/functions/xima/weekSent.jsp" access="boss,admin,finance_manager,finance,sale,sale_manager,qc" />
+		<!-- <function name="再存优惠" href="/office/functions/offer.jsp" access="boss,admin,sale,sale_manager,market,market_manager" /> -->
+		<function name="幸运抽奖" href="/office/functions/prize.jsp" access="boss,admin,sale,sale_manager,market" />
+		<function name="优惠批量派发" href="/office/functions/privilege.jsp" access="boss,admin,finance_manager,finance,sale,sale_manager,qc,card" />
+		<!-- <function name="批量抽奖" href="/office/functions/xima/batchprize.jsp" access="boss,admin,sale,sale_manager" /> -->
+		<function name="生日礼金" href="/office/functions/birthdayGifts.jsp" access="boss,admin,sale,sale_manager" />
+		<function name="红包优惠" href="/office/functions/redCoupon.jsp" access="boss,admin,sale_manager,market,market_manager,sale" />
+		<function name="优惠劵" href="/office/functions/coupon.jsp" access="boss,market,market_manager,sale_manager" />
+		<function name="PT优惠劵" href="/office/functions/ptCoupon.jsp" access="boss,market,market_manager,sale_manager" />
+		<function name="TTG/NT等其它优惠劵" href="/office/functions/ttgCoupon.jsp" access="boss,market,market_manager,sale_manager" />
+		<!-- <function name="SB优惠劵" href="/office/functions/sbCoupon.jsp" access="boss,market,market_manager,sale_manager" /> -->
+		<function name="晋级礼金" href="/office/functions/levelprize.jsp" access="boss,admin,sale,sale_manager" />  
+		<!-- <function name="银改" href="/office/functions/rebankinfo.jsp" access="admin,sale_manager" />
+-->
+		<!-- <function name="IPS在线支付补单" href="/office/functions/repairPayOrder.jsp" access="boss,admin,sale,sale_manager" />boss,admin,finance,finance_manager -->
+		<function name="智付在线支付补单" href="/office/functions/repairPayOrderZf.jsp" access="boss,admin,sale,sale_manager" /><!-- boss,admin,finance,finance_manager -->
+		<function name="汇付在线支付补单" href="/office/functions/repairPayOrderHf.jsp" access="boss,admin,sale,sale_manager" /><!-- boss,admin,finance,finance_manager -->
+		<function name="汇潮在线支付补单" href="/office/functions/repairPayOrderHc.jsp" access="boss,admin,sale,sale_manager" /><!-- boss,admin,finance,finance_manager -->
+		<function name="支付宝在线支付补单" href="/office/functions/repairPayOrderZfb.jsp" access="boss,admin,sale,sale_manager" /><!-- boss,admin,finance,finance_manager -->
+		<function name="币付宝在线支付补单" href="/office/functions/repairPayOrderBfb.jsp" access="boss,admin,sale,sale_manager" /><!-- boss,admin,finance,finance_manager -->
+		<function name="国付宝在线支付补单" href="/office/functions/repairPayOrderGfb.jsp" access="boss,admin,sale,sale_manager" /><!-- boss,admin,finance,finance_manager -->
+	    <function name="乐富微信支付补单" href="/office/functions/repairPayOrderLfwx.jsp" access="boss,admin,sale,sale_manager" /><!-- boss,admin,finance,finance_manager -->
+		<function name="额度补单" href="/office/functions/repairHlOrder.jsp" access="boss,admin,sale,sale_manager" /><!-- boss,admin,finance,finance_manager -->
+		<function name="额度增减" href="/office/functions/quotalAddModity.jsp" access="boss,admin,sale,sale_manager,market,market_manager" /><!-- boss,admin,finance,finance_manager -->
+		<!-- <function name="手工增减额度" href="/office/functions/changeCreditManual.jsp" access="boss,admin,sale_manager,finance_manager" /> --><!-- boss,admin,finance_manager,sale,sale_manager -->
+		<function name="手工增减银行额度" href="/office/functions/changebankCredit.jsp" access="boss,admin,finance_manager" /><!--boss,admin,finance_manager,finance  -->
+<!--
+		<function name="银行转账" href="/office/functions/intransfer/intransfer.jsp" access="boss,admin,finance_manager,finance,card,v_finance" />
+-->
+		<!--<function name="结算代理佣金" href="/office/empty.jsp" access="admin,market" /> -->
+		<!--<function name="设置擂台赛用户" href="/office/functions/setmatch.jsp" access="admin,sale,sale_manager" />-->
+		<!--<function name="设置合作伙伴下线" href="/office/functions/setpartnerlower.jsp" access="admin,sale,sale_manager" />-->
+		
+		<function name="自助优惠配置" href="/office/functions/youHuiConfig.jsp" access="boss,sale_manager" />
+		<function name="会员升降级" href="/office/functions/upgradelevel.jsp" access="boss,sale_manager,sale,finance_manager,finance,card" />
+		<function name="PT幸运转" href="/office/functions/ptbigbang.jsp" access="boss,sale_manager,sale,finance_manager,finance,market,qc" />
+		<function name="自动清理数据" href="/office/clearUpDate.do" access="boss" />
+		
+	    <function name="催账记录" href="/office/functions/urgeOrder.jsp" access="boss,finance_manager,finance,card" />
+		<function name="好友推荐礼金" href="/office/functions/friendbonusrecord.jsp" access="boss,sale_manager,sale,finance_manager,finance,market,qc,card" />
+		<function name="守护女神" href="/office/functions/goddessrecord.jsp" access="boss,sale_manager,sale,finance_manager,finance,market,qc" />
+		<function name="单身派对" href="/office/functions/singleparty.jsp" access="boss,sale_manager,sale,finance_manager,finance,market,qc" />
+		<function name="修改返水数据" href="/office/functions/modifyPlatformRecord.jsp" access="boss,finance_manager,finance,sale_manager,card" />
+		<function name="比邻导入数据" href="/office/functions/dataImportBL.jsp" access="boss,sale_manager" />		
+		<function name="游戏管理" href="/office/functions/gamecodemanage.jsp" access="boss,sale_manager,sale,finance,finance_manager,market,market_manager" />
+		<function name="手机连续签到抽奖活动配发确认" href="/office/functions/mobileSignLottery.jsp" access="boss,admin,sale,finance_manager,sale_manager,market_manager" />
+		<function name="手机连续签到奖品几率管理" href="/office/functions/lotteryPrizeManagement.jsp" access="boss,admin,finance_manager,sale_manager,market_manager" />
+		<function name="红包雨活动配置" href="/office/functions/listRedEnvelopeActivity.jsp" access="boss,admin,sale_manager" />
+
+	</folder>
+	<folder name="记录" id="foldc">
+		<function name="在线支付" href="/office/functions/payOrder.jsp" access="boss,finance,finance_manager,sale_manager,sale,market,market_manager,ad,qc,card" />
+		<function name="额度掉单记录" href="/office/functions/gameOrder.jsp" access="boss,finance,finance_manager,sale_manager,sale,market,market_manager,ad,qc,card" />
+		<function name="额度增减记录" href="/office/functions/quotalList.jsp" access="boss,finance,finance_manager,sale_manager,sale,market,market_manager,ad,qc,card" />
+		<function name="提案记录" href="/office/functions/proposal.jsp" access="boss,admin,sale,sale_manager,finance,finance_manager,market,vc,ad,market_manager,qc,card">
+			<subfunction name="audit" describtion="审核" access="boss,admin,finance,finance_leader,finance_manager,sale,sale_manager,card" />
+			<subfunction name="excute" describtion="执行" access="boss,admin,finance,finance_leader,finance_manager,sale,sale_manager,card" />
+			<subfunction name="cancle" describtion="取消" access="boss,admin,finance,finance_leader,finance_manager,card" />
+		</function>
+		<function name="人民币事务提案记录" href="/office/functions/shiwuproposal.jsp" access="boss,admin,finance,finance_manager,sale_manager,ad,card,v_finance,fnfh,fnfh_leader">
+			<subfunction name="audit" describtion="审核" access="boss,admin,ad,finance_manager,finance_leader,card,v_finance,fnfh_leader" />
+			<subfunction name="shiwuexcute" describtion="执行" access="boss,admin,finance,finance_leader,finance_manager,sale_manager,card,v_finance,fnfh,fnfh_leader" />
+			<subfunction name="shiwucancle" describtion="取消" access="boss,admin,finance,finance_leader,finance_manager,ad,sale_manager,card,v_finance,fnfh_leader" />
+		</function>
+		<function name="PESO事务提案记录" href="/office/functions/shiwupesoproposal.jsp" access="boss,admin,finance,finance_manager,sale_manager,ad,card,v_finance,fnfh,fnfh_leader">
+			<subfunction name="audit" describtion="审核" access="boss,admin,ad,finance_leader,finance_manager,card,v_finance,fnfh_leader" />
+			<subfunction name="shiwuexcute" describtion="执行" access="boss,admin,finance,finance_leader,finance_manager,sale_manager,card,v_finance,fnfh,fnfh_leader" />
+			<subfunction name="shiwucancle" describtion="取消" access="boss,admin,finance,finance_leader,finance_manager,ad,sale_manager,card,v_finance,fnfh_leader" />
+		</function>
+		<function name="银行转账提案" href="/office/functions/proposaltransfer.jsp" access="boss,admin,finance,finance_manager,vc,card,v_finance">
+			<subfunction name="businessproposalaudit" describtion="审核" access="boss,admin,finance,finance_leader,finance_manager,card,v_finance" />
+			<subfunction name="excute" describtion="执行" access="boss,admin,finance,finance_leader,finance_manager,card,v_finance" />
+			<subfunction name="cancle" describtion="取消" access="boss,admin,finance,finance_leader,finance_manager,ad,card,v_finance" />
+		</function>
+		<!-- <function name="同略云提款记录" href="/office/functions/bankinfo/bankorder.jsp" access="boss,admin,finance,finance_manager,sale,sale_manager,market,market_manager,qc,card" /> -->
+		<function name="秒付宝提款记录" href="/office/functions/bankinfo/flashPay.jsp" access="boss,admin,finance,finance_manager,sale,sale_manager,market,market_manager,vc,qc,card" />
+		<function name="交连克支付记录" href="/office/functions/listJLKPay.jsp" access="boss,admin,finance,finance_leader,finance_manager,sale,sale_manager,vc,qc,card" />
+		<function name="云闪付订单记录" href="/office/functions/yunPay.jsp" access="boss,admin,finance,finance_leader,finance_manager,sale,sale_manager,vc,qc,card" />     
+		<function name="云闪付存款记录" href="/office/functions/bankonline/yunPayOrder.jsp" access="boss,admin,finance,finance_leader,finance_manager,sale,sale_manager,market,market_manager,vc,qc,card" />
+		
+		
+		<function name="工行网银存款记录" href="/office/functions/bankonline/bankonline.jsp" access="boss,admin,finance,finance_manager,sale,sale_manager,market,market_manager,vc,qc,card" />
+		<function name="农行网银存款记录" href="/office/functions/bankonline/abcbankonline.jsp" access="boss,admin,finance,finance_manager,sale,sale_manager,market,market_manager,vc,qc,card" />
+		<function name="建行(加急)/招行网银存款记录" href="/office/functions/bankonline/cmbbankonline.jsp" access="boss,admin,finance,finance_manager,sale,sale_manager,market,market_manager,vc,qc,card" />
+		<function name="支付宝存款记录" href="/office/functions/bankonline/alipayline.jsp" access="boss,admin,finance,finance_manager,sale,sale_manager,vc,market,market_manager,qc,card" />
+		<function name="额度记录" href="/office/functions/creditlog.jsp" access="boss,finance,finance_manager,sale_manager,sale,market,market_manager,ad,qc,card" />
+		<!-- <function name="额度警告记录" href="/office/functions/creditWarnlog.jsp" access="boss,finance,finance_manager,sale_manager,sale,market,market_manager,ad,qc" /> -->
+		<!-- <function name="SB体育优惠记录" href="/office/functions/sbProposal.jsp" access="boss,admin,sale,sale_manager,finance,finance_manager,market,market_manager,vc,ad" /> -->
+		<function name="银行额度记录" href="/office/functions/bankcreditlog.jsp" access="boss,finance_manager,finance,card" />
+		<function name="本地转账记录" href="/office/functions/transfer.jsp" access="boss,admin,finance,finance_manager,vc,card" />
+		<!-- <function name="投注记录" href="/office/functions/betRecord.jsp" access="boss,finance,finance_manager,sale_manager,sale,market,market_manager,ad,qc" />  -->
+		<!--<function name="会员优惠审核" href="/office/functions/concession_audit.jsp" access="admin,finance,finance_manager" />-->
+		<function name="会员事件记录" href="/office/functions/actionlog.jsp" access="boss,admin,finance_manager,sale_manager,vc,finance,qc,card" />
+		<function name="后台事件记录" href="/office/functions/operationlog.jsp" access="boss,admin,finance_manager,sale_manager,vc,finance,qc,card" />
+		<function name="佣金记录查询" href="/office/functions/commissions.jsp" access="boss,admin,finance_manager,sale_manager,market,market_manager,vc,finance,card" />
+		
+		<function name="日结佣金记录查询" href="/office/functions/commissions/ptcommission.jsp" access="boss,admin,finance_manager,sale_manager,market,vc,market_manager,finance,card" /> 
+		
+		<function name="首存会员记录" href="/office/functions/first_cashin_usres.jsp" access="boss,finance,finance_manager,sale_manager,sale,market,market_manager,ad" />
+		<function name="游戏平台输赢记录" href="/office/functions/agprofit.jsp" access="boss,admin,sale,sale_manager,finance,finance_manager,market,market_manager,vc,ad,qc,card" />
+		<!-- <function name="AG试玩赢点记录" href="/office/functions/agTryPoint.jsp" access="boss,finance,finance_manager,sale_manager,sale,market,market_manager,ad,qc" /> -->
+		
+		<!-- <function name="PT平台游戏记录" href="/office/functions/ptProfit.jsp" access="boss,admin,sale,sale_manager,finance,finance_manager,market,market_manager,vc,ad" /> -->
+		<function name="NT平台游戏记录" href="/office/functions/ntProfit.jsp" access="boss,admin,sale,sale_manager,finance,finance_manager,market,market_manager,vc,ad,qc,card" />
+		
+		<!-- <function name="EA平台数据" href="/office/functions/eaProfit.jsp" access="boss,admin,sale,sale_manager,finance,finance_manager,market,market_manager,vc,ad" />
+		<function name="AG平台数据" href="/office/functions/agDataProfit.jsp" access="boss,admin,sale,sale_manager,finance,finance_manager,market,market_manager,vc,ad" />
+		<function name="BBIN平台数据" href="/office/functions/bbinDataProfit.jsp" access="boss,admin,sale,sale_manager,finance,finance_manager,market,market_manager,vc,ad" /> -->
+		
+		<!-- <function name="PT平台数据" href="/office/functions/ptDataProfit.jsp" access="boss,admin,sale,sale_manager,finance,finance_manager,market,market_manager,vc,ad" /> -->
+		<function name="玩家每日任务记录" href="/office/functions/signRecord.jsp" access="boss,finance,finance_manager,sale_manager,sale,market,market_manager,ad,qc,card" />
+
+		<function name="NEWPT平台数据" href="/office/functions/ptDataProfit.jsp" access="boss,admin,sale,sale_manager,finance,finance_manager,market,market_manager,vc,ad,qc,card" />
+		
+		<function name="最新PT平台数据" href="/office/functions/ptDataProfitNew.jsp" access="boss,admin,sale,sale_manager,finance,finance_manager,market,market_manager,vc,ad,qc,card" />
+		
+		<function name="采集761平台输赢数据" href="/office/functions/collectionChessData.jsp" access="boss,admin,sale,sale_manager,finance,finance_leader,finance_manager,market,market_manager,vc,ad,qc,card" />
+		
+		<function name="JC平台输赢数据" href="/office/functions/jcDataProfit.jsp" access="boss,admin,sale,sale_manager,finance,finance_manager,market,market_manager,vc,ad,qc,card" />
+		
+		<!--<function name="BBIN平台输赢记录" href="/office/functions/bbinprofit.jsp" access="boss,admin,sale,sale_manager,finance,finance_manager,market,vc,ad" />-->
+		<!--<function name="银行帐号查询" href="/office/functions/bankinfo/managebankinfoforvc.jsp" access="boss,admin,vc,card" />-->
+		<function name="电销专员电话记录" href="/office/functions/phoneLists.jsp" access="boss,admin,sale,sale_manager,finance,finance_manager,market,market_manager,vc,ad" />
+        <function name="电销专员电话记录(群发邮件短信)" href="/office/functions/yiyeGroupSend.jsp" access="boss,admin,sale,sale_manager,finance,finance_manager,market,market_manager,vc,ad,card" />
+<!-- 		<function name="电销专员电话记录(群发邮件短信)" href="/office/functions/phoneListsforSend.jsp" access="boss,admin,sale,sale_manager,finance,finance_manager,market,market_manager,vc,ad" /> -->
+		 
+		<!-- <function name="pt8元优惠劵" href="/office/functions/ptCouponLists.jsp" access="boss,finance,finance_manager,sale_manager,sale,market,market_manager,ad,qc" /> -->
+		<!-- <function name="活动时间设置" href="/office/functions/activity.jsp" access="boss,admin,sale,sale_manager" />
+		<function name="官网活动图片" href="/office/functions/images.jsp" access="boss,admin,sale,sale_manager" /> -->
+		<function name="存款订单记录" href="/office/functions/depositOrderRecord.jsp" access="boss,finance,finance_manager,sale_manager,sale,market,market_manager,ad,qc,card" />
+		<!-- <function name="电话语音验证码记录" href="/office/functions/phoneCodeRecord.jsp" access="boss,finance,finance_manager,sale_manager,sale,market,market_manager,ad,qc" /> -->
+		<function name="玩家密保记录" href="/office/functions/userSafeRecord.jsp" access="boss,finance,finance_manager,sale_manager,sale,market,market_manager,ad,qc,card" />
+		<function name="活动礼品寄送" href="/office/functions/gift.jsp" access="boss,admin,sale_manager" />
+		<function name="老虎机流水活动查询" href="/office/functions/betrank.jsp" access="boss,admin,sale,sale_manager,qc" />
+	<!-- 	<function name="已收集qq信息查询" href="/office/functions/allproject/qqinf_fromnet.jsp" access="boss,admin,sale_manager,market_manager" /> -->
+		<function name="玩家摇摇乐任务记录" href="/office/functions/userTaskRecord.jsp" access="boss,finance,finance_manager,sale_manager,sale,market,market_manager,ad,qc" />
+		<function name="玩家推荐好友查询" href="/office/functions/friendintroduce.jsp" access="boss,finance,finance_manager,sale_manager,sale,market,market_manager,ad,qc,card" />
+		<function name="玩家积分记录" href="/office/functions/pointRecord.jsp" access="boss,finance,finance_manager,sale_manager,sale,market,market_manager,ad,qc,card" />
+		<function name="玩家闯关活动" href="/office/functions/emigratedrecord.jsp" access="boss,finance,finance_manager,sale_manager,sale,market,market_manager,ad,qc,card" />
+		<function name="玩家签到礼金" href="/office/functions/signRecord.jsp" access="boss,finance,finance_manager,sale_manager,sale,market,market_manager,ad,qc,card" />
+		<function name="MG输赢统计" href="/office/functions/mgplaycheck.jsp" access="boss,finance,finance_manager,sale_manager,sale,market,market_manager,ad,qc,card" />
+		<function name="MG转账记录" href="/office/functions/mgTransferRecord.jsp" access="boss,finance,finance_manager,sale_manager,sale,market,market_manager,ad,qc,card" />
+        <!-- <function name="MG免费游戏" href="/office/functions/mgFreeGameList.jsp" access="boss,sale_manager,qc,card" /> -->
+        <function name="MG异常数据" href="http://lehu.mgsjiekou.com/failedEndgameQuene.jsp" access="boss,finance,finance_manager,sale_manager,sale,card" />
+        <function name="MG输赢数据导入KPI后台" href="/office/functions/mg2kpi.jsp" access="boss,sale_manager" />
+        <function name="活动订单记录" href="/office/functions/listGiftOrder.jsp" access="boss,finance,finance_manager,sale_manager,sale,market,market_manager,ad,qc" />
+        <function name="银行卡被绑定记录" href="/office/functions/userbankinfoByBankno.jsp" access="boss,sale_manager,sale,finance,finance_manager" />
+		<function name="红包记录" href="/office/functions/ActivityHistoryRedRain.jsp" access="boss,admin,sale_manager,sale,market_manager,market,finance_manager,finance_leader,finance,qc" />
+
+	</folder>
+	<folder name="统计" id="foldd">
+		<!-- <function name="老虎机体验金周竞赛统计" href="/office/functions/match/slotsGiftMatch.jsp" access="boss,admin,sale,sale_manager,qc" /> -->
+		<function name="盈利报表" href="/office/functions/baobiao.jsp" access="boss,sale_manager" />
+		<function name="来源网址统计" href="/office/functions/howToKnowStatistics.jsp" access="boss,market,market_manager,sale_manager" />
+		<function name="银行进出帐统计" href="/office/functions/fundStatistics.jsp" access="boss1,admin1" />
+		<function name="活动流水统计" href="/office/functions/concertEvent.jsp" access="boss,admin,sale,sale_manager,qc" />
+	</folder>
+	<folder name="结算" id="folde">
+		
+		<function name="系统洗码" href="/office/functions/systemxima.jsp" access="boss,admin" />
+	</folder>
+	<!-- 
+	<folder name="实时记录" id="realfoldc">
+	    <function name="实时投注记录" href="/office/functions/realBetRecord.jsp" access="boss,finance,finance_manager,sale_manager,sale,market,market_manager,ad,qc" />
+	    <function name="实时转账记录" href="/office/functions/remoteTransfer.jsp" access="boss,finance,finance_manager,sale_manager,sale,market,market_manager,ad,qc" />
+        <function name="实时额度记录" href="/office/functions/nonceBalanceRecords.jsp" access="boss,finance,finance_manager,sale_manager,sale,market,market_manager,ad,qc" />
+	</folder>
+	<folder name="结算" id="foldd">
+		<function name="自动结算洗码" href="/office/showXima.do" access="admin,finance_manager,sale_manager" />
+		<function name="批量执行洗码" href="/office/ximalist.do" access="admin,finance,finance_manager,sale_manager" />
+		<function name="自动结算佣金" href="/office/showCmn.do" access="admin,finance_manager,sale_manager" />
+		<function name="佣金记录查询" href="/office/functions/commissionrecords.jsp" access="admin,finance_manager,sale_manager" />
+	</folder>
+	<folder name="各项报表" id="foldd">
+		<function name="输赢报表" href="/office/functions/reportforms.jsp" access="boss,finance,finance_manager,sale_manager,sale,market,market_manager,ad,qc" />
+	</folder>
+	 -->
+	 <folder name="风险控制" id="foldd">
+	    
+		<function name="输赢信息分析" href="/office/functions/customerDataAnalysis.jsp" access="boss,admin,finance,finance_manager,sale_manager,sale,market,market_manager,qc,card" />
+		<function name="输赢信息分析(新)" href="/office/functions/customerDataAnalysisNew.jsp" access="boss,admin,finance,finance_leader,finance_manager,sale_manager,sale,market,market_manager,qc,card" />
+		<function name="赢点排名分析" href="/office/functions/winPoint.jsp" access="boss,admin,finance,finance_manager,sale_manager,sale,market,market_manager,qc,card" />
+		<function name="平台信息分析" href="/office/functions/platformData.jsp" access="boss,admin,finance,finance_manager,sale_manager,sale,market,market_manager,qc,card" />
+		
+		<function name="自助存送投注记录" href="/office/functions/preferentialRecord.jsp" access="boss,admin,finance,finance_manager,sale_manager,sale,market,market_manager,qc,card" />
+		<function name="自助存送转账记录" href="/office/functions/preferTransferlRecord.jsp" access="boss,admin,finance,finance_manager,sale_manager,sale,market,market_manager,qc,card" />
+		
+	</folder>
+	<!-- -->
+	<!-- <folder name="电话回访" id="foldf">
+		<function name="生成任务列表" href="/office/functions/generatetask.jsp" access="boss,sale_manager,sale"></function>
+		<function name="管理任务列表" href="/office/functions/managetask.jsp" access="boss,sale_manager,sale"></function>
+		<function name="使用任务列表" href="/office/functions/usetasklist.jsp" access="boss,sale_manager,sale"></function>
+		<function name="统计回访结果" href="/office/functions/countnumber.jsp" access="boss,sale_manager,sale"></function>
+	</folder> -->
+	<folder name="代理" id="foldg">
+		<function name="修改代理基本资料" href="/office/functions/modifyagentInfo.jsp" access="boss,market_manager,sale_manager" />
+		<function name="新增代理" href="/office/functions/newAgent.jsp" access="boss,admin,market,market_manager" />
+		<function name="代理信用资金预支" href="/office/functions/proxyAdvance.jsp" access="boss,market,market_manager" />
+		<function name="代理账号解绑游戏账号" href="/office/functions/agentuserunBindGameuser.jsp" access="boss,sale_manager,market,market_manager,finance,finance_manager,card" />
+		<function name="代理VIP" href="/office/functions/commissions/agentvip.jsp" access="boss,admin,finance_manager,sale_manager,market,vc,market_manager,finance,card" /> 
+		<function name="内部代理管理" href="/office/functions/agentlist.jsp" access="boss,admin,finance_manager,sale_manager,market,vc,market_manager,finance,card" />
+		<function name="代理专员电话记录" href="/office/functions/agentPhoneLists.jsp" access="boss,admin,market,market_manager" />
+		<function name="代理域名记录" href="/office/functions/agentWebsiteRecord.jsp" access="boss,finance,finance_manager,sale_manager,sale,market,market_manager,ad,qc,card" />
+		<function name="代理下线统计" href="/office/functions/AgentReferralsStatistic.jsp" access="boss,admin,market,market_manager" />
+		<function name="代理佣金结算" href="/office/functions/commissions/commissions.jsp" access="boss,admin,market,market_manager" />
+		<function name="代理数据分析" href="/office/functions/proxyLists.jsp" access="boss,admin,finance,finance_manager,sale_manager,sale,market,market_manager,card" /> 
+	    <function name="代理数据分析（新）" href="/office/functions/agentDataAnalysis.jsp" access="boss,finance,finance_manager,sale_manager,sale,market,market_manager,card" />
+	</folder>
+	
+	<folder name="其他" id="foldh">
+		<function name="活动日历" href="/activityCalendar/query.do" access="boss,admin,sale,sale_manager,qc" />
+		<function name="公告管理" href="/announcement/query.do" access="boss,admin,sale,sale_manager,qc" />
+		<function name="发布公告" href="/office/functions/announcement_add.jsp" access="boss,admin,sale,sale_manager" ></function>
+		<function name="站内信" href="/office/functions/guestbookManage.jsp" access="boss,admin,sale,sale_manager,finance,finance_manager,market,market_manager,vc,ad,qc,card" />
+		<function name="短信平台" href="/office/functions/sms.jsp" access="boss,sale,sale_manager,market,market_manager" />
+		<!-- <function name="邮件平台" href="/office/functions/email.jsp" access="boss,sale,sale_manager,market,market_manager" />
+		<function name="excel邮件平台" href="/office/functions/excelemail.jsp" access="boss,admin,sale,sale_manager" /> -->
+		<function name="最新邮件平台" href="/office/functions/email4.jsp" access="boss,sale,sale_manager,market,market_manager" />
+		<function name="已注册客户群发邮件平台 " href="/office/functions/yiye_email.jsp" access="boss,sale,sale_manager,market,market_manager" /> 
+		<function name="外部名单群发邮件平台" href="/office/functions/yiye_externalEmail.jsp" access="boss,sale_manager,market,market_manager" />
+	    <function name="查询信箱格式" href="/office/functions/checkMailLists.jsp" access="boss,sale,sale_manager,market,market_manager" />	
+	    <function name="订阅邮件客户" href="/office/functions/emailSubscriptionLists.jsp" access="boss,sale,sale_manager,market,market_manager" />
+		<!-- <function name="自建邮件群发" href="/office/functions/sendemailByself.jsp" access="boss,market_manager" /> -->
+		<function name="修改密码" href="/office/functions/modifyOwnPwd.jsp" access="all" />
+		<function name="解除禁用" href="/office/functions/relieveOperator.jsp" access="admin,sale_manager,finance_manager,market_manager" />
+		<function name="创建下级管理员" href="/office/functions/createSubOperator.jsp" access="boss,finance_manager,sale_manager,market_manager" />
+		<!-- <function name="留言管理" href="/office/functions/manageSubOperator.jsp" access="boss,admin,finance_manager,sale_manager" />
+		<function name="员工管理" href="/office/functions/employee_manager.jsp" access="boss,admin,finance_manager,sale_manager,market_manager" /> -->
+		<function name="员工管理(新)" href="/office/queryOperators.do" access="boss,admin,sale_manager,market_manager,om,finance_manager" />
+		<!--  <function name="修改远程接口" href="/office/functions/getAllRemoteUrl.do" access="admin" />-->
+		<!-- <function name="手动同步注单" href="/office/functions/synManualBetRecords.jsp" access="admin" />  -->
+		<!--<function name="手动修复用户提款" href="/office/functions/rehab.jsp" access="admin,finance_manager,sale_manager" />-->
+		<function name="绑定员工编号" href="/office/functions/bindEmployeeNo.jsp" access="boss,admin,finance,finance_manager,sale_manager,sale,market,market_manager,qc,card" />
+		<function name="重置后台密码" href="/office/functions/resetOperatorPassword.jsp" access="boss,sale_manager" />
+		<function name="退出" href="/office/functions/logout.jsp" access="all" />
+	</folder>
+</root>

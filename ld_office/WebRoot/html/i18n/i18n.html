@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="http://apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+    <script src="/js/bootstrap-confirmation.min.js"></script>
+</head>
+<style type="text/css">
+    th, td {
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    th {
+        color: white;
+        background-color: #4f5b69;
+    }
+
+    .color_grey {
+        background-color: lightblue;
+    }
+
+    body {
+        font-family: 微软雅黑;
+    }
+
+</style>
+<body>
+
+<div class="container-fluid">
+    <div class="panel panel-primary" style="background-color: #4f5b69">
+        <div class="panel-body">
+            <form class="form-inline">
+                <div class="form-group">
+                    <input class="form-control" id="searchForm_key" placeholder="国际化key">
+                    <input class="form-control" id="searchForm_cnVal" placeholder="中文翻译">
+                    <input class="form-control" id="searchForm_enVal" placeholder="英文翻译">
+                </div>
+                <a name="btn_searchI18n" href="#" class="btn btn-primary"><span class="glyphicon glyphicon-search"></span></a>
+                <a name="btn_searchI18n" href="#" class="btn btn-primary"><span class="glyphicon glyphicon-refresh"></span></a>
+                <a id="addI18n" href="#" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span></a>
+            </form>
+        </div>
+    </div>
+
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>国际化key</th>
+            <th>中文翻译</th>
+            <th>英文翻译</th>
+            <th>创建时间</th>
+            <th colspan="2">操作</th>
+        </tr>
+        </thead>
+        <tbody id="tbody_i18n">
+
+        </tbody>
+    </table>
+</div>
+
+<div class="modal fade" id="updateI18nModal" i18n="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header" style="background-color: #4f5b69;color: white">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">修改翻译</h4>
+            </div>
+            <div class="modal-body">
+                <form id="updateI18nForm" class="form-horizontal" i18n="form">
+                    <div class="form-group">
+                        <label for="updateI18nForm_key" class="col-sm-2 control-label">国际化key</label>
+                        <div class="col-sm-10">
+                            <input id="updateI18nForm_key" type="text" class="form-control" placeholder="国际化key" name="key" disabled required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <div id="updateI18nForm_key_alert" class="alert alert-danger" hidden>
+                                key is invalid
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="updateI18nForm_cnVal" class="col-sm-2 control-label">中文翻译</label>
+                        <div class="col-sm-10">
+                            <input id="updateI18nForm_cnVal" type="text" class="form-control" placeholder="中文翻译" name="cnVal" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <div id="updateI18nForm_cnVal_alert" class="alert alert-danger" hidden>
+                                cnVal is invalid
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="updateI18nForm_enVal" class="col-sm-2 control-label">英文翻译</label>
+                        <div class="col-sm-10">
+                            <input id="updateI18nForm_enVal" type="text" class="form-control" placeholder="英文翻译" name="enVal" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <div id="updateI18nForm_enVal_alert" class="alert alert-danger" hidden>
+                                enVal is invalid
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <button id="updateI18nForm_updateButton" type="button" class="btn btn-primary" style="background-color: #4f5b69">修改</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="addI18nModal" i18n="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header" style="background-color: #4f5b69;color: white">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">新增翻译</h4>
+            </div>
+            <div class="modal-body">
+                <form id="addI18nForm" class="form-horizontal" i18n="form">
+                    <div class="form-group">
+                        <label for="addI18nForm_key" class="col-sm-2 control-label">国际化key</label>
+                        <div class="col-sm-10">
+                            <input id="addI18nForm_key" type="text" class="form-control" placeholder="国际化key" name="key" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <div id="addI18nForm_key_alert" class="alert alert-danger" hidden>
+                                key is invalid
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="addI18nForm_cnVal" class="col-sm-2 control-label">中文翻译</label>
+                        <div class="col-sm-10">
+                            <input id="addI18nForm_cnVal" type="text" class="form-control" placeholder="中文翻译" name="cnVal" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <div id="addI18nForm_cnVal_alert" class="alert alert-danger" hidden>
+                                cnVal is invalid
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="addI18nForm_enVal" class="col-sm-2 control-label">英文翻译</label>
+                        <div class="col-sm-10">
+                            <input id="addI18nForm_enVal" type="text" class="form-control" placeholder="英文翻译" name="enVal" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <div id="addI18nForm_enVal_alert" class="alert alert-danger" hidden>
+                                enVal is invalid
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <button id="addI18nForm_addButton" type="button" class="btn btn-primary" style="background-color: #4f5b69">新增</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="confirmModal" i18n="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header" style="background-color: #4f5b69;color: white">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">确认删除吗?</h4>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal" id="btn_confirm_delete">删除</button>
+                <button type="button" class="btn btn-success" data-dismiss="modal">撤销</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(function(){
+
+        getAllI18n();
+
+        function getAllI18n() {
+            clearContent();
+            $.ajax({
+                type: "GET",
+                async: false,
+                url: "/i18n/getAllI18n.do",
+                dataType: "json", //表示返回值类型，不必须
+                error: function(response) {
+                    alert(response.code);
+                },
+                success: function(response) {
+                    var i18nList = response.data;
+                    fillI18nContent(i18nList);
+                }
+            });
+        }
+
+        function fillI18nContent(i18nList) {
+            for (var index in i18nList) {
+                formatI18n(i18nList[index]);
+                $("#tbody_i18n").append(
+                        '<tr name="tr_i18n_'+ i18nList[index].id +'" >' +
+                        '<td class="color_grey">' + i18nList[index].id + '</td>' +
+                        '<td class="color_grey">' + i18nList[index].key + '</td>' +
+                        '<td class="color_grey">' + i18nList[index].cnVal + '</td>' +
+                        '<td class="color_grey">' + i18nList[index].enVal + '</td>' +
+                        '<td class="color_grey">' + i18nList[index].createTime + '</td>' +
+                        '<td class="color_grey"><button i18nId="'+ i18nList[index].id +'" name="btn_updateI18n" type="button" class="btn btn-primary btn-xs">修改</button></td>' +
+                        '<td class="color_grey"><button i18nId="'+ i18nList[index].id +'" name="btn_deleteI18n" type="button" class="btn btn-danger btn-xs">删除</button></td>' +
+                        '</tr>');
+            }
+        }
+
+        function formatI18n(i18n) {
+            if(i18n.cnVal == null) {
+                i18n.cnVal = "";
+            }
+            if(i18n.enVal == null) {
+                i18n.enVal = "";
+            }
+        }
+
+        $(document).on("click","[name=btn_updateI18n]",function(){
+            var i18nId = $(this).attr("i18nId");
+            var i18n = getI18n(i18nId);
+            setUpdateI18nFormVal(i18n);
+            $("#updateI18nModal").modal("show");
+            searchI18n();
+        });
+
+        function setUpdateI18nFormVal(i18n) {
+            $("#updateI18nForm_key").val(i18n.key);
+            $("#updateI18nForm_cnVal").val(i18n.cnVal);
+            $("#updateI18nForm_enVal").val(i18n.enVal);
+        }
+
+        function emptyUpdateI18nFormVal() {
+            $("#updateI18nForm_key").val("");
+            $("#updateI18nForm_cnVal").val("");
+            $("#updateI18nForm_enVal").val("");
+        }
+
+        function emptyAddI18nFormVal() {
+            $("#addI18nForm_key").val("");
+            $("#addI18nForm_cnVal").val("");
+            $("#addI18nForm_enVal").val("");
+        }
+
+        function getI18n(id) {
+            var i18n = null;
+            $.ajax({
+                type: "GET",
+                async: false,
+                url: "/i18n/getI18nById.do?id=" + id,
+                dataType: "json", //表示返回值类型，不必须
+                error: function(response) {
+                    alert(response.code);
+                },
+                success: function(response) {
+                    i18n = response.data;
+                }
+            });
+            return i18n;
+        }
+
+        $("#updateI18nForm_updateButton").click(function () {
+            var key = $("#updateI18nForm_key").val().trim();
+            var cnVal = $("#updateI18nForm_cnVal").val().trim();
+            var enVal = $("#updateI18nForm_enVal").val().trim();
+            $.ajax({
+                type: "POST",
+                async: false,
+                url: "/i18n/updateI18n.do",
+                data: {"i18n.key":key,"i18n.cnVal":cnVal,"i18n.enVal":enVal},
+                dataType: "json", //表示返回值类型，不必须
+                error: function(response) {
+                    alert(response.desc);
+                },
+                success: function(response) {
+                    emptyUpdateI18nFormVal();
+                    $("#updateI18nModal").modal("hide");
+                }
+            });
+        });
+
+        $("#addI18nForm_addButton").click(function () {
+            var key = $("#addI18nForm_key").val().trim();
+            var cnVal = $("#addI18nForm_cnVal").val().trim();
+            var enVal = $("#addI18nForm_enVal").val().trim();
+            $.ajax({
+                type: "POST",
+                async: false,
+                url: "/i18n/addI18n.do",
+                data: {"i18n.key":key,"i18n.cnVal":cnVal,"i18n.enVal":enVal},
+                dataType: "json", //表示返回值类型，不必须
+                error: function(response) {
+                    alert(response.desc);
+                },
+                success: function(response) {
+                    if (response.code == "0000") {
+                        emptyAddI18nFormVal();
+                        $("#addI18nModal").modal("hide");
+                    }else if(response.code == "0301") {
+                        emptyAddI18nFormVal();
+                        $("#addI18nForm_key_alert").text("国际化key重复");
+                        $("#addI18nForm_key_alert").show();
+                    }else {
+                        alert(response.desc);
+                    }
+                }
+            });
+            searchI18n();
+        });
+
+        var deleteI18nId = null;
+        var updateI18nId = null;
+
+        $(document).on("click","[name=btn_deleteI18n]",function(){
+            deleteI18nId = $(this).attr("i18nId");
+            $("#confirmModal").modal("show");
+        });
+
+        $("#btn_confirm_delete").click(function () {
+            deleteI18n(deleteI18nId);
+            searchI18n();
+        });
+
+        function deleteI18n(id) {
+            $.ajax({
+                type: "POST",
+                async: false,
+                url: "/i18n/deleteI18n.do",
+                data: {"id":id},
+                dataType: "json", //表示返回值类型，不必须
+                error: function(response) {
+                    alert(response.desc);
+                },
+                success: function(response) {
+                    $("#updateI18nModal").modal("hide");
+                }
+            });
+        }
+
+        $("#addI18n").click(function () {
+            $("#addI18nModal").modal("show");
+        });
+
+        $(document).on("click","[name=btn_searchI18n]",function(){
+            clearContent();
+            searchI18n();
+        });
+
+        function searchI18n() {
+            clearContent();
+            var key = $("#searchForm_key").val().trim();
+            var cnVal = $("#searchForm_cnVal").val().trim();
+            var enVal = $("#searchForm_enVal").val().trim();
+            $.ajax({
+                type: "POST",
+                async: false,
+                url: "/i18n/searchI18n.do",
+                data: {"i18n.key":key,"i18n.cnVal":cnVal,"i18n.enVal":enVal},
+                dataType: "json", //表示返回值类型，不必须
+                error: function(response) {
+                    alert(response.code);
+                },
+                success: function(response) {
+                    var i18nList = response.data;
+                    fillI18nContent(i18nList);
+                }
+            });
+        }
+
+        $(document).on("click","[name=btn_updateI18nPermission]",function(){
+            updateI18nId = $(this).attr("i18nId");
+            getAllPermissionWithStatus();
+            $("#updateI18nPermissionModal").modal("show");
+        });
+
+        function getAllPermissionWithStatus() {
+            $.ajax({
+                type: "POST",
+                async: false,
+                url: "/permission/getAllPermissionWithStatus.do",
+                data: {"i18nId":updateI18nId},
+                dataType: "json", //表示返回值类型，不必须
+                error: function(response) {
+                    alert(response.desc);
+                },
+                success: function(response) {
+                    if(response.code == "0000") {
+                        var permissionList = response.data;
+                        fillI18nPermissionContent(permissionList);
+                    }else {
+                        alert(response.desc);
+                    }
+                }
+            });
+        }
+
+        $("#btn_updateI18nPermission").click(function () {
+            var permissionIdArray = "";
+            $('input[name="permissionIdCheckbox"]:checked').each(function() {
+                permissionIdArray = permissionIdArray + this.value + ",";
+            });
+
+            if(permissionIdArray != "") {
+                permissionIdArray = permissionIdArray.substr(0,permissionIdArray.length-1);
+            }
+
+            $.ajax({
+                type: "POST",
+                async: false,
+                url: "/permission/updateI18nPermission.do",
+                data: {"i18nId":updateI18nId,"permissionIdArray":permissionIdArray},
+                dataType: "json", //表示返回值类型，不必须
+                error: function(response) {
+                    alert(response.desc);
+                },
+                success: function(response) {
+                    if(response.code == "0000") {
+                        var permissionList = response.data;
+                        fillI18nPermissionContent(permissionList);
+                    }else {
+                        alert(response.desc);
+                    }
+                }
+            });
+        });
+
+        function fillI18nPermissionContent(permissionList) {
+            $("#tbody_updateI18nPermission").empty();
+            for (var index in permissionList) {
+                formatPermission(permissionList[index]);
+                if(permissionList[index].pid == 0) {
+                    $("#tbody_updateI18nPermission").append(
+                            '<tr name="tr_permission_'+ permissionList[index].id +'" >' +
+                                '<td class="color_grey"><input name="permissionIdCheckbox" type="checkbox" value="'+ permissionList[index].id +'" '+ permissionList[index].checked +'></td>' +
+                                '<td class="color_grey">' + permissionList[index].id + '</td>' +
+                                '<td class="color_grey">' + permissionList[index].name + '</td>' +
+                                '<td class="color_grey">' + permissionList[index].description + '</td>' +
+                            '</tr>');
+                }else {
+                    $("#tbody_updateI18nPermission").append(
+                            '<tr name="tr_permission_'+ permissionList[index].id +'" class="info">' +
+                                '<td><input name="permissionIdCheckbox" type="checkbox" value="'+ permissionList[index].id +'" '+ permissionList[index].checked +'></td>' +
+                                '<td>' + permissionList[index].id + '</td>' +
+                                '<td>' + permissionList[index].name + '</td>' +
+                                '<td>' + permissionList[index].description + '</td>' +
+                            '</tr>');
+                }
+            }
+        }
+
+        function formatPermission(permission) {
+            //auth type
+            if(permission.type == "M") {
+                permission.type = "主菜单";
+            }else if(permission.type == "S") {
+                permission.type = "二级菜单";
+            }else if(permission.type == "O") {
+                permission.type = "操作";
+            }
+            //icon
+            if(permission.icon == null) {
+                permission.icon = "";
+            }
+            //url
+            if(permission.url == null) {
+                permission.url = "";
+            }
+            //description
+            if(permission.description == null) {
+                permission.description = "";
+            }
+        }
+
+        function clearContent() {
+            $("#tbody_i18n").empty();
+        }
+
+    });
+</script>
+</body>
+</html>
+

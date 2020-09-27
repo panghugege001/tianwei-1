@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+<mapper namespace="com.nnti.office.dao.auth.RoleDao">
+
+	<select id="getRoleIdList" resultType="int" parameterType="string">
+		select
+			role_id
+		from
+			t_user_role
+		where
+			username = #{username}
+	</select>
+	
+	<select id="getRoleList" resultType="Role">
+		select
+			id,
+			name,
+			code,
+			description,
+			create_time createTime
+		from
+			t_role
+		where
+			id in
+			<foreach item="item" collection="list" open="(" separator="," close=")">
+            	#{item}
+            </foreach>
+	</select>
+	
+	<select id="getAllRole" resultType="Role">
+		select
+			id,
+			name,
+			code,
+			description,
+			create_time createTime
+		from
+			t_role
+	</select>
+	
+	<select id="getRoleById" resultType="Role" parameterType="int">
+		select
+			id,
+			name,
+			code,
+			description,
+			create_time createTime
+		from
+			t_role
+		where
+			id = #{id}
+	</select>
+	
+	<update id="updateRole" parameterType="Role">
+		update t_role
+		<set>
+			<if test="name != null and name != ''">
+				name=#{name},
+			</if>
+			<if test="code != null and code != ''">
+				code=#{code},
+			</if>
+			<if test="description != null and description != ''">
+				description=#{description}
+			</if>
+		</set>
+		where
+			id = #{id}
+	</update>
+	
+	<select id="searchRole" parameterType="Role" resultType="Role">
+		select
+			id,
+			name,
+			code,
+			description,
+			create_time createTime
+		from
+			t_role
+		where
+			1 = 1
+			<if test="name != null and name != ''">
+				and name like CONCAT(CONCAT('%', #{name}),'%')
+			</if>
+			<if test="code != null and code != ''">
+				and code like CONCAT(CONCAT('%', #{code}),'%')
+			</if>
+	</select>
+	
+	<delete id="deleteRole" parameterType="int">
+		delete from t_role
+		where 
+			id = #{id}
+	</delete>
+	
+	<insert id="insertRole" parameterType="Role">
+		insert into t_role
+		(
+			name,
+			code,
+			description,
+			create_time
+		)
+		values
+		(
+			#{name},
+			#{code},
+			#{description},
+			#{createTime}
+		)
+	</insert>
+	
+	<delete id="deleteUserRoleByUsername" parameterType="string">
+		delete from t_user_role
+		where
+			username = #{username}
+	</delete>
+	
+	<delete id="deleteUserRoleByRoleId" parameterType="string">
+		delete from t_user_role
+		where
+			role_id = #{roleId}
+	</delete>
+	
+	<insert id="batchInsertUserRole" >
+		insert into t_user_role
+			(
+				username,
+				role_id,
+				create_time
+			)
+		values
+		<foreach item="item" collection="list" separator=",">
+			(
+				#{item.username},
+				#{item.roleId},
+				#{item.createTime}
+			)
+		</foreach>
+	</insert>
+	
+	<delete id="batchDeleteUserRole" parameterType="map">
+		delete from t_user_role
+		where
+			username = #{username}
+			and role_id in
+			<foreach item="item" collection="roleIdList" open="(" separator="," close=")">
+            	#{item}
+            </foreach>
+	</delete>
+	
+	<select id="getRoleListByNameList" resultType="Role">
+		select
+			name,
+			code
+		from
+			t_role
+		where
+			code in
+			<foreach item="item" collection="list" open="(" separator="," close=")">
+            	#{item}
+            </foreach>
+	</select>
+	
+	<select id="getRoleId" parameterType="string" resultType="int" >
+		select
+			id
+		from
+			t_role
+		where
+			code = #{code}
+	</select>
+	
+	<insert id="insertUserRole" parameterType="UserRole">
+		insert into t_user_role
+			(
+				username,
+				role_id,
+				create_time
+			)
+		values
+			(
+				#{username},
+				#{roleId},
+				#{createTime}
+			)
+	</insert>
+	
+</mapper>

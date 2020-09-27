@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd">
+	
+	<bean id="appWebServiceWS" class="app.webservice.AppWebServiceWS">
+		<property name="userService" ref="userService" />
+		<property name="systemConfigService" ref="systemConfigService" />     
+		<property name="latestPreferentialService" ref="latestPreferentialService" />
+		<property name="preferentialCommentService" ref="preferentialCommentService" />
+		<property name="constService" ref="constService" />
+		<property name="proposalService" ref="proposalService" />
+		<property name="gameinfoService" ref="gameinfoService" />
+		<property name="userBankInfoService" ref="userBankInfoService" />
+		<property name="userStatusService" ref="userStatusService" />
+		<property name="preferentialConfigService" ref="preferentialConfigService" />
+		<property name="selfPromotionService" ref="selfPromotionService" />
+		<property name="cs" ref="customerService" />
+		<property name="slotMachineBigBangService" ref="slotMachineBigBangService" />
+		<property name="systemAnnouncementService" ref="systemAnnouncementService" />
+		<property name="agentAccountListService" ref="agentAccountListService" />
+		<property name="accountService" ref="accountService" />
+		<property name="mailSender" ref="emailSender" />
+		<property name="questionService" ref="questionService" />
+		<property name="bankStatusService" ref="bankStatusService" />
+		<property name="slaveService" ref="slaveService" />
+		<property name="activityConfigService" ref="activityConfigService" />
+		<property name="transferService" ref="transferService" />
+	</bean>
+	
+</beans>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd">
+	<!-- webservice -->
+	<bean id="axis2WebServiceWS" class="dfh.skydragon.webservice.Axis2WebServiceWS">
+		<property name="proposalService" ref="proposalService"></property>
+		<property name="cs" ref="customerService"></property>
+		<property name="aiSupportService" ref="aiSupportService"></property>
+		<property name="userbankinfoService" ref="userbankinfoServiceImpl"></property>
+	</bean>
+	<bean id="userWebServiceWS" class="dfh.skydragon.webservice.UserWebServiceWS">
+		<property name="userWebSerivce" ref="userWebSerivce"></property>
+		<property name="cs" ref="customerService"></property>
+		<property name="proposalService" ref="proposalService"></property>
+		<property name="userbankinfoService" ref="userbankinfoServiceImpl"></property>
+		<property name="gameinfoService" ref="gameinfoService"></property>
+		<property name="announcementService" ref="announcementService"></property>
+		<property name="seqService" ref="seqService"></property>
+		<property name="transferService" ref="transferService"></property>
+		<property name="creditlogsService" ref="creditlogsService"></property>
+		<property name="agTryGameService" ref="agTryGameService"></property>
+		<property name="selfYouHuiService" ref="selfYouHuiService"></property>
+		<property name="validatedPayOrderService" ref="validatedPayOrderService"></property>
+		<property name="memberService" ref="memberService"></property>
+		<property name="getPwdService" ref="getPwdService"></property>
+		<property name="upgradeService" ref="upgradeService"></property>
+		<property name="slaveService" ref="slaveService"></property>
+		<property name="queryBetrankService" ref="queryBetrankService"></property>
+		<property name="allMatchService" ref="allMatchService"></property>
+		<property name="loginTokenService" ref="loginTokenService"></property>
+		<property name="userLotteryService" ref="userLotteryService"></property>
+		<property name="activityCalendarService"  ref="activityCalendarService"></property>
+		<property name="bankStatusService"  ref="bankStatusService"></property>
+	</bean>  
+
+	<bean id="tokenWebServiceWS" class="dfh.skydragon.webservice.TokenWebServiceWS">
+		<property name="loginTokenService"  ref="loginTokenService"></property>
+	</bean>
+
+
+</beans>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<body>
+<div class="page_wrap">
+   <img src="http://www.e68.ph/images/email/email_logo.png" class="logo"/>
+    <div class="top_banner">
+<div class="top_title">e路发国际娱乐城 注册通知</div>
+    </div>
+    <div class="content_wrap">
+        <div class="main_content">
+			  <div class="title_red">谢谢您！</div>
+您已经成功注册了e路发国际娱乐城的会员。请妥善保存下列信息，以供日后参考。<br /><br />
+            <table border="0" cellpadding="0" cellspacing="0" width="540" class="email_table">
+                <tr>
+<td class="title_cell" width="135">会员账号</td>
+<td class="content_cell">{0}</td>
+                </tr>
+                <tr>
+<td class="title_cell" width="135">代理网址</td>
+<td class="content_cell">{1}</td>
+                </tr>
+                <tr>
+<td class="title_cell" width="135">注册日期</td>
+<td class="content_cell">{2}</td>
+                </tr>
+            </table>
+            <div class="email_signature">
+<br /><strong>e路发国际娱乐城</strong>谨上
+            </div>
+        </div>
+    </div>
+    <div class="content_btm"></div>
+    <div class="email_btm" style="color:#666; font-size:11px; padding:0px 30px;">
+e路发国际娱乐城主页: <a href="http://www.e68.ph/" target="_blank">http://www.e68.ph</a>     客服电话：4000006168
+    </div>
+</div>
+</body>

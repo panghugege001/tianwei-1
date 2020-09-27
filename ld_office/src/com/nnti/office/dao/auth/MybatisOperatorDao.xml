@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+<mapper namespace="com.nnti.office.dao.auth.MybatisOperatorDao">
+
+	<select id="getOperatorByUsername" parameterType="string" resultType="Operator">
+		select
+			username,
+			password,
+			email,
+			enabled,
+			authority,
+			loginTimes,
+			lastLoginTime,
+			lastLoginIp,
+			createTime,
+			firstDayWeek,
+			phoneno,
+			phonenoGX,
+			phonenoBL,
+			cs,
+			type,
+			partner,
+			agent,
+			blserver_url blServerUrl,
+			passwordNumber,
+			randomStr,
+			validType,
+			smsPwd,
+			smsUpdateTime,
+			employeeNo,
+			subRole
+		from
+			operator
+		where
+			username = #{username}
+	</select>
+	
+	<update id="updateFirstDayWeek" parameterType="Operator">
+		update
+			operator
+		set
+			firstDayWeek = #{firstDayWeek}
+		where
+			username = #{username}
+	</update>
+	
+	<update id="emptySms" parameterType="Operator">
+		update
+			operator
+		set
+			smsPwd = #{smsPwd},
+			smsUpdateTime = #{smsUpdateTime}
+		where
+			username = #{username}
+	</update>
+	
+	<update id="updatePasswordNumber" parameterType="Operator">
+		update
+			operator
+		set
+			passwordNumber = #{passwordNumber}
+		where
+			username = #{username}
+	</update>
+	
+	<update id="disableOperator" parameterType="Operator">
+		update
+			operator
+		set
+			smsPwd = #{smsPwd},
+			smsUpdateTime = #{smsUpdateTime},
+			enabled = #{enabled}
+		where
+			username = #{username}
+	</update>
+	
+	<update id="updateAfterLogin" parameterType="Operator">
+		update
+			operator
+		set
+			smsPwd = #{smsPwd},
+			smsUpdateTime = #{smsUpdateTime},
+			enabled = #{enabled},
+			passwordNumber = #{passwordNumber},
+			loginTimes = #{loginTimes},
+			lastLoginTime = #{lastLoginTime},
+			lastLoginIp = #{lastLoginIp},
+			randomStr = #{randomStr}
+		where
+			username = #{username}
+	</update>
+	
+	<select id="getAllOperator" resultType="Operator">
+		select
+			username,
+			email,
+			enabled,
+			validType,
+			employeeNo,
+			loginTimes,
+			lastLoginTime,
+			lastLoginIp,
+			createTime
+		from
+			operator
+	</select>
+	<select id="getReCaptchaConfig" parameterType="java.util.Map" resultType="dfh.model.ReCaptchaConfig">
+		select
+			id,
+			domain,
+			site_key,
+			secret_key,
+			status,
+			createtime,
+			remark
+		from
+			recaptcha_config
+		where 
+			1 = 1
+			<if test="status != null and status != ''">
+				and status = #{status}
+			</if>
+			<if test="domain != null and domain != ''">
+				and domain = #{domain}
+			</if>
+	</select>
+	
+	<select id="searchOperator" parameterType="Operator" resultType="Operator">
+		select
+			username,
+			email,
+			enabled,
+			validType,
+			employeeNo,
+			loginTimes,
+			lastLoginTime,
+			lastLoginIp,
+			createTime
+		from
+			operator
+		where
+			1 = 1
+			<if test="username != null and username != ''">
+				and username like CONCAT(CONCAT('%', #{username}),'%')
+			</if>
+			<if test="email != null and email != ''">
+				and email like CONCAT(CONCAT('%', #{email}),'%')
+			</if>
+			<if test="employeeNo != null and employeeNo != ''">
+				and employeeNo like CONCAT(CONCAT('%', #{employeeNo}),'%')
+			</if>
+			<if test="enabled != null ">
+				and enabled = #{enabled}
+			</if>
+			<if test="validType != null ">
+				and validType = #{validType}
+			</if>
+	</select>
+	
+	<update id="updateOperator" parameterType="Operator">
+		update operator
+		<set>
+			<if test="email != null and email != '' ">
+				email=#{email},
+			</if>
+			<if test="enabled != null">
+				enabled=#{enabled},
+			</if>
+			<if test="validType != null">
+				validType=#{validType},
+			</if>
+			<if test="phoneno != null and phoneno != ''">
+				phoneno=#{phoneno},
+			</if>
+			<if test="phonenoGX != null and phonenoGX != ''">
+				phonenoGX=#{phonenoGX},
+			</if>
+			<if test="phonenoBL != null and phonenoBL != ''">
+				phonenoBL=#{phonenoBL},
+			</if>
+			<if test="employeeNo != null and employeeNo != ''">
+				employeeNo=#{employeeNo}
+			</if>
+		</set>
+		where
+			username = #{username}
+	</update>
+	
+	<delete id="deleteOperator" parameterType="string">
+		delete from operator
+		where
+			username = #{username}
+	</delete>
+	
+	<insert id="insertOperator" parameterType="Operator">
+		insert into operator
+		(
+			username,
+			password,
+			passwordNumber,
+			email,
+			enabled,
+			validType,
+			employeeNo,
+			phoneno,
+			phonenoGX,
+			phonenoBL,
+			firstDayWeek,
+			createTime,
+			authority
+		)
+		values
+		(
+			#{username},
+			#{password},
+			#{passwordNumber},
+			#{email},
+			#{enabled},
+			#{validType},
+			#{employeeNo},
+			#{phoneno},
+			#{phonenoGX},
+			#{phonenoBL},
+			#{firstDayWeek},
+			#{createTime},
+			#{authority}
+		)
+	</insert>
+	
+	<update id="updateAuthority" parameterType="map" >
+		update operator
+		set
+			authority = #{authority}
+		where
+			username = #{username}
+	</update>
+	
+	<update id="resetPasswordWrongTimes" parameterType="Operator">
+		update operator
+		set
+			passwordNumber = #{passwordNumber}
+		where
+			username = #{username}
+	</update>
+	
+</mapper>

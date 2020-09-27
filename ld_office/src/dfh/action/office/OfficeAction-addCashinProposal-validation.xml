@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE validators PUBLIC "-//OpenSymphony Group//XWork Validator 1.0.2//EN"
+ "http://struts.apache.org/dtds/xwork-validator-1.0.2.dtd">
+
+<validators>
+	<field name="title">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message>请选择用户类型</message>
+		</field-validator>
+	</field>
+	<field name="amount">
+		<field-validator type="required">
+			<param name="trim">true</param>
+			<message>请输入存款金额</message>
+		</field-validator>
+		<field-validator type="double">
+			<param name="minInclusive">1</param>
+			<message>额度至少大于 ${minInclusive}</message>
+		</field-validator>
+	</field>
+	<field name="loginname">
+		<field-validator type="requiredstring" short-circuit="true">
+			<param name="trim">true</param>
+			<message>请输入帐号</message>
+		</field-validator>
+	</field>
+	<field name="accountName">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message>请输入真实姓名</message>
+		</field-validator>
+	</field>
+</validators>

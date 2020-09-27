@@ -1,0 +1,38 @@
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN" "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="announcement" extends="struts-default" namespace="/announcement">
+		<global-results>
+			<result name="error">/office/functions/announcement_error.jsp</result>
+			<result name="success">
+				/office/functions/announcement_success.jsp
+			</result>
+			<result name="logout">/office/logout.jsp</result>
+		</global-results>
+		
+		<action name="query" class="AnnouncementClass" method="queryAll">
+			<result>/office/functions/announcement.jsp</result>
+		</action>
+		
+		<action name="add" class="AnnouncementClass" method="addAnnouncement">
+			<result name="input">
+				/office/functions/announcement_add.jsp
+			</result>
+		</action>
+		
+		<action name="del" class="AnnouncementClass" method="delAnnouncement">
+			<result type="redirectAction">query</result>
+		</action>
+		
+		<action name="edit" class="AnnouncementClass" method="editAnnouncement">
+			<result name="input">
+				/office/functions/announcement_edit.jsp
+			</result>
+		</action>
+		
+		<action name="byid" class="AnnouncementClass" method="queryAnnouncementById">
+			<result>
+				/office/functions/announcement_edit.jsp
+			</result>
+		</action>
+	</package>
+</struts>

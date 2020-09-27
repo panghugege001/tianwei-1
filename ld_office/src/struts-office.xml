@@ -1,0 +1,1864 @@
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN" "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<constant name="struts.action.extension" value="do" />
+	<constant name="struts.objectFactory" value="spring" />
+	<constant name="struts.enable.DynamicMethodInvocation" value="true" />
+	<constant name="struts.ognl.allowStaticMethodAccess" value="true" />
+    <constant name="struts.multipart.maxSize" value="999999999"/>
+	<package name="office" namespace="/office" extends="struts-default,json-default">
+		<action name="checkTopicStatusData" class="OfficeClass" method="checkTopicStatusData">
+		</action>
+		<action name="queryCouponConfigList" class="OfficeClass" method="queryCouponConfigList">
+			<result name="input">/office/functions/listCouponConfig.jsp</result>
+		</action>
+		<action name="addCouponConfig" class="OfficeClass" method="addCouponConfig"></action>
+		<action name="batchDeleteCouponConfig" class="OfficeClass" method="batchDeleteCouponConfig"></action>
+		<action name="batchAuditCouponConfig" class="OfficeClass" method="batchAuditCouponConfig"></action>
+		<action name="queryBbinCredit" class="AjaxQueryClass" method="queryBbinCredit"/>
+
+		<action name="changeCMBBank" class="OfficeClass" method="changeCMBBank"></action>
+	    <action name="makeUp" class="OfficeClass" method="makeUp"></action>
+	    
+		<action name="updateUserAgent" class="OfficeClass" method="updateUserAgent"></action>
+	
+		<action name="updatePtInfo" class="OfficeClass" method="updatePtInfo"></action>
+		
+		<action name="synchBbsUserInfo" class="OfficeProfitEaAction" method="synchBbsUserInfo"></action>
+		<action name="duanXinQunFa4Internation" class="OfficeClass" method="duanXinQunFa4Internation"></action>
+
+		<action name="queryAgentInfoAnalysis" class="OfficeClass" method="queryAgentInfoAnalysis">
+			<result name="input">/office/functions/agentDataAnalysis.jsp</result>
+		</action>
+		<action name="downloadConstraintAddressConfig" class="OfficeClass" method="downloadConstraintAddressConfig"></action>
+
+		<action name="sendSmsPwd" class="OfficeClass" method="sendSmsPwd"></action>
+		<action name="validSmsType" class="OfficeClass" method="validSmsType"></action> 
+		<action name="bindEmployeeNo" class="OfficeClass" method="bindEmployeeNo">
+			<result name="input">/office/functions/bindEmployeeNo.jsp</result>
+		</action>
+
+		<action name="activityConfigSave" class="OfficeClass" method="activityConfigSave">
+		</action>
+
+		<action name="editSaveActivity" class="OfficeClass" method="editSaveActivity">
+		</action>
+		<action name="querySMSPlatformSwitch" class="OfficeClass" method="querySMSPlatformSwitch"></action>
+		<action name="updateSMSPlatformSwitch" class="OfficeClass" method="updateSMSPlatformSwitch"></action>
+
+		<action name="sendSmsByPhoneList" class="OfficeClass" method="sendSmsByPhoneList"></action>
+
+		<action name="changeActivityStatus" class="OfficeClass" method="changeActivityStatus">
+		</action>
+
+		<action name="deleteActivity" class="OfficeClass" method="deleteActivity">
+		</action>
+
+		<action name="saveTitle" class="OfficeClass" method="saveTitle">
+		</action>
+
+		<action name="insertGuild" class="OfficeClass" method="insertGuild">
+		</action>
+		<action name="getGongHuiConfigs" class="OfficeProfitEaAction" method="getGongHuiConfigs">
+			<result name="input">/office/functions/gongHuiConfig.jsp</result>
+		</action>
+		<action name="gongHuiMembersList" class="OfficeClass" method="gongHuiMembersList">
+			<result name="input">/office/functions/gongHuiMembersList.jsp</result>
+		</action>
+		<action name="changeState" class="OfficeProfitEaAction" method="changeStates">
+		</action>
+
+		<action name="queryGongHuiList" class="OfficeClass" method="queryGongHuiList">
+			<result name="input">/office/functions/match/gongHuiWeekTongJi.jsp</result>
+		</action>
+		<action name="getGongHuiInfo" class="dfh.action.office.OfficeAction" method="getGongHuiInfo">
+			<result name="input">
+				/office/functions/match/addGongHuiFalseData.jsp
+			</result>
+			<result name="success">
+				/office/functions/match/gongHuiWeekTongJi.jsp
+			</result>
+		</action>
+		<action name="addGongHuiFalseData" class="dfh.action.office.OfficeAction" method="addGongHuiFalseData">
+		</action>
+		<action name="deleteGongHuiDataAll" class="OfficeProfitEaAction" method="deleteGongHuiDataAll">
+		</action>
+		<action name="deletegonghuidata" class="dfh.action.office.OfficeAction" method="deletegonghuidata">
+		</action>
+		<action name="deleteDataOne" class="dfh.action.office.OfficeAction" method="deleteDataOne">
+		</action>
+
+		<action name="updateGongHuiWeekData" class="dfh.action.office.OfficeAction" method="updateGongHuiWeekData">
+		</action>
+
+
+
+
+		<action name="queryActivityConfig" class="OfficeClass" method="queryActivityConfig">
+			<result name="input">/office/functions/activityConfig.jsp</result>
+		</action>
+
+		<action name="editActivity" class="OfficeClass" method="editActivity">
+			<result name="input">/office/functions/editActivity.jsp</result>
+		</action>
+
+		<action name="activityList" class="dfh.action.office.OfficeAction" method="activityList">
+			<result name="input">/office/functions/activityList.jsp</result>
+		</action>
+		
+		<!-- 配置短信发送开关、内容 --> 
+		<action name="querySMSConfig" class="OfficeClass" method="querySMSConfig">
+			<result name="input">/office/functions/manageSMSConfig.jsp</result>
+		</action>
+		<action name="saveOrUpdatSMSConfig" class="OfficeClass" method="saveOrUpdatSMSConfig"></action>
+		
+		<action name="resetOperatorPassword" class="OfficeClass" method="resetOperatorPassword"></action>
+		
+		<!-- 代理账号绑定游戏账号查询、解绑 -->
+		<action name="queryAgentBindGameUsersRecords" class="OfficeClass" method="queryAgentBindGameUsersRecords">
+			<result name="input">/office/functions/agentuserunBindGameuser.jsp</result>
+		</action>
+		<action name="unbindAgentGameUsers" class="OfficeClass" method="unbindAgentGameUsers"></action>
+		
+		<action name="queryUserbankinfoByBankno" class="OfficeClass" method="queryUserbankinfoByBankno">
+			<result name="input">/office/functions/userbankinfoByBankno.jsp</result>
+		</action>
+		
+		<!-- 汇总玩家每月游戏平台记录-结算功能 -->
+		<action name="queryUserSummary" class="OfficeClass" method="queryUserSummary">
+			<result name="input">/office/functions/queryUserSummary.jsp
+			</result>
+		</action>
+		
+		<action name="gatherUserSummary" class="OfficeClass" method="gatherUserSummary"></action>
+		<!-- 汇总玩家每月游戏平台记录-结算功能 -->
+		
+		<!-- 新好友推荐金 -->
+	 <action name="queryFriendRecordsByDate" class="OfficeClass" method="queryFriendRecordsByDate">
+			<result name="input">/office/functions/friendbonusrecord.jsp</result>
+		</action>
+		<action name="calculateFriendMoney" class="OfficeClass" method="calculateFriendMoney"></action>
+		
+		<!-- 守护女神 -->
+		<action name="queryGoddessRecords" class="OfficeClass" method="queryGoddessRecords">
+			<result name="input">/office/functions/goddessrecord.jsp</result>
+		</action>
+		<action name="calculateFlower" class="OfficeClass" method="calculateFlower"></action>
+		<action name="calculateRankingAndCoupon" class="OfficeClass" method="calculateRankingAndCoupon"></action>
+		<action name="updateBettotal" class="OfficeClass" method="updateBettotal"></action>
+		<!-- 单身狗 -->
+		<action name="queryNineDaysBets" class="OfficeClass" method="queryNineDaysBets">
+			<result name="input">/office/functions/singleparty.jsp</result>
+		</action> 
+		
+		<!--  手机连续签到抽奖活动 -->
+		<action name="queryUserLotteryRecord" class="OfficeClass" method="queryUserLotteryRecord">
+			<result name="input">/office/functions/mobileSignLottery.jsp</result>
+		</action> 
+		<action name="checkUserGetLotteryItem" class="OfficeClass" method="checkUserGetLotteryItem"></action> 
+		
+		<action name="queryLotteryPrizes" class="OfficeClass" method="queryLotteryPrizes">
+			<result name="input">/office/functions/lotteryPrizeManagement.jsp</result>
+		</action> 
+		<action name="updatePrize" class="OfficeClass" method="updatePrize"></action>
+		 
+		<action name="getUserSafeRecords" class="OfficeProfitEaAction" method="getUserSafeRecords">
+			<result name="input">
+				/office/functions/userSafeRecord.jsp
+			</result>
+		</action>
+		
+		<action name="getPointRecords" class="OfficeProfitEaAction" method="getPointRecords">
+			<result name="input">
+				/office/functions/pointRecord.jsp
+			</result>
+		</action>
+		
+		<action name="payYesterdayPoint" class="OfficeProfitEaAction"
+			method="payYesterdayPoint">
+		</action>
+		
+		<action name="clearErrorTimes" class="OfficeProfitEaAction" method="clearErrorTimes"></action>
+		
+		<action name="getSignRecords" class="OfficeProfitEaAction" method="getSignRecords">
+			<result name="input">
+				/office/functions/signRecord.jsp
+			</result>
+		</action>
+		
+		<action name="executeCall" class="OfficeProfitEaAction" method="executeCall"></action>
+		
+		<action name="executeCallTM" class="OfficeProfitEaAction" method="executeCallTM"></action>
+		<!-- user表的群呼 -->
+		<action name="executeCallUserTM" class="OfficeProfitEaAction" method="executeCallUserTM"></action>
+		
+		<action name="queryEbetCredit" class="OfficeClass" method="queryEbetCredit"></action>
+		<action name="queryGPICredit" class="OfficeClass" method="queryGPICredit"></action>
+		<action name="queryTTGCredit" class="OfficeClass" method="queryTTGCredit"></action>
+		<action name="queryQTCredit" class="OfficeClass" method="queryQTCredit"></action>
+		<action name="queryNTCredit" class="OfficeClass" method="queryNTCredit"></action>
+		
+		<action name="qeuryFirstCashinUsres" class="FirstCashinUsresClass" method="queryUsers">
+			<result name="input">/office/functions/first_cashin_usres.jsp</result>
+			<result>/office/functions/show_first_cashin_usres.jsp</result>
+		</action>
+
+		<action name="executeEditRemark" class="OfficeProfitEaAction" method="executeEditRemark">
+		</action>
+		
+		<action name="executeCallDataAnalysis" class="OfficeProfitEaAction" method="executeCallDataAnalysis">
+		</action>
+		
+		<action name="updateYesterdaySixLottery" class="OfficeClass" method="updateYesterdaySixLottery"></action>
+		<action name="updateYesterdayQT" class="OfficeClass" method="updateYesterdayQT"></action>
+		
+		<action name="duanXinQunFa" class="OfficeClass" method="duanXinQunFa"></action>
+		
+		<action name="updateUsersForCS" class="OfficeClass" method="updateUsersForCS"></action>
+		
+		<action name="getFriendintroduce" class="OfficeClass" method="getFriendintroduce">
+			<result name="input">
+				/office/functions/friendintroduce.jsp
+			</result>
+		</action>
+		
+		<action name="relievePtLimit" class="OfficeClass" method="relievePtLimit"></action>
+		
+		<action name="unbanding" class="UserbankinfoActionClass" method="unbanding"></action>
+		
+		<action name="searchUserbankinfo" class="UserbankinfoActionClass" method="searchUserbankinfo">
+			<result name="index">/office/home.jsp</result>
+			<result name="input">/office/functions/userbankinfounbanding.jsp</result>
+		</action>
+		
+		<action name="manageAgTryinfo" class="OfficeClass" method="queryAgTryinfo">
+			<result name="input">/office/functions/manageAgTryInfo.jsp</result>
+		</action>
+
+		<action name="getSite_key" class="OfficeClass" method="getSite_key"></action>
+	
+		<action name="officeLogin" class="OfficeClass" method="officeLogin">
+			<result name="input">/office/index.jsp</result>
+			<result name="changePwd">/office/functions/modifyOwnPwdTwo.jsp</result>
+			<result>/office/home.jsp</result>
+		</action>
+
+		<action name="queryPlatformAccountStatus" class="OfficeClass"
+				method="queryPlatformAccountStatus">
+			<result name="input">/office/functions/platformAccountStatus.jsp
+			</result>
+		</action>
+		
+		<!-- 解除禁用 -->
+	    <action name="relieveOperator" class="OfficeClass" method="relieveOperator">
+			<result name="input">/office/functions/relieveOperator.jsp</result>
+		</action>		
+
+		<action name="queryUser" class="OfficeClass" method="queryUser">
+			<result name="input">/office/functions/user.jsp</result>
+		</action>
+		
+		<action name="queryUserBackup" class="OfficeClass" method="queryUserBackup">
+			<result name="input">/office/functions/user_backup.jsp</result>
+		</action>
+		
+		  <action name="queryUserSms" class="OfficeClass"
+			method="queryUserSms">
+			<result name="input">/office/functions/smsUser.jsp</result>
+		</action>
+		
+		 <action name="sendSmsByUsersList" class="OfficeClass" method="sendSmsByUsersList"></action>
+		
+		
+		<action name="queryPhone" class="OfficeClass" method="queryPhone">
+			<result name="input">/office/functions/phoneLists.jsp</result>
+		</action>
+		
+		
+		<action name="queryMail" class="OfficeClass" method="queryMail">
+			<result name="input">/office/functions/checkMailLists.jsp</result>
+		</action>
+		
+		<action name="queryAgentPhone" class="OfficeClass" method="queryAgentPhone">
+			<result name="input">/office/functions/agentPhoneLists.jsp</result>
+		</action>
+		
+		<action name="queryPhoneforSend" class="OfficeClass" method="queryPhone">
+			<result name="input">/office/functions/phoneListsforSend.jsp</result>
+		</action>
+		
+		<action name="queryPhoneforSendGroup" class="OfficeClass" method="queryPhone">
+			<result name="input">/office/functions/yiyeGroupSend.jsp</result>
+		</action>
+		
+		<action name="queryPtCoupon" class="OfficeClass" method="queryPtCoupon">
+			<result name="input">/office/functions/ptCouponLists.jsp</result>
+		</action>
+		
+		<action name="getCustomerPno" class="OfficeClass" method="getCustomerPno">
+			<result name="input">/office/functions/phoneInfo.jsp</result>
+		</action>
+		
+		<action name="updatePhone" class="OfficeClass" method="updatePhone">
+			<result name="input">/office/functions/phoneInfo.jsp</result>
+		</action>
+				
+		<action name="getEmigratedrecord" class="OfficeClass" method="getEmigratedrecord">
+			<result name="input">/office/functions/emigratedrecord.jsp</result>
+		</action>
+		
+		<action name="getAgentCustomerPno" class="OfficeClass" method="getAgentCustomerPno">
+			<result name="input">/office/functions/agentPhoneInfo.jsp</result>
+		</action>
+		
+		<action name="updateAgentPhone" class="OfficeClass" method="updateAgentPhone">
+			<result name="input">/office/functions/agentPhoneInfo.jsp</result>
+		</action>
+		
+		<action name="sendLoginEmail" class="OfficeClass" method="sendLoginEmail"></action>
+		
+		<action name="getSendemail" class="SendEmailAction" method="getSendemail">
+			<result name="input">/office/functions/sendemailByself.jsp</result>
+		</action>
+		
+		<action name="updateSendemail" class="SendEmailAction" method="updateSendemail"></action>
+		
+		<action name="addEmail" class="SendEmailAction" method="addEmail">
+			<result name="input">/office/functions/sendemailByself.jsp</result>
+		</action>
+
+		<action name="queryRemoteCredit" class="AjaxQueryClass" method="queryRemoteCredit"></action>
+		
+		<action name="queryRemoteSixLotteryCredit" class="AjaxQueryClass" method="queryRemoteSixLotteryCredit"></action>
+		
+		<action name="queryRemoteAgInCredit" class="AjaxQueryClass" method="queryRemoteAgInCredit"></action>
+		
+		<action name="queryNewPtCredit" class="OfficeClass" method="queryNewPtCredit"></action>
+		
+		<action name="queryDtCredit" class="OfficeClass" method="queryDtCredit"></action>
+		
+		<action name="queryRemoteSbCredit" class="AjaxQueryClass" method="queryRemoteSbCredit"></action>
+		
+		<action name="queryRemoteAgCredit" class="AjaxQueryClass" method="queryRemoteAgCredit"></action>
+		
+		<action name="queryRemoteBbinCredit" class="AjaxQueryClass" method="queryRemoteBbinCredit"></action>
+		
+	    <action name="querySbaCredit" class="AjaxQueryClass" method="querySbaCredit"/>
+	    
+		<action name="queryMWGCredit" class="AjaxQueryClass" method="queryMWGCredit"/>
+		
+		<action name="queryChessCredit" class="AjaxQueryClass" method="queryChessCredit"/>
+				
+		<action name="queryRemoteKenoCredit" class="AjaxQueryClass" method="queryRemoteKenoCredit"></action>
+		
+		<action name="queryRemoteKenoCredit2" class="AjaxQueryClass" method="queryRemoteKenoCredit2"></action>
+
+		<action name="queryRemoteEBetAppCredit" class="AjaxQueryClass" method="queryRemoteEBetAppCredit"/>
+		
+		<action name="queryPTDetail" class="AjaxQueryClass" method="queryPTDetail"/>
+		
+		<action name="getNTwoBalance" class="AjaxQueryClass" method="getNTwoBalance"/>
+		
+		<action name="queryPtCredit" class="OfficeClass" method="queryPtCredit"></action>
+		
+		<action name="queryLastXimaTime" class="AjaxQueryClass" method="queryLastXimaTime">
+			<result type="plainText"></result>
+		</action>
+
+		<action name="queryValidBetAmount" class="AjaxQueryClass" method="queryValidBetAmount">
+			<result type="plainText"></result>
+		</action>
+
+		<action name="generateFreeCustomer" class="OfficeClass" method="generateFreeCustomer">
+			<result name="input">/office/functions/generate_free.jsp</result>
+		</action>
+
+		<action name="resetUserPassword" class="OfficeClass" method="resetUserPassword">
+			<result name="input">/office/functions/reset_password.jsp</result>
+		</action>
+
+		<action name="getActivityHistory" class="OfficeClass"
+				method="getActivityHistory">
+			<result name="input">
+				/office/functions/ActivityHistory.jsp
+			</result>
+		</action>
+		
+		<action name="queryagprofit" class="OfficeClass" method="queryagprofit">
+			<result name="input">/office/functions/agprofit.jsp</result>
+		</action>
+		
+		<action name="updateEbetAgprofitRecord" class="OfficeClass" method="updateEbetAgprofitRecord"></action>
+		
+		<action name="querywinpoint" class="OfficeClass" method="querywinpoint">
+			<result name="input">/office/functions/winPoint.jsp</result>
+		</action>
+		
+		<action name="queryagtrywinpoint" class="OfficeClass" method="queryagtrywinpoint">
+			<result name="input">/office/functions/agTryPoint.jsp</result>
+		</action>
+		
+		<action name="querybbinprofit" class="OfficeClass" method="queryagprofit">
+			<result name="input">/office/functions/bbinprofit.jsp</result>
+		</action>
+
+		<action name="queryProposal" class="OfficeClass" method="queryProposal">
+			<result name="input">/office/functions/proposal.jsp</result>
+		</action>
+		
+		<action name="querybaobiao" class="OfficeClass" method="querybaobiao">
+			<result name="input">/office/functions/baobiao.jsp</result>
+		</action>
+		
+		<action name="getproposalforaudit" class="OfficeClass" method="getproposalforaudit">
+			<result name="input">/office/functions/proposal.jsp</result>
+		</action>
+		
+		<action name="rPayProposal" class="OfficeClass" method="rPayProposal"></action>
+		
+		<action name="getSubmitYhjAction" class="OfficeClass" method="getSubmitYhjAction">
+			<result name="input">/office/functions/proposal.jsp</result>
+		</action>
+		
+		<action name="queryMGCredit" class="OfficeClass" method="queryMGCredit"></action>
+		
+		<action name="querySlotCredit" class="OfficeClass" method="querySlotCredit"></action>
+
+		<action name="queryFishCredit" class="OfficeClass" method="queryFishCredit"></action>
+		
+		<action name="queryPNGCredit" class="OfficeClass" method="queryPNGCredit"></action>
+		
+		<action name="getSubmitEmailAction" class="OfficeClass" method="getSubmitEmailAction"></action>
+		
+		<action name="getSubmitEmailAllAction" class="OfficeClass" method="getSubmitEmailAllAction"></action>
+		
+		<action name="getSubmitPhoneAction" class="OfficeClass" method="getSubmitPhoneAction"></action>
+		
+		<action name="getSendEmailAction" class="OfficeClass" method="getSendEmailAction"></action>
+		
+		<action name="getSendPhoneAction" class="OfficeClass" method="getSendPhoneAction"></action>
+		
+		<action name="sendPt8CouponSingleEmailAction" class="OfficeClass" method="sendPt8CouponSingleEmailAction"></action>
+		
+		<action name="sendPt8CouponEmailAction" class="OfficeClass" method="sendPt8CouponEmailAction"></action>
+		
+		<action name="submitYhjCancelAction" class="OfficeClass" method="submitYhjCancelAction">
+			<result name="input">/office/functions/proposal.jsp</result>
+		</action>
+		
+		<action name="getSubmitPayAction" class="OfficeClass" method="getSubmitPayAction">
+			<result name="input">/office/functions/payOrder.jsp</result>
+		</action>
+		
+		<action name="getSubmitGameAction" class="OfficeClass" method="getSubmitGameAction">
+			<result name="input">/office/functions/gameOrder.jsp</result>
+		</action>
+		
+		<action name="getSubmitQuotalAction" class="OfficeClass" method="getSubmitQuotalAction">
+			<result name="input">/office/functions/quotalList.jsp</result>
+		</action>
+		
+		<action name="getSubmitSbAction" class="OfficeClass" method="getSubmitSbAction">
+			<result name="input">/office/functions/sbCoupon.jsp</result>
+		</action>
+		
+		<action name="submitPayCancelAction" class="OfficeClass" method="submitPayCancelAction">
+			<result name="input">/office/functions/payOrder.jsp</result>
+		</action>
+		
+		<action name="submitGameCancelAction" class="OfficeClass" method="submitGameCancelAction">
+			<result name="input">/office/functions/gameOrder.jsp</result>
+		</action>
+		
+		<action name="submitQuotalCancelAction" class="OfficeClass" method="submitQuotalCancelAction">
+			<result name="input">/office/functions/quotalList.jsp</result>
+		</action>
+		
+		<action name="queryBsinessProposal" class="OfficeClass" method="queryBsinessProposal">
+			<result name="input">/office/functions/shiwuproposal.jsp</result>
+		</action>
+		
+		<action name="querypesoBsinessProposal" class="OfficeClass" method="querypesoBsinessProposal">
+			<result name="input">/office/functions/shiwupesoproposal.jsp</result>
+		</action>
+		
+		<action name="queryTransferProposal" class="OfficeClass" method="queryIntransferProposal">
+			<result name="input">/office/functions/proposaltransfer.jsp</result>
+		</action>
+
+		<action name="queryCreditlogs" class="OfficeClass" method="queryCreditlogs">
+			<result name="input">/office/functions/creditlog.jsp</result>
+		</action>
+		
+		<action name="queryCreditWarnlogs" class="OfficeClass" method="queryCreditWarnlogs">
+			<result name="input">/office/functions/creditWarnlog.jsp</result>
+		</action>
+		
+		<action name="queryBankCreditlogs" class="OfficeClass" method="queryBankCreditlogs">
+			<result name="input">/office/functions/bankcreditlog.jsp</result>
+		</action>
+		
+		<action name="queryBankonline" class="OfficeClass" method="queryBankonline">
+			<result name="input">/office/functions/bankonline/bankonline.jsp</result>
+		</action>
+		
+		<action name="queryCmbBankonline" class="OfficeClass" method="queryCmbBankonline">
+			<result name="input">/office/functions/bankonline/cmbbankonline.jsp</result>
+		</action>
+		
+		<action name="queryAbcBankonline" class="OfficeClass" method="queryAbcBankonline">
+			<result name="input">/office/functions/bankonline/abcbankonline.jsp</result>
+		</action>
+		
+		<action name="queryValidateAmountDeposit" class="OfficeClass" method="queryValidateAmountDeposit">
+			<result name="input">/office/functions/bankonline/validaAmountDeposit.jsp</result>
+		</action>
+		
+		<action name="queryValidatePayOrder" class="OfficeClass" method="queryValidatePayOrder">
+			<result name="input">/office/functions/validateAmountOrder.jsp</result>
+		</action>
+
+		<action name="queryAlipayline" class="OfficeClass" method="queryAlipayline">
+			<result name="input">/office/functions/bankonline/alipayline.jsp</result>
+		</action>
+		
+		<action name="queryWechatline" class="OfficeClass" method="queryWechatline">
+			<result name="input">/office/functions/bankonline/wechatline.jsp</result>
+		</action>
+		
+		<action name="dealWechat" class="OfficeClass" method="dealWechat"></action>
+		<action name="changeWechat" class="OfficeClass" method="changeWechat"></action>
+		
+		<!--秒存 -->
+		<action name="queryDepositOrder" class="OfficeClass" method="queryDepositOrder">
+			<result name="input">/office/functions/depositAmountOrder.jsp</result>
+		</action>
+		
+		<!--云闪付 订单记录-->
+		<action name="queryYunPayOrder" class="OfficeClass" method="queryYunPayOrder">
+			<result name="input">/office/functions/yunPay.jsp</result>
+		</action>
+		
+		<!--云闪付 存款订单记录-->
+		<action name="queryCmbTransferline" class="OfficeClass"
+			method="queryCmbTransferline">
+			<result name="input">
+				/office/functions/bankonline/yunPayOrder.jsp
+			</result>
+		</action>
+		
+		<!--银行二维码订单记录-->
+		<action name="queryQrcodePayOrder" class="OfficeClass" method="queryQrcodePayOrder">
+			<result name="input">/office/functions/qrcodeBankPay.jsp</result>
+		</action>
+		
+		  <!--银行二维码 存款订单记录-->
+		<action name="queryCmbTransferQrCodeline" class="OfficeClass"
+			method="queryCmbTransferQrCodeline">
+			<result name="input">
+				/office/functions/bankonline/qrcodeBankPayOrder.jsp
+			</result>
+		</action>
+		
+		
+		<action name="updateTlyEditAmount" class="OfficeClass" method="updateTlyEditAmount"></action>
+	    
+	    <action name="reSendTlyOrder" class="OfficeClass" method="reSendTlyOrder">
+			<result name="input">/office/functions/tlyOrderModity.jsp</result>
+			<result name="success">/office/functions/tlyOrderModity.jsp</result>
+		</action>
+		
+		<!--同略云订单记录-->
+		<action name="queryTlyPayOrder" class="OfficeClass" method="queryTlyPayOrder">
+			<result name="input">/office/functions/tlyBankPay.jsp</result>
+		</action>
+		
+		  <!--同略云 存款订单记录-->
+		<action name="queryCmbTransferTly" class="OfficeClass" method="queryCmbTransferTly">
+			<result name="input">
+				/office/functions/bankonline/tlyBankPayOrder.jsp
+			</result>
+		</action>
+		
+		<!--同略云订单记录-->
+		<action name="querySelfPayOrder" class="OfficeClass" method="querySelfPayOrder">
+			<result name="input">/office/functions/selfCollectPay.jsp</result>
+		</action>
+		
+		 <!--同略云 存款订单记录-->
+		<action name="queryCmbTransferSelf" class="OfficeClass" method="queryCmbTransferSelf">
+			<result name="input">
+				/office/functions/bankonline/selfCollectPayOrder.jsp
+			</result>
+		</action>
+		
+		
+		<!-- 废弃秒存 存款订单 -->
+		<action name="updateDepositOrder" class="OfficeClass" method="updateDepositOrder">
+		</action>
+		
+		<action name="discardDepositOrder" class="OfficeClass" method="discardDepositOrder"></action>
+		
+		<action name="queryPayOrder" class="OfficeClass" method="queryPayOrder">
+			<result name="input">/office/functions/payOrder.jsp</result>
+		</action>
+		
+		<action name="queryGameOrder" class="OfficeClass" method="queryGameOrder">
+			<result name="input">/office/functions/gameOrder.jsp</result>
+		</action>
+		
+		<action name="queryQuotalList" class="OfficeClass" method="queryQuotalList">
+			<result name="input">/office/functions/quotalList.jsp</result>
+		</action>
+		
+		<action name="querySb" class="OfficeClass" method="querySb">
+			<result name="input">/office/functions/sbProposal.jsp</result>
+		</action>
+		
+		<action name="getSbListInfo" class="OfficeClass" method="getSbListInfo">
+			<result name="input">/office/functions/sbProposalInfo.jsp</result>
+		</action>
+
+		<action name="queryTransfer" class="OfficeClass" method="queryTransfer">
+			<result name="input">/office/functions/transfer.jsp</result>
+		</action>
+
+		<action name="queryBetRecord" class="OfficeClass" method="queryBetRecord">
+			<result name="input">/office/functions/betRecord.jsp</result>
+		</action>
+
+		<!-- 提交再存优惠 -->
+		<action name="addOfferProposal" class="OfficeClass" method="addOfferProposal">
+			<result name="input">/office/functions/offer.jsp</result>
+		</action>
+		
+		<!-- 存款自动审核处理 查询-->
+		<action name="cashinautoexecute" class="OfficeClass" method="cashinAutoExecute">
+			<result name="input">/office/functions/cashin/cashin.jsp</result>
+		</action>
+		
+		<!-- 存款自动审核处理确认-->
+		<action name="cashinexecute" class="OfficeClass" method="cashinExecute">
+			<result name="input">/office/functions/cashin/cashin.jsp</result>
+		</action>
+		
+		<!-- 存款自动审核处理取消-->
+		<action name="cashincancel" class="OfficeClass" method="cashinCancel">
+			<result name="input">/office/functions/cashin/cashin.jsp</result>
+		</action>
+
+		<action name="queryOperationLog" class="OfficeClass" method="queryOperationLog">
+			<result name="input">/office/functions/operationlog.jsp</result>
+		</action>
+
+		<action name="queryActionLog" class="OfficeClass" method="queryActionLog">
+			<result name="input">/office/functions/actionlog.jsp</result>
+		</action>
+
+		<action name="queryBankInfo" class="OfficeClass" method="queryBankInfo">
+			<result>/office/functions/bankinfo.jsp</result>
+		</action>
+
+		<action name="queryProposalDetail" class="OfficeClass" method="queryProposalDetail">
+			<result>/office/functions/proposal_detail.jsp</result>
+		</action>
+		
+		<action name="queryBusinessProposalDetail" class="OfficeClass" method="queryBusinessProposalDetail">
+			<result>/office/functions/shiwuproposal_detail.jsp</result>
+		</action>
+		
+		<action name="queryBusinessProposalDetailforexc" class="OfficeClass" method="queryBusinessProposalDetail">
+			<result>/office/functions/bankinfo/businessproposalforcashout.jsp</result>
+		</action>
+		
+		<action name="queryProposalAuditDetail" class="OfficeClass" method="queryProposalAuditDetail">
+			<result>/office/functions/cashoutaudit.jsp</result>
+		</action>
+
+		<action name="queryTaskDetail" class="OfficeClass" method="queryTaskDetail">
+			<result>/office/functions/task_detail.jsp</result>
+		</action>
+		
+		<action name="queryBusinessTaskDetail" class="OfficeClass" method="queryBusinessTaskDetail">
+			<result>/office/functions/task_detail.jsp</result>
+		</action>
+
+		<action name="addCashinProposal" class="OfficeClass" method="addCashinProposal">
+			<result name="input">/office/functions/cashin.jsp</result>
+		</action>
+
+		<action name="addCashOutProposal" class="OfficeClass" method="addCashOutProposal">
+			<result name="input">/office/functions/cashout.jsp</result>
+		</action>
+
+		<action name="addXimaProposal" class="OfficeClass" method="addXimaProposal">
+			<result name="input">/office/functions/xima.jsp</result>
+		</action>
+				
+		<action name="addProxyCashOutProposal" class="OfficeClass" method="addProxyCashOutProposal">
+			<result name="input">/office/functions/proxyAdvance.jsp</result>
+		</action>
+		
+		<action name="getProxyAdvance" class="OfficeClass" method="getProxyAdvance">
+			<result name="input">/office/functions/proxyAdvance.jsp</result>
+		</action>
+
+		<action name="addPrizeProposal" class="OfficeClass" method="addPrizeProposal">
+			<result name="input">/office/functions/prize.jsp</result>
+		</action>
+
+		<action name="addPrizeProposalBirthdayGifts" class="OfficeClass" method="addPrizeProposalBirthdayGifts">
+			<result name="input">/office/functions/birthdayGifts.jsp</result>
+		</action>
+		
+		<action name="addPrizeProposalCoupon" class="OfficeClass" method="addPrizeProposalCoupon">
+			<result name="input">/office/functions/coupon.jsp</result>
+		</action>
+		
+		<action name="addPrizeProposalCouponPt" class="OfficeClass" method="addPrizeProposalCouponPt">
+			<result name="input">/office/functions/ptCoupon.jsp</result>
+		</action>
+		
+	    <action name="addRedProposalCoupon" class="OfficeClass" method="addRedProposalCoupon"> 
+			<result name="input">/office/functions/redCoupon.jsp</result>
+		</action>
+		
+		<action name="addPrizeProposalCouponSb" class="OfficeClass" method="addPrizeProposalCouponSb">
+			<result name="input">/office/functions/sbCoupon.jsp</result>
+		</action>
+		
+		<action name="getProposalPno" class="OfficeClass" method="getProposalPno">
+			<result name="input">/office/functions/proposal_shippinginfodetail.jsp</result>
+		</action>
+		
+		<action name="addPrizeProposalCouponTtg" class="OfficeClass" method="addPrizeProposalCouponTtg">
+			<result name="input">/office/functions/ttgCoupon.jsp</result>
+		</action>
+		
+		<action name="addProposalLevelPrize" class="OfficeClass" method="addProposalLevelPrize">
+			<result name="input">/office/functions/levelprize.jsp</result>
+		</action>
+
+		<action name="getAccountInfoForCashout" class="OfficeClass" method="getAccountInfoForCashout">
+			<result name="input">/office/functions/cashout.jsp</result>
+		</action>
+
+		<action name="getAccountInfoForRebankinfo" class="OfficeClass" method="getAccountInfo">
+			<result name="input">/office/functions/rebankinfo.jsp</result>
+		</action>
+
+		<action name="getUserInfo" class="OfficeClass" method="getUserInfo">
+			<result>/office/functions/cashin.jsp</result>
+		</action>
+		
+		<action name="getUserInfoById" class="OfficeClass" method="getUserInfoById">
+			<result>/office/functions/cashin.jsp</result>
+		</action>
+
+		<action name="addNewAccountProposal" class="OfficeClass" method="addNewAccountProposal">
+			<result name="input">/office/functions/newAccount.jsp</result>
+		</action>
+
+		<action name="addRebankInfoProposal" class="OfficeClass" method="addRebankInfoProposal">
+			<result name="input">/office/functions/rebankinfo.jsp</result>
+		</action>
+
+		<action name="addConcessionsProposal" class="OfficeClass" method="addConcessionsProposal">
+			<result name="input">/office/functions/concessions.jsp</result>
+		</action>
+
+		<action name="addMatch" class="OfficeClass" method="addMatch">
+			<result name="input">/office/functions/setmatch.jsp</result>
+		</action>
+
+		<!--用户第一笔存款queryFirstCashin -->
+		<action name="queryFirstCashin" class="OfficeClass" method="queryFirstCashin">
+			<result name="input">/office/functions/concessions.jsp</result>
+		</action>
+
+		<!-- 修复用户提款错误 -->
+		<action name="rehabUserCreditout" class="OfficeClass" method="rehabUserCreditout">
+			<result name="input">/office/functions/rehab.jsp</result>
+		</action>
+
+		<action name="addBankTransferConsProposal" class="OfficeClass" method="addBankTransferConsProposal">
+			<result name="input">/office/functions/bankTransferCons.jsp</result>
+		</action>
+
+		<action name="auditProposal" class="OfficeClass" method="auditProposal">
+			<result name="input">/office/functions/proposal.jsp</result>
+		</action>
+		
+		<!-- 更新订单 -->
+		<action name="updateFlashPayOrder" class="OfficeClass" method="updateFlashPayOrder">
+		</action>
+		
+		<!-- 重新提交 -->
+		<action name="resubmit" class="OfficeClass" method="resubmit">
+		</action>
+		
+		<action name="auditSProposal" class="OfficeClass" method="auditSProposal">
+			<result name="input">/office/functions/proposal.jsp</result>
+		</action>
+		
+		<action name="auditMsProposal" class="OfficeClass" method="auditMsProposal">
+			<result name="input">/office/functions/proposal.jsp</result>
+		</action>
+		
+		<action name="excuteCommission" class="OfficeClass" method="excuteCommission">
+			<result name="input">/office/functions/commissions.jsp</result>
+		</action>
+		
+		<action name="auditBusinessProposal" class="OfficeClass" method="auditBusinessProposal">
+			<result name="input">/office/functions/shiwuproposal.jsp</result>
+		</action>
+		
+		<action name="excuteicbctransfer" class="OfficeClass" method="excuteicbctransfer">
+			<result name="input">/office/functions/bankonline/excuteicbctransfer.jsp</result>
+		</action>
+		
+		<action name="excutecmbtransfer" class="OfficeClass" method="excutecmbtransfer">
+			<result name="input">/office/functions/bankonline/excutecmbtransfer.jsp</result>
+		</action>
+		
+		<action name="excuteabctransfer" class="OfficeClass" method="excuteabctransfer">
+			<result name="input">/office/functions/bankonline/excuteabctransfer.jsp</result>
+		</action>
+		
+		<action name="supplementPayOrder" class="OfficeClass" method="supplementPayOrder">
+			<result name="input">/office/functions/bankonline/supplementPayOrder.jsp</result>
+		</action>
+
+		<action name="excuteAlipaytransfer" class="OfficeClass" method="excuteAlipaytransfer">
+			<result name="input">/office/functions/bankonline/excutealipaytransfer.jsp</result>
+		</action>
+		
+		<action name="cancleProposal" class="OfficeClass" method="cancleProposal">
+			<result name="input">/office/functions/proposal.jsp</result>
+		</action>
+		
+		<action name="cancleBusinessProposal" class="OfficeClass" method="cancleBusinessProposal">
+			<result name="input">/office/functions/shiwuproposal.jsp</result>
+		</action>
+
+		<action name="excuteProposal" class="OfficeClass" method="excuteProposal">
+			<result name="input">/office/functions/proposal.jsp</result>
+		</action>
+		
+		<action name="confirmOfferFinished" class="OfficeClass" method="confirmOfferFinished">
+			<result name="input">/office/functions/proposal.jsp</result>
+		</action>
+		
+		<action name="secondProposal" class="OfficeClass" method="secondProposal">
+			<result name="input">/office/functions/proposal.jsp</result>
+		</action>
+	
+		<action name="repairPayOrder" class="OfficeClass" method="repairPayOrder">
+			<result name="input">/office/functions/repairPayOrder.jsp</result>
+		</action>
+		
+		<action name="repairPayOrderZf" class="OfficeClass" method="repairPayOrderZf">
+			<result name="input">/office/functions/repairPayOrderZf.jsp</result>
+		</action>
+		
+		<action name="repairPayOrderZfb" class="OfficeClass" method="repairPayOrderZfb">
+			<result name="input">/office/functions/repairPayOrderZfb.jsp</result>
+		</action>
+		
+		<action name="repairGameOrder" class="OfficeClass" method="repairGameOrder">
+			<result name="input">/office/functions/repairHlOrder.jsp</result>
+		</action>
+		
+		 <action name="repairPayOrderHf" class="OfficeClass" method="repairPayOrderHf">
+			<result name="input">/office/functions/repairPayOrderHf.jsp</result>
+		</action>
+		
+		<action name="repairPayOrderLfwx" class="OfficeClass" method="repairPayOrderLfwx">
+			<result name="input">/office/functions/repairPayOrderLfwx.jsp</result>
+		</action>
+		
+		
+		<action name="repairPayOrderHc" class="OfficeClass" method="repairPayOrderHc">
+			<result name="input">/office/functions/repairPayOrderHc.jsp</result>
+		</action>
+		
+		<action name="repairPayOrderBfb" class="OfficeClass" method="repairPayOrderBfb">
+			<result name="input">/office/functions/repairPayOrderBfb.jsp</result>
+		</action>
+		
+		<action name="repairPayOrderGfb" class="OfficeClass" method="repairPayOrderGfb">
+			<result name="input">/office/functions/repairPayOrderGfb.jsp</result>
+		</action>
+
+		<action name="setWarnLevel" class="OfficeClass" method="setWarnLevel">
+			<result name="input">/office/functions/setWarnLevel.jsp</result>
+		</action>
+
+		<!-- insert sun game Announcement -->
+		<action name="gameAddbulletin" class="OfficeClass" method="gameAddbulletin">
+			<result name="input">/office/functions/announcement.jsp</result>
+		</action>
+		
+		<!-- 设置合作伙伴下级用户 -->
+		<action name="partnerSetlower" class="OfficeClass" method="partnerSetlower">
+			<result name="input">/office/functions/setpartnerlower.jsp</result>
+		</action>
+		
+		<!-- 查询所有待执行的洗码记录 -->
+		<action name="ximalist" class="OfficeClass" method="ximalist">
+			<result name="input">/office/functions/ximalist.jsp</result>
+			<result name="none">/office/functions/auto_xima_none.jsp</result>
+		</action>
+		
+		<action name="sendAgSms" class="OfficeClass" method="sendAgSms">
+			<result name="input">/office/functions/sms.jsp</result>
+		</action>
+		
+		<action name="sendSms" class="OfficeClass" method="sendSms">
+			<result name="input">/office/functions/sms.jsp</result>
+		</action>
+		
+		<action name="sendSmsList" class="OfficeClass" method="sendSmsList">
+			<result name="input">/office/functions/sms.jsp</result>
+		</action>
+		<action name="sendSmsList45" class="OfficeClass" method="sendSmsList45"></action>
+		<action name="sendSmsListByLevel" class="OfficeClass" method="sendSmsListByLevel">
+			<result name="input">/office/functions/sms.jsp</result>
+		</action>
+
+		<action name="checkUserExsit" class="OfficeClass" method="checkUserExsit">
+			<result type="plainText"></result>
+		</action>
+
+		<action name="enableUser" class="OfficeClass" method="enableUser">
+			<result name="input">/office/functions/user.jsp</result>
+		</action>
+		
+		<action name="editAgentPartner" class="OfficeClass" method="editAgentPartner"></action>
+
+		<action name="queryConcessionAudit" class="OfficeClass" method="queryConcessionAudit">
+			<result name="input">/office/functions/concession_audit.jsp</result>
+		</action>
+		<!-- 实时投注记录 -->
+		<action name="nonceQueryBetRecord" class="OfficeClass" method="nonceQueryBetRecord">
+			<result name="input">/office/functions/realBetRecord.jsp</result>
+		</action>
+		<!-- 实时额度记录 -->
+		<action name="nonceBalanceRecords" class="OfficeClass" method="nonceBalanceRecords">
+			<result name="input">/office/functions/nonceBalanceRecords.jsp</result>
+		</action>
+
+		<action name="queryRemoteTransfer" class="OfficeClass" method="queryRemoteTransfer">
+			<result name="input">/office/functions/remoteTransfer.jsp</result>
+		</action>
+
+		<action name="setLevel" class="OfficeClass" method="setLevel">
+			<result name="input">/office/functions/setLevel.jsp</result>
+		</action>
+	
+		<action name="editRateUser" class="OfficeClass" method="editRateUser">
+			<result name="input">/office/functions/user.jsp</result>
+		</action>
+		
+		<action name="editUser" class="OfficeClass" method="editUser">
+			<result name="input">/office/functions/customerDataAnalysis.jsp</result>
+		</action>
+		<!-- author:sun-->
+		<action name="sendEmail" class="OfficeClass" method="sendEmail">
+			<result name="input">/office/functions/email.jsp</result>
+		</action>
+		<action name="sendEmailTwo" class="OfficeClass" method="sendEmailTwo">
+			<result name="input">/office/functions/email.jsp</result>
+		</action>
+		<action name="sendPEmail" class="OfficeClass" method="sendEmail">
+			<result name="input">/office/functions/pemail.jsp</result>
+		</action>
+		
+		<!-- author: ck  start-->
+		<action name="sendYiYeEmailInternal" class="OfficeClass" method="sendYiYeEmailInternal">
+			<result name="input">/office/functions/yiye_email.jsp</result>
+		</action>
+		<action name="sendYiYeEmailExternal" class="OfficeClass" method="sendYiYeEmailExternal">
+			<result name="input">/office/functions/yiye_externalEmail.jsp</result>
+		</action>
+		<action name="checkYiYeEmailSubscription" class="OfficeClass" method="checkYiYeEmailSubscription">
+			<result name="input">/office/functions/emailSubscriptionLists.jsp</result>
+		</action>
+		<action name="sendYiYeEmailSubscription" class="OfficeClass" method="sendYiYeEmailSubscription"></action>
+		<!-- end-->
+
+		
+		<action name="stencilSendMail" class="OfficeClass" method="stencilSendMail">
+			<result name="input">/office/functions/email.jsp</result>
+		</action>
+
+		<action name="getUseremailphone" class="OfficeClass" method="getUserInfo">
+			<result>/office/functions/modifyCustomerInfo.jsp</result>
+		</action>
+		
+		<action name="getAgentinfo" class="OfficeClass" method="getAgentInfo">
+			<result>/office/functions/modifyagentInfo.jsp</result>
+		</action>
+		<!--author:sun  -->
+		<action name="getUserhavinginfo" class="OfficeClass" method="getUserInfo">
+			<result>/office/functions/modifyUserinfo.jsp</result>
+		</action>
+		
+		<action name="getUserhavinginfoSCSH" class="OfficeClass" method="getUserInfoWithSCSH">
+			<result>/office/functions/modifyUserinfo.jsp</result>
+		</action>
+		
+		<action name="getUserhavinginfoBackup" class="OfficeClass" method="getUserInfoBackup">
+			<result>/office/functions/modifyUserinfoBackup.jsp</result>
+		</action>
+		<action name="getUserUpateinfo" class="OfficeClass" method="getUserInfo">
+			<result>/office/functions/modifyUpateUserinfo.jsp</result>
+		</action>
+		<action name="updateRebate" class="OfficeClass" method="updateRebate">
+			<result name="input">/office/functions/modifyUpateUserinfo.jsp</result>
+		</action>
+
+		<action name="modifyCustomerInfo" class="OfficeClass" method="modifyCustomerInfo">
+			<result name="input">/office/functions/modifyCustomerInfo.jsp</result>
+		</action>
+		<!-- sun -->
+		<action name="modifyUserRemark" class="OfficeClass" method="modifyCustomerInfo">
+			<result name="input">/office/functions/modifyCustomerInfo.jsp</result>
+		</action>
+		
+		<action name="modifyagentRemark" class="OfficeClass" method="modifyAgentInfo">
+			<result name="input">/office/functions/modifyagentInfo.jsp</result>
+		</action>
+
+		<action name="getUserEmail" class="OfficeClass" method="getUserInfo">
+			<result name="success">/office/functions/email.jsp</result>
+		</action>
+		
+		<action name="getUsersEmail" class="OfficeClass" method="getUsersEmail">
+			<result name="success">/office/functions/email.jsp</result>
+		</action>
+		
+		<action name="getUserEmail4" class="OfficeClass" method="getUserInfo">
+			<result name="success">/office/functions/email4.jsp</result>
+		</action>
+		<action name="getEmailList" class="OfficeClass" method="getEmailList">
+			<result name="json" type="json"></result>
+		</action>
+		<action name="getEmailDetilById" class="OfficeClass" method="getEmailDetilById">
+			<result name="json" type="json"></result>
+		</action>
+		<action name="sendEmails" class="OfficeClass" method="sendEmails">
+			<result name="json" type="json"></result>
+		</action>
+
+		<action name="queryKyqpCredit" class="AjaxQueryClass" method="queryKyqpCredit"/>
+
+		<action name="queryVRCredit" class="AjaxQueryClass" method="queryVRCredit"/>
+		
+		<action name="getUserPhone" class="OfficeClass" method="getUserInfo">
+			<result name="success">/office/functions/sms.jsp</result>
+		</action>
+		<action name="queryUserAnalyze" class="OfficeClass" method="queryUserAnalyze">
+			<result name="input">/office/functions/user_analyze.jsp</result>
+		</action>
+
+		<!-- 修改用户远程接口 -->
+		<action name="getAllRemoteUrl" class="OfficeClass" method="getAllRemoteUrl">
+			<result name="input">/office/functions/modifyRemoteUrl.jsp</result>
+		</action>
+		<!-- 修改单个用户的远程使用接口 sunh -->
+		<action name="modifyUserRemoteUrl" class="OfficeClass" method="modifyUserRemoteUrl">
+			<result name="input">/office/functions/modifyRemoteUrl.jsp</result>
+		</action>
+
+		<action name="modifyRemoteUrl" class="OfficeClass" method="modifyRemoteUrl">
+			<result name="input" type="redirectAction">getAllRemoteUrl</result>
+		</action>
+		<!-- 手动同步注单 -->
+		<action name="synBetRecords" class="OfficeClass" method="synBetRecords">
+			<result name="input">/office/functions/synBetRecordsSuccess.jsp</result>
+		</action>
+		<!-- 总报表 -->
+		<action name="queryReport" class="OfficeClass" method="queryReport">
+			<result name="input">/office/functions/reportforms.jsp</result>
+		</action>
+		
+		<action name="queryCustomerInfoAnalysis" class="OfficeClass" method="queryCustomerInfoAnalysis">
+			<result name="input">/office/functions/customerDataAnalysis.jsp</result>
+		</action>
+		<action name="sendDFSmsByPhoneList" class="OfficeClass" method="sendDFSmsByPhoneList"></action>
+
+		<action name="queryCustomerInfoAnalysisNew2" class="OfficeClass" method="queryCustomerInfoAnalysisNew2">
+			<result name="input">/office/functions/customerDataAnalysisNew.jsp</result>
+		</action>
+		
+		<action name="queryCustomerInfoAnalysisNew" class="OfficeClass" method="queryCustomerInfoAnalysisNew">
+			<result name="input">/office/functions/customerDataAnalysis.jsp</result>
+		</action>
+		
+		   <!-- 换线用户 记录 -->  
+         <action name="queryChangeLineUserRecord" class="OfficeClass"
+			method="queryChangeLineUserRecord">
+			<result name="input"> 
+				/office/functions/changeLineUserRecord.jsp
+			</result>
+		</action>
+		
+		<!-- 总报表详细 -->
+		<action name="queryReportInfo" class="OfficeClass" method="queryReportInfo">
+			<result name="input">/office/functions/reportforms.jsp</result>
+		</action>
+
+		<!-- 自动结算洗码 -->
+		<action name="showXima" class="AutoXimaActionClass" method="showXima">
+			<result>/office/functions/auto_xima.jsp</result>
+		</action>
+
+		<!-- 套利用户数据 -->
+		<action name="queryArbitrageShortInfo" class="AccountFunctionActionClass" method="queryArbitrageShortInfo"></action>
+		<action name="addArbitrageInfo" class="AccountFunctionActionClass" method="addArbitrageInfo"></action>
+		<action name="queryArbitrageDataEdit" class="AccountFunctionActionClass" method="queryArbitrageDataEdit">
+			<result name="input">/office/functions/arbitrageDataEdit.jsp</result>
+		</action>
+		<action name="updateArbitrageData" class="AccountFunctionActionClass" method="updateArbitrageData"></action>
+		<action name="deleteData" class="AccountFunctionActionClass" method="deleteData"></action>
+		<action name="queryDictionary" class="AccountFunctionActionClass" method="queryDictionary"></action>
+		<action name="queryArbitrageInfo" class="AccountFunctionActionClass" method="queryArbitrageInfo">
+			<result name="input">/office/functions/arbitrageData.jsp</result>
+		</action>
+
+		<!-- 自动结算合作伙伴佣金 -->
+		<action name="autoGenerateCommissionrecords" class="AutoCommissionrecordsAction" method="autoGenerateCommissionrecords">
+			<result name="input">/office/functions/successcms.jsp</result>
+		</action>
+		<!-- 自动执行合作伙伴佣金 -->
+		<action name="autoExcuteCommissionrecords" class="AutoCommissionrecordsAction" method="autoExcuteCommissionrecords">
+			<result name="input">/office/functions/autocommissionrecords.jsp</result>
+			<result name="success">/office/functions/success.jsp</result>
+		</action>
+
+		<!-- 查询合作伙伴佣金记录 -->
+		<action name="queryCommissions" class="OfficeClass" method="queryCommissions">
+			<result name="input">/office/functions/commissions.jsp</result>
+		</action>
+
+		<action name="queryCommissionrecords" class="OfficeClass" method="queryCommissionrecords">
+			<result name="input">/office/functions/commissionrecords.jsp</result>
+		</action>
+
+		<!-- 显示自动生成合作伙伴当前状态 -->
+		<action name="showCmn" class="AutoCommissionrecordsAction" method="showCmn">
+			<result>/office/functions/autocommissionrecords.jsp</result>
+		</action>
+		
+		<!-- stop 生成合作伙伴-->
+		<action name="stopAutoCmn" class="AutoCommissionrecordsAction" method="stopAutoCmn">
+			<result>/office/functions/autocommissionrecords.jsp</result>
+		</action>
+
+		<action name="autoGenerateXima" class="AutoXimaActionClass" method="autoGenerateXima">
+			<result name="input">/office/functions/auto_xima.jsp</result>
+			<result>/office/functions/auto_xima_generate_successful.jsp</result>
+		</action>
+
+		<action name="autoExcuteXima" class="AutoXimaActionClass" method="autoExcuteXima">
+			<result name="input">/office/functions/ximalist.jsp</result>
+			<result>/office/functions/autoExcuteXimaSuccess.jsp</result>
+		</action>
+
+		<action name="stopAutoXima" class="AutoXimaActionClass" method="stopAutoXima">
+			<result type="redirect">/office/showXima.do</result>
+		</action>
+
+		<action name="changeCreditManual" class="OfficeClass" method="changeCreditManual">
+			<result name="input">/office/functions/changeCreditManual.jsp</result>
+			<result>/office/functions/chanage_credit_successful.jsp</result>
+		</action>
+		
+		<action name="changeQuotal" class="OfficeClass" method="changeQuotal">
+			<result name="input">/office/functions/quotalAddModity.jsp</result>
+			<result>/office/functions/chanage_quotal_successful.jsp</result>
+		</action>
+		
+		<action name="changebankCreditManual" class="OfficeClass" method="changebankCreditManual">
+			<result name="input">/office/functions/changebankCredit.jsp</result>
+			<result>/office/functions/chanage_bankcredit_successful.jsp</result>
+		</action>
+
+		<action name="getAccountInfoForChangeCreditManual" class="OfficeClass" method="getAccountInfoForCashout">
+			<result name="input">/office/functions/changeCreditManual.jsp</result>
+		</action>
+		
+		<action name="getAccountInfoForChangeQuotal" class="OfficeClass" method="getAccountInfoForCashout">
+			<result name="input">/office/functions/quotalAddModity.jsp</result>
+		</action>
+		
+		<action name="getAccountInfoForChangebankCredit" class="OfficeClass" method="getAccountInfoForChangebankCredit">
+			<result name="input">/office/functions/changebankCredit.jsp</result>
+		</action>
+
+		<action name="modifyOwnPwd" class="OfficeClass" method="modifyOwnPwd">
+			<result name="input">/office/functions/modifyOwnPwd.jsp</result>
+		</action>
+		
+		<action name="modifyOwnPwdTwo" class="OfficeClass" method="modifyOwnPwdTwo">
+			<result name="input">/office/index.jsp</result>
+			<result name="error">/office/functions/modifyOwnPwdTwo.jsp</result>
+		</action>
+
+		<action name="createSubOperator" class="OfficeClass" method="createSubOperator">
+			<result name="input">/office/functions/createSubOperator.jsp</result>
+		</action>
+		<action name="createSubOperatorTwo" class="OfficeClass" method="createSubOperatorTwo">
+			<result name="input">/office/functions/createSubOperator.jsp</result>
+		</action>
+		
+		<action name="addNewAgent" class="OfficeClass" method="addNewAgent">
+			<result name="input">/office/functions/newAgent.jsp</result>
+		</action>
+		
+		<action name="getInternalAgencies" class="OfficeClass" method="getInternalAgencies">
+			<result name="input">/office/functions/agentlist.jsp</result>
+		</action>
+		
+		<action name="ximaList" class="OfficeClass" method="ximaList">
+			<result name="input">/office/functions/auto_xima.jsp</result>
+		</action>
+
+        <action name="getProxyFlowList" class="OfficeProxyClass" method="getProxyFlowList">
+			<result name="input">/office/functions/proxyLists.jsp</result>
+		</action>
+
+		<!-- 留言管理 sun -->
+		<action name="queryWordsForBack" class="OfficeGuestbookAction" method="queryWordsForBack">
+			<result name="input">/office/functions/guestbookManage.jsp</result>
+		</action>
+		
+		<action name="queryIplist" class="OfficeGuestbookAction" method="queryIplist">
+			<result name="input">/office/functions/iplist.jsp</result>
+		</action>
+
+		<action name="deleteWords" class="OfficeGuestbookAction" method="deleteWords">
+			<result name="input">/office/functions/guestbookManage.jsp</result>
+		</action>
+		
+		<!-- 批量删除站内信 -->
+		<action name="batchDelete" class="OfficeGuestbookAction" method="batchDelete"></action>
+
+		<action name="queryReference" class="OfficeGuestbookAction" method="queryReference">
+			<result name="input">/office/functions/guestbookinfo.jsp</result>
+		</action>
+
+		<action name="auditing" class="OfficeGuestbookAction" method="auditing">
+			<result name="input">/office/functions/guestbookManage.jsp</result>
+		</action>
+		
+		<!-- 审核留言 -->
+		<action name="auditingInfo" class="OfficeGuestbookAction" method="auditing">
+			<result name="input" type="redirect">/office/queryReference.do?id=${referenceId}&amp;start=${start}&amp;end=${end}</result>
+		</action>
+
+		<action name="leaveReplyWords" class="OfficeGuestbookAction" method="leaveReplyWords">
+			<result name="input" type="redirect">/office/queryReference.do?id=${referenceId}&amp;start=${start}&amp;end=${end}</result>
+		</action>
+
+		<action name="saveLeaveWords" class="OfficeGuestbookAction" method="saveLeaveWords">
+			<result name="success">/office/functions/guestbookManage.jsp</result>
+			<result name="input">/office/functions/officeaddguestbookNew.jsp</result>
+		</action>
+		
+		<action name="getPtList" class="OfficeClass" method="getPtList">
+			<!-- <result name="input">/office/functions/ptProfit.jsp</result> -->
+			<result name="input">/office/functions/ntProfit.jsp</result>
+		</action>
+		
+		<action name="singleUpdateqq" class="OfficeClass" method="singleUpdateQQ"></action>
+		
+		<action name="getEaList" class="OfficeProfitEaAction" method="getEaList">
+			<result name="input">/office/functions/eaProfit.jsp</result>
+		</action>
+		<action name="deleteYouHuiConfig" class="OfficeProfitEaAction" method="deleteYouHuiConfig">
+		</action>
+		<action name="getAgList" class="OfficeProfitEaAction" method="getAgList">
+			<result name="input">/office/functions/agDataProfit.jsp</result>
+		</action>
+		<!-- 电服 -->
+		<action name="sendDFSmsByUsersList" class="OfficeClass" method="sendDFSmsByUsersList"></action>
+		<action name="queryUserSmsDF" class="OfficeClass"
+				method="queryUserSmsDF">
+			<result name="input">/office/functions/smsUserDF.jsp</result>
+		</action>
+		
+		<action name="getPlatformDataList" class="OfficeProfitEaAction" method="getPlatformDataList">
+			<result name="input">/office/functions/platformData.jsp</result>
+		</action>
+		
+		<action name="deletePlatformData" class="OfficeProfitEaAction" method="deletePlatformData">
+			<result name="input">/office/functions/platformData.jsp</result>
+		</action>
+		
+		<action name="updatePlatformData" class="OfficeProfitEaAction" method="updatePlatformData"></action>
+		
+		<action name="getPlatformData" class="OfficeProfitEaAction" method="getPlatformData">
+			<result name="input">/office/functions/platformUpdate.jsp</result>
+		</action>
+		
+		<action name="getPreferentialRecords" class="OfficeProfitEaAction" method="getPreferentialRecords">
+			<result name="input">/office/functions/preferentialRecord.jsp</result>
+		</action>
+		
+		<action name="getPreferTransferRecords" class="OfficeProfitEaAction" method="getPreferTransferRecords">
+			<result name="input">/office/functions/preferTransferlRecord.jsp</result>
+		</action>
+		
+		<action name="getDepositOrderRecords" class="OfficeProfitEaAction" method="getDepositOrderRecords">
+			<result name="input">/office/functions/depositOrderRecord.jsp</result>
+		</action>
+		
+		<action name="getUserTaskRecords" class="OfficeProfitEaAction" method="getUserTaskRecords">
+			<result name="input">/office/functions/userTaskRecord.jsp</result>
+		</action>
+		
+		<action name="getTaskList" class="OfficeProfitEaAction" method="getTaskList">
+			<result name="input">/office/functions/tasklist.jsp</result>
+		</action>
+		
+		<action name="addAgentAddress" class="OfficeProfitEaAction" method="addAgentAddress"></action>
+		<action name="modifyAgentSite" class="OfficeProfitEaAction" method="modifyAgentSite"></action>
+		
+		<action name="getAgentWebsiteRecords" class="OfficeProfitEaAction" method="getAgentWebsiteRecords">
+			<result name="input">/office/functions/agentWebsiteRecord.jsp</result>
+		</action>
+		
+		<action name="getAlipayAccounts" class="OfficeProfitEaAction" method="getAlipayAccounts">
+			<result name="input">/office/functions/userAlipayAccount.jsp</result>
+		</action>
+		
+		<action name="addAlipayAccount" class="OfficeProfitEaAction" method="addAlipayAccount"></action>
+		<action name="updateAlipayAccountState" class="OfficeProfitEaAction" method="updateAlipayAccountState"></action>
+		
+		<action name="changeState" class="OfficeProfitEaAction" method="changeState"></action>
+		
+		<action name="getBankCard" class="OfficeProfitEaAction" method="getBankCard"></action>
+		
+		<action name="createDepositOrder" class="OfficeProfitEaAction" method="createDepositOrder"></action>
+		
+		<action name="modifyCustomerBet" class="OfficeProfitEaAction" method="modifyCustomerBet"></action>
+		
+		<action name="getBbinList" class="OfficeProfitEaAction" method="getBbinList">
+			<result name="input">/office/functions/bbinDataProfit.jsp</result>
+		</action>
+		
+		<action name="getPtDataList" class="OfficeClass" method="getNewPtList">
+			<result name="input">/office/functions/ptDataProfit.jsp</result>
+		</action>
+		
+		<action name="getPtNewDatas" class="OfficeClass" method="getPtNewDatas">
+			<result name="input">/office/functions/ptDataProfitNew.jsp</result>
+		</action>
+		
+		<action name="getMgDatas" class="OfficeClass" method="getMgDatas">
+			<result name="input">
+				/office/functions/mgData.jsp
+			</result>
+		</action>
+		
+		<action name="updateMgData" class="OfficeClass" method="updateMgData">
+		</action>
+		
+		<action name="getSbaDatas" class="OfficeClass" method="getSbaDatas">
+			<result name="input">
+				/office/functions/sbaData.jsp
+			</result>
+		</action>
+		<action name="getSwDatas" class="OfficeClass" method="getSwDatas">
+			<result name="input">
+				/office/functions/swData.jsp
+			</result>
+		</action>
+		<action name="updateSwData" class="OfficeClass" method="updateSwData">
+		</action>
+		
+		<action name="addPtTigerGameData" class="OfficeClass" method="addPtTigerGameData">
+			<interceptor-ref name ="fileUploadStack" /> 
+			<result name="input">/office/functions/ptDataProfitNew.jsp</result>
+		</action>
+		
+		<action name="updatePtDataOnline" class="OfficeClass" method="updatePtDataOnline"></action>
+		<action name="updateBbinDataOnline" class="OfficeClass" method="updateBbinDataOnline"></action>
+		
+		<action name="updateAgDataOnline" class="OfficeClass" method="updateAgDataOnline"></action>
+		
+		<action name="getAgDataList" class="OfficeProfitEaAction" method="getAgDataList">
+			<result name="input">/office/functions/agDataProfit.jsp</result>
+		</action>
+		
+		<action name="getJCDailyData" class="OfficeClass" method="getJCDailyData">
+			<result name="input">/office/functions/jcDataProfit.jsp</result>
+		</action>
+		
+		<action name="updateJCDailyProfit" class="OfficeClass" method="updateJCDailyProfit"></action>
+		
+		<action name="getPtListInfo" class="OfficeGuestbookAction" method="getPtListInfo">
+			<result name="input">/office/functions/ptProfitinfo.jsp</result>
+		</action>
+		
+		<action name="getPtListInfoTow" class="OfficeGuestbookAction" method="getPtListInfoTow">
+			<result name="input">/office/functions/ptProfitinfo.jsp</result>
+		</action>
+
+        <action name="addActivity" class="OfficeClass" method="addActivity">
+			<result name="input">/office/functions/addActivity.jsp</result>
+		</action>
+		
+		<action name="queryActivity" class="OfficeClass" method="queryActivity">
+			<result name="input">/office/functions/activity.jsp</result>
+		</action>
+		
+		<action name="updateActivity" class="OfficeClass" method="updateActivity">
+			<result name="input">/office/functions/updateActivity.jsp</result>
+		</action>
+		
+		<action name="addActivityTwo" class="OfficeClass" method="addActivityTwo">
+			<result name="input">/office/functions/updateActivity.jsp</result>
+		</action>
+		
+		<action name="updageActivityStatus" class="OfficeClass" method="updageActivityStatus"> </action>
+		<action name="updateActivityRole" class="OfficeClass" method="updateActivityRole"> </action>
+        <action name="limitMethod" class="OfficeClass" method="limitMethod"></action>
+		<action name="netpayLogin" class="NetPayClass" method="login"></action>
+		<action name="netpayCallBack" class="NetPayClass" method="callBack"></action>
+		<action name="netpayValidationAmount" class="NetPayClass" method="validationAmount"></action>
+		
+		<action name="uploadImage" class="OfficeImageAction" method="uploadImage">
+			<result name="input">/office/functions/imageUpload.jsp</result>
+		</action>
+		
+		<action name="uploadImageSwf" class="OfficeImageAction" method="uploadImage">
+			<result name="input">/office/functions/imageUploadSwf.jsp</result>
+		</action>
+		
+		<action name="queryImage" class="OfficeImageAction" method="queryImage">
+		     <result name="input">/office/functions/images.jsp</result>
+		</action>
+		
+		<action name="updateImagePage" class="OfficeImageAction" method="updateImagePage">
+			<result name="imageUpdate">/office/functions/imageUpdatePage.jsp</result>
+			<result name="imageSwfUpdate">/office/functions/imageSwfUpdatePage.jsp</result>
+		</action>
+		
+		<action name="updateImage" class="OfficeImageAction" method="updateImage">
+			<result name="input">/office/functions/imageUpdatePage.jsp</result>
+		</action>
+		
+		<action name="updateImageSwf" class="OfficeImageAction" method="updateImage">
+			<result name="input">/office/functions/imageSwfUpdatePage.jsp</result>
+		</action>
+		
+		<action name="updateServiceImage" class="OfficeImageAction" method="updateServiceImage"></action>
+		<action name="updateImageStatusServiceImage" class="OfficeImageAction" method="updateImageStatusServiceImage"></action>
+		
+		<action name="getYouHuiConfigs" class="OfficeProfitEaAction" method="getYouHuiConfigs">
+			<result name="input">/office/functions/youHuiConfig.jsp</result>
+		</action>
+		<action name="modifyYouHuiConfig" class="OfficeProfitEaAction" method="modifyYouHuiConfig"></action>
+		
+		<action name="insertYouHuiConfig" class="OfficeProfitEaAction" method="insertYouHuiConfig"></action>
+		
+		<action name="getConfig" class="OfficeProfitEaAction" method="getConfig">
+			<result name="success">/office/functions/editConfig.jsp</result>
+		</action>
+
+
+
+
+		<action name="updateYouHuiConfig" class="OfficeProfitEaAction" method="updateYouHuiConfig"></action>
+		<!-- author :jalen  自助红包配置 -->
+		<action name="getHBConfigs" class="OfficeProfitEaAction" method="getHBConfigs">
+			<result name="input">/office/functions/HBConfig.jsp</result>
+		</action>
+		<action name="modifyHBConfig" class="OfficeProfitEaAction" method="modifyHBConfig">
+		</action>
+		<action name="getHBConfig" class="OfficeProfitEaAction" method="getHBConfig">
+			<result name="success">/office/functions/editHBConfig.jsp</result>
+		</action>
+		<action name="updateHBConfig" class="OfficeProfitEaAction" method="updateHBConfig">
+		</action>
+		<action name="insertHBConfig" class="OfficeProfitEaAction" method="insertHBConfig">
+		</action>
+		<!-- 红包雨开始 -->
+		<action name="queryLimitRedRain" class="OfficeClass" method="queryLimitRedRain"></action>
+		<action name="editLimitRedRain" class="OfficeClass" method="editLimitRedRain"></action>
+		<action name="deleteRedRainDataAll" class="OfficeClass" method="deleteRedRainDataAll"></action>
+		<action name="queryRedRainCredit" class="OfficeClass" method="queryRedRainCredit"></action>
+		<action name="queryRedEnvelopeActivityList" class="OfficeClass" method="queryRedEnvelopeActivityList">
+			<result name="input">/office/functions/listRedEnvelopeActivity.jsp</result>
+		</action>
+		<action name="addRedEnvelopeActivity" class="OfficeClass" method="addRedEnvelopeActivity"></action>
+		<action name="queryRedEnvelopeActivity" class="OfficeClass" method="queryRedEnvelopeActivity"></action>
+		<action name="updateRedEnvelopeActivity" class="OfficeClass" method="updateRedEnvelopeActivity"></action>
+		<action name="deleteRedEnvelopeActivity" class="OfficeClass" method="deleteRedEnvelopeActivity"></action>
+		<action name="batchUpdateRedEnvelopeActivity" class="OfficeClass" method="batchUpdateRedEnvelopeActivity"></action>
+		<action name="getActivityHistoryRedRain" class="OfficeClass"
+				method="getActivityHistoryRedRain">
+			<result name="input">
+				/office/functions/ActivityHistoryRedRain.jsp
+			</result>
+		</action>
+		<action name="getActivityHistoryLu" class="OfficeClass"
+				method="getActivityHistoryLu">
+			<result name="input">
+				/office/functions/ActivityHistoryLu.jsp
+			</result>
+		</action>
+		<!-- 红包雨结束 -->
+		<action name="teleGroupSendMail" class="OfficeClass" method="teleGroupSendMail"></action>
+		<action name="getMerType" class="OfficeClass" method="getMerType">
+		</action>
+		<action name="youjianQunFa" class="OfficeClass" method="youjianQunFa"></action>
+		 
+		<action name="queryPTBigBangRecords" class="OfficeClass" method="queryPTBigBangRecords">
+			<result name="input">/office/functions/ptbigbang.jsp</result>
+		</action>
+		<action name="calculatePTBigBangGifgMoney" class="OfficeClass" method="calculatePTBigBangGifgMoney"></action>
+		<action name="removePTBigBangTransferLimit" class="OfficeClass" method="removePTBigBangTransferLimit"></action>
+		
+		<action name="distributeLosePromo" class="OfficeClass" method="distributeLosePromo"></action>
+		<action name="queryLosePromoRecords" class="OfficeClass" method="queryLosePromoRecords">
+			<result name="input">/office/functions/xima/profit.jsp</result>
+		</action>
+		<action name="removeLosePromoTransferLimit" class="OfficeClass" method="removeLosePromoTransferLimit"></action>
+		
+		<action name="excWeekSent" class="OfficeClass" method="excWeekSent"></action>
+		<action name="queryWeekSentRecords" class="OfficeClass" method="queryWeekSentRecords">
+			<result name="input">/office/functions/xima/weekSent.jsp</result>
+		</action>
+		<action name="removeWeekSentTransferLimit" class="OfficeClass" method="removeWeekSentTransferLimit"></action>
+		<action name="cancelWeekSent" class="OfficeClass" method="cancelWeekSent"></action>
+		
+		<action name="queryGiftList" class="OfficeClass" method="queryGiftList">
+			<result name="input">/office/functions/gift.jsp</result>
+		</action>
+		<action name="addGift" class="OfficeClass" method="addGift"></action>
+		<action name="giftOrderList" class="OfficeClass" method="giftOrderList">
+			<result name="input">/office/functions/giftOrderList.jsp</result>
+		</action>
+		<action name="modifyGiftApplyInfo" class="OfficeClass" method="modifyGiftApplyInfo"></action>
+		<action name="optGift" class="OfficeClass" method="optGift"></action>
+
+		<!-- 平博体育查询余额 -->
+		<action name="queryPBCredit" class="OfficeClass" method="queryPBCredit"></action>
+		<action name="getPtCommissions" class="OfficeClass" method="getPtCommissions">
+			<result name="input">/office/functions/commissions/ptcommission.jsp</result>
+		</action>
+		<action name="queryAgentSlotAccount" class="OfficeClass" method="queryAgentSlotAccount"></action>
+		<action name="getAgentVip" class="OfficeClass" method="getAgentVip">
+			<result name="input">/office/functions/commissions/agentvip.jsp</result>
+		</action>
+		<action name="getCommissionsDetail" class="OfficeClass" method="getCommissionsDetail"></action>
+		<action name="getCommissionsDetail1" class="OfficeClass" method="getCommissionsDetail1">
+			<result name="input">/office/functions/commissions/ptcommissiondetail.jsp</result>
+		</action>
+		<action name="executeAgentVip" class="OfficeClass" method="executeAgentVip"></action>
+		
+		<action name="autoUpgrade" class="OfficeClass" method="autoUpgrade"></action>
+		<action name="queryUpgradeLog" class="OfficeClass" method="queryUpgradeLog">
+			<result name="input">/office/functions/upgradelevel.jsp</result>
+		</action>
+		<action name="optUpgrade" class="OfficeClass" method="optUpgrade"></action>
+		
+		<action name="clearUpDate" class="dfh.action.office.ClearUpDateAction" method="clearUpDate">
+			<result name="input">/office/functions/clearUpDate.jsp</result>
+		</action>
+		<action name="submitClearUserAction" class="dfh.action.office.ClearUpDateAction" method="submitClearUserAction">
+		</action>
+		
+		<action name="updateotherCustomAction" class="dfh.action.office.CheckUnDepositUserAction" method="updateotherCustomAction"></action>
+		<action name="updateDeposFlag" class="dfh.action.office.CheckUnDepositUserAction" method="updateDeposFlag"></action>
+		<action name="updateEmailFlag" class="dfh.action.office.CheckUnDepositUserAction" method="updateEmailFlag"></action>
+		<action name="updateEmailFlagForUser" class="dfh.action.office.CheckUnDepositUserAction" method="updateEmailFlagForUser"></action>
+		<action name="updateAgentEmailFlag" class="dfh.action.office.CheckUnDepositUserAction" method="updateAgentEmailFlag"></action>
+		<action name="statisticData" class="dfh.action.office.CheckUnDepositUserAction" method="statisticData"></action>
+		<action name="queryOperators" class="dfh.action.office.OperatorNewAction" method="queryOperators">
+		<result name="input">/office/functions/manageOperator.jsp</result></action>
+		<action name="updateOrSaveOperator" class="dfh.action.office.OperatorNewAction" method="updateOrSaveOperator"></action>
+		<action name="deleteOperator" class="dfh.action.office.OperatorNewAction" method="deleteOperate"></action>
+		<action name="queryBetrank" class="dfh.action.office.OfficeAction" method="queryBetrank">
+			<result name="input">/office/functions/betrank.jsp</result>
+		</action>
+		<action name="queryBetrank2" class="dfh.action.office.OfficeAction" method="queryBetrank2">
+			<result name="input">/office/functions/betrank.jsp</result>
+		</action>
+		<!-- 老虎机周比赛配置 start -->
+		<action name="querySlotsGiftMatch" class="dfh.action.office.OfficeAction" method="slotsGiftMatch">
+			<result name="success">/office/functions/match/slotsGiftMatch.jsp</result>
+		</action>
+		<action name="getHBrecord" class="OfficeClass"
+				method="getHBrecord">
+			<result name="input">
+				/office/functions/HBrecord.jsp
+			</result>
+		</action>
+		<action name="modifiedSMRanking" class="dfh.action.office.OfficeAction" method="modifiedSMRanking">
+			<result name="input">/office/functions/match/addSlotsData.jsp</result>
+			<result name="success">/office/functions/match/slotsGiftMatch.jsp</result>
+		</action>
+		<action name="updateSlotsData" class="dfh.action.office.OfficeAction" method="updateSlotsMatchWeekly"></action>
+		<!-- 老虎机周比赛配置 end -->
+		<action name="updateBetInfo" class="dfh.action.office.OfficeAction" method="updateBetInfo"></action>
+		<action name="queryQQInf" class="allProjectAction" method="queryQQInf">
+			<result name="success">/office/functions/allproject/qqinf_fromnet.jsp</result>
+		</action>
+		
+		<action name="queryPrivileges" class="OfficeClass" method="queryPrivileges">
+			<result name="input">/office/functions/privilege.jsp</result>
+		</action>
+		<action name="exePrivilegesOfToday" class="OfficeClass" method="exePrivilegesOfToday"></action>
+		<action name="cancelPrivilegesOfToday" class="OfficeClass" method="cancelPrivilegesOfToday"></action>
+		
+		<action name="queryMGTransferlogs" class="OfficeClass" method="queryMGTransferlogs">
+			<result name="input">/office/functions/mgTransferRecord.jsp</result>
+		</action>
+		<action name="queryMGGameDetail" class="OfficeClass" method="queryMGGameDetail">
+			<result name="input">/office/functions/mgGameDetail.jsp</result>
+		</action>
+		<action name="mgPlayCheck" class="OfficeClass" method="mgPlayCheck">
+			<result name="input">/office/functions/mgplaycheck.jsp</result>
+		</action>
+		
+		<!-- 催账记录 -->
+		<action name="queryUrgeOrderPage" class="OfficeClass" method="queryUrgeOrderPage">
+			<result name="input">/office/functions/urgeOrder.jsp</result>
+		</action>
+		<!-- 处理催账记录 -->
+		<action name="handleUrgeOrder" class="OfficeClass" method="handleUrgeOrder"></action>
+		
+		<!--start author: ck -->
+		<action name="modifyPlatformRecord" class="OfficeClass" method="modifyPlatformRecord"> </action>
+		
+		<action name="modifySinglePlatform" class="OfficeClass" method="modifySinglePlatform"></action>	
+		
+		<action name="modifyAgSlotPlatform" class="OfficeClass" method="modifyAgSlotPlatform"></action>	
+		
+		<action name="getPlatformUpdateTime" class="OfficeClass" method="getPlatformUpdateTime">
+		    <result name="input">/office/functions/modifyPlatformRecord.jsp</result>
+		</action>
+		<!--end author: ck -->
+		<!-- 导入比邻数据库 -->
+		<action name="queryImportData" class="BLActionClass" method="queryImportData">
+			<result name="input">/office/functions/dataImportBL.jsp</result>
+		</action>		
+		<action name="importData" class="BLActionClass" method="importData"></action>
+		 
+		<action name="queryGiftOrderList" class="OfficeClass" method="queryGiftOrderList">
+			<result name="input">/office/functions/listGiftOrder.jsp</result>		
+		</action>
+		
+		<action name="addGiftOrder" class="OfficeClass" method="addGiftOrder"></action>
+		
+		<action name="deleteGiftOrder" class="OfficeClass" method="deleteGiftOrder"></action>
+		
+		<!--start 演唱会活动 author: ck -->
+		<action name="modifiedConcertBet" class="OfficeClass" method="modifiedConcertBet">
+			<result name="input">/office/functions/addConcertRecord.jsp</result>
+			<result name="success">/office/functions/concertEvent.jsp</result>
+		</action>
+		
+		<action name="editConcertBet" class="OfficeClass" method="editConcertBet"></action>
+	
+	    <action name="updateConcertBetOnDay" class="OfficeClass" method="updateConcertBetOnDay">
+			<result name="input">/office/functions/concertEvent.jsp</result>
+			<result name="success">/office/functions/concertEvent.jsp</result>
+		</action>
+		<action name="queryConcertBet" class="OfficeClass" method="queryConcertBet">
+			<result name="input">/office/functions/concertEvent.jsp</result>
+			<result name="success">/office/functions/concertEvent.jsp</result>
+		</action>
+		<action name="updateConcertDisplay" class="OfficeClass" method="updateConcertDisplay"></action>
+		<action name="updateRankingData" class="OfficeClass" method="updateRankingData"></action>
+		<!-- 添加数据 ,自定义假数据 -->
+		<action name="insetConcertRecord" class="OfficeClass" method="insetConcertRecord">
+			<result name="input">/office/functions/addConcertRecord.jsp</result>
+			<result name="success">/office/functions/concertEvent.jsp</result>
+		</action>
+		<!--end 演唱会活动    author: ck-->
+
+		<action name="queryGameByPlatform" class="OfficeClass" method="queryGameByPlatform">
+			<result name="input">/office/functions/gamecodemanage.jsp</result>
+		</action>
+		<action name="deleteGame" class="OfficeClass" method="deleteGame"></action>
+		
+		<action name="queryPayOrder2" class="OfficeClass" method="queryPayOrder">
+			<result name="input">/office/functions/payOrder2.jsp</result>
+		</action>
+		
+		<!-- 获取支付配置 -->
+		<action name="payOrder2" class="OfficeClass" method="payOrder2">
+			<result name="input">/office/functions/payOrder2.jsp</result>
+		</action>
+		
+		<action name="getSubmitPayAction2" class="OfficeClass" method="getSubmitPayAction2">
+			<result name="input">/office/functions/payOrder2.jsp</result>
+		</action>
+		
+		<action name="submitPayCancelAction2" class="OfficeClass" method="submitPayCancelAction">
+			<result name="input">/office/functions/payOrder2.jsp</result>
+		</action>
+		
+		<action name="batchUpdate" class="OfficeClass" method="batchUpdate"></action>
+		
+		
+		<action name="queryTopicStatusList" class="OfficeTopicInfoAction" method ="queryTopicStatusList">
+			<result name="input">
+				/office/functions/topicInfoYouHuiManage.jsp
+			</result>
+		</action>
+		
+		<!-- 站内信管理 sun -->
+		<action name="queryTopicInfoList" class="OfficeTopicInfoAction" method ="queryTopicInfoList">
+			<result name="input">
+				/office/functions/topicInfoManage.jsp
+			</result>
+		</action>
+		
+		<!-- 批量删除优惠站内信 -->
+		<action name="batchDeleteTopicInfoYouHui" class="OfficeTopicInfoAction"
+			method="batchDeleteTopicInfoYouHui">
+		</action>
+		
+		
+		<!-- 站内信用户列表-->
+		<action name="queryTopicUserList" class="OfficeTopicInfoAction" method ="queryTopicUserList">
+			<result name="input">
+				/office/functions/topicInfoUserList.jsp
+			</result>
+		</action>
+		
+		<action name="saveTopicInfo" class="OfficeTopicInfoAction"
+			method="saveTopicInfo">
+			<result name="success">
+				/office/functions/topicInfoManage.jsp
+			</result>
+			<result name="input">
+				/office/functions/officeAddTopicInfoNew.jsp
+			</result>
+		</action>
+		
+		<!-- 批量删除站内信 -->
+		<action name="batchDeleteTopicInfo" class="OfficeTopicInfoAction"
+			method="batchDelete">
+		</action>
+		
+		<action name="queryTopicReference" class="OfficeTopicInfoAction"
+			method="queryReference">
+			<result name="input">
+				/office/functions/topicinfo.jsp
+			</result>
+		</action>
+		
+		<action name="leaveReplyTopic" class="OfficeTopicInfoAction"
+			method="leaveReplyWords">
+			<result name="input" type="redirect">
+				/office/queryTopicReference.do?id=${referenceId}&amp;start=${start}&amp;end=${end}
+			</result>
+		</action>
+		
+		<action name="auditingTopicInfo" class="OfficeTopicInfoAction"
+			method="auditing">
+			<result name="input">
+				/office/functions/topicInfoManage.jsp
+			</result>
+		</action>
+		
+		<!-- 批量推送站内信 -->
+		<action name="batchPushTopicToApp" class="OfficeTopicInfoAction"
+			method="batchPushToApp">
+		</action>
+
+
+		<!-- 删除站内信 -->
+		<action name="deleteYouHuiTopicInfo" class="OfficeTopicInfoAction"
+			method="deleteYouHuiTopicInfo">
+			<result name="input">
+				/office/functions/topicInfoYouHuiManage.jsp
+			</result>
+		</action>
+		<action name="importArbitrageInfo" class="AccountFunctionActionClass" method="importArbitrageInfo">
+			<result name="input">/office/functions/arbitrageData.jsp</result>
+			</action>
+	
+	
+		<!-- 自助体验金 -->
+		<action name="getExperienceGold" class="OfficeProfitEaAction"
+			method="getExperienceGold">
+			<result name="input">/office/functions/experienceGold.jsp</result>
+		</action>
+	
+		<action name="insertExperienceGold" class="OfficeProfitEaAction"
+			method="insertExperienceGold">
+		</action>
+	
+		<action name="modifyExperienceGold" class="OfficeProfitEaAction"
+			method="modifyExperienceGold">
+		</action>
+	
+		<action name="getExperienceGoldInfo" class="OfficeProfitEaAction"
+			method="getExperienceGoldInfo">
+			<result name="success">/office/functions/editExperienceGold.jsp</result>
+		</action>
+		<action name="updateExperienceGold" class="OfficeProfitEaAction"
+			method="updateExperienceGold">
+		</action>
+		<!-- 批量修改域名 -->
+		<action name="batchModifyAgentSite" class="OfficeProfitEaAction" method="batchModifyAgentSite"></action>
+		<action name="findUserMaintainLogList" class="OfficeClass" method="findUserMaintainLogList"></action>
+		<action name="addUserMaintainLog" class="OfficeClass" method="addUserMaintainLog"></action>
+		<action name="updateUserMaintainLog" class="OfficeClass" method="updateUserMaintainLog"></action>
+		<action name="updateUserRemark" class="OfficeClass" method="updateUserRemark"></action>
+		<action name="deleteUserMaintainLog" class="OfficeClass" method="deleteUserMaintainLog"></action>
+		<action name="collectionChessData" class="OfficeClass" method="collectionChessData"></action>
+		<!--二维码开始  -->
+		<action name="queryQrcode" class="OfficeClass" method="queryQrcode">
+			<result name="input">/office/functions/qrcode.jsp</result>
+		</action>
+		<action name="deleteQrcode" class="OfficeClass" method="deleteQrcode">
+		</action>
+		<action name="addQrcode" class="OfficeClass" method="addQrcode">
+			<result name="input">/office/functions/setQrcode.jsp</result>
+			<result name="success" type="redirect">/office/queryQrcode.do</result>
+		</action>
+		<action name="getQrcodeConfig" class="OfficeClass" method="getQrcodeConfig">
+			<result name="success">/office/functions/editQrcode.jsp</result>
+		</action>
+
+		<action name="updateQrcodeConfig" class="OfficeClass" method="updateQrcodeConfig">
+			<result name="success" >/office/queryQrcode.do</result>
+		</action>
+		<action name="fanyaLogData" class="OfficeClass" method="fanyaLogData">
+		</action>
+		<action name="queryFanyaCredit" class="AjaxQueryClass" method="queryFanyaCredit">
+		</action>
+
+		<!-- 二维码结束 -->
+
+		<!-- 交连克开始 -->
+		<action name="queryJLKList" class="OfficeClass" method="queryJLKList">
+			<result name="input">/office/functions/listJLKPay.jsp</result>
+		</action>
+		<action name="queryJLKOrder" class="OfficeClass" method="queryJLKOrder"></action>
+		<action name="remedyJLKOrder" class="OfficeClass" method="remedyJLKOrder"></action>
+		<!-- 交连克结束 -->
+		<action name="queryBbinData" class="OfficeClass" method="queryBbinData">
+			<result name="input">/office/functions/bbinData.jsp</result>
+		</action>
+		<action name="copyUsersData" class="OfficeClass" method="copyUsersData"></action>
+
+		<!-- 比特游戏查询余额 -->
+		<action name="queryBitCredit" class="OfficeClass" method="queryBitCredit"></action>
+		
+		<action name="collectionSbaData" class="OfficeClass" method="collectionSbaData"></action>
+		
+		<action name="collection761Data" class="OfficeClass" method="collection761Data"></action>
+	</package>
+
+</struts>

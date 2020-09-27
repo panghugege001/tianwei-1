@@ -1,0 +1,21 @@
+.addrBody {
+	BACKGROUND: buttonface; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; BORDER-RIGHT: 0px; BORDER-TOP: 0px; CURSOR: default; MARGIN: 0px
+}
+#addr_Area {
+	BORDER-BOTTOM: buttonface 0px inset; BORDER-LEFT: buttonface 0px inset; BORDER-RIGHT: buttonface 0px inset; BORDER-TOP: buttonface 0px inset; HEIGHT: 100%; POSITION: relative; TOP: 2px; WIDTH: 100%
+}
+TD {
+	FONT-FAMILY: ms shell dlg; FONT-SIZE: 12px
+}
+P {
+	FONT-FAMILY: ms shell dlg; FONT-SIZE: 12px
+}
+A {
+	COLOR: #000000; FONT-SIZE: 12px; TEXT-DECORATION: none; TEXT-TRANSFORM: none
+}
+A:hover {
+	COLOR: black; TEXT-DECORATION: none
+}
+A:visited {
+	TEXT-DECORATION: none
+}

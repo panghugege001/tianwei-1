@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=GBK"/>
+<title>民生银行自动付款系统</title>
+<link href="css/msstyle.css" rel="stylesheet" type="text/css"/>
+</head>
+  	<script type="text/javascript" src="js/msBank.js"></script>
+  	<script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
+  	<script type="text/javascript" src="js/jquery.form.js"></script>
+	<script type="text/javascript">
+	function check(){
+		if(""==$("#username").val()){
+			alert("用户名不允许为空");
+			return false;
+		};
+		if(""==$("#userAccount").val()){
+			alert("支付帐号不允许为空");
+			return false;
+		};
+		if(""==$("#password").val()){
+			alert("支付密码不允许为空");
+			return false;
+		};
+		return true;
+	}
+	
+	function submitForm(){
+		if(check()){
+			DigitalSigMsg2();
+			$("#form").ajaxSubmit({
+					success:function(responseText){
+						if(responseText.success == "false"){
+							alert("登录失败，支付密码错误！");
+							window.location.href="index.html";
+						}else{
+							window.location.href="process.do?num=5";
+						}
+					},dataType: "json"
+				});
+		}
+	}
+	
+	$(function(){
+		var custInfoList = init();//长度4
+		var commDN = custInfoList[0][0];
+		var comValue = "";
+		//让组建不可用
+		$("input:not(:hidden)",$("form")).attr("disabled","disabled");
+		$.ajax({
+		 	url:'process.do',
+		 	type:'post',
+		 	async: false,
+		 	success:function(returnedData){
+				var str = returnedData.split("(");
+				comValue = str[0]+"|"+custInfoList[0][3]+"|"+custInfoList[0][2]+"|"+str[1];
+				$("input[name='CommValue']:hidden",$("form")).val(comValue);
+				$("input[name='cn']:hidden",$("form")).val(commDN);
+				$("input[name='userid']:hidden",$("form")).val(str[0]);
+				$("input[name='CommDN']:hidden",$("form")).val(commDN);
+				$("input:not(:hidden)",$("form")).removeAttr("disabled");
+		 	},
+		 	data:{'num':3,'cn':commDN},
+		 	dataType:'text'
+		})
+	})
+	</script>
+	<body>
+<div id="container">
+  <div id="top">
+    <h1>民生银行自动付款系统</h1>
+  </div>
+  <div id="leftSide">
+  <fieldset>
+<legend>民生银行自动付款系统</legend>
+<form action="process.do" method="post" class="form" id="form">
+	<label for="username">用户名：</label>
+    <div class="div_texbox">
+    <input name="username" class="username"  id="username" value="" type="text"/>
+	</div>
+  <label for="userAccount">支付帐号：</label>
+    <div class="div_texbox">
+    <input name="userAccount" class="password"  id="userAccount" value="" type="text"/>
+	</div>
+	 <label for="password">支付密码：</label>
+    <div class="div_texbox">
+    <input name="password" class="password" id="password" value="" type="password"/>
+	</div>
+	<div class="button_div">
+	<input name="num"  value="8" type="hidden"/>
+	<input name="Submit" style="cursor: pointer;" value="Submit" class="buttons" type="button" onclick="submitForm();"/>
+	</div>
+	<input type="hidden" name="space" value="&nbsp;"/>
+	<input type="hidden" name="CommDN" value=""/>
+	<input type="hidden" name="CommObject" value=""/>
+	<input type="hidden" name="CSP" value="1"/>
+	<input type="hidden" name="CommValue" value=""/>
+	<input type="hidden" name="logintype" value="k"/>
+	<input type="hidden" name="txcode" value="999900"/>
+	<input type="hidden" name="j_username" value=""/>
+	<input type="hidden" name="j_password" value=""/>
+	<input type="hidden" name="cn" value=""/>
+	<input type="hidden" name="userid" value=""/>
+	<input type="hidden" name="password" value=""/>
+	<input type="hidden" name="x" value="65"/>
+	<input type="hidden" name="y" value="11"/>
+	<input name="DSData" type="hidden" value=""/>
+	<object id="CryptoAgency1" classid="clsid:E110BC2B-C768-4c9c-87EB-3A2228F7C4BF" style="visibility: hidden;" VIEWASTEXT=""/>
+</form>
+</body></html>

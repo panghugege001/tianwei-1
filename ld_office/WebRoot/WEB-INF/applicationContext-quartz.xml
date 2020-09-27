@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+	 	http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.2.xsd
+	 	http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.2.xsd">
+
+	<!--定时处理工行记录-->
+	<bean id="fetchIcbcJobService" class="dfh.icbc.quart.fetch.FetchIcbcJobService">
+		<property name="getdateService" ref="getdateService"></property>
+	</bean>
+
+	<bean id="jobIcbcDetail" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+		<property name="targetObject" ref="fetchIcbcJobService" />
+		<property name="targetMethod" value="processStatusData" />
+		<property name="concurrent" value="false" />
+	</bean>
+
+	<bean id="fetchIcbcTrigger" class="org.springframework.scheduling.quartz.CronTriggerBean">
+		<property name="jobDetail" ref="jobIcbcDetail" />
+		<property name="cronExpression" value="0/6 * * * * ?" />
+	</bean>
+
+	<!--定时处理招行记录-->
+	<bean id="fetchCmbJobService" class="dfh.icbc.quart.fetch.FetchCmbJobService">
+		<property name="getdateService" ref="getdateService"></property>
+		<property name="bankSecDepositService" ref="bankSecDepositService"></property>
+	</bean>
+
+	<bean id="jobCmbDetail" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+		<property name="targetObject" ref="fetchCmbJobService" />
+		<property name="targetMethod" value="dealBankSecDeposit" />
+		<property name="concurrent" value="false" />
+	</bean>
+
+	<bean id="fetchCmbTrigger" class="org.springframework.scheduling.quartz.CronTriggerBean">
+		<property name="jobDetail" ref="jobCmbDetail" />
+		<property name="cronExpression" value="0/8 * * * * ?" />
+	</bean>
+
+	<!--定时处理农行记录-->
+	<bean id="fetchAbcJobService" class="dfh.icbc.quart.fetch.FetchAbcJobService">
+		<property name="getdateService" ref="getdateService"></property>
+	</bean>
+
+	<bean id="jobAbcDetail" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+		<property name="targetObject" ref="fetchAbcJobService" />
+		<property name="targetMethod" value="processStatusData" />
+		<property name="concurrent" value="false" />
+	</bean>
+
+	<bean id="fetchAbcTrigger" class="org.springframework.scheduling.quartz.CronTriggerBean">
+		<property name="jobDetail" ref="jobAbcDetail" />
+		<property name="cronExpression" value="0/180 * * * * ?" />
+	</bean>
+
+	<!--定时处理支付宝记录-->
+	<bean id="fetchAlipayJobService" class="dfh.icbc.quart.fetch.FetchAlipayJobService">
+		<property name="getdateService" ref="getdateService"></property>
+	</bean>
+
+	<bean id="jobAlipayDetail" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+		<property name="targetObject" ref="fetchAlipayJobService" />
+		<property name="targetMethod" value="processStatusData" />
+		<property name="concurrent" value="false" />
+	</bean>
+
+	<bean id="fetchAlipayTrigger" class="org.springframework.scheduling.quartz.CronTriggerBean">
+		<property name="jobDetail" ref="jobAlipayDetail" />
+		<property name="cronExpression" value="0/8 * * * * ?" />
+	</bean>
+
+	<!--每月最后一天的23:59:59清除签到金额-->
+	<bean id="signamountJobService" class="dfh.service.implementations.SignamountJobService">
+		<property name="transferService" ref="transferService"></property>
+	</bean>
+
+	<bean id="jobSignamount" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+		<property name="targetObject" ref="signamountJobService" />
+		<property name="targetMethod" value="execute" />
+		<property name="concurrent" value="false" />
+	</bean>
+
+	<bean id="updateSignamountTrigger" class="org.springframework.scheduling.quartz.CronTriggerBean">
+		<property name="jobDetail" ref="jobSignamount" />
+		<property name="cronExpression" value="59 59 23 L * ?" />
+	</bean>
+
+	<!--定时处理PT记录-->
+	<bean id="fetchPtJobService" class="dfh.icbc.quart.fetch.FetchPtJobService">
+		<property name="getdateService" ref="getdateService"></property>
+	</bean>
+
+	<bean id="jobPtDetail" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+		<property name="targetObject" ref="fetchPtJobService" />
+		<property name="targetMethod" value="processStatusData" />
+		<property name="concurrent" value="false" />
+	</bean>
+
+	<bean id="fetchPtTrigger" class="org.springframework.scheduling.quartz.CronTriggerBean">
+		<property name="jobDetail" ref="jobPtDetail" />
+		<property name="cronExpression" value="0 0/5 * * * ?" />
+	</bean>
+
+	<!--定时处理新PT记录-->
+	<bean id="fetchNewPtJobService" class="dfh.icbc.quart.fetch.FetchNewPtJobService">
+		<property name="getdateService" ref="getdateService"></property>
+	</bean>
+
+	<bean id="jobNewPtDetail" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+		<property name="targetObject" ref="fetchNewPtJobService" />
+		<property name="targetMethod" value="processStatusData" />
+		<property name="concurrent" value="false" />
+	</bean>
+
+	<bean id="fetchNewPtTrigger" class="org.springframework.scheduling.quartz.CronTriggerBean">
+		<property name="jobDetail" ref="jobNewPtDetail" />
+		<property name="cronExpression" value="0/2 * * * * ?" />
+	</bean>
+
+	<!--定时分配玩家给客服-->
+	<bean id="fetchUsersJobService" class="dfh.icbc.quart.fetch.FetchUsersJobService">
+		<property name="customerService" ref="customerService"></property>
+	</bean>
+
+	<bean id="jobUsersDetail" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+		<property name="targetObject" ref="fetchUsersJobService" />
+		<property name="targetMethod" value="execute" />
+		<property name="concurrent" value="false" />
+	</bean>
+
+	<bean id="fetchUsersTrigger" class="org.springframework.scheduling.quartz.CronTriggerBean">
+		<property name="jobDetail" ref="jobUsersDetail" />
+		<property name="cronExpression" value="0 0 1 ? * MON" />
+	</bean>
+
+	<!--定时处理AG老虎机记录-->
+	<bean id="fetchAgSlotJobService" class="dfh.icbc.quart.fetch.FetchAGSlotJobService">
+		<property name="getdateService" ref="getdateService"></property>
+	</bean>
+
+	<bean id="jobAgSlotDetail" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+		<property name="targetObject" ref="fetchAgSlotJobService" />
+		<property name="targetMethod" value="processStatusData" />
+		<property name="concurrent" value="false" />
+	</bean>
+
+	<bean id="fetchAgSlotTrigger" class="org.springframework.scheduling.quartz.CronTriggerBean">
+		<property name="jobDetail" ref="jobAgSlotDetail" />
+		<property name="cronExpression" value="0 30 * * * ?" />
+	</bean>
+
+	<!--定时处理新PT记录(最新)-->
+	<bean id="fetchNewPtXXJobService" class="dfh.icbc.quart.fetch.FetchNewPtJobService">
+		<property name="getdateService" ref="getdateService"></property>
+	</bean>
+
+	<bean id="jobNewPtXXDetail" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+		<property name="targetObject" ref="fetchNewPtXXJobService" />
+		<property name="targetMethod" value="dealNewPtdata" />
+		<property name="concurrent" value="false" />
+	</bean>
+
+	<bean id="fetchNewPtXXTrigger" class="org.springframework.scheduling.quartz.CronTriggerBean">
+		<property name="jobDetail" ref="jobNewPtXXDetail" />
+		<property name="cronExpression" value="* 30 * * * ?" />
+	</bean>
+
+	<!--定时处理六合彩数据-->
+	<bean id="fetchSixLotteryJobService" class="dfh.icbc.quart.fetch.FetchSixLotteryJobService">
+		<property name="getdateService" ref="getdateService"></property>
+	</bean>
+
+	<bean id="jobSixLotteryDetail" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+		<property name="targetObject" ref="fetchSixLotteryJobService" />
+		<property name="targetMethod" value="execute" />
+		<property name="concurrent" value="false" />
+	</bean>
+
+	<bean id="fetchSixLotteryTrigger" class="org.springframework.scheduling.quartz.CronTriggerBean">
+		<property name="jobDetail" ref="jobSixLotteryDetail" />
+		<property name="cronExpression" value="0/60 * * * * ?" />
+	</bean>
+
+	<!--定时处理自助优惠数据-->
+	<bean id="fetchYouHuiJob" class="dfh.icbc.quart.fetch.FetchYouHuiJob">
+		<property name="proposalService" ref="proposalService"></property>
+	</bean>
+
+	<bean id="jobYouHuiDetail" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+		<property name="targetObject" ref="fetchYouHuiJob" />
+		<property name="targetMethod" value="execute" />
+		<property name="concurrent" value="false" />
+	</bean>
+
+	<bean id="fetchYouHuiTrigger" class="org.springframework.scheduling.quartz.CronTriggerBean">
+		<property name="jobDetail" ref="jobYouHuiDetail" />
+		<property name="cronExpression" value="0/60 * * * * ?" />
+	</bean>
+
+	<!--处理额度验证存款-->
+	<bean id="fetchDepositJob" class="dfh.icbc.quart.fetch.FetchDepositJobService">
+		<property name="getdateService" ref="getdateService"></property>
+	</bean>
+
+	<bean id="jobDepositDetail" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+		<property name="targetObject" ref="fetchDepositJob" />
+		<property name="targetMethod" value="execute" />
+		<property name="concurrent" value="false" />
+	</bean>
+
+	<bean id="fetchDepositTrigger" class="org.springframework.scheduling.quartz.CronTriggerBean">
+		<property name="jobDetail" ref="jobDepositDetail" />
+		<property name="cronExpression" value="0/10 * * * * ?" />
+	</bean>
+
+	<!--处理微信额度验证存款-->
+	<bean id="fetchDepositJobTwo" class="dfh.icbc.quart.fetch.FetchDepositJobServiceTwo">
+		<property name="getdateService" ref="getdateService"></property>
+	</bean>
+
+	<bean id="jobDepositDetailTwo" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+		<property name="targetObject" ref="fetchDepositJobTwo" />
+		<property name="targetMethod" value="processStatusData" />
+		<property name="concurrent" value="false" />
+	</bean>
+
+	<bean id="fetchDepositTriggerTwo" class="org.springframework.scheduling.quartz.CronTriggerBean">
+		<property name="jobDetail" ref="jobDepositDetailTwo" />
+		<property name="cronExpression" value="0/8 * * * * ?" />
+	</bean>
+
+	<!--处理过期存款订单-->
+	<bean id="discardDepositOrderDetail" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+		<property name="targetObject" ref="fetchDepositJob" />
+		<property name="targetMethod" value="discardOrder" />
+		<property name="concurrent" value="false" />
+	</bean>
+
+	<bean id="discardDepositOrderTrigger" class="org.springframework.scheduling.quartz.CronTriggerBean">
+		<property name="jobDetail" ref="discardDepositOrderDetail" />
+		<property name="cronExpression" value="0 0 */1 * * ?" />
+	</bean>
+
+	<!--定时处理QT数据-->
+	<bean id="fetchQtJobService" class="dfh.icbc.quart.fetch.FetchQtJobService">
+		<property name="getdateService" ref="getdateService"></property>
+		<property name="fromApi" value="yes"></property>
+	</bean>
+
+	<bean id="jobQtDetail" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+		<property name="targetObject" ref="fetchQtJobService" />
+		<property name="targetMethod" value="execute" />
+		<property name="concurrent" value="false" />
+	</bean>
+
+	<bean id="fetchQtTrigger" class="org.springframework.scheduling.quartz.CronTriggerBean">
+		<property name="jobDetail" ref="jobQtDetail" />
+		<property name="cronExpression" value="0 0/2 * * * ?" />
+	</bean>
+
+	<!--处理老虎机周比赛数据(使用部分)-->
+	<bean id="smWeeklyJob" class="dfh.icbc.quart.fetch.SlotsMatchWeeklyJob">
+		<property name="proposalDao" ref="proposalDao"></property>
+		<property name="transferDao" ref="transferDao"></property>
+		<property name="smWeeklyDao" ref="smWeeklyDao"></property>
+	</bean>
+
+	<!--(保留部分)-->
+	<!--
+	<bean id="smWeeklyJobDetail" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+		<property name="targetObject" ref="smWeeklyJob" />
+		<property name="targetMethod" value="generateWeeklyData" />
+		<property name="concurrent" value="false" />
+	</bean>
+
+	<bean id="smWeeklyJobTrigger" class="org.springframework.scheduling.quartz.CronTriggerBean">
+		<property name="jobDetail" ref="smWeeklyJobDetail" />
+		<property name="cronExpression" value="0 5 0/2 * * ?" />
+		<property name="cronExpression" value="0 0 0/2 * * ?" />
+	</bean> 
+	-->
+
+	<!--邮件发送-->
+	<bean id="sendEmailService" class="dfh.action.office.SendEmailAction">
+		<property name="proposalService" ref="proposalService" />
+	</bean>
+
+	<bean id="sendEmailDetail" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+		<property name="targetObject" ref="sendEmailService" />
+		<property name="targetMethod" value="youjianBySelf" />
+		<property name="concurrent" value="false" />
+	</bean>
+
+	<bean id="sendEmailTrigger" class="org.springframework.scheduling.quartz.CronTriggerBean">
+		<property name="jobDetail" ref="sendEmailDetail" />
+		<property name="cronExpression" value="0/120 * * * * ?" />
+	</bean>
+
+	<!--额度问题分析处理-->
+	<bean id="fetchCreditService" class="dfh.icbc.quart.fetch.FetchCreditService">
+		<property name="proposalService" ref="proposalService"></property>
+		<property name="slaveService" ref="slaveService"></property>
+	</bean>
+
+	<bean id="jobCreditDetail" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+		<property name="targetObject" ref="fetchCreditService" />
+		<property name="targetMethod" value="analyzeUserCreditLog" />
+		<property name="concurrent" value="false" />
+	</bean>
+
+	<bean id="fetchCreditTrigger" class="org.springframework.scheduling.quartz.CronTriggerBean">
+		<property name="jobDetail" ref="jobCreditDetail" />
+		<property name="cronExpression" value="0/60 * * * * ?" />
+	</bean>
+
+	<!--MG数据数据存入KPI系统-->
+	<bean id="mgdata2KPIService" class="dfh.icbc.quart.fetch.MGDataToKPIService">
+		<property name="mgsService" ref="mgsService"></property>
+	</bean>
+
+	<bean id="jobmgdata2KPIDetail" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+		<property name="targetObject" ref="mgdata2KPIService" />
+		<property name="targetMethod" value="submitMGData2KPI" />
+		<property name="concurrent" value="false" />
+	</bean>
+
+	<bean id="mgdata2KPITrigger" class="org.springframework.scheduling.quartz.CronTriggerBean">
+		<property name="jobDetail" ref="jobmgdata2KPIDetail" />
+		<property name="cronExpression" value="0 5 3 * * ?" />
+	</bean>
+
+	<bean id="fetchBusinessJobService" class="dfh.icbc.quart.fetch.FetchBusinessJobService">
+		<property name="getdateService" ref="getdateService"></property>
+	</bean>
+
+	<bean id="businessJobDetail" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+		<property name="targetObject" ref="fetchBusinessJobService" />
+		<property name="targetMethod" value="execute" />
+		<property name="concurrent" value="false" />
+	</bean>
+
+	<bean id="fetchBusinessJobTrigger" class="org.springframework.scheduling.quartz.CronTriggerBean">
+		<property name="jobDetail" ref="businessJobDetail" />
+		<property name="cronExpression" value="0 00,20,40 * * * ?" />
+	</bean>
+	
+	
+	<!--更新远程银行账户额度 开始-->
+	<bean id="updateBankBalance" class="dfh.icbc.quart.fetch.UpdateBankBalanceService">
+		<property name="bankinfoService" ref="bankinfoService"></property>
+	</bean>
+
+	<bean id="jobBankBalance" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+		<property name="targetObject" ref="updateBankBalance" />
+		<property name="targetMethod" value="execute" />
+		<property name="concurrent" value="false" />
+	</bean>
+
+	<bean id="updateBankBalanceTrigger" class="org.springframework.scheduling.quartz.CronTriggerBean">
+		<property name="jobDetail" ref="jobBankBalance" />
+		<property name="cronExpression" value="0/30 * * * * ?" />
+	</bean>
+	<!--更新远程银行账户额度 结束-->
+	
+	
+		<!--换线业务 开始-->
+	 <bean id="jobChangeLineUser" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+		<property name="targetObject" ref="changeLineUser" />
+		<property name="targetMethod" value="execute" />
+		<property name="concurrent" value="false" />
+	 </bean>
+	 <bean id="changeLineUserTrigger" class="org.springframework.scheduling.quartz.CronTriggerBean">
+		<property name="jobDetail" ref="jobChangeLineUser" />
+		<property name="cronExpression" value="0 52 15 * * ?" />
+	</bean>
+	<!--换线业务 结束-->
+
+	<bean class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+		<property name="triggers">
+			<list>
+				<!--部署时开启icbc fetch-->
+				<!--
+			 	<ref bean="changeLineUserTrigger" />
+				<ref bean="fetchIcbcTrigger" />
+				<ref bean="sendEmailTrigger" />
+				<ref bean="fetchCmbTrigger" />
+				<ref bean="fetchPtTrigger" />
+				<ref bean="fetchUsersTrigger" />
+				<ref bean="fetchYouHuiTrigger" />
+				<ref bean="fetchAbcTrigger" />
+				<ref bean="discardDepositOrderTrigger" />
+				<ref bean="fetchAlipayTrigger" />
+				<ref bean="fetchQtTrigger" />
+				<ref bean="fetchCreditTrigger" />
+				<ref bean="fetchDepositTrigger" />
+				<ref bean="mgdata2KPITrigger" />
+				<ref bean="fetchDepositTriggerTwo" />
+				<ref bean="fetchNewPtTrigger" />
+				<ref bean="fetchBusinessJobTrigger" />
+				<ref bean="fetchAgSlotTrigger" />
+				<ref bean="fetchSixLotteryTrigger" />
+				<ref bean="updateSignamountTrigger" />
+				<ref bean="updateBankBalanceTrigger" />
+				-->
+			</list>
+		</property>
+	</bean>
+</beans>

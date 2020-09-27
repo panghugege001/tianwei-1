@@ -1,0 +1,29 @@
+
+.announcement_titleDiv{
+	position:absolute;
+	top:2px;
+	left:5px;
+	font-size:13px;
+}
+
+.announcement_addDiv{
+	position:absolute;
+	top:40px;
+	left:5px;
+	font-size:13px;
+}
+
+.announcement_showMessageDiv{
+	position:absolute;
+	top:20px;
+	left:5px;
+}
+
+.announcement_errorDiv{
+	position:absolute;
+	top:180px;
+	width:100%;
+}
+
+body {background:#b6d9e4;}
+

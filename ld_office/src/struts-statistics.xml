@@ -1,0 +1,26 @@
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN" "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	
+	<package name="statistics" namespace="/statistics" extends="struts-default">
+		<global-results>
+			<result name="logout">/office/logout.jsp</result>
+			<result name="index">/office/index.jsp</result>
+			<result name="error">/office/error.jsp</result>
+		</global-results>
+		
+		<action name="agentReferralsStatistic" class="agentReferralsStatisticActionClass" method="search">
+			<result name="input">/office/functions/AgentReferralsStatistic.jsp</result>
+			<result name="success">/office/functions/AgentReferralsStatistic.jsp</result>
+		</action>
+		
+		<action name="searchFundDetail" class="fundStatisticsClass" method="searchDetail">
+			<result>/office/functions/fundStatistics.jsp</result>
+		</action>
+		
+		<action name="search" class="howToKnowStatisticsClass" method="search">
+			<result>/office/functions/howToKnowStatistics.jsp</result>
+		</action>
+		
+		
+	</package>
+</struts>

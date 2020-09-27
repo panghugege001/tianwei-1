@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE validators PUBLIC "-//OpenSymphony Group//XWork Validator 1.0.2//EN"
+ "http://struts.apache.org/dtds/xwork-validator-1.0.2.dtd">
+
+<validators>
+	<field name="loginname">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message>请填写开户帐号</message>
+		</field-validator>
+		<field-validator type="stringlength" short-circuit="true">
+			<param name="minLength">4</param>
+			<param name="maxLength">9</param>
+			<message>包括字头,帐号长度应为5-10位</message>
+		</field-validator>
+		<field-validator type="regex" short-circuit="true">
+			<param name="expression">^([a-z]|[0-9])*$</param>
+			<message>帐号由小写字母和数字组成</message>
+		</field-validator>
+	</field>
+	<field name="aliasName">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message>请填写真实姓名</message>
+		</field-validator>
+	</field>
+	<field name="amount">
+		<field-validator type="required">
+			<message>请填写开户金额</message>
+		</field-validator>
+	</field>
+	<field name="password">
+		<field-validator type="stringlength">
+			<param name="minLength">6</param>
+			<param name="maxLength">20</param>
+			<message>密码6-20位</message>
+		</field-validator>
+	</field>
+	<field name="confirm_password">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message>重复密码必填</message>
+		</field-validator>
+		<field-validator type="fieldexpression">
+			<param name="expression">
+				password.equals(confirm_password)
+			</param>
+			<message>两次密码不一致</message>
+		</field-validator>
+	</field>
+	<field name="phone">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message>电话号码必填</message>
+		</field-validator>
+		<field-validator type="regex" short-circuit="true">
+			<param name="expression">^[0-9]{7,20}$</param>
+			<message>非法手机/电话格式</message>
+		</field-validator>
+	</field>
+	<field name="email">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message>邮箱必填</message>
+		</field-validator>
+		<field-validator type="email" short-circuit="true">
+			<message>非法邮箱格式</message>
+		</field-validator>
+	</field>
+</validators>

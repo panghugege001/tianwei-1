@@ -1,0 +1,71 @@
+<html>
+<head>
+    <title>天威娱乐后台</title>
+    <meta charset="UTF-8">
+
+    <style type="text/css">
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-color: #23282e;
+        }
+    </style>
+
+    <script type="text/javascript">
+        var isClick=false;
+        var node ;
+        function gtDepositAmountAlert(){
+            var adminUser="${sessionScope.operator.authority}";
+
+            if(adminUser == null || adminUser==""){
+                return;
+            }
+            if(adminUser=="finance" || adminUser=="finance_manager"){
+                $.ajax({
+                    url:"/bankinfo/gtDepositAmount.do?time="+new Date(),
+                    success:function(response){
+
+                        if(""!=response){
+                            $j.messager.lays(400, 200);
+
+                            if(0==$("#kaiguanhome").val()){
+                                $j.messager.show(0,response
+                                        +"<input type='button' value='stop music' onclick='stopMusic()'>",15000);
+                            }else if(1==$("#kaiguanhome").val()){
+                                $j.messager.show(0,response
+                                        +"<input type='button' value='start music' onclick='startMusic()'>",15000);
+                            }
+
+                            node=document.getElementById("tixinghome");
+                            var kaiguan=$("#kaiguanhome").val();
+                            if(node!=null && kaiguan==0)
+                            {
+                                node.Play();
+                            }
+                        }
+                    }
+                });
+            }
+        }
+        function stopMusic(){
+            var kaiguan = $("#kaiguanhome").val();
+            if(node && kaiguan==0){
+                $("#kaiguanhome").val(1);
+                node.stop();
+            }
+        }
+        function startMusic(){
+            var kaiguan = $("#kaiguanhome").val();
+            if(node && kaiguan==1){
+                $("#kaiguanhome").val(0);
+            }
+        }
+        window.setInterval("gtDepositAmountAlert()",30000);
+    </script>
+
+</head>
+    <frameset cols="280,*">
+        <frame frameborder="0" name="leftFrame" src="/html/home/left.html">
+        <frame frameborder="0" name="mainFrame">
+    </frameset>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN" "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	
+	<package name="employee" namespace="/employee" extends="struts-default">
+		<global-results>
+			<result name="logout">/office/logout.jsp</result>
+		</global-results>
+		
+		<action name="byid" class="employeeClass" method="queryEmployeeById">
+			<result name="forwardAll" type="chain">all</result>
+			<result>/office/functions/employee_manager.jsp</result>
+		</action>
+		
+		<action name="all" class="employeeClass" method="findAll">
+			<result>/office/functions/employee_manager.jsp</result>
+		</action>
+		
+		<action name="isEnable" class="employeeClass" method="changeEmployeeStatus">
+			<result type="chain">byid</result>
+		</action>
+	</package>
+	<!-- 处理所有单独的链接其他平台功能 start-->
+	<package name="project" namespace="/project" extends="struts-default">
+		<!-- 处理.net传递过来的QQ数据 -->
+		<action name="foraboutqq" class="allProjectAction" method="forAboutQq">
+		</action>
+	</package>
+	<!-- 处理所有单独的链接其他平台功能 end-->
+</struts>

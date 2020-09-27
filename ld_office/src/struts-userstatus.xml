@@ -1,0 +1,32 @@
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN" "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<constant name="struts.action.extension" value="do" />
+	<constant name="struts.objectFactory" value="spring" />
+	<constant name="struts.enable.DynamicMethodInvocation" value="true" />
+	<constant name="struts.ognl.allowStaticMethodAccess" value="true" />
+	
+	<package name="userstatus" namespace="/userstatus" extends="struts-default">
+		
+		<global-results>
+			<result name="logout">/office/logout.jsp</result>
+			<result name="index">/office/index.jsp</result>
+			<result name="error">/office/error.jsp</result>
+		</global-results>
+		
+			<!-- 用户存取款邮件发送功能开通和关闭,查询符合条件的 -->
+		<action name="changeUserMailFlag" class="userstatusClass"
+			method="changeUserMailFlag">
+			<result>/office/functions/modifyCustomerMailFlag.jsp
+			</result>
+		</action>
+			<!-- 开关邮件通知 -->
+		<action name="modifyUserMailFlag" class="userstatusClass" method="modifyUserMailFlag">
+			<result type="chain">changeUserMailFlag</result>	
+		</action>
+		
+		<!-- 关闭投注要求限制 -->
+		<action name="closeTouzhuFlag" class="userstatusClass" method="closeTouzhuFlag">
+			<result type="chain">changeUserMailFlag</result>	
+		</action>
+	</package>
+</struts>

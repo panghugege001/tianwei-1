@@ -1,0 +1,33 @@
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN" "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<constant name="struts.action.extension" value="do" />
+	<constant name="struts.objectFactory" value="spring" />
+	<constant name="struts.enable.DynamicMethodInvocation" value="true" />
+	<constant name="struts.ognl.allowStaticMethodAccess" value="true" />
+	<constant name="struts.multipart.saveDir" value="/tmp"></constant>
+	<constant name="struts.custom.i18n.resources" value="global" />
+	
+
+	<package name="pub" namespace="/jsp" extends="struts-default">
+		<action name="validateCodeForIndex" class="dfh.action.pub.ValidateImageAction">
+			<param name="wordLength">4</param>
+			<param name="width">60</param>
+			<param name="height">20</param>
+			<result type="stream"></result>
+		</action>
+	</package>
+	
+	<include file="struts-office.xml"></include>
+	<include file="struts-userstatus.xml"></include>
+	<include file="struts-bankinfo.xml"></include>
+	<include file="struts-announcement.xml"></include>
+	<include file="struts-employee.xml"></include>
+	<include file="struts-xima.xml"></include>
+	<include file="struts-batchxima.xml"></include>
+	<include file="struts-statistics.xml"></include>
+	<include file="struts-telvisit.xml"></include>
+	<include file="struts-intransfer.xml"></include>
+	<include file="struts-mgs.xml"></include>
+	<include file="struts-activity-calendar.xml"></include>
+	<include file="struts-app.xml"></include>
+</struts>

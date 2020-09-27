@@ -1,0 +1,212 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=GB2312">
+<meta content="text/html; charset=gb2312" http-equiv="Content-Type">
+<title>本行转他行</title><meta http-equiv="Content-Type" content="text/html; charset=gb2312"><link rel="stylesheet" href="/Normal.css"><script src="/pubFunP.js"></script>
+<link type="text/css" rel="stylesheet" href="/images/styleWeb0/css/ceb.css">
+<script src="/js/menu.js" language="JavaScript"></script>
+<script src="/js/ceb.js" language="JavaScript"></script>
+<script src="/js/function.js" language="JavaScript"></script>
+<script src="/pubFunP.js"></script>
+<script src="/js/setDate.js" language="JavaScript"></script>
+<script language="JavaScript" src="/js/ca1.js"></script>
+<script language="JavaScript">
+function checkSign() {
+	if( DigitalSigMsg() == false) {
+		//alert( "签名失败");
+		return false;
+	} else {
+//		alert( "签名完毕");
+	}
+	return true;
+}
+
+</script>
+<!-- JavaGuy@sohu.com -->
+<script>
+function loads(){
+funcitonName="本行转他行";	//本交易名称
+flashCode = "";//交易的第一笔资交易号
+sTip = "";
+sOtherFunction = "";
+writeFunctionName();//输出本交易名称
+writeTip();//输出交易提示
+writeFunction();//输出相关交易
+setListTable(formTable);//设置表格样式
+
+formatMoneyNum(document.eservice.dsp_numAmt,12,2);
+formatMoneyChn(document.eservice.dsp_numAmt,'dsp_chnAmt');
+}
+</script>
+<script language="javascript">
+var counter;
+function init(){
+	counter=0;
+	return true;
+}
+function check(){
+	if (isNull (document.eservice.payPwd, "请输入交易密码" ) ) return false;
+	if ( document.eservice.payPwd.value.length < 4) {
+		alert("交易密码长度必须大于4！")
+		return false;
+	}
+	if ( counter == 0) 
+		counter = counter +1;
+	else {
+		alert ("正在处理中，请稍候。如系统长时间无响应，请您查询帐户余额和明细后再操作！");
+		return false;
+	}
+	return checkSign(); 
+}
+</script>
+</head>
+<script> function KeyDown(){ if((window.event.altKey)&&((window.event.keyCode==37)||(window.event.keyCode==39))) event.returnValue=false; if((event.keyCode==116)||(window.event.keyCode==122)) {event.keyCode=0;event.returnValue=false;}  if(((event.shiftKey)&&(event.keyCode==121))||((event.ctrlKey)&&(event.keyCode==78))) { event.returnValue=false;} }document.onkeydown=KeyDown; function click(e) {if (document.all) {if (event.button==2||event.button==3) {oncontextmenu='return false';}}}document.onmousedown=click;document.oncontextmenu = new Function("return false;");</script><body style="display:none" onload="loads();document.body.style.display='';return init();">
+				<form action="MainService?id=cmbc&ShowStyleData=K0&channelID=&languageType=" method="post" name="eservice" onSubmit="return check();">
+					<input type="hidden" name="txcode" value="221302"/>
+					<input type="hidden" name="txSerNo" value="201209281327701230100252"/>
+					<!--JavaGuy@sohu.com-->
+					<input type="hidden" name="CommDN" value="CN=9556801023546579,OU=Customers,OU=YUZHI,O=CFCA Operation CA2,C=CN"/>
+					<input type="hidden" name="CommObject" value=""/>
+					<input type="hidden" name="CommValue" value="6226220381489250^0^0^中国银行^1.00^人民币^&nbsp;^网银互联"/>
+					<!--JavaGuy@sohu.com-->
+					<table width="100%" border="0" cellspacing="0" cellpadding="0" id="mainTable">
+						<tr>
+							<td>
+								<table width="100%" height="21" border="0" cellpadding="0" cellspacing="0">
+									<tr class="mainBg">
+										<td width="" valign="bottom" id="menuName" nowrap=""/>
+										<td width="371" align="right" valign="bottom"/>
+										<td align="right" valign="bottom" nowrap="" id="otherFunctions"/>
+										<td width="26" align="center" valign="middle">
+											&#160;
+										</td>
+									</tr>
+								</table>
+								<table width="100%" height="17" border="0" cellpadding="0" cellspacing="0">
+									<tr>
+										<td valign="bottom" background="/images/styleWeb0/styleImages/mainbg.jpg">
+											<table width="100" border="0" cellpadding="0" cellspacing="0">
+												<tr valign="bottom">
+													<td width="45" nowrap="">
+														&#160;
+													</td>
+													<td width="0" class="help" nowrap="" id="help">交易提示</td>
+													<td width="5" nowrap="">
+														&#160;
+													</td>
+													<td width="0" nowrap="">
+														<img src="/images/ques.gif" width="15" height="16"/>
+													</td>
+													<td width="10" nowrap="">
+														&#160;
+													</td>
+													<td width="0" class="demo" nowrap="" onclick="opennewwindow()">同步演示</td>
+													<td width="5" nowrap="">
+														&#160;
+													</td>
+													<td width="0" nowrap="">
+														<img src="/images/edu.gif" width="16" height="16"/>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+								<!-- InstanceBeginEditable name="main" -->
+								<table width="100%" border="0" id="formTable">
+									<tr>
+										<th width="140" nowrap="">转出帐号</th>
+										<td width="100%">
+											6226220381489250
+								&#160;
+								&nbsp;
+										</td>
+									</tr>
+									<tr>
+										<th nowrap="">转入帐号</th>
+										<td>
+											0
+										</td>
+									</tr>
+									<tr>
+										<th nowrap="">户名</th>
+										<td>
+											0
+										</td>
+									</tr>
+									<tr>
+										<th nowrap="">转入帐户开户行名称</th>
+										<td>
+											中国银行
+										</td>
+									</tr>
+									<tr id="custType" style="display:none">
+										<th nowrap="">收款帐户类型</th>
+										<td id="custTypeName">
+										</td>
+									</tr>
+									<tr>
+										<th nowrap="">币种</th>
+										<td>
+											人民币
+											&nbsp;
+										</td>
+									</tr>
+									<tr>
+										<th nowrap="">金额</th>
+										<td>
+											1.00
+										</td>
+									</tr>
+									<tr>
+										<th>金额大写</th>
+										<td>
+											<div style="height:1px;lineHeight:1px;" id="dsp_chnAmt"></div><input type="hidden" name="dsp_numAmt" value="1.00"></input>
+										</td>
+									</tr>								
+									<tr id="fee" style="display:none">
+										<th nowrap="">手续费</th>
+										<td>
+											0.00
+										</td>
+									</tr>
+									
+											<script language="javascript">
+												document.getElementById("fee").style.display = "";	
+											</script>
+										
+									<tr>
+										<th>汇路</th>
+										<td>
+											网银互联
+										</td>
+									</tr>
+									<tr>
+										<th nowrap="">用途</th>
+										<td>
+											网银转帐
+										</td>
+									</tr>
+									<tr>
+										<th nowrap="">交易密码</th>
+										<td>
+											<input name="payPwd" type="password" size="15" maxlength="6" class="text"/>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="2" align="right">
+											<input name="modify" type="submit" class="button" value=" 确 认 "/>&#160;<input name="Submit22" type="button" class="button" value=" 返 回 "  onclick="goBack()"/>
+
+										</td>
+									</tr>
+								</table>
+								<!-- InstanceEndEditable -->
+							</td>
+						</tr>
+					</table>
+					<!-- JavaGuy@sohu.com -->
+					<script>InitCertKitAx();</script>
+					<!-- JavaGuy@sohu.com -->
+				<input type=hidden name=space value=&nbsp;><input type=hidden name=ran value=EF1091E98986D5EA851320BA29E3CD8385EFEA856EC7E6E3></form> 
+			</body>
+</html>

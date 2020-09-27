@@ -1,0 +1,55 @@
+<%@page pageEncoding="UTF-8" contentType="text/html; charset=UTF-8" %>
+<%@include file="/office/include.jsp" %>
+
+<script type="text/javascript" src="/js/prototype_1.6.js"></script>
+
+<script type="text/javascript">
+function supplement(){
+    document.getElementById('supplementSubmit').disabled=true;
+	var transfeId = document.mainform.transfeId.value;
+	var notes = document.mainform.notes.value;
+	var amount = document.mainform.amount.value;
+	if(notes==""){
+		alert("用户名不能为空");
+		return false;
+	}
+	if(transfeId==""||transfeId==null||amount==''){
+		alert("系统出错，请联系管理员");
+		return false;
+	}
+	var action = "/office/supplementPayOrder.do";
+		var xmlhttp = new Ajax.Request(    
+				action,
+		        {    
+		            method: 'post',
+		            parameters:"id="+transfeId+"&loginname="+notes+"&amount="+amount+"&r="+Math.random(),
+		            onComplete: responseMethod  
+		        }
+	    	);
+}
+
+function responseMethod(data){
+
+	alert(data.responseText);
+	var _parentWin = window.opener;
+	 _parentWin.mainform.submit();
+//    window.opener.location.href = window.opener.location.href;
+//   	if(window.opener.progressWindow)
+//    {
+//		window.opener.progressWindow.close();
+//	} 
+	window.close();
+}
+</script>
+
+<div id="excel_menu">
+	<h2>额度验证存款补单</h2>
+	<s:form name="mainform" id="mainform" theme="simple">
+		<input name="transfeId" value=<%=request.getParameter("transfeId")%> type="hidden"/>
+		<table align="left">
+			<tr><td>用户名</td><td><input name="notes" size=10/></td></tr>
+			<tr><td>金额</td><td><input type="text" name="amount" value=<%=request.getParameter("amount")%> readonly="readonly"/></td></tr>
+			<tr><td align="center" colspan="2"><input id="supplementSubmit" type="button" value="补单" onclick="supplement()"/></td><td></td></tr>
+		</table>
+	</s:form>
+</div>

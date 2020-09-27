@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE validators PUBLIC "-//OpenSymphony Group//XWork Validator 1.0.2//EN"
+ "http://struts.apache.org/dtds/xwork-validator-1.0.2.dtd">
+
+<validators>
+	<field name="loginname">
+		<field-validator type="requiredstring" short-circuit="true">
+			<param name="trim">true</param>
+			<message>请输入帐号</message>
+		</field-validator>
+	</field>
+	<field name="email">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message>请输入Email</message>
+		</field-validator>
+		<field-validator type="email">
+			<message>输入的Email格式不正确</message>
+		</field-validator>
+	</field>
+	<field name="phone">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message>请输入电话号码</message>
+		</field-validator>
+	</field>
+	
+		<field name="remark">
+		<field-validator type="stringlength">
+			 <param name="maxLength">999</param>
+			<message>备注最长长度在1000个字符</message>
+		</field-validator>
+	</field>
+</validators>

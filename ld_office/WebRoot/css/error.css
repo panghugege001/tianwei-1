@@ -1,0 +1,19 @@
+.wwctrl{
+color:red;
+width: 95%;
+float: left;
+font-size:12px;
+text-align:left;
+}
+.wwgrp{
+color:red;
+width: 95%;
+float: left;
+font-size:12px;
+text-align:left;
+}
+.errorMessage{
+color:red;
+font-size:12px;
+text-align:left;
+}

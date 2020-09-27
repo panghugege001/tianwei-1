@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="http://apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+    <script src="/js/bootstrap-confirmation.min.js"></script>
+</head>
+<style type="text/css">
+    th, td {
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    th {
+        color: white;
+        background-color: #4f5b69;
+    }
+
+    .color_grey {
+        background-color: lightblue;
+    }
+
+    body {
+        font-family: 微软雅黑;
+    }
+
+</style>
+<body>
+
+<div class="container-fluid">
+    <div class="panel panel-primary" style="background-color: #4f5b69">
+        <div class="panel-body">
+            <form class="form-inline">
+                <div class="form-group">
+                    <input class="form-control" id="searchForm_username" placeholder="用户名">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" id="searchForm_email" placeholder="邮箱">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" id="searchForm_employeeNo" placeholder="员工编号">
+                </div>
+                <div class="form-group">
+                    <select id="searchForm_enabled" class="form-control">
+                        <option value="">所有状态</option>
+                        <option value="0">正常</option>
+                        <option value="1">禁用</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <select id="searchForm_validType" class="form-control">
+                        <option value="">所有验证类型</option>
+                        <option value="1">短信验证</option>
+                        <option value="2">打卡验证</option>
+                        <option value="3">无需验证</option>
+                    </select>
+                </div>
+                <a name="btn_searchOperator" href="#" class="btn btn-primary"><span class="glyphicon glyphicon-search"></span></a>
+                <a name="btn_searchOperator" href="#" class="btn btn-primary"><span class="glyphicon glyphicon-refresh"></span></a>
+                <a id="addOperator" href="#" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span></a>
+            </form>
+        </div>
+    </div>
+
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+            <th>用户名</th>
+            <th>邮箱</th>
+            <th>状态</th>
+            <th>登陆验证类型</th>
+            <th>员工编号</th>
+            <th>登陆次数</th>
+            <th>上次登陆时间</th>
+            <th>上次登陆IP</th>
+            <th>创建时间</th>
+            <th colspan="3">操作</th>
+        </tr>
+        </thead>
+        <tbody id="tbody_operator">
+
+        </tbody>
+    </table>
+</div>
+
+<div class="modal fade" id="updateOperatorModal" operator="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header" style="background-color: #4f5b69;color: white">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">修改用户</h4>
+            </div>
+            <div class="modal-body">
+                <form id="updateOperatorForm" class="form-horizontal" operator="form">
+                    <div class="form-group">
+                        <label for="updateOperatorForm_username" class="col-sm-3 control-label">用户名</label>
+                        <div class="col-sm-9">
+                            <input id="updateOperatorForm_username" type="text" class="form-control" placeholder="用户名" name="username" disabled required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-3 col-sm-9">
+                            <div id="updateOperatorForm_username_alert" class="alert alert-danger" hidden>
+                                username is invalid
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="updateOperatorForm_email" class="col-sm-3 control-label">邮箱</label>
+                        <div class="col-sm-9">
+                            <input id="updateOperatorForm_email" type="text" class="form-control" placeholder="邮箱" name="email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-3 col-sm-9">
+                            <div id="updateOperatorForm_email_alert" class="alert alert-danger" hidden>
+                                email is invalid
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="updateOperatorForm_enabled" class="col-sm-3 control-label">状态</label>
+                        <div class="col-sm-9">
+                            <select id="updateOperatorForm_enabled" class="form-control">
+                                <option value="0">正常</option>
+                                <option value="1">禁用</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-3 col-sm-9">
+                            <div id="updateOperatorForm_enabled_alert" class="alert alert-danger" hidden>
+                                user status is invalid
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="updateOperatorForm_validType" class="col-sm-3 control-label">验证类型</label>
+                        <div class="col-sm-9">
+                            <select id="updateOperatorForm_validType" class="form-control">
+                                <option value="1">短信验证</option>
+                                <option value="2">打卡验证</option>
+                                <option value="3">无需验证</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-3 col-sm-9">
+                            <div id="updateOperatorForm_validType_alert" class="alert alert-danger" hidden>
+                                valid type is invalid
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="updateOperatorForm_employeeNo" class="col-sm-3 control-label">员工号</label>
+                        <div class="col-sm-9">
+                            <input id="updateOperatorForm_employeeNo" type="text" class="form-control" placeholder="员工号" name="employeeNo" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-3 col-sm-9">
+                            <div id="updateOperatorForm_employeeNo_alert" class="alert alert-danger" hidden>
+                                employeeNo is invalid
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="updateOperatorForm_phoneno" class="col-sm-3 control-label">手机号</label>
+                        <div class="col-sm-9">
+                            <input id="updateOperatorForm_phoneno" type="text" class="form-control" placeholder="手机号" name="phoneno" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-3 col-sm-9">
+                            <div id="updateOperatorForm_phoneno_alert" class="alert alert-danger" hidden>
+                                phoneno is invalid
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="updateOperatorForm_phonenoGX" class="col-sm-3 control-label">国信坐席号码</label>
+                        <div class="col-sm-9">
+                            <input id="updateOperatorForm_phonenoGX" type="text" class="form-control" placeholder="国信坐席号码" name="phonenoGX" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-3 col-sm-9">
+                            <div id="updateOperatorForm_phonenoGX_alert" class="alert alert-danger" hidden>
+                                phonenoGX is invalid
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="updateOperatorForm_phonenoBL" class="col-sm-3 control-label">比邻坐席号码</label>
+                        <div class="col-sm-9">
+                            <input id="updateOperatorForm_phonenoBL" type="text" class="form-control" placeholder="比邻坐席号码" name="phonenoBL" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-3 col-sm-9">
+                            <div id="updateOperatorForm_phonenoBL_alert" class="alert alert-danger" hidden>
+                                phonenoBL is invalid
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-sm-offset-3 col-sm-9">
+                            <button id="updateOperatorForm_updateButton" type="button" class="btn btn-primary" style="background-color: #4f5b69">修改</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="addOperatorModal" operator="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header" style="background-color: #4f5b69;color: white">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">新增用户</h4>
+            </div>
+            <div class="modal-body">
+                <form id="addOperatorForm" class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <label for="addOperatorForm_username" class="col-sm-3 control-label">用户名</label>
+                        <div class="col-sm-9">
+                            <input id="addOperatorForm_username" type="text" class="form-control" placeholder="用户名" name="username" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-3 col-sm-9">
+                            <div id="addOperatorForm_username_alert" class="alert alert-danger" hidden>
+                                username is invalid
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="addOperatorForm_email" class="col-sm-3 control-label">邮箱</label>
+                        <div class="col-sm-9">
+                            <input id="addOperatorForm_email" type="text" class="form-control" placeholder="邮箱" name="email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-3 col-sm-9">
+                            <div id="addOperatorForm_email_alert" class="alert alert-danger" hidden>
+                                email is invalid
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="addOperatorForm_enabled" class="col-sm-3 control-label">状态</label>
+                        <div class="col-sm-9">
+                            <select id="addOperatorForm_enabled" class="form-control">
+                                <option value="0">正常</option>
+                                <option value="1">禁用</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-3 col-sm-9">
+                            <div id="addOperatorForm_enabled_alert" class="alert alert-danger" hidden>
+                                user status is invalid
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="addOperatorForm_validType" class="col-sm-3 control-label">验证类型</label>
+                        <div class="col-sm-9">
+                            <select id="addOperatorForm_validType" class="form-control">
+                                <option value="1">短信验证</option>
+                                <option value="2">打卡验证</option>
+                                <option value="3">无需验证</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-3 col-sm-9">
+                            <div id="addOperatorForm_validType_alert" class="alert alert-danger" hidden>
+                                valid type is invalid
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="addOperatorForm_employeeNo" class="col-sm-3 control-label">员工号</label>
+                        <div class="col-sm-9">
+                            <input id="addOperatorForm_employeeNo" type="text" class="form-control" placeholder="员工号" name="employeeNo" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-3 col-sm-9">
+                            <div id="addOperatorForm_employeeNo_alert" class="alert alert-danger" hidden>
+                                employeeNo is invalid
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="addOperatorForm_phoneno" class="col-sm-3 control-label">手机号</label>
+                        <div class="col-sm-9">
+                            <input id="addOperatorForm_phoneno" type="text" class="form-control" placeholder="手机号" name="phoneno" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-3 col-sm-9">
+                            <div id="addOperatorForm_phoneno_alert" class="alert alert-danger" hidden>
+                                phoneno is invalid
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="addOperatorForm_phonenoGX" class="col-sm-3 control-label">国信坐席号码</label>
+                        <div class="col-sm-9">
+                            <input id="addOperatorForm_phonenoGX" type="text" class="form-control" placeholder="国信坐席号码" name="phonenoGX" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-3 col-sm-9">
+                            <div id="addOperatorForm_phonenoGX_alert" class="alert alert-danger" hidden>
+                                phonenoGX is invalid
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="addOperatorForm_phonenoBL" class="col-sm-3 control-label">比邻坐席号码</label>
+                        <div class="col-sm-9">
+                            <input id="addOperatorForm_phonenoBL" type="text" class="form-control" placeholder="比邻坐席号码" name="phonenoBL" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-3 col-sm-9">
+                            <div id="addOperatorForm_phonenoBL_alert" class="alert alert-danger" hidden>
+                                phonenoBL is invalid
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="addOperatorForm_role" class="col-sm-3 control-label">角色</label>
+                        <div class="col-sm-9">
+                            <select id="addOperatorForm_role" class="form-control">
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-3 col-sm-9">
+                            <div id="addOperatorForm_role_alert" class="alert alert-danger" hidden>
+                                addOperatorForm_role is invalid
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-sm-offset-3 col-sm-9">
+                            <button id="addOperatorForm_addButton" type="button" class="btn btn-primary" style="background-color: #4f5b69">新增</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="confirmModal" operator="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header" style="background-color: #4f5b69;color: white">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">确认删除吗?</h4>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal" id="btn_confirm_delete">删除</button>
+                <button type="button" class="btn btn-success" data-dismiss="modal">撤销</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="updateOperatorRoleModal" operator="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header" style="background-color: #4f5b69;color: white">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">修改用户角色</h4>
+            </div>
+            <div class="modal-body">
+                <table class="table table-bordered">
+                    <thead>
+                    <tr>
+                        <th>选择</th>
+                        <th>ID</th>
+                        <th>名称</th>
+                        <th>注释</th>
+                    </tr>
+                    </thead>
+                    <tbody id="tbody_updateOperatorRole">
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal" id="btn_updateOperatorRole">赋权</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(function(){
+
+        getAllOperator();
+
+        function getAllOperator() {
+            clearContent();
+            $.ajax({
+                type: "GET",
+                async: false,
+                url: "/operator/getAllOperator.do",
+                dataType: "json", //表示返回值类型，不必须
+                error: function(response) {
+                    alert(response.code);
+                },
+                success: function(response) {
+                    var operatorList = response.data;
+                    fillOperatorContent(operatorList);
+                }
+            });
+        }
+
+        function hideUnAuthorizedOperation() {
+            var operationNameArray = "";
+            $("[operation_name]").each(function() {
+                operationName = $(this).attr("operation_name");
+                if( operationName != null && operationName != "" && operationName != "null") {
+                    operationNameArray = operationNameArray + operationName + ",";
+                }
+            });
+
+            if(operationNameArray == "") {
+                return;
+            }
+            operationNameArray = operationNameArray.substr(0,operationNameArray.length-1);
+
+            $.ajax({
+                type: "GET",
+                async: false,
+                url: "/permission/unAuthorizedCodeList.do",
+                data: {"operationNameArray":operationNameArray},
+                dataType: "json", //表示返回值类型，不必须
+                error: function(response) {
+                    alert(response.code);
+                },
+                success: function(response) {
+                    var code  = response.code;
+                    if(code == "0000") {
+                        var operationList = response.data;
+                        if(operationList == null || operationList.length == 0) {
+                            return;
+                        }
+                        for (var index in operationList) {
+                            $("[operation_name="+ operationList[index] +"]").remove();
+                        }
+
+                    }else {
+                        alert(response.desc);
+                    }
+                }
+            });
+        }
+
+        function fillOperatorContent(operatorList) {
+            for (var index in operatorList) {
+                formatOperator(operatorList[index]);
+                $("#tbody_operator").append(
+                        '<tr name="tr_operator_'+ operatorList[index].username +'" >' +
+                            '<td class="color_grey">' + operatorList[index].username + '</td>' +
+                            '<td class="color_grey">' + operatorList[index].email + '</td>' +
+                            '<td class="color_grey">' + operatorList[index].enabled + '</td>' +
+                            '<td class="color_grey">' + operatorList[index].validType + '</td>' +
+                            '<td class="color_grey">' + operatorList[index].employeeNo + '</td>' +
+                            '<td class="color_grey">' + operatorList[index].loginTimes + '</td>' +
+                            '<td class="color_grey">' + operatorList[index].lastLoginTime + '</td>' +
+                            '<td class="color_grey">' + operatorList[index].lastLoginIp + '</td>' +
+                            '<td class="color_grey">' + operatorList[index].createTime + '</td>' +
+                            '<td class="color_grey"><button operatorUsername="'+ operatorList[index].username +'" name="btn_updateOperator" type="button" class="btn btn-primary btn-xs">修改</button></td>' +
+                            '<td class="color_grey" operation_name="updateOperatorRole"><button operatorUsername="'+ operatorList[index].username +'" name="btn_updateOperatorRole" type="button" class="btn btn-primary btn-xs">授权</button></td>' +
+                            '<td class="color_grey"><button operatorUsername="'+ operatorList[index].username +'" name="btn_deleteOperator" type="button" class="btn btn-danger btn-xs">删除</button></td>' +
+                        '</tr>');
+            }
+            hideUnAuthorizedOperation();
+        }
+
+        function formatOperator(operator) {
+            if(operator.email == null) {
+                operator.email = "";
+            }
+            if(operator.description == null) {
+                operator.description = "";
+            }
+            if(operator.employeeNo == null) {
+                operator.employeeNo = "";
+            }
+            if(operator.lastLoginTime == null) {
+                operator.lastLoginTime = "";
+            }
+            if(operator.lastLoginIp == null) {
+                operator.lastLoginIp = "";
+            }
+            if(operator.enabled == 0) {
+                operator.enabled = "正常";
+            }else {
+                operator.enabled = "被禁用";
+            }
+            if(operator.validType == 1) {
+                operator.validType = "短信验证";
+            }else if (operator.validType == 2) {
+                operator.validType = "打卡验证";
+            }else if (operator.validType == 3) {
+                operator.validType = "无需验证";
+            }
+
+        }
+
+        $(document).on("click","[name=btn_updateOperator]",function(){
+            var username = $(this).attr("operatorUsername");
+            var operator = getOperator(username);
+            setUpdateOperatorFormVal(operator);
+            $("#updateOperatorModal").modal("show");
+        });
+
+        function setUpdateOperatorFormVal(operator) {
+            $("#updateOperatorForm_username").val(operator.username);
+            $("#updateOperatorForm_email").val(operator.email);
+            $("#updateOperatorForm_enabled").val(operator.enabled);
+            $("#updateOperatorForm_validType").val(operator.validType);
+            $("#updateOperatorForm_employeeNo").val(operator.employeeNo);
+            $("#updateOperatorForm_phoneno").val(operator.phoneno);
+            $("#updateOperatorForm_phonenoGX").val(operator.phonenoGX);
+            $("#updateOperatorForm_phonenoBL").val(operator.phonenoBL);
+        }
+
+        function emptyUpdateOperatorFormVal() {
+            $("#updateOperatorForm_username").val("");
+            $("#updateOperatorForm_email").val("");
+            $("#updateOperatorForm_enabled").val("");
+            $("#updateOperatorForm_validType").val("");
+            $("#updateOperatorForm_employeeNo").val("");
+            $("#updateOperatorForm_phoneno").val("");
+            $("#updateOperatorForm_phonenoGX").val("");
+            $("#updateOperatorForm_phonenoBL").val("");
+        }
+
+        function emptyAddOperatorFormVal() {
+            $("#addOperatorForm_username").val("");
+            $("#addOperatorForm_email").val("");
+            $("#addOperatorForm_enabled").val("");
+            $("#addOperatorForm_validType").val("");
+            $("#addOperatorForm_employeeNo").val("");
+            $("#addOperatorForm_phoneno").val("");
+            $("#addOperatorForm_phonenoGX").val("");
+            $("#addOperatorForm_phonenoBL").val("");
+        }
+
+        function getOperator(username) {
+            var operator = null;
+            $.ajax({
+                type: "GET",
+                async: false,
+                url: "/operator/getOperatorByUsername.do?username=" + username,
+                dataType: "json", //表示返回值类型，不必须
+                error: function(response) {
+                    alert(response.code);
+                },
+                success: function(response) {
+                    operator = response.data;
+                }
+            });
+            return operator;
+        }
+
+        $("#updateOperatorForm_updateButton").click(function () {
+            var username = $("#updateOperatorForm_username").val().trim();
+            var email = $("#updateOperatorForm_email").val().trim();
+            var enabled = $("#updateOperatorForm_enabled").val().trim();
+            var validType = $("#updateOperatorForm_validType").val().trim();
+            var employeeNo = $("#updateOperatorForm_employeeNo").val().trim();
+            var phoneno = $("#updateOperatorForm_phoneno").val().trim();
+            var phonenoGX = $("#updateOperatorForm_phonenoGX").val().trim();
+            var phonenoBL = $("#updateOperatorForm_phonenoBL").val().trim();
+            $.ajax({
+                type: "POST",
+                async: false,
+                url: "/operator/updateOperator.do",
+                data: {"operator.username":username,"operator.email":email,"operator.enabled":enabled,"operator.validType":validType,"operator.employeeNo":employeeNo,"operator.phoneno":phoneno,"operator.phonenoGX":phonenoGX,"operator.phonenoBL":phonenoBL},
+                dataType: "json", //表示返回值类型，不必须
+                error: function(response) {
+                    alert(response.desc);
+                },
+                success: function(response) {
+                    emptyUpdateOperatorFormVal();
+                    $("#updateOperatorModal").modal("hide");
+                }
+            });
+            searchOperator();
+        });
+
+        $("#addOperatorForm_addButton").click(function () {
+            var username = $("#addOperatorForm_username").val().trim();
+            var email = $("#addOperatorForm_email").val().trim();
+            var enabled = $("#addOperatorForm_enabled").val().trim();
+            var validType = $("#addOperatorForm_validType").val().trim();
+            var employeeNo = $("#addOperatorForm_employeeNo").val().trim();
+            var phoneno = $("#addOperatorForm_phoneno").val().trim();
+            var phonenoGX = $("#addOperatorForm_phonenoGX").val().trim();
+            var phonenoBL = $("#addOperatorForm_phonenoBL").val().trim();
+            var authority = $("#addOperatorForm_role").val();
+            $.ajax({
+                type: "POST",
+                async: false,
+                url: "/operator/addOperator.do",
+                data: {"operator.username":username,"operator.email":email,"operator.enabled":enabled,"operator.validType":validType,"operator.employeeNo":employeeNo,"operator.phoneno":phoneno,"operator.phonenoGX":phonenoGX,"operator.phonenoBL":phonenoBL,"operator.authority":authority},
+                dataType: "json", //表示返回值类型，不必须
+                error: function(response) {
+                    alert(response);
+                },
+                success: function(response) {
+                    if(response.code == "0000") {
+                        emptyAddOperatorFormVal();
+                        $("#addOperatorModal").modal("hide");
+                    }else {
+                        alert(response.desc);
+                    }
+                }
+            });
+            searchOperator();
+        });
+
+        var deleteOperatorUsername = null;
+        var updateOperatorUsername = null;
+
+        $(document).on("click","[name=btn_deleteOperator]",function(){
+            deleteOperatorUsername = $(this).attr("operatorUsername");
+            $("#confirmModal").modal("show");
+        });
+
+        $("#btn_confirm_delete").click(function () {
+            deleteOperator(deleteOperatorUsername);
+        });
+
+        function deleteOperator(id) {
+            $.ajax({
+                type: "POST",
+                async: false,
+                url: "/operator/deleteOperator.do",
+                data: {"username":deleteOperatorUsername},
+                dataType: "json", //表示返回值类型，不必须
+                error: function(response) {
+                    alert(response.desc);
+                },
+                success: function(response) {
+                    $("#updateOperatorModal").modal("hide");
+                }
+            });
+            searchOperator();
+        }
+
+        $("#addOperator").click(function () {
+            refreshSubRole();
+            $("#addOperatorModal").modal("show");
+        });
+
+        function refreshSubRole() {
+            $("#addOperatorForm_role").empty();
+            $.ajax({
+                type : "GET",
+                async : false,
+                url : "/operator/getSubRole.do",
+                dataType : "json", //表示返回值类型，不必须
+                error : function(response) {
+                    alert(response.desc);
+                },
+                success : function(response) {
+                    var roleList = response.data;
+                    for ( var index in roleList) {
+                        $("#addOperatorForm_role").append(
+                            '<option value="' + roleList[index].code + '">'
+                            + roleList[index].name + '</option>');
+                    }
+                }
+            });
+        }
+
+        $(document).on("click","[name=btn_searchOperator]",function(){
+            searchOperator();
+        });
+
+        function searchOperator() {
+            clearContent();
+            var username = $("#searchForm_username").val().trim();
+            var email = $("#searchForm_email").val().trim();
+            var employeeNo = $("#searchForm_employeeNo").val().trim();
+            var enabled = $("#searchForm_enabled").val().trim();
+            if(enabled == "") {
+                enabled = null;
+            }else {
+                enabled = parseInt(enabled);
+            }
+            var validType = $("#searchForm_validType").val().trim();
+            if(validType == "") {
+                validType = null;
+            }else {
+                validType = parseInt(validType);
+            }
+            $.ajax({
+                type: "GET",
+                async: false,
+                url: "/operator/searchOperator.do",
+                data: {"operator.username":username,"operator.email":email,"operator.employeeNo":employeeNo,"operator.enabled":enabled,"operator.validType":validType},
+                dataType: "json", //表示返回值类型，不必须
+                error: function(response) {
+                    alert(response.code);
+                },
+                success: function(response) {
+                    var operatorList = response.data;
+                    fillOperatorContent(operatorList);
+                }
+            });
+        }
+
+        $(document).on("click","[name=btn_updateOperatorRole]",function(){
+            updateOperatorUsername = $(this).attr("operatorUsername");
+            getAllRoleWithStatus();
+            $("#updateOperatorRoleModal").modal("show");
+        });
+
+        function getAllRoleWithStatus() {
+            $.ajax({
+                type: "POST",
+                async: false,
+                url: "/role/getAllRoleWithStatus.do",
+                data: {"username":updateOperatorUsername},
+                dataType: "json", //表示返回值类型，不必须
+                error: function(response) {
+                    alert(response.desc);
+                },
+                success: function(response) {
+                    var roleList = response.data;
+                    fillOperatorRoleContent(roleList);
+                }
+            });
+        }
+
+        $("#btn_updateOperatorRole").click(function () {
+            var roleIdArray = "";
+            $('input[name="roleIdCheckbox"]:checked').each(function() {
+                roleIdArray = roleIdArray + this.value + ",";
+            });
+
+            if(roleIdArray != "") {
+                roleIdArray = roleIdArray.substr(0,roleIdArray.length-1);
+            }
+
+            $.ajax({
+                type: "POST",
+                async: false,
+                url: "/role/updateOperatorRole.do",
+                data: {"username":updateOperatorUsername,"roleIdArray":roleIdArray},
+                dataType: "json", //表示返回值类型，不必须
+                error: function(response) {
+                    alert(response.desc);
+                },
+                success: function(response) {
+                    $("#updateOperatorRoleModal").modal("hide");
+                }
+            });
+        });
+
+        function fillOperatorRoleContent(roleList) {
+            $("#tbody_updateOperatorRole").empty();
+            for (var index in roleList) {
+                formatRole(roleList[index]);
+                $("#tbody_updateOperatorRole").append(
+                        '<tr name="tr_role_'+ roleList[index].id +'" >' +
+                            '<td class="color_grey"><input name="roleIdCheckbox" type="checkbox" value="'+ roleList[index].id +'" '+ roleList[index].checked +'></td>' +
+                            '<td class="color_grey">' + roleList[index].id + '</td>' +
+                            '<td class="color_grey">' + roleList[index].name + '</td>' +
+                            '<td class="color_grey">' + roleList[index].description + '</td>' +
+                        '</tr>');
+            }
+        }
+
+        function formatRole(role) {
+            //description
+            if(role.description == null) {
+                role.description = "";
+            }
+        }
+
+        function clearContent() {
+            $("#tbody_operator").empty();
+        }
+
+    });
+</script>
+</body>
+</html>
+

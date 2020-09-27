@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+	<bean id="userService" class="app.service.implementations.UserServiceImpl">
+		<property name="baseDao" ref="baseDao" />
+		<property name="sequenceService" ref="sequenceService" />
+		<property name="configurationEncryptor" ref="configurationEncryptor" />
+		<property name="gameinfoService" ref="gameinfoService" />
+		<property name="transferService" ref="transferService" />   
+		<property name="slaveService" ref="slaveService" />
+		<property name="questionService" ref="questionService" />
+	</bean>
+
+	<bean id="sequenceService" class="app.service.implementations.SequenceServiceImpl">
+ 		<property name="baseDao" ref="baseDao" />
+	</bean>
+
+	<bean id="systemConfigService" class="app.service.implementations.SystemConfigServiceImpl" scope="prototype">
+ 		<property name="queryDao" ref="queryDao" />
+	</bean>
+
+	<bean id="latestPreferentialService" class="app.service.implementations.LatestPreferentialServiceImpl" scope="prototype">
+ 		<property name="queryDao" ref="queryDao" />
+	</bean>
+
+	<bean id="constService" class="app.service.implementations.ConstServiceImpl" scope="prototype">
+ 		<property name="queryDao" ref="queryDao" />
+	</bean>
+
+	<bean id="preferentialCommentService" class="app.service.implementations.PreferentialCommentServiceImpl" scope="prototype">
+ 		<property name="baseDao" ref="baseDao" />
+ 		<property name="queryDao" ref="queryDao" />
+	</bean>
+
+	<bean id="losePromoService" class="app.service.implementations.LosePromoServiceImpl" scope="prototype">
+ 		<property name="queryDao" ref="queryDao" />
+	</bean>
+
+	<bean id="userBankInfoService" class="app.service.implementations.UserBankInfoServiceImpl" scope="prototype">
+ 		<property name="baseDao" ref="baseDao" />
+ 		<property name="queryDao" ref="queryDao" />
+	</bean>
+
+	<bean id="userStatusService" class="app.service.implementations.UserStatusServiceImpl" scope="prototype">
+ 		<property name="queryDao" ref="queryDao" />
+	</bean>
+
+	<bean id="preferentialConfigService" class="app.service.implementations.PreferentialConfigServiceImpl" scope="prototype">
+ 		<property name="queryDao" ref="queryDao" />
+	</bean>
+
+	<bean id="transferInfoService" class="app.service.implementations.TransferInfoServiceImpl" scope="prototype">
+ 		<property name="baseDao" ref="baseDao" />
+ 		<property name="logService" ref="logService" />
+	</bean>
+
+	<bean id="logService" class="app.service.implementations.LogServiceImpl" scope="prototype">
+		<property name="baseDao" ref="baseDao" />
+	</bean>
+
+	<bean id="baseService" class="app.service.implementations.BaseService" scope="prototype">
+		<property name="baseDao" ref="baseDao" />
+	</bean>
+
+	<bean id="ptDepositService" class="app.service.implementations.PTDepositServiceImpl" scope="prototype">
+		<property name="baseDao" ref="baseDao" />
+		<property name="sequenceService" ref="sequenceService" />
+		<property name="transferInfoService" ref="transferInfoService" />
+	</bean>
+
+	<bean id="mgDepositService" class="app.service.implementations.MGDepositServiceImpl" scope="prototype">
+		<property name="baseDao" ref="baseDao" />
+		<property name="sequenceService" ref="sequenceService" />
+		<property name="transferInfoService" ref="transferInfoService" />
+	</bean>
+
+	<bean id="dtDepositService" class="app.service.implementations.DTDepositServiceImpl" scope="prototype">
+		<property name="baseDao" ref="baseDao" />
+		<property name="sequenceService" ref="sequenceService" />
+		<property name="transferInfoService" ref="transferInfoService" />
+	</bean>
+
+	<bean id="qtDepositService" class="app.service.implementations.QTDepositServiceImpl" scope="prototype">
+		<property name="baseDao" ref="baseDao" />
+		<property name="sequenceService" ref="sequenceService" />
+		<property name="transferInfoService" ref="transferInfoService" />
+	</bean>
+
+	<bean id="ntDepositService" class="app.service.implementations.NTDepositServiceImpl" scope="prototype">
+		<property name="baseDao" ref="baseDao" />
+		<property name="sequenceService" ref="sequenceService" />
+		<property name="transferInfoService" ref="transferInfoService" />
+	</bean>
+
+	<bean id="ttgDepositService" class="app.service.implementations.TTGDepositServiceImpl" scope="prototype">
+		<property name="baseDao" ref="baseDao" />
+		<property name="sequenceService" ref="sequenceService" />
+		<property name="transferInfoService" ref="transferInfoService" />
+	</bean>
+
+	<bean id="questionService" class="app.service.implementations.QuestionServiceImpl" scope="prototype">
+		<property name="queryDao" ref="queryDao" />
+	</bean>
+
+	<bean id="selfPromotionService" class="app.service.implementations.SelfPromotionServiceImpl" scope="prototype">
+		<property name="baseDao" ref="baseDao" />
+		<property name="taskDao" ref="taskDao" />
+		<property name="constService" ref="constService" />
+		<property name="sequenceService" ref="sequenceService" />
+	</bean>
+
+	<bean id="slotMachineBigBangService" class="app.service.implementations.SlotMachineBigBangServiceImpl" scope="prototype">
+		<property name="queryDao" ref="queryDao" />
+	</bean>
+
+	<bean id="systemAnnouncementService" class="app.service.implementations.SystemAnnouncementServiceImpl" scope="prototype">
+		<property name="baseDao" ref="baseDao" />
+	</bean>
+	
+	<bean id="accountService" class="app.service.implementations.AccountServiceImpl" scope="prototype">
+		<property name="baseDao" ref="baseDao" />
+	</bean>
+
+	<bean id="agentAccountListService" class="app.service.implementations.AgentAccountListServiceImpl" scope="prototype">
+		<property name="queryDao" ref="queryDao" />
+	</bean>
+	<bean id="activityConfigService" class="app.service.implementations.ActivityConfigServiceImpl" scope="prototype">
+		<property name="queryDao" ref="queryDao" />
+	</bean>
+</beans>

@@ -1,0 +1,171 @@
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN" "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="bankinfo" namespace="/bankinfo" extends="struts-default,json-default">
+		
+		<global-results>
+			<result name="logout">/office/logout.jsp</result>
+			<result name="index">/office/index.jsp</result>
+			<result name="error">/office/error.jsp</result>
+		</global-results>
+		
+					
+		 <!-- 二维码手机银行类别  -->
+		<action name="queryQrcodeBankinfo" class="bankinfoClass" method="queryQrcodeBankinfo"></action>
+
+         <!-- 同略云支持银行类别  -->
+		<action name="queryTlyBankinfo" class="bankinfoClass" method="queryTlyBankinfo"></action>
+		
+		 <!-- 同略云支持银行类别  -->
+		<action name="querySelfCollectInfo" class="bankinfoClass" method="querySelfCollectInfo"></action>
+		
+		
+		<!-- 支付中心 start -->
+		<action name="merchantpay_main" class="bankinfoClass" method="merchantpay_main">
+			<result name="input">/office/functions/pay/merchantPay.jsp</result>
+		</action>
+		<action name="merchantpay_finance" class="bankinfoClass" method="merchantpay_finance">
+			<result name="input">/office/functions/pay/merchantPay_finance.jsp</result>
+		</action>
+		<action name="merchantpay_query" class="bankinfoClass" method="merchantpay_query"/>
+		<action name="merchantpay_add_update" class="bankinfoClass" method="merchantpay_add_update"/>
+		<action name="merchantpay_edit" class="bankinfoClass" method="merchantpay_edit">
+			<result name="success">/office/functions/pay/merchantPay_modal.jsp</result>
+		</action>
+
+		<!-- 支付中心 补单 -->
+		<action name="supplement_main" class="bankinfoClass" method="supplement_main">
+			<result name="input">/office/functions/pay/supplement.jsp</result>
+		</action>
+		<action name="supplement_save" class="bankinfoClass" method="supplement_save"></action>
+
+		<action name="queryAlipayCards" class="bankinfoClass" method="queryAlipayCards"></action>
+		
+		<action name="queryBankinfo" class="bankinfoClass" method="queryBankinfo"></action>
+		<!-- 支付中心 end -->
+		
+			<!-- 增加内部银行账户 -->
+		<action name="addbankinfo" class="bankinfoClass" method="addbankinfo">
+			<result name="input">/office/functions/bankinfo/addbankinfo.jsp
+			</result>
+		</action>
+		
+		<action name="editbankinfo" class="bankinfoClass" method="addbankinfoTwo">
+			<result name="input">/office/functions/bankinfo/editbankinfo.jsp
+			</result>
+		</action>
+		
+		<action name="gtDepositAmount" class="bankinfoClass" method="gtDepositAmount">
+		</action>
+		
+		
+		<action name="managebankinfo" class="bankinfoClass" method="querybankinfo">
+			<result name="input">/office/functions/bankinfo/managebankinfo.jsp</result>
+		</action>
+		
+		<!-- 同略云 -->
+		<action name="managebankorder" class="bankinfoClass" method="querybankorder">
+			<result name="input">/office/functions/bankinfo/bankorder.jsp</result>
+		</action>
+		
+		 <!-- 秒付宝 -->
+		<action name="queryFlashPayOrder" class="bankinfoClass" method="queryFlashPayOrder">
+			<result name="input">/office/functions/bankinfo/flashPay.jsp</result>
+		</action>
+		
+		<!-- 添加银行卡 -->
+		<action name="querybankcard" class="bankinfoClass" method="querybankcard">
+			<result name="input">/office/functions/bankinfo/bankcard.jsp</result>
+		</action>
+		
+		<!-- 检查银行卡 -->
+		<action name="checkCard" class="bankinfoClass" method="checkCard">
+			<result name="input">/office/functions/bankinfo/bankcard.jsp</result>
+		</action>
+		
+		<action name="showbankinfo" class="bankinfoClass" method="showbankinfo">
+			<result name="input">/office/functions/bankinfo/showBankinfo.jsp</result>
+		</action>
+
+		<action name="managemsbankswitch" class="bankinfoClass" method="querymanagemsbankswitch">
+			<result name="input">/office/functions/bankinfo/managemsbankswitch.jsp</result>
+		</action>
+		
+		<action name="paymerchant" class="bankinfoClass" method="querypaymerchant">
+			<result name="input">/office/functions/bankinfo/managepaymerchant.jsp</result>
+		</action>
+		
+		
+		<action name="querySystemConfig" class="systemConfigAction" method="querySystemConfig">
+			<result name="input">/office/functions/manageSystemConfig.jsp</result>
+		</action>
+		
+		<action name="updateSystemConfig" class="systemConfigAction" method="updateSystemConfig">
+		</action>
+		<action name="deletesystemConfig" class="systemConfigAction" method="deletesystemConfig">
+		</action>
+		
+		<action name="bankinfostatus" class="bankinfoClass" method="querybankinfostatus">
+			<result name="input">/office/functions/bankinfo/bankinfostatus.jsp</result>
+		</action>
+		
+		<action name="managebankinfoforvc" class="bankinfoClass" method="querybankinfo">
+			<result name="input">/office/functions/bankinfo/managebankinfoforvc.jsp</result>
+		</action>
+		
+		<action name="canclebankinfo" class="bankinfoClass" method="canclebankinfo">
+			<result name="input">/office/functions/bankinfo/managebankinfo.jsp</result>
+		</action>
+		
+		<action name="switchmsbank" class="bankinfoClass" method="switchmsbank">
+			<result name="input">/office/functions/bankinfo/managemsbankswitch.jsp</result>
+		</action>
+		
+		<action name="searchforeditbankinfo" class="bankinfoClass" method="searchforeditbankinfo">
+			<result name="input">/office/functions/bankinfo/editbankinfo.jsp</result>
+		</action>
+		
+		<action name="updageuserrole" class="bankinfoClass" method="updageuserrole"></action>
+		
+		<action name="changeBankSwitch" class="bankinfoClass" method="changeBankSwitch"></action>
+		
+		<action name="updageNewShow" class="bankinfoClass" method="updageNewShow"></action>
+		
+		<action name="updatepaymerchant" class="bankinfoClass" method="updatepaymerchant"></action>
+		<action name="deletepaymerchant" class="bankinfoClass" method="deletepaymerchant"></action>
+		
+		
+		<action name="updageNewTransfer" class="bankinfoClass" method="updageNewTransfer"></action>
+		
+		<action name="remotebankinfo" class="bankinfoClass" method="remotebankinfo">
+		      <result>/office/functions/bankinfosttus.jsp</result>
+		</action>
+		<action name="remotebankstatus" class="bankinfoClass" method="remotebankstatus">
+		      <result>/office/functions/bankinfosttus.jsp</result>
+		</action>
+		
+		<action name="getSaveBankAccount" class="bankinfoClass" method="getSaveBankAccount">
+			<result>/office/functions/cashin.jsp</result>
+		</action>
+		
+		<action name="getCashinBankAccount" class="bankinfoClass" method="getCashinBankAccount">
+			<result>/office/functions/intransfer/intransfer.jsp</result>
+		</action>
+		
+		<action name="getDefrayBankAccount" class="bankinfoClass" method="getDefrayBankAccount">
+			<result>/office/functions/cashout.jsp</result>
+		</action>
+		
+		<action name="getBusinessBankAccount" class="bankinfoClass" method="getBusinessBankAccount">
+			<result>/office/functions/businessproposalforcashout.jsp</result>
+		</action>
+		
+		<action name="getAllBankAccount" class="bankinfoClass" method="getAllBankAccount">
+			<result>/office/functions/cashout.jsp</result>
+		</action>
+		
+		<action name="getBankStatusList" class="BankStatusAction" method="getBankStatusList">
+			<result name="input">/office/functions/bankinfo/bankstatus.jsp</result>
+		</action>
+		<action name="updateBankStatus" class="BankStatusAction" method="updateBankStatus"></action>
+	</package>
+</struts>

@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="http://apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+    <script src="/js/bootstrap-confirmation.min.js"></script>
+</head>
+<style type="text/css">
+    th, td {
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    th {
+        color: white;
+        background-color: #4f5b69;
+    }
+
+    .color_grey {
+        background-color: lightblue;
+    }
+
+    body {
+        font-family: 微软雅黑;
+    }
+
+</style>
+<body>
+
+<div class="container-fluid">
+    <div class="panel panel-primary" style="background-color: #4f5b69">
+        <div class="panel-body">
+            <form class="form-inline">
+                <div class="form-group">
+                    <input class="form-control" id="searchForm_name" placeholder="名称">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" id="searchForm_code" placeholder="角色编码">
+                </div>
+                <a name="btn_searchRole" href="#" class="btn btn-primary"><span class="glyphicon glyphicon-search"></span></a>
+                <a name="btn_searchRole" href="#" class="btn btn-primary"><span class="glyphicon glyphicon-refresh"></span></a>
+                <a id="addRole" href="#" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span></a>
+            </form>
+        </div>
+    </div>
+
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>名称</th>
+            <th>编码</th>
+            <th>注释</th>
+            <th>创建时间</th>
+            <th colspan="3">操作</th>
+        </tr>
+        </thead>
+        <tbody id="tbody_role">
+
+        </tbody>
+    </table>
+</div>
+
+<div class="modal fade" id="updateRoleModal" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header" style="background-color: #4f5b69;color: white">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">修改角色</h4>
+            </div>
+            <div class="modal-body">
+                <form id="updateRoleForm" class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <label for="updateRoleForm_id" class="col-sm-2 control-label">ID</label>
+                        <div class="col-sm-10">
+                            <input id="updateRoleForm_id" type="text" class="form-control" placeholder="ID" name="id" disabled required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <div id="updateRoleForm_id_alert" class="alert alert-danger" hidden>
+                                id is invalid
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="updateRoleForm_name" class="col-sm-2 control-label">名称</label>
+                        <div class="col-sm-10">
+                            <input id="updateRoleForm_name" type="text" class="form-control" placeholder="角色名称" name="name" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <div id="updateRoleForm_name_alert" class="alert alert-danger" hidden>
+                                name is invalid
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="updateRoleForm_code" class="col-sm-2 control-label">编码</label>
+                        <div class="col-sm-10">
+                            <input id="updateRoleForm_code" type="text" class="form-control" placeholder="编码" name="icon" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <div id="updateRoleForm_code_alert" class="alert alert-danger" hidden>
+                                code is invalid
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="updateRoleForm_description" class="col-sm-2 control-label">注释</label>
+                        <div class="col-sm-10">
+                            <input id="updateRoleForm_description" type="text" class="form-control" placeholder="注释" name="description" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <div id="updateRoleForm_description_alert" class="alert alert-danger" hidden>
+                                description is invalid
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <button id="updateRoleForm_updateButton" type="button" class="btn btn-primary" style="background-color: #4f5b69">修改</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="addRoleModal" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header" style="background-color: #4f5b69;color: white">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">新增角色</h4>
+            </div>
+            <div class="modal-body">
+                <form id="addRoleForm" class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <label for="addRoleForm_name" class="col-sm-2 control-label">名称</label>
+                        <div class="col-sm-10">
+                            <input id="addRoleForm_name" type="text" class="form-control" placeholder="角色名称" name="name" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <div id="addRoleForm_name_alert" class="alert alert-danger" hidden>
+                                name is invalid
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="addRoleForm_code" class="col-sm-2 control-label">编码</label>
+                        <div class="col-sm-10">
+                            <input id="addRoleForm_code" type="text" class="form-control" placeholder="编码" name="code" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <div id="addRoleForm_code_alert" class="alert alert-danger" hidden>
+                                code is invalid
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="addRoleForm_description" class="col-sm-2 control-label">注释</label>
+                        <div class="col-sm-10">
+                            <input id="addRoleForm_description" type="text" class="form-control" placeholder="注释" name="description" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <div id="addRoleForm_description_alert" class="alert alert-danger" hidden>
+                                description is invalid
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <button id="addRoleForm_addButton" type="button" class="btn btn-primary" style="background-color: #4f5b69">新增</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="confirmModal" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header" style="background-color: #4f5b69;color: white">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">确认删除吗?</h4>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal" id="btn_confirm_delete">删除</button>
+                <button type="button" class="btn btn-success" data-dismiss="modal">撤销</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="updateRolePermissionModal" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header" style="background-color: #4f5b69;color: white">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">修改角色权限</h4>
+            </div>
+            <div class="modal-body">
+                <table class="table table-bordered">
+                    <thead>
+                    <tr>
+                        <th>选择</th>
+                        <th>ID</th>
+                        <th>名称</th>
+                        <th>注释</th>
+                    </tr>
+                    </thead>
+                    <tbody id="tbody_updateRolePermission">
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal" id="btn_updateRolePermission">赋权</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(function(){
+
+        getAllRole();
+
+        function getAllRole() {
+            clearContent();
+            $.ajax({
+                type: "GET",
+                async: false,
+                url: "/role/getAllRole.do",
+                dataType: "json", //表示返回值类型，不必须
+                error: function(response) {
+                    alert(response.code);
+                },
+                success: function(response) {
+                    var roleList = response.data;
+                    fillRoleContent(roleList);
+                }
+            });
+        }
+
+        function fillRoleContent(roleList) {
+            for (var index in roleList) {
+                formatRole(roleList[index]);
+                $("#tbody_role").append(
+                        '<tr name="tr_role_'+ roleList[index].id +'" >' +
+                        '<td class="color_grey">' + roleList[index].id + '</td>' +
+                        '<td class="color_grey">' + roleList[index].name + '</td>' +
+                        '<td class="color_grey">' + roleList[index].code + '</td>' +
+                        '<td class="color_grey">' + roleList[index].description + '</td>' +
+                        '<td class="color_grey">' + roleList[index].createTime + '</td>' +
+                        '<td class="color_grey"><button roleId="'+ roleList[index].id +'" name="btn_updateRole" type="button" class="btn btn-primary btn-xs">修改</button></td>' +
+                        '<td class="color_grey"><button roleId="'+ roleList[index].id +'" name="btn_updateRolePermission" type="button" class="btn btn-primary btn-xs">授权</button></td>' +
+                        '<td class="color_grey"><button roleId="'+ roleList[index].id +'" name="btn_deleteRole" type="button" class="btn btn-danger btn-xs">删除</button></td>' +
+                        '</tr>');
+            }
+        }
+
+        function formatRole(role) {
+            //code
+            if(role.code == null) {
+                role.code = "";
+            }
+            //description
+            if(role.description == null) {
+                role.description = "";
+            }
+        }
+
+        $(document).on("click","[name=btn_updateRole]",function(){
+            var roleId = $(this).attr("roleId");
+            var role = getRole(roleId);
+            setupdateRoleFormVal(role);
+            $("#updateRoleModal").modal("show");
+        });
+
+        function setupdateRoleFormVal(role) {
+            $("#updateRoleForm_id").val(role.id);
+            $("#updateRoleForm_name").val(role.name);
+            $("#updateRoleForm_code").val(role.code);
+            $("#updateRoleForm_description").val(role.description);
+        }
+
+        function emptyUpdateRoleFormVal() {
+            $("#updateRoleForm_id").val("");
+            $("#updateRoleForm_name").val("");
+            $("#updateRoleForm_code").val("");
+            $("#updateRoleForm_description").val("");
+        }
+
+        function emptyAddRoleFormVal() {
+            $("#addRoleForm_id").val("");
+            $("#addRoleForm_name").val("");
+            $("#addRoleForm_code").val("");
+            $("#addRoleForm_description").val("");
+        }
+
+        function getRole(id) {
+            var role = null;
+            $.ajax({
+                type: "GET",
+                async: false,
+                url: "/role/getRoleById.do?id=" + id,
+                dataType: "json", //表示返回值类型，不必须
+                error: function(response) {
+                    alert(response.code);
+                },
+                success: function(response) {
+                    role = response.data;
+                }
+            });
+            return role;
+        }
+
+        $("#updateRoleForm_updateButton").click(function () {
+            var role = null;
+            var id = $("#updateRoleForm_id").val().trim();
+            var name = $("#updateRoleForm_name").val().trim();
+            var code = $("#updateRoleForm_code").val().trim();
+            var description = $("#updateRoleForm_description").val().trim();
+            $.ajax({
+                type: "POST",
+                async: false,
+                url: "/role/updateRole.do",
+                data: {"role.id":id,"role.name":name,"role.code":code,"role.description":description},
+                dataType: "json", //表示返回值类型，不必须
+                error: function(response) {
+                    alert(response.desc);
+                },
+                success: function(response) {
+                    emptyUpdateRoleFormVal();
+                    $("#updateRoleModal").modal("hide");
+                }
+            });
+            searchRole();
+        });
+
+        $("#addRoleForm_addButton").click(function () {
+            var name = $("#addRoleForm_name").val().trim();
+            var code = $("#addRoleForm_code").val().trim();
+            var description = $("#addRoleForm_description").val().trim();
+            $.ajax({
+                type: "POST",
+                async: false,
+                url: "/role/addRole.do",
+                data: {"role.name":name,"role.code":code,"role.description":description},
+                dataType: "json", //表示返回值类型，不必须
+                error: function(response) {
+                    alert(response.desc);
+                },
+                success: function(response) {
+                    emptyAddRoleFormVal();
+                    $("#addRoleModal").modal("hide");
+                }
+            });
+            searchRole();
+        });
+
+        var deleteRoleId = null;
+        var updateRoleId = null;
+
+        $(document).on("click","[name=btn_deleteRole]",function(){
+            deleteRoleId = $(this).attr("roleId");
+            $("#confirmModal").modal("show");
+        });
+
+        $("#btn_confirm_delete").click(function () {
+            deleteRole(deleteRoleId);
+            searchRole();
+        });
+
+        function deleteRole(id) {
+            $.ajax({
+                type: "POST",
+                async: false,
+                url: "/role/deleteRole.do",
+                data: {"id":id},
+                dataType: "json", //表示返回值类型，不必须
+                error: function(response) {
+                    alert(response.desc);
+                },
+                success: function(response) {
+                    $("#updateRoleModal").modal("hide");
+                }
+            });
+        }
+
+        $("#addRole").click(function () {
+            $("#addRoleModal").modal("show");
+
+        });
+
+        $(document).on("click","[name=btn_searchRole]",function(){
+            searchRole();
+        });
+
+        function searchRole() {
+            clearContent();
+            var name = $("#searchForm_name").val().trim();
+            var code = $("#searchForm_code").val().trim();
+
+            $.ajax({
+                type: "POST",
+                async: false,
+                url: "/role/searchRole.do",
+                data: {"role.name":name,"role.code":code},
+                dataType: "json", //表示返回值类型，不必须
+                error: function(response) {
+                    alert(response.code);
+                },
+                success: function(response) {
+                    var roleList = response.data;
+                    fillRoleContent(roleList);
+                }
+            });
+        }
+
+        $(document).on("click","[name=btn_updateRolePermission]",function(){
+            updateRoleId = $(this).attr("roleId");
+            getAllPermissionWithStatus();
+            $("#updateRolePermissionModal").modal("show");
+        });
+
+        function getAllPermissionWithStatus() {
+            $.ajax({
+                type: "POST",
+                async: false,
+                url: "/permission/getAllPermissionWithStatus.do",
+                data: {"roleId":updateRoleId},
+                dataType: "json", //表示返回值类型，不必须
+                error: function(response) {
+                    alert(response.desc);
+                },
+                success: function(response) {
+                    var permissionList = response.data;
+                    fillRolePermissionContent(permissionList);
+                }
+            });
+        }
+
+        $("#btn_updateRolePermission").click(function () {
+            var permissionIdArray = "";
+            $('input[name="permissionIdCheckbox"]:checked').each(function() {
+                permissionIdArray = permissionIdArray + this.value + ",";
+            });
+
+            if(permissionIdArray != "") {
+                permissionIdArray = permissionIdArray.substr(0,permissionIdArray.length-1);
+            }
+
+            $.ajax({
+                type: "POST",
+                async: false,
+                url: "/permission/updateRolePermission.do",
+                data: {"roleId":updateRoleId,"permissionIdArray":permissionIdArray},
+                dataType: "json", //表示返回值类型，不必须
+                error: function(response) {
+                    alert(response.desc);
+                },
+                success: function(response) {
+                    var permissionList = response.data;
+                    fillRolePermissionContent(permissionList);
+                }
+            });
+        });
+
+        function fillRolePermissionContent(permissionList) {
+            $("#tbody_updateRolePermission").empty();
+            for (var index in permissionList) {
+                formatPermission(permissionList[index]);
+                if(permissionList[index].pid == 0) {
+                    $("#tbody_updateRolePermission").append(
+                            '<tr name="tr_permission_'+ permissionList[index].id +'" >' +
+                                '<td class="color_grey"><input name="permissionIdCheckbox" type="checkbox" value="'+ permissionList[index].id +'" '+ permissionList[index].checked +'></td>' +
+                                '<td class="color_grey">' + permissionList[index].id + '</td>' +
+                                '<td class="color_grey">' + permissionList[index].name + '</td>' +
+                                '<td class="color_grey">' + permissionList[index].description + '</td>' +
+                            '</tr>');
+                }else {
+                    $("#tbody_updateRolePermission").append(
+                            '<tr name="tr_permission_'+ permissionList[index].id +'" class="info">' +
+                                '<td><input name="permissionIdCheckbox" type="checkbox" value="'+ permissionList[index].id +'" '+ permissionList[index].checked +'></td>' +
+                                '<td>' + permissionList[index].id + '</td>' +
+                                '<td>' + permissionList[index].name + '</td>' +
+                                '<td>' + permissionList[index].description + '</td>' +
+                            '</tr>');
+                }
+            }
+        }
+
+        function formatPermission(permission) {
+            //auth type
+            if(permission.type == "M") {
+                permission.type = "主菜单";
+            }else if(permission.type == "S") {
+                permission.type = "二级菜单";
+            }else if(permission.type == "O") {
+                permission.type = "操作";
+            }
+            //icon
+            if(permission.icon == null) {
+                permission.icon = "";
+            }
+            //url
+            if(permission.url == null) {
+                permission.url = "";
+            }
+            //description
+            if(permission.description == null) {
+                permission.description = "";
+            }
+        }
+
+        function clearContent() {
+            $("#tbody_role").empty();
+        }
+
+    });
+</script>
+</body>
+</html>
+

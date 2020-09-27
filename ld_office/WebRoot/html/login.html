@@ -1,0 +1,1633 @@
+<html>
+
+
+
+<head>
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+
+<meta http-equiv="expires" content="0">
+
+
+
+<title>欢迎使用中国民生银行网上银行系统</title>
+
+
+
+<link rel="icon" href="/images/cmbc.ico" type="image/x-icon" >
+
+<link rel="shortcut icon" href="/images/cmbc.ico" type="image/x-icon" >
+
+<script src="/pubFunP.js"></script>
+<script src="/js/ca1.js"></script>
+<script src="/js/ajaxTool.js"></script>
+
+<script language="JavaScript">
+
+<!--
+if(parent){
+var xPoint = Math.abs(screen.width - 800)/2;
+var yPoint = Math.abs(screen.height - 600)/2;
+	if(screen.width>800)
+		parent.window.moveTo(xPoint,yPoint);
+	else 
+		parent.window.moveTo(0,0);
+	parent.window.resizeTo(800,600)
+}	
+
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+
+if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+
+document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+
+else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+
+}
+
+MM_reloadPage(true);
+
+//-->
+</script>
+
+
+<style type="text/css">
+<!--
+body {
+	background-color: #0A94A4;
+	font-family: "宋体";
+	font-size: 9pt;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+Table {
+	font-family: "宋体";
+	font-size: 9pt;
+	line-height: normal;
+}
+.bg {
+	background-attachment: fixed;
+	background-image:  url('/images/login/bga.jpg');
+	background-repeat: no-repeat;
+	background-position: left center
+}
+
+.style1 {color: #FFFFFF}
+
+.inputText {
+	background-color: #0A94A4;
+	border: 1px solid #FFFFFF;
+	height: 18px;
+	width: 125px;
+	color: #FFFFFF;
+}
+.select {
+	background-color: #0A94A4;
+	border: 1px solid #FFFFFF;
+	height: 16px;
+	width: 80px;
+	color: #FFFFFF;
+}
+A:link {
+	TEXT-DECORATION: none;
+	color: #48F3F9
+}
+A:visited {
+	TEXT-DECORATION: none;
+	color: #48F3F9
+}
+A:hover {
+	color: #FFFFFF
+}
+A:active {
+	color: #FFFFFF
+}
+A.b:link {
+	TEXT-DECORATION: none;
+	color: #FCED03
+}
+A.b:visited {
+	TEXT-DECORATION: none;
+	color: #FCED03
+}
+A.b:hover {
+	color: #FFFFFF
+}
+A.b:active {
+	color: #FFFFFF
+}
+.clor {
+	color: #FCED03
+}
+-->
+
+
+
+</style>
+<script language="JavaScript">
+
+var bSubmit = false;
+var issubmited=false;
+
+function changeUrl(url)
+{
+	for(i=0;i<2;i++)
+	{
+		if(i==url)
+		{
+			person2.style.display="";
+			person1.style.display="none"
+		}
+		else
+		{
+			person2.style.display="none";
+			person1.style.display="";
+		}
+	}
+}
+	
+function openWin()
+{
+	if(person2.style.display == 'none')
+	{
+		document.eservice.target = "wait";
+		document.eservice.submit();
+		document.eservice.account.value="";
+		document.eservice.CheckCode.value = "";
+		bSubmit = true;
+		return true;
+	}
+	else
+	{
+		var strTargetURL ="styleweb0/index.htm";
+		strTargetURL = "/waiting.html";
+		document.all.waiting.style.display='';
+		
+		//alert(document.getElementById("j_username").value);
+		//alert(document.getElementById("j_password").value);
+	
+		return true;
+		//document.eservice2.submit();
+	}
+	
+	return false;
+}
+
+function killErrors(){return true;}
+
+window.onerror=killErrors;
+
+function click(e)
+{
+	if (document.all)
+	{
+		if (event.button==2||event.button==3)
+		{
+			oncontextmenu='return false';
+		}
+	}
+	if (document.layers)
+	{
+		if (e.which == 3)
+		{
+			oncontextmenu='return false';
+		}
+	}
+}	
+
+if (document.layers)
+{
+	document.captureEvents(Event.MOUSEDOWN);
+}
+
+document.onmousedown=click;
+
+document.oncontextmenu = new Function("return false;");
+
+function bookmarkit()
+{
+	window.external.addFavorite(parent.location,"..::中国民生银行网上银行系统::..") ;
+}
+</script>
+
+</head>
+
+
+<script language="JavaScript">
+
+function assertNull( strObject, strMsg)
+{
+	var varTmp;
+	varTmp = document.all( strObject).value;
+
+	if( ( varTmp == null)||( varTmp == ""))
+	{
+		document.all( strObject).focus();
+		document.all( strObject).select();
+		alert( strMsg);
+		return true;
+	}
+
+	return false;
+}
+
+function checkGuiBin()
+{
+	var url = "/weblogic/servlets/EService/CSM/PrivateLogin?channelID=''&PriErrPage=PriErrPage.html";
+	if(person2.style.display =='none')
+	{
+		if( bSubmit == true)
+		{
+			alert("验证码已经过期，请您刷新页面");
+			return false;
+		}
+		document.eservice.loginPwd.value = getPValue0();
+
+		if( isNull( document.eservice.account, "请输入民生卡号"))
+		{
+			return false;
+		}
+		if( document.eservice.loginPwd.value == "")
+		{
+			alert("	");
+			return false;
+		}
+
+		if( isNull( document.eservice.CheckCode, "请输入附加码"))
+		{
+			return false;
+		}
+	}
+	else
+	{
+		var userid = document.getElementById("userid");
+		if( userid.options.length == 0 || userid.selectedIndex == -1 )
+		{
+			alert("请确认您使用的浏览器上已安装个人证书或插入了UKey，之后在客户别名列表中选择您要使用的客户");
+			return false;
+		}
+		if( assertNull( "password", "请输入登录密码") )
+		{
+			return false;
+		}
+		if( DigitalSigMsg2() == false )
+		{
+			return false;
+		}
+	}
+	document.eservice2.action = url;
+	document.eservice2.target = "wait";
+
+	return true;
+}
+
+function strSplit(info,key)
+{
+	var endIndex = 0;
+	var list = new Array();
+	while( -1 != (endIndex=info.indexOf(key)) )
+	{
+		list[list.length] = info.substring(0,endIndex);
+		info = info.substring(endIndex+key.length);
+	}
+	list[list.length] = info;
+	
+	return list;
+}
+
+function checkXiaoWei(father)
+{
+	var info = "";
+	var CommVList = strSplit(document.getElementById("CommValue").value,"|");
+	var url = "https://smes.cmbc.com.cn/j_spring_security_check";
+	if(person2.style.display =='none')
+	{//为与现有页面兼容
+		return false;
+	}
+	else
+	{
+		var userid = document.getElementById("userid");
+		if( userid.options.length == 0 || userid.selectedIndex == -1 )
+		{
+			alert("请确认您使用的浏览器上已安装个人证书或插入了UKey，之后在客户别名列表中选择您要使用的客户");
+			return false;
+		}
+		if( assertNull( "password", "请输入登录密码") )
+		{
+			return false;
+		}
+		if( DigitalSigMsg2() == false )
+		{
+			return false;
+		}
+		if( document.getElementById("CSP").value != "1" )
+		{
+			alert("商户版网银只允许U宝证书客户使用，请插入您的UKey，之后在客户别名列表中选择该证书对应的客户");
+			return false;
+		}
+		//密码|客户号|数字签名明文|数字签名密文|snid|csp|pwdFlag
+		info = document.getElementById("password").value;
+		info += ","+userid.value;
+		info += ","+document.getElementById("CommValue").value;
+		info += ","+document.getElementById("DSData").value;
+		info += ","+CommVList[1];
+		info += ","+(document.getElementById("CSP").value == "1" ?"CSP":"");
+		info += ",0,WY";
+		document.getElementById("j_username").value = userid.value;
+		document.getElementById("j_password").value = info;
+		
+		//alert(document.getElementById("j_username").value);
+		//alert(document.getElementById("j_password").value);
+	}
+	document.eservice2.action = url;
+	document.eservice2.target = "_top";
+	
+	return true;
+}
+
+var checkOK = false;
+
+function check()
+{
+	if( !checkOK )
+	{ return false; }
+
+	if (issubmited==true)
+	{
+		alert("正在登录，请稍候");
+		return false;
+	}
+
+	issubmited=true;
+	return openWin();
+}
+
+function PwdEditSubmit()
+{
+	document.eservice.loginPwd.value = getPValue0();
+
+	if( isNull( document.eservice.account, "请输入卡号"))
+	{
+		return false;
+	}
+
+	if( document.eservice.loginPwd.value == "")
+	{
+		alert("请输入查询密码");
+		return false;
+	}
+
+	if( isNull( document.eservice.CheckCode, "请输入附加码"))
+	{
+		return false;
+	}
+
+	return true;
+
+}
+
+</script>
+
+
+<SCRIPT LANGUAGE=javascript FOR=DPwdEdit1 EVENT=Focus>
+
+<!--
+focusPwd();
+//-->
+
+</SCRIPT>
+
+<SCRIPT LANGUAGE=javascript FOR=DPwdEdit1 EVENT=Return>
+
+<!--
+PwdEditSubmit();
+//-->
+
+</SCRIPT>
+
+<script LANGUAGE="JavaScript">
+
+function goFW(str)
+{
+	var cust_id = '';
+	var i,j;
+
+	if(str == 'K'){
+		if( document.eservice2.userid.length <= 0 || -1 == (i=findDNMsgByCustID(document.eservice2.userid.value)) ) {
+			alert("请确认您使用的浏览器上已安装个人证书或插入了UKey，之后在客户别名列表中选择您要使用的客户");
+			return false;
+		}else{
+			for( j=0; j < DNMsgList[i][4].length; j++ )
+			{
+				if( (DNMsgList[i][4])[j][0] == document.eservice2.userid.value )
+				{
+					cust_id = (DNMsgList[i][4])[j][1];
+					break;
+				}
+			}
+			
+			if( j == DNMsgList[i][4].length )
+			{
+				alert("请确认您使用的浏览器上已安装个人证书或插入了UKey，之后在客户别名列表中选择您要使用的客户");
+				return false;
+			}
+		}
+        }else{
+		if( isNull( document.eservice.account, "请输入民生卡号")) {
+			return false;
+		}else{
+			cust_id = document.eservice.account.value;
+		}
+	}
+
+	objNewWin = window.open( '/weblogic/servlets/EService/CSM/PersonInfo?type='+str+'&custid='+cust_id, "main_cmbc", "scrollbars=no,status=yes,resizable=yes");
+	if( document.all)
+	{
+		objNewWin.moveTo( 100, 100);objNewWin.resizeTo( 750, 500);
+	}
+
+	objNewWin.focus();
+}
+
+</script>
+
+<script>
+
+function KeyDown()
+{
+	if((window.event.altKey)&&((window.event.keyCode==37)||(window.event.keyCode==39))) event.returnValue=false;
+	if((event.keyCode==116)||(window.event.keyCode==122)) {event.keyCode=0;event.returnValue=false;} 
+	if(((event.shiftKey)&&(event.keyCode==121))||((event.ctrlKey)&&(event.keyCode==78))||((event.ctrlKey)&&(event.keyCode==68))) { event.returnValue=false;}
+}
+
+document.onkeydown=KeyDown;
+
+</script>
+
+<script language="javascript">
+
+var acceptWin = null;
+function openDoyooCustomChat()
+{
+	if( acceptWin != null && acceptWin.open && !acceptWin.closed )
+	{
+		alert('已经打开了一个聊天窗口');
+		return;
+	}
+
+	var url = "http://e-service.cmbc.com.cn/chat/chat/p.do?c=1&g=9";
+
+	var param = "height=460,width=690,directories=no," + "location=no,menubar=no," + "resizeable=no,status=no,toolbar=no,top=100,left=200";
+	
+	acceptWin = window.open(url,"", param);
+}
+
+</script>
+<SCRIPT>
+var newWindow;//定义一个窗口，有利于窗口间的通讯
+function makeNewWindow() {
+   if (!newWindow || newWindow.closed) {
+        var url = "http://www.cmbc.com.cn/safe/shadu.shtml";
+        var width = 500;
+        var height = 300;
+        var left = parseInt((screen.availWidth/2) - (width/2));//屏幕居中
+        var top = parseInt((screen.availHeight/2) - (height/2));
+        var windowFeatures = "width=" + width + ",height=" + height + ",status,resizable,left=" + left + ",top=" + top + "screenX=" + left + ",screenY=" + top+",scrollbars=no,status=yes,resizable=no,location=no";
+        newWindow = window.open(url, "subWind", windowFeatures);
+    } else {
+        // window is already open, so bring it to the front
+        newWindow.focus();
+    }
+}
+
+</SCRIPT>
+
+<script language="javascript">
+
+var url = "/weblogic/servlets/EService/CSM/QueryUserServlet";
+var errCode = 0;
+var retry = 0;
+var maxRetry = 50;
+var flashTime = 2000;
+var recvTimeout = 40000;
+var DNMsgList = new Array();
+
+
+function init()
+{
+	errCode = 0;
+	retry = 0;
+	
+	try
+	{
+		document.getElementById("DownLoadDiv").style.diaplay = "none";
+		document.getElementById("CryptoAgency1").CFCA_Initialize("CFCALicense.dll");
+		document.getElementById("CryptoAgency1").CFCA_InitKeyDetector();
+		testDNList();
+		writeLog("INIT SUCCEED");
+	}
+	catch(e)
+	{
+		showDownloadLine();
+		showDownLoad();
+		writeLog("INIT ERR:");
+		writeLog(e.message);
+		errCode = 3;
+	}
+}
+
+function showDownloadLine()
+{
+	var downloadDiv = document.getElementById("DownLoadDiv");
+	var downloadTab = document.getElementById("DownLoadTable");
+	var formBody = document.getElementById("formBody");
+	
+	SetOffset(downloadDiv,formBody,0,1);
+	downloadDiv.width = formBody.offsetWidth;
+	downloadTab.width = formBody.offsetWidth;
+	downloadDiv.style.display = "";
+}
+
+function showDownLoad()
+{
+	document.getElementById("td_cn").style.display = "none";
+	document.getElementById("td_cn_download").style.display = "";
+	document.getElementById("td_name").style.display = "none";
+	document.getElementById("td_name_empty").style.display = "";
+}
+
+function testDNList()
+{
+	updateCustInfoList();
+
+	if( 0 == errCode )
+	{
+		//window.setTimeout(testDNList,flashTime);
+	}
+	else if( 1 == errCode )
+	{
+		if( -1 != ajax_lastErr.indexOf("AJAXERR01") )
+		{
+			alert("建立通讯连接失败，原因是\n"+ajax_lastErr+"请将浏览器的安全级别恢复为“默认设置”或详见“登录指引”。");
+		}
+		else
+		{
+			alert("建立通讯连接失败，原因是\n"+ajax_lastErr+"建议使用微软自带的IE浏览器。");
+		}
+	}
+	else if( 2 == errCode )
+	{
+		errCode = 0;
+		alert("网络通讯失败,请检查网络连接是否正常!");
+		//window.setTimeout(testDNList,flashTime);
+	}
+	else if( 3 == errCode )
+	{
+		writeLog("您尚未安装或禁用了最新的签名控件，请点击页面下方的'个人交易签名控件下载'链接并按照说明文档安装");
+	}
+}
+
+function getalldncsp_new(cfcaObj)
+{
+	try{
+		var strresult="",stry,strm,strd;
+		var success = false;
+		var strdn,strcsp,strtime,strsn;
+		var i=0,n=0,j=0;
+		var da1;
+		var strtmp,strtmpcert;
+		//在这里调用原有方法获得不规则时间的证书综合信息
+		var strall = cfcaObj.CFCA_GetAllCertDNCSP();
+		if(strall.length<1)
+			return strall;
+		//将证书综合信息切割成单个证书信息数组
+		var strtmpinfo = strall.split("\\");
+		n = strtmpinfo.length;
+		if(n == 0)
+			return "format_err";
+		//开始循环处理每个证书
+		for(i=0;i<n;i++)
+		{
+			strtmp = strtmpinfo[i];
+			j = strtmp.indexOf("*");
+			if(j==-1)
+				continue;
+			//获得证书dn
+			strdn = strtmp.substring(0,j);
+			strtmp = strtmp.substring(j+1,strtmp.length);
+
+			j = strtmp.indexOf("#");
+			if(j==-1)
+				continue;
+			//获得证书csp名称
+			strcsp = strtmp.substring(0,j);
+			strtmp = strtmp.substring(j+1,strtmp.length);
+
+			j = strtmp.indexOf("$");
+			if(j==-1)
+				continue;
+			//获得证书时间
+			strtime = strtmp.substring(0,j);
+			strtmp = strtmp.substring(j+1,strtmp.length);
+			
+			//最后获得证书SN
+			strsn = strtmp;
+			//先清理一遍证书句柄
+			cfcaObj.CFCA_ClearUseCerts(true);
+
+			//隐式选择证书
+			success = cfcaObj.CFCA_AddUseCertBySubject(true,strdn);
+				
+			if(success != false)
+			{
+				//获得公钥证书内容
+				strtmpcert = cfcaObj.CFCA_GetCertContent(true,0);
+				//获得证书截止日期
+				da1 =new Date( cfcaObj.CFCA_GetCertValidDateTo(strtmpcert));
+				//将证书截止日期规范化处理
+				stry = ""+da1.getYear();
+				//如果是个位数就加0
+				if((da1.getMonth()+1)<10)
+					strm = "0"+(da1.getMonth()+1);
+				else strm = ""+(da1.getMonth()+1);
+				if(da1.getDate()<10)
+					strd = "0"+da1.getDate();
+				else strd = ""+da1.getDate();
+				strtime = stry+""+strm+""+strd;
+			}
+			//如果不是最后一张证书，就添加切割符：\
+			if(i!=n-1)
+			{
+				strsn = strsn+"\\";
+			}
+			//拼接新的证书综合信息字符串
+			strresult+=strdn+"*"+strcsp+"#"+strtime+"$"+strsn;
+		}
+	}catch(e)
+	{
+		strresult="";
+	}finally{
+		cfcaObj.CFCA_ClearUseCerts(true);
+	}
+	//返回新的综合信息字符串
+	return strresult;
+}
+
+function updateCustInfoList()
+{
+	var cn = document.getElementById("cn");
+	var cfcaObj = document.getElementById("CryptoAgency1");
+	var dnInfoDate = document.getElementById("DNInfoDate");
+	var selectIndex = cn.selectedIndex;
+	var dncspList = "";
+
+	try
+	{
+		dncspList = getalldncsp_new(cfcaObj);//cfcaObj.CFCA_GetAllCertDNCSP();
+	}
+	catch(e)
+	{
+		dncspList = "";
+	}
+
+	var i,j;
+	var DNList = splitDNList(dncspList);
+	var findList = new Array(DNMsgList.length);
+	
+	if( null == DNList )
+	{
+		return;
+	}
+
+	for( i=0; i < DNList.length; i++ )
+	{
+		for( j=0; j < DNMsgList.length; j++ )
+		{
+			if( DNMsgList[j][0] == DNList[i][0] )
+			{
+				DNMsgList[j][2] = 1;
+				findList[j] = 1;
+
+				if( DNMsgList[j][6] != DNList[i][2] || DNMsgList[j][7] != DNList[i][3] )
+				{
+					DNMsgList[j][5] = DNList[i][1];
+					DNMsgList[j][6] = DNList[i][2];
+					DNMsgList[j][7] = DNList[i][3];
+					if( -1 != selectIndex && 0 != cn.options.length && DNMsgList[j][0] == getSelectValue(cn,selectIndex) )
+					{
+						dnInfoDate.innerHTML = DNMsgList[j][6];
+						changeSelectedUser();
+					}
+				}
+
+				break;
+			}
+		}
+
+		if( j == DNMsgList.length )
+		{
+			var newIndex = DNMsgList.length;
+
+			DNMsgList[newIndex] = new Array();
+
+			DNMsgList[newIndex][0] = DNList[i][0];
+			DNMsgList[newIndex][1] = 0;
+			DNMsgList[newIndex][2] = 1;
+			DNMsgList[newIndex][3] = 0;
+			DNMsgList[newIndex][4] = new Array();
+			DNMsgList[newIndex][5] = DNList[i][1];
+			DNMsgList[newIndex][6] = DNList[i][2];
+			DNMsgList[newIndex][7] = DNList[i][3];
+			
+			writeLog("INERT DNMsgList DN:"+DNMsgList[newIndex][0]+"|CSP:"+DNMsgList[newIndex][5]+"|ENDDATE:"+DNMsgList[newIndex][6]+"|SN:"+DNMsgList[newIndex][7]+" AT["+new Date().getTime()+"]");
+		}
+	}
+
+	for( i=0; i < findList.length; i++ )
+	{
+		if( 1 != findList[i] )
+		{
+			DNMsgList[i][2] = 0;
+		}
+	}
+
+	getCustInfo();
+
+	showCNInfo();
+}
+
+function splitDNList(DNList)
+{
+	var startIndex = 0;
+	var endIndex = 0;
+	var index = 0;
+	var DNArray = new Array();
+
+	/*拆分的字符串格式:DN1*CSP1#DATE1$REF1\\*/
+	while( endIndex < DNList.length && -1 != (endIndex = DNList.indexOf("*",endIndex)) )
+	{
+		DNArray[index] = new Array();
+		
+		DNArray[index][0] = DNList.substring(startIndex,endIndex);
+
+		startIndex = endIndex+1;
+		endIndex = DNList.indexOf("#",endIndex);
+		if( -1 == endIndex )
+		{
+			return null;
+		}
+		DNArray[index][1] = DNList.substring(startIndex,endIndex);
+
+		startIndex = endIndex+1;
+		endIndex = DNList.indexOf("$",endIndex);
+		if( -1 == endIndex )
+		{
+			return null;
+		}
+		DNArray[index][2] = DNList.substring(startIndex,endIndex);
+
+		startIndex = endIndex+1;
+		endIndex = DNList.indexOf("\\",endIndex);
+		if( -1 == endIndex )
+		{
+			DNArray[index][3] = DNList.substring(startIndex,DNList.length);
+			break;
+		}
+		else
+		{
+			DNArray[index][3] = DNList.substring(startIndex,endIndex);
+			startIndex = endIndex+1;
+		}
+		
+		index++;
+	}
+	
+	return DNArray;
+}
+
+function findDNMsgByCustID(custID)
+{
+	var i,j;
+	
+	for( i=0; i < DNMsgList.length; i++ )
+	{
+		if( 1 != DNMsgList[i][1] )
+		{
+			continue;
+		}
+		
+		for( j=0; j < DNMsgList[i][4].length; j++ )
+		{
+			if( (DNMsgList[i][4])[j][0] == custID )
+			{
+				return i;
+			}
+		}
+	}
+	
+	return -1;
+}
+
+function findDNMsg(dn)
+{
+	var i;
+
+	for( i=0; i < DNMsgList.length; i++ )
+	{
+		if( DNMsgList[i][0] == dn )
+		{
+			return i;
+		}
+	}
+
+	return -1;
+}
+
+function recvCustInfo(status,responseText,responseXML)
+{
+	if( 200 == status )
+	{
+		writeLog("response AT["+new Date().getTime()+"] DATA["+responseText+"]");
+		
+		retry = 0;
+
+		var i,j;
+		var dnInfo = responseXML.getElementsByTagName("DNInfo");
+		var dnSize = dnInfo.length;
+
+		for( i=0; i < dnSize; i++ )
+		{
+			var dnIndex = findDNMsg(dnInfo[i].getElementsByTagName("DN")[0].firstChild.data);
+			if( dnIndex < 0 )
+			{
+				continue;
+			}
+
+			if( DNMsgList[dnIndex][1] != 2 )
+			{
+				continue;
+			}
+
+			var custInfo = dnInfo[i].getElementsByTagName("CustInfo");
+			if( null == custInfo || 0 == custInfo.length )
+			{
+				DNMsgList[dnIndex][1] = 3;
+				continue;
+			}
+			var custSize = custInfo.length;
+
+			for( j=0; j < custSize; j++ )
+			{
+				if( null == custInfo[j].getElementsByTagName("CustID")[0].firstChild )
+				{
+					continue;
+				}
+
+				(DNMsgList[dnIndex][4])[j] = new Array();
+				(DNMsgList[dnIndex][4])[j][0] = custInfo[j].getElementsByTagName("CustID")[0].firstChild.data;
+				if( null == custInfo[j].getElementsByTagName("AliasID")[0].firstChild )
+				{
+					(DNMsgList[dnIndex][4])[j][1] = "";
+				}
+				else
+				{
+					(DNMsgList[dnIndex][4])[j][1] = custInfo[j].getElementsByTagName("AliasID")[0].firstChild.data;
+				}
+			}
+			DNMsgList[dnIndex][1] = 1;
+		}
+		
+		showCNInfo();
+	}
+	else if( 500 == status )
+	{
+		if( maxRetry > retry )
+		{
+			retry++;
+		}
+		else
+		{
+			retry = 0;
+			errCode = 2;
+		}
+	}
+}
+
+function getCustInfo()
+{
+	var msgBody = "";
+	var i;
+
+	for( i=0; i < DNMsgList.length; i++ )
+	{
+		if( 1 == DNMsgList[i][2] )
+		{
+			if( 0 == DNMsgList[i][1] )
+			{
+				DNMsgList[i][1] = 2;
+				DNMsgList[i][3] = (new Date()).getTime();
+
+				msgBody += DNMsgList[i][0]+"|";
+			}
+			else if( 2 == DNMsgList[i][1] )
+			{
+				if( DNMsgList[i][3] < (new Date()).getTime()-recvTimeout )
+				{
+					DNMsgList[i][1] = 0;
+				}
+			}
+		}
+	}
+
+	if( "" != msgBody )
+	{
+		msgBody = "DNLIST="+msgBody.substring(0,msgBody.length-1);
+
+		if( ajax_sendRequest("POST",url,recvTimeout,msgBody,recvCustInfo) )
+		{
+			if( retry >= maxRetry )
+			{
+				errCode = 2;
+				retry = 0;
+			}
+		}
+		else
+		{
+			errCode = 1;
+		}
+	}
+}
+
+function changeSelectedCN()
+{
+	var cn = document.getElementById("cn");
+	var userid = document.getElementById("userid");
+	var useridDiv = document.getElementById("useridDiv");
+	var dnInfoDiv = document.getElementById("DNInfoDiv");
+	var dnInfoTital = document.getElementById("DNInfoTital");
+	var dnInfoOperation = document.getElementById("DNInfoOperation");
+	var dnInfoDate = document.getElementById("DNInfoDate");
+	var selectIndex = cn.selectedIndex;
+	var dn = "";
+	var dnIndex = -1;
+	var i;
+
+	if( 0 == cn.options.length || -1 == selectIndex )
+	{
+		userid.selectedIndex = -1;
+		userid.length = 0;
+		userid.style.display = "none";
+		useridDiv.innerHTML = "";
+		useridDiv.style.display = "";
+	}
+	else
+	{
+		dn = getSelectValue(cn,selectIndex);
+		dnIndex = findDNMsg(dn);
+		if( -1 == dnIndex )
+		{
+			userid.selectedIndex = -1;
+			userid.length = 0;
+
+			useridDiv.innerHTML = "";
+			useridDiv.style.display = "";
+			userid.style.display = "none";
+
+			dnInfoTital.innerHTML = "";
+			dnInfoOperation.innerHTML = "";
+			dnInfoDate.innerHTML = "";
+		}
+		else
+		{
+			userid.length = 0;
+			for( i=0; i < (DNMsgList[dnIndex][4]).length; i++ )
+			{
+				userid.options[i] = new Option((DNMsgList[dnIndex][4])[i][1],(DNMsgList[dnIndex][4])[i][0]);
+			}
+			userid.selectedIndex = 0;
+
+			if( 1 == (DNMsgList[dnIndex][4]).length )
+			{
+				useridDiv.innerHTML = (DNMsgList[dnIndex][4])[0][1];
+				useridDiv.style.display = "";
+				userid.style.display = "none";
+			}
+			else
+			{
+				useridDiv.style.display = "none";
+				userid.style.display = "";
+			}
+
+			dnInfoTital.innerHTML = getCN(dn);
+			dnInfoOperation.innerHTML = getO(dn);
+			dnInfoDate.innerHTML = DNMsgList[dnIndex][6];
+		}
+		if( "" == dnInfoDiv.style.display )
+		{
+			showDNInfoBox();
+		}
+	}
+
+	changeSelectedUser();
+}
+
+function changeSelectedUser()
+{
+	var userid = document.getElementById("userid");
+	var selectIndex = userid.selectedIndex;
+
+	if( 0 == userid.options.length || -1 == selectIndex )
+	{
+		document.all("CommDN").value = "";
+		document.all("CSP").value = "";
+		document.all("CommValue").value = "";
+
+		return;
+	}
+
+	var dnIndex = findDNMsgByCustID(getSelectValue(userid,selectIndex));
+	if( -1 == dnIndex )
+	{
+		return;
+	}
+	
+	document.all("CommDN").value = DNMsgList[dnIndex][0];
+	document.all("CSP").value = (-1 != DNMsgList[dnIndex][5].indexOf("Microsoft"))?"0":"1";
+	document.all("CommValue").value = getSelectValue(userid,selectIndex)+"|"+DNMsgList[dnIndex][7]+"|"+DNMsgList[dnIndex][6]+"|Qhz3ON1a0K";
+}
+
+function getCN(dn)
+{
+	var endIndex = dn.indexOf(",");
+	if( 0 >= endIndex )
+	{
+		return dn;
+	}
+	else
+	{
+		return dn.substring(3,endIndex);
+	}
+}
+
+function getO(dn)
+{
+	var startIndex = dn.indexOf("O=");
+	if( 0 > startIndex )
+	{
+		return dn;
+	}
+
+	startIndex+=2;
+	var endIndex = dn.indexOf(",",startIndex);
+
+	if( startIndex >= endIndex )
+	{
+		return dn;
+	}
+
+	return dn.substring(startIndex,endIndex);
+}
+
+function showCNInfo()
+{
+	var i,r;
+	var isNewSelected = 0;
+	var cn = document.getElementById("cn");
+
+	for( i=0; i < DNMsgList.length; i++ )
+	{
+		if( 1 == DNMsgList[i][1] )
+		{
+			for( r=0; r < cn.options.length; r++ )
+			{
+				if( getSelectValue(cn,r) == DNMsgList[i][0] )
+				{
+					break;
+				}
+			}
+
+			if( 1 == DNMsgList[i][2] )
+			{
+				if( r == cn.options.length )
+				{
+					isNewSelected = 1;
+
+					insertOption(cn,DNMsgList[i][0],getCN(DNMsgList[i][0]),0);
+				}
+			}
+			else
+			{
+				if( r < cn.options.length )
+				{
+					if( true == cn.options[r].selected )
+					{
+						isNewSelected = 1;
+					}
+
+					removeOption(cn,r)
+				}
+			}
+		}
+	}
+
+	if( 1 == isNewSelected )
+	{
+		if( 0 == cn.options.length )
+		{
+			cn.selectedIndex = -1;
+			showTimeout();
+		}
+		else
+		{	
+			cn.selectedIndex = 0;
+		}
+
+		changeSelectedCN();
+	}
+}
+
+function getSelectValue(selectObj,index)
+{
+	var value = "";
+	
+	if( -1 == index || index >= selectObj.options.length )
+	{ value = "null"; }
+	else
+	{
+		value = selectObj.options[index].value;
+		if( !value )
+		{
+			if( selectObj.options[index].attributes['value'] )
+			{ value = selectObj.options[index].attributes['value'].nodeValue; }
+			else
+			{ value = "null"; }
+		}
+	}
+	
+	return value;
+}
+
+function insertOption(selectObj,value,text,index)
+{
+	var newOption = new Option(text,value);
+	var i;
+
+	for( i=selectObj.options.length; i > index; i-- )
+	{
+		selectObj.options[i] = new Option(selectObj.options[i-1].text,selectObj.options[i-1].value);
+	}
+	selectObj.options[index] = newOption;
+}
+
+function removeOption(selectObj,index)
+{
+	var i;
+
+	for( i=index; i < selectObj.options.length-1; i++ )
+	{
+		selectObj.options[i] = new Option(selectObj.options[i+1].text,selectObj.options[i+1].value);
+	}
+	selectObj.length = selectObj.length-1;
+}
+
+function writeLog(text)
+{
+	var logObj = document.getElementById("log");
+	if( logObj )
+	{
+		logObj.value = logObj.value+"\n"+text;
+	}
+}
+</script>
+
+
+<script>
+
+function DigitalSigMsg2()
+{
+	var commDN = document.all("CommDN");
+	var commValue = document.all("CommValue");
+	var commObj = document.all("CommObject");
+	var cfcaObj = document.getElementById("CryptoAgency1");
+	var space = document.all("space");
+
+	var value = "";
+	
+	try
+	{
+		cfcaObj.CFCA_Initialize("CFCALicense.dll"); 
+
+		cfcaObj.CFCA_ClearUseCerts(true);
+		if( false == cfcaObj.CFCA_AddUseCertBySubject(true,commDN.value) )
+		{
+			alert("设置签名证书失败!");
+			return false;
+		}
+
+		if( (null == commObj) || ("" == commObj.value) )
+		{
+			value = commValue.value;
+		}
+		else
+		{
+			value = ComposeData(commObj.value);
+		}
+
+                var re=new RegExp(space.value,"g");
+                value=value.replace(re,"");
+                
+                document.all("CommValue").value = value;
+
+		cfcaObj.CFCA_SetAlgorithm(0,"1.3.14.3.2.26");
+		value = cfcaObj.CFCA_SignMessageDetached(value,1);
+
+		document.all("DSData").value = value;
+	}
+	catch(e)
+	{
+		alert("签名失败，签名控件返回错误信息:\n"+e.number+":"+e.message);
+		return false;
+	}
+	return true;
+}
+
+/////////////////////////////////////////////////////////////////////
+var showTimer = null;
+var showTime = 1000;
+
+function setShowTimeout(timeValue)
+{
+	if( null != showTimer )
+	{
+		window.clearTimeout(showTimer);
+	}
+
+	if( -1 != timeValue )
+	{
+		showTimer = window.setTimeout(showTimeout,timeValue);
+	}
+}
+
+function showTimeout()
+{
+	var dnInfoDiv = document.getElementById("DNInfoDiv");
+	
+	dnInfoDiv.style.display = "none";
+}
+
+function showDNInfoBox()
+{
+	var dnInfoDiv = document.getElementById("DNInfoDiv");
+	var dnInfoTital = document.getElementById("DNInfoTital");
+	var dnInfoOperation = document.getElementById("DNInfoOperation");
+	var dnInfoDate = document.getElementById("DNInfoDate");
+	var cn = document.getElementById("cn");
+	var charWidth = floatToInt(dnInfoTital.innerHTML.length*6.5);
+
+	if( "" == dnInfoTital.innerHTML )
+	{
+		dnInfoDiv.style.display = "none";
+		return;
+	}
+
+	if( 180 < charWidth )
+	{
+		dnInfoTital.width = charWidth+"px";
+		dnInfoOperation.width = charWidth+"px";
+		dnInfoDate.width = charWidth+"px";
+	}
+	else
+	{
+		dnInfoTital.width = "180px";
+		dnInfoOperation.width = "180px";
+		dnInfoDate.width = "180px";
+	}
+
+	SetOffset(dnInfoDiv,cn,50,-70);
+	dnInfoDiv.style.display = "";
+}
+
+function keepShow()
+{
+	var cn = document.getElementById("cn");
+
+	if( 0 != cn.options.length )
+	{
+		setShowTimeout(-1);
+		showDNInfoBox();
+	}
+}
+
+function waitClear()
+{
+	setShowTimeout(showTime);
+}
+
+function floatToInt(value)
+{
+	var temp = value+"";
+	if( -1 != temp.indexOf(".") )
+	{
+		temp = temp.substring(0,temp.indexOf("."));
+	}
+	return temp*1;
+}
+
+function GetOffset(obj,attr)
+{
+	var offset = 0;
+	while( obj )
+	{
+		offset += obj[attr];
+		obj = obj.offsetParent;
+	}
+	return offset*1;
+}
+
+function SetOffset(obj,lookAt,leftOffset,topOffset)
+{
+	var baseLeft = GetOffset(lookAt,"offsetLeft");
+	var baseTop = GetOffset(lookAt,"offsetTop");
+
+	obj.style.left = (baseLeft+leftOffset)+"px";
+	obj.style.top = (baseTop+topOffset)+"px";
+}
+</script>
+<SCRIPT language="javascript" for=CryptoAgency1 event=OnCKeyPlugIn>
+	//alert("in");
+	window.setTimeout(testDNList,flashTime);
+</script>
+<SCRIPT language="javascript" for=CryptoAgency1 event=OnCKeyPullOut>
+	window.setTimeout(testDNList,flashTime);
+</script>
+
+
+<div id="DNInfoDiv" onmouseenter="keepShow()" onmouseleave="waitClear()" style="display:none;position:absolute">
+	<table id="DNInfoTable" bgcolor="#FFFFFF" style="border-left:#000000 1px ridge;border-top:#000000 1px ridge;border-right:#000000 1px ridge;border-bottom:#000000 1px ridge">
+		<tr>
+			<td width="60px" style="word-break:break-all">证书主题:</td>
+			<td width="180px" style="word-break:break-all" id="DNInfoTital"></td>
+		</tr>
+		<tr>
+			<td width="60px" style="word-break:break-all">颁发者:</td>
+			<td width="180px" style="word-break:break-all" id="DNInfoOperation"></td>
+		</tr>
+		<tr>
+			<td width="60px" style="word-break:break-all">到期日:</td>
+			<td width="180px" style="word-break:break-all" id="DNInfoDate"></td>
+		</tr>
+	</table>
+</div>
+
+<div id="DownLoadDiv" onmouseenter="changeColor('DownLoadTable','#f6ff15')" onmouseleave="changeColor('DownLoadTable','#ffbc40')" style="display:none;position:absolute">
+	<a href="#" onclick="window.open('/weblogic/safegoto.jsp?link=K19','','toolbar=no,location=no,directories=no,status=no,menubar=no')">
+	<table id="DownLoadTable" bgcolor="#ffbc40" border="0px">
+		<tr>
+			<td style="word-break:break-all" align="center">民生安全控件已更新，请点此安装最新安全控件</td>
+		</tr>
+	</table>
+	</a>
+</div>
+
+<body  onLoad="init();" id="formBody">
+
+<br>
+<br>
+<br>
+<br>
+<table width="550"  border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td><img src="/images/login/logo.gif" width="194" height="40"><img src="/images/login/llogin_noname.gif" width="332" height="40"></td>
+  </tr>
+  <tr>
+    <td background="/images/login/line.gif">　</td>
+  </tr>
+</table>
+
+<table width="550"  border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td height="18">&nbsp;</td>
+  </tr>
+</table>
+
+<table width="550"  border="0" align="center" cellpadding="0" cellspacing="0" background="/images/login/bg.gif">
+  <tr>
+    <td><img src="/images/login/bg0.gif" width="1" height="33"></td>
+    <td align="right"><img src="/images/login/name_pri.gif" width="251" height="33"></td>
+  </tr>
+</table>
+
+<table width="550"  border="0" align="center" cellpadding="0" cellspacing="1" bgcolor="#82C8D1" height="324">
+  <tr>
+    <td height="311" valign="top" bgcolor="#0A94A4" class="bg">
+      <br>
+      <table width="420" border="0" align="center" cellpadding="4" cellspacing="1" id="person1" height="274">
+	<tr>
+          <td height="19">　</td>
+	</tr>
+	<tr>
+          <td height="208">
+            <table id="person2" width="420" border="0" align="center" cellpadding="4" cellspacing="1" style="display=''" height="219">
+              <form name="eservice2" method="post" onSubmit="return check();" action='' target="cmbc_main">
+
+		<input type=hidden name=space value=&nbsp;>
+
+		<!-签名专用控件-->
+		<input type="hidden" name="CommDN" value=""></input>
+		<input type="hidden" name="CommObject" value=""></input>
+		<input type="hidden" name="CommValue" value=""></input>
+		
+		<script language="javascript">
+			InitCertKitAx();
+		</script>
+		<!-签名专用控件-->
+		<input type="hidden" name="CSP" value=""></input>
+
+		<tr>
+                  <td colspan="4" align="center">
+			<input type="hidden"  name="logintype" value="k"></input>
+			<input type="hidden" name="txcode" value="999900"></input>
+			<input type="hidden" name="j_username" value=""></input>
+			<input type="hidden" name="j_password" value=""></input>
+
+			<table height="117" border="0" cellpadding="0" cellspacing="0">
+				<tr>
+					<td width="95" height="22" nowrap class="style1">= 选择证书</td>
+					<td height="24" id="td_cn">
+						<select id="cn" name="cn" size="0" style="width:157px" onmouseenter="keepShow()" onmouseleave="waitClear()" onChange="changeSelectedCN()">
+						</select>
+					</td>
+					<td height="24" style="display:none"  nowrap class="style1" id="td_cn_download">
+						<a href="#" onclick="window.open('/weblogic/safegoto.jsp?link=K19','','toolbar=no,location=no,directories=no,status=no,menubar=no')"><B><font color="#ffbc40">请点此安装安全控件</font></B></a>
+					</td>
+					<td height="22">　</td>
+					<td colspan="2" height="22"><a href="/weblogic/safegoto.jsp?link=K17" target="_blank">证书无法选择?</a></td>
+				</tr>
+				<tr>
+					<td width="95" height="20" nowrap class="style1">= 客户别名</td>
+					<td height="21" valign="bottom" id="td_name">
+						<select id="userid" name="userid" size="0" style="width:157px;display:none;" onChange="changeSelectedUser()">
+						</select>
+						<div id="useridDiv" style="height:19px;color:#FFFFFF;"></div>
+					</td>
+					<td height="21" valign="bottom" style="display:none" id="td_name_empty">
+						&nbsp;
+					</td>
+					<td height="22">　</td>
+					<td colspan="2" height="22"><a title="客户别名：默认是您的客户号,&#10;登录后通过”客户管理->修改个人资料”&#10;功能进行修改,以方便识别登录网银." href="#" >什么是客户别名?</td>
+				</tr>
+				<tr>
+					<td height="22" class="style1">= 登录密码</td>
+					<td height="24">
+						<input name="password" type="password" class="inputText" size="18" maxlength="8" value="" oncopy="return false;" oncut="return false;"></td>
+					<td width="12" align="center" class="style1" height="22">　</td>
+					<td align="left" height="22"><!--<input name="imageField3" type="image" src="/images/login/submit.gif" width="47" height="17" border="0" >--></td>
+					<td height="22"><!--<img src="/images/login/close.gif" width="47" height="17" onClick="parent.close();" >--></td>
+				</tr>
+				<tr valign="bottom">
+					<td colspan="5" height="40" valign="bottom" class="style1" align="center">
+						<input type="image" src="/images/login/loginPriEBank.gif" height="25" onClick="checkOK = checkGuiBin();"/>&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="image" src="/images/login/loginXiaoWei.gif" height="25" onClick="checkOK = checkXiaoWei();"/>
+					</td>
+				</tr>
+				<tr valign="bottom">
+					<td height="15" colspan="5" class="style1"></td>
+				</tr>
+				<tr valign="middle">
+					<td height="18" colspan="5" class="style1">*&nbsp;登录前请确认您连接的是民生银行网上银行&nbsp;<img src="/images/login/fw.gif" width="60" height="17" onClick="goFW('K');"></td>
+				</tr>	
+				<tr valign="middle">
+					<td height="18" colspan="5" class="style1"><span class="style1">*&nbsp;请您尽量不要在网吧等公共场所使用网上银行</span></td>
+				</tr>
+				<tr valign="middle">
+					<td height="18" colspan="5" class="style1">*&nbsp;为了保证您正常使用网上银行，推荐使用IE6.0以上版本的浏览器</td>
+				</tr>
+<!--
+				<tr>
+					<td height="15" colspan="5"><textarea id="log" style="width:420px;height:100px"></textarea></td>
+				</tr>
+-->
+			</table>
+			&nbsp;
+			<table width="354" border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<td height="22"><img src="/images/login/jiao.gif" width="7" height="5"></td>
+					<td height="22"><a href="/weblogic/safegoto.jsp?link=U11" target="_blank">安全提示</a></td>
+					<td height="22"><img src="/images/login/jiao.gif" width="7" height="5"></td>
+					<td height="22"><a href="/weblogic/safegoto.jsp?link=K14" target="_blank">登录指引</a></td>
+					<td height="22"><img src="/images/login/jiao.gif" width="7" height="5"></td>
+					<td height="22"><a href="#" onClick="openDoyooCustomChat();return false" target="_blank">在线客服</a></td>
+				</tr>
+				<tr>
+					<td height="22"><img src="/images/login/jiao.gif" width="7" height="5"></td>
+					<td height="22"><a href="#" onclick="makeNewWindow();">在线杀毒</a></td>
+					<td height="22"><img src="/images/login/jiao.gif" width="7" height="5"></td>
+					<td height="22"><a href="/weblogic/safegoto.jsp?link=K15" target="_blank">常用下载</a></td>
+					<td height="22"><img src="/images/login/jiao.gif" width="7" height="5"></td>
+					<td height="22"><a href="/weblogic/safegoto.jsp?link=K16" target="_blank">演&nbsp;&nbsp;&nbsp;&nbsp;示</a></td>
+				</tr>
+			</table>
+<!--
+			<table width="380" border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<td><img src="/images/login/jiao.gif" width="7" height="5"></td>
+					<td clospan="3"><a href="/weblogic/safegoto.jsp?link=U11" target="_blank"><font color="RED">网上安全提示</font></a></td>
+					<td><img src="/images/login/jiao.gif" width="7" height="5"></td>
+					<td ><a href="#" onclick="makeNewWindow();" ><font color="RED">网银病毒专杀工具</font></a></td>
+				</tr>
+				<tr>
+					<td><img src="/images/login/jiao.gif" width="7" height="5"></td>
+					<td><a href="/weblogic/safegoto.jsp?link=K2" target="_blank">个人证书导入演示1</a></td>
+			  		<td><img src="/images/login/jiao.gif" width="7" height="5"></td>
+					<td><a href="/weblogic/safegoto.jsp?link=K3" target="_blank">个人证书导出演示2</a></td>
+				</tr>
+				<tr>
+					<td><img src="/images/login/jiao.gif" width="7" height="5"></td>
+					<td>
+						<span class="style1">
+							<a href="#" onClick="openDoyooCustomChat();return false" target="_blank">在线客服</a>
+						</span>
+					</td>
+			  		<td><img src="/images/login/jiao.gif" width="7" height="5"></td>
+					<td><span class="style1"><a href="/weblogic/safegoto.jsp?link=K6" target="_blank">常见问题解答</a></span></td>
+				</tr>
+				<tr>
+					<td height="18"><img src="/images/login/jiao.gif" width="7" height="5"></td>
+					<td height="18"><a href="/weblogic/safegoto.jsp?link=K9">外汇买卖交易控件下载</a></td>
+					<td height="18"><img src="/images/login/jiao.gif" width="7" height="5"></td>
+					<td height="18"><a href="/weblogic/safegoto.jsp?link=K10">外汇买卖客户端下载</a></td>
+				</tr>
+				<tr>
+					<td height="18"><img src="/images/login/jiao.gif" width="7" height="5"></td>
+					<td height="18"><a href="/weblogic/safegoto.jsp?link=K11" target="_blank">数字证书使用安全提示</a></td>
+					<td height="18"><img src="/images/login/jiao.gif" width="7" height="5"></td>
+					<td height="18"><a href="/weblogic/safegoto.jsp?link=K12" target="_blank">个人交易签名控件下载</a></td>
+				</tr>
+			</table>
+-->
+		  </td>
+                </tr>
+              </form>
+            </table>
+	  </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td align="right" valign="bottom" nowrap bgcolor="#0B9EAF" height="11"> 
+      <center><iframe id="waiting" width="540" height="10" scrolling="no" border="0" frameborder="0" style="display:none" marginheight="1" marginwidth="1" src="/waiting.html">
+      浏览器不支持嵌入式框架，或被配置为不显示嵌入式框架。</iframe></center>
+    </td>
+  </tr>
+</table>
+
+<iframe name="wait" id="wait" src="/wait.html" frameborder="0"  style="z-index:100;position:absolute;visibility:hidden;" marginwidth="1" marginheight="1" height="1" width="1">
+
+</iframe>
+
+
+
+<p align="center"><span class="style1">2010 中国民生银行版权所有 24小时客户服务电话：95568</span></p>
+
+<!--
+<div id=hideObject type="hidden" style="position:absolute;left:0;top:100;visibility:hidden">
+  <OBJECT id=BlockHouse0 style='VISIBILITY: hidden' classid='clsid:0D99625B-0619-4420-BB61-82DEE1B91D3A' codebase='/CertKitAx.cab#version=1,1,1,0'></OBJECT>
+  <OBJECT id=Capicom0 style='VISIBILITY: hidden' classid='clsid:03ACC284-B757-4B8F-9951-86E600D2CD06' codebase='/CertKitAx.cab#version=2,0,0,3'></OBJECT>
+</div>
+
+<div id=floater type="hidden" style="position:absolute;left:0;top:100;visibility:hidden">
+  <TABLE align=center border="2" bgColor=#9d9d9d border=0 cellPadding=0 cellSpacing=1 width="180"  >
+    <TBODY>
+      <TR>
+        <TD nowrap bgColor=#bfbfbf><font size=2 color='#8f0e8f'><B>为了您的安全，请使用软键盘</b></font></TD>
+        <TD nowrap bgColor=#bfbfbf  align="center"  onclick="hideIt();"><font size=2 color='#8f0e8f'><B>关闭</b></font></TD>
+      </TR>
+      <TR>
+        <TD  colspan=2>
+<button onclick="addnumObj0(1);";  ondblclick="addnumObj0(1);"><font size=2 color="#8f0e8f"><B>1</B></font></button>
+<button onclick="addnumObj0(2);";  ondblclick="addnumObj0(2);"><font size=2 color="#8f0e8f"><B>2</B></font></button>
+<button onclick="addnumObj0(3);";  ondblclick="addnumObj0(3);"><font size=2 color="#8f0e8f"><B>3</B></font></button>
+<button onclick="addnumObj0(4);";  ondblclick="addnumObj0(4);"><font size=2 color="#8f0e8f"><B>4</B></font></button>
+<button onclick="addnumObj0(5);";  ondblclick="addnumObj0(5);"><font size=2 color="#8f0e8f"><B>5</B></font></button>
+<button onclick="addnumObj0(6);";  ondblclick="addnumObj0(6);"><font size=2 color="#8f0e8f"><B>6</B></font></button>
+<button onclick="addnumObj0(7);";  ondblclick="addnumObj0(7);"><font size=2 color="#8f0e8f"><B>7</B></font></button>
+<button onclick="addnumObj0(8);";  ondblclick="addnumObj0(8);"><font size=2 color="#8f0e8f"><B>8</B></font></button>
+<button onclick="addnumObj0(9);";  ondblclick="addnumObj0(9);"><font size=2 color="#8f0e8f"><B>9</B></font></button>
+<button onclick="addnumObj0(0);";  ondblclick="addnumObj0(0);"><font size=2 color="#8f0e8f"><B>0</B></font></button>
+<button onclick="backspaceObj0();"><font size=2 color="#8f0eff"><B>←</B></font></button>
+<button onclick="clearFieldObj0();"><font size=2 color="#8f0eff"><B>清空</B></font></button>
+        </TD>
+      </TR>
+    </TBODY>
+  </TABLE>
+</div>
+-->
+
+<input type="hidden" name=TxCode>
+</body>
+</html>

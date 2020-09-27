@@ -1,0 +1,17 @@
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN" "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="xima" extends="struts-default" namespace="/xima">
+		<action name="getXimaMessage" class="ximaActionClass" method="getXimaMessage"></action>
+		<action name="addXimaProposal" class="ximaActionClass" method="addXimaProposal"></action>
+		<action name="execXimaProposal" class="ximaActionClass" method="execXimaProposal"></action>
+		<action name="updateXimaProposal" class="ximaActionClass" method="updateXimaProposal"></action>
+		<action name="checkXimaProposal" class="ximaActionClass" method="checkNotExecProposal"></action>
+		<action name="recoverStatus" class="ximaActionClass" method="recoverStatus"></action>
+		
+		<action name="addPtCoupon" class="ximaBatchActionClass" method="addPtCoupon">
+			<interceptor-ref name ="fileUploadStack" /> 
+			<result name="input">/office/functions/ptCouponLists.jsp</result>
+			<result name="success">/office/functions/ptCouponLists.jsp</result>
+		</action>
+	</package>
+</struts>

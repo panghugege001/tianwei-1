@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE validators PUBLIC "-//OpenSymphony Group//XWork Validator 1.0.2//EN"
+ "http://struts.apache.org/dtds/xwork-validator-1.0.2.dtd">
+
+<validators>
+	<field name="loginname">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message>请输入会员账号</message>
+		</field-validator>
+	</field>	
+	<field name="billno">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message>请输入支付单号</message>
+		</field-validator>
+	</field>
+	<field name="payAmount">
+		<field-validator type="requiredstring" short-circuit="true">
+			<param name="trim">true</param>
+			<message>请输入金额</message>
+		</field-validator>
+		<field-validator type="double">
+			<message>金额必须是数字，请重新输入</message>
+		</field-validator>
+	</field>
+	<field name="payBillno">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message>请输入易宝单号</message>
+		</field-validator>
+	</field>
+	<field name="payTime">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message>请输入支付时间</message>
+		</field-validator>
+	</field>
+</validators>

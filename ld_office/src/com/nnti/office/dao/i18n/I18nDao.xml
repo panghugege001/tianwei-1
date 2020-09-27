@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+<mapper namespace="com.nnti.office.dao.i18n.I18nDao">
+	
+	<select id="batchGetI18nCn" resultType="I18n" >
+		select
+			`key`,
+			cn_val value
+		from
+			t_i18n
+		where
+			`key` in
+			<foreach item="item" collection="list" open="(" separator="," close=")">
+            	#{item}
+            </foreach>
+	</select>
+	
+	<select id="batchGetI18nEn" resultType="I18n" >
+		select
+			`key`,
+			en_val value
+		from
+			t_i18n
+		where
+			`key` in
+			<foreach item="item" collection="list" open="(" separator="," close=")">
+            	#{item}
+            </foreach>
+	</select>
+	
+	<select id="getAllI18n" resultType="I18n" >
+		select
+			id,
+			`key`,
+			cn_val cnVal,
+			en_val enVal,
+			create_time createTime
+		from
+			t_i18n
+	</select>
+	
+	<select id="searchI18n" resultType="I18n" parameterType="I18n">
+		select
+			id,
+			`key`,
+			cn_val cnVal,
+			en_val enVal,
+			create_time createTime
+		from
+			t_i18n
+		where
+			1 = 1
+			<if test="key != null and key != ''">
+				and `key` like CONCAT(CONCAT('%', #{key}),'%')
+			</if>
+			<if test="cnVal != null and cnVal != ''">
+				and cn_val like CONCAT(CONCAT('%', #{cnVal}),'%')
+			</if>
+			<if test="enVal != null and enVal != ''">
+				and en_val like CONCAT(CONCAT('%', #{enVal}),'%')
+			</if>
+	</select>
+	
+	<insert id="insertI18n" parameterType="I18n">
+		insert into t_i18n
+		(
+			`key`,
+			cn_val,
+			en_val,
+			create_time
+		)
+		values
+		(
+			#{key},
+			#{cnVal},
+			#{enVal},
+			#{createTime}
+		)
+	</insert>
+	
+	<update id="updateI18n" parameterType="I18n">
+		update t_i18n
+		<set>
+			<if test="cnVal != null and cnVal != ''">
+				cn_val=#{cnVal},
+			</if>
+			<if test="enVal != null and enVal != ''">
+				en_val=#{enVal}
+			</if>
+		</set>
+		where
+			`key` = #{key}
+	</update>
+	
+	<select id="getI18nById" parameterType="int" resultType="I18n">
+		select
+			id,
+			`key`,
+			cn_val cnVal,
+			en_val enVal,
+			create_time createTime
+		from
+			t_i18n
+		where
+			id = #{id}
+	</select>
+	
+	<delete id="deleteI18n" parameterType="int">
+		delete from t_i18n
+		where
+			id = #{id}
+	</delete>
+	
+	<select id="isDuplicated" parameterType="string" resultType="int">
+		select
+			count(1)
+		from
+			t_i18n
+		where
+			`key` = #{key}
+	</select>
+	
+</mapper>

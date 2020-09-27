@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd">
+	<bean id="AccountFunctionActionClass" class="dfh.action.office.AccountFunctionAction" scope="prototype">
+		<property name="customerService" ref="customerService" />
+		<property name="arbitrageService" ref="arbitrageService" />
+	</bean>
+
+	<bean id="BLActionClass" class="dfh.action.office.BLAction" scope="prototype">
+		<property name="operatorService" ref="operatorService" />
+	</bean>
+
+
+	<bean id="OfficeClass" class="dfh.action.office.OfficeAction" scope="prototype">
+		<property name="proposalService" ref="proposalService" />
+		<property name="operatorService" ref="operatorService" />
+		<property name="netpayService" ref="netpayService" /> 
+		<property name="customerService" ref="customerService" />
+		<property name="transferService" ref="transferService" />
+		<property name="notifyService" ref="notifyService" />
+		<property name="seqService" ref="seqService" />
+		<property name="userDao" ref="userDao" />
+		<property name="mailSender" ref="emailSender" />
+		<property name="jdbcTemplate" ref="jdbcTemplate" />
+		<property name="constDao" ref="constDao" />
+		<property name="getdateService" ref="getdateService" />
+		<property name="losePromoService" ref="losepromoService" />
+		<property name="weekSentService" ref="weekSentService" />
+		<property name="autoUpgradeService" ref="autoUpgradeService" />
+		<property name="slaveService" ref="slaveService" />
+		<property name="smWeeklyJob" ref="smWeeklyJob" />
+		<property name="friendMoneyDistributeService" ref="friendMoneyDistributeService" />
+		<property name="mgsService" ref="mgsService" />
+		<property name="changeLineUserService" ref="changeLineUserService" />
+		<property name="systemConfigService" ref="systemConfigService"></property>
+
+	</bean>
+	
+	<bean id="OfficeProxyClass" class="dfh.action.office.OfficeProxyAction"
+		scope="prototype">
+		<property name="proxyFlowService" ref="proxyFlowService" />
+	</bean>
+	
+	<bean id="agentReferralsStatisticActionClass" class="dfh.action.statistics.AgentReferralsStatisticAction" scope="prototype">
+		<property name="agentReferralsStatistic" ref="agentReferralsStatisticService"></property>
+	</bean>
+	
+	<bean id="telvisittaskClass" class="dfh.action.telvisit.TelvisittaskAction" scope="prototype">
+		<property name="telvisitService" ref="telvisitService"></property>
+	</bean>
+	
+	<bean id="userstatusClass" class="dfh.action.userstatus.UserstatusAction" scope="prototype">
+		<property name="userstatusService" ref="userstatusService"></property>
+	</bean>
+	
+	<bean id="bankinfoClass" class="dfh.action.bankinfo.BankinfoAction" scope="prototype">
+		<property name="operatorService" ref="operatorService" />
+		<property name="bankinfoService" ref="bankinfoService"></property>
+	</bean>
+	
+	<bean id="intranferClass" class="dfh.action.intransfer.IntransferAction" scope="prototype">
+		<property name="intransferService" ref="intransferService"></property>
+	</bean>
+	
+	<bean id="telvisitClass" class="dfh.action.telvisit.TelvisitAction" scope="prototype">
+		<property name="telvisitService" ref="telvisitService"></property>
+	</bean>
+	
+	<bean id="howToKnowStatisticsClass" class="dfh.action.statistics.HowToKnowStatistics" scope="prototype">
+		<property name="howToKnowStatisticsServiceImpl" ref="howToKnowStatisticsServiceImpl"></property>
+	</bean>
+	
+	<bean id="fundStatisticsClass" class="dfh.action.fund.FundStatistics" scope="prototype">
+		<property name="fundStatisticsServiceImpl" ref="fundStatisticsServiceImpl"></property>
+	</bean>
+	
+	<bean id="UserbankinfoActionClass" class="dfh.action.customer.UserbankinfoAction" scope="prototype">
+		<property name="userbankinfoService" ref="userbankinfoServiceImpl"></property>
+	</bean>
+	
+	<bean id="ximaActionClass" class="dfh.action.xima.XimaAction">
+		<property name="proposalService" ref="proposalService"></property>
+	</bean>
+	
+	<bean id="ximaBatchActionClass" class="dfh.action.xima.BatchXimaAction" scope="prototype">
+		<property name="proposalService" ref="proposalService"></property>
+		<property name="guestBookService" ref="guestBookService" />
+		<!-- <property name="profitEaService" ref="profitEaService" /> -->
+		<property name="fetchNTwoJobService" ref="fetchNTwoJobService" />
+		<property name="fetchEBetAppJobService" ref="fetchEBetAppJobService" />
+		<property name="mgsService" ref="mgsService" />
+		<property name="pbUtil" ref="pbUtil" />
+	</bean>
+
+	<bean id="ActivityCalendarClass" class="dfh.action.office.ActivityCalendarAction" scope="prototype">
+		<property name="activityCalendarService" ref="activityCalendarService" />
+	</bean>
+
+	<bean id="fetchNTwoJobService" class="dfh.icbc.quart.fetch.FetchNTwoJobService">
+	</bean>
+	
+	<bean id="employeeClass" class="dfh.action.office.EmployeeManagerAction" scope="prototype">
+		<property name="employeeManager" ref="employeeManagerService"></property>
+	</bean>
+	
+	<bean id="FirstCashinUsresClass" class="dfh.action.office.FirstCashinUsresAction" scope="prototype">
+		<property name="firstCashinUsers" ref="firstCashinUsres"></property>
+	</bean>
+	
+	<bean id="AnnouncementClass" class="dfh.action.office.AnnouncementAction" scope="prototype">
+		<property name="announcementService" ref="announcementService" />
+	</bean>
+	<bean id="AjaxQueryClass" class="dfh.action.office.AjaxQueryAction"
+		scope="prototype">
+		<property name="operatorService" ref="operatorService" />
+		<property name="customerService" ref="customerService" />
+	</bean>
+	
+	<!-- 后台对留言的管理 -->
+	<bean id="OfficeGuestbookAction" class="dfh.action.office.OfficeGuestbookAction"
+		scope="prototype">
+		<property name="guestBookService" ref="guestBookService" />
+		<property name="proposalService" ref="proposalService"></property>
+	</bean>
+	
+	<bean id="NetPayClass" class="dfh.action.office.AutoDepositAction" scope="prototype">
+		<property name="autoDeposit" ref="autoDeposit"></property>
+	</bean>
+	
+	<bean id="OfficeProfitEaAction" class="dfh.action.office.OfficeProfitEaAction" scope="prototype">
+		<!-- <property name="profitEaService" ref="profitEaService" /> -->
+		<property name="operatorService" ref="operatorService" />
+		<property name="logDao" ref="logDao" />
+	</bean>
+	<bean id="OfficeImageAction" class="dfh.action.office.OfficeImageAction"
+		scope="prototype">
+		<property name="proposalService" ref="proposalService"></property>
+	</bean>
+	
+	<bean id="systemConfigAction" class="dfh.action.SystemConfigAction" scope="prototype" >
+		<property name="systemConfigService" ref="systemConfigService"></property>
+	</bean>
+	
+	<bean id="allProjectAction" class="dfh.action.office.AllProjectAction" scope="prototype">
+		<property name="customerService" ref="customerService"></property>
+		<property name="allProjectService" ref="allProjectService"></property>
+	</bean>
+	
+	<bean id="SendEmailAction" class="dfh.action.office.SendEmailAction"
+		scope="prototype">
+		<property name="proposalService" ref="proposalService" />
+		<property name="operatorService" ref="operatorService" />
+	</bean>
+	
+	<bean id="mgsAction" class="dfh.action.office.MGSAction" scope="prototype">
+		<property name="operatorService" ref="operatorService" />
+		<property name="mgsService" ref="mgsService" />
+	</bean>
+	
+	<bean id="BankStatusAction" class="dfh.action.bankinfo.BankStatusAction" scope="prototype">
+		<property name="bankStatusService" ref="bankStatusService" />
+	</bean>
+	
+	<bean id="appAction" class="app.action.AppAction" scope="prototype">
+		<property name="proposalService" ref="proposalService" />
+	</bean>
+	
+	<bean id="OfficeTopicInfoAction" class="dfh.action.office.OfficeTopicInfoAction"
+		scope="prototype">
+		<property name="topicInfoService" ref="topicInfoService" />
+		<property name="proposalService" ref="proposalService"></property>
+	</bean>
+	
+	<bean id="appPakAction" class="app.action.AppPakAction" scope="prototype">
+		<property name="appPakService" ref="appPakService" />
+	</bean>
+	<bean id="pbUtil" class="dfh.utils.PBUtil"
+		  scope="prototype">
+		<property name="proposalService" ref="proposalService"></property>
+	</bean>
+</beans>

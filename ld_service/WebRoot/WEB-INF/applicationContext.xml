@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="
+     http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+     http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd
+     http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd">
+    
+	<!-- 对init.properties加密解密过程 -->
+	<bean id="environmentVariablesConfiguration" class="dfh.security.SpecialEnvironmentStringPBEConfig">
+		<property name="algorithm" value="PBEWithMD5AndDES" />
+		<property name="password" value="ComoneBaby" />
+	</bean>
+
+	<bean id="configurationEncryptor" class="org.jasypt.encryption.pbe.StandardPBEStringEncryptor">
+		<property name="config" ref="environmentVariablesConfiguration" />
+	</bean>
+
+	<bean id="propertyConfigurer"
+		class="org.jasypt.spring.properties.EncryptablePropertyPlaceholderConfigurer">
+		<constructor-arg ref="configurationEncryptor" />
+		<property name="locations">
+			<list>
+				<value>classpath:init.properties</value>
+			</list>
+		</property>
+		<property name="fileEncoding" value="utf-8" />
+	</bean>
+
+
+	<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource"
+		destroy-method="close" dependency-check="none">
+		<property name="driverClass">
+			<value>${datasource.driverClassName}</value>
+		</property>
+		<property name="jdbcUrl">
+			<value>${datasource.url}</value>
+		</property>
+
+		<property name="user">
+			<value>${datasource.username}</value>
+		</property>
+		<property name="password">
+			<value>${datasource.password}</value>
+		</property>
+		<property name="acquireIncrement">
+			<value>${c3p0.acquireIncrement}</value>
+		</property>
+		<property name="initialPoolSize">
+			<value>${c3p0.initialPoolSize}</value>
+		</property>
+		<property name="minPoolSize">
+			<value>${c3p0.minPoolSize}</value>
+		</property>
+		<property name="maxPoolSize">
+			<value>${c3p0.maxPoolSize}</value>
+		</property>
+		<property name="maxIdleTime">
+			<value>${c3p0.maxIdleTime}</value>
+		</property>
+		<property name="idleConnectionTestPeriod">
+			<value>${c3p0.idleConnectionTestPeriod}</value>
+		</property>
+		<property name="maxStatements">
+			<value>${c3p0.maxStatements}</value>
+		</property>
+		<property name="numHelperThreads">
+			<value>${c3p0.numHelperThreads}</value>
+		</property>
+	</bean>
+	
+	<bean id="dataSourceSlave" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close" dependency-check="none">
+		<property name="driverClass">
+			<value>${datasource.driverClassName}</value>
+		</property>
+		<property name="jdbcUrl">
+			<value>${datasource.url.slave}</value>
+		</property>
+
+		<property name="user">
+			<value>${datasource.username.slave}</value>
+		</property>
+		<property name="password">
+			<value>${datasource.password.slave}</value>
+		</property>
+		<property name="acquireIncrement">
+			<value>${c3p0.acquireIncrement}</value>
+		</property>
+		<property name="initialPoolSize">
+			<value>${c3p0.initialPoolSize}</value>
+		</property>
+		<property name="minPoolSize">
+			<value>${c3p0.minPoolSize}</value>
+		</property>
+		<property name="maxPoolSize">
+			<value>${c3p0.maxPoolSize}</value>
+		</property>
+		<property name="maxIdleTime">
+			<value>${c3p0.maxIdleTime}</value>
+		</property>
+		<property name="idleConnectionTestPeriod">
+			<value>${c3p0.idleConnectionTestPeriod}</value>
+		</property>
+		<property name="maxStatements">
+			<value>${c3p0.maxStatements}</value>
+		</property>
+		<property name="numHelperThreads">
+			<value>${c3p0.numHelperThreads}</value>
+		</property>
+	</bean>
+
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean">
+		<property name="dataSource">
+			<ref local="dataSource" />
+		</property>
+
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">
+					${hibernate.dialect}
+        </prop>
+				<prop key="hibernate.show_sql">
+					${hibernate.show_sql}
+        </prop>
+				<prop key="hibernate.jdbc.fetch_size">
+					${hibernate.jdbc.fetch_size}
+        </prop>
+				<prop key="hibernate.jdbc.batch_size">
+					${hibernate.jdbc.batch_size}
+        </prop>
+			</props>
+		</property>
+
+		<property name="annotatedClasses">
+			<list>
+				<value>dfh.model.Accountinfo</value>
+				<value>dfh.model.Actionlogs</value>
+				<value>dfh.model.Announcement</value>
+				<value>dfh.model.HBbonus</value>
+				<value>dfh.model.HBConfig</value>
+				<value>dfh.model.HBrecord</value>
+				<value>dfh.model.Autotask</value>
+				<value>dfh.model.Union</value>
+				<value>dfh.model.UnionStaff</value>
+				<value>dfh.model.Banktransfercons</value>
+				<value>dfh.model.Betrecords</value>
+				<value>dfh.model.Cashin</value>
+				<value>dfh.model.Cashout</value>
+				<value>dfh.model.Commissionrecords</value>
+				<value>dfh.model.CommissionrecordsId</value>
+				<value>dfh.model.Commissions</value>
+				<value>dfh.model.CommissionsId</value>
+				<value>dfh.model.Concessions</value>
+				<value>dfh.model.Const</value>
+				<value>dfh.model.ActivityHistory</value>
+				<value>dfh.model.Creditlogs</value>
+				<value>dfh.model.Guestbook</value>
+				<value>dfh.model.InnodbMonitor</value>
+				<value>dfh.model.Netpay</value>
+				<value>dfh.model.Newaccount</value>
+				<value>dfh.model.Offer</value>
+				<value>dfh.model.Qrcode</value>
+				<value>dfh.model.Operationlogs</value>
+				<value>dfh.model.Operator</value>
+				<value>dfh.model.Payorder</value>
+				<value>dfh.model.UserMaintainLog</value>
+				<value>dfh.model.Prize</value>
+				<value>dfh.model.Proposal</value>
+				<value>dfh.model.Rebankinfo</value>
+				<value>dfh.model.Remoteurls</value>
+				<value>dfh.model.RedRainWallet</value>
+				<value>dfh.model.RaincouponRecord</value>
+				<value>dfh.model.Seq</value>
+				<value>dfh.model.Task</value>
+				<value>dfh.model.Transfer</value>
+				<value>dfh.model.Users</value>
+				<value>dfh.model.Xima</value>
+				<value>dfh.model.GGameinfo</value>
+				<value>dfh.model.MemberSignrecord</value>
+				<value>dfh.model.Userbankinfo</value>
+				<value>dfh.model.BankStatus</value>
+				<value>dfh.model.Userstatus</value>
+				<value>dfh.model.Bankinfo</value>
+				<value>dfh.model.AgProfit</value>
+				<value>dfh.model.AgTryGame</value>
+				<value>dfh.model.BankCreditlogs</value>
+				<value>dfh.model.Customer</value>
+				<value>dfh.model.Activity</value>
+				<value>dfh.model.PtProfit</value>
+				<value>dfh.model.HdImage</value>
+				<value>dfh.model.Sbcoupon</value>
+				<value>dfh.model.Sbbets</value>
+				<value>dfh.model.PtCoupon</value>
+				<value>dfh.model.PlatformData</value>
+				<value>dfh.model.PreferentialRecord</value>
+				<value>dfh.model.PreferTransferRecord</value>
+				<value>dfh.model.DepositOrder</value>
+				<value>dfh.model.PayOrderValidation</value>
+				<value>dfh.model.PhoneCode</value>
+				<value>dfh.model.OnlineToken</value>
+				<value>dfh.model.IESnare</value>
+				<value>dfh.model.YouHuiConfig</value>
+				<value>dfh.model.AgentAddress</value>
+				<value>dfh.model.PayMerchant</value>
+				<value>dfh.model.LosePromo</value>
+				<value>dfh.model.WeekSent</value>
+				<value>dfh.model.SelfRecord</value>
+				<value>dfh.model.UpgradeLog</value>
+				<value>dfh.model.CpuCompare</value>
+				<value>dfh.model.PtCommissions</value>
+				<value>dfh.model.PtCommissionsId</value>
+				<value>dfh.model.GPIToken</value>
+				<value>dfh.model.PTBigBang</value>
+				<value>dfh.model.AgentVip</value>
+				<value>dfh.model.AgentVipId</value>
+				<value>dfh.model.CallConfig</value>
+				<value>dfh.model.SystemConfig</value>
+				<value>dfh.model.Question</value>
+				<value>dfh.model.QuestionStatus</value>
+				<value>dfh.model.Gift</value>
+				<value>dfh.model.GiftOrder</value>
+				<value>dfh.model.CallInfo</value>
+				<value>dfh.model.SlotsMatchWeekly</value>
+				<value>dfh.model.Suggestion</value>
+				<value>dfh.model.TaskList</value>
+				<value>dfh.model.TaskUserRecord</value>
+				<value>dfh.model.TaskAmount</value>
+				<value>dfh.model.SignRecord</value>
+				<value>dfh.model.SignAmount</value>
+				<value>dfh.model.AlipayAccount</value>
+				<value>dfh.model.Friendbonus</value>
+				<value>dfh.model.Friendbonusrecord</value>
+				<value>dfh.model.Friendintroduce</value>
+				<value>dfh.model.Emigratedapply</value>
+				<value>dfh.model.Emigratedbonus</value>
+				<value>dfh.model.Emigratedrecord</value>
+				<value>dfh.model.PtDataNew</value>
+				<value>dfh.model.DetailPoint</value>
+				<value>dfh.model.TotalPoint</value>
+				<value>dfh.model.Payorderbillono</value>
+				<value>dfh.model.TokenInfo</value>
+				<value>dfh.model.UsersAgentGame</value>
+				<value>dfh.model.PTExport</value>
+				<value>dfh.model.UrgeOrder</value>
+				<!-- <value>dfh.model.Emailremark</value> -->
+				<value>dfh.model.Goddessrecord</value>
+				<value>dfh.model.GameStatus</value>
+				<value>dfh.model.SingleParty</value>
+				<value>dfh.model.PTTransfer2NewHistory</value>
+				<value>dfh.model.Concert</value>
+				<value>dfh.model.SMSSwitch</value>
+				<value>dfh.model.AppPreferential</value>  
+				<value>dfh.model.UserLotteryRecord</value>  
+				<value>dfh.model.LotteryItem</value>
+				<value>dfh.model.ActivityCalendar</value>
+				<value>app.model.po.LatestPreferential</value>
+				<value>app.model.po.PreferentialComment</value>
+				<value>app.model.po.AppVersion</value>
+				<value>app.model.po.PreferentialConfig</value>
+				<value>app.model.po.ProposalExtend</value>	
+				<value>app.model.po.AppPackageVersion</value>
+				<value>app.model.po.AppPackageVersionCustom</value>
+				<value>dfh.model.UserSidName</value>
+				<value>dfh.model.Mcquota</value>
+				<value>dfh.model.UserSidNameKey</value>
+				<value>dfh.model.ActivityConfig</value>
+			</list>
+		</property> 
+	</bean>
+	
+	
+	<bean id="sessionFactorySlave" class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean">
+		<property name="dataSource">
+			<ref local="dataSourceSlave" />
+		</property>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">${hibernate.dialect}</prop>
+				<prop key="hibernate.show_sql">${hibernate.show_sql}</prop>
+				<prop key="hibernate.jdbc.fetch_size">${hibernate.jdbc.fetch_size}</prop>
+				<prop key="hibernate.jdbc.batch_size">${hibernate.jdbc.batch_size}</prop>
+			</props>
+		</property>
+
+		<property name="annotatedClasses">
+			<list>
+				<value>dfh.model.Accountinfo</value>
+				<value>dfh.model.Actionlogs</value>
+				<value>dfh.model.Announcement</value>
+				<value>dfh.model.Autotask</value>
+				<value>dfh.model.HBConfig</value>
+				<value>dfh.model.HBbonus</value>
+				<value>dfh.model.HBrecord</value>
+				<value>dfh.model.Banktransfercons</value>
+				<value>dfh.model.Betrecords</value>
+				<value>dfh.model.Cashin</value>
+				<value>dfh.model.Cashout</value>
+				<value>dfh.model.ActivityHistory</value>
+				<value>dfh.model.Commissionrecords</value>
+				<value>dfh.model.CommissionrecordsId</value>
+				<value>dfh.model.Commissions</value>
+				<value>dfh.model.CommissionsId</value>
+				<value>dfh.model.Concessions</value>
+				<value>dfh.model.Const</value>
+				<value>dfh.model.Qrcode</value>
+				<value>dfh.model.UserMaintainLog</value>
+				<value>dfh.model.Creditlogs</value>
+				<value>dfh.model.Guestbook</value>
+				<value>dfh.model.InnodbMonitor</value>
+				<value>dfh.model.Netpay</value>
+				<value>dfh.model.Newaccount</value>
+				<value>dfh.model.Offer</value>
+				<value>dfh.model.Operationlogs</value>
+				<value>dfh.model.Operator</value>
+				<value>dfh.model.Payorder</value>
+				<value>dfh.model.Prize</value>
+				<value>dfh.model.Proposal</value>
+				<value>dfh.model.Rebankinfo</value>
+				<value>dfh.model.Remoteurls</value>
+				<value>dfh.model.Seq</value>
+				<value>dfh.model.Task</value>
+				<value>dfh.model.Transfer</value>
+				<value>dfh.model.Users</value>
+				<value>dfh.model.Xima</value>
+				<value>dfh.model.GGameinfo</value>
+				<value>dfh.model.MemberSignrecord</value>
+				<value>dfh.model.Userbankinfo</value>
+				<value>dfh.model.Userstatus</value>
+				<value>dfh.model.Bankinfo</value>
+				<value>dfh.model.AgProfit</value>
+				<value>dfh.model.AgTryGame</value>
+				<value>dfh.model.BankCreditlogs</value>
+				<value>dfh.model.Customer</value>
+				<value>dfh.model.Activity</value>
+				<value>dfh.model.PtProfit</value>
+				<value>dfh.model.HdImage</value>
+				<value>dfh.model.Sbcoupon</value>
+				<value>dfh.model.Sbbets</value>
+				<value>dfh.model.PtCoupon</value>
+				<value>dfh.model.PlatformData</value>
+				<value>dfh.model.PreferentialRecord</value>
+				<value>dfh.model.PreferTransferRecord</value>
+				<value>dfh.model.DepositOrder</value>
+				<value>dfh.model.PayOrderValidation</value>
+				<value>dfh.model.PhoneCode</value>
+				<value>dfh.model.OnlineToken</value>
+				<value>dfh.model.IESnare</value>
+				<value>dfh.model.YouHuiConfig</value>
+				<value>dfh.model.AgentAddress</value>
+				<value>dfh.model.PayMerchant</value>
+				<value>dfh.model.LosePromo</value>
+				<value>dfh.model.WeekSent</value>
+				<value>dfh.model.SelfRecord</value>
+				<value>dfh.model.UpgradeLog</value>
+				<value>dfh.model.CpuCompare</value>
+				<value>dfh.model.PtCommissions</value>
+				<value>dfh.model.PtCommissionsId</value>
+				<value>dfh.model.GPIToken</value>
+				<value>dfh.model.PTBigBang</value>
+				<value>dfh.model.AgentVip</value>
+				<value>dfh.model.AgentVipId</value>
+				<value>dfh.model.CallConfig</value>
+				<value>dfh.model.SystemConfig</value>
+				<value>dfh.model.Question</value>
+				<value>dfh.model.QuestionStatus</value>
+				<value>dfh.model.Gift</value>
+				<value>dfh.model.GiftOrder</value>
+				<value>dfh.model.CallInfo</value>
+				<value>dfh.model.SlotsMatchWeekly</value>
+				<value>dfh.model.Suggestion</value>
+				<value>dfh.model.TaskList</value>
+				<value>dfh.model.TaskUserRecord</value>
+				<value>dfh.model.TaskAmount</value>
+				<value>dfh.model.SignRecord</value>
+				<value>dfh.model.SignAmount</value>
+				<value>dfh.model.AlipayAccount</value>
+				<value>dfh.model.Friendbonus</value>
+				<value>dfh.model.Friendbonusrecord</value>
+				<value>dfh.model.Friendintroduce</value>
+				<value>dfh.model.Emigratedapply</value>
+				<value>dfh.model.Emigratedbonus</value>
+				<value>dfh.model.Emigratedrecord</value>
+				<value>dfh.model.PtDataNew</value>
+				<value>dfh.model.DetailPoint</value>
+				<value>dfh.model.TotalPoint</value>
+				<value>dfh.model.Payorderbillono</value>
+				<value>dfh.model.TokenInfo</value>
+				<value>dfh.model.UsersAgentGame</value>
+				<value>dfh.model.PTExport</value>
+				<value>dfh.model.UrgeOrder</value>
+				<!-- <value>dfh.model.Emailremark</value> -->
+				<value>dfh.model.Goddessrecord</value>
+				<value>dfh.model.GameStatus</value>
+				<value>dfh.model.SingleParty</value>
+				<value>dfh.model.PTTransfer2NewHistory</value>
+				<value>dfh.model.Concert</value>
+				<value>dfh.model.SMSSwitch</value>
+				<value>dfh.model.AppPreferential</value>
+				<value>dfh.model.UserLotteryRecord</value>
+				<value>dfh.model.LotteryItem</value> 
+				<value>app.model.po.LatestPreferential</value>
+				<value>app.model.po.PreferentialComment</value>
+				<value>app.model.po.AppVersion</value>
+				<value>app.model.po.PreferentialConfig</value>
+				<value>app.model.po.ProposalExtend</value>	
+				<value>app.model.po.AppPackageVersion</value>
+				<value>app.model.po.AppPackageVersionCustom</value>
+				<value>dfh.model.UserSidName</value>
+				<value>dfh.model.Mcquota</value>
+				<value>dfh.model.UserSidNameKey</value>
+				<value>dfh.model.ActivityConfig</value>
+
+			</list>
+		</property>
+	</bean>
+
+	<bean id="transactionManager"
+		class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	<bean id="transactionManagerSlave" class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+		<property name="sessionFactory" ref="sessionFactorySlave" />
+	</bean>
+
+
+	<!-- the transactional advice -->
+	<tx:advice id="txAdvice" transaction-manager="transactionManager">
+		<tx:attributes>
+			<!-- all methods starting with get are read-only -->
+			<tx:method name="get*" read-only="true" />
+			<tx:method name="find*" read-only="true" />
+			<tx:method name="generateTransferID" rollback-for="*" timeout="15" />
+			<tx:method name="addCashout" rollback-for="*" timeout="30" />
+			<tx:method name="execXima" rollback-for="*" timeout="25" />
+			<tx:method name="chooseservice" rollback-for="*" timeout="25" />
+			<tx:method name="modifyCustomerInfo" rollback-for="*" timeout="25" />
+			<tx:method name="modifyPassword" rollback-for="*" timeout="25" />
+			<!-- other methods will get the default transaction settings -->
+			<tx:method name="*" rollback-for="*" />
+		</tx:attributes>
+	</tx:advice>
+	
+	<tx:advice id="txAdviceSlave" transaction-manager="transactionManagerSlave">
+		<tx:attributes>
+			<!-- all methods starting with get are read-only -->
+			<tx:method name="get*" read-only="true" />
+			<tx:method name="find*" read-only="true" />
+			<tx:method name="generateTransferID" rollback-for="*" timeout="15" />
+			<tx:method name="addCashout" rollback-for="*" timeout="30" />
+			<tx:method name="execXima" rollback-for="*" timeout="25" />
+			<tx:method name="chooseservice" rollback-for="*" timeout="25" />
+			<tx:method name="modifyCustomerInfo" rollback-for="*" timeout="25" />
+			<tx:method name="modifyPassword" rollback-for="*" timeout="25" />
+			<tx:method name="*" rollback-for="*" />
+		</tx:attributes>
+	</tx:advice>
+
+	<aop:config>
+		<aop:pointcut id="allservices"
+			expression="execution(* dfh.service.interfaces.*.*(..))" />
+		<aop:advisor advice-ref="txAdvice" pointcut-ref="allservices" />
+	</aop:config>
+	
+	<aop:config>
+		<aop:pointcut id="allservicesSlave" expression="execution(* *.service.interfaces.*.*(..))" />
+		<aop:advisor advice-ref="txAdviceSlave" pointcut-ref="allservicesSlave" />
+	</aop:config>
+	
+	<bean id="zookeeperFactoryBean" class="dfh.extend.zookeeper.ZookeeperFactoryBean" lazy-init="false">
+		<property name="listeners">
+			<list>
+				<bean class="dfh.extend.zookeeper.AnnocementListener">
+					<constructor-arg value="/erick/zootest" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+
+	<import resource="applicationContext-dao.xml" />
+	<import resource="applicationContext-service.xml" />
+	<import resource="applicationContext-ws.xml" />
+	<import resource="applicationContext-init.xml" />
+	<import resource="applicationContext-util.xml" />
+	
+	<!-- app端所需的配置文件开始处，请勿删除   -->
+	<import resource="applicationContext-app-dao.xml" />
+	<import resource="applicationContext-app-service.xml" />
+	<import resource="applicationContext-app-ws.xml" />
+	<!-- app端所需的配置文件结束处，请勿删除   -->
+</beans>

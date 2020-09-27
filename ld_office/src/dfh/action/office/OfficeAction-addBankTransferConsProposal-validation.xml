@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE validators PUBLIC "-//OpenSymphony Group//XWork Validator 1.0.2//EN"
+ "http://struts.apache.org/dtds/xwork-validator-1.0.2.dtd">
+
+<validators>
+	<field name="loginname">
+		<field-validator type="requiredstring" short-circuit="true">
+			<param name="trim">true</param>
+			<message>请输入帐号</message>
+		</field-validator>
+	</field>
+
+	<field name="firstCash">
+		<field-validator type="required" short-circuit="true">
+			<param name="trim">true</param>
+			<message>请输入转账金额</message>
+		</field-validator>
+	</field>
+
+	<field name="tryCredit">
+		<field-validator type="required" short-circuit="true">
+			<param name="trim">true</param>
+			<message>请输入优惠额度</message>
+		</field-validator>
+		<field-validator type="double">
+			<param name="maxInclusive">45</param>
+			<message>优惠额度最大值45</message>
+		</field-validator>
+	</field>
+</validators>
