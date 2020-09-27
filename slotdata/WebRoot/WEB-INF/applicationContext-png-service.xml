@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd">
+		
+	<bean id="ptDataService"  class="com.gsmc.png.service.implementations.PtDataServiceImpl" destroy-method="shutdown">
+	</bean>
+	
+	<bean id="commonService" class="com.gsmc.png.service.implementations.CommonServiceImpl">
+		<property name="universalDao" ref="universalDao" />
+	</bean>
+	
+	<bean id="universalService" class="com.gsmc.png.service.implementations.UniversalServiceImpl">
+		<property name="universalDao" ref="universalDao" />
+	</bean>
+	
+	<bean id="pngDataProcessorService" class="com.gsmc.png.service.implementations.PNGDataProcessorServiceImpl">
+		<property name="universalDao" ref="universalDao" />
+	</bean>
+	
+	<bean id="agDataProcessorService" class="com.gsmc.png.service.implementations.AGDataProcessorServiceImpl">
+		<property name="universalDao" ref="universalDao" />
+	</bean>
+	
+	
+	<bean id="sbaService" class="com.gsmc.png.service.implementations.SBADataProcessorServiceImpl">
+		<property name="universalDao" ref="universalDao" />
+	</bean>
+	
+	<bean id="getdateService" class="com.gsmc.png.service.implementations.GetdataServiceImpl">
+		<property name="getDataDao" ref="getdataDao"></property>
+		<!-- <property name="notifyService" ref="notifyService"></property> -->
+	</bean>
+	
+</beans>

@@ -1,0 +1,14 @@
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN" "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<constant name="struts.action.extension" value="do" />
+	<constant name="struts.objectFactory" value="spring" />
+	<constant name="struts.enable.DynamicMethodInvocation" value="true" />
+	<constant name="struts.ognl.allowStaticMethodAccess" value="true" />
+	<constant name="struts.multipart.saveDir" value="/tmp"></constant>
+	
+	<include file="struts-png.xml"></include>
+	<!-- <include file="struts-sba.xml"></include>
+	<include file="struts-mwg.xml"></include>
+	<include file="struts-ag.xml"></include> -->
+	
+</struts>

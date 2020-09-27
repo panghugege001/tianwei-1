@@ -1,0 +1,17 @@
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN" "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<constant name="struts.action.extension" value="do" />
+	<constant name="struts.objectFactory" value="spring" />
+	<constant name="struts.enable.DynamicMethodInvocation" value="true" />
+	<constant name="struts.ognl.allowStaticMethodAccess" value="true" />
+    <constant name="struts.multipart.maxSize" value="999999999"/>
+	<package name="pngdata" namespace="/pngdata" extends="struts-default,json-default">
+	
+		<action name="pngDataFeed" class="PNGDataActionClass" method="pngDataFeed"></action>
+		
+		<action name="getPlayerBetsByDate" class="PNGDataActionClass" method="getPlayerBetsByDate"></action>
+		
+	</package>
+
+</struts>

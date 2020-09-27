@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd">
+	<!-- 定时获取AG游戏数据 -->
+	<bean id="fetchAgDataJobService" class="com.gsmc.png.quart.fetch.FetchAgDataJobService">
+		<constructor-arg index="0" ref="commonService" />
+	</bean>
+	<bean id="jobAgDataDetail"
+		class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+		<property name="targetObject" ref="fetchAgDataJobService" />
+		<property name="targetMethod" value="execute" />
+		<property name="concurrent" value="false" />
+	</bean>
+	<bean id="fetchAgData" class="org.springframework.scheduling.quartz.CronTriggerBean">
+		<property name="jobDetail" ref="jobAgDataDetail" />
+		<property name="cronExpression" value="0 0/3 * * * ?" />
+	</bean>
+	<!-- 定时处理TTG数据 -->
+	<bean id="fetchTTGJobService" class="com.gsmc.png.quart.fetch.FetchTTGJobService">
+		<property name="getdateService" ref="getdateService"></property>
+	</bean>
+	<bean id="jobTTGDetail"
+		class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+		<property name="targetObject" ref="fetchTTGJobService" />
+		<property name="targetMethod" value="execute" />
+		<property name="concurrent" value="false" />
+	</bean>
+	<bean id="fetchTTGTrigger" class="org.springframework.scheduling.quartz.CronTriggerBean">
+		<property name="jobDetail" ref="jobTTGDetail" />
+		<property name="cronExpression" value="0 0/5 * * * ?" />
+	</bean>
+
+	<!--定时处理QT数据 -->
+	<bean id="fetchQtJobService" class="com.gsmc.png.quart.fetch.FetchQtJobService">
+		<property name="getdateService" ref="getdateService"></property>
+		<property name="fromApi" value="yes"></property>
+	</bean>
+
+	<bean id="jobQtDetail"
+		class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+		<property name="targetObject" ref="fetchQtJobService" />
+		<property name="targetMethod" value="execute" />
+		<property name="concurrent" value="false" />
+	</bean>
+
+	<bean id="fetchQtTrigger" class="org.springframework.scheduling.quartz.CronTriggerBean">
+		<property name="jobDetail" ref="jobQtDetail" />
+		<property name="cronExpression" value="0 0/2 * * * ?" />
+	</bean>
+
+	<!-- 定时获取SW老虎机和游戏数据 -->
+	<bean id="fetchSwDataJobService" class="com.gsmc.png.quart.fetch.FetchSwDataJobService">
+		<constructor-arg index="0" ref="commonService" />
+	</bean>
+	<bean id="jobSwDataDetail"
+		class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+		<property name="targetObject" ref="fetchSwDataJobService" />
+		<property name="targetMethod" value="execute" />
+		<property name="concurrent" value="false" />
+	</bean>
+	<bean id="fetchSwData" class="org.springframework.scheduling.quartz.CronTriggerBean">
+		<property name="jobDetail" ref="jobSwDataDetail" />
+		<property name="cronExpression" value="0 0/3 * * * ?" />
+	</bean>
+	<!-- 沙巴投注额 -->
+	<bean id="fetchSbaDataJob" class="com.gsmc.png.quart.fetch.FetchSbaDataJob">
+		<property name="sbaService" ref="sbaService"></property>
+	</bean>
+	<bean id="jobSbaDataDetail"
+		class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+		<property name="targetObject" ref="fetchSbaDataJob" />
+		<property name="targetMethod" value="execute" />
+		<property name="concurrent" value="false" />
+	</bean>
+	<bean id="fetchSbaDataTrigger" class="org.springframework.scheduling.quartz.CronTriggerBean">
+		<property name="jobDetail" ref="jobSbaDataDetail" />
+		<property name="cronExpression" value="0 0/30 * * * ?" />
+		<!-- <property name="cronExpression" value="*/3 * * * * ?" /> -->
+	</bean>
+
+	<!-- AG投注额 -->
+	<bean id="fetchAgJobService" class="com.gsmc.png.quart.fetch.FetchAGSlotJobService">
+		<property name="agDataProcessorService" ref="agDataProcessorService"></property>
+	</bean>
+
+	<bean id="jobAgDetail"
+		class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+		<property name="targetObject" ref="fetchAgJobService" />
+		<property name="targetMethod" value="processStatusData" />
+		<property name="concurrent" value="false" />
+	</bean>
+
+	<bean id="fetchAgTrigger" class="org.springframework.scheduling.quartz.CronTriggerBean">
+		<property name="jobDetail" ref="jobAgDetail" />
+		<property name="cronExpression" value="0 0/5 * * * ?" />
+	</bean>
+
+
+	<!-- AG投注额 檢查30分鐘前 -->
+	<bean id="fetchAgCheckJobService" class="com.gsmc.png.quart.fetch.FetchAGSlotJobService">
+		<property name="agDataProcessorService" ref="agDataProcessorService"></property>
+	</bean>
+
+	<bean id="jobAgCheckDetail"
+		class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+		<property name="targetObject" ref="fetchAgCheckJobService" />
+		<property name="targetMethod" value="checkBefor30Minit" />
+		<property name="concurrent" value="false" />
+	</bean>
+
+	<bean id="fetchAgCheckTrigger" class="org.springframework.scheduling.quartz.CronTriggerBean">
+		<property name="jobDetail" ref="jobAgCheckDetail" />
+		<property name="cronExpression" value="0 0/20 * * * ?" />
+	</bean>
+
+	<!-- 定时扫描PT经典老虎机和电动吃角子游戏数据 -->
+	<bean id="fetchPTTSlotJobService" class="com.gsmc.png.quart.fetch.FetchPTSlotJobService">
+		<constructor-arg index="0" ref="commonService" />
+		<constructor-arg index="1" ref="ptDataService" />
+	</bean>
+	<bean id="jobPTSlotDetail"
+		class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+		<property name="targetObject" ref="fetchPTTSlotJobService" />
+		<property name="targetMethod" value="execute" />
+		<property name="concurrent" value="false" />
+	</bean>
+	<bean id="fetchPTSlot" class="org.springframework.scheduling.quartz.CronTriggerBean">
+		<property name="jobDetail" ref="jobPTSlotDetail" />
+		<property name="cronExpression" value="0 0/3 * * * ?" />
+	</bean>
+
+	<!-- 定时获取MG老虎机和游戏数据 -->
+	<bean id="fetchMgDataJobService" class="com.gsmc.png.quart.fetch.FetchMgDataJobService">
+		<constructor-arg index="0" ref="commonService" />
+	</bean>
+	<bean id="jobMgDataDetail"
+		class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+		<property name="targetObject" ref="fetchMgDataJobService" />
+		<property name="targetMethod" value="execute" />
+		<property name="concurrent" value="false" />
+	</bean>
+	<bean id="fetchMgData" class="org.springframework.scheduling.quartz.CronTriggerBean">
+		<property name="jobDetail" ref="jobMgDataDetail" />
+		<property name="cronExpression" value="0 0/3 * * * ?" />
+	</bean>
+
+	<!-- 定时获取bbin电子数据 -->
+	<bean id="fetchBbinDataJobService" class="com.gsmc.png.quart.fetch.FetchBbinDataJobService">
+		<constructor-arg index="0" ref="commonService" />
+	</bean>
+	<bean id="jobBbinDataDetail"
+		class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+		<property name="targetObject" ref="fetchBbinDataJobService" />
+		<property name="targetMethod" value="execute" />
+		<property name="concurrent" value="false" />
+	</bean>
+	<bean id="fetchBbinEleBetting" class="org.springframework.scheduling.quartz.CronTriggerBean">
+		<property name="jobDetail" ref="jobBbinDataDetail" />
+		<property name="cronExpression" value="0 0/3 * * * ?" />
+	</bean>
+
+	<!-- 定时获取CQ9老虎机和游戏数据 -->
+	<bean id="fetchCq9DataJobService" class="com.gsmc.png.quart.fetch.FetchCq9DataJobService">
+		<constructor-arg index="0" ref="commonService" />
+	</bean>
+	<bean id="jobCq9DataDetail"
+		class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+		<property name="targetObject" ref="fetchCq9DataJobService" />
+		<property name="targetMethod" value="execute" />
+		<property name="concurrent" value="false" />
+	</bean>
+	<bean id="fetchCq9Data" class="org.springframework.scheduling.quartz.CronTriggerBean">
+		<property name="jobDetail" ref="jobCq9DataDetail" />
+		<property name="cronExpression" value="0 0/3 * * * ?" />
+	</bean>
+	
+	<!-- 定时获取PG老虎机和游戏数据 -->
+	<bean id="fetchPgDataJobService" class="com.gsmc.png.quart.fetch.FetchPgDataJobService">
+		<constructor-arg index="0" ref="commonService" />
+	</bean>
+	<bean id="jobPgDataDetail"
+		class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+		<property name="targetObject" ref="fetchPgDataJobService" />
+		<property name="targetMethod" value="execute" />
+		<property name="concurrent" value="false" />
+	</bean>
+	<bean id="fetchPgData" class="org.springframework.scheduling.quartz.CronTriggerBean">
+		<property name="jobDetail" ref="jobPgDataDetail" />
+		<property name="cronExpression" value="0 0/3 * * * ?" />
+	</bean>
+
+	<bean class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+		<property name="triggers">
+			<list>
+				<ref bean="fetchCq9Data" />
+				<ref bean="fetchMgData" />
+				<ref bean="fetchPgData" />
+				<!-- <ref bean="fetchAgData"/> <ref bean="fetchTTGTrigger" /> <ref bean="fetchQtTrigger"/> 
+					<ref bean="fetchSwData"/> <ref bean="fetchMgData"/> <ref bean="fetchBbinEleBetting"/> 
+					<ref bean="fetchPTSlot"/> <ref bean="fetchSbaDataTrigger"/> <ref bean="fetchAgTrigger" 
+					/> <ref bean="fetchAgCheckTrigger" /> -->
+			</list>
+		</property>
+	</bean>
+</beans>

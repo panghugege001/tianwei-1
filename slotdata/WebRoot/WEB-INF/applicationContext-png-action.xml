@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd">
+	
+	<bean id="PNGDataActionClass" class="com.gsmc.png.action.PNGDataFeedAction">
+		<property name="pngDataProcessorService" ref="pngDataProcessorService" />
+	</bean>
+	
+	<bean id="AGDataActionClass" class="com.gsmc.png.action.AGDataFeedAction">
+		<property name="agDataProcessorService" ref="agDataProcessorService" />
+	</bean>
+	
+	
+	<bean id="PNGDataProcessor1" class="com.gsmc.png.utils.PNGDataProcessorThread"
+		init-method="init" destroy-method="destroy">
+		<!-- <property name="pngDataProcessorService" ref="pngDataProcessorService" /> -->
+	</bean>
+	
+	<bean id="PNGDataProcessor2" class="com.gsmc.png.utils.PNGDataProcessorThread"
+		init-method="init" destroy-method="destroy">
+		<!-- <property name="pngDataProcessorService" ref="pngDataProcessorService" /> -->
+	</bean>
+	
+	<bean id="PNGDataProcessor3" class="com.gsmc.png.utils.PNGDataProcessorThread"
+		init-method="init" destroy-method="destroy">
+		<!-- <property name="pngDataProcessorService" ref="pngDataProcessorService" /> -->
+	</bean>
+	
+	<bean id="PNGDataProcessor4" class="com.gsmc.png.utils.PNGDataProcessorThread"
+		init-method="init" destroy-method="destroy">
+		<!-- <property name="pngDataProcessorService" ref="pngDataProcessorService" /> -->
+	</bean>
+	
+	<bean id="PNGDataProcessor5" class="com.gsmc.png.utils.PNGDataProcessorThread"
+		init-method="init" destroy-method="destroy">
+		<!-- <property name="pngDataProcessorService" ref="pngDataProcessorService" /> -->
+	</bean>
+	
+	<bean id="PNGDataProcessor6" class="com.gsmc.png.utils.PNGDataProcessorThread"
+		init-method="init" destroy-method="destroy">
+		<!-- <property name="pngDataProcessorService" ref="pngDataProcessorService" /> -->
+	</bean>
+	
+	<bean id="PNGDataProcessor7" class="com.gsmc.png.utils.PNGDataProcessorThread"
+		init-method="init" destroy-method="destroy">
+		<!-- <property name="pngDataProcessorService" ref="pngDataProcessorService" /> -->
+	</bean>
+	
+	<bean id="PNGDataProcessor8" class="com.gsmc.png.utils.PNGDataProcessorThread"
+		init-method="init" destroy-method="destroy">
+		<!-- <property name="pngDataProcessorService" ref="pngDataProcessorService" /> -->
+	</bean>
+	
+	<bean id="PNGDataProcessor9" class="com.gsmc.png.utils.PNGDataProcessorThread"
+		init-method="init" destroy-method="destroy">
+		<!-- <property name="pngDataProcessorService" ref="pngDataProcessorService" /> -->
+	</bean>
+	
+	<bean id="PNGDataProcessor10" class="com.gsmc.png.utils.PNGDataProcessorThread"
+		init-method="init" destroy-method="destroy">
+		<!-- <property name="pngDataProcessorService" ref="pngDataProcessorService" /> -->
+	</bean>
+</beans>
