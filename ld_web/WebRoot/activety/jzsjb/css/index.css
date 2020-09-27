@@ -1,0 +1,284 @@
+*{ padding: 0; margin: 0; box-sizing: border-box;-moz-box-sizing: border-box;-o-box-sizing: border-box;-webkit-box-sizing: border-box;}
+input{border:none;outline: none;background:none;}
+a{color: inherit; text-decoration: none;}
+body{font:lighter 18px/1 "微软雅黑",arial; color: #fff;min-width: 1200px;}
+p {color: #fff;	padding-bottom: 15px;}
+.clearfix:after {
+    content: '';
+    clear: both;
+    zoom: 1;
+    display: block;
+}
+ul,ol{list-style: none;}
+table{ border-spacing: none;border-collapse:collapse;}
+.activety_header {
+    background-color: #14182b;
+    border-bottom: 5px solid #14182b;
+}
+/*专题头脚颜色*/
+body .user_game, body .gb-footer, body .gb-footer .footer-sub {
+    background-color: #ffffff!important;
+}
+body .user_game, body .gb-footer, body .gb-footer .footer-sub {
+	background-color: #14182b!important;
+	color: #fff!important;
+}
+.gb-footer .footer-nav li a {
+	color: #fff!important;
+}
+/*专题头脚颜色*/
+.margin{margin: 0!important;}
+table.table {
+	border-radius: 15px;
+	overflow: hidden;
+}
+body table.table thead tr th {
+	background-color: #fccb4b;
+	font-size: 24px;
+	color: #222222;
+	border:none;
+	border-right: 1px solid #23345e;
+	border-bottom: 1px solid #23345e;
+	padding: 0!important;
+	height: 50px;
+}
+body table.table tbody tr td {
+	background-color:#3b5492;
+	font-size: 18px;
+	color: #fff;
+	border-right: 1px solid #23345e;
+	border-bottom: 1px solid #23345e;
+	padding: 0!important;
+	height: 40px;
+}
+body table.table thead tr th:last {
+	border-right:none;
+} body table.table tbody tr td:last {
+	border-right:none;
+}
+body .c-yellow {
+	color: #fdcc4b!important;
+}
+
+.bg-wp {
+    background: url(../img/bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 2368px;
+    position: relative;
+    min-width: 1200px;
+}
+.banner-wp  {
+	height: 500px;
+	text-align: center;
+	padding-top: 155px;
+	margin-bottom: 440px;
+}
+.container-wp {
+	width: 1200px;
+	padding:165px 88px 0 120px;
+	height: 1304px;
+	background:url(../img/conbg.png) no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	margin:0 auto;
+}
+.nme {
+	position: absolute;
+	top: -550px;
+	left:-270px;
+	opacity: 0;
+}
+.apply-btn {
+	position: fixed;
+    right: 20px;
+    margin-left: -125px;
+    top: 100px;
+    width: 255px;
+    height: 258px;
+    z-index: 2;
+}
+.step-box {
+	padding: 0 0 40px 175px;
+}
+.table-box {
+	padding:0 0 0 175px;
+}
+.step-box a {
+	float: left;
+	position: relative;
+}
+.step-box .step-item.md {
+	margin:0 80px;
+}
+.title-box {
+	padding-left: 250px;
+	margin-bottom: 80px;
+}
+.title-box p{
+	padding-bottom: 10px;
+}
+i.arrow-right {
+	width: 38px;
+	height: 50px;
+	right:-62px;
+	top:50%;
+	margin-top: -19px;
+	background:url(../img/jt.png) no-repeat;
+	position: absolute;
+}
+p.text-ind2 {
+	text-indent:1rem;
+}
+.step-box {
+
+}
+.ruler-box h3 {
+	color: #fccb4b;
+	font-size: 30px;
+	margin-bottom: 40px;
+}
+.ruler-box p {
+	padding-bottom: 20px;
+}
+.textPng {
+	-webkit-animation: a-float 9.9s linear infinite;
+    animation: a-float 9.9s linear infinite;
+}
+.apply-btn:hover .football {
+	-webkit-animation: a-ball 1s linear infinite;
+    animation: a-ball 1s linear infinite;
+}
+.btnimg {
+	transition: all 1s;
+    background-color: transparent;
+    border-radius: 24px;
+}
+.apply-btn:hover .btnimg {
+	box-shadow: 0px 0px 52px 0px #fff;
+}
+.mobile-banner {
+	display: none;
+	margin-bottom: 20px;
+}
+.mobile-banner img {
+	width: 100%;
+}
+.football {
+	width: 150px;
+	height: 150px;
+	display: inline-block;
+}
+.football img {
+	width: 100%;
+}
+
+@media screen and (max-width: 750px) {
+	.mobile-banner {
+		display: block;
+	}
+	.step-box img{
+		width: 100%;
+	}
+	.apply-btn {
+		height:97px;
+		width: 200px;
+	}
+	.apply-btn img {
+		width: 100%;
+	}
+	.apply-btn img.football {
+			display: none;
+	}
+
+	body {
+		min-width: auto;
+		width: 100%;
+		background: #23345e;
+	}
+	.bg-wp {
+		min-width: auto;
+		width: 100%;
+		background: #23345e;
+	}
+	.banner-wp {
+		display: none;
+	}
+	.nme {
+		display: none;
+	}
+	.container-wp {
+		padding: 0 10px;
+	    width: 100%;
+	    background: #23345e;
+	}
+	.apply-btn {
+		position: static;
+	    display: block;
+	    text-align: center;
+	    margin: 0 auto;
+	}
+	.title-box,.table-box,.step-box,.ruler-box {
+		padding:20px 10px;
+		margin:0;
+	}
+	.step-item {
+		width: 30%;
+	}
+	.step-box .step-item.md {
+		margin: 0 13px;
+	}
+	i.arrow-right {
+		width: 10px;
+	    height: 22px;
+	    right: -12px;
+	    top: 54%;
+	    margin-top: -11px;
+	    background: url(../img/jt.png) no-repeat;
+	    position: absolute;
+	    background-size: 100%;
+	}
+	.ruler-box p {
+		padding-bottom: 10px;
+	}
+
+}
+@-webkit-keyframes a-ball {
+    0%{
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+@keyframes a-ball {
+    0%{
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes a-float {
+    0%, 100% {
+        -webkit-transform: translateY(0);
+    }
+    25% {
+        -webkit-transform: translateY(5%);
+    }
+    75% {
+        -webkit-transform: translateY(-5%);
+    }
+}
+@keyframes a-float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(5%);
+    }
+    75% {
+        transform: translateY(-5%);
+    }
+}

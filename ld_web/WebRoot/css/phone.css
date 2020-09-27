@@ -1,0 +1,15 @@
+/*
+ * 手机游戏 - 内容
+ * ================================*/
+ .index-bg{ background: #26180f url(../images/phone/down-bj.jpg?v=1017) no-repeat center 50px;}
+.h415{ width:620px; height:335px; margin-top:80px; position:relative; float:right;} 
+.phone-main h5{ color:#ee6325; font-size:18px; }
+.w147, .ewm{ width:147px; height:147px; background:#d6d6d6; text-align:center;}
+.w147 img, .ewm img{ margin-top:9px;}
+.mt50{ margin-top:50px;}
+.gb-main-r .m-content{ position:relative;}
+.phone-main .net{ padding:0 20px; height:32px; line-height:32px; display:inline-block; border:1px solid #aaa; background-color:#fff; color:#352724; border-radius:6px;}
+.phone-main .pic{ position:absolute; right:45px; top:25px;} 
+.ewm{ width:147px;  display:inline-block; background:none; text-align:center}
+.ewm span{ width: 100%;  height: 100%;  background-color: #d6d6d6;  display: block;}
+.gb-main-r .m-content p{ margin:10px 0;}

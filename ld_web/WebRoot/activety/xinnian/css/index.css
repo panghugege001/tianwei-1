@@ -1,0 +1,267 @@
+@charset "utf-8";
+*{ -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+*:before,
+*:after{ -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+/** 清除内外边距 **/
+*{ margin: 0; padding: 0;}
+a{ text-decoration: none;}
+img{ border: none;}
+
+/* structural elements 结构元素 */
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote,
+/* list elements 列表元素 */
+dl, dt, dd, ul, ol, li,
+/* text formatting elements 文本格式元素 */
+pre,
+/* form elements 表单元素 */
+form, fieldset, legend, button, input, textarea,
+/* table elements 表格元素 */
+th, td { margin: 0; padding: 0;}
+
+/** 设置默认字体 **/
+body, pre, button, input, select, textarea /* for ie */
+{ font: 14px/1.6 tahoma, arial, 'Microsoft YaHei', sans-serif;}
+
+/** 重置文档高度 **/
+html, body{ height: 100%;}
+body{ color: #c1c1c1;}
+
+h1, h2, h3, h4, h5, h6{ font-size: 100%; font-weight: normal;}
+/* 将斜体扶正 */
+address, cite, dfn, em, var{ font-style: normal;}
+/* 统一等宽字体 */
+code, kbd, pre, samp{ font-family: courier new, courier, monospace;}
+/* 小于 12px 的中文很难阅读，让 small 正常化 */
+small{ font-size: 12px;}
+
+
+/** 重置列表元素 **/
+ul, ol{ list-style: none;}
+/** 重置文本格式元素 **/
+a{ text-align: center; text-decoration: none; color: inherit;}
+a:focus{ outline: none;}
+
+
+/** 重置表单元素 **/
+legend{ color: #000;} /* for ie6 */
+fieldset, img{ border: 0; vertical-align: middle}
+/* 使得表单元素在 ie 下能继承字体大小 */
+button, input, select, textarea{ font-size: 100%;}
+/*表单元素字体*/
+input, textarea, button{ font: 14px/1.6 Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', 微软雅黑, Arial, sans-serif; outline: 0;}
+
+input[type='button'], input[type='submit'], button{ cursor: pointer;}
+button:focus{ outline: none;}
+
+input[type='button'], input[type='submit'], input[type='reset'], button{ /*input[type="file"]::-webkit-file-upload-button,*/
+    border: 1px solid transparent;}
+
+/*设置表单元素不可用的样式*/
+input[readonly],
+input:disabled,
+button:disabled,
+button[readonly],
+textarea:disabled{ color: #545454!important; background-color: #ccc!important;}
+input[readonly]:hover,
+input:disabled:hover,
+button:disabled:hover,
+button[readonly]:hover,
+textarea:disabled:hover{ cursor: not-allowed;}
+
+/** placeholder 重置 **/
+[placeholder]{ font-family: 'Microsoft yahei';}
+::-moz-placeholder{ text-indent: 5px; /* 没有用 */ opacity: 1!important; color: #bbb;}
+:-ms-input-placeholder{ text-indent: 5px; color: #bbb;}
+::-webkit-input-placeholder{ text-indent: 5px; color: #bbb;}
+
+/** 重置表格元素 **/
+table{ border-spacing: 0; border-collapse: collapse;}
+
+/* #滚动条
+=========*/
+::-webkit-scrollbar{ width: 8px; height: 8px;}
+
+::-webkit-scrollbar-track-piece{ margin: -2px; background-color: #eee;}
+
+::-webkit-scrollbar-thumb{ min-width: 150px; min-height: 150px; border-radius: 10px; background: #aaa;}
+
+::-webkit-scrollbar-thumb:vertical:hover{ background: #555;}
+
+::-webkit-scrollbar-thumb:horizontal:hover{ background: #555;}
+
+.new_ye{
+    background:url(../img/xinnian_bannar.jpg) no-repeat center 50px;
+    height: 609px;
+    background-position: center;
+    background-position-y: 0px;
+}
+
+.w_1200{
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.w_1030{
+    width: 1030px;
+    margin: 0 auto;
+    height: 100px;
+    margin-bottom: 30px;
+}
+.w_1030 ul li{
+	float: left;
+	margin-left: 30px;
+	cursor: pointer;
+}
+
+.w_1030 ul li:first-child{
+	margin-left: 0px;
+}
+
+.xinnian_beijing{
+	background: url(../img/xinnanbeijing.png) no-repeat;
+	background-position: center;
+	height: 1226px;
+	padding: 150px 130px;
+}
+
+.xinnian_beijing p{
+    font-size: 18px;
+    color: #fff;
+    height: 40px;
+    min-height: 180px;
+    line-height: 38px;
+}
+
+.xinnian_table table{
+	width: 100%;
+	margin-bottom: 30px;	
+}
+.xinnian_table table tr th{
+	background: #f9b16c;
+	text-align: center;
+	font-size: 18px;
+	border:  1px solid #2f2a26;
+	height: 50px;
+	line-height: 50px;
+	color: #333333;
+}
+
+.w_1030 ul li{
+	background: url(../img/yuandan2_bj.png) no-repeat;
+	width: 500px;
+	height: 100px;
+	text-align: center;
+	line-height: 7;
+	
+}
+
+.w_1030 ul .action{
+	background: url(../img/yuandan2_bj_2.png) no-repeat;
+	width: 500px;
+	height: 100px;	
+}
+
+.xinnian_table table tr td{
+	background: #333333;
+	text-align: center;
+	color: #FFFFFF;
+	border:  1px solid #2f2a26;
+	height: 40px;
+	line-height: 40px;
+}
+
+.w_1200{
+	margin-bottom: 30px;
+}
+
+
+
+@media screen and (max-width:750px){
+	.w_1030{
+		width: 100%;
+	}
+	.w_1200{
+		width: 100%;
+	}
+	
+	.xinnian_beijing{
+		background: #BE0000;
+	}
+	
+	img{
+		max-width: 100%;
+	}
+	
+	.gb-footer{
+		display: none !important;
+	}
+	.xinnian_beijing{
+		height: 960px;
+	}
+	.new_ye{
+		display: none;
+	}
+	.xinnian_beijing p{
+		line-height: 1.6;
+		font-size: 16px;
+		padding-top: 2px;
+	}
+	.xinnian_beijing{
+		padding: 0px 10px;
+    	margin-top: 67px;
+	}
+	.w_1030 ul li{
+		margin: 0px;
+	}
+	
+	.w_1030 ul li{
+		width: 100%;
+		background-size: contain;
+		line-height: 4;
+	}
+	.w_1030 ul .action{
+		width: 100%;
+		background-size: contain;	
+		line-height: 4;	
+	}
+	.w_1030 ul li{
+		margin: 0px;
+	}
+	.w_1030 ul li{
+		height: 85px;
+	}
+	.w_1030 ul .action{
+		height: 85px;
+	}
+	
+}
+
+@media screen and (max-width:375px){
+	.xinnian_beijing p{
+		line-height: 1.6;
+	}
+	
+	.xinnian_table{
+		margin-top: 30px;
+	}
+}
+
+@media screen and (max-width:320px){
+	.xinnian_beijing p{
+		line-height: 1.6;
+	}
+
+	.w_1030 ul li{
+		width: 100%;
+		background-size: contain;
+		line-height: 4;
+		padding: 0px 23px;
+	}
+	.w_1030 ul .action{
+		width: 100%;
+		background-size: contain;	
+		line-height: 4;	
+    	padding: 0px 23px;		
+	}
+	
+}

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN" "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	
+	<package name="pay" namespace="/asp" extends="struts-default">
+		<!-- 个人中心 -->
+		<action name="gameAmount" class="dfh.action.customer.CustomerCenterAction" method="gameAmount"></action>
+		
+        <action name="submitOrder" class="NetpayActionClass" method="submitOrderForOpay">
+            <result name="input">/deposit.jsp</result>
+        </action>
+
+        <!--久安接口-->
+        <action name="bindWalletInfo" class="JiuAnActionClass" method="bindWalletInfo"></action>
+        <action name="getWalletInfo" class="JiuAnActionClass" method="getWalletInfo"></action>
+        <action name="confirmPayment" class="JiuAnActionClass" method="confirmPayment"></action>
+        <action name="getInitInterfaceData" class="JiuAnActionClass" method="getInitInterfaceData"></action>
+
+
+        <!-- 新支付接口   开始-->
+
+        <action name="wx_pay" class="dfh.action.customer.PayAction" method="gameLogin">
+            <result name="success">/WEB-INF/pages/pay/wechat_pay.jsp</result>
+			<result name="error">/pages/error.jsp</result>
+        </action>   
+        
+        <action name="jd_pay" class="dfh.action.customer.PayAction" method="gameLogin">
+            <result name="success">/WEB-INF/pages/pay/jd_pay.jsp</result>
+            <result name="error" type="redirect">/index.jsp</result>
+        </action>
+        
+        <action name="pay_api_json" class="dfh.action.customer.PayAction" method="pay_api_json"></action>
+
+
+        <action name="qq_pay" class="dfh.action.customer.PayAction" method="gameLogin">
+            <result name="success">/WEB-INF/pages/pay/qq_pay.jsp</result>
+            <result name="error" type="redirect">/index.jsp</result>
+        </action>
+
+        <action name="zfb_pay" class="dfh.action.customer.PayAction" method="gameLogin">
+            <result name="success">/WEB-INF/pages/pay/ali_pay.jsp</result>
+            <result name="error">/pages/error.jsp</result>
+        </action>
+
+        <action name="online" class="dfh.action.customer.PayAction" method="gameLogin">
+            <result name="success">/WEB-INF/pages/pay/third_online_pay.jsp</result>
+            <result name="error">/pages/error.jsp</result>
+        </action>
+
+        <action name="quick" class="dfh.action.customer.PayAction" method="gameLogin">
+            <result name="success">/WEB-INF/pages/pay/quick.jsp</result>
+            <result name="error">/pages/error.jsp</result>
+        </action>
+
+        <action name="point_card" class="dfh.action.customer.PayAction" method="gameLogin">
+            <result name="success">/WEB-INF/pages/pay/point_card_pay.jsp</result>
+            <result name="error">/pages/error.jsp</result>
+        </action>
+        
+        <action name="point_card2" class="dfh.action.customer.PayAction" method="gameLogin">
+            <result name="success">/WEB-INF/pages/pay/point_card_pay2.jsp</result>
+            <result name="error">/pages/error.jsp</result>
+        </action>
+
+        <action name="pay_api" class="dfh.action.customer.PayAction" method="pay_api">
+            <result name="pay_redirect">/WEB-INF/pages/pay/pay_redirect.jsp</result>
+            <result name="pay_qrcode">/WEB-INF/pages/pay/pay_qrcode.jsp</result>
+            <result name="pay_jaqrcode">/WEB-INF/pages/pay/pay_jaqrcode.jsp</result>
+            <result name="jhf_pay_redirect">/WEB-INF/pages/pay/jhf_pay_redirect.jsp</result>
+            <result name="qe_pay_redirect">/WEB-INF/pages/pay/qe_pay_redirect.jsp</result>
+            <result name="third_redirect">/WEB-INF/pages/pay/third_redirect.jsp</result>
+            <result name="success">/WEB-INF/pages/pay/success.jsp</result>
+            <result name="error" type="redirect">/WEB-INF/index.jsp</result>
+        </action>
+
+        <action name="pay_way" class="dfh.action.customer.PayAction" method="pay_way"></action>
+
+        <action name="pay_bank" class="dfh.action.customer.PayAction" method="pay_bank"></action>
+        <!-- 新支付接口   结束-->
+
+        <!--  易宝支付回调地址 -->
+        <action name="callBack" class="NetpayActionClass" method="callBack">
+            <result name="show" type="plainText"></result>
+            <result type="plainText" name="asynCall"></result>
+        </action>
+        
+        <!-- 云网支付回调地址相关配制-->
+        <action name="callBackcncard" class="NetpayActionClass" method="callBackcncard">
+            <result type="plainText" name="successUrl"></result>
+            <result type="plainText" name="failUrl"></result>
+        </action>
+        
+        <!-- nps回调相关配制-->
+        <action name="callBacknps" class="NetpayActionClass" method="callBacknps">
+            <result name="successUrl" type="plainText"></result>
+            <result name="failUrl" type="plainText"></result>
+        </action>
+        
+        <!-- ips回调相关配制-->
+        <action name="callBackips" class="NetpayActionClass" method="callBackips">
+            <result name="successUrl" type="plainText"></result>
+            <result name="failUrl" type="plainText"></result>
+        </action>
+        
+        <!-- tenpay回调相关配制-->
+        <action name="callBacktenpay" class="NetpayActionClass" method="callBacktenpay">
+            <result name="successUrl" type="plainText"></result>
+            <result name="failUrl" type="plainText"></result>
+        </action>
+        
+        <!-- onepay回调相关配制-->
+        <action name="callBackOpay" class="NetpayActionClass" method="callBackOpay">
+            <result name="success">/deposit.jsp</result>
+            <result name="show" type="plainText"></result>
+        </action>
+        
+       <!-- 秒付宝-->
+        <action name="returnNotify" class="dfh.action.customer.LfWxReturnAction" method="returnNotify" />
+      
+        <!--通联存款回调-->
+		<action name="tlDeposit" class="dfh.action.customer.LfWxReturnAction" method="tlDepositCallback" /> 
+		
+        
+    </package>
+    
+    <!-- 以下事回调接口 -->
+    <package name="db" namespace="/db" extends="json-default">
+        <action name="zfb_wx_return" class="dfh.action.customer.PayAction" method="db_zfb_wx_return"></action>
+    </package>
+    <package name="xm" namespace="/xm">
+        <action name="rt" class="dfh.action.customer.PayAction" method="xm_zfb_wx_return"></action>
+    </package>
+    
+    <package name="yifu" namespace="/yifu">
+		<action name="zfb_wx_return" class="dfh.action.customer.PayAction" 
+			method="yifu_zfb_wx_return"></action>
+	</package>
+    
+    <package name="dinpay_m" namespace="/dinpay" extends="json-default">
+        <action name="zfb_wx_return" class="dfh.action.customer.PayAction" method="dinpay_zfb_wx_return"></action>
+        <action name="online_pay_return" class="dfh.action.customer.PayAction" method="dinpay_online_pay_return"></action>
+        <action name="point_card_return" class="dfh.action.customer.PayAction" method="dinpay_point_card_return"></action>
+    </package>
+    <package name="kd" namespace="/kd" extends="json-default">
+        <action name="zfb_wx_return" class="dfh.action.customer.PayAction" method="kd_zfb_wx_return"></action>
+    </package>
+    <package name="hc" namespace="/hc" extends="json-default">
+        <action name="online_pay_return" class="dfh.action.customer.PayAction" method="hc_online_pay_return"></action>
+    </package>
+    <package name="qw" namespace="/qw" extends="json-default">
+        <action name="zfb_wx_return" class="dfh.action.customer.PayAction" method="qw_zfb_wx_return"></action>
+    </package>
+    <package name="xinbei" namespace="/xinbei">
+        <action name="zfb_wx_return" class="dfh.action.customer.PayAction" method="xb_zfb_wx_return"></action>
+    </package>
+    <package name="xft" namespace="/xft" extends="json-default">
+        <action name="zfb_wx_return" class="dfh.action.customer.PayAction" method="xft_zfb_wx_return"></action>
+    </package>
+    <package name="xlb" namespace="/xlb" extends="json-default">
+        <action name="zfb_wx_return" class="dfh.action.customer.PayAction" method="xlb_zfb_wx_return"></action>
+        <action name="online_pay_return" class="dfh.action.customer.PayAction" method="xlb_online_pay_return"></action>
+    </package>
+    <package name="yf" namespace="/yf" extends="json-default">
+        <action name="zfb_wx_return" class="dfh.action.customer.PayAction" method="yf_zfb_wx_return"></action>
+    </package>
+    <package name="jhz" namespace="/jhz" extends="json-default">
+        <action name="zfb_wx_return" class="dfh.action.customer.PayAction" method="jhz_zfb_wx_return"></action>
+    </package>
+    <package name="th" namespace="/th" extends="json-default">
+        <action name="zfb_wx_return" class="dfh.action.customer.PayAction" method="th_zfb_wx_return"></action>
+    </package>
+    <package name="rx" namespace="/rx" extends="json-default">
+        <action name="zfb_wx_return" class="dfh.action.customer.PayAction" method="rx_zfb_wx_return"></action>
+    </package>
+    <package name="shb" namespace="/shb" extends="json-default">
+        <action name="zfb_wx_return" class="dfh.action.customer.PayAction" method="shb_zfb_wx_return"></action>
+    </package>
+    <package name="third" namespace="/third">
+        <action name="rt" class="dfh.action.customer.PayAction" method="third_return"></action>
+    </package>
+    <!-- 回调接口  结束 -->
+    
+    <package name="dinpay" namespace="/asp" extends="json-default">
+	    <action name="payPage" class="dfh.action.customer.PayAction" method="payPage">
+			<result name="payPage">/userManage.jsp</result>
+			<result name="error">/index.jsp</result>
+		</action>
+		
+		<action name="unionPay" class="dfh.action.customer.DinpayAction" method="unionPay">
+            <result name="error">/WEB-INF/pages/pay/WEB-INF/pages/pay/member_dinpay_error.jsp</result>
+        </action>
+	</package>
+    
+    <package name="payPage" namespace="/" extends="json-default">
+    	<!-- 新支付接口   开始-->
+       	<action name="userManage" class="dfh.action.customer.PayAction" method="payPage">
+			<result name="payPage">/WEB-INF/pages/userManage.jsp</result>
+			<result name="payPageNew">/WEB-INF/pages/userManageContentNew.jsp</result>
+			<result name="error" type="redirect">index.jsp</result>
+		</action>
+	</package>
+	
+</struts>

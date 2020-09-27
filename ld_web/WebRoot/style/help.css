@@ -1,0 +1,246 @@
+﻿/*help_header 开始*/
+.help_header{
+	height:62px;
+	background:url("../images/help_header.png") repeat-x;	
+}
+.help_header .header_inner{
+	height:62px;
+	background:url("../images/help_header_inner.jpg") no-repeat top center;	
+}
+/*help_header 结束*/
+
+/*help_page 开始*/
+.help_page{
+	background:url("../images/help_page.png") repeat-y;
+	margin-bottom:28px;
+	border-top:4px solid #55524d;	
+}
+ 
+/*help_aside 开始*/
+.help_aside{
+	width:248px;
+	float:left;	
+}
+.help_aside a{
+	display:inline-block;
+	height:54px;
+	width:220px;
+	padding-top:14px;	
+	padding-left:28px;
+	background:url("../images/help_aside_a.png") no-repeat left top;
+}
+.help_aside a:hover,.help_aside a.hover{
+	background:url("../images/help_aside_ah.png") no-repeat left top;	
+}
+.help_aside strong{
+	display:inline-block;
+	height:24px;
+	line-height:24px;
+	font-size:16px;
+	color:#fff;	
+	width:220px;
+}
+.help_aside span{
+	color:#8d8b88;	
+}
+.help_aside a:hover strong,.help_aside a.hover strong{
+	color:#c20000;	
+}
+.help_aside a:hover span,.help_aside a.hover span{
+	color:#2d2926;	
+}
+/*help_aside 结束*/
+
+/*help_section 开始*/
+.help_section{
+	width:682px;
+	float:right;
+	margin-right:30px;	
+	display:none;
+}
+.show{
+	display:block;	
+}
+.help_section .hs_head{
+	height:78px;
+	background:url("../images/hs_head.png") repeat-x left bottom;	
+	clear:both;
+}
+.help_section .hs_head strong{
+	padding-left:17px;
+	height:66px;
+	line-height:66px;
+	font-size:20px;
+	color:#2d2926;	
+	background:url("../images/hs_head_strong.png") no-repeat left center;
+	float:left;
+}
+.help_section .hs_head .tabs_handle{
+	float:right;
+	font-size:15px;
+	color:#000;	
+	margin-top:30px;
+}
+.help_section .hs_head .tabs_handle em{
+	float:left;
+	color:#b6b6b6;	
+	margin:0 10px;
+}
+.help_section .hs_head .tabs_handle .hover{
+	color:#d20000;	
+}
+.help_section .con{
+	padding:0 32px;	
+	color:#4a4642;
+	font-size:14px;
+}
+.help_section .con p{
+	line-height:160%;
+	text-indent:2em;	
+}
+.help_section .con .s{
+	font-weight:bold;	
+}
+.help_section .top{
+	padding:30px 0;	
+}
+.help_section .con dl{
+	padding-bottom:70px;	
+}
+.help_section .con dt{
+	height:23px;
+	line-height:23px;
+	font-weight:bold;
+	padding-left:10px;
+	background:url("../images/help_section_dt.png");	
+}
+.help_section .con dd{
+	line-height:160%;
+	text-indent:2em;
+	margin-top:5px;
+	padding:0 5px;	
+}
+/*help_section 结束*/
+
+/*help_page 结束*/
+
+/*----------------------------
+ 1. 找回密码
+----------------------------*/
+.f_page{
+	background: #e7e3e4;
+}
+.m_forgot{
+	padding:64px 80px ;
+	color: #4a4642;
+	text-align: center;
+}
+.m_forgot h3{
+	font-weight: bold;
+	text-align: center;
+	font-size: 26px;
+	margin-bottom: 64px;
+}
+.way_list .way_item{
+	float: left;
+	width: 33.33%;
+}
+.way_list .way_item .icon_row{
+	text-align: center;
+	margin-bottom: 40px;
+}
+.icon_fw_sms{
+	background-position: 0 0;
+}
+.icon_fw_email{
+	background-position: -160px 0;
+}
+.icon_fw_online{
+	background-position: -320px 0;
+}
+.way_list .way_item .icon_row .icon{
+	width: 160px;
+	height: 160px;
+}
+.way_list .way_item p{
+	font-size:18px;
+	margin-bottom: 32px;
+}
+.btn{
+	display: inline-block;
+	line-height: 30px;
+	height: 30px;
+	width: 100px;
+	color: #fff;
+	text-align: center;
+	background: #967f6d;
+	font-size: 14px;
+}
+.btn:hover{
+	background: #fa9300;
+	color: #fff;
+}
+.modal{
+	display: none;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 1040;
+}
+.modal-dialog{
+	/*display: none;*/
+	box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+	border: 1px solid rgba(0,0,0,0.2);
+	width: 500px;
+	margin: 12% auto;
+	background: #fff;
+}
+.modal-dialog .dialog-hd{
+	position: relative;
+	height: 80px;
+	line-height: 80px;
+	color: #4a4642;
+	font-size: 26px;
+	text-align: center;
+}
+.modal-dialog .dialog-hd .close{
+	position: absolute;
+	background: #fff;
+	font-size: 32px;
+	color: #ddd;
+	top:10px;
+	right: 20px;
+}
+.ipt_row{
+	margin-bottom: 18px;
+}
+.ipt_row label{
+	display: inline-block;
+	color: #7b7775;
+	min-width: 100px;
+	text-align: right;
+	font-size: 14px;
+	margin-right: 12px;
+}
+.ipt_row input[type="text"]{
+	width: 300px;
+	height: 38px;
+	font-size: 18px;
+	line-height: 38px;
+	color: #7b7775;
+	border: 1px solid #b9b3b0;
+}
+.dialog-bd{
+	padding-bottom: 28px;
+}
+.dialog-bd .ipt_row.last{
+	text-align: center;
+	margin-bottom: 0;
+}
+.dialog-bd .ipt_row .btn{
+	height: 46px;
+	width: 178px;
+	background: #fa9300;
+}

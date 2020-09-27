@@ -1,0 +1,32 @@
+@CHARSET "UTF-8";
+@import url("/css/util/reset.css?v=1");
+/* base css */
+*{ -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;}
+*::before, *::after{ -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;}
+body{background:#332c1c url("../images/404_bg.jpg") no-repeat center top;}
+a{text-decoration:none;}
+.page{width:1170px; margin:0 auto; text-align:center;}
+.logo{margin:45px 0 57px;}
+.top404{background:url("../images/404_banner.png") no-repeat center top; position:relative; animation:bgmove 3s infinite;}
+.text{font-size:24px; margin:48px 0;}
+.text .first{color:#706753;}
+.text .second{color:#f9ebca;}
+.button button{position:relative; font-size:22px; background:#fb9b08; color:#332c1c; border-radius:52px; border:0 none; transition:background .3s ease-in-out;}
+.button button a{display:block; color:#332c1c; width:197px; height:52px;  line-height:2.4;}
+.button button::before{content:""; position:absolute; top:20px; left:19px; background:url("../images/404_arrow.png") no-repeat; width:8px; height:13px;}
+.button button:hover{background:#cc7d05;}
+
+/* forbiddenPage.html */
+.text.error .right{padding-left:426px; width:800px; text-align:left; min-height:270px; margin:0 auto; background:url("../images/404_computer.png") no-repeat;}
+.text.error .title{font-size:24px; color:#fb9b08; padding-top:32px;}
+.text.error .text{font-size:16px; color:#9c937f;  margin:10px 0 20px;}
+.text.error .text span{color:#fff;}
+.text.error .button button::before{background:none;}
+
+
+/* animation */
+@keyframes bgmove {
+    0%   {background-position:center 0;}
+    50%  {background-position:center 10px;}
+    100% {background-position:center 0;}
+}

@@ -1,0 +1,667 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN" "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<package name="customer" namespace="/asp" extends="struts-default">
+		<!-- 定义一个拦截器 -->
+		<interceptors>
+			<interceptor name="authority" class="dfh.action.customer.AuthorityInterceptor" />
+			<!-- 拦截器栈 -->
+			<interceptor-stack name="ddtaoStack">
+				<interceptor-ref name="authority">
+					<param name="excludeMethods">uploadImage</param>
+				</interceptor-ref>
+				<interceptor-ref name="paramsPrepareParamsStack" />
+			</interceptor-stack>
+		</interceptors>
+		<default-interceptor-ref name="ddtaoStack" />
+
+		<!--每月回馈  生日礼金 -->
+		<action name="getBirthdayMoney" class="MemberActionClass" method="getBirthdayMoney">
+		</action>
+		<action name="drawBirthdayMoney" class="MemberActionClass" method="drawBirthdayMoney">
+		</action>
+		<action name="doHB" class="MemberActionClass" method="doHB">
+		</action>
+		<action name="queryProfit" class="MemberActionClass" method="queryProfit"></action>
+		<action name="getHBMoney" class="MemberActionClass" method="getHBMoney">
+		</action>
+		<action name="queryHBSelect" class="MemberActionClass" method="queryHBSelect">
+			<result name="input">/hbSelect.jsp</result>
+		</action>
+		<action name="submitHBRemit" class="MemberActionClass" method="submitHBRemit">
+		</action>
+		<action name="queryBirthdayRecords" class="MemberActionClass" method="queryBirthdayRecords">
+		</action>
+
+
+		<!-- 催账提交 -->
+		<action name="submitUrgeOrder" class="MemberActionClass" method="submitUrgeOrder">
+			<result name="input">/submitUrgeOrder.jsp</result>
+			<result name="index">/index.jsp</result>
+		</action>
+		<!-- 催账查询 -->
+		<action name="queryUrgeOrderPage" class="MemberActionClass" method="queryUrgeOrderPage">
+			<result name="input">/WEB-INF/pages/urgeOrder.jsp</result>
+			<result name="index">/index.jsp</result>
+		</action>
+		<!-- 催账 支付宝订单号校验 -->
+		<action name="checkthirdOrder" class="MemberActionClass" method="checkthirdOrder"></action>
+
+		<!-- 守护女神 -->
+		<action name="goddessApply" class="MemberActionClass" method="goddessApply">
+		</action>
+		<action name="getGoddessApply" class="MemberActionClass" method="getGoddessApply">
+		</action>
+		<action name="queryFlowerRanking" class="MemberActionClass" method="queryFlowerRanking">
+			<result name="index">/index.jsp</result>
+			<result name="input">/topic/girl.jsp</result>
+		</action>
+
+		<!-- 单身狗 -->
+		<action name="queryNineDaysBets" class="MemberActionClass" method="queryNineDaysBets">
+			<result name="input">/topic/dog.jsp</result>
+		</action>
+
+		<action name="getAgentCode" class="MemberActionClass" method="getAgentCode">
+		</action>
+
+		<!-- 游戏状态 -->
+		<action name="queryGameStatus" class="MemberActionClass" method="queryGameStatus">
+		</action>
+		<action name="saveOrUpdateGameStatus" class="MemberActionClass" method="saveOrUpdateGameStatus">
+		</action>
+
+		<action name="saveAlipayAccount" class="SelfHelpAction" method="saveAlipayAccount">
+		</action>
+
+		<action name="getAlipayAccount" class="SelfHelpAction" method="getAlipayAccount">
+		</action>
+
+		<action name="getTaskList" class="dfh.action.customer.YaoYaoAction" method="getTaskList">
+		</action>
+
+		<action name="saveUserTask" class="dfh.action.customer.YaoYaoAction" method="saveUserTask">
+		</action>
+
+		<action name="queryBankAll" class="MemberActionClass" method="queryBankAll">
+		</action>
+
+		<action name="queryLastLoginDate" class="MemberActionClass" method="queryLastLoginDate">
+		</action>
+
+
+		<action name="queryGuild" class="MemberActionClass" method="queryGuild">
+		</action>
+
+		<action name="joinGuild" class="MemberActionClass" method="joinGuild">
+		</action>
+
+		<action name="queryGuildDate" class="MemberActionClass" method="queryGuildDate">
+		</action>
+
+		<action name="queryGuildCountEach" class="MemberActionClass" method="queryGuildCountEach">
+		</action>
+		<action name="queryGuildRanking" class="MemberActionClass" method="queryGuildRanking">
+		</action>
+
+
+		<action name="getTaskAmount" class="dfh.action.customer.YaoYaoAction" method="getTaskAmount">
+		</action>
+
+		<action name="transferTaskAmount" class="dfh.action.customer.YaoYaoAction" method="transferTaskAmount">
+		</action>
+
+		<action name="queryTaskRecords" class="dfh.action.customer.YaoYaoAction" method="queryTaskRecords">
+			<result name="input">/WEB-INF/pages/userTaskRecord.jsp</result>
+		</action>
+
+		<action name="refreshUserBalance" class="MemberActionClass" method="refreshUserBalance"></action>
+
+		<action name="queryPoints" class="MemberActionClass" method="queryPoints">
+		</action>
+
+		<action name="queryfriendBonue" class="MemberActionClass" method="queryfriendBonue">
+		</action>
+
+		<action name="doSignRecord" class="MemberActionClass" method="doSignRecord">
+		</action>
+
+		<action name="transferSign" class="MemberActionClass" method="transferSign"></action>
+
+		<action name="querySignAmount" class="MemberActionClass" method="querySignAmount">
+		</action>
+
+		<action name="getPhoneAndCode" class="SelfHelpAction" method="getPhoneAndCode">
+		</action>
+
+		<action name="phoneSmsCodeValidate" class="SelfHelpAction" method="phoneSmsCodeValidate">
+		</action>
+
+		<action name="saveQuestion" class="UserbankinfoActionClass" method="saveQuestion">
+		</action>
+
+		<action name="isBildingQuestion" class="UserbankinfoActionClass" method="isBildingQuestion">
+		</action>
+
+		<action name="makeCall" class="SelfHelpAction" method="makeCall">
+		</action>
+
+		<action name="getYouHuiConfig" class="SelfHelpAction" method="getYouHuiConfig">
+		</action>
+
+		<action name="checkConfigSystem" class="MemberActionClass" method="checkConfigSystem"></action>
+
+		<action name="haveSameInfo" class="SelfHelpAction" method="haveSameInfo">
+		</action>
+
+		<action name="sendPhoneVoiceCode" class="SelfHelpAction" method="sendPhoneVoiceCode">
+		</action>
+
+		<action name="sendPhoneSmsCode" class="SelfHelpAction" method="sendPhoneSmsCode">
+		</action>
+
+		<action name="sendAlipayPhoneVoiceCode" class="SelfHelpAction" method="sendAlipayPhoneVoiceCode">
+		</action>
+
+		<action name="sendAlipayPhoneSmsCode" class="SelfHelpAction" method="sendAlipayPhoneSmsCode">
+		</action>
+
+		<action name="sendPhoneSmsTwoCode" class="SelfHelpAction" method="sendPhoneSmsTwoCode">
+		</action>
+
+		<action name="checkPhoneCode" class="SelfHelpAction" method="checkPhoneCode">
+		</action>
+
+		<action name="repeatBankCards" class="SelfHelpAction" method="repeatBankCards">
+		</action>
+
+		<action name="commitPT8Self" class="SelfHelpAction" method="commitPT8Self">
+		</action>
+
+		<action name="isBlindingCard" class="SelfHelpAction" method="isBlindingCard">
+		</action>
+		<!-- 全民闯关 闯关奖金金额 -->
+		<action name="getEmigratedMoney" class="MemberActionClass" method="getEmigratedMoney"></action>
+		<!-- 全民闯关 今日报名 -->
+		<action name="EmigratedApply" class="MemberActionClass" method="EmigratedApply"></action>
+		<!-- 全民闯关 领取昨日奖励 -->
+		<action name="doEmigrated" class="MemberActionClass" method="doEmigrated"></action>
+		<!-- 全民闯关 提交 -->
+		<action name="submitEmigratedRemit" class="MemberActionClass" method="submitEmigratedRemit"></action>
+		<!--全民闯关 获取报名信息 -->
+		<action name="getEmigratedApply" class="MemberActionClass" method="getEmigratedApply"></action>
+
+		<action name="getSelfYouHuiObject" class="MemberActionClass" method="getSelfYouHuiObject">
+		</action>
+		<action name="checkAgentURLogin" class="MemberActionClass" method="checkAgentURLogin">
+		</action>
+		<action name="checkAgentUrl" class="MemberActionClass" method="checkAgentUrl">
+		</action>
+		<action name="change_pwsPayAjax" class="MemberActionClass" method="modifyPasswordPayAjax">
+		</action>
+
+		<action name="searchBankno" class="UserbankinfoActionClass" method="searchBankno"></action>
+		
+		<action name="getWithDrawBankStatus" class="UserbankinfoActionClass" method="getWithDrawBankStatus"></action>
+
+	    <!-- 代理提款平账 -->
+		<action name="agentWithdrawpz" class="MemberActionClass" method="agentWithdrawpz"></action>
+		
+		<action name="bandingBankno" class="UserbankinfoActionClass" method="bandingBankno">
+			<!-- <result name="index">/index.jsp</result> <result name="input">/bandingbankno_member.jsp</result> -->
+		</action>
+
+		<action name="bbsLogout" class="bbsLoginClass" method="logout"></action>
+		<action name="bbsLogin" class="bbsLoginClass" method="checkLogin"></action>
+		<action name="bbsIndex" class="bbsLoginClass" method="bbsUrlforword">
+			<result name="success">/e68bbs.jsp</result>
+		</action>
+
+		<action name="searchCreditlogs" class="creditlogsClass" method="searchCreditlogs">
+			<result name="index">/index.jsp</result>
+			<result name="input">/WEB-INF/pages/agentAmountRecord.jsp</result>
+		</action>
+
+		<action name="searchagprofit" class="MemberActionClass" method="searchagprofit">
+			<result name="index">/index.jsp</result>
+			<result name="input">/WEB-INF/pages/agentPlatformRecord.jsp</result>
+		</action>
+
+		<!-- 代理查询其下线会员提案记录 -->
+		<action name="searchsubuserProposal" class="MemberActionClass" method="searchsubuserProposal">
+			<result name="index">/index.jsp</result>
+			<!-- <result name="input">/WEB-INF/pages/agentOfflineRecord.jsp</result> -->
+			<result name="input">/WEB-INF/pages/agentOfflineRec.jsp</result>
+		</action>
+
+		<action name="queryAgentSubUserInfo" class="MemberActionClass" method="queryAgentSubUserInfo">
+			<!-- <result name="input">/WEB-INF/pages/agentOfflineUserRecord.jsp</result> -->
+			<result name="input">/WEB-INF/pages/agentOfflineUserRec.jsp</result>
+		</action>
+
+         <!-- start @author ck 自助反水老虎机  -->
+         <action name="getAutoXimaSlotObject" class="ximaActionClass" method="getAutoXimaSlotObject"></action>
+         
+         <action name="execSlotXima" class="ximaActionClass" method="execSlotXima"></action>
+           
+         <!-- end @author ck 自助反水老虎机  --> 
+         
+		<action name="execXima" class="ximaActionClass" method="execXima"></action>
+		<action name="getXimaEndTime" class="ximaActionClass" method="getXimaEndTime"></action>
+		<action name="getAutoXimaObjectData" class="ximaActionClass" method="getAutoXimaObjectData"></action>
+
+		<action name="execXimacw" class="ximaActionClass" method="execXima">
+			<result name="index">/index.jsp</result>
+			<result name="input">/self_s.jsp</result>
+			<result name="invalid.token">/self_s.jsp</result>
+			<interceptor-ref name="defaultStack" />
+			<interceptor-ref name="token" />
+		</action>
+
+		<action name="searchXima" class="ximaActionClass" method="searchXimaDetail">
+			<result name="input">/selfDetail_member.jsp</result>
+		</action>
+
+		<action name="searchXimacw" class="ximaActionClass" method="searchXimaDetail">
+			<result name="input">/selfDetail_s.jsp</result>
+		</action>
+
+		<action name="checkUserExsit" class="MemberActionClass" method="checkUserExsit"></action>
+
+		<action name="sjyz" class="MemberActionClass" method="sjyz"></action>
+
+		<action name="queryAnnObject" class="AnnClass" method="getAnnouncement">
+			<result>/gonggao_detail.jsp</result>
+		</action>
+
+		<action name="queryAnnAll" class="AnnClass" method="findAll">
+			<result>/news_list.jsp</result>
+		</action>
+		<action name="queryQRcode" class="MemberActionClass" method="queryQRcode">
+		</action>
+
+		<!-- 已经修改 用户登陆 -->
+		<action name="login" class="MemberActionClass" method="login"></action>
+		<action name="loginx" class="MemberActionClass" method="loginFind">
+			<result name="input">/index.jsp</result>
+			<result name="reLogin">/memberlogin.jsp</result>
+		</action>
+		<!-- ea客户端财务中心 登录 -->
+		<action name="loginTransfer" class="MemberActionClass" method="loginTransfer">
+			<result>/transfer_s.jsp</result>
+			<result name="input">/login.jsp</result>
+		</action>
+
+		<action name="ttLogin" class="MemberActionClass" method="ttLogin">
+			<!-- <result name="success">/WEB-INF/pages/gameTtg.jsp</result> <result name="error">/WEB-INF/pages/gameTtg.jsp</result> -->
+			<!-- <result name="success">/gameTtg.jsp</result> -->
+			<result name="success">/redirectGameTtg.jsp</result>
+			<result name="error">/gameTtg.jsp</result>
+		</action>
+
+		<!-- 开户 -->
+		<action name="register" class="MemberActionClass" method="register">
+			<result>/index.jsp</result>
+			<result name="input">/register.jsp</result>
+		</action>
+
+		<action name="logout" class="MemberActionClass" method="logout">
+			<result>/index.jsp</result>
+		</action>
+
+		<action name="cwlogout" class="MemberActionClass" method="logout">
+			<result>/login.jsp</result>
+		</action>
+		<!--一键反水-->
+		<action name="oneKeyXima" class="ximaActionClass" method="oneKeyXima"></action>
+
+		<action name="transferIn" class="MemberActionClass" method="transferIn">
+			<!-- <result name="input">/transfer_member.jsp</result> <result name="invalid.token">/transfer_member.jsp</result> <interceptor-ref name="defaultStack" /> <interceptor-ref name="token" /> -->
+		</action>
+		<action name="generateVerificationCode" class="MemberActionClass" method="generateVerificationCode"></action>
+
+		<action name="transferInEa" class="MemberActionClass" method="transferInEa">
+		</action>
+		<action name="getGameMoney" class="MemberActionClass" method="getGameMoney"></action>
+
+		<action name="updateGameMoney" class="MemberActionClass" method="updateGameMoney"></action>
+
+		<!-- <action name="transferInforDsp" class="MemberActionClass" method="transferInforDsp"> <result name="input">/transfer_memberap.jsp</result> <result name="invalid.token">/transfer_memberap.jsp</result> 
+			<interceptor-ref name="defaultStack" /> <interceptor-ref name="token" /> </action> -->
+
+		<!-- <action name="transferInforAginDsp" class="MemberActionClass" method="transferInforAginDsp"> <result name="input">/transfer_memberagin.jsp</result> <result name="invalid.token">/transfer_memberagin.jsp</result> 
+			<interceptor-ref name="defaultStack" /> <interceptor-ref name="token" /> </action> -->
+
+		<!-- <action name="transferOutforDsp" class="MemberActionClass" method="transferOutforDsp"> <result name="input">/transfer_memberap.jsp</result> <result name="invalid.token">/transfer_memberap.jsp</result> 
+			<interceptor-ref name="defaultStack" /> <interceptor-ref name="token" /> </action> -->
+
+		<!-- <action name="transferOutforAginDsp" class="MemberActionClass" method="transferOutforAginDsp"> <result name="input">/transfer_memberagin.jsp</result> <result name="invalid.token">/transfer_memberagin.jsp</result> 
+			<interceptor-ref name="defaultStack" /> <interceptor-ref name="token" /> </action> -->
+
+
+		<!-- <action name="transferOutforkeno" class="MemberActionClass" method="transferOutforkeno"> <result name="input">/transfer_memberkeno.jsp</result> <result name="invalid.token">/transfer_memberkeno.jsp</result> 
+			<interceptor-ref name="defaultStack" /> <interceptor-ref name="token" /> </action> -->
+
+		<!-- <action name="transferInforkeno" class="MemberActionClass" method="transferInforkeno"> <result name="input">/transfer_memberkeno.jsp</result> <result name="invalid.token">/transfer_memberkeno.jsp</result> 
+			<interceptor-ref name="defaultStack" /> <interceptor-ref name="token" /> </action> -->
+
+		<action name="transferInforCoupon" class="MemberActionClass" method="transferInforCoupon">
+			<!-- <result name="input">/manage_coupons.jsp</result> <result name="invalid.token">/manage_coupons.jsp</result> <interceptor-ref name="defaultStack" /> <interceptor-ref name="token" /> -->
+		</action>
+
+		<!-- 优惠红包 -->
+		<action name="transferInforRedCoupon" class="MemberActionClass" method="transferInforRedCoupon"></action>
+
+		<action name="chrismesCount" class="MemberActionClass" method="chrismesCount"></action>
+
+		<action name="queryChrismesCount" class="MemberActionClass" method="queryChrismesCount"></action>
+		<action name="transferInforPoint" class="MemberActionClass" method="transferInforPoint"></action>
+
+		<action name="transferInforFriend" class="MemberActionClass" method="transferInforFriend"></action>
+		<action name="queryUserLuActivity" class="MemberActionClass" method="queryUserLuActivity"></action>
+
+
+
+		<!-- <action name="transferInforCouponSb" class="MemberActionClass" method="transferInforCouponSb"> <result name="input">/transfer_membercouponsb.jsp</result> <result name="invalid.token">/transfer_membercouponsb.jsp</result> 
+			<interceptor-ref name="defaultStack" /> <interceptor-ref name="token" /> </action> -->
+
+		<!-- <action name="transferOutforBbin" class="MemberActionClass" method="transferOutforBbin"> <result name="input">/transfer_memberbbin.jsp</result> <result name="invalid.token">/transfer_memberbbin.jsp</result> 
+			<interceptor-ref name="defaultStack" /> <interceptor-ref name="token" /> </action> -->
+
+		<!-- <action name="transferInforBbin" class="MemberActionClass" method="transferInforBbin"> <result name="input">/transfer_memberbbin.jsp</result> <result name="invalid.token">/transfer_memberbbin.jsp</result> 
+			<interceptor-ref name="defaultStack" /> <interceptor-ref name="token" /> </action> -->
+
+		<!-- <action name="transferOutforSky" class="MemberActionClass" method="transferOutforSky"> <result name="input">/transfer_membersky.jsp</result> <result name="invalid.token">/transfer_membersky.jsp</result> 
+			<interceptor-ref name="defaultStack" /> <interceptor-ref name="token" /> </action> <action name="transferInforSky" class="MemberActionClass" method="transferInforSky"> <result name="input">/transfer_membersky.jsp</result> 
+			<result name="invalid.token">/transfer_membersky.jsp</result> <interceptor-ref name="defaultStack" /> <interceptor-ref name="token" /> </action> -->
+		<!-- <action name="transferOutforNewPt" class="MemberActionClass" method="transferOutforNewPt"> <result name="input">/transfer_membernewPt.jsp</result> <result name="invalid.token">/transfer_membernewPt.jsp</result> 
+			<interceptor-ref name="defaultStack" /> <interceptor-ref name="token" /> </action> -->
+
+		<!-- <action name="transferInforNewPt" class="MemberActionClass" method="transferInforNewPt"> <result name="input">/transfer_membernewPt.jsp</result> <result name="invalid.token">/transfer_membernewPt.jsp</result> 
+			<interceptor-ref name="defaultStack" /> <interceptor-ref name="token" /> </action> -->
+
+
+		<!-- <action name="transferOutforSB" class="MemberActionClass" method="transferOutforSB"> <result name="input">/transfer_membersb.jsp</result> <result name="invalid.token">/transfer_membersb.jsp</result> 
+			<interceptor-ref name="defaultStack" /> <interceptor-ref name="token" /> </action> -->
+
+		<!-- <action name="transferInforSB" class="MemberActionClass" method="transferInforSB"> <result name="input">/transfer_membersb.jsp</result> <result name="invalid.token">/transfer_membersb.jsp</result> 
+			<interceptor-ref name="defaultStack" /> <interceptor-ref name="token" /> </action> -->
+
+		<!-- <action name="transferOutforBok" class="MemberActionClass" method="transferOutforBok"> <result name="input">/transfer_memberbok.jsp</result> <result name="invalid.token">/transfer_memberbok.jsp</result> 
+			<interceptor-ref name="defaultStack" /> <interceptor-ref name="token" /> </action> -->
+
+		<!-- <action name="transferInforBok" class="MemberActionClass" method="transferInforBok"> <result name="input">/transfer_memberbok.jsp</result> <result name="invalid.token">/transfer_memberbok.jsp</result> 
+			<interceptor-ref name="defaultStack" /> <interceptor-ref name="token" /> </action> -->
+
+		<action name="transferOut" class="MemberActionClass" method="transferOut">
+			<!-- <result name="input">/transfer_member.jsp</result> <result name="invalid.token">/transfer_member.jsp</result> <interceptor-ref name="defaultStack" /> <interceptor-ref name="token" /> -->
+		</action>
+
+
+
+		<action name="transferInForCaiwu" class="MemberActionClass" method="transferInForCaiwu">
+			<result name="input">/transfer_s.jsp</result>
+		</action>
+
+		<action name="transferOutForCaiwu" class="MemberActionClass" method="transferOutForCaiwu">
+			<result name="input">/transfer_s.jsp</result>
+		</action>
+
+		<action name="withdraw" class="MemberActionClass" method="withdraw">
+			<!-- <result name="input">/request_member.jsp</result> -->
+		</action>
+
+		<action name="withdrawcw" class="MemberActionClass" method="withdraw">
+			<result name="input">/request_s.jsp</result>
+		</action>
+
+		<action name="getRemarkAgain" class="MemberActionClass" method="getRemarkAgain">
+		</action>
+		
+		<!-- 通联 聚合支付-->
+		<action name="gatherDeposit" class="dfh.action.customer.DinpayAction" method="gatherDeposit">  
+			<result name="success">/WEB-INF/pages/userGatherDeposit.jsp</result>     
+			<result name="error">/member_dinpay_error.jsp</result>         
+		</action>  
+		
+		<!-- 微信秒存-->
+		<action name="wxDeposit" class="dfh.action.customer.DinpayAction" method="wxDeposit">
+			<result name="success">/WEB-INF/pages/userWxDeposit.jsp</result>     
+			<result name="error">/member_dinpay_error.jsp</result>    
+		</action>
+		
+		<!-- 微信秒存 -->
+		<action name="getWeiXinDeposit" class="MemberActionClass" method="getWeiXinDeposit">
+		</action>
+		
+		<!-- 微信秒存 作废订单-->
+		<action name="discardOrder" class="MemberActionClass" method="discardOrder"/>
+
+		<action name="addCashinProposal" class="MemberActionClass" method="addCashinProposal">
+			<result name="input">/funds_member.jsp</result>
+		</action>
+
+		<action name="change_info" class="MemberActionClass" method="modifyCusinfo">
+			<result name="input">/manage_data.jsp</result>
+		</action>
+		<action name="updateQQ" class="MemberActionClass" method="updateQQ">
+		</action>
+		<action name="updateWeiXin" class="MemberActionClass" method="updateWeiXin">
+		</action>
+
+		<action name="change_infoAjax" class="MemberActionClass" method="modifyCusinfoAjax">
+		</action>
+
+		<action name="change_infocw" class="MemberActionClass" method="modifyCusinfo">
+			<result name="input">/modify_s.jsp</result>
+		</action>
+
+		<action name="change_pws" class="MemberActionClass" method="modifyPassword">
+			<result name="input">/manage_repass.jsp</result>
+			<result name="index">/index.jsp</result>
+		</action>
+
+		<action name="change_pwsAjax" class="MemberActionClass" method="modifyPasswordAjax">
+		</action>
+
+		<action name="change_pwscw" class="MemberActionClass" method="modifyPassword">
+			<result name="input">/changepassword_s.jsp</result>
+			<result name="success">/inventory_s.jsp</result>
+		</action>
+
+		<action name="chooseservice" class="MemberActionClass" method="chooseservice"></action>
+
+		<action name="cwchooseservice" class="MemberActionClass" method="chooseservice">
+			<result name="success">/duanxin_s.jsp</result>
+		</action>
+
+		<action name="depositRecords" class="MemberActionClass" method="queryDepositReccords">
+			<result name="input">/deposit_re_member.jsp</result>
+			<result name="index">/index.jsp</result>
+		</action>
+
+		<action name="querywinpoint" class="MemberActionClass" method="querywinpoint">
+			<result name="input">/elf-ydpm/index.jsp</result>
+		</action>
+
+		<action name="depositOrderRecord" class="MemberActionClass" method="depositOrderRecord">
+			<result name="input">/deposit_order.jsp</result>
+		</action>
+
+		<action name="querypointRecord" class="MemberActionClass" method="querypointRecord">
+			<result name="input">/WEB-INF/pages/querypointRecord.jsp</result>
+		</action>
+
+		<action name="queryfriendRecord" class="MemberActionClass" method="queryfriendRecord">
+			<result name="input">/WEB-INF/pages/queryfriendRecord.jsp</result>
+		</action>
+
+		<action name="cashinRecords" class="MemberActionClass" method="queryCashinRecords">
+			<result name="input">/cashin_re_member.jsp</result>
+			<result name="index">/index.jsp</result>
+		</action>
+
+		<action name="cashinRecordscw" class="MemberActionClass" method="queryCashinRecords">
+			<result name="input">/cwmember_deposit_re.jsp</result>
+		</action>
+
+		<action name="withdrawRecords" class="MemberActionClass" method="queryWithdrawReccords">
+			<result name="input">/withdraw_re_member.jsp</result>
+			<result name="index">/index.jsp</result>
+		</action>
+
+		<action name="withdrawRecordscw" class="MemberActionClass" method="queryWithdrawReccords">
+			<result name="input">/cwmember_withdraw_re.jsp</result>
+		</action>
+
+
+		<action name="transferRecords" class="MemberActionClass" method="queryTransferReccords">
+			<result name="input">/transfer_re_member.jsp</result>
+			<result name="index">/index.jsp</result>
+		</action>
+
+		<action name="couponRecords" class="MemberActionClass" method="queryCouponRecords">
+			<result name="input">/selectCouponRecords.jsp</result>
+			<result name="index">/index.jsp</result>
+		</action>
+
+		<action name="transferRecordscw" class="MemberActionClass" method="queryTransferReccords">
+			<result name="input">/cwmember_transfer_re.jsp</result>
+		</action>
+
+		<action name="consRecords" class="MemberActionClass" method="queryConcessionReccords">
+			<result name="input">/cons_re_member.jsp</result>
+			<result name="index">/index.jsp</result>
+		</action>
+
+		<action name="queryWeekSentReccords" class="MemberActionClass" method="queryWeekSentReccords">
+			<result name="input">/weekSentRecords.jsp</result>
+			<result name="index">/index.jsp</result>
+		</action>
+
+		<action name="optWeekSent" class="MemberActionClass" method="optWeekSent"></action>
+
+		<action name="queryPTLosePromoReccords" class="MemberActionClass" method="queryPTLosePromoReccords">
+			<result name="input">/ptlosepromoRecords.jsp</result>
+			<result name="index">/index.jsp</result>
+		</action>
+
+		<action name="optLosePromo" class="MemberActionClass" method="optLosePromo"></action>
+
+		<action name="queryBetOfPlatform" class="MemberActionClass" method="queryBetOfPlatform">
+			<result name="input">/betsofplatform.jsp</result>
+			<result name="index">/index.jsp</result>
+		</action>
+		<action name="queryBetOfPlatformWeek" class="MemberActionClass" method="queryBetOfPlatformWeek">
+			<result name="input">/betsofplatformWeek.jsp</result>
+			<result name="index">/index.jsp</result>
+		</action>
+
+		<action name="getBankInfo" class="UserbankinfoActionClass" method="getBankInfo">
+		</action>
+		<action name="checkUpgrade" class="MemberActionClass" method="checkUpgrade"></action>
+
+		<action name="queryPTBigBang" class="MemberActionClass" method="queryPTBigBang">
+			<result name="input">/ptbigbang.jsp</result>
+			<result name="index">/index.jsp</result>
+		</action>
+		<action name="getPTBigBangBonus" class="MemberActionClass" method="getPTBigBangBonus"></action>
+
+		<action name="isExistGift" class="MemberActionClass" method="isExistGift"></action>
+		<action name="applyGift" class="MemberActionClass" method="applyGift"></action>
+
+		<action name="queryAgentBetProfit" class="MemberActionClass" method="searchAgentBetProfit">
+			<result name="input">/WEB-INF/pages/agentBetProfitRecord.jsp</result>
+		</action>
+
+		<action name="consRecordscw" class="MemberActionClass" method="queryConcessionReccords">
+			<result name="input">/cwmember_cons_re.jsp</result>
+		</action>
+
+		<action name="searchPtCommissions" class="MemberActionClass" method="searchPtCommissions">
+			<!-- <result name="input">/WEB-INF/pages/agentPtCommissionRecord.jsp</result> -->
+			<result name="input">/WEB-INF/pages/agentPtCommissionRec.jsp</result>
+		</action>
+
+		<action name="querySubUsers" class="MemberActionClass" method="querySubUsers">
+			<result name="input">/subusers_member.jsp</result>
+		</action>
+
+		<action name="queryCommissionrecords" class="MemberActionClass" method="queryCommissionrecords">
+			<result name="input">/WEB-INF/pages/agnetCommissionRecord.jsp</result>
+		</action>
+		<!-- 后台强制前台刷新会话 -->
+		<action name="forceToRefreshSession" class="MemberActionClass" method="forceToRefreshSession"></action>
+
+		<!-- 新增代理 -->
+		<action name="addAgent" class="MemberActionClass" method="addAgent">
+		</action>
+		<!-- 查询代理地址 -->
+		<action name="queryAgentAddress" class="MemberActionClass" method="queryAgentAddress">
+			<result name="input">/tuiguang.jsp</result>
+			<result name="index">/index.jsp</result>
+		</action>
+		<action name="queryAgentAddress2" class="MemberActionClass" method="queryAgentAddress2">
+		</action>
+		<action name="mainbandingBankno" class="UserbankinfoActionClass" method="bandingBankno"></action>
+
+		<action name="querybetRank" class="MemberActionClass" method="querybetRank">
+			<result name="input">/betrank_info.jsp</result>
+			<result name="index">/index.jsp</result>
+		</action>
+
+		<action name="querySMWeekly" class="MemberActionClass" method="querySMWeekly">
+			<result name="input">/topicNov.jsp</result>
+			<result name="index">/index.jsp</result>
+		</action>
+
+		<action name="qrySuggestion" class="MemberActionClass" method="qrySuggestion"></action>
+		<action name="viewSugguestionProgress" class="MemberActionClass" method="viewSugguestionProgress"></action>
+		<action name="submitSuggestion" class="MemberActionClass" method="submitSuggestion"></action>
+
+		<action name="isExistConcertRecord" class="MemberActionClass" method="isExistConcertRecord"></action>
+
+		<action name="queryConcertBet" class="MemberActionClass" method="queryConcertBet">
+			<result name="input">/topic/singer.jsp</result>
+			<result name="index">/index.jsp</result>
+		</action>
+		<action name="queryConcertBetNew" class="MemberActionClass" method="queryConcertBetNew">
+		</action>
+		<action name="queryGoldBet" class="MemberActionClass" method="queryGoldBet">
+			<result name="input">/topic/gift/home.jsp</result>
+			<result name="index">/index.jsp</result>
+		</action>
+		<action name="queryGoldBetByJson" class="MemberActionClass" method="queryGoldBetByJson">
+
+		</action>
+		<action name="queryGoldBetData" class="MemberActionClass" method="queryGoldBet">
+			<result name="input">/topic/gift/listData.jsp</result>
+		</action>
+		
+		<!-- 新秒存 -->
+        <action name="getNewdeposit" class="MemberActionClass" method="getNewdeposit"></action>
+		<action name="getdepositAmout" class="MemberActionClass" method="getdepositAmout"></action>
+
+		<!-- 获取微信转账小数额度 -->
+        <action name="getWxZzQuota" class="MemberActionClass" method="getWxZzQuota">
+		</action>
+		<!-- 新秒存 查询历史银行记录接口 -->
+        <action name="queryDepositBank" class="MemberActionClass" method="queryDepositBank"></action>
+		<!-- 新秒存 修改历史银行记录接口 -->
+        <action name="updateDepositBank" class="MemberActionClass" method="updateDepositBank"></action>
+		<!-- 新秒存 选中历史银行记录接口 -->
+        <action name="getDepositBank" class="MemberActionClass" method="getDepositBank"></action>
+		<!-- 保存订单 -->
+		<action name="saveOrder" class="MemberActionClass" method="saveOrder"></action>
+		<!-- 废除订单 -->
+		<action name="cancelNewdeposit" class="MemberActionClass" method="cancelNewdeposit"></action>
+		
+		<!--微客服接口 -->
+		<action name="getUserInfo" class="WeCustomerActionClass" method="getUserInfo"></action>
+
+		<!-- 生日礼金 -->
+		<action name="checkBirthday" class="MemberActionClass" method="checkBirthday"></action>
+		<action name="birthdayActivityInfo" class="MemberActionClass" method="birthdayActivityInfo"></action>
+	</package>
+</struts>

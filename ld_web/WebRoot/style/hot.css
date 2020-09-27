@@ -1,0 +1,140 @@
+﻿/*hot_handle 开始*/
+.hot_handle{
+	height:109px;
+	padding:30px 0 0 72px;	
+	position:relative;
+	z-index:10;
+}
+.hot_handle span{
+	color:#17130f;	
+	display:inline-block;
+	width:109px;
+	height:109px;
+	text-align:center;
+	line-height:109px;
+	text-align:center;
+	font-size:16px;
+	font-weight:bold;
+	background:url("../images/hot_handle_span.png") no-repeat;
+	float:left;
+}
+.hot_handle a{
+	display:inline-block;
+	width:79px;
+	height:79px;
+	font-size:12px;
+	color:#b7b3b1;	
+	float:left;
+	background:url("../images/hot_handle_a.png") no-repeat;
+	margin:15px 0 0 20px;
+	text-align:center;
+	line-height:79px;
+}
+.hot_handle a:hover,.hot_handle .hover{
+	color:#17130f;
+	background:url("../images/hot_handle_ah.png") no-repeat;	
+}
+/*hot_handle 结束*/
+
+/*hot_list 开始*/
+.hot_list{	
+	padding:28px 0 0 156px;
+	position:relative;
+	background:url("../images/hot_list_bg.png") repeat-y 124px top;	
+	margin-top:-2px;
+}
+.list_end{
+	height:62px;		
+	background:url("../images/hot_list_bg.png") repeat-y 124px top;	
+}
+.hot_list .time{
+	position:absolute;
+	left:0;
+	top:26px;
+	z-index:10;
+	width:100px;
+	height:60px;	
+	padding-right:56px;
+	text-align:right;
+	font-family:"arial";
+	background:url("../images/hot_list_time.png") no-repeat right bottom;
+}
+.hot_list .time dt{
+	font-size:25px;
+	height:25px;
+	line-height:25px;
+	color:#87827f;		
+}
+.hot_list .time dd{
+	font-size:40px;
+	height:40px;
+	line-height:40px;
+	color:#fff;	
+}
+
+.hot_list .list_con{
+	width:920px;
+	padding:10px 15px 40px 15px;
+	background:#e7e3e4;
+	border-radius:5px;
+	position:relative;
+	z-index:2;
+	behavior: url(style/iecss3.htc) 
+}
+
+.hot_list .list_con_content{
+	width:920px;
+	border-radius:5px;
+	position:relative;
+	z-index:2;
+	margin: 72px;
+	behavior: url(style/iecss3.htc) 
+	
+}
+.hot_list .yh-box{ 
+ 
+display: none;
+position: relative;
+margin-top: -10px;
+z-index: 999;
+ 
+ }
+.hot_list .more-yh{display: block;
+width: 130px;
+height: 40px;
+line-height: 40px;
+text-align: center;
+color: #fff;
+background: #c18d00;
+position: absolute;
+right: 146px;
+top: 40px;}
+.hot_list .more-yh:hover{background: #1f1b1a;transition:all ease .5s;  } 
+.hot_list h2{
+	height:70px;
+	line-height:70px;
+	color:#2d2926;
+	font-size:25px;	
+}
+.hot_list .pic2{
+	padding-bottom:19px;
+	background:url("../images/hot_list_pic.png") no-repeat left bottom;
+	width:698px;
+}
+
+.hot_list .pic{
+	padding-bottom:35px;
+	background:url("../images/hot_list_pic.png") no-repeat left bottom; cursor:pointer; 
+}
+
+.hot_list p{
+	font-size:13px;
+	color:#6d6b6a;
+	line-height:20px;
+	margin-top:12px;
+	padding:0 20px;
+}
+.hot_list p strong{
+	color:#2d2926; font-weight:700;	
+}
+/*hot_list 结束*/

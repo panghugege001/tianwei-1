@@ -1,0 +1,19 @@
+{
+  "code": "10000",
+  "desc": "成功",
+  "data": [
+    {
+      "id": 64,
+      "showName": "点卡支付1",
+      "fee": 0.6,
+      "phoneFee": null,
+      "pcFee": null,
+      "minPay": 1.0,
+      "maxPay": 50000.0,
+      "appPay": 0,
+      "payWay": 5,
+      "payCenterUrl": "/xb/point_card"
+    }
+
+  ]
+}

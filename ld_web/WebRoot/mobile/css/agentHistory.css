@@ -1,0 +1,72 @@
+@charset "UTF-8";
+body > .main-wrap > .content table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  text-align: center;
+  line-height: 1.5em;
+}
+body > .main-wrap > .content > ul > li {
+  margin-bottom: 3px;
+  background-color: #fff;
+  box-shadow: 0px 1px 3px #777;
+  -ms-box-shadow: 0px 1px 3px #777;
+  /* IE 9 */
+  -moz-box-shadow: 0px 1px 3px #777;
+  /* Firefox */
+  -webkit-box-shadow: 0px 1px 3px #777;
+  /* Safari 嚙瞎 Chrome */
+  -o-box-shadow: 0px 1px 3px #777;
+}
+body > .main-wrap > .content > ul > li.active .title {
+  background-color: #fb9b08;
+  color: #3f3b35;
+}
+body > .main-wrap > .content > ul > li.active .page {
+  display: inline-block;
+  width: 100%;
+}
+body > .main-wrap > .content > ul > li .title {
+  display: inline-block;
+  width: 100%;
+  font-size: 1.5em;
+  line-height: 2em;
+  text-indent: .5em;
+  text-align: left;
+  letter-spacing: 3px;
+  background-color: #3f3b35;
+  color: #fff;
+}
+body > .main-wrap > .content > ul > li .page {
+  display: none;
+}
+body > .main-wrap > .content > ul > li .page .content {
+  display: inline-block;
+  width: 100%;
+  padding: .5em;
+  line-height: 100%;
+}
+
+.form {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 2px;
+}
+.form .row {
+  width: 100%;
+  display: block;
+}
+.form .row .label {
+  display: table-cell;
+  white-space: nowrap;
+  text-align: right;
+  line-height: 150%;
+  letter-spacing: 3px;
+}
+.form .row .text {
+  position: relative;
+  display: table-cell;
+  width: 100%;
+}

@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>天威真人线上娱乐-线上百家乐、现金百家乐、真人百家乐、网络百家乐、在线百家乐、百家乐、博彩、网络百家乐</title>
+    <link rel="stylesheet" href="/css/404.css?v=1"/>
+</head>
+<body>
+  <div class="page">
+    <div class="logo"><a href="/"><img src="/images/logo.png"></a></div>
+    <div class="text error">
+        <div class="right">
+            <div class="title">很抱歉！您所在的地区受限制...</div>
+            <div class="text">尊敬的用户：<p>您的IP来自：<span id="js_ip"></span> <span id="js_isp"></span></p><br>
+            由于您所在的地区限制，您所尝试的网页无法打开。<br>
+            如对此有任何疑问，或通过我们的 <span>24小时在线客服</span> 联络我们。 <br>
+                或发送邮件至 <span>tianwei661@gmail.com</span>(请将#号替换成@)
+            </div>
+            <div class="button"><button><a href="https://chatai.l8servicelongdu.com/chat/chatClient/chatbox.jsp?companyID=9044&configID=19" target="_blank">在线客服</a></button></div>
+        </div>
+    </div>
+  </div>
+
+
+<script src="/js/lib/jquery-1.11.2.min.js"></script>
+<script>
+    $(function () {
+        var url = 'http://chaxun.1616.net/s.php?type=ip&output=json&callback=?&_=' + Math.random();
+        $.getJSON(url, function (data) {
+            $('#js_ip').html(data.Ip);
+            $('#js_isp').html('(' + $.trim(data.Isp) + ')');
+            //alert(data.Ip);
+        });
+    })
+</script>
+</body>
+</html>

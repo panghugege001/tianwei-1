@@ -1,0 +1,42 @@
+@import "base/common";
+
+body>.main-wrap>.content{
+	.user-info1{
+	    
+		.user-photo{
+		   	float: left;
+		    font-size: 5em;
+		    
+		    color:#9c9c9c;
+		}
+		
+		.table{
+		    float: left;
+		    margin-top:1em;
+		    margin-left:1em;
+			
+			.row{
+				display: table-row;
+			  	.label{
+				  	display: table-cell;
+				  	text-align: right;
+				  	
+				  	color:#9c9c9c;
+				}
+				
+				.value{
+				  	display: table-cell;
+					color:$primary2;
+				}
+			}
+		}
+	}
+	
+	.user-info2{
+	  	position: relative;
+	  	
+	  	display: block;
+	  	
+	  	color: #fff;
+	}
+}

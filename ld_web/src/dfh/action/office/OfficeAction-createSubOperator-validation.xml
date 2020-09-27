@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE validators PUBLIC "-//OpenSymphony Group//XWork Validator 1.0.2//EN"
+ "http://struts.apache.org/dtds/xwork-validator-1.0.2.dtd">
+
+<validators>
+	<field name="newOperator">
+		<field-validator type="requiredstring" short-circuit="true">
+			<param name="trim">true</param>
+			<message>请输入新管理员帐号</message>
+		</field-validator>
+		<field-validator type="stringlength" short-circuit="true">
+			<param name="minLength">6</param>
+			<param name="maxLength">12</param>
+			<message>管理员帐号在6-12位</message>
+		</field-validator>
+		<field-validator type="regex" short-circuit="true">
+			<param name="expression">^[a-z]([a-z]|[0-9])*$</param>
+			<message>帐号名以小写字母开头，可以包含数字</message>
+		</field-validator>
+	</field>
+	<field name="password">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message>请输入密码</message>
+		</field-validator>
+		<field-validator type="stringlength">
+			<param name="minLength">6</param>
+			<param name="maxLength">20</param>
+			<message>密码长度在6-20位</message>
+		</field-validator>
+	</field>
+	<field name="retypePassword">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message>请重复输入新密码</message>
+		</field-validator>
+		<field-validator type="fieldexpression">
+			<param name="expression">
+				password.equals(retypePassword) 
+			</param>
+			<message>重复密码必须和密码一致</message>
+		</field-validator>
+	</field>
+</validators>

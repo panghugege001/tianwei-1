@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC>
+<html>
+<head>
+    <title>线路测试</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style type="text/css">
+        body {font-family: "Microsoft Yahei";font-size:14px;color:#555;overflow-x: hidden;}
+        a {color:#8f6a3e;text-decoration:none;display:inline-block;text-align:center;}
+        input {border:none;margin:0;padding:0;font-size:14px;font-family: "Microsoft Yahei";}
+        .wp{ width:960px; margin:0 auto;}
+        h3{ font-size:25px; text-align:center; margin:50px 0;}
+        .ceshi{ height: 35px;  padding: 0 20px;  line-height: 31px;  margin: 10px 0 10px 70px;  border: 1px solid #8e8e8e;  border-radius: 6px;  box-shadow: inset 0 0 6px rgba(0,0,0,.2);}
+        .button{height: 35px;  line-height: 35px;  cursor: pointer;  padding: 0 10px;  display: inline-block;  color: #c1c1c1;  background-color: #3a362a;  border: 1px solid #5c5853;  border-radius: 7px;  box-shadow: inset 0 0 3px rgba(255,255,255,.2);}
+        .button1{ margin-left:70px;}
+        .input {font-size: 14px; text-decoration: none; border: 1px solid rgb(255, 102, 0); line-height: 22px; height: 22px; float: left;  text-decoration: none; padding-right: 1px; padding-left: 5px; background:#e0dbd5;color:#000;}
+        .lineType {margin-left:70px; font-size:18px; height:37px;}
+
+
+    </style>
+</head>
+
+<script type="text/javascript">
+
+    var b=0, tim=1, total=0, num=0;
+    setInterval("tim++",100);
+
+    var autourl ={
+        "1":["www.lehu66.com","www.lehu168.com"],
+        "2":["www.lehu188.com","www.laohu006.com"],
+        "3":["www.lehu18.com","www.lehu222.com"]
+        //"3":["www.e68.me"]
+    };
+
+
+    /*
+     * 初始化网页
+     */
+    function butt()
+    {
+        document.write("<div class='wp'><h3>域名线路测试：</h3><form name=autof>");
+
+        var line_type = "", old_key = "";
+
+        for(var key in autourl)
+        {
+            var arr = autourl[key];
+
+            if(line_type == "" || old_key != key)
+            {
+                if(key == 1) {
+                    line_type = "<div class='lineType'>线路一</div>";
+                } else if(key == 2) {
+                    line_type = "<div class='lineType'>线路二</div>";
+                } else if(key == 3) {
+                    line_type = "<div class='lineType'>线路三</div>";
+                }
+
+                old_key = key;
+                document.write(line_type);
+            }
+
+            for(var i = 0; i < arr.length; i++)
+            {
+                var tmp="<div><input type=text class='ceshi' id=txt"+total+" size=10 value=测试中……> =》"+
+                        "<input type=text class='ceshi' id=url"+total+" size=40> =》	"+
+                        "<a class='button' href='http://"+arr[i]+"' target='_blank'>前往网址</a></div><br>";
+                document.write(tmp);
+                total++;
+            }
+        }
+
+        document.write("<input type=submit  class='button button1'  value=刷新></form></div>");
+    }
+
+    butt();
+
+    /*
+     * 利用网址加乱码一定会产生错误，因为没该位址
+     * 取得回传秒数后显示在画面上
+     */
+    var crr = new Array();
+    function auto(url)
+    {
+        var url_time = "";
+
+        if(tim>200) {
+            url_time ="链接超时";
+        } else {
+            url_time = tim / 10;
+        }
+
+        crr[b] = { "url": url,  "time" : url_time }
+        b++;
+
+        if(crr.length == total)
+        {
+            for(var key in autourl)
+            {
+                var arr = autourl[key];
+
+                for(var i = 0; i < arr.length; i++)
+                {
+                    for(var j = 0; j < crr.length; j++)
+                    {
+                        var new_url = crr[j].url.split("http://")[1];
+
+                        if(arr[i] == new_url) {
+                            console.log(crr[j].url, crr[j].time)
+                            document.getElementById("url"+num).value = crr[j].url;
+                            document.getElementById("txt"+num).value = "时间" + crr[j].time + "秒";
+                            num++;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /*
+     * 利用网址加乱码，取得该网址回传时间
+     */
+    function run()
+    {
+        for(var key in autourl)
+        {
+            var arr = autourl[key];
+
+            for(var i = 0; i < arr.length; i++)
+            {
+                document.write("<img src=http://"+arr[i]+"/"+Math.random()+" width=1 height=1 onerror=auto('http://"+arr[i]+"')>");
+            }
+        }
+    }
+
+    run();
+
+</script>
+
+<body></body></html>
+

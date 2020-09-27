@@ -1,0 +1,1369 @@
+[
+    {
+      "eName": "FIFA World Cup",
+      "name": "决战世界杯",
+      "jackpot": "jackpot",
+      "id": "worldCup5x25",
+      "category": "DT",
+      "subType": "SLO",
+      "type": "SLO",
+      "line": "25-30",
+      "state": "1",
+      "language": "zh_CN",
+      "pic": "worldCup5x25.png",
+      "tag": [
+        "NEW"
+      ]
+    }, 
+    {
+      "eName": "France feelings Amorous",
+      "name": "法兰西风情",
+      "id": "france",
+      "category": "DT",
+      "subType": "DT-2",
+      "type": "SLO",
+      "line": "25-25",
+      "state": 1,
+      "jackpot": 1,
+      "language": "zh_CN",
+      "pic": "france.png",
+      "tag": [
+        "NEW",
+        "HOT",
+        "AMA",
+        "EAA",
+        "ELM"
+      ]
+    },
+    {
+      "eName": "Feng Shen",
+      "name": "五行封神榜",
+      "id": "fengshen5x20",
+      "category": "DT",
+      "subType": "DT-2",
+      "type": "SLO",
+      "line": "25-25",
+      "state": 1,
+      "language": "zh_CN",
+      "pic": "fengshen5x20.png",
+      "tag": [
+          "NEW",
+          "HOT",
+          "CNS"
+      ]
+    },
+    {
+      "eName": "FaFaFa",
+      "name": "发发发",
+      "jackpot": "",
+      "id": "dtfafafa15x9",
+      "category": "DT",
+      "subType": "SLO",
+      "type": "DEM",
+      "line": "25-30",
+      "state": "DEM",
+      "language": "zh_CN",
+      "pic": "dtfafafa15x9.jpg",
+      "tag": [
+        "NEW"
+      ]
+    },
+    {
+      "eName": "Midnight Diner",
+      "name": "深夜食堂",
+      "jackpot": "jackpot",
+      "id": "shokudo",
+      "category": "DT",
+      "subType": "SLO",
+      "type": "DEM",
+      "line": "25-30",
+      "state": "1",
+      "language": "zh_CN",
+      "pic": "shokudo.jpg",
+      "tag": [
+        "NEW"
+      ]
+    }, {
+      "eName": "Joust for a spouse",
+      "name": "比武招亲",
+      "jackpot": "jackpot",
+      "id": "bwzq5x25",
+      "category": "DT",
+      "subType": "SLO",
+      "type": "SLO",
+      "line": "25-30",
+      "state": "1",
+      "language": "zh_CN",
+      "pic": "bwzq5x25.png",
+      "tag": [
+        "NEW"
+      ]
+    },  {
+      "eName": "Galactic War",
+      "name": "银河战争",
+      "jackpot": "jackpot",
+      "id": "galaxywars",
+      "category": "DT",
+      "subType": "SLO",
+      "type": "SLO",
+      "line": "25-30",
+      "state": "1",
+      "language": "zh_CN",
+      "pic": "galaxywars.jpg",
+      "tag": [
+        "NEW"
+      ]
+    },
+    {
+      "eName": "Easy Rider",
+      "name": "逍遥骑士",
+      "jackpot": "jackpot",
+      "id": "easyrider",
+      "category": "DT",
+      "subType": "SLO",
+      "type": "SLO",
+      "line": "25-30",
+      "state": "1",
+      "language": "zh_CN",
+      "pic": "easyrider.jpg",
+      "tag": [
+        "NEW"
+      ]
+    },
+  {
+    "eName": "Armor Crisis",
+    "name": "战甲危机",
+    "id": "armorCrisis5x25",
+    "category": "DT",
+    "subType": "jackpot",
+    "type": "SLO",
+    "line": "25-25",
+    "state": "1",
+    "language": "zh_CN",
+    "pic": "zj256160.jpg",
+    "tag": [
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Great GastBy",
+    "name": "大亨小传",
+    "id": "greatgatsby",
+    "category": "DT",
+    "subType": "DT-2",
+    "type": "SLO",
+    "line": "25-25",
+    "state": "DEM",
+    "language": "zh_CN",
+    "pic": "greatgatsby1.jpg",
+    "tag": [
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Magician",
+    "name": "大魔术师",
+    "id": "magician",
+    "category": "DT",
+    "subType": "DT-2",
+    "type": "SLO",
+    "line": "25-25",
+    "state": "DEM",
+    "language": "zh_CN",
+    "pic": "magician1.png",
+    "tag": [
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Classic Slots",
+    "name": "街机水浒传",
+    "id": "dtwatermargin15x9",
+    "category": "DT",
+    "subType": "DT-2",
+    "type": "SLO",
+    "line": " ",
+    "state": "1",
+    "language": "zh_CN",
+    "pic": "dtwatermargin15x9.png",
+    "tag": [
+      "HOT",
+      "NEW"
+    ]
+  },
+  {
+    "eName": "Hotpot Feast",
+    "name": "火锅盛宴",
+    "id": "hotpotfeast",
+    "category": "DT",
+    "subType": "DT-2",
+    "jackpot": "jackpot",
+    "type": "SLO",
+    "line": " ",
+    "state": "DEM",
+    "language": "zh_CN",
+    "pic": "hotpotfeast.png",
+    "tag": [
+      "HOT",
+      "NEW"
+    ]
+  },
+  {
+    "eName": "Sexy Camgirl",
+    "name": "心动女主播",
+    "id": "camgirl5x25",
+    "category": "DT",
+    "subType": "jackpot",
+    "type": "DEM",
+    "line": " ",
+    "state": "1",
+    "language": "zh_CN",
+    "pic": "camgirl5x25.png",
+    "tag": [
+      "HOT",
+      "NEW"
+    ]
+  },
+  {
+    "eName": "Egyptian Empire",
+    "name": "埃及帝国",
+    "id": "egyptian",
+    "category": "DT",
+    "subType": "jackpot",
+    "type": "DEM",
+    "line": " ",
+    "state": "1",
+    "language": "zh_CN",
+    "pic": "egyptian.png",
+    "tag": [
+      "HOT",
+      "NEW"
+    ]
+  },
+  {
+    "eName": "Eight Immortals",
+    "name": "精灵王国",
+    "id": "fantasyforest",
+    "category": "DT",
+    "subType": "jackpot",
+    "type": "DEM",
+    "line": "50",
+    "state": "1",
+    "language": "zh_CN",
+    "pic": "fantasyforest.png",
+    "tag": [
+      "HOT",
+      "NEW",
+      "AMA"
+    ]
+  },
+  {
+    "eName": "Eight Immortals",
+    "name": "八仙过海",
+    "id": "bxgh5x25",
+    "category": "DT",
+    "subType": "jackpot",
+    "type": "DEM",
+    "line": "25",
+    "state": "1",
+    "language": "zh_CN",
+    "pic": "bxgh5x25.jpg",
+    "tag": [
+      "HOT",
+      "NEW",
+      "AMA"
+    ]
+  },
+  {
+    "eName": "Boxing  Arena",
+    "name": "铁拳擂台",
+    "id": "boxingarena",
+    "category": "DT",
+    "subType": "jackpot",
+    "type": "DEM",
+    "line": "243",
+    "state": 1,
+    "language": "zh_CN",
+    "pic": "boxingarena.png",
+    "tag": [
+      "HOT",
+      "NEW",
+      "AMA"
+    ]
+  },
+  {
+    "eName": "Bellum Street",
+    "name": " 热血街头",
+    "id": "guhuozai",
+    "category": "DT",
+    "subType": "jackpot",
+    "type": "DEM",
+    "line": "243",
+    "state": 1,
+    "language": "zh_CN",
+    "pic": "guhuozai.png",
+    "tag": [
+      "HOT",
+      "NEW",
+      "AMA"
+    ]
+  },
+  {
+    "eName": "Pet House",
+    "name": " 萌宠小窝",
+    "id": "pethouse",
+    "category": "DT",
+    "subType": "jackpot",
+    "type": "DEM",
+    "line": "25-25",
+    "state": "0",
+    "language": "zh_CN",
+    "pic": "pethouse.png",
+    "tag": [
+      "HOT",
+      "NEW",
+      "AMA"
+    ]
+  },
+  {
+    "eName": "MAN TANG HONG",
+    "name": "满堂红",
+    "id": "bigred",
+    "category": "DT",
+    "subType": "jackpot",
+    "type": "DEM",
+    "line": "25-25",
+    "state": 1,
+    "language": "zh_CN",
+    "pic": "bigred.png",
+    "tag": [
+      "HOT",
+      "NEW",
+      "AMA"
+    ]
+  },
+  {
+    "eName": "Perfect Detective",
+    "name": "全能侦探",
+    "id": "perfectdet",
+    "category": "DT",
+    "subType": "jackpot",
+    "type": "DEM",
+    "line": "",
+    "state": 1,
+    "language": "zh_CN",
+    "pic": "perfectdet.png",
+    "tag": [
+      "HOT",
+      "NEW",
+      "AMA"
+    ]
+  },
+  {
+    "eName": "Wrath of Thor",
+    "name": " 雷霆神域",
+    "id": "wrathofthor",
+    "category": "DT",
+    "subType": "jackpot",
+    "type": "DEM",
+    "line": "",
+    "state": 1,
+    "language": "zh_CN",
+    "pic": "wrathofthor.png",
+    "tag": [
+      "HOT",
+      "NEW",
+      "AMA"
+    ]
+  },
+  {
+    "eName": "Zombie Outbreak",
+    "name": "丧尸来袭",
+    "id": "zombie",
+    "category": "DT",
+    "subType": "jackpot",
+    "type": "DEM",
+    "line": "",
+    "state": 1,
+    "language": "zh_CN",
+    "pic": "zombie.png",
+    "tag": [
+      "HOT",
+      "NEW",
+      "AMA"
+    ]
+  },
+  {
+    "eName": "Vampire Legend",
+    "name": "夜影传说",
+    "id": "vampire",
+    "category": "DT",
+    "subType": "jackpot",
+    "type": "DEM",
+    "line": "",
+    "state": 1,
+    "language": "zh_CN",
+    "pic": "vampire.png",
+    "tag": [
+      "HOT",
+      "NEW",
+      "AMA"
+    ]
+  },
+  {
+    "eName": "Happiness Overflow",
+    "name": "喜气冲天",
+    "id": "rocket6x25",
+    "category": "DT",
+    "subType": "jackpot",
+    "type": "SLO",
+    "line": "",
+    "state": 1,
+    "language": "zh_CN",
+    "pic": "rocket6x25.jpg",
+    "tag": [
+      "HOT",
+      "NEW",
+      "AMA"
+    ]
+  },
+  {
+    "eName": "Spicy Hot Pot",
+    "name": "麻辣火锅",
+    "id": "hotpot5x25",
+    "category": "DT",
+    "subType": "jackpot",
+    "type": "SLO",
+    "line": "25-25",
+    "state": 1,
+    "language": "zh_CN",
+    "pic": "hotpot5x25.jpg",
+    "tag": [
+      "HOT",
+      "NEW",
+      "AMA"
+    ]
+  },
+  {
+    "eName": "Classic Drama show",
+    "name": "曲艺大秀场",
+    "id": "opera",
+    "category": "DT",
+    "subType": "",
+    "type": "SLO",
+    "line": "50",
+    "state": "1",
+    "language": "zh_CN",
+    "pic": "opera.png",
+    "tag": [
+      "HOT",
+      "NEW",
+      "DEM",
+      "AMA"
+    ]
+  },
+  {
+    "eName": "Legend of King",
+    "name": "王者传奇",
+    "id": "legend5x25",
+    "category": "DT",
+    "subType": "",
+    "type": "SLO",
+    "line": "50",
+    "state": "1",
+    "language": "zh_CN",
+    "pic": "legend5x25.png",
+    "tag": [
+      "HOT",
+      "NEW",
+      "AMA"
+    ]
+  },
+  {
+    "eName": "Sweet House",
+    "name": "甜蜜糖果屋",
+    "id": "sweethouse",
+    "category": "DT",
+    "subType": "",
+    "type": "SLO",
+    "line": "50",
+    "state": "1",
+    "language": "zh_CN",
+    "pic": "sweethouse.png",
+    "tag": [
+      "HOT",
+      "NEW",
+      "AMA"
+    ]
+  },
+  {
+    "eName": "HOGA",
+    "name": "HOGA",
+    "id": "huga5x9",
+    "category": "DT",
+    "subType": "jackpot",
+    "type": "DEM",
+    "line": "5-10",
+    "state": "1",
+    "language": "zh_CN",
+    "pic": "huga5x9.jpg",
+    "tag": [
+      "HOT",
+      "NEW"
+    ]
+  },
+  {
+    "eName": "Four Beauty",
+    "name": "倾城四美",
+    "id": "fourbeauty",
+    "category": "DT",
+    "subType": "jackpot",
+    "type": "1",
+    "line": "25-25",
+    "state": "1",
+    "language": "zh_CN",
+    "pic": "fourbeauty.jpg",
+    "tag": [
+      "HOT",
+      "NEW",
+      "AMA"
+    ]
+  },
+  {
+    "eName": "SO YOUNG",
+    "name": "致青春",
+    "id": "foryouth5x25",
+    "category": "DT",
+    "subType": "jackpot",
+    "type": "SLO",
+    "line": "25-25",
+    "state": 1,
+    "jackpot": 1,
+    "language": "zh_CN",
+    "pic": "foryouth5x25.jpg",
+    "tag": [
+      "HOT",
+      "AMA",
+      "NEW"
+    ]
+  },
+  {
+    "eName": "Merry Christmas",
+    "name": "圣诞快乐",
+    "id": "merryxmas",
+    "category": "DT",
+    "subType": "jackpot",
+    "type": "DEM",
+    "line": "25-25",
+    "state": "1",
+    "language": "zh_CN",
+    "pic": "merryxmas.jpg",
+    "tag": [
+      "HOT",
+      "NEW",
+      "AMA"
+    ]
+  },
+  {
+    "eName": "Shogun",
+    "name": "幕府风云",
+    "id": "shogun",
+    "category": "DT",
+    "subType": "jackpot",
+    "type": "DEM",
+    "line": "50",
+    "state": "1",
+    "language": "zh_CN",
+    "pic": "shogun.jpg",
+    "tag": [
+      "HOT",
+      "NEW",
+      "AMA"
+    ]
+  },
+  {
+    "eName": "Pirate Treasure",
+    "name": "海盗宝藏",
+    "id": "piratetreasure",
+    "category": "DT",
+    "subType": "jackpot",
+    "type": "1",
+    "line": " ",
+    "state": "1",
+    "language": "zh_CN",
+    "pic": "piratetreasure1.jpg",
+    "tag": [
+      "HOT",
+      "NEW",
+      "AMA"
+    ]
+  },
+  {
+    "eName": "Hip-hop man",
+    "name": "嘻哈侠",
+    "id": "hiphopman",
+    "category": "DT",
+    "subType": "jackpot",
+    "type": "1",
+    "line": "40-60",
+    "state": "1",
+    "language": "zh_CN",
+    "pic": "hiphopman.png",
+    "tag": [
+      "HOT",
+      "NEW",
+      "AMA"
+    ]
+  },
+  {
+    "eName": "Monopoly",
+    "name": "地产大亨",
+    "id": "estate5x25",
+    "category": "DT",
+    "subType": "jackpot",
+    "type": "SLO",
+    "line": " ",
+    "jackpot": 1,
+    "state": 1,
+    "language": "zh_CN",
+    "pic": "estate5x25.png",
+    "tag": [
+      "HOT",
+      "NEW",
+      "AMA"
+    ]
+  },
+  {
+    "eName": "Crossing",
+    "name": "十字路口",
+    "id": "crossing",
+    "category": "DT",
+    "subType": "jackpot",
+    "type": "1",
+    "line": " ",
+    "state": "1",
+    "language": "zh_CN",
+    "pic": "crossing.png",
+    "tag": [
+      "HOT",
+      "NEW",
+      "AMA"
+    ]
+  },
+  {
+    "eName": "Paladins",
+    "name": "圣战骑士",
+    "id": "crusader",
+    "category": "DT",
+    "subType": "jackpot",
+    "type": "SLO",
+    "line": " ",
+    "jackpot": 1,
+    "state": 1,
+    "language": "zh_CN",
+    "pic": "crusader.jpg",
+    "tag": [
+      "HOT",
+      "NEW",
+      "AMA"
+    ]
+  },
+  {
+    "eName": "bikini",
+    "name": "比基尼派对",
+    "id": "bikini",
+    "category": "DT",
+    "subType": "jackpot",
+    "type": "SLO",
+    "line": " ",
+    "state": "1",
+    "language": "zh_CN",
+    "pic": "bikini.jpg",
+    "tag": [
+      "HOT",
+      "NEW",
+      "AMA"
+    ]
+  },
+  {
+    "eName": "sq5x243",
+    "name": "四驱大赛",
+    "id": "sq5x243",
+    "category": "DT",
+    "subType": "jackpot",
+    "type": "SLO",
+    "line": " ",
+    "state": "1",
+    "language": "zh_CN",
+    "pic": "sq5x243.jpg",
+    "tag": [
+      "HOT",
+      "NEW",
+      "AMA"
+    ]
+  },
+  {
+    "eName": "4X4 HERO",
+    "name": "四驱英雄",
+    "id": "dash",
+    "category": "DT",
+    "subType": "jackpot",
+    "jackpot": "",
+    "type": "SLO",
+    "line": " ",
+    "state": "1",
+    "language": "zh_CN",
+    "pic": "dash.png",
+    "tag": [
+      "HOT",
+      "NEW",
+      "AMA"
+    ]
+  },
+  {
+    "eName": "crazy circus",
+    "name": "疯狂马戏团",
+    "id": "circus",
+    "category": "DT",
+    "subType": "jackpot",
+    "type": "SLO",
+    "line": "20",
+    "state": "1",
+    "language": "zh_CN",
+    "pic": "circus.png",
+    "tag": [
+      "HOT",
+      "NEW",
+      "AMA"
+    ]
+  },
+  {
+    "eName": "Happy Farm",
+    "name": "快乐农庄",
+    "id": "klnz5x20",
+    "category": "DT",
+    "subType": "jackpot",
+    "type": "SLO",
+    "line": "20",
+    "state": "1",
+    "language": "zh_CN",
+    "pic": "klnz5x20.png",
+    "tag": [
+      "HOT",
+      "NEW",
+      "AMA"
+    ]
+  },
+  {
+    "eName": "Blue Sea",
+    "name": "深蓝海域",
+    "id": "bluesea",
+    "category": "DT",
+    "subType": "jackpot",
+    "type": "SLO",
+    "line": " ",
+    "state": "1",
+    "language": "zh_CN",
+    "pic": "bluesea.png",
+    "tag": [
+      "HOT",
+      "NEW",
+      "AMA"
+    ]
+  },
+  {
+    "eName": "rocknight",
+    "name": "摇滚之夜",
+    "id": "rocknight",
+    "category": "DT",
+    "subType": "jackpot",
+    "type": "SLO",
+    "line": " ",
+    "state": "1",
+    "language": "zh_CN",
+    "pic": "rocknight.jpg",
+    "tag": [
+      "HOT",
+      "NEW",
+      "AMA"
+    ]
+  },
+  {
+    "eName": "crazy",
+    "name": "疯狂转转转",
+    "id": "crazy5x243",
+    "category": "DT",
+    "subType": "jackpot",
+    "type": "SLO",
+    "line": "",
+    "state": "1",
+    "language": "zh_CN",
+    "pic": "crazy5x243.png",
+    "tag": [
+      "HOT",
+      "NEW",
+      "AMA"
+    ]
+  },
+  {
+    "eName": "Casino",
+    "name": "3D老虎机",
+    "id": "casino",
+    "category": "DT",
+    "subType": "jackpot",
+    "type": "SLO",
+    "line": "",
+    "state": "1",
+    "language": "zh_CN",
+    "pic": "casino.png",
+    "tag": [
+      "HOT",
+      "AMA"
+    ]
+  },
+  {
+    "eName": "nightclub",
+    "name": "夜店之王",
+    "id": "nightclub5x20",
+    "category": "DT",
+    "subType": "jackpot",
+    "type": "SLO",
+    "line": " ",
+    "state": "1",
+    "language": "zh_CN",
+    "pic": "nightclub5x20.png",
+    "tag": [
+      "HOT",
+      "NEW",
+      "AMA"
+    ]
+  },
+  {
+    "eName": "Fourss",
+    "name": "四圣兽",
+    "id": "fourss",
+    "category": "DT",
+    "subType": "jackpot",
+    "type": "SLO",
+    "line": "",
+    "state": "1",
+    "language": "zh_CN",
+    "pic": "fourss.png",
+    "tag": [
+      "HOT",
+      "AMA"
+    ]
+  },
+  {
+    "eName": "FULUSHOU",
+    "name": "福禄寿",
+    "id": "fls",
+    "category": "DT",
+    "subType": "jackpot",
+    "type": "SLO",
+    "line": "",
+    "state": "1",
+    "language": "zh_CN",
+    "pic": "fls.png",
+    "tag": [
+      "HOT",
+      "AMA"
+    ]
+  },
+  {
+    "eName": "Chinese Paladin",
+    "name": "仙剑奇缘Jackpot",
+    "id": "xjqy5x9",
+    "category": "DT",
+    "subType": "jackpot",
+    "type": "SLO",
+    "line": "",
+    "state": "1",
+    "language": "zh_CN",
+    "pic": "xjqy5x9.png",
+    "tag": [
+      "HOT",
+      "AMA"
+    ]
+  },
+  {
+    "eName": "Glory of Heroes",
+    "name": "英雄荣耀",
+    "id": "crystal",
+    "category": "DT",
+    "subType": "jackpot",
+    "type": "SLO",
+    "line": "",
+    "state": "1",
+    "language": "zh_CN",
+    "pic": "crystal.png",
+    "tag": [
+      "HOT",
+      "AMA"
+    ]
+  },
+  {
+    "eName": "DragonPhoenix Prosper",
+    "name": "龙凤呈祥",
+    "id": "dnp",
+    "category": "DT",
+    "subType": "jackpot",
+    "type": "SLO",
+    "line": "15-20",
+    "state": 1,
+    "language": "zh_CN",
+    "pic": "dnp.png",
+    "tag": [
+      "HOT",
+      "AMA"
+    ]
+  },
+  {
+    "eName": "Crazy Basketball",
+    "name": "劲爆篮球",
+    "id": "btball5x20",
+    "category": "DT",
+    "subType": "jackpot",
+    "type": "SLO",
+    "line": "20-25",
+    "state": 1,
+    "language": "zh_CN",
+    "pic": "btball5x20.png",
+    "tag": [
+      "HOT",
+      "NEW",
+      "AMA"
+    ]
+  },
+  {
+    "eName": "whitesnake",
+    "name": "白蛇传",
+    "id": "whitesnake",
+    "category": "DT",
+    "subType": "jackpot",
+    "type": "SLO",
+    "line": "",
+    "state": 1,
+    "language": "zh_CN",
+    "pic": "whitesnake.png",
+    "tag": [
+      "HOT",
+      "AMA"
+    ]
+  },
+  {
+    "eName": "Saiyan Battle",
+    "name": "赛亚烈战",
+    "id": "dragonball",
+    "category": "DT",
+    "subType": "jackpot",
+    "type": "SLO",
+    "line": "",
+    "state": 1,
+    "language": "zh_CN",
+    "pic": "dragonball.png",
+    "tag": [
+      "HOT",
+      "AMA"
+    ]
+  },
+  {
+    "eName": "Demon Hunt to West",
+    "name": "西游降妖Jackpot",
+    "id": "jtw",
+    "category": "DT",
+    "subType": "jackpot",
+    "type": "SLO",
+    "line": "",
+    "state": 1,
+    "language": "zh_CN",
+    "pic": "jtw.png",
+    "tag": [
+      "HOT",
+      "AMA"
+    ]
+  },
+  {
+    "eName": "Wealthy God Arriving",
+    "name": "财神到",
+    "id": "tgow",
+    "category": "DT",
+    "subType": "jackpot",
+    "type": "SLO",
+    "line": "",
+    "state": 1,
+    "language": "zh_CN",
+    "pic": "tgow.png",
+    "tag": [
+      "NEW",
+      "HOT",
+      "AMA"
+    ]
+  },
+  {
+    "eName": "Happy New Year",
+    "name": "新年到",
+    "id": "newyear",
+    "category": "DT",
+    "subType": "jackpot",
+    "type": "SLO",
+    "line": "",
+    "state": 1,
+    "language": "zh_CN",
+    "pic": "newyear.png",
+    "tag": [
+      "HOT",
+      "NEW",
+      "AMA"
+    ]
+  },
+  {
+    "eName": "Investiture of Gods",
+    "name": "封神榜",
+    "id": "tlod",
+    "category": "DT",
+    "subType": "jackpot",
+    "type": "SLO",
+    "line": "",
+    "state": 1,
+    "language": "zh_CN",
+    "pic": "tlod.png",
+    "tag": [
+      "HOT",
+      "NEW",
+      "AMA"
+    ]
+  },
+  {
+    "eName": "Tales Of Wusong",
+    "name": "武松传",
+    "id": "watermargin",
+    "category": "DT",
+    "subType": "jackpot",
+    "type": "SLO",
+    "line": "",
+    "state": 1,
+    "language": "zh_CN",
+    "pic": "watermargin.png",
+    "tag": [
+      "HOT",
+      "NEW",
+      "AMA"
+    ]
+  },
+  {
+    "eName": "Seiya",
+    "name": "圣域传说",
+    "id": "seiya",
+    "category": "DT",
+    "subType": "jackpot",
+    "type": "SLO",
+    "line": "",
+    "state": 1,
+    "language": "zh_CN",
+    "pic": "seiya.png",
+    "tag": [
+      "HOT",
+      "NEW",
+      "AMA"
+    ]
+  },
+  {
+    "eName": "Battle of Red Cliffs",
+    "name": "赤壁之战Jackpot",
+    "id": "san",
+    "category": "DT",
+    "subType": "jackpot",
+    "type": "SLO",
+    "line": "",
+    "state": 1,
+    "language": "zh_CN",
+    "pic": "san.png",
+    "tag": [
+      "HOT",
+      "AMA"
+    ]
+  },
+  {
+    "eName": "Allah Lamp",
+    "name": "阿拉丁神灯",
+    "id": "aladdin5x243",
+    "category": "DT",
+    "subType": "jackpot",
+    "type": "SLO",
+    "line": "",
+    "state": 1,
+    "language": "zh_CN",
+    "pic": "aladdin5x243.png",
+    "tag": [
+      "HOT",
+      "NEW",
+      "AMA"
+    ]
+  },
+  {
+    "eName": "XIYOUCHUANQI",
+    "name": "降妖传奇Jackpot",
+    "id": "xiyouji5x9",
+    "category": "DT",
+    "subType": "jackpot",
+    "type": "SLO",
+    "line": "",
+    "state": 1,
+    "language": "zh_CN",
+    "pic": "xiyouji5x9.png",
+    "tag": [
+      "HOT",
+      "AMA"
+    ]
+  },
+  {
+    "eName": "The King of Fighters98",
+    "name": "拳皇98",
+    "id": "kof5x9",
+    "language": "zh_CN",
+    "pic": "kof5x9.png",
+    "category": "DT",
+    "subType": "jackpot",
+    "type": "SLO",
+    "line": "",
+    "state": 1,
+    "tag": [
+      "HOT",
+      "NEW",
+      "AMA"
+    ]
+  },
+  {
+    "eName": "Doraemon",
+    "name": "哆啦A梦",
+    "id": "doraemon3x5",
+    "language": "zh_CN",
+    "pic": "doraemon3x5.png",
+    "category": "DT",
+    "subType": "jackpot",
+    "type": "SLO",
+    "line": "",
+    "state": 1,
+    "tag": [
+      "HOT",
+      "NEW",
+      "AMA"
+    ]
+  },
+  {
+    "eName": "Street Fighter II",
+    "name": "街霸",
+    "id": "streetfighter3x1",
+    "language": "zh_CN",
+    "pic": "streetfighter3x1.png",
+    "category": "DT",
+    "subType": "jackpot",
+    "type": "SLO",
+    "line": "",
+    "state": 1,
+    "tag": [
+      "HOT",
+      "NEW",
+      "AMA"
+    ]
+  },
+  {
+    "eName": "Watermargin",
+    "name": "水浒传",
+    "id": "watermargin5x25",
+    "category": "DT",
+    "subType": "jackpot",
+    "type": "SLO",
+    "line": "",
+    "state": 1,
+    "language": "zh_CN",
+    "pic": "watermargin5x25.png",
+    "tag": [
+      "HOT",
+      "NEW",
+      "AMA"
+    ]
+  },
+  {
+    "eName": "Five Elements",
+    "name": "五行世界",
+    "id": "fiveelements5x9",
+    "language": "zh_CN",
+    "pic": "fiveelements5x9.png",
+    "category": "DT",
+    "subType": "jackpot",
+    "type": "SLO",
+    "line": "",
+    "state": 1,
+    "tag": [
+      "HOT",
+      "NEW",
+      "AMA"
+    ]
+  },
+  {
+    "eName": "football",
+    "name": "传奇之路",
+    "id": "football",
+    "category": "DT",
+    "subType": "jackpot",
+    "type": "SLO",
+    "line": "",
+    "state": "1",
+    "language": "zh_CN",
+    "pic": "football.png",
+    "tag": [
+      "HOT",
+      "NEW",
+      "AMA"
+    ]
+  },
+  {
+    "eName": "Gundam",
+    "name": "高达",
+    "id": "gundam3x5",
+    "language": "zh_CN",
+    "pic": "gundam3x5.png",
+    "category": "DT",
+    "subType": "DT-1",
+    "type": "SLO",
+    "line": "",
+    "state": 1,
+    "tag": [
+      "HOT",
+      "NEW"
+    ]
+  },
+  {
+    "eName": "Onepiece",
+    "name": "海贼王",
+    "id": "onepiece3x1",
+    "language": "zh_CN",
+    "pic": "onepiece3x1.png",
+    "category": "DT",
+    "subType": "DT-1",
+    "type": "SLO",
+    "line": "",
+    "state": 1,
+    "tag": [
+      "HOT",
+      "NEW"
+    ]
+  },
+  {
+    "eName": "Xiyouji",
+    "name": "西游记",
+    "id": "xiyouji5x25",
+    "category": "DT",
+    "subType": "DT-2",
+    "type": "SLO",
+    "line": "",
+    "state": 1,
+    "language": "zh_CN",
+    "pic": "xiyouji5x25.png",
+    "tag": [
+      "HOT",
+      "NEW"
+    ]
+  },
+  {
+    "eName": "Fantasy Forest",
+    "name": "梦幻森林",
+    "id": "fantasyforest3x1",
+    "language": "zh_CN",
+    "pic": "fantasyforest3x1.png",
+    "category": "DT",
+    "subType": "DT-1",
+    "type": "SLO",
+    "line": "",
+    "state": 1,
+    "tag": [
+      "HOT",
+      "NEW"
+    ]
+  },
+  {
+    "eName": "KING OF PIRATE",
+    "name": "海盗无双",
+    "id": "onepiece",
+    "category": "DT",
+    "subType": "DT-2",
+    "type": "SLO",
+    "line": "",
+    "state": 1,
+    "language": "zh_CN",
+    "pic": "onepiece.png",
+    "tag": [
+      "HOT",
+      "NEW"
+    ]
+  },
+  {
+    "eName": "Naruto",
+    "name": "NINJA",
+    "id": "naruto",
+    "category": "DT",
+    "subType": "DT-2",
+    "type": "SLO",
+    "line": "",
+    "state": 1,
+    "language": "zh_CN",
+    "pic": "naruto.png",
+    "tag": [
+      "HOT",
+      "NEW"
+    ]
+  },
+  {
+    "eName": "Basketball Master 2",
+    "name": "灌篮大师2",
+    "id": "sd5",
+    "category": "DT",
+    "subType": "DT-2",
+    "type": "SLO",
+    "line": "",
+    "state": 1,
+    "language": "zh_CN",
+    "pic": "sd5.png",
+    "tag": [
+      "HOT",
+      "NEW"
+    ]
+  },
+  {
+    "eName": "Basketball Master",
+    "name": "灌篮大师",
+    "id": "sd",
+    "category": "DT",
+    "subType": "DT-2",
+    "type": "SLO",
+    "line": "",
+    "state": 1,
+    "language": "zh_CN",
+    "pic": "sd.png",
+    "tag": [
+      "HOT",
+      "NEW"
+    ]
+  },
+  {
+    "eName": "Fighting Spirit",
+    "name": "格斗之魂",
+    "id": "kof",
+    "language": "zh_CN",
+    "category": "DT",
+    "subType": "DT-2",
+    "type": "SLO",
+    "line": "",
+    "state": 1,
+    "pic": "kof.png",
+    "tag": [
+      "HOT",
+      "NEW"
+    ]
+  }
+]

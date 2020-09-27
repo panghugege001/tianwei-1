@@ -1,0 +1,35 @@
+@charset "UTF-8";
+.m-grid { width: 100%; padding: 5px; overflow: hidden; font-size: 16px; background-color: #312620; }
+.m-grid .m-grid-header { position: relative; width: 100%; font-size: 120%; }
+.m-grid .m-grid-footer { position: relative; width: 100%; }
+.m-grid .m-grid-pagination { position: relative; display: inline-block; width: 100%; font-size: 100%; }
+.m-grid .m-grid-pagination .m-grid-pagination-left { position: absolute; top: 0; left: 0; display: inline-block; width: 5em; padding: 5px 0 5px 0; }
+.m-grid .m-grid-pagination .m-grid-pagination-left > div { float: left; width: 50%; text-align: center; }
+.m-grid .m-grid-pagination .m-grid-pagination-right { position: absolute; top: 0; right: 0; display: inline-block; width: 5em; padding: 5px 0 5px 0; }
+.m-grid .m-grid-pagination .m-grid-pagination-right > div { float: left; width: 50%; text-align: center; }
+.m-grid .m-grid-pagination .m-grid-pagination-page { display: inline-block; width: 100%; padding: 5px 5em 5px 5em; text-align: center; }
+.m-grid .m-grid-pagination .m-grid-pagination-page input { width: 2em; border: 1px solid #676666; text-align: center; }
+.m-grid .m-grid-pagination .m-grid-pagination-page .m-grid-pagination-page-num { display: inline-block; padding: 5px 10px 5px 10px; }
+.m-grid .m-grid-refresh { float: right; padding: 5px; }
+.m-grid .m-grid-footer-text { text-align: right; }
+.m-grid .m-grid-table { width: 100%; overflow-y: auto; }
+.m-grid .m-grid-table table { width: 100%; }
+.m-grid .m-grid-table thead { width: 100%; background-color:#ed6325;}
+.m-grid .m-grid-table thead td { padding: 5px; text-align: center; font-size: 100%; color: #fff;line-height: 2rem;}
+.m-grid .m-grid-table tbody { width: 100%; }
+.m-grid .m-grid-table tr { border-bottom:16px solid #312620; }
+.m-grid .m-grid-table td { padding: 10px 5px 10px 5px; text-align: center; font-size:100%; color: #bcada4; }
+.m-grid .m-grid-table .m-grid-row-content-form { display: table; width: 100%; padding: 10px; text-align: left; line-height:1.9}
+.m-grid .m-grid-table table tbody tr td .m-grid-row-content-form .m-grid-row-content-row .m-grid-row-content-label { float: left; text-align: right; width: 6em; }
+.m-grid .m-grid-table table .m-grid-row { background-color: #372b24; }
+.m-grid .m-grid-table table .m-grid-row.active { border-bottom: 0; background-color: #ed6325; }
+.m-grid .m-grid-table table .m-grid-row.active td{color:#fff; }
+ 
+.m-grid .m-grid-table table .m-grid-row.active .m-grid-row-open { transform: rotate(90deg); -ms-transform: rotate(90deg); /* IE 9 */
+  -moz-transform: rotate(90deg); /* Firefox */
+  -webkit-transform: rotate(90deg); /* Safari 嚙瞎 Chrome */
+  -o-transform: rotate(90deg); }
+.m-grid .m-grid-table table .m-grid-row.active + .m-grid-row-content { display: table-row; }
+.m-grid .m-grid-table table .m-grid-row .m-grid-row-open { transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; }
+.m-grid .m-grid-table table .m-grid-row-content { display: none; width: 100%; }
+.m-grid .m-grid-table table .m-grid-row-content td { padding: 0px; }

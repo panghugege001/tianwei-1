@@ -1,0 +1,898 @@
+﻿/* common start*/
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%; /*10 ÷ 16 × 100% = 62.5%*/
+    -webkit-overflow-scrolling: touch;
+}
+
+/*h1{font-size: 2.4rem;!*2.4 × 10px = 24px*!}*/
+body {
+    font-family: "Microsoft Yahei", "微软雅黑";
+    background: #f8f8f8;
+    font-size: 1.4rem; /*1.4 × 10px = 14px */
+}
+
+ul, li {
+    list-style: none;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.red {
+    color: red !important;
+}
+
+.mt10 {
+    margin-top: 10px !important;
+}
+
+.mt20 {
+    margin-top: 20px !important;
+}
+
+.mb25 {
+    margin-bottom: 25px !important;
+}
+
+.font2 {
+    font-size: 1rem;
+}
+
+.font3 {
+    font-size: 2rem;
+}
+
+.font4 {
+    font-size: 2rem;
+}
+
+.space-5 {
+    height: 50px;
+}
+
+.relative {
+    position: relative;
+}
+
+.font2 {
+    font-size: 3rem;
+}
+
+.font3 {
+    font-size: 3rem;
+}
+
+.font4 {
+    font-size: 4rem;
+}
+
+.font12 {
+    font-size: 1.2rem;
+}
+
+.font16 {
+    font-size: 1.6rem;
+}
+
+.font18 {
+    font-size: 1.8rem;
+}
+
+.font20 {
+    font-size: 2rem;
+}
+
+.font30 {
+    font-size: 3rem;
+}
+
+.font32 {
+    font-size: 3.2rem;
+}
+
+.font40 {
+    font-size: 4rem;
+}
+
+.font60 {
+    font-size: 3.2em;
+}
+
+.relative {
+    position: relative;
+}
+
+.gray-color {
+    color: #bebebe;
+}
+
+.gray-color2 {
+    color: #8c8c8c;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* common end*/
+.main-content {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 750px;
+}
+
+/* header start*/
+.o-header {
+    background: #322b1e;
+    position: relative;
+}
+
+.o-header-top {
+    background: url('../images/user_top_bg.jpg') no-repeat;
+    background-size: 100%;
+}
+
+.o-header .o-wrapper {
+    height: 140px;
+    overflow: hidden;
+}
+
+.o-header .o-wrapper .fl {
+    float: left;
+}
+
+.o-header .o-wrapper .user-photo {
+    width: 140px;
+    text-align: center;
+}
+
+.o-header .o-wrapper .user-level {
+    width: 100%;
+    padding-left: 140px;
+    position: absolute;
+    top: 15px;
+}
+
+/*.o-header .o-wrapper .fl:nth-child(1){width:45%; text-align: center;}*/
+.o-header .o-wrapper .fl img {
+    width: 80%;
+    padding: 15px 5px;
+}
+
+.o-header .o-wrapper h1 {
+    font-size: 1.4rem;
+    color: #fff;
+    line-height: 2;
+}
+
+.o-header .o-wrapper .select {
+    overflow: hidden;
+    position: relative;
+    width: 92%;
+    font-size: 16px;
+    border: 0;
+    color: #FFF;
+    padding: 5px 10px;
+    background: #ee6325;
+    max-width: 420px;
+    height: 45px;
+    margin-top: 5px;
+    line-height: 30px;
+    border-radius: 30px;
+}
+
+.o-header .o-wrapper select:focus, .o-header .o-wrapper .select:focus {
+    outline: none;
+}
+
+/*.o-header .sign-bg{background: url(../images/sing-bg.png) no-repeat center; background-size: cover; position: relative; height: 55px;}*/
+/*.o-header .sign-bg #sign-btn{background: url(../images/i-sign.png) no-repeat center; background-size:50%; position: absolute; top: 6px; right: 5px; height: 54px; width: 204px; z-index: 1;}*/
+.deposit-content .red {
+    color: #FF7F00;
+}
+
+.deposit-content hr {
+    width: 200%;
+    position: relative;
+    right: 200px;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+.deposit-content select {
+    border: none !important;
+}
+
+.close-btn {
+    position: absolute;
+    left: 15px;
+    top: 16px;
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background: url('../images/icon_arrow_back.png?v=1') no-repeat left center;
+    background-size: .9em;
+}
+
+.close-btn2, .pay-lists .li i.close-btn2 {
+    position: absolute;
+    right: 0;
+    left: inherit;
+    top: 10px;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background: url('../images/icon_close.png?v=1') no-repeat left center;
+    background-size: 1.4em;
+}
+
+.close-btn:hover {
+    opacity: 0.8;
+}
+
+.top-title {
+    font-size: 1.25em;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+}
+
+.my-balance {
+    padding: 2.2em 0 3em 0;
+    color: #fff;
+}
+
+.pay-lists {
+    margin-top: 5px; /*padding:6px 0;*/ /*background: #f1f1f1;*/
+}
+
+.pay-lists .li { /*border-top:1px solid #dddedf;*/ /*border-bottom:1px solid #dddedf;*/ /*background: #fff;*/ /*margin-top:7px;*/
+    color: #747474;
+}
+
+.pay-lists .li .title {
+    position: relative;
+    display: block;
+}
+
+.pay-lists .li .page {
+    display: none;
+}
+
+.pay-lists .li.active {
+    height: auto;
+}
+
+.pay-lists .li.active .page {
+    display: block;
+}
+
+.pay-lists .li.stop .page {
+    display: none !important;
+}
+
+.main-wrap > .container > .content .deposit-content > ul > li.li .title {
+    height: 48px;
+    line-height: 48px;
+    padding: 0;
+    letter-spacing: 0;
+    font-size: 1.5rem;
+    text-indent: 0;
+    text-align: left;
+    padding-left: 0px;
+    border-bottom: 1px solid #e2e2e3;
+    margin-left: 50px;
+}
+
+.pay-lists .li .close-btn {
+    position: absolute;
+    left: 10px;
+    top: 0;
+    display: inline-block;
+    width: 42px;
+    height: 50px;
+}
+
+.pay-lists .li i {
+    position: absolute;
+    left: -35px;
+    top: 0;
+    display: inline-block;
+    width: 60px;
+    height: 100%;
+    margin-right: 10px;
+}
+
+.pay-lists .li .i-arrow-r {
+    position: absolute;
+    right: 15px;
+    top: 0;
+    display: inline-block;
+    width: 15px;
+    height: 45px;
+    background: url('../images/i-arrow-r2.png') no-repeat left center;
+    background-size: 10px;
+}
+
+.pay-lists .li .i-alipay {
+    background: url('../images/icon_alipay.png') no-repeat left center;
+    background-size: 22px;
+}
+
+.pay-lists .li .i-wechat {
+    background: url('../images/icon_wechat.png') no-repeat left center;
+    background-size: 22px;
+}
+
+.pay-lists .li .i-qq {
+    background: url('../images/icon_qq.png') no-repeat left center;
+    background-size: 22px;
+}
+
+.pay-lists .li .i-jiuan {
+    background: url('/mobile/app/images/jiuan_logo.jpg') no-repeat left center;
+    background-size: 22px;
+}
+
+.pay-lists .li .i-quickpay {
+    background: url('../images/icon_quick.png') no-repeat left center;
+    background-size: 22px;
+}
+
+.pay-lists .li .i-online {
+    background: url('../images/icon_online.png') no-repeat left center;
+    background-size: 22px;
+}
+
+.pay-lists .li .i-dotcard {
+    background: url('../images/icon_dotcard.png') no-repeat left center;
+    background-size: 22px;
+}
+
+.pay-lists .li .i-text {
+    background: url('../images/icon_text.png') no-repeat left center;
+    background-size: 22px;
+}
+
+.pay-lists .li .i-jdpay {
+    background: url('/images/deposit/icon-jd.png') no-repeat left center;
+    background-size: 22px;
+}
+
+.pay-lists .li .i-cloudpay {
+    background: url('/images/deposit/icon-cloudpay.png') no-repeat left center;
+}
+
+/* item2 弹窗 */
+.alert-item {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.alert-item-in {
+    position: absolute;
+    width: 90%;
+    min-height: 20px;
+    border-radius: 6px;
+    background: #fff;
+    color: #333;
+    left: 5%;
+    top: 16%;
+}
+
+.alert-item .top-title {
+    text-align: left;
+    text-indent: 2em;
+}
+
+/* header end*/
+/* pop content */
+.pop-content {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #f1f1f1;
+    display: none;
+    overflow: scroll;
+    z-indx: 9;
+}
+
+.pay-content {
+    padding: 20px 25px;
+    max-height: 100%;
+    overflow: scroll;
+}
+
+.deposit-content .mui-select {
+    position: relative;
+    top: 0;
+    right: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+.my-select, .mui-select > select, .mui-select > select:focus {
+    width: 100%;
+    background: #fff url(../images/icon_arrow_select.png) no-repeat right center;
+    height: 38px;
+    background-size: 38px;
+    text-indent: .6em;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    color: #1d1d26; /*将默认的select input选择框样式清除*/
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    outline: none;
+}
+
+.my-select option {
+    height: 38px;
+    line-height: 38px;
+    border-color: #ddd;
+}
+
+.mui-select > select:focus, .mui-select:focus > select {
+    height: 38px;
+    line-height: 38px;
+}
+
+.my-input {
+    width: 100%;
+    padding: 0 3%;
+}
+
+.my-input-title {
+    padding: 10px 0 8px 0;
+}
+
+/*有验证码时输入框*/
+.my-fixed-input {
+    width: 100%;
+    height: 41px;
+    border: 0;
+    position: relative;
+    background: #fff;
+    border-radius: 7px;
+}
+
+.my-fixed-input .my-input {
+    width: 80%;
+    padding: 0 3%;
+    height: 41px;
+    border: 0;
+}
+
+.main-wrap > .container > .content .deposit-content > ul > li .page .remark.my-input {
+    font-size: 14px;
+}
+
+.deposit-content { /*color:#1d1d26;*/
+    color: rgba(29, 29, 38, .5);
+}
+
+.deposit-content ol li {
+    line-height: 1.8;
+    font-size: 1.4rem;
+}
+
+.my-fixed-input .my-icode {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: inline-block;
+    min-width: 70px;
+    padding: 0 2%;
+    height: 41px;
+    line-height: 41px;
+    text-align: center;
+    border-radius: 0 7px 7px 0;
+}
+
+.deposit-content input[type=text] {
+    outline: none;
+    border: none;
+    box-shadow: none;
+    color: #1d1d26;
+    background: #fff;
+    width: 100%;
+    font-size: 1.5rem;
+    height: 43px;
+    text-indent: .6em;
+    border-radius: 8px;
+}
+
+.deposit-content .my-input {
+    height: 41px !important;
+    margin: 0 !important;
+    background: #fff;
+    border: 0;
+    border-radius: 7px;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    outline: none;
+    padding-left: 6px;
+}
+
+.deposit-content .mui-select:after {
+    content: "";
+}
+
+.deposit-content .message {
+    color: #ff7f00;
+}
+
+.my-fixed-input .my-icode img {
+    max-width: 100%;
+    max-height: 100%;
+    vertical-align: middle;
+}
+
+.my-fixed-input .my-icode.getfuyan {
+    background: #d72000;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.recharge-btn {
+    display: inline-block;
+    width: 100%;
+    height: 38px;
+    line-height: 38px;
+    color: #fff;
+    font-size: 1.6rem;
+    text-align: center;
+    background: #ee2e25;
+    border-radius: 30px;
+    margin-top: 15px;
+    border: 0;
+}
+
+.recharge-btn:focus {
+    background: #efa43b;
+}
+
+.recharge-btn2 {
+    background: #ee6325;
+}
+
+.recharge-btn3 {
+    background: #ff9920;
+}
+
+.tips-title {
+    padding: 25px 0 12px 0;
+    font-size: 1.7rem;
+    color: #333;
+}
+
+.main-wrap > .container > .content .deposit-content > ul > li.li.active .page {
+    display: inline-block;
+    position: absolute;
+    top: 194px;
+    left: 0;
+    background: #f8f8f8;
+    z-index: 1;
+}
+
+.main-wrap > .container > .content .deposit-content > ul > li.li.active .full-page {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    background: #f8f8f8;
+    z-index: 99;
+    -webkit-overflow-scrolling: touch;
+}
+
+/*.main-wrap > .container > .content .deposit-content > ul > li.li.active .full-page {*/
+/*position: absolute; top: 0; left: 0; bottom: 0; width: 100%;*/
+/*background-color: rgba(0,0,0,.5);*/
+/*filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#7F000000,endcolorstr=#7F000000);*/
+/*overflow: auto;*/
+/*}*/
+:root .full-page {
+    /* IE9 无 filter */
+    filter: none;
+}
+
+.full-page .mui-col-xs32-offset-1 {
+    margin-left: 4.2%;
+}
+
+.mui-textfield > input:focus, .mui-textfield > textarea:focus {
+    border-width: 1px !important;
+}
+
+/*支付宝弹窗扫码*/
+#mui-overlay .mui-overlay-model .mui-overlay-title {
+    background: #f1f1f1;
+    border-radius: 10px 10px 0 0;
+    color: #656565;
+    height: 45px;
+    line-height: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.mui-btn--primary {
+    color: #fff !important;
+    border-radius: 20px;
+    margin-top: 20px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.mui-panel {
+    border-radius: 0 0 10px 10px;
+    padding: 20px;
+    font-size: 1.2em;
+    line-height: 1.2em;
+}
+
+/* pop content end*/
+.tab-content .padding16 {
+    padding: 0 1.6rem;
+}
+
+.quick-save-choose-btn {
+    background: #959185;
+    color: #fff;
+}
+
+/*.mui-btn .deleter-btn{*/
+/*padding:0 26px;*/
+/*background: #959185;*/
+/*display:block;*/
+/*height:100%;*/
+/*width:100%;*/
+/*}*/
+.mui-textfield00 {
+    position: relative;
+}
+
+.mui-textfield00 .btn-copy {
+    -webkit-appearance: none !important;
+    border: 0;
+    border-radius: 0 8px 8px 0;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    padding: 0 25px;
+    height: 40px;
+    line-height: 40px;
+    background: #fb9b08;
+}
+
+.mui-textfield00 .btn-copy:focus {
+    background: #999;
+}
+
+#deposit-fast-success {
+    background: #ee6325 !important;
+    color: #fff !important;
+}
+
+.layui-m-layerbtn span[yes] {
+    background: #ee6325 !important;
+    color: #fff !important;
+}
+
+.main-wrap .refre {
+    position: absolute;
+    right: 12px;
+    top: 7px;
+    display: inline-block;
+    font-size: 146%;
+    color: #fff;
+    cursor: pointer;
+    height: 32px;
+    width: 32px;
+    background: url(../images/fresh.png) no-repeat
+}
+
+.main-wrap .refre.credit-query {
+    animation: refresh 0.8s linear 0s infinite;
+    -moz-animation: refresh 0.8s linear 0s infinite;
+    -webkit-animation: refresh 0.8s linear 0s infinite;
+    -o-animation: refresh 0.8s linear 0s infinite;
+    -ms-animation: refresh 0.8s linear 0s infinite;
+}
+
+.loader {
+    z-index: 100;
+}
+
+@-webkit-keyframes refresh {
+    from {
+        transform: rotateZ(0deg);
+        -ms-transform: rotateZ(0deg);
+        /* IE 9 */
+        -moz-transform: rotateZ(0deg);
+        /* Firefox */
+        -webkit-transform: rotateZ(0deg);
+        /* Safari 和 Chrome */
+        -o-transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(360deg);
+        -ms-transform: rotateZ(360deg);
+        /* IE 9 */
+        -moz-transform: rotateZ(360deg);
+        /* Firefox */
+        -webkit-transform: rotateZ(360deg);
+        /* Safari 和 Chrome */
+        -o-transform: rotateZ(360deg);
+    }
+}
+
+@-ms-keyframes refresh {
+    from {
+        transform: rotateZ(0deg);
+        -ms-transform: rotateZ(0deg);
+        /* IE 9 */
+        -moz-transform: rotateZ(0deg);
+        /* Firefox */
+        -webkit-transform: rotateZ(0deg);
+        /* Safari 和 Chrome */
+        -o-transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(360deg);
+        -ms-transform: rotateZ(360deg);
+        /* IE 9 */
+        -moz-transform: rotateZ(360deg);
+        /* Firefox */
+        -webkit-transform: rotateZ(360deg);
+        /* Safari 和 Chrome */
+        -o-transform: rotateZ(360deg);
+    }
+}
+
+@-moz-keyframes refresh {
+    from {
+        transform: rotateZ(0deg);
+        -ms-transform: rotateZ(0deg);
+        /* IE 9 */
+        -moz-transform: rotateZ(0deg);
+        /* Firefox */
+        -webkit-transform: rotateZ(0deg);
+        /* Safari 和 Chrome */
+        -o-transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(360deg);
+        -ms-transform: rotateZ(360deg);
+        /* IE 9 */
+        -moz-transform: rotateZ(360deg);
+        /* Firefox */
+        -webkit-transform: rotateZ(360deg);
+        /* Safari 和 Chrome */
+        -o-transform: rotateZ(360deg);
+    }
+}
+
+@-o-keyframes refresh {
+    from {
+        transform: rotateZ(0deg);
+        -ms-transform: rotateZ(0deg);
+        /* IE 9 */
+        -moz-transform: rotateZ(0deg);
+        /* Firefox */
+        -webkit-transform: rotateZ(0deg);
+        /* Safari 和 Chrome */
+        -o-transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(360deg);
+        -ms-transform: rotateZ(360deg);
+        /* IE 9 */
+        -moz-transform: rotateZ(360deg);
+        /* Firefox */
+        -webkit-transform: rotateZ(360deg);
+        /* Safari 和 Chrome */
+        -o-transform: rotateZ(360deg);
+    }
+}
+
+@keyframes refresh {
+    from {
+        transform: rotateZ(0deg);
+        -ms-transform: rotateZ(0deg);
+        /* IE 9 */
+        -moz-transform: rotateZ(0deg);
+        /* Firefox */
+        -webkit-transform: rotateZ(0deg);
+        /* Safari 和 Chrome */
+        -o-transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(360deg);
+        -ms-transform: rotateZ(360deg);
+        /* IE 9 */
+        -moz-transform: rotateZ(360deg);
+        /* Firefox */
+        -webkit-transform: rotateZ(360deg);
+        /* Safari 和 Chrome */
+        -o-transform: rotateZ(360deg);
+    }
+}
+
+@media screen and (min-width: 414px) {
+    html {
+        font-size: 65%;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    html {
+        font-size: 70%;
+    }
+
+    body > .main-wrap > .container > .content .deposit-content > ul > li.li .title {
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .pay-lists .li .i-arrow-r {
+        height: 50px;
+    }
+}
+
+#wechat-desc-page {
+    text-align: center;
+    line-height: 40px;
+    margin: 15px 0;
+}
+
+#wechat-desc-page img {
+    width: 100%;
+}
+
+#wechat-desc-page p {
+    font-size: 1.2em;
+    color: #787876;
+}
+
+#wechat-desc-page .btn-copy {
+    left: 6px;
+    right: unset;
+}
+
+#must-checked, #must-checked1, #j-cloudpay-checked, #j-cloudpay-checked1 {
+    width: 25px;
+    height: 25px;
+    margin: 15px 10px;
+    position: relative;
+    top: 6px;
+}
+
+.j-o-header, #cloud-page-tips {
+    display: block !important;
+}
+
+.deposit-fast-page label {
+    font-size: 18px;
+}
+
+.pay-lists .li {
+    display: none;
+}

@@ -1,0 +1,260 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, input {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-weight: normal;
+    vertical-align: baseline;
+}
+ul, ol{
+	    margin: 0px;
+}
+a{
+	text-decoration: none;
+}
+a:link{
+text-decoration:none;
+}
+a:visited{
+text-decoration:none;
+}
+a:hover{
+text-decoration:none;
+}
+a:active{
+text-decoration:none;
+}
+a:hover {text-decoration: none !important;}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    font-family: "微软雅黑" !important;
+}
+
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* custom */
+a {
+    color: #7e8c8d;
+    text-decoration: none;
+    -webkit-backface-visibility: hidden;
+}
+
+li {
+    list-style: none;
+}
+.center_body{
+	background:url(../img/v1.jpg) no-repeat;
+	background-size: cover;
+}
+
+.center_body .bannar_img{
+
+}
+.bannar_box img{
+	max-width: 119%;
+}
+
+.img_boxcenter{
+	
+}
+.bannar_box{
+	background: url(../img/bannar.jpg) no-repeat;
+	background-size: 100% 100%;
+	width: 100%;
+	min-height: 825px;
+}
+
+.img_box { 
+	text-align: center;
+    position: absolute;
+    width: 1170px;	
+	}
+.header ul li{
+	float: left;
+	color: #333333;
+	line-height: 105px;
+	margin-left: 30px;
+}
+.header ul li a{
+	color: #333333;
+}
+.header .r_rigth{ float: right;}
+.header .r_left{ float: left;}
+.center_body .bannar_img img{
+	max-width: 100%;
+}
+.TV_box ul li{float: left; width: 328px;}
+.TV_box ul li span{display: inline-block;}
+.carousel-control.right{
+	width: 50px;
+}
+.carousel-control.left{
+		width: 50px;
+}
+
+.TV_box ul{
+	margin-left: 90px;
+}
+.TV_box ul li span img{
+	
+}
+
+.padding_5{ padding-top: 5px;}
+.padding_10{ padding-top: 10px;}
+.padding_50{padding: 50px;}
+.container { width: 1170px !important; max-width: none !important; }
+
+.book_box{
+	width: 100%;
+	height: 360px;
+	background: #48494e;
+	margin-top: 40px;
+}
+
+.Book ul li{
+	float: left;
+	width: 255px	
+}
+.Book ul{
+	margin-left: 90px;
+}
+.bookleft{
+	background: #515257 !important;
+}
+.bookrigth{
+	background: #515257 !important;
+}
+.Book ul li .title_span{
+    font-size: 16px;
+    color: #ffffff; 
+    padding-top: 10px;	
+}
+.Book ul li p{
+	color: #7b7d84;
+	font-size: 14px;
+	width: 80%;
+	line-height: 20px;
+}
+.container .title{
+    height: 50px;
+    line-height: 62px;	
+}
+.container .title i{
+	    display: inline-block;
+}
+.padding_50 h1{
+	height: 50px;
+    color: #fff;
+    font-size: 22px;
+    line-height: 50px;
+    text-align: center;
+    font-weight: bold;	
+}
+.cunkuang ul li{
+    float: left;
+    width: 220px;
+    margin-left: 40px;
+}
+.cunkuang ul li div{
+	text-align: center;
+	color: #FFFFFF;
+}
+.cunkuang ul li .cunkuang_top{
+	line-height: 50px;
+}
+.TV_text{
+    height: 111px;
+    background: #222325;
+    padding-top: 20px;
+    font-size: 14px;	
+}
+.TV_text p{
+    font-size: 22px;
+    padding-top: 30px;
+}
+.cunkuang{
+	margin-top: 30px;
+}
+.cunkuang ul li .clor_1{
+	background: #69bf3e;	
+}
+.cunkuang ul li .clor_2{
+	background: #179adc
+}
+.cunkuang ul li .clor_3{
+	background: #c01a25
+}
+.cunkuang ul li .clor_4{
+	background: #0e8337
+}
+.TV_text label{
+line-height: 60px;
+    font-size: 22px;
+	
+}
+.foot_text{
+    color: #77797f;
+    float: left;
+    padding: 45px;
+    line-height: 25px;
+}
+.footer_box{
+ background: #1e2329;	
+ height: 60px;
+ line-height: 60px;
+ text-align: center;
+ width: 100%;
+	 color: #77797f; 
+	 float: left;
+}
+
+.body_box{width: 100%; margin: 0 auto;}
+
+ @media screen and (max-width: 750px) {
+    .body_box {
+    	width: 1200px;
+    }
+  }
+  
+img{}
+.l_73{
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    margin-left: -73px;	
+}
+.link-info li button{
+	background: none;
+}

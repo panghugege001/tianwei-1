@@ -1,0 +1,197 @@
+@import "base/common";
+
+.m-grid{
+    width: 100%;
+	padding:5px;
+    overflow: hidden;
+    
+    font-size: 16px;
+	
+	background-color:#fff;
+	
+	.m-grid-header{
+	    position: relative;
+	    width:100%;
+	    
+	    font-size: 120%;
+	
+	}
+	
+	.m-grid-footer{
+	    position: relative;
+	    width:100%;
+	}
+	
+	.m-grid-pagination{
+	    position: relative;
+	    
+    	display: inline-block;
+    	width: 100%;
+    	
+		font-size: 100%;
+	    
+	    .m-grid-pagination-left{
+    		position: absolute;
+    		top: 0;
+    		left: 0;
+    		
+			display: inline-block;
+			width:5em;
+		   	padding: 5px 0 5px 0;
+		   	    
+		   	>div{
+			    float: left;
+			    width: 50%;
+			    
+			    text-align: center;
+			    
+		   		@include transform(rotate(180deg));
+		   	}
+	    }
+	    
+	    .m-grid-pagination-right{
+    		position: absolute;
+    		top: 0;
+    		right: 0;
+    		
+			display: inline-block;
+			width:5em;
+		   	padding: 5px 0 5px 0;
+		   	
+		   	>div{
+			    float: left;
+			    width: 50%;
+			    
+			    text-align: center;
+		   	}
+	    }
+	    
+		.m-grid-pagination-page{
+			display: inline-block;
+			width:100%;
+			padding:5px 5em 5px 5em;
+			
+			text-align: center;
+			
+			input{
+				width:2em;
+				border: 1px solid #676666;
+				
+    			text-align: center;
+			}
+			
+			.m-grid-pagination-page-num{
+				display: inline-block;
+				padding:5px 10px 5px 10px;
+			}
+		}
+	}
+	
+	.m-grid-refresh{
+	    float: right;
+	    padding: 5px;
+	}
+	
+	.m-grid-footer-text{
+		text-align: right;
+	}
+	.m-grid-table{
+    	width: 100%;
+	    overflow-y: auto;
+    	
+		table{
+			width:100%;
+			
+			thead{
+				width:100%;
+				
+				tr{
+		   			border-bottom: 2px solid #CAC7C7;
+		   			
+					td{    
+						padding: 5px;
+						
+						text-align: center;
+		    			font-size: 100%;
+		    			
+		    			color: #000;
+					}
+				}
+			}
+			
+			tbody{
+				width:100%;
+	   			
+				tr{
+		   			border-bottom: 1px solid #CAC7C7;
+		   			
+					td{    
+						padding: 10px 5px 10px 5px;
+		    			
+						text-align: center;
+		    			font-size: 80%;
+		    			
+		    			color: #757575;
+		    			
+		    			.m-grid-row-content-form{
+		    				display:table;
+		    				width: 100%;
+		    				padding: 10px;
+		    				
+		    				text-align:left;
+		    				
+		    				.m-grid-row-content-row{
+		    					
+		    					.m-grid-row-content-label{
+		    						float: left;
+								    text-align: right;
+								    width: 6em;
+		    					}
+		    					
+		    					.m-grid-row-content-text{
+		    						
+		    					}
+		    				}
+		    			}
+					}
+				}
+			}
+			
+			
+			.m-grid-row{
+				background-color: #fff;
+				
+				&.active{
+	   				border-bottom: 0;
+	   				
+					background-color: #DAEDFF;
+				
+					.m-grid-row-open{
+					
+			   	 		@include transform(rotate(90deg));
+					}
+					
+					
+					&+.m-grid-row-content{
+						display:table-row;
+					}
+				}
+				
+				.m-grid-row-open{
+					
+					@include transition;
+				}
+				
+			}
+			
+			.m-grid-row-content{
+				display:none;
+				width:100%;
+				
+				td{
+					padding:0px;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,1058 @@
+[
+    {
+        "eName": "Honey Trap of Diao Chan",
+        "name": "夜戏貂蝉",
+        "code": "diaochan",
+        "category": "PG",
+        "type": "SLO",
+        "subType": "",
+        "line": "30",
+        "state": 1,
+        "pic": "honeyTrapofDiaoChan.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Fortune Gods",
+        "name": "横财来啦",
+        "code": "fortune-gods",
+        "category": "PG",
+        "type": "SLO",
+        "subType": "",
+        "line": "15",
+        "state": 1,
+        "pic": "fortuneGods.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Win Win Won",
+        "name": "旺旺旺",
+        "code": "win-win-won",
+        "category": "PG",
+        "type": "SLO",
+        "subType": "",
+        "line": "1",
+        "state": 1,
+        "pic": "winWinWon.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Medusa II",
+        "name": "美杜莎 II",
+        "code": "medusa2",
+        "category": "PG",
+        "type": "SLO",
+        "subType": "",
+        "line": "30",
+        "state": 1,
+        "pic": "medusaII.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Peas Fairy",
+        "name": "豌豆精灵",
+        "code": "peas-fairy",
+        "category": "PG",
+        "type": "SLO",
+        "subType": "",
+        "line": "30 base bet (243ways)",
+        "state": 1,
+        "pic": "peasFairy.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Tree of Fortune",
+        "name": "摇钱树",
+        "code": "fortune-tree",
+        "category": "PG",
+        "type": "SLO",
+        "subType": "",
+        "line": "30",
+        "state": 1,
+        "pic": "treeofFortune.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Joker Wild",
+        "name": "小丑翻翻乐",
+        "code": "joker-wild",
+        "category": "PG",
+        "type": "SLO",
+        "subType": "",
+        "line": "-",
+        "state": 1,
+        "pic": "jokerWild.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Medusa ",
+        "name": "美杜莎 ",
+        "code": "medusa",
+        "category": "PG",
+        "type": "SLO",
+        "subType": "",
+        "line": "30",
+        "state": 1,
+        "pic": "medusa.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "European Blackjack",
+        "name": "欧式二十一点",
+        "code": "blackjack-eu",
+        "category": "PG",
+        "type": "SLO",
+        "subType": "",
+        "line": "-",
+        "state": 1,
+        "pic": "europeanBlackjack.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "American Blackjack",
+        "name": "美式二十一点",
+        "code": "blackjack-us",
+        "category": "PG",
+        "type": "SLO",
+        "subType": "",
+        "line": "-",
+        "state": 1,
+        "pic": "americanBlackjack.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Plushie Frenzy",
+        "name": "抓抓乐",
+        "code": "plushie-frenzy",
+        "category": "PG",
+        "type": "SLO",
+        "subType": "",
+        "line": "30",
+        "state": 1,
+        "pic": "plushieFrenzy.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Wizdom Wonders",
+        "name": "巫师之书",
+        "code": "wizdom-wonders",
+        "category": "PG",
+        "type": "SLO",
+        "subType": "",
+        "line": "6 base bet (fixed)",
+        "state": 1,
+        "pic": "wizdomWonders.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Gem Saviour",
+        "name": "宝石侠",
+        "code": "gem-saviour",
+        "category": "PG",
+        "type": "SLO",
+        "subType": "",
+        "line": "6 by 6  (base bet 30)",
+        "state": 1,
+        "pic": "gemSaviour.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Steampunk: Wheel of Destiny",
+        "name": "蒸汽朋克：命运的旋转",
+        "code": "steam-punk",
+        "category": "PG",
+        "type": "SLO",
+        "subType": "",
+        "line": "30 base bet (fixed)",
+        "state": 1,
+        "pic": "Steampunk_Logotype.png",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Summon & Conquer",
+        "name": "国王的召唤",
+        "code": "summon-conquer",
+        "category": "PG",
+        "type": "SLO",
+        "subType": "",
+        "line": "20 base bet (fixed)",
+        "state": 1,
+        "pic": "summon&Conquer.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Hood vs Wolf",
+        "name": "逆袭的小红帽",
+        "code": "hood-wolf",
+        "category": "PG",
+        "type": "SLO",
+        "subType": "",
+        "line": "30 base bet (fixed)",
+        "state": 1,
+        "pic": "hoodvsWolf.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Hotpot",
+        "name": "麻辣火锅",
+        "code": "hotpot",
+        "category": "PG",
+        "type": "SLO",
+        "subType": "",
+        "line": "10 (Fixed）",
+        "state": 1,
+        "pic": "hotpot.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Dragon Legend",
+        "name": "鱼跃龙门",
+        "code": "dragon-legend",
+        "category": "PG",
+        "type": "SLO",
+        "subType": "",
+        "line": "9 (Fixed)",
+        "state": 1,
+        "pic": "dragonLegend.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Mr. Hallow-Win",
+        "name": "万胜狂欢夜",
+        "code": "mr-hallow-win",
+        "category": "PG",
+        "type": "SLO",
+        "subType": "",
+        "line": "30",
+        "state": 1,
+        "pic": "mr.Hallow-Win.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Legend of Hou Yi",
+        "name": "后羿射日",
+        "code": "legend-of-hou-yi",
+        "category": "PG",
+        "type": "SLO",
+        "subType": "",
+        "line": "30",
+        "state": 1,
+        "pic": "legendofHouYi.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Restaurant Craze",
+        "name": "网红餐厅",
+        "code": "restaurant-craze",
+        "category": "PG",
+        "type": "SLO",
+        "subType": "",
+        "line": "30",
+        "state": 1,
+        "pic": "restaurantCraze.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Prosperity Lion",
+        "name": "舞狮进宝",
+        "code": "prosperity-lion",
+        "category": "PG",
+        "type": "SLO",
+        "subType": "",
+        "line": "9",
+        "state": 1,
+        "pic": "prosperityLion.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Hip Hop Panda",
+        "name": "嘻哈熊猫",
+        "code": "hip-hop-panda",
+        "category": "PG",
+        "type": "SLO",
+        "subType": "",
+        "line": "30 base bet (fixed)",
+        "state": 1,
+        "pic": "hipHopPanda.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Santa's Gift Rush",
+        "name": "圣诞欢乐送",
+        "code": "santas-gift-rush",
+        "category": "PG",
+        "type": "SLO",
+        "subType": "",
+        "line": "30",
+        "state": 1,
+        "pic": "santa'sGiftRush.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Baccarat Deluxe",
+        "name": "至尊百家乐",
+        "code": "baccarat-deluxe",
+        "category": "PG",
+        "type": "SLO",
+        "subType": "",
+        "line": "-",
+        "state": 1,
+        "pic": "baccaratDeluxe.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Gem Saviour Sword",
+        "name": "宝石侠-大宝剑",
+        "code": "gem-saviour-sword",
+        "category": "PG",
+        "type": "SLO",
+        "subType": "",
+        "line": "10 base bet",
+        "state": 1,
+        "pic": "gemSaviourSword.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Piggy Gold",
+        "name": "金猪报财",
+        "code": "piggy-gold",
+        "category": "PG",
+        "type": "SLO",
+        "subType": "",
+        "line": "1",
+        "state": 1,
+        "pic": "piggyGold.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Symbols of Egypt",
+        "name": "埃及寻宝",
+        "code": "symbols-of-egypt",
+        "category": "PG",
+        "type": "SLO",
+        "subType": "",
+        "line": "9 base bet",
+        "state": 1,
+        "pic": "symbolsofEgypt.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Emperor's Favour",
+        "name": "皇上吉祥",
+        "code": "emperors-favour",
+        "category": "PG",
+        "type": "SLO",
+        "subType": "",
+        "line": "30",
+        "state": 1,
+        "pic": "emperor'sFavour.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Ganesha Gold",
+        "name": "象财神",
+        "code": "ganesha-gold",
+        "category": "PG",
+        "type": "SLO",
+        "subType": "",
+        "line": "30 base bet (243ways)",
+        "state": 1,
+        "pic": "ganeshaGold.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Three Monkeys ",
+        "name": "三只猴子",
+        "code": "three-monkeys",
+        "category": "PG",
+        "type": "SLO",
+        "subType": "",
+        "line": "9",
+        "state": 1,
+        "pic": "threeMonkeys.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Jungle Delight",
+        "name": "水果丛林",
+        "code": "jungle-delight",
+        "category": "PG",
+        "type": "SLO",
+        "subType": "",
+        "line": "20",
+        "state": 1,
+        "pic": "jungleDelight.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Tomb of Treasure",
+        "name": "摸金校尉",
+        "code": "tomb-of-treasure",
+        "category": "PG",
+        "type": "SLO",
+        "subType": "",
+        "line": "10 base bet (243 ways)",
+        "state": 1,
+        "pic": "tombofTreasure.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Double Fortune",
+        "name": "双囍临门",
+        "code": "double-fortune",
+        "category": "PG",
+        "type": "SLO",
+        "subType": "",
+        "line": "30",
+        "state": 1,
+        "pic": "doubleFortune.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Wild Inferno",
+        "name": "重金摇滚",
+        "code": "wild-inferno",
+        "category": "PG",
+        "type": "SLO",
+        "subType": "",
+        "line": "25",
+        "state": 1,
+        "pic": "wildInferno.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "The Great Icescape",
+        "name": "冰雪大冲关",
+        "code": "the-great-icescape",
+        "category": "PG",
+        "type": "SLO",
+        "subType": "",
+        "line": "25 base bet (3125ways)",
+        "state": 1,
+        "pic": "theGreatIcescape.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Journey to the Wealth",
+        "name": "嘻游记",
+        "code": "journey-to-the-wealth",
+        "category": "PG",
+        "type": "SLO",
+        "subType": "",
+        "line": "30",
+        "state": 1,
+        "pic": "journeytotheWealth.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Captain's Bounty",
+        "name": "赏金船长",
+        "code": "captains-bounty",
+        "category": "PG",
+        "type": "SLO",
+        "subType": "",
+        "line": "20",
+        "state": 1,
+        "pic": "captain'sBounty.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Tiki Go",
+        "name": "块块赢",
+        "code": "tiki-go",
+        "category": "PG",
+        "type": "SLO",
+        "subType": "",
+        "line": "50",
+        "state": 1,
+        "pic": "tikiGo.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Leprechaun Riches",
+        "name": "爱尔兰精灵",
+        "code": "leprechaun-riches",
+        "category": "PG",
+        "type": "SLO",
+        "subType": "",
+        "line": "20 Base Bet (46,656ways)",
+        "state": 1,
+        "pic": "leprechaunRiches.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Flirting Scholar",
+        "name": "唐伯虎点秋香",
+        "code": "flirting-scholar",
+        "category": "PG",
+        "type": "SLO",
+        "subType": "",
+        "line": "20",
+        "state": 1,
+        "pic": "flirtingScholar.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Ninja vs Samurai",
+        "name": "忍者vs武侍",
+        "code": "ninja-vs-samurai",
+        "category": "PG",
+        "type": "SLO",
+        "subType": "",
+        "line": "20",
+        "state": 1,
+        "pic": "ninjavsSamurai.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Muay Thai Champion",
+        "name": "拳霸",
+        "code": "muay-thai-champion",
+        "category": "PG",
+        "type": "SLO",
+        "subType": "",
+        "line": "20",
+        "state": 1,
+        "pic": "muayThaiChampion.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Dragon Tiger Luck",
+        "name": "龙虎争霸",
+        "code": "dragon-tiger-luck",
+        "category": "PG",
+        "type": "SLO",
+        "subType": "",
+        "line": "2",
+        "state": 1,
+        "pic": "dragonTigerLuck.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Mahjong Ways",
+        "name": "麻将胡了",
+        "code": "mahjong-ways",
+        "category": "PG",
+        "type": "SLO",
+        "subType": "",
+        "line": "Base bet 20 (1024ways）",
+        "state": 1,
+        "pic": "mahjongWays.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Dragon Hatch",
+        "name": "寻龙探宝",
+        "code": "dragon-hatch",
+        "category": "PG",
+        "type": "SLO",
+        "subType": "",
+        "line": "Bet 10 per spin ",
+        "state": 1,
+        "pic": "dragonHatch.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Fortune Mouse",
+        "name": "鼠鼠福福",
+        "code": "fortune-mouse",
+        "category": "PG",
+        "type": "SLO",
+        "subType": "",
+        "line": "5",
+        "state": 1,
+        "pic": "fortuneMouse.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Reel Love",
+        "name": "亲爱的",
+        "code": "reel-love",
+        "category": "PG",
+        "type": "SLO",
+        "subType": "",
+        "line": "20",
+        "state": 1,
+        "pic": "reelLove.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Gem Saviour Conquest",
+        "name": " 宝石侠 - 宝藏征途",
+        "code": "gem-saviour-conquest",
+        "category": "PG",
+        "type": "SLO",
+        "subType": "",
+        "line": "Base bet 20 (46,656ways）",
+        "state": 1,
+        "pic": "gemSaviourConquest.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Shaolin Soccer",
+        "name": "少林足球",
+        "code": "shaolin-soccer",
+        "category": "PG",
+        "type": "SLO",
+        "subType": "",
+        "line": "25",
+        "state": 1,
+        "pic": "shaolinSoccer.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Caishen Wins",
+        "name": "赢财神",
+        "code": "cai-shen-wins",
+        "category": "PG",
+        "type": "SLO",
+        "subType": "",
+        "line": "Base bet 20 (32,400ways)",
+        "state": 1,
+        "pic": "caishenWins.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Candy Burst ",
+        "name": "糖果连连爆",
+        "code": "candy-burst",
+        "category": "PG",
+        "type": "SLO",
+        "subType": "",
+        "line": "Bet 20 per spin",
+        "state": 1,
+        "pic": "candyBurst.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Bikini Paradise ",
+        "name": "比基尼天堂",
+        "code": "bikini-paradise",
+        "category": "PG",
+        "type": "SLO",
+        "subType": "",
+        "line": "25",
+        "state": 1,
+        "pic": "bikiniParadise.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Mahjong Ways 2",
+        "name": "麻将胡了2",
+        "code": "mahjong-ways2",
+        "category": "PG",
+        "type": "SLO",
+        "subType": "",
+        "line": "Base bet 20 (2000ways)",
+        "state": 1,
+        "pic": "mahjongWays2.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Egypt's Book of Mystery",
+        "name": "埃及探秘宝典 ",
+        "code": " egypts-book-mystery",
+        "category": "PG",
+        "type": "SLO",
+        "subType": "",
+        "line": "Base bet 20 (32,400 ways)",
+        "state": 1,
+        "pic": "egypt'sBookofMystery.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Ganesha Fortune",
+        "name": "福运象财神",
+        "code": "ganesha-fortune",
+        "category": "PG",
+        "type": "SLO",
+        "subType": "",
+        "line": "Base bet 20 (32,400 ways)",
+        "state": 1,
+        "pic": "ganeshaFortune.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Cards Hi Lo",
+        "name": "高低扑克",
+        "code": "cards-hi-lo ",
+        "category": "PG",
+        "type": "SLO",
+        "subType": "",
+        "line": "-",
+        "state": 1,
+        "pic": "cardsHiLo.png",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Phoenix Rises",
+        "name": "凤凰传奇",
+        "code": "phoenix-rises",
+        "category": "PG",
+        "type": "SLO",
+        "subType": "",
+        "line": "Base bet 20 (243 ways)",
+        "state": 1,
+        "pic": "phoenixRises.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Dreams of Macau",
+        "name": "澳门壕梦",
+        "code": "dreams-of-macau",
+        "category": "PG",
+        "type": "SLO",
+        "subType": "",
+        "line": "Base bet 20 (31,400 ways)",
+        "state": 1,
+        "pic": "dreamsofMacau.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Five Numbers Hi Lo",
+        "name": "高低五福",
+        "code": "five-num-hi-lo",
+        "category": "PG",
+        "type": "SLO",
+        "subType": "",
+        "line": "-",
+        "state": 1,
+        "pic": "fiveNumbersHiLo.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Dice Hi Lo",
+        "name": "高低骰宝",
+        "code": "dice-hi-lo",
+        "category": "PG",
+        "type": "SLO",
+        "subType": "",
+        "line": "-",
+        "state": 1,
+        "pic": "diceHiLo.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Wild Fireworks",
+        "name": "火树赢花",
+        "code": "wild-fireworks",
+        "category": "PG",
+        "type": "SLO",
+        "subType": "",
+        "line": "Base bet 20 (243 ways)",
+        "state": 1,
+        "pic": "wildFireworks.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Dim Sum Mania",
+        "name": "添好运",
+        "code": "dim-sum-mania",
+        "category": "PG",
+        "type": "SLO",
+        "subType": "",
+        "line": "Base bet 25 (243 ways)",
+        "state": 1,
+        "pic": "dimSumMania.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Genie's 3 Wishes",
+        "name": "阿拉丁神灯",
+        "code": "genies-wishes",
+        "category": "PG",
+        "type": "SLO",
+        "subType": "",
+        "line": "25",
+        "state": 1,
+        "pic": "genie's3Wishes.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Treasures of Aztec",
+        "name": "寻宝黄金城",
+        "code": "treasures-aztec",
+        "category": "PG",
+        "type": "SLO",
+        "subType": "",
+        "line": "Base bet 20 (32,400 ways)",
+        "state": 1,
+        "pic": "treasuresofAztec.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Circus Delight",
+        "name": "欢乐嘉年华",
+        "code": "circus-delight",
+        "category": "PG",
+        "type": "SLO",
+        "subType": "",
+        "line": "25",
+        "state": 1,
+        "pic": "circusDelight.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    }
+]

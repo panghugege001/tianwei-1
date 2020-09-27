@@ -1,0 +1,158 @@
+/*
+ * 首页 - banner   
+ * ================================*/
+ .index-ewm{ position:absolute;right:0;top:60%;}
+ .center-box { width:570px; height:340px; margin-top:85px; position:relative; z-index:1; }
+.center-box .more { width:156px; height:49px; margin-top:30px; display:inline-block; background:url(../images/btn-more.png) no-repeat 0 0;z-index:1; }
+.focus { width:870px; height:400px; float:left; position:relative }
+.focus .gg li, .focus .gt { width:100%; position:absolute } 
+.focus .gg { width:100%; height:355px; background:#ee6325; }
+.focus .gg a { display:block; height:100% }
+.focus .gg li { height:355px; z-index:0; opacity:0; visibility:hidden }
+.focus .gg li.on { z-index:1; opacity:1; -webkit-transition:1s linear opacity; transition:1s linear opacity; visibility:visible }
+.focus .gg li img { width:100%; height:100% }
+.focus .gg-nav { display:none }
+.focus .gt { height:45px; left:0; bottom:0; font-size:18px; background: #3a2e28; }
+.focus .gt .next, .focus .gt .prev { float:left; width:45px; height:45px; padding-top:10px; cursor:pointer }
+.focus .gt .next i, .focus .gt .prev i { display:block; width:27px; height:27px; background-image:url(../images/index-ico.png); background-position:-147px 0; margin:auto; cursor:pointer }
+.focus .gt .next.next i, .focus .gt .prev.next i { background-image:url(../images/index-ico.png); background-position:-174px 0 }
+.focus .gt .gtext { width:780px; height:100%; float:left; overflow:hidden }
+.focus .gt .gtext .gg-text { width:1300px; line-height:45px; text-align:center; -webkit-transition:all .2s ease-out; transition:all .2s ease-out }
+.focus .gt .gtext .gg-text li { width:260px; float:left; cursor:pointer; background:#342923; color:#bcada4; }
+.focus .gt .gtext .gg-text li.on { color:#2e1e15; background:#ee6325 }
+/*
+ * 首页 - aside-left
+ * ================================*/ 
+.aside-left { float: left; width: 280px; margin-right: -100%; }
+.aside-left .i-btn { position: relative; display: block;  height:68px;  margin-bottom:15px; color: #ffaf33; text-align: left; background:url(../images/index/index-slot.jpg) repeat-x; transition: color .5s; z-index: 1; }
+.aside-left h2 { font-size: 22px; padding-top: 6px; color: #e5e5e5; }
+.aside-left .i-btn h2, .aside-left .i-btn p{ padding-left:110px;}
+.aside-left .i-btn i{  width:51px;display:inline-block; background:url(../images/index-ico.png) no-repeat; position:absolute; left:35px;}
+.aside-left .i-btn .i-phone{ height:50px; background-position:0 0;top:12px;}
+.aside-left .i-btn .i-pc{ height:36px; background-position:-51px 0;top:18px;}
+.aside-left .i-btn .i-barrels{ width:44px; height:46px; background-position:-103px 0;top:13px;}
+.aside-left .i-btn:before { display:none\9; position: absolute; content: ''; left: 0; right: 0; top: 0; height: 0; overflow: hidden; background: #b44b00; background: linear-gradient(to bottom, #e35c00 0%, #b44b00 50%, #7f3600 100%); transition: all .3s; z-index: -1; }
+.aside-left .i-btn:hover:before { height: 100%; }
+.aside-left .i-btn:hover { color: #000; }
+.aside-left .i-btn .f12 { white-space: nowrap; text-overflow: ellipsis; overflow: hidden; color:#a45f5f; }
+
+@media only screen and (max-width: 1366px) {
+    .aside-pic-bar img{
+       width:65%; 
+    }
+}
+/*
+ * 首页 - main
+ * ================================*/
+.main { margin-left: 280px; }
+.main .col-content { margin-left: 30px; } 
+.main .col-right { width: 342px; float: right; }
+/*
+ * 首页 - 奖池
+ * ================================*/
+.jackpot-box {height: 151px; margin-bottom:15px; text-align: center; background: url('../images/index/jackpot-bg.jpg') no-repeat; }
+.jackpot-box h3 { padding-top:15px; font-size: 24px;  } 
+.jackpot-box p, .jackpot-box h3{color: #e3e3e3;}
+.jackpot-box p{ font-size:12px;}
+.jackpot-box .jackpot { padding:4px;  margin:10px 14px 0; background:#ff9c00; border-radius: 7px; }
+.jackpot-box .jackpot .jackpot-div{ height:43px; line-height:43px; background: url('../images/index/jc.jpg') repeat-x;border-radius: 7px; font-family:"FZCuSong-B09S"; font-size:30px; color:#ffb700; font-weight:700;text-shadow: 2px 0px 0px #181818, -2px 0px 0px #181818, 0px 2px 0px #181818, 0px -2px 0px #181818; }
+
+/*
+ * 首页 - 论坛列表
+ * ================================*/
+.section-two { height: 304px; overflow: hidden; }
+.box .title { color: #e0c79b; background-color: #211d17; }
+.box .title li { float:left; cursor: pointer; padding:0 20px; margin-right: 20px; }
+.box .title { height: 44px; line-height: 44px;  text-align: left; }
+.box .title li.active {  color:#2e1e15; font-weight: bold; background:#ee6325; }
+.box .title li.active a{ color:#2e1e15;}
+.service-box .item { float: left; width: 33.33333%; padding: 30px 16px; /* padding-bottom: 30px; */
+    text-align: left; }
+.service-box .item:first-child { padding-right: 26px; }
+.service-box .item:last-child { padding-left: 26px; }
+.service-box .item.center { padding-left: 30px; padding-right: 30px; }
+.service-box .item .s-title { font-size: 18px; color: #fb9b08; }
+.service-box .item em { font-size: 36px; float: right; }
+.service-box .item p { color: #d1d1d1; }
+.service-box .progressbar { background-color: #211d17; height: 12px; padding: 2px; margin-top: 12px; border-radius: 12px; }
+.service-box .progressbar .currentbar { width: 40%; height: 100%; background-color: #fb9b08; border-radius: 12px 12px 12px 12px; }
+.agent-b{ width:100%; position:relative; transition: 0.6s ease-in-out left;} 
+.agent-b .pic{ position:absolute; left:40px; top:0; transition: all .8s .3s;}
+
+/*首页APP下载弹窗
+=======*/
+#modal-app .modal-dialog { width:607px; height:385px; background: url("/images/index/modal-app.jpg?v=1126") no-repeat top center; color:#b4a69d; font-size: 13px; padding:25px; position: relative; }
+#modal-app .modal-dialog .yellow { color:#ee9c2c; }
+ 
+#modal-app .close { position: absolute; width:30px; height:30px; background: url(/images/index/close.jpg?v=1126) no-repeat 0 0; line-height: 40px;  color: #103c23; font-size: 55px; top: -30px; right: -30px; z-index: 100; cursor: pointer; }
+#modal-app .logo { background: url(../images/logo.png?v=1102) no-repeat top center; height: 100px; position: absolute; top: -110px; z-index: 100; left: 0; width: 100%; }
+#modal-app .notice-ft { padding-top: 15px; height: 210px; }
+#modal-app .notice-wp .item p { font-size: 15px; line-height: 26px; }
+#modal-app .modal-dialog .desc { font-size: 15px; padding-top: 10px; }
+#modal-app .modal-dialog .pic-wrap span { width: 180px; height: 40px; line-height: 40px; background-color: rgba(0,0,0,.1); box-shadow: 0px 0px 10px #000 inset; display: block; margin: 37px auto; border-radius: 10px; font-size: 18px; color:#fff; }
+#modal-app .notice-foot {padding:0 12px; line-height: 22px;  }
+ 
+/*首页弹窗
+    =======*/
+ 
+ 
+@media screen and (max-width: 1400px) {
+#modal-index { background: none; }
+}
+#modal-index .modal-dialog { position: absolute; left: 50%; top: 50%; width: 749px; height: 420px; padding: 111px 100px 0 300px; margin-left: -487px; margin-top: -210px; border: none; box-shadow: none; }
+#modal-index.type2 .modal-dialog { width: 780px; height:385px;   color: #fff; margin-left: -390px; margin-top: -212px; padding:0; }
+#modal-index .close { position: absolute; width:30px; height:30px;   top:-30px; right:-30px; }
+#modal-index.type2 .close {  background:url(../images/index/close.jpg) no-repeat 0 0 }
+#modal-index .notice-wp { position: relative; text-overflow: ellipsis; color: #0d0d0d; padding: 0 215px 0 40px;}
+#modal-index .notice-tit { padding-bottom: 16px; font-size: 22px; text-align: center; }
+#modal-index.type2 .notice-tit, #modal-index.type3 .notice-tit { text-align: center; font-size28px; color: #ee6325; margin-top:32px;  font-weight:700; }
+#modal-index .notice-cnt { line-height: 1.7; padding-top: 0px; height: 280px; overflow: hidden; text-overflow: ellipsis; font-size: 16px; text-align: justify; padding-top: 14px; color: #b4a69d; }
+#modal-index .mod-bottom{ 
+    position: absolute;
+    bottom: -72px;
+    left: -3px;
+    background: url(../images/index/foot_bjpng.png) no-repeat;
+    width: 101%;
+    height: 72px;
+	} 
+	#breakingnews ul li{
+	margin-bottom: 0px;
+	    height: 40px;
+	    font-size: 16px;	
+	}
+	#breakingnews{ 
+    overflow: hidden;
+    position: absolute;
+    left: 7px;
+    bottom: 25px;
+    height: 21px;
+    line-height: 1;
+    text-align: center;		
+	}
+#modal-index .ul-ewm{ position:absolute; right:10px;top:0;}
+#modal-index .ul-ewm li{width: 150px;height:162px; margin-top: 30px; text-align:center}
+#modal-index .ul-ewm span{ width:112px; height:112px; display:inline-block; background-color:#d6d6d6; text-align:center;}
+#modal-index .ul-ewm img{ margin-top:8px;}
+#modal-index .ul-ewm p{ color:#b4a69d; line-height:37px;}
+#modal-index.fade .modal-dialog { -webkit-transition: -webkit-transform .45s ease-out; transition: transform .45s ease-out; opacity: 1; -ms-transform: translate(0, -120%); transform: translate(0, -120%); }
+#modal-index.in .modal-dialog { -ms-transform: translate(0, 0); transform: translate(0, 0); }
+#modal-index .pt-client{width: 51px; height: 36px;  margin: 40px 0 10px; display: inline-block; background: url(../images/index-ico.png) no-repeat -51px 0; }
+ 
+ 
+ /*活动日历*/
+#j-calendar li { padding: 9px; text-align: left; color: #c1c1c1; background-color: #342923; }
+#j-calendar li:nth-child(even) { background-color: #2f251f; }
+.sideNav-about { float: left; width: 238px; color: #967748; }
+.sideNav-about .tit-about { font-size: 24px; background-color: #16130f; height: 64px; line-height: 64px; text-align: center; color:#fb9b08; }
+.sideNav-about ul li { line-height: 48px; color: #464646; font-size: 14px; text-align: center; }
+.sideNav-about ul .active a { display: block; background-color: #fb9b08; color: #fff; }
+.sideNav-about ul li:last-child { padding-bottom: 10px; }
+.cont-about { float: right; width: 920px; background-color: #211d17; border: 1px solid #423f3a; color: #967748; }
+.cont-about .tit-item { font-size: 28px; height: 80px; line-height: 80px; padding-left: 40px; background-color: #16130f; }
+.cont-about .coll_body { display: none; }
+.cont-about .tit-item em { font-size: 24px; padding-left: 10px; }
+.cont-about .midTex { padding: 20px 36px 36px 36px; color: #474747; line-height: 25px; color: #967748; }
+.midTex ul li { font-size: 16px; color: #474747; line-height: 46px; border-bottom: 1px solid #423f3a; }
+.midTex ul li a { color: #967748; }
+.midTex ul li em { float: right; color: #967748; }
+.midTex ul .coll_body { display: none; background-color: #28231c; padding: 32px 28px 26px 28px; overflow: hidden; border-radius: 10px 10px 0 0; font-size: 14px; line-height: 30px; color: #967748; }

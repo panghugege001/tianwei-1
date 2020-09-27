@@ -1,0 +1,58 @@
+{
+  "code": "10000",
+  "desc": "成功",
+  "data": [
+    {
+      "id": 7,
+      "showName": "微信支付1",
+      "fee": 0.9,
+      "phoneFee": null,
+      "pcFee": null,
+      "minPay": 1.0,
+      "maxPay": 3000.0,
+      "appPay": 0,
+      "payWay": 15,
+      "payCenterUrl": "/dinpay/zfb_wx",
+      "payPlatform": "vpwx1h5"
+    },
+    {
+      "id": 13,
+      "showName": "微信支付2",
+      "fee": 1.7,
+      "phoneFee": null,
+      "pcFee": null,
+      "minPay": 1.0,
+      "maxPay": 3000.0,
+      "appPay": 0,
+      "payWay": 15,
+      "payCenterUrl": "/shb/zfb_wx",
+      "payPlatform": "vpwxh5t0"
+    },
+    {
+      "id": 26,
+      "showName": "微信支付3",
+      "fee": 1.7,
+      "phoneFee": null,
+      "pcFee": null,
+      "minPay": 1.0,
+      "maxPay": 3000.0,
+      "appPay": 0,
+      "payWay": 15,
+      "payCenterUrl": "/shb/zfb_wx",
+      "payPlatform": "vpwxh5"
+    },
+    {
+      "id": 13,
+      "showName": "微信支付4",
+      "fee": 1.7,
+      "phoneFee": null,
+      "pcFee": null,
+      "minPay": 1.0,
+      "maxPay": 3000.0,
+      "appPay": 0,
+      "payWay": 15,
+      "payCenterUrl": "/shb/zfb_wx",
+      "payPlatform": "hxfwx"
+    }
+  ]
+}

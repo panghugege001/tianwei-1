@@ -1,0 +1,58 @@
+[
+  {
+    "username": "岳文丽",
+    "id": 648,
+    "type": 1,
+    "bankname": "工商银行",
+    "remark": "YWL  惠州惠阳金惠支行 日限额500万",
+    "useable": 0,
+    "amount": 25,
+    "vpnname": "12",
+    "vpnpassword": "12",
+    "accountno": "topvip03@e68.ph",
+    "userrole": "23456",
+    "isshow": 1
+  },
+  {
+    "username": "赵雪梅",
+    "id": 452,
+    "type": 1,
+    "bankname": "招商银行",
+    "remark": "ZXM(CMB)长沙",
+    "useable": 0,
+    "amount": 2024.57,
+    "vpnname": "88",
+    "vpnpassword": "88",
+    "accountno": "6214837210203109",
+    "userrole": "234561",
+    "isshow": 1
+  },
+  {
+    "username": "ALAMOJOHNDAVID",
+    "id": 439,
+    "type": 1,
+    "bankname": "农业银行",
+    "remark": "ALA(ABC)",
+    "useable": 0,
+    "amount": 17.5,
+    "vpnname": "88",
+    "vpnpassword": "88",
+    "accountno": "6228480089313005079",
+    "userrole": "23456",
+    "isshow": 1
+  },
+  {
+    "username": "罗钦丹",
+    "id": 694,
+    "type": 1,
+    "bankname": "支付宝",
+    "remark": "LQD alipay",
+    "useable": 0,
+    "amount": 40,
+    "vpnname": "A",
+    "vpnpassword": "et",
+    "accountno": "netnet686@sina.com",
+    "userrole": "1456320",
+    "isshow": 1
+  }
+]

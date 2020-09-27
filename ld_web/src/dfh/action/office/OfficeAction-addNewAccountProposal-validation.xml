@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE validators PUBLIC "-//OpenSymphony Group//XWork Validator 1.0.2//EN"
+ "http://struts.apache.org/dtds/xwork-validator-1.0.2.dtd">
+
+<validators>	
+	<field name="title">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message>请选择用户类型</message>
+		</field-validator>
+	</field>
+	<field name="loginname">
+		<field-validator type="requiredstring" short-circuit="true">
+			<param name="trim">true</param>
+			<message>请输入帐号</message>
+		</field-validator>
+	</field>
+	<field name="password">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message>请输入密码</message>
+		</field-validator>
+		<field-validator type="stringlength" short-circuit="true">
+			<param name="minLength">6</param>
+			<param name="maxLength">20</param>
+			<message>密码长度6-20位</message>
+		</field-validator>
+	</field>
+</validators>

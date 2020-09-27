@@ -1,0 +1,185 @@
+
+    /* 工单页面 */
+    .tab_guggestion .tab-nav {
+        padding-bottom: 10px;
+        padding-top: 10px;
+        margin-bottom: 10px;
+
+    }
+    .tab_guggestion .sugges-item .list-item {
+        float: left;
+        width: 42%;
+        color: #000;
+    }
+    .tab_guggestion .sugges-item {
+        margin-bottom: 5px;
+        background-color: #fff;
+        min-height: 30px;
+        line-height: 30px;
+        text-align: center;
+        position: relative;
+    }
+    .tab_guggestion .sugges-item .list-item.text-r {
+        width: 12%;
+        text-align: right;
+        padding-right: 10px;
+    }
+    .tab_guggestion .list-head {
+        color: #fff;
+    }
+    .tab_guggestion .detail-wp {
+        background-color: #ededed;
+        padding:10px 10px 0 10px;
+        margin: 0 10px;
+        border-bottom: 10px solid #fff;
+    }
+    .tab_guggestion .ui-form-item {
+        padding: 10px!important;
+    }
+    .tab_guggestion .user-main .user-tab-box {
+        padding-top: 0;
+        border-radius: 10px;
+        box-shadow: 1px 3px 10px #ccc;
+    }
+    .tab_guggestion #tab-qustion {
+        width: 300px;
+        border-radius: 10px;
+        position: fixed;
+        z-index: 1000;
+        top: 50%;
+        margin-top: -680px;
+        left: 50%;
+        margin-left: -150px;
+        opacity: 0; 
+        filter: alpha(opacity=0);
+        background-color: #fff;
+    }
+    .tab_guggestion #suggestion-mark {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: #000;
+        opacity: 0.5;
+        z-index: 999;
+        display: none;
+    }
+    .tab_guggestion .suggestion-title {
+        height: 50px;
+        line-height: 50px;
+        padding-left: 30px;
+        font-size: 16px;
+        background-color: #2c8ba3;
+        color: #fff;
+        margin-bottom: 10px;
+        border-radius: 10px 10px 0px 0px;
+        position: relative;
+    }
+    .tab_guggestion .user-main.user-tab-box {
+
+    }
+    .tab_guggestion .suggestionclose-btn {
+        font-size: 30px;
+        color: #fff;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        right: 15px;
+        top: 8px;
+        line-height: 30px;
+        text-align: center;
+        cursor: pointer;
+    }
+    .guggestion-btn {
+        width: 100%;
+        display: inline-block;
+        height: 0.84rem;
+        line-height: 0.84rem;
+        text-align: center;
+        background-color: #2c8ba3;
+        color: #fff;
+        font-size: 0.22rem;
+        border-radius:5px;
+        box-shadow: 0px 0px 15px #2c8ba3; 
+    }
+    .sugges-item .list-item {
+
+    }
+    .pagination {
+        padding: 10px;
+        text-align: center;
+        color: #fff;
+    }
+    .pagination * {
+        color: #fff!important;
+    }
+    .result-title {
+        text-align: left;
+        color: red;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    .oaResult {
+        color: #000!important;
+    }
+    #tab-qustion .ui-form {
+        padding: 0 !important;
+        background-color: #eee;
+    }
+    #suggestion-type {
+        color: #333 !important;
+        background: url(/mobile/images/arrow-down2.png) no-repeat 100% 50%;
+        /* background-size: 15px 9px; */
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        -webkit-box-flex: 1;
+        -moz-box-flex: 1;
+        /* width: 20%; */
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        display: block;
+        width: 100%;
+        font-size: 0.3rem;
+        color: #333;
+        line-height: normal;
+        height: 24px;
+    }
+    .ui-inputrow {
+        position: relative;
+        line-height: 0.8rem;
+        height: 0.8rem;
+        padding: 0rem 0.32rem;
+        background: #fff;
+        border-radius: 5px;
+        border: 1px solid #dedede;
+        display: box;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-flex-direction: row;
+        -moz-flex-direction: row;
+        -ms-flex-direction: row;
+        -o-flex-direction: row;
+        flex-direction: row;
+
+    }
+    #suggestion-content {
+        width: 280px;
+        height: 100px;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+    .btn-question {
+        width: 80%;
+    }
+    #suggestion-type {
+        border: 1px transparent solid!important;
+    }
+    select:focus { outline: none; }
+/* 工单页面 */

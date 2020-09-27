@@ -1,0 +1,266 @@
+@charset "utf-8";
+*{ -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+*:before,
+*:after{ -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+/** 清除内外边距 **/
+*{ margin: 0; padding: 0;}
+a{ text-decoration: none;}
+img{ border: none;}
+
+/* structural elements 结构元素 */
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote,
+/* list elements 列表元素 */
+dl, dt, dd, ul, ol, li,
+/* text formatting elements 文本格式元素 */
+pre,
+/* form elements 表单元素 */
+form, fieldset, legend, button, input, textarea,
+/* table elements 表格元素 */
+th, td { margin: 0; padding: 0;}
+
+/** 设置默认字体 **/
+body, pre, button, input, select, textarea /* for ie */
+{ font: 14px/1.6 tahoma, arial, 'Microsoft YaHei', sans-serif;}
+
+/** 重置文档高度 **/
+html, body{ height: 100%;}
+body{ color: #c1c1c1;}
+
+h1, h2, h3, h4, h5, h6{ font-size: 100%; font-weight: normal;}
+/* 将斜体扶正 */
+address, cite, dfn, em, var{ font-style: normal;}
+/* 统一等宽字体 */
+code, kbd, pre, samp{ font-family: courier new, courier, monospace;}
+/* 小于 12px 的中文很难阅读，让 small 正常化 */
+small{ font-size: 12px;}
+
+
+/** 重置列表元素 **/
+ul, ol{ list-style: none;}
+/** 重置文本格式元素 **/
+a{ text-align: center; text-decoration: none; color: inherit;}
+a:focus{ outline: none;}
+
+
+/** 重置表单元素 **/
+legend{ color: #000;} /* for ie6 */
+fieldset, img{ border: 0; vertical-align: middle}
+/* 使得表单元素在 ie 下能继承字体大小 */
+button, input, select, textarea{ font-size: 100%;}
+/*表单元素字体*/
+input, textarea, button{ font: 14px/1.6 Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', 微软雅黑, Arial, sans-serif; outline: 0;}
+
+input[type='button'], input[type='submit'], button{ cursor: pointer;}
+button:focus{ outline: none;}
+
+input[type='button'], input[type='submit'], input[type='reset'], button{ /*input[type="file"]::-webkit-file-upload-button,*/
+    border: 1px solid transparent;}
+
+/*设置表单元素不可用的样式*/
+input[readonly],
+input:disabled,
+button:disabled,
+button[readonly],
+textarea:disabled{ color: #545454!important; background-color: #ccc!important;}
+input[readonly]:hover,
+input:disabled:hover,
+button:disabled:hover,
+button[readonly]:hover,
+textarea:disabled:hover{ cursor: not-allowed;}
+
+/** placeholder 重置 **/
+[placeholder]{ font-family: 'Microsoft yahei';}
+::-moz-placeholder{ text-indent: 5px; /* 没有用 */ opacity: 1!important; color: #bbb;}
+:-ms-input-placeholder{ text-indent: 5px; color: #bbb;}
+::-webkit-input-placeholder{ text-indent: 5px; color: #bbb;}
+
+/** 重置表格元素 **/
+table{ border-spacing: 0; border-collapse: collapse;}
+
+/* #滚动条
+=========*/
+::-webkit-scrollbar{ width: 8px; height: 8px;}
+
+::-webkit-scrollbar-track-piece{ margin: -2px; background-color: #eee;}
+
+::-webkit-scrollbar-thumb{ min-width: 150px; min-height: 150px; border-radius: 10px; background: #aaa;}
+
+::-webkit-scrollbar-thumb:vertical:hover{ background: #555;}
+
+::-webkit-scrollbar-thumb:horizontal:hover{ background: #555;}
+
+.vip_bj{
+    background: url(../img/vip_bj.jpg) no-repeat;
+    width: 100%;
+    min-height: 2300px;
+    /* background-size: 100%; */
+    background-size: cover;
+    background-position: center;
+}
+.null{
+	width: 100%;
+	height: 1157px;
+	    text-align: center;	
+}
+.null >img{
+    max-width: 100%;
+    /* line-height: 50px; */
+    margin-top: 14em;
+}
+.btn_box{
+	width: 100%;
+	text-align: center;
+    margin-bottom: 40px;	
+}
+.text_box{
+	width: 100%;
+	color: #ad4915;
+	font-size: 16px;
+	clear: both;
+}
+
+.table_box table{
+	width: 100%;
+	border-color:#a33b0d;
+	border: 1px solid #a33b0d;	
+}
+.table_box table tr{
+	line-height: 50px;
+	text-align: center;
+	color: #ad4915;
+	font-weight: bold;
+}
+.table_box p{
+	line-height: 35px;
+}
+.table_box{
+    font-size: 16px;
+    color: #ad4915;		
+}
+.text_box p{
+	line-height: 30px;
+}
+.header_box{
+    height: 80px;
+    width: 100%;
+    background: rgba(0,0,0,.5);
+    position: absolute;
+}
+.header_box ul li{
+	float: left;
+    margin-left: 24px;	
+}
+.link-info{
+	float: right;
+    margin-right: 80px;	
+}
+.header_box ul li button{
+	background: none;
+    width: 60px;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    text-align: center;
+    cursor: pointer;
+    line-height: 30px;
+    margin-top: 20px;
+}
+#j-login{
+	width: 142px;
+}
+.r_rigth{
+    float: right;
+    width: 80%;	
+}
+.r_left{
+	float: left;
+	font-size: 16px;
+	color: #ad4915;
+}
+
+body .gb-footer .partner-link a{
+	    margin-left: 9px;
+}
+	
+.header_box ul li a{
+	background: none;
+    width: 60px;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    text-align: center;
+    cursor: pointer;
+    line-height: 30px;
+    margin-top: 20px;
+    display: inline-block;
+    position: absolute;
+    z-index: 99999;    
+}
+.null{
+	background: url(../img/top_bj.jpg) no-repeat;
+	width: 100%;
+	height: 1222px;
+	background-size: cover;
+}
+
+.vip_beijing{
+	background: url(../img/huodbj.jpg) no-repeat;
+	width: 100%;
+	height: 790px;
+	background-size: cover;	
+    margin-top: -30px;
+    padding-top: 20px;	
+}
+
+.zhuanshu_box{
+	text-align: center;
+	margin: 30px 0px;
+}
+
+@media screen and (max-width: 750px) {
+	.container_box{
+		width: 100% !important;
+		padding 0 15px;
+	}
+	.link-info {
+	    float: none;
+	    /* margin-right: 80px; */
+	    width: 100%;
+	    margin: 0px;
+	    
+	}
+	.buzou{
+		display: none;
+	}
+	#asidebar{
+		display: none;
+	}
+	
+	.item_hide{
+		display: none;
+	}
+	body .container_clovoe{
+		width: 100%;
+		background: #f4f0d7;
+	}
+	.gb-footer{
+		display: none;
+	}
+	.vip_beijing{
+		height: 2850px;
+	}
+	
+	
+	.vip_bj{
+		background: #edcd77;
+		height: auto !important;
+		min-height: auto !important;
+	}
+	.null{
+		display: none;
+	}
+	.btn_box>img{
+		margin-top: 128px;
+	} 
+		
+}

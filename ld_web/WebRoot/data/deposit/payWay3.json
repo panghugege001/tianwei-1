@@ -1,0 +1,152 @@
+{
+  "code": "10000",
+  "desc": "成功",
+  "data": [
+    {
+      "id": 2,
+      "showName": "在线支付1",
+      "fee": 0.0,
+      "phoneFee": null,
+      "pcFee": null,
+      "minPay": 1.0,
+      "maxPay": 50000.0,
+      "appPay": 0,
+      "payWay": 3,
+      "payCenterUrl": "/dinpay/online_pay"
+    },
+    {
+      "id": 3,
+      "showName": "在线支付2",
+      "fee": 0.0,
+      "phoneFee": null,
+      "pcFee": null,
+      "minPay": 1.0,
+      "maxPay": 50000.0,
+      "appPay": 0,
+      "payWay": 3,
+      "payCenterUrl": "/dinpay/online_pay"
+    },
+    {
+      "id": 4,
+      "showName": "在线支付3",
+      "fee": 0.0,
+      "phoneFee": null,
+      "pcFee": null,
+      "minPay": 1.0,
+      "maxPay": 50000.0,
+      "appPay": 0,
+      "payWay": 3,
+      "payCenterUrl": "/dinpay/online_pay"
+    },
+    {
+      "id": 5,
+      "showName": "在线支付4",
+      "fee": 0.0,
+      "phoneFee": null,
+      "pcFee": null,
+      "minPay": 1.0,
+      "maxPay": 3000.0,
+      "appPay": 0,
+      "payWay": 3,
+      "payCenterUrl": "/hc/online_pay"
+    },
+    {
+      "id": 59,
+      "showName": "在线支付5",
+      "fee": 0.6,
+      "phoneFee": null,
+      "pcFee": null,
+      "minPay": 1.0,
+      "maxPay": 3000.0,
+      "appPay": 0,
+      "payWay": 3,
+      "payCenterUrl": "/xb/online_pay"
+    },
+    {
+      "id": 60,
+      "showName": "在线支付6",
+      "fee": 0.6,
+      "phoneFee": null,
+      "pcFee": null,
+      "minPay": 1.0,
+      "maxPay": 3000.0,
+      "appPay": 0,
+      "payWay": 3,
+      "payCenterUrl": "/xb/online_pay"
+    },
+    {
+      "id": 61,
+      "showName": "在线支付7",
+      "fee": 0.6,
+      "phoneFee": null,
+      "pcFee": null,
+      "minPay": 1.0,
+      "maxPay": 3000.0,
+      "appPay": 0,
+      "payWay": 3,
+      "payCenterUrl": "/xb/online_pay"
+    },
+    {
+      "id": 62,
+      "showName": "在线支付8",
+      "fee": 0.6,
+      "phoneFee": null,
+      "pcFee": null,
+      "minPay": 1.0,
+      "maxPay": 3000.0,
+      "appPay": 0,
+      "payWay": 3,
+      "payCenterUrl": "/xb/online_pay"
+    },
+
+    {
+      "id": 127,
+      "showName": "在线支付9",
+      "fee": 0.0,
+      "phoneFee": null,
+      "pcFee": null,
+      "minPay": 1.0,
+      "maxPay": 3000.0,
+      "appPay": 0,
+      "payWay": 3,
+      "payCenterUrl": "/xlb/online_pay"
+    },
+    {
+      "id": 128,
+      "showName": "在线支付10",
+      "fee": 0.0,
+      "phoneFee": null,
+      "pcFee": null,
+      "minPay": 1.0,
+      "maxPay": 3000.0,
+      "appPay": 0,
+      "payWay": 3,
+      "payCenterUrl": "/xlb/online_pay"
+    },
+
+    {
+      "id": 135,
+      "showName": "在线支付11",
+      "fee": 0.6,
+      "phoneFee": null,
+      "pcFee": null,
+      "minPay": 1.0,
+      "maxPay": 50000.0,
+      "appPay": 0,
+      "payWay": 3,
+      "payCenterUrl": "/dinpay/online_pay"
+    },
+    {
+      "id": 136,
+      "showName": "在线支付12",
+      "fee": 0.6,
+      "phoneFee": null,
+      "pcFee": null,
+      "minPay": 1.0,
+      "maxPay": 50000.0,
+      "appPay": 0,
+      "payWay": 3,
+      "payCenterUrl": "/dinpay/online_pay"
+    }
+  ]
+}

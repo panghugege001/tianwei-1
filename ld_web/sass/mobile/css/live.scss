@@ -1,0 +1,265 @@
+@import "base/common";
+
+html,body, div, ul, ol, li, h1, h2, h3, h4, h5, h6, form, input, button,
+	textarea, p, blockquote, th, td {
+	margin: 0;
+	padding: 0;
+}
+
+html,body{
+	width: 100%;
+	height:100%;
+
+   	overflow:hidden; 
+	
+	font-size: 1em;
+	font-family: 'Microsoft Yahei', sans-serif;
+	
+	background: #fff;
+}
+
+body{
+	
+	.content{
+		display:inline-block;
+		width:100%;
+		height:100%;
+		
+		background-color: #2b2b2b;
+		
+		.header-margin{
+			display:inline-block;
+			width:100%;
+			height:2.5em;
+		}
+		
+		div{
+			padding:0px;
+			box-sizing: content-box;
+		}
+		
+		.av-card{
+			display:inline-block;
+			width:100%;
+			
+			&:nth-child(even){
+				.image{
+					float:right;
+				}
+				
+				.text{
+					float:left;
+				}
+			}
+			
+			.image{
+				float:left;
+				width:40%;
+    			overflow: hidden;
+    			
+    			img{
+					width:100%;
+					border-radius: 50%;
+    			}
+			}
+			
+			.text{
+				float:right;
+				width:60%;
+				text-indent: 1em;
+				
+				color:#fff;
+				
+				.name{
+					font-weight: 700;
+				    font-size: 1.5em;
+				    letter-spacing: 3px;
+				    text-align: center;
+				    
+				    color: #f99a29;
+				}
+			}
+		}
+		
+		.no-video{
+			display:inline-block;
+			width:100%;
+		
+			img{
+				opacity: 0;
+				
+				&.show{
+					opacity: 1;
+					
+					@include transition;
+				}
+			}
+			
+			.text-box{
+				position: absolute;
+			    top: 4em;
+			    left: 1em;
+			
+				.text1{
+					display: inline-block;
+					padding: 0 10px 0 10px;
+					
+					font-size:1em;
+					text-align:left;
+					
+					background-color:rgba(189, 24, 54, .6);
+		   			color: #fff;
+				}
+				
+				.text2{
+					display: inline-block;
+					padding: 0 10px 0 10px;
+					
+					font-size:2em;
+					text-align:left;
+					
+					background-color:rgba(189, 24, 54, .6);
+		   			color: #fff;
+				}
+			}
+			
+		}
+		
+		.video{    
+			position: relative;
+			z-index:2;
+			
+			display:inline-block;
+			width:100%;
+			height:0px;
+			border-bottom:1px solid #000;
+			
+			overflow: hidden;
+			opacity: 0;
+			
+			@include transition;
+			
+			&.show{
+				opacity: 1;
+			}
+		}
+		
+		.chat-box{
+			position: relative;
+			z-index:1;
+			
+			display:inline-block;
+			width:100%;
+			height:0px;
+			margin-top:-50px;
+			border-bottom:1px solid #000;
+			
+			background-color: #fff;
+			
+			overflow: hidden;
+			
+			opacity: 0;
+			
+			@include transition;
+			
+			&.show{
+				opacity: 1;
+			}
+		}
+	}
+	
+	.live-show{
+		letter-spacing: 1px;
+		
+		&.show{
+			.live-show-screen{
+				display:block;
+			}
+			
+			.live-show-block{
+				@include transform(translateY(0px));
+			}
+		}
+		
+		.live-show-screen{
+		  	position: fixed;
+			z-index: 9998;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			display:none;
+			width: 100%;
+			height: 100%;
+			
+			background-color: rgba(0,0,0,0.7);
+		}
+		
+		.live-show-block{
+		  	position: fixed;
+			z-index: 9999;
+			bottom:0;
+			width:100%;
+			max-height: 70%;
+			padding: 10px;
+			overflow-y: auto;
+			background-color: #1d1d1d;
+			
+			@include transform(translateY(100%));
+			@include transition(all .3s ease-in-out);
+	
+			>div{
+				margin-bottom:10px;
+				
+				&:last-child{
+					margin-bottom:0;
+				}
+			}
+	
+			.live-show-header{
+				display:inline-block;
+				width:100%;
+				
+				font-size: 1.5em;
+				
+				color:#ffb535;
+				
+			}
+	
+			.live-show-footer{
+				display:inline-block;
+				width:100%;
+	
+			}
+	
+			.live-show-content{
+				display:inline-block;
+				width:100%;
+				color:#fff;
+				
+				.live-show-qrcode{
+					canvas{
+						width:100%;
+					}
+				}
+				
+				.item{
+					.image{
+						display: block;
+						margin: 0 auto 0 auto;
+						width:64px;
+					}
+					
+					.text{
+						font-size:80%;
+						text-align: center;
+					}
+				}
+			}
+		}
+	}
+	
+	.live-show-hidden{
+		overflow: hidden!important;
+	}
+}

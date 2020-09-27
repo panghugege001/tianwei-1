@@ -1,0 +1,360 @@
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN" "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<constant name="struts.action.extension" value="aspx" />
+	<constant name="struts.objectFactory" value="spring" />
+	<constant name="struts.enable.DynamicMethodInvocation" value="true" />
+	<constant name="struts.ognl.allowStaticMethodAccess" value="true" />
+	<constant name="struts.custom.i18n.resources" value="message"></constant>
+	<constant name="struts.multipart.maxSize" value="999999999" />
+
+	<package name="pub" namespace="/asp" extends="struts-default">
+		<action name="validateCodeForIndex" class="dfh.action.pub.ValidateImageAction">
+			<param name="wordLength">4</param>
+			<param name="width">54</param>
+			<param name="height">18</param>
+			<result type="stream"></result>
+		</action>
+
+
+
+		<action name="applyActivity" class="MemberActionClass" method="applyActivity">
+		</action>
+		<action name="checkActivityInfo" class="MemberActionClass" method="checkActivityInfo">
+		</action>
+<!-- 久安账户数据同步 -->
+		<action name="JAbindAccount" class="JiuanAction" method="bindAccount" ></action>
+		
+		<action name="JASyncAccount" class="JiuanAction" method="syncAccount" ></action>
+		
+
+
+		
+			<!-- start @author ck ag老虎机  -->
+		 <action name="loginAgSlot" class="dfh.action.customer.BaseAction" method="gameLogin">
+			<result name="success">/WEB-INF/pages/gameAginSlot.jsp</result> 
+			<result name="error" type="redirect">/index.jsp</result>
+		</action>
+		<!-- end @author ck ag老虎机  -->
+		
+		
+		<action name="agTryValidateCodeForIndex" class="dfh.action.pub.AgTryValidateImageAction">
+			<param name="wordLength">4</param>
+			<param name="width">54</param>
+			<param name="height">18</param>
+			<result type="stream"></result>
+		</action>
+		
+		<action name="checkWebServerStatus" class="SelfHelpAction" method="checkWebServerStatus"></action>
+       	<action name="checkMidServerStatus" class="SelfHelpAction" method="checkMidServerStatus"></action>
+		
+		<action name="depositValidateCode" class="dfh.action.pub.DepositValidateImageAction">
+			<param name="wordLength">4</param>
+			<param name="width">54</param>
+			<param name="height">18</param>
+			<result type="stream"></result>
+		</action>
+		
+		<action name="getAgTryAccounts" class="dfh.action.customer.AgTryGameAction" method="getAgTryAccounts" />
+		
+		<action name="agTryLogin" class="dfh.action.customer.AgTryGameAction" method="agTryLogin">
+			 <result name="success">/WEB-INF/pages/game/ag/agTryGameRedirect.jsp</result>
+			<result name="error">/index.jsp</result>
+		</action>
+		<action name="findSignrecord" class="MemberActionClass" method="findSignrecord">
+		</action>
+		
+		<!-- DT游戏奖池 -->
+		<action name="dtJackpot" class="MemberActionClass" method="dtJackpot"></action>
+		
+		<!-- 站内信 start -->
+		<action name="getGuestbookCount" class="StationLettersClass" method="getGuestbookCount"></action>
+		<action name="getGuestbookCountNew" class="StationLettersClass" method="getGuestbookCountNew"></action>
+		<action name="getMessageByUser" class="StationLettersClass" method="getMessageByUser"></action>
+		<action name="readMsg" class="StationLettersClass" method="readMsg"></action>
+		<action name="deleteMsg" class="StationLettersClass" method="deleteMsg"></action>
+		<action name="saveBookNew" class="StationLettersClass" method="saveBookNew"></action>
+		<action name="doSignRecord" class="MemberActionClass" method="doSignRecord"></action>
+		<action name="checkSignRecord" class="MemberActionClass" method="checkSignRecord"></action>
+		<action name="createUnion" class="MemberActionClass" method="createUnion"></action>
+		<action name="unionList" class="MemberActionClass" method="unionList"></action>
+		<action name="joinUnion" class="MemberActionClass" method="joinUnion"></action>
+		<action name="Kpeople" class="MemberActionClass" method="Kpeople"></action>
+		<action name="unionManage" class="MemberActionClass" method="unionManage"></action>
+
+		<action name="oneKeyGameMoney" class="MemberActionClass" method="oneKeyGameMoney"></action>
+
+		<action name="bookHome" class="StationLettersClass" method="bookHome">
+			<result name="input">/station/index.jsp</result>
+			<result name="error">/index.jsp</result>
+		</action>
+		<action name="leftBook" class="StationLettersClass" method="leftBook">
+			<result name="input">/station/left.jsp</result>
+		</action>
+		<action name="bookfindAll" class="StationLettersClass" method="bookfindAll">
+			<result name="input">/station/booklist.jsp</result>
+		</action>
+		<action name="bookfindNoReadAll" class="StationLettersClass" method="bookfindNoReadAll">
+			<result name="input">/station/booklist.jsp</result>
+		</action>
+		<action name="bookfindMessage" class="StationLettersClass" method="bookfindMessage">
+			<result name="input">/station/booklistMessage.jsp</result>
+		</action>
+		<action name="bookRead" class="StationLettersClass" method="bookRead">
+			<result name="input">/station/bookRead.jsp</result>
+		</action>
+		<action name="bookMessageRead" class="StationLettersClass" method="bookRead">
+			<result name="input">/station/bookReadMessage.jsp</result>
+		</action>
+		<action name="saveBook" class="StationLettersClass" method="saveBook">
+			<result name="input">/station/bookRead.jsp</result>
+		</action>
+		<action name="saveBookPage" class="StationLettersClass" method="saveBookPage">
+			<result name="input">/station/saveBookPage.jsp</result>
+		</action>
+		<action name="saveBookDate" class="StationLettersClass" method="saveBookDate">
+			<result name="input">/station/bookRead.jsp</result>
+		</action>
+		<action name="addcpuid" class="StationLettersClass" method="addcpuid"></action>
+		<action name="signDevice" class="StationLettersClass" method="signDevice"></action>
+		<action name="uploadImage" class="dfh.action.customer.OfficeImageAction" method="uploadImage"></action>
+		<!-- 站内信 end -->
+		
+	</package>
+
+	<package name="ajaxGson" namespace="/asp" extends="json-default">
+		<action name="getXimaEndPtTime" class="ximaActionClass" method="getXimaEndPtTime"></action>
+		<action name="execAjaxXimaPt" class="ximaActionClass" method="execAjaxXimaPt"></action>
+		<action name="transferAjaxOutforSky" class="MemberActionClass" method="transferAjaxOutforSky"></action>
+		<action name="transferAjaxInforSky" class="MemberActionClass" method="transferAjaxInforSky"></action>
+		<action name="transferAjaxGetTurnoverAllAndPtList" class="MemberActionClass" method="transferAjaxGetTurnoverAllAndPtList"></action>
+		<action name="getPtHistoryTurnoverList" class="MemberActionClass" method="getPtHistoryTurnoverList"></action>
+		<action name="getPtWinPointList" class="MemberActionClass" method="getPtWinPointList"></action>
+		<action name="transferAjaxGetPtE68Monery" class="MemberActionClass" method="transferAjaxGetPtE68Monery"></action>
+	</package>
+
+	<package name="bfbpay" namespace="/bfb" extends="json-default">
+		<action name="commitPay" class="dfh.action.pay.BfbPayAction" method="commitPay">
+			<result name="success">/WEB-INF/pages/bfb/paysubmit.jsp</result>
+			<result name="error" type="redirect">/index.jsp</result>
+		</action>
+		<action name="callBackPay" class="dfh.action.pay.BfbPayAction" method="callBackPay">
+		</action>
+	</package>
+
+	<package name="gfbpay" namespace="/gfb" extends="json-default">
+		<action name="commitPay" class="dfh.action.pay.GfbPayAction" method="commitPay">
+			<result name="success">/WEB-INF/pages/gfb/paysubmit.jsp</result>
+			<result name="error" type="redirect">/index.jsp</result>
+		</action>
+		<action name="callBackPay" class="dfh.action.pay.GfbPayAction" method="callBackPay">
+		</action>
+	</package>
+
+	<package name="hcpay" namespace="/hc" extends="json-default">
+		<!-- 汇潮 -->
+		<action name="commitPay" class="dfh.action.pay.HcPayAction" method="commitPay">
+			<result name="success">/WEB-INF/pages/huichao/paysubmit.jsp</result>
+			<result name="error" type="redirect">/index.jsp</result>
+		</action>
+		<action name="callBackPay" class="dfh.action.pay.HcPayAction" method="callBackPay">
+		</action>
+
+		<!-- 汇潮一麻袋 -->
+		<action name="commitHcYmdPay" class="dfh.action.pay.HcPayAction" method="commitHcYmdPay">
+			<result name="success">/WEB-INF/pages/huichao/payYmdsubmit.jsp</result>
+			<result name="error" type="redirect">/index.jsp</result>
+		</action>
+		<action name="callBackYmdPay" class="dfh.action.pay.HcPayAction" method="callBackYmdPay">
+		</action>
+	</package>
+
+	<!-- 海尔支付 -->
+	<package name="haierPay" namespace="/haier" extends="json-default">
+		<action name="commitPay" class="dfh.action.pay.HaierPayAction" method="commitPay">
+			<result name="success">/WEB-INF/pages/haier/paysubmit.jsp</result>
+			<result name="error" type="redirect">/index.jsp</result>
+		</action>
+
+		<action name="haierCallBack" class="dfh.action.pay.HaierPayAction" method="haierCallBack">
+		</action>
+	</package>
+
+	<package name="getbackPwd" namespace="/getPwd" extends="struts-default,json-default">
+		<action name="getbackPwdByEmail" class="dfh.action.customer.GetBackPwdAction" method="getbackPwdByEmail">
+		</action>
+		<action name="getbackPwdByDx" class="dfh.action.customer.GetBackPwdAction" method="getbackPwdByDx">
+		</action>
+	</package>
+
+	<package name="queryRecord" namespace="/queryRecod" extends="struts-default,json-default">
+		<action name="queryBettRecord" class="dfh.action.customer.QueryBettRecordAction" method="queryBettRecord">
+			<result name="success">/queryBettRecord.jsp</result>
+		</action>
+		<action name="queryVoByPage" class="dfh.action.vo.QueryVoAction" method="queryVoByPage">
+			<result name="input">/WEB-INF/pages/AnnouncementVO.jsp</result>
+		</action>
+		<action name="queryVoTotleNo" class="dfh.action.vo.QueryVoAction" method="queryVoTotleNo">
+		</action>
+	</package>
+
+	<package name="nTwo" namespace="/asp" extends="struts-default,json-default">
+		<action name="loginGameEAApp" class="dfh.action.customer.NTwoLiveAction" method="loginGameEAApp">
+		</action>
+
+		<action name="queryGiftData" class="MemberActionClass" method="queryGiftData">
+			<result name="input">/topic/listGift.jsp</result>
+		</action>
+		<action name="queryBbsTie" class="dfh.action.bbs.BbsAction" method="getLastNewTie"></action>
+	</package>
+		<!-- 沙巴体育登录-->
+	<package name="sb" namespace="/asp" extends="struts-default,json-default">
+		<action name="sbLogin" class="dfh.action.shaba.LoginAction" method="sbLogin">
+			<result name="success">/WEB-INF/pages/sbtyTransit.jsp</result>
+			<result name="error">/index.jsp</result>
+		</action>
+		<action name="sbMobileLogin" class="dfh.action.shaba.LoginAction" method="sbMobileLogin">
+			<result name="success">/WEB-INF/pages/sbtyMobiTransit.jsp</result>
+			<result name="error" type="redirect">/mobile/index.jsp</result>
+		</action>
+		<!-- mwg登录-->
+		<action name="mwgLogin" class="MemberActionClass" method="mwgLogin">
+		</action>	
+	</package>
+	
+	 <package name="nTwolive" namespace="/n2" extends="struts-default,json-default">
+	   <action name="loginCheck" class="dfh.action.customer.NTwoLiveAction" method="loginGameEAApp">
+	  </action>
+	  <action name="cashierAutoLogin" class="dfh.action.customer.NTwoLiveAction" method="loginGameEAApp">
+	  </action>
+	</package>
+	<!-- 自助功能-智能客服  -->
+	<package name="ai" namespace="/asp"	extends="json-default">
+
+		<!--查询银行卡信息
+       <action name="queryBankno" class="dfh.action.customer.AiSupportAction" method="queryBankno">
+       </action> -->
+
+		<!--自助支付密码
+		<action name="change_pwsPayAjax" class="dfh.action.customer.AiSupportAction" method="modifyPasswordPayAjax">
+		</action> -->
+
+		<!--账号解锁（记得原密码） -->
+		<action name="unlockAccountByPassword" class="dfh.action.customer.AiSupportAction" method="unlockAccountByPassword">
+		</action>
+
+		<!--账号解锁（不记得原密码） -->
+		<action name="unlockAccountByInfo" class="dfh.action.customer.AiSupportAction" method="unlockAccountByInfo">
+		</action>
+
+		<!--忘记账号找回-短信 -->
+		<action name="getForgetAccbySms" class="dfh.action.customer.AiSupportAction" method="getForgetAccbySms">
+		</action>
+
+		<!--忘记账号找回-邮件 -->
+		<action name="getForgetAccbyEmail" class="dfh.action.customer.AiSupportAction" method="getForgetAccbyEmail">
+		</action>
+
+		<!--游客重置取款密码
+		<action name="resetVisitorPayPassword_Ajax" class="dfh.action.customer.AiSupportAction" method="resetVisitorPayPassword_Ajax">
+		</action> -->
+
+		<!--银行卡解绑 -->
+		<action name="unBindBankinfo" class="dfh.action.customer.AiSupportAction" method="unBindBankinfo"></action>
+
+		<!--解除密保 -->
+		<action name="unbindQuestion" class="dfh.action.customer.AiSupportAction" method="unbindQuestion"></action>
+
+		<!--微信登录认证 -->
+		<action name="wechatAuth" class="dfh.action.customer.AiSupportAction" method="wechatAuth"></action>
+
+		<!--web登录认证 -->
+		<action name="webAuth" class="dfh.action.customer.AiSupportAction" method="webAuth"></action>
+
+	</package>
+	
+	<package name="game" namespace="/game" extends="struts-default,json-default">
+	 	<action name="gameLoginPtSW" class="gameAction" method="gameLoginPtSW">
+			 <result name="success">/WEB-INF/pages/gameSlotRedirect.jsp</result>
+			<result name="error" type="redirect">/index.jsp</result>
+			<result name="input" type="redirect">/slotGame.jsp?showtype=PTSW</result>
+		</action>
+		 <action name="gameLoginPtSkyMobi" class="gameAction" method="reqGameRedirectPtSky">
+			 <result name="success">/WEB-INF/pages/gameSlotRedirect.jsp</result>
+			<result name="error" type="redirect">/index.jsp</result>
+			<result name="input" type="redirect">/slotGame.jsp?showtype=PTSW</result>
+		</action>
+		<action name="gameLoginDT" class="gameAction" method="reqGameRedirectDT">
+			<result name="success">/WEB-INF/pages/gameSlotRedirect.jsp</result>
+			<result name="error" type="redirect">/index.jsp</result>
+			<result name="input" type="redirect">/slotGame.jsp?showtype=DT</result>
+		</action>
+		
+		<action name="gameLoginDTFish" class="gameAction" method="reqGameRedirectDTFish">
+			<result name="success">/WEB-INF/pages/gameSlotRedirect.jsp</result>
+			<result name="error" type="redirect">/index.jsp</result>
+			<result name="input" type="redirect">/slotGame.jsp?showtype=DT</result>
+		</action>
+		<!-- 761登录-->
+		<action name="cg761Login" class="gameAction" method="cg761Login">
+			<result name="success">/WEB-INF/pages/gameSlotRedirect.jsp</result>
+			<result name="error" type="redirect">/index.jsp</result>
+			<result name="input" type="redirect">/index.jsp</result>
+		</action>
+
+		<!-- bbin登录-->
+		<action name="bbinLogin" class="gameAction" method="bbinLogin">
+			<result name="success">/WEB-INF/pages/gameSlotRedirect.jsp</result>
+			<result name="error" type="redirect">/index.jsp</result>
+			<result name="input" type="redirect">/index.jsp</result>
+		</action>
+		<!-- bbin 手机端登录-->
+		<action name="bbinMobiLogin" class="gameAction" method="bbinMobiLogin">
+			<result name="success">/WEB-INF/pages/gameSlotRedirect.jsp</result>
+			<result name="error" type="redirect">/index.jsp</result>
+			<result name="input" type="redirect">/index.jsp</result>
+		</action>
+
+		<!-- 平博登录-->
+		<action name="PBUserLogin" class="gameAction" method="PBUserLogin">
+			<result name="success">/WEB-INF/pages/gamePinnacleSport.jsp</result>
+			<result name="error" type="redirect">/index.jsp</result>
+			<result name="input" type="redirect">/index.jsp</result>
+		</action>
+		<!-- 平博登录结束-->
+		<!-- 泛亚电竞登录-->
+		<action name="fanyaLogin" class="gameAction" method="fanyaLogin">
+			<result name="success">/WEB-INF/pages/gameSlotRedirect.jsp</result>
+			<result name="error" type="redirect">/index.jsp</result>
+			<result name="input" type="redirect">/chess.jsp</result>
+		</action>
+
+		<!-- 比特登录-->
+		<action name="bitGameUserLogin" class="gameAction" method="bitGameUserLogin">
+			<result name="success">/WEB-INF/pages/gameBitGame.jsp</result>
+			<result name="error" type="redirect">/index.jsp</result>
+			<result name="input" type="redirect">/index.jsp</result>
+		</action>
+
+		<!-- 开元棋牌登录-->
+		<action name="kyqpLogin" class="gameAction" method="kyqpLogin">
+			<result name="success">/WEB-INF/pages/gameSlotRedirect.jsp</result>
+			<result name="error" type="redirect">/index.jsp</result>
+			<result name="input" type="redirect">/index.jsp</result>
+		</action>
+		<!-- VR彩票登录-->
+		<action name="vrLogin" class="gameAction" method="vrLogin">
+			<result name="success">/WEB-INF/pages/gameSlotRedirect.jsp</result>
+			<result name="error" type="redirect">/index.jsp</result>
+			<result name="input" type="redirect">/index.jsp</result>
+		</action>
+	</package>
+
+	
+    <include file="struts-index.xml"></include>
+    <include file="struts-customer.xml"></include>
+   	<include file="struts-pay.xml"></include>
+    <include file="struts-mobi.xml"></include>
+	<include file="struts-app.xml"></include>
+	<include file="struts-redrain.xml"></include>
+	<include file="struts-point.xml"></include>
+</struts>

@@ -1,0 +1,159 @@
+.promotion_bannar{
+    background: url(../images/promotion/Offer_bannar.png) no-repeat center 50px;
+    height: 490px;
+    background-position: center; 
+    background-position-y: 0px;   	
+}
+body{
+	background:url(../images/hs_beijing.jpg) repeat;
+}
+.w_1200{
+position: relative;
+    width: 1200px;
+    margin: 50px auto;
+    background: #FFFFFF;
+    min-height: 1825px;
+    margin-bottom: 50px;
+    border-radius: 30px;
+    padding-top: 60px;
+    overflow: hidden; 
+}
+.muel_left_box{
+	width: 237px;
+	height: 1328px;
+	background: url(../images/promotion/muel_left.jpg) no-repeat;	
+	background-size: cover;
+	background-position: center;
+	float: left;		
+}
+#j-promotion-list{ 
+	width: 962px;
+	float: left;
+}
+.gb-footer{
+	clear: both;
+}
+body .pro-nav li{
+	margin-left: 21px;
+    background: url(../images/promotion/Offer_btn.png) no-repeat;
+    height: 70px;
+    background-size: cover;
+    width: 200px;
+    line-height: 70px;	
+}
+#j-menu .active{
+    background: url(../images/promotion/Offer_btn_action.png) no-repeat;
+    height: 70px;
+    background-size: cover;
+    width: 200px;
+    line-height: 70px;
+}
+
+body .pro-nav a {
+    display: inline-block;
+    font-size: 18px;
+    color: #FFFFFF;
+    text-indent: 10px;
+    font-weight: bold;
+}
+
+body .pro-nav li i{
+    display: inline-block;
+    margin-top: -1px;	
+}
+body .pro-nav li .t_10>img{
+	margin-top: -10px;
+}
+
+body .pro-nav li:hover{
+    background: url(../images/promotion/Offer_btn_action.png) no-repeat;	
+}
+
+body .pro-nav li{ width:200px;height:70px; float:left; text-align:center;transition: all .4s .2s; margin-bottom: 20px;}
+
+body .promotion-list .promotion-item{
+	width: 285px;
+    height: 220px;
+    float: left;
+    display: none;
+    margin: 0 15px 30px;
+    color: #414141;
+    background-color: #eeeeee;
+    box-shadow: none;
+    position: relative;
+}
+
+body .promotion-info .pic img{
+	width: 100%;
+    height: 177px;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+    border: none;
+}
+
+body .promotion-info .promotion-tit {
+    line-height: 42px;
+    font-size: 16px;
+    display: inline-block;
+    color: #767676;
+    text-align: center; 
+}	
+body .promotion-info .promotion-desc{
+	margin: 0px;
+	text-align: center;
+}
+
+body .promotion-item .promotion-info{
+	display: block;
+    position: relative;
+    height: 220px;
+    overflow: hidden;
+    cursor: pointer;
+    text-align: left;
+    border: 2px solid #eee;	
+}
+
+body .promotion-info:hover .go_btn_box {
+		display: block;
+}
+
+body .promotion-info:hover .go_btn_box{
+	display: block;
+}
+
+.go_btn_box{
+    position: absolute;
+    /* top: 93px; */
+    bottom: 0px;
+    background: rgba(0,0,0,.5);
+    /* left: 20px; */
+    width: 100%;
+    height: 220px;
+    display: none;
+}
+.go_btn{
+    display: inline-block;
+    width: 100px !important;
+    position: absolute;
+    top: 50%;
+    height: 30px;
+    background: #2c8ba3;
+    line-height: 30px;
+    color: #fff;
+    border-radius: 15px;
+    left: 50%;
+    margin-top: -15px;
+    margin-left: -50px;	
+}
+
+.promotion_title{
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	height: 42px;
+	line-height: 42px;
+	background: #2c8ba3;
+	color: #FFFFFF;
+	text-align: center;
+}
+ 

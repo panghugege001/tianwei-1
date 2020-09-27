@@ -1,0 +1,1931 @@
+{
+	"success": true,
+	"data": [
+		{
+			"type": "mgsGames",
+			"gameList": [
+				{
+					"eName": "Tasty Street",
+					"name": "妹妹很饿",
+					"id": "tastystreet",
+					"code": "tastystreet",
+					"category": "MGS",
+					"type": "SLO",
+					"subType": "",
+					"line": "",
+					"state": 1,
+					"pic": "Tasty-Street.jpg",
+					"tag": [
+						"SLO",
+						"NEW",
+						"HOT"
+					]
+				}, {
+					"eName": "Playboy* ",
+					"name": "花花公子",
+					"id": "playboy",
+					"code": "playboy",
+					"category": "MGS",
+					"type": "SLO",
+					"subType": "",
+					"line": "",
+					"state": 1,
+					"pic": "W88-Slots-Playboy.jpg",
+					"tag": [
+						"HOT",
+						"ELE"
+					]
+				}, {
+					"eName": "Gnome Wood",
+					"name": "矮木",
+					"id": "gnomeWood",
+					"code": "gnomeWood",
+					"category": "MGS",
+					"type": "SLO",
+					"subType": "",
+					"line": "",
+					"state": 1,
+					"pic": "Gnome-Wood.jpg",
+					"tag": [
+						"SLO",
+						"NEW",
+						"HOT"
+					]
+				}, {
+					"eName": "108 Heroes Multiplier Fortunes",
+					"name": "一零八好汉 乘数财富",
+					"id": "108heroesMultiplierFortunes",
+					"code": "108heroesMultiplierFortunes",
+					"category": "MGS",
+					"type": "SLO",
+					"subType": "",
+					"line": "",
+					"state": 1,
+					"pic": "108-Heroes-Multiplier-Fortunes.jpg",
+					"tag": [
+						"SLO",
+						"NEW",
+						"HOT"
+					]
+				}, {
+					"eName": "Fruit Blast 92",
+					"name": "水果大爆炸",
+					"id": "fruitBlast92",
+					"code": "fruitBlast92",
+					"category": "MGS",
+					"type": "SLO",
+					"subType": "",
+					"line": "",
+					"state": 1,
+					"pic": "Fruit-Blast-92.jpg",
+					"tag": [
+						"SLO",
+						"NEW",
+						"HOT"
+					]
+				}, {
+					"eName": "Superwilds",
+					"name": "超级野蛮人",
+					"id": "superWilds",
+					"code": "superWilds",
+					"category": "MGS",
+					"type": "SLO",
+					"subType": "",
+					"line": "",
+					"state": 1,
+					"pic": "Superwilds.jpg",
+					"tag": [
+						"SLO",
+						"NEW",
+						"HOT"
+					]
+				}, {
+					"eName": "Machine Gun Unicorn",
+					"name": "神枪独角兽",
+					"id": "machineGunUnicorn",
+					"code": "machineGunUnicorn",
+					"category": "MGS",
+					"type": "SLO",
+					"subType": "",
+					"line": "",
+					"state": 1,
+					"pic": "Machine-Gun-Unicorn-.jpg",
+					"tag": [
+						"SLO",
+						"NEW",
+						"HOT"
+					]
+				}, {
+					"eName": "Clash of Queens",
+					"name": "女王的纷争",
+					"id": "clashOfQueens",
+					"code": "clashOfQueens",
+					"category": "MGS",
+					"type": "SLO",
+					"subType": "",
+					"line": "",
+					"state": 1,
+					"pic": "Clash-of-Queens-.jpg",
+					"tag": [
+						"SLO",
+						"NEW",
+						"HOT"
+					]
+				}, {
+					"eName": "Super Sumo",
+					"name": "相扑",
+					"id": "superSumo",
+					"code": "superSumo",
+					"category": "MGS",
+					"type": "SLO",
+					"subType": "",
+					"line": "",
+					"state": 1,
+					"pic": "Super-Sumo.jpg",
+					"tag": [
+						"SLO",
+						"NEW",
+						"HOT"
+					]
+				}, {
+					"eName": "Dolphin Quest ",
+					"name": "寻访海豚",
+					"id": "DolphinQuest",
+					"code": "DolphinQuest",
+					"category": "MGS",
+					"type": "SLO",
+					"subType": "",
+					"line": "30",
+					"state": 1,
+					"pic": "W88-Slots-Dolphin-Quest.jpg",
+					"tag": [
+						"ELE"
+					]
+				}, {
+					"eName": "Frozen Diamonds",
+					"name": "冰冻钻石",
+					"id": "FrozenDiamonds",
+					"code": "FrozenDiamonds",
+					"category": "MGS",
+					"type": "SLO",
+					"subType": "H5",
+					"line": "",
+					"state": 1,
+					"pic": "Frozen-Diamonds.jpg",
+					"tag": [
+						"CLA"
+					]
+				}, {
+					"eName": "Castle Builder II",
+					"name": "城堡建筑师II",
+					"id": "castleBuilderIIDesktop",
+					"code": "castleBuilderIIDesktop",
+					"category": "MGS",
+					"type": "SLO",
+					"subType": "H5",
+					"line": "",
+					"state": 1,
+					"pic": "Castle-Builder-II.jpg",
+					"tag": [
+						"CLA"
+					]
+				}, {
+					"eName": "Emoticons",
+					"name": "表情金币",
+					"id": "emotiCoinsDesktop",
+					"code": "emotiCoinsDesktop",
+					"category": "MGS",
+					"type": "SLO",
+					"subType": "H5",
+					"line": "",
+					"state": 1,
+					"pic": "Emoticons.png",
+					"tag": [
+						"CLA"
+					]
+				}, {
+					"eName": "Oink: Country Love",
+					"name": "呼噜噜：爱上乡下",
+					"id": "oinkCountryLoveDesktop",
+					"code": "oinkCountryLoveDesktop",
+					"category": "MGS",
+					"type": "SLO",
+					"subType": "H5",
+					"line": "",
+					"state": 1,
+					"pic": "OinkCountryLove.png",
+					"tag": [
+						"CLA"
+					]
+				}, {
+					"eName": "CrazyChameleons",
+					"name": "疯狂变色龙",
+					"id": "crazyChameleonsDesktop",
+					"code": "crazyChameleonsDesktop",
+					"category": "MGS",
+					"type": "SLO",
+					"subType": "H5",
+					"line": "",
+					"state": 1,
+					"pic": "CrazyChameleons.png",
+					"tag": [
+						"CLA"
+					]
+				}, {
+					"eName": "Gopher Gold",
+					"name": "戈珀黄金",
+					"id": "gopherGoldDesktop",
+					"code": "gopherGoldDesktop",
+					"category": "MGS",
+					"type": "SLO",
+					"subType": "H5",
+					"line": "",
+					"state": 1,
+					"pic": "GopherGold.png",
+					"tag": [
+						"CLA"
+					]
+				}, {
+					"eName": "Cash Crazy",
+					"name": "疯狂现金",
+					"id": "cashCrazyDesktop",
+					"code": "cashCrazyDesktop",
+					"category": "MGS",
+					"type": "SLO",
+					"subType": "H5",
+					"line": "",
+					"state": 1,
+					"pic": "CashCrazy.png",
+					"tag": [
+						"CLA"
+					]
+				}, {
+					"eName": "SunQuest",
+					"name": "追寻太阳",
+					"id": "sunQuestDesktop",
+					"code": "sunQuestDesktop",
+					"category": "MGS",
+					"type": "SLO",
+					"subType": "H5",
+					"line": "",
+					"state": 1,
+					"pic": "SunQuest.png",
+					"tag": [
+						"CLA"
+					]
+				}, {
+					"eName": "Sugar Parade",
+					"name": "糖果巡游",
+					"id": "sugarParade",
+					"code": "sugarParade",
+					"category": "MGS",
+					"type": "SLO",
+					"subType": "H5",
+					"line": "",
+					"state": 1,
+					"pic": "sugarParade.jpg",
+					"tag": [
+						"SLO",
+						"NEW",
+						"HOT"
+					]
+				}, {
+					"eName": "Six Acrobats",
+					"name": "杂技群英会",
+					"id": "sixacrobats",
+					"code": "sixacrobats",
+					"category": "MGS",
+					"type": "SLO",
+					"subType": "H5",
+					"line": "",
+					"state": 1,
+					"pic": "sixAcrobats.jpg",
+					"tag": [
+						"SLO",
+						"NEW",
+						"HOT"
+					]
+				}, {
+					"eName": "108 Heroes",
+					"name": "108好汉",
+					"id": "108Heroes",
+					"code": "108Heroes",
+					"category": "MGS",
+					"type": "SLO",
+					"subType": "",
+					"line": "1-15",
+					"state": 1,
+					"pic": "W88-Slots-108-Heroes.jpg",
+					"tag": [
+						"SLO",
+						"NEW",
+						"HOT"
+					]
+				}, {
+					"eName": "Beautiful Bones",
+					"name": "骷髅美人",
+					"id": "beautifulBones",
+					"code": "beautifulBones",
+					"category": "MGS",
+					"type": "SLO",
+					"subType": "H5",
+					"line": "",
+					"state": 1,
+					"pic": "beautifulBones.jpg",
+					"tag": [
+						"SLO",
+						"NEW",
+						"HOT"
+					]
+				}, {
+					"eName": "Goldwyn's Fairies",
+					"name": "金色女王的仙女",
+					"id": "goldwynsFairies",
+					"code": "goldwynsFairies",
+					"category": "MGS",
+					"type": "SLO",
+					"subType": "H5",
+					"line": "",
+					"state": 1,
+					"pic": "goldwynsFairies.jpg",
+					"tag": [
+						"SLO",
+						"NEW",
+						"HOT"
+					]
+				}, {
+					"eName": "Feature Slot",
+					"name": "金库甜心",
+					"id": "fortuneGirlDesktop",
+					"code": "fortuneGirlDesktop",
+					"category": "MGS",
+					"type": "SLO",
+					"subType": "H5",
+					"line": "",
+					"state": 1,
+					"pic": "fortuneGirlDesktop.jpg",
+					"tag": [
+						"SLO",
+						"NEW",
+						"HOT"
+					]
+				}, {
+					"eName": "Forbidden Throne",
+					"name": "禁锢王座",
+					"id": "forbiddenThroneDesktop",
+					"code": "forbiddenThroneDesktop",
+					"category": "MGS",
+					"type": "SLO",
+					"subType": "H5",
+					"line": "",
+					"state": 1,
+					"pic": "forbiddenThroneDesktop.jpg",
+					"tag": [
+						"SLO",
+						"NEW",
+						"HOT"
+					]
+				}, {
+					"eName": "Candy Dreams",
+					"name": "梦果子乐园",
+					"id": "candyDreamsDesktop",
+					"code": "candyDreamsDesktop",
+					"category": "MGS",
+					"type": "SLO",
+					"subType": "H5",
+					"line": "",
+					"state": 1,
+					"pic": "candyDreamsDesktop.jpg",
+					"tag": [
+						"SLO",
+						"NEW",
+						"HOT"
+					]
+				}, {
+					"eName": "Mega Money Multiplier",
+					"name": "巨额财富多重转",
+					"id": "megaMoneyMultiplier",
+					"code": "megaMoneyMultiplier",
+					"category": "MGS",
+					"type": "SLO",
+					"subType": "H5",
+					"line": "",
+					"state": 1,
+					"pic": "megaMoneyMultiplier.jpg",
+					"tag": [
+						"HOT",
+						"ELE"
+					]
+				}, {
+					"eName": "Cool Buck",
+					"name": "运财酷儿",
+					"id": "coolBuck5Reel",
+					"code": "coolBuck5Reel",
+					"category": "MGS",
+					"type": "SLO",
+					"subType": "H5",
+					"line": "",
+					"state": 1,
+					"pic": "coolBuck5Reel.jpg",
+					"tag": [
+						"HOT",
+						"ELE"
+					]
+				}, {
+					"eName": "Pollen Party",
+					"name": "花粉派对",
+					"id": "PollenParty",
+					"code": "PollenParty",
+					"category": "MGS",
+					"type": "SLO",
+					"subType": "H5",
+					"line": "",
+					"state": 1,
+					"pic": "MGS_PollenParty.jpg",
+					"tag": [
+						"HOT",
+						"ELE"
+					]
+				}, {
+					"eName": "Emperor of the Sea",
+					"name": "海龙王",
+					"id": "EmperorOfTheSea",
+					"code": "EmperorOfTheSea",
+					"category": "MGS",
+					"type": "SLO",
+					"subType": "H5",
+					"line": "",
+					"state": 1,
+					"pic": "MGS_EmperoroftheSea.jpg",
+					"tag": [
+						"HOT",
+						"ELE"
+					]
+				}, {
+					"eName": "Secret Romance",
+					"name": "秘密爱慕者",
+					"id": "secretRomance",
+					"code": "secretRomance",
+					"category": "MGS",
+					"type": "SLO",
+					"subType": "H5",
+					"line": "",
+					"state": 1,
+					"pic": "secretRomanceDesktop.jpg",
+					"tag": [
+						"HOT",
+						"ELE"
+					]
+				}, {
+					"eName": "Fruit vs Candy",
+					"name": "水果VS糖果",
+					"id": "FruitVSCandy",
+					"code": "FruitVSCandy",
+					"category": "MGS",
+					"type": "SLO",
+					"subType": "H5",
+					"line": "",
+					"state": 1,
+					"pic": "FruitVSCandy.jpg",
+					"tag": [
+						"HOT",
+						"ELE"
+					]
+				}, {
+					"eName": "Huangdi The Yellow Emperor",
+					"name": "轩辕帝传",
+					"id": "huangdiTheYellowEmperor",
+					"code": "huangdiTheYellowEmperor",
+					"category": "MGS",
+					"type": "SLO",
+					"subType": "",
+					"line": "1-15",
+					"state": 1,
+					"pic": "huangdiTheYellowEmperor.jpg",
+					"tag": [
+						"NEW"
+					]
+				}, {
+					"eName": "Immortal Romance",
+					"name": "不朽的浪漫",
+					"id": "immortalRomance",
+					"code": "immortalRomance",
+					"category": "MGS",
+					"type": "SLO",
+					"subType": "",
+					"line": "1-15",
+					"state": 1,
+					"pic": "immortalRomance.jpg",
+					"tag": [
+						"NEW"
+					]
+				}, {
+					"eName": "Life of Riches",
+					"name": "富裕人生",
+					"id": "lifeOfRiches",
+					"code": "lifeOfRiches",
+					"category": "MGS",
+					"type": "SLO",
+					"subType": "",
+					"line": "1-15",
+					"state": 1,
+					"pic": "lifeOfRiches.jpg",
+					"tag": [
+						"NEW"
+					]
+				}, {
+					"eName": "Break Da Bank Again",
+					"name": "银行再劫案",
+					"id": "breakDaBankAgain",
+					"code": "breakDaBankAgain",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "W88-Slots-Break-Da-Bank-Again.jpg",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "Break Da Bank",
+					"name": "银行劫案",
+					"id": "breakDaBank",
+					"code": "breakDaBank",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "W88-Slots-Break-Da-Bank.jpg",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "Dragonz",
+					"name": "幸运龙宝贝",
+					"id": "dragonz",
+					"code": "dragonz",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "Dragonz.jpg",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "Lost Vegas",
+					"name": "迷失拉斯维加斯",
+					"id": "LostVegas",
+					"code": "LostVegas",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "LostVegas.jpg",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "Shanghai Beauty",
+					"name": "上海姑娘",
+					"id": "shanghaiBeauty",
+					"code": "shanghaiBeauty",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "shanghaiBeauty.jpg",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "jungleJimElDorado",
+					"name": "丛林吉姆",
+					"id": "jungleJimElDorado",
+					"code": "jungleJimElDorado",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "jungleJimElDorado.jpg",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "Win Sum Dim Sum",
+					"name": "港式茶点",
+					"id": "winSumDimSum",
+					"code": "winSumDimSum",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "Win-Sum-Dim-Sum.jpg",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "Ladies Nite",
+					"name": "女士之夜",
+					"id": "ladiesNite",
+					"code": "ladiesNite",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "W88-Slots-Ladies-Nite.jpg",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "Spring Break",
+					"name": "春闲假日",
+					"id": "springBreak",
+					"code": "springBreak",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "W88-Slots-Spring-Break.jpg",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "Starlight Kiss",
+					"name": "清空之吻",
+					"id": "starlightKiss",
+					"code": "starlightKiss",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "W88-Slots-Starlight-Kiss.jpg",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "Pretty Kitty",
+					"name": "漂亮猫咪",
+					"id": "prettyKitty",
+					"code": "prettyKitty",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "Pretty-Kitty.jpg",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "Asian Beauty",
+					"name": "亚洲美人",
+					"id": "asianBeauty",
+					"code": "asianBeauty",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "W88-Slots-Asian-Beauty.jpg",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "So Much Candy",
+					"name": "疯狂糖果",
+					"id": "soMuchCandy",
+					"code": "soMuchCandy",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "W88-Slots-So-Much-Candy.jpg",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "So Much Sushi",
+					"name": "疯狂寿司",
+					"id": "soMuchSushi",
+					"code": "soMuchSushi",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "W88-Slots-So-Much-Sushi.jpg",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "Adventure Palace HD",
+					"name": "冒险宫殿",
+					"id": "adventurePalace",
+					"code": "adventurePalace",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "W88-Slots-Adventure-Palace.jpg",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "Age of Discovery",
+					"name": "时代的发现",
+					"id": "ageOfDiscovery",
+					"code": "ageOfDiscovery",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "W88-Slots-Age-of-Discovery.jpg",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "Agent Jane Blonde",
+					"name": "金发女郎简",
+					"id": "agentJaneBlonde",
+					"code": "agentJaneBlonde",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "W88-Slots-Agent-Jane-Blonde.jpg",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "Alaskan Fishing",
+					"name": "阿拉斯加捕鱼",
+					"id": "alaskanFishing",
+					"code": "alaskanFishing",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "W88-Slots-Alaskan-Fishing.jpg",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "American Roulette Gold",
+					"name": "American Roulette Gold",
+					"id": "americanRouletteGold",
+					"code": "americanRouletteGold",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 0,
+					"pic": "",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "Ariana",
+					"name": "爱莉安娜",
+					"id": "ariana",
+					"code": "ariana",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "W88-Slots-Ariana.jpg",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "Atlantic City Blackjack Gold",
+					"name": "Atlantic City Blackjack Gold",
+					"id": "atlanticCityBlackjackGold",
+					"code": "atlanticCityBlackjackGold",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 0,
+					"pic": "",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "Avalon",
+					"name": "阿瓦隆",
+					"id": "avalon",
+					"code": "avalon",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "W88-Slots-Avalon.jpg",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "Bars and Stripes",
+					"name": "Bars and Stripes",
+					"id": "barsNStripes",
+					"code": "barsNStripes",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "barsNStripes.jpg",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "Bar Bar Black Sheep",
+					"name": "黑羊",
+					"id": "barBarBlackSheep5Reel",
+					"code": "barBarBlackSheep5Reel",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "W88-Slots-Bar-Bar-Black-Sheep.jpg",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "Basketball Star",
+					"name": "篮球明星",
+					"id": "basketballStar",
+					"code": "basketballStar",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "W88-Slots-Basketball-Star.jpg",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "Beach Babes",
+					"name": "Beach Babes",
+					"id": "beachBabes",
+					"code": "beachBabes",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "W88-Slots-Mobile-Beach-Babes.jpg",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "Big Kahuna",
+					"name": "大巫师",
+					"id": "bigKahuna",
+					"code": "bigKahuna",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "W88-Slots-Big-Kahuna.jpg",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "Big Top",
+					"name": "马戏篷",
+					"id": "bigTop",
+					"code": "bigTop",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "W88-Slots-Big-Top.jpg",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "Bikini Party",
+					"name": "比基尼派对",
+					"id": "bikiniparty",
+					"code": "bikiniparty",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "W88-Slots-Bikini-Party.jpg",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "Boogie Monsters",
+					"name": "Boogie Monsters",
+					"id": "boogieMonsters",
+					"code": "boogieMonsters",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "boogieMonsters.jpg",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "Break Away",
+					"name": "冰封陷阵",
+					"id": "breakAway",
+					"code": "breakAway",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "W88-Slots-Break-Away.jpg",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "Bridesmaids",
+					"name": "花童",
+					"id": "bridesmaids",
+					"code": "bridesmaids",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "W88-Slots-Bridesmaids.jpg",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "Burning Desire",
+					"name": "燃情欲火",
+					"id": "burningDesire",
+					"code": "burningDesire",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "W88-Slots-Burning-Desire.jpg",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "Bush Telegraph",
+					"name": "密信",
+					"id": "bushTelegraph",
+					"code": "bushTelegraph",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "W88-Slots-Bush-Telegraph.jpg",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "Carnaval",
+					"name": "嘉年华",
+					"id": "carnaval",
+					"code": "carnaval",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "W88-Slots-Carnaval.jpg",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "CashSplash 3 Reel",
+					"name": "钞票3轴",
+					"id": "cashSplash",
+					"code": "cashSplash",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": "DEM",
+					"pic": "W88-Slots-CashSplash-3-Reel.jpg",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "Cashapillar",
+					"name": "毛毛虫",
+					"id": "cashapillar",
+					"code": "cashapillar",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "W88-Slots-Cashapillar.jpg",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "Cashville",
+					"name": "富人区",
+					"id": "cashville",
+					"code": "cashville",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "W88-Slots-Cashville.jpg",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "Centre Court",
+					"name": "球场中心",
+					"id": "centreCourt",
+					"code": "centreCourt",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "W88-Slots-Centre-Court.jpg",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "Classic Blackjack Gold",
+					"name": "Classic Blackjack Gold",
+					"id": "classicBlackjackGold",
+					"code": "classicBlackjackGold",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 0,
+					"pic": "",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "Cool Wolf ",
+					"name": "酷派浪人",
+					"id": "coolWolf",
+					"code": "coolWolf",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "W88-Slots-Cool-Wolf.jpg",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "Couch Potato",
+					"name": "沙发土豆",
+					"id": "couchPotato",
+					"code": "couchPotato",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "W88-Slots-Couch-Potato.jpg",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "Cricket Star",
+					"name": "板球明星",
+					"id": "cricketStar",
+					"code": "cricketStar",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "cricketStar.jpg",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "Deck The Halls",
+					"name": "闪亮之星",
+					"id": "deckTheHalls",
+					"code": "deckTheHalls",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "W88-Slots-Deck-The-Halls.jpg",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "Dragon Dance",
+					"name": "舞龙",
+					"id": "dragondance",
+					"code": "dragondance",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "W88-Slots-Dragon-Dance.jpg",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "Eagles Wings",
+					"name": "鹰翼",
+					"id": "eaglesWings",
+					"code": "eaglesWings",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "W88-Slots-Eagles-Wings.jpg",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "European Blackjack Gold",
+					"name": "European Blackjack Gold",
+					"id": "europeanBlackjackGold",
+					"code": "europeanBlackjackGold",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 0,
+					"pic": "",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "European Roulette",
+					"name": "European Roulette",
+					"id": "europeanRoulette",
+					"code": "europeanRoulette",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 0,
+					"pic": "",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "Fish Party",
+					"name": "海洋派对",
+					"id": "fishParty",
+					"code": "fishParty",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "W88-Slots-Fish-Party.jpg",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "Football Star ",
+					"name": "足球之星",
+					"id": "footballStar",
+					"code": "footballStar",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "W88-Slots-Football-Star.jpg",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "Golden Era",
+					"name": "黄金时代",
+					"id": "goldenEra",
+					"code": "goldenEra",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "W88-Slots-Golden-Era.jpg",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "Halloweenies",
+					"name": "万圣节",
+					"id": "halloweenies",
+					"code": "halloweenies",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "W88-Slots-Halloweenies.jpg",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "Happy Holidays",
+					"name": "开心假期",
+					"id": "happyHolidays",
+					"code": "happyHolidays",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "W88-Slots-Happy-Holidays.jpg",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "Harveys",
+					"name": "汉堡包",
+					"id": "harveys",
+					"code": "harveys",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "W88-Slots-Harveys.jpg",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "High Society ",
+					"name": "上流社会",
+					"id": "highSociety",
+					"code": "highSociety",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "W88-Slots-High-Society.jpg",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "Hitman",
+					"name": "Hitman",
+					"id": "hitman",
+					"code": "hitman",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "W88-Slots-Mobile-Hitman.jpg",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "Isis",
+					"name": "Isis",
+					"id": "isis",
+					"code": "isis",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "isis.jpg",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "Kathmandu",
+					"name": "加德满都",
+					"id": "kathmandu",
+					"code": "kathmandu",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "W88-Slots-Kathmandu.jpg",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "Kings of Cash",
+					"name": "国王的现金",
+					"id": "kingsOfCash",
+					"code": "kingsOfCash",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "W88-Slots-Kings-of-Cash.jpg",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "Lion's Pride",
+					"name": "Lion's Pride",
+					"id": "lionsPride",
+					"code": "lionsPride",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "W88-Slots-Mobile-Lions-Pride.jpg",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "Liquid Gold",
+					"name": "Liquid Gold",
+					"id": "liquidGold",
+					"code": "liquidGold",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "liquidGold.jpg",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "Loaded HD",
+					"name": "嘻哈",
+					"id": "loaded",
+					"code": "loaded",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "W88-Slots-Loaded.jpg",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "Lucky Koi",
+					"name": "幸运锦鲤",
+					"id": "luckyKoi",
+					"code": "luckyKoi",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "W88-Slots-Lucky-Koi.jpg",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "Lucky Leprechaun",
+					"name": "幸运小矮妖",
+					"id": "luckyLeprechaun",
+					"code": "luckyLeprechaun",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "W88-Slots-Lucky-Leprechaun.jpg",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "Mad Hatters",
+					"name": "疯狂的帽子",
+					"id": "madHatters",
+					"code": "madHatters",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "W88-Slots-Mad-Hatters.jpg",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "Major Millions",
+					"name": "Major Millions",
+					"id": "majorMillions",
+					"code": "majorMillions",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 0,
+					"pic": "",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "Mayan Princess Video Slot",
+					"name": "玛雅公主视频老虎机",
+					"id": "mayanPrincess",
+					"code": "mayanPrincess",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "W88-Slots-Mayan-Princess-Video-Slot.jpg",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "Mega Moolah",
+					"name": "百万钞票",
+					"id": "megaMoolah",
+					"code": "megaMoolah",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "W88-Slots-Mega-Moolah.jpg",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "Mermaids Millions",
+					"name": "美人鱼百万富翁",
+					"id": "mermaidsMillions",
+					"code": "mermaidsMillions",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "W88-Slots-Mermaids-Millions.jpg",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "Mystic Dreams ",
+					"name": "神秘的梦",
+					"id": "mysticDreams",
+					"code": "mysticDreams",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "W88-Slots-Mystic-Dreams.jpg",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "Party Island",
+					"name": "Party Island",
+					"id": "partyIsland",
+					"code": "partyIsland",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "partyIsland.jpg",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "Pure Platinum",
+					"name": "Pure Platinum",
+					"id": "purePlatinum",
+					"code": "purePlatinum",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "W88-Slots-Mobile-Pure-Platinum.jpg",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "Reel Spinner",
+					"name": "Reel Spinner",
+					"id": "reelSpinner",
+					"code": "reelSpinner",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "W88-Slots-Mobile-Reel-Spinner-mobile.jpg",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "Reel Thunder",
+					"name": "转轴打雷",
+					"id": "reelThunder",
+					"code": "reelThunder",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "W88-Slots-Reel-Thunder.jpg",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "Rhyming Reels Georgie Porgie",
+					"name": "Rhyming Reels Georgie Porgie",
+					"id": "rhymingReelsGeorgiePorgie",
+					"code": "rhymingReelsGeorgiePorgie",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "rhymingReelsGeorgiePorgie.jpg",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "Riviera Riches",
+					"name": "Riviera Riches",
+					"id": "rivieraRiches",
+					"code": "rivieraRiches",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "rivieraRiches.jpg",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "Rugby Star",
+					"name": "橄榄球明星",
+					"id": "rugbyStar",
+					"code": "rugbyStar",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "RugbyStar.png",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "Santa Paws",
+					"name": "圣诞狗狗",
+					"id": "santaPaws",
+					"code": "santaPaws",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "santaPaws.jpg",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "Secret Admirer",
+					"name": "暗恋者",
+					"id": "secretAdmirer",
+					"code": "secretAdmirer",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "W88-Slots-Secret-Admirer.jpg",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "Shoot!*",
+					"name": "开枪！",
+					"id": "shoot",
+					"code": "shoot",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "W88-Slots-Shoot.jpg",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "Silver Fang",
+					"name": "银坊",
+					"id": "silverFang",
+					"code": "silverFang",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "W88-Slots-Silver-Fang.jpg",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "So Many Monsters",
+					"name": "疯狂怪物",
+					"id": "soManyMonsters",
+					"code": "soManyMonsters",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "W88-Slots-So-Many-Monsters.jpg",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "Stash of the Titans",
+					"name": "隐藏的泰坦",
+					"id": "stashOfTheTitans",
+					"code": "stashOfTheTitans",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "W88-Slots-Stash-of-the-Titans.jpg",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "Sterling Silver",
+					"name": "Sterling Silver",
+					"id": "sterlingSilver",
+					"code": "sterlingSilver",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "sterlingSilver.jpg",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "Summer Holiday",
+					"name": "Summer Holiday",
+					"id": "summerHoliday",
+					"code": "summerHoliday",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "summerHoliday.jpg",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "Summertime",
+					"name": "Summertime",
+					"id": "summertime",
+					"code": "summertime",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "summertime.jpg",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "Sun Tide",
+					"name": "黄金海岸",
+					"id": "sunTide",
+					"code": "sunTide",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "SunTide.jpg",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "Supe it Up",
+					"name": "监管",
+					"id": "supeItUp",
+					"code": "supeItUp",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "W88-Slots-Supe-it-Up.jpg",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "Sure Win",
+					"name": "Sure Win",
+					"id": "sureWin",
+					"code": "sureWin",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "sureWin.jpg",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "Tally Ho",
+					"name": "财神狐泰利嗬",
+					"id": "tallyHo",
+					"code": "tallyHo",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "W88-Slots-Tally-Ho.jpg",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "The Grand Journey",
+					"name": "The Grand Journey",
+					"id": "theGrandJourney",
+					"code": "theGrandJourney",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "theGrandJourney.jpg",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "The Twisted Circus ",
+					"name": "马戏团",
+					"id": "theTwistedCircus",
+					"code": "theTwistedCircus",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "W88-Slots-The-Twisted-Circus.jpg",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "Thunderstruck",
+					"name": "雷击",
+					"id": "thunderStruck",
+					"code": "thunderStruck",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "W88-Slots-Thunderstruck.jpg",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "Thunderstruck II",
+					"name": "Thunderstruck II",
+					"id": "thunderstruckII",
+					"code": "thunderstruckII",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "W88-Slots-Mobile-Thunderstruck-II.jpg",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "Karaoke Party",
+					"name": "Karaoke Party",
+					"id": "karaokeParty",
+					"code": "karaokeParty",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "W88-Slots-Mobile-Karaoke-Party.jpg",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "5 Reel Drive",
+					"name": "5线狂飙",
+					"id": "5ReelDrive",
+					"code": "5ReelDrive",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "W88-Slots-Mobile-5-Reel-Drive.jpg",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "Tigers Eye",
+					"name": "Tigers Eye",
+					"id": "tigersEye",
+					"code": "tigersEye",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "W88-Slots-Mobile-Tigers-Eye.jpg",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "Tomb Raider",
+					"name": "古墓丽影",
+					"id": "tombRaider",
+					"code": "tombRaider",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "W88-Slots-Tomb-Raider.jpg",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "Treasure Nile",
+					"name": "尼罗河宝藏",
+					"id": "treasureNile",
+					"code": "treasureNile",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "W88-Slots-Treasure-Nile.jpg",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "Treasure Palace",
+					"name": "Treasure Palace",
+					"id": "treasurePalace",
+					"code": "treasurePalace",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "W88-Slots-Mobile-Treasure-Palace.jpg",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "Untamed Giant Panda",
+					"name": "野外大熊猫",
+					"id": "untamedGiantPanda",
+					"code": "untamedGiantPanda",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "W88-Slots-Mobile-Untamed-Giant-Panda.jpg",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "Vegas Downtown Blackjack",
+					"name": "Vegas Downtown Blackjack",
+					"id": "vegasDowntownBlackjackGold",
+					"code": "vegasDowntownBlackjackGold",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 0,
+					"pic": "",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "Vegas Single Deck Blackjack Gold",
+					"name": "Vegas Single Deck Blackjack Gold",
+					"id": "vegasSingleDeckBlackjackGold",
+					"code": "vegasSingleDeckBlackjackGold",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 0,
+					"pic": "",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "Vegas Strip Blackjack",
+					"name": "Vegas Strip Blackjack",
+					"id": "vegasStripBlackjackGold",
+					"code": "vegasStripBlackjackGold",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 0,
+					"pic": "",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "Voila!",
+					"name": "Voila!",
+					"id": "voila",
+					"code": "voila",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "W88-Slots-Mobile-Voila.jpg",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "What A Hoot",
+					"name": "搞笑老虎机",
+					"id": "whatAHoot",
+					"code": "whatAHoot",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "W88-Slots-What-A-Hoot.jpg",
+					"tag": [
+						"HOT"
+					]
+				}, {
+					"eName": "Wild Orient",
+					"name": "狂野东部",
+					"id": "wildorient",
+					"code": "wildorient",
+					"category": "MGS",
+					"type": "SLO",
+					"line": "",
+					"state": 1,
+					"pic": "Wild-Orient.jpg",
+					"tag": [
+						"HOT"
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,19 @@
+{
+  "code": "10000",
+  "desc": "成功",
+  "data": [
+    {
+      "id": 619,
+      "showName": "银联支付1",
+      "fee": 0.0,
+      "phoneFee": null,
+      "pcFee": null,
+      "minPay": 10.0,
+      "maxPay": 3000.0,
+      "appPay": 0,
+      "payWay": 13,
+      "payCenterUrl": "/jan/coin",
+      "payPlatform": "jancoin"
+    }
+  ]
+}

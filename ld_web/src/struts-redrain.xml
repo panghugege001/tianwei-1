@@ -1,0 +1,17 @@
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN" "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="redrain" namespace="/redrain" extends="struts-default,json-default">
+
+		<action name="transferInforRedRain" class="dfh.action.customer.RedRainAction" method="transferInforRedRain"></action>
+		<action name="transferInforRedRaintoUser" class="dfh.action.customer.RedRainAction" method="transferInforRedRaintoUser"></action>
+		<action name="queryRedRainMoney" class="dfh.action.customer.RedRainAction" method="queryRedRainMoney"></action>
+		<action name="queryRedRainHistory" class="dfh.action.customer.RedRainAction" method="queryRedRainHistory">
+		</action>
+		<action name="queryRedRainCount" class="dfh.action.customer.RedRainAction" method="queryRedRainCount">
+		</action>
+		<action name="receiveCoupon" class="dfh.action.customer.RedRainAction" method="receiveCoupon">
+		</action>
+		<action name="getRainSwitch" class="dfh.action.customer.RedRainAction" method="getRainSwitch">
+		</action>
+	</package>
+</struts>

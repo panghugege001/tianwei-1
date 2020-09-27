@@ -1,0 +1,85 @@
+@CHARSET "UTF-8"; 
+*{ margin:0; padding:0;}
+body{font-family:"Microsoft Yahei";}
+#boxIn5 {width:700px;height:400px;background: #e7e3e4; }  
+#boxIn5 ul {display:block;width:700px;height:50px;background-color: #c18d00;  }
+ 
+#boxIn5 ul li.on {float:left;height:50px;line-height:50px; text-align:center;color:#fff; font-size:21px; font-family:"Microsoft Yahei"; text-indent:2em;}
+#boxIn5 .items table {width:550px;margin:50px auto 0; margin-left:50px \9;color:#e7c16a;font-size: 18px;  }
+#boxIn5 .items table tr {height:45px;}
+#boxIn5 .items table tr td.first {width:150px;}
+#boxIn5 .items table tr td .third {color:red;width:130px;border-bottom:1px solid red;}
+#boxIn5 .items table tr td.box {width:200px;}
+#boxIn5 .items table tr td .red{color: red;position:absolute;margin-left:-85px;}
+#boxIn5 .imgClass {
+	background-image: url('../images/submitBtn.png');
+	background-position:  0px 0px;
+	background-repeat: no-repeat;
+	width: 216px;
+	height: 59px;
+	border: 0px;
+	background-color: none;
+	cursor: pointer;
+	outline: 0;
+	margin-left: 158px;
+	margin-top: 25px;
+	
+}
+#boxIn5  input.sub {float:left;cursor:pointer;padding:0; margin:10px 15px 0 5px;border:none;width:120px;height:40px;line-height:40px;background:#c18d00;font-weight:bold;font-size:16px;color:#fff;font-family:"微软雅黑";
+	-moz-border-radius:3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+#boxIn5  input.sub2 {float:left;cursor:pointer;padding:0; margin:10px 15px 0 5px;border:none;width:120px;height:40px;line-height:40px;background:red;font-weight:bold;font-size:16px;color:#fff;font-family:"微软雅黑";
+	-moz-border-radius:3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+#boxIn5 .items table tr td p.code{font-size:18px;color: gray;}
+#boxIn5 .textInput {height:34px;width:200px;}
+#boxIn5 .textInput1{height:38px;width:308px;}
+#boxIn5 .valCode{height:38px;width:70px;text-align:left;font-size:18px;color:#3f7811}
+#boxIn5 .loginName{width:100px;}
+#boxIn5 .items table tr td.note {font-size:18px;line-height:180%;}
+#boxIn5 .items table img {width:130px;height:35px;} 
+#boxIn5 .items table input.text {width:118px;height:32px;line-height:32px;padding-left:5px;background:#4d261c;color:#fff;
+	-moz-border-radius:3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+#boxIn5 .items table label { display: block; cursor: pointer;}
+#boxIn5 .items table .label_radio input {float:left;margin:10px 10px 0 0;}
+#boxIn5 .item {display:none;}
+#boxIn5 .on {display:block;}
+
+
+.has-js .label_radio {padding-left: 40px; }
+.has-js .label_radio {background: url(../images/radio_b.png) no-repeat left center; }
+.has-js label.r_on { background: url(../images/radio_a.png) no-repeat left center;}
+.has-js .label_radio input {  position: absolute; left: -9999px; }
+.has-js{margin-top:0px;height:370px;}
+
+a.lock:hover{cursor: pointer;}
+div.lock .back {display:block;width:80px;height:30px;line-height:30px;text-align:center;float:right;margin-right:20px;background:#666;color:#fff;cursor:pointer;}
+div.lock .back:hover {background:#999;color:red;}
+div.lock dl{margin-bottom: 10px;font-size: 12px;padding: 0px 34px 0px 34px;}
+
+/***字体颜色设置begin****/
+
+.firstFont{
+	font-size:16px;
+	color: #333;
+	width: 120px;
+}
+
+.contFont{
+	font-size: 20px;
+	color: red;
+}
+.pContFont{
+	font-size: 15px;
+	 
+	padding-right: 20px;
+	color: #333;
+}
+/***字体颜色设置end****/

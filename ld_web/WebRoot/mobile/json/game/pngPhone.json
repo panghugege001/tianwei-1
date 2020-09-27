@@ -1,0 +1,954 @@
+{
+	"success": true,
+	"data": {
+		"gameList": [
+			{
+				"id": "leprechaungoestohell",
+				"name": "恶魔的诱惑",
+				"eName": "Leprechaun Goes to Hell ",
+				"code": "315",
+				"state": 1,
+				"pic": "leprechaun.png",
+				"category": "PNG",
+				"line": "1-10",
+				"type": "SLO",
+				"subType": "",
+				"tag": [
+					"NEW"
+				]
+			}, {
+				"id": "moonprincess",
+				"name": "月亮守护者",
+				"eName": "Moon Princess",
+				"code": "334",
+				"state": 1,
+				"pic": "moonprincess.png",
+				"category": "PNG",
+				"line": "1-10",
+				"type": "SLO",
+				"subType": "",
+				"tag": [
+					"NEW"
+				]
+			}, {
+				"id": "sweet27mobile",
+				"name": "甜蜜27",
+				"eName": "sweet 27",
+				"code": "100335",
+				"state": 1,
+				"pic": "sweet27.png",
+				"category": "PNG",
+				"line": "1-10",
+				"type": "SLO",
+				"subType": "",
+				"tag": [
+					"NEW"
+				]
+			}, {
+				"id": "multifruit81mobile",
+				"name": "水果多多81",
+				"eName": "MultiFruit 81",
+				"code": "100330",
+				"state": 1,
+				"pic": "multifruit81.png",
+				"category": "PNG",
+				"line": "1-10",
+				"type": "SLO",
+				"subType": "",
+				"tag": [
+					"NEW"
+				]
+			}, {
+				"id": "vikingrunecraftmobile",
+				"name": "维京人世界",
+				"eName": "Viking Runecraft",
+				"code": "100319",
+				"state": 1,
+				"pic": "vikingrunecraft.png",
+				"category": "PNG",
+				"line": "1-10",
+				"type": "SLO",
+				"subType": "",
+				"tag": [
+					"NEW"
+				]
+			}, {
+				"id": "matsurimobile",
+				"name": "夏日庆典",
+				"eName": "MATSURI",
+				"code": "100320",
+				"state": 1,
+				"pic": "matsuri.png",
+				"category": "PNG",
+				"line": "1-10",
+				"type": "SLO",
+				"subType": "",
+				"tag": [
+					"NEW"
+				]
+			}, {
+				"id": "prissyprincessmobile",
+				"name": "淘气小公主",
+				"eName": "Prissy Princess",
+				"code": "100325",
+				"state": 1,
+				"pic": "prissyprincess.png",
+				"category": "PNG",
+				"line": "1-10",
+				"type": "SLO",
+				"subType": "",
+				"tag": [
+					"NEW"
+				]
+			}, {
+				"id": "gemixmobile",
+				"name": "五彩宝石",
+				"eName": "GEMiX",
+				"code": "100286",
+				"score": "9.0",
+				"state": 1,
+				"pic": "Gemix2.png",
+				"category": "PNG",
+				"line": "other",
+				"type": "SLO",
+				"subType": "",
+				"tag": [
+					"HOT"
+				]
+			}, {
+				"id": "towerquestmobile",
+				"name": "高塔任务",
+				"eName": "Tower Quest",
+				"code": "100287",
+				"score": "9.0",
+				"state": 1,
+				"pic": "TowerQuest.png",
+				"category": "PNG",
+				"line": "15-20",
+				"type": "SLO",
+				"subType": "",
+				"tag": [
+					"HOT"
+				]
+			}, {
+				"id": "cloudquestmobile",
+				"name": "天际战神",
+				"eName": "Cloud Quest",
+				"code": "100300",
+				"score": "9.0",
+				"state": 1,
+				"pic": "CloudQuest.png",
+				"category": "PNG",
+				"line": "other",
+				"type": "SLO",
+				"subType": "",
+				"tag": [
+					"HOT"
+				]
+			}, {
+				"id": "energoonzmobile",
+				"name": "能量小精灵",
+				"eName": "Energoonz",
+				"code": "100262",
+				"score": "9.0",
+				"state": 1,
+				"pic": "Energoons.png",
+				"category": "PNG",
+				"line": "other",
+				"type": "SLO",
+				"subType": "",
+				"tag": [
+					"HOT"
+				]
+			}, {
+				"id": "wizardofgemsmobile",
+				"name": "宝石巫师",
+				"eName": "Wizard of Gems",
+				"code": "100302",
+				"score": "9.0",
+				"state": 1,
+				"pic": "WizardofGems.png",
+				"category": "PNG",
+				"line": "15-20",
+				"type": "SLO",
+				"subType": "",
+				"tag": [
+					"HOT"
+				]
+			}, {
+				"id": "superflipmobile",
+				"name": "超级翻转",
+				"eName": "Super Flip",
+				"code": "100295",
+				"score": "9.0",
+				"state": 1,
+				"pic": "SuperFlip.png",
+				"category": "PNG",
+				"line": "15-20",
+				"type": "SLO",
+				"subType": "",
+				"tag": [
+					"HOT"
+				]
+			}, {
+				"id": "enchantedcrystalsmobile",
+				"name": "魔法水晶",
+				"eName": "Enchanted Crystals",
+				"code": "100259",
+				"score": "9.0",
+				"state": 1,
+				"pic": "EnchantedCrystals.png",
+				"category": "PNG",
+				"line": "5-10",
+				"type": "SLO",
+				"subType": "",
+				"tag": [
+					"HOT"
+				]
+			}, {
+				"id": "jollyrogermobile",
+				"name": "海盗旗帜",
+				"eName": "Jolly Roger",
+				"code": "100040",
+				"state": 1,
+				"pic": "JollyRogers.png",
+				"category": "PNG",
+				"line": "15-20",
+				"type": "SLO",
+				"subType": "",
+				"tag": [
+					"HOT"
+				]
+			}, {
+				"id": "fruitbonanzamobile",
+				"name": "水果财富",
+				"eName": "Fruit Bonanza",
+				"code": "100043",
+				"state": 1,
+				"pic": "FruitBonanza.png",
+				"category": "PNG",
+				"line": "15-20",
+				"type": "SLO",
+				"subType": "",
+				"tag": [
+					"HOT"
+				]
+			}, {
+				"id": "fortunetellermobile",
+				"name": "占卜师",
+				"eName": "Fortune Teller",
+				"code": "100196",
+				"state": 1,
+				"pic": "FortuneTeller.png",
+				"category": "PNG",
+				"line": "15-20",
+				"type": "SLO",
+				"subType": "",
+				"tag": [
+					"HOT"
+				]
+			}, {
+				"id": "photosafarimobile",
+				"name": "非洲掠影",
+				"eName": "Photo Safari",
+				"code": "100197",
+				"state": 1,
+				"pic": "PhotoSafari.png",
+				"category": "PNG",
+				"line": "15-20",
+				"type": "SLO",
+				"subType": "",
+				"tag": [
+					"HOT"
+				]
+			}, {
+				"id": "spaceracemobile",
+				"name": "太空竞赛",
+				"eName": "Space Race",
+				"code": "100198",
+				"state": 1,
+				"pic": "SpaceRace.png",
+				"category": "PNG",
+				"line": "15-20",
+				"type": "SLO",
+				"subType": "",
+				"tag": [
+					"HOT"
+				]
+			}, {
+				"id": "5xmagicmobile",
+				"name": "5X魔术",
+				"eName": "5x Magic",
+				"code": "100199",
+				"state": 1,
+				"pic": "5xMagic.png",
+				"category": "PNG",
+				"line": "5-10",
+				"type": "SLO",
+				"subType": "",
+				"tag": [
+					"HOT"
+				]
+			}, {
+				"id": "irishgoldmobile",
+				"name": "爱尔兰黄金",
+				"eName": "Irish Gold",
+				"code": "100200",
+				"state": 1,
+				"pic": "IrishGold.png",
+				"category": "PNG",
+				"line": "5-10",
+				"type": "SLO",
+				"subType": "",
+				"tag": [
+					"HOT"
+				]
+			}, {
+				"id": "enchantedmeadowmobile",
+				"name": "魔法草原",
+				"eName": "Enchanted Meadow",
+				"code": "100225",
+				"state": 1,
+				"pic": "EnchantedMeaddow.png",
+				"category": "PNG",
+				"line": "243",
+				"type": "SLO",
+				"subType": "",
+				"tag": [
+					"HOT"
+				]
+			}, {
+				"id": "richesoframobile",
+				"name": "太阳神的财富",
+				"eName": "Riches of RA",
+				"code": "100237",
+				"state": 1,
+				"pic": "RichesofRa.png",
+				"category": "PNG",
+				"line": "15-20",
+				"type": "SLO",
+				"subType": "",
+				"tag": [
+					"HOT"
+				]
+			}, {
+				"id": "dragonshipmobile",
+				"name": "龙船",
+				"eName": "Dragon Ship",
+				"code": "100238",
+				"state": 1,
+				"pic": "DragonShip2.png",
+				"category": "PNG",
+				"line": "15-20",
+				"type": "SLO",
+				"subType": "",
+				"tag": [
+					"HOT"
+				]
+			}, {
+				"id": "pearllagoonmobile",
+				"name": "珍珠湖",
+				"eName": "Pearl Lagoon",
+				"code": "100241",
+				"state": 1,
+				"pic": "PearlLagoon.png",
+				"category": "PNG",
+				"line": "15-20",
+				"type": "SLO",
+				"subType": "",
+				"tag": [
+					"HOT"
+				]
+			}, {
+				"id": "jewelboxmobile",
+				"name": "珠宝盒",
+				"eName": "Jewel Box",
+				"code": "100242",
+				"state": 1,
+				"pic": "JewelBox.png",
+				"category": "PNG",
+				"line": "15-20",
+				"type": "SLO",
+				"subType": "",
+				"tag": [
+					"HOT"
+				]
+			}, {
+				"id": "aztecidolsmobile",
+				"name": "阿兹特克人像",
+				"eName": "Aztec Idols",
+				"code": "100243",
+				"state": 1,
+				"pic": "AztecIdols.png",
+				"category": "PNG",
+				"line": "15-20",
+				"type": "SLO",
+				"subType": "",
+				"tag": [
+					"HOT"
+				]
+			}, {
+				"id": "mythmobile",
+				"name": "神话",
+				"eName": "Myth",
+				"code": "100245",
+				"state": 1,
+				"pic": "Myth.png",
+				"category": "PNG",
+				"line": "25+",
+				"type": "SLO",
+				"subType": "",
+				"tag": [
+					"HOT"
+				]
+			}, {
+				"id": "goldtrophy2mobile",
+				"name": "黄金奖杯2",
+				"eName": "Gold Trophy 2",
+				"code": "100246",
+				"state": 1,
+				"pic": "GoldTrophy2.png",
+				"category": "PNG",
+				"line": "15-20",
+				"type": "SLO",
+				"subType": "",
+				"tag": [
+					"HOT"
+				]
+			}, {
+				"id": "wildbloodmobile",
+				"name": "狂野血液",
+				"eName": "Wild Blood",
+				"code": "100250",
+				"state": 1,
+				"pic": "WildBlood.png",
+				"category": "PNG",
+				"line": "15-20",
+				"type": "SLO",
+				"subType": "",
+				"tag": [
+					"HOT"
+				]
+			}, {
+				"id": "leprechaungoesegyptmobile",
+				"name": "矮精灵埃及之旅",
+				"eName": "Leprechaun goes Egypt",
+				"code": "100251",
+				"state": 1,
+				"pic": "LeprechaungoesEgypt.png",
+				"category": "PNG",
+				"line": "15-20",
+				"type": "SLO",
+				"subType": "",
+				"tag": [
+					"HOT"
+				]
+			}, {
+				"id": "ninjafruitsmobile",
+				"name": "忍者水果",
+				"eName": "Ninja Fruits",
+				"code": "100253",
+				"state": 1,
+				"pic": "NinjaFruit.png",
+				"category": "PNG",
+				"line": "15-20",
+				"type": "SLO",
+				"subType": "",
+				"tag": [
+					"HOT"
+				]
+			}, {
+				"id": "trollhuntersmobile",
+				"name": "追击巨怪",
+				"eName": "Troll Hunters",
+				"code": "100254",
+				"state": 1,
+				"pic": "trollhunters.png",
+				"category": "PNG",
+				"line": "15-20",
+				"type": "SLO",
+				"subType": "",
+				"tag": [
+					"HOT",
+					"NEW"
+				]
+			}, {
+				"id": "ragetorichesmobile",
+				"name": "财富崛起",
+				"eName": "Rage to Riches",
+				"code": "100257",
+				"state": 1,
+				"pic": "RagestoRiches.png",
+				"category": "PNG",
+				"line": "15-20",
+				"type": "SLO",
+				"subType": "",
+				"tag": [
+					"HOT"
+				]
+			}, {
+				"id": "chinesenewyearmobile",
+				"name": "中国新年",
+				"eName": "Chinese New Year",
+				"code": "100277",
+				"state": 1,
+				"pic": "ChineseNewYear.png",
+				"category": "PNG",
+				"line": "15-20",
+				"type": "SLO",
+				"subType": "",
+				"tag": [
+					"HOT",
+					"NEW"
+				]
+			}, {
+				"id": "ladyoffortunemobile",
+				"name": "财富淑女",
+				"eName": "Lady of Fortune",
+				"code": "100278",
+				"state": 1,
+				"pic": "LadyofFortune.png",
+				"category": "PNG",
+				"line": "15-20",
+				"type": "SLO",
+				"subType": "",
+				"tag": [
+					"HOT"
+				]
+			}, {
+				"id": "pearlsofindiamobile",
+				"name": "印度珍珠",
+				"eName": "Pearls of India",
+				"code": "100282",
+				"state": 1,
+				"pic": "PearlsofIndia.png",
+				"category": "PNG",
+				"line": "15-20",
+				"type": "SLO",
+				"subType": "",
+				"tag": [
+					"HOT"
+				]
+			}, {
+				"id": "mysteryjokermobile",
+				"name": "神秘小丑",
+				"eName": "Mystery Joker",
+				"code": "100283",
+				"state": 1,
+				"pic": "MysteryJoker.png",
+				"category": "PNG",
+				"line": "5-10",
+				"type": "SLO",
+				"subType": "",
+				"tag": [
+					"HOT"
+				]
+			}, {
+				"id": "crazycowsmobile",
+				"name": "疯狂奶牛",
+				"eName": "Crazy Cows",
+				"code": "100284",
+				"state": 1,
+				"pic": "CrazyCow.png",
+				"category": "PNG",
+				"line": "15-20",
+				"type": "SLO",
+				"subType": "",
+				"tag": [
+					"HOT"
+				]
+			}, {
+				"id": "goldenticketmobile",
+				"name": "黄金入场券",
+				"eName": "Golden Ticket",
+				"code": "100285",
+				"state": 1,
+				"pic": "GoldenTicket.png",
+				"category": "PNG",
+				"line": "other",
+				"type": "SLO",
+				"subType": "",
+				"tag": [
+					"HOT"
+				]
+			}, {
+				"id": "merryxmasmobile",
+				"name": "欢乐圣诞节",
+				"eName": "Merry Xmas",
+				"code": "100288",
+				"state": 1,
+				"pic": "MerryXmas.png",
+				"category": "PNG",
+				"line": "15-20",
+				"type": "SLO",
+				"subType": "",
+				"tag": [
+					"HOT"
+				]
+			}, {
+				"id": "goldenlegendmobile",
+				"name": "黄金传奇",
+				"eName": "Golden Legend",
+				"code": "100290",
+				"state": 1,
+				"pic": "GoldenLegend.png",
+				"category": "PNG",
+				"line": "25+",
+				"type": "SLO",
+				"subType": "",
+				"tag": [
+					"HOT",
+					"NEW"
+				]
+			}, {
+				"id": "pimpedmobile",
+				"name": "酷炫一族",
+				"eName": "Pimped",
+				"code": "100291",
+				"state": 1,
+				"pic": "Pimped.png",
+				"category": "PNG",
+				"line": "5-10",
+				"type": "SLO",
+				"subType": "",
+				"tag": [
+					"HOT",
+					"NEW"
+				]
+			}, {
+				"id": "spinpartymobile",
+				"name": "旋转派对",
+				"eName": "Spin Party",
+				"code": "100292",
+				"state": 1,
+				"pic": "SpinParty.png",
+				"category": "PNG",
+				"line": "5-10",
+				"type": "SLO",
+				"subType": "",
+				"tag": [
+					"HOT"
+				]
+			}, {
+				"id": "eastereggsmobile",
+				"name": "复活节彩蛋",
+				"eName": "Easter Eggs",
+				"code": "100293",
+				"state": 1,
+				"pic": "EasterEgg.png",
+				"category": "PNG",
+				"line": "15-20",
+				"type": "SLO",
+				"subType": "",
+				"tag": [
+					"HOT",
+					"NEW"
+				]
+			}, {
+				"id": "wildnorthmobile",
+				"name": "北部荒野",
+				"eName": "Wild North",
+				"code": "100294",
+				"state": 1,
+				"pic": "WildNorth.png",
+				"category": "PNG",
+				"line": "25+",
+				"type": "SLO",
+				"subType": "",
+				"tag": [
+					"HOT"
+				]
+			}, {
+				"id": "eyeofthekrakenmobile",
+				"name": "克拉肯的眼睛",
+				"eName": "Eye of the Kraken",
+				"code": "100297",
+				"state": 1,
+				"pic": "EyeoftheKraken.png",
+				"category": "PNG",
+				"line": "other",
+				"type": "SLO",
+				"subType": "",
+				"tag": [
+					"HOT"
+				]
+			}, {
+				"id": "masquerademobile",
+				"name": "化妆舞会",
+				"eName": "Royal Masquerade",
+				"code": "100298",
+				"state": 1,
+				"pic": "RoyalMasquerade.png",
+				"category": "PNG",
+				"line": "5-10",
+				"type": "SLO",
+				"subType": "",
+				"tag": [
+					"HOT",
+					"NEW"
+				]
+			}, {
+				"id": "grimmuertomobile",
+				"name": "冷酷亡灵",
+				"eName": "Grim Muerto",
+				"code": "100303",
+				"state": 1,
+				"pic": "GrimMuerto.png",
+				"category": "PNG",
+				"line": "15-20",
+				"type": "SLO",
+				"subType": "",
+				"tag": [
+					"HOT"
+				]
+			}, {
+				"id": "sambacarnivalmobile",
+				"name": "桑巴嘉年华",
+				"eName": "Samba Carnival",
+				"code": "100304",
+				"state": 1,
+				"pic": "SambaCarnival.png",
+				"category": "PNG",
+				"line": "5-10",
+				"type": "SLO",
+				"subType": "",
+				"tag": [
+					"HOT"
+				]
+			}, {
+				"id": "happyhalloweenmobile",
+				"name": "欢乐万圣节",
+				"eName": "Happy Halloween",
+				"code": "100305",
+				"state": 1,
+				"pic": "HappyHalloween.png",
+				"category": "PNG",
+				"line": "other",
+				"type": "SLO",
+				"subType": "",
+				"tag": [
+					"HOT"
+				]
+			}, {
+				"id": "firejokermobile",
+				"name": "火焰小丑",
+				"eName": "Fire Joker",
+				"code": "100307",
+				"state": 1,
+				"pic": "FireJoker.png",
+				"category": "PNG",
+				"line": "5-10",
+				"type": "SLO",
+				"subType": "",
+				"tag": [
+					"HOT"
+				]
+			}, {
+				"id": "christmasjokermobile",
+				"name": "圣诞小丑",
+				"eName": "Xmas Joker",
+				"code": "100309",
+				"state": 1,
+				"pic": "XmasJoker.png",
+				"category": "PNG",
+				"line": "5-10",
+				"type": "SLO",
+				"subType": "",
+				"tag": [
+					"HOT"
+				]
+			}, {
+				"id": "bookofdeadmobile",
+				"name": "亡灵书",
+				"eName": "Book of Dead",
+				"code": "100310",
+				"state": 1,
+				"pic": "BookofDead.png",
+				"category": "PNG",
+				"line": "5-10",
+				"type": "SLO",
+				"subType": "",
+				"tag": [
+					"HOT"
+				]
+			}, {
+				"id": "sailsofgoldmobile",
+				"name": "黄金之帆",
+				"eName": "Sails of Gold",
+				"code": "100311",
+				"state": 1,
+				"pic": "SailsofGold.png",
+				"category": "PNG",
+				"line": "5-10",
+				"type": "SLO",
+				"subType": "",
+				"tag": [
+					"HOT"
+				]
+			}, {
+				"id": "goldencaravanmobile",
+				"name": "金色商队",
+				"eName": "Golden Caravan",
+				"code": "100312",
+				"state": 1,
+				"pic": "GoldenCaravan.png",
+				"category": "PNG",
+				"line": "5-10",
+				"type": "SLO",
+				"subType": "",
+				"tag": [
+					"HOT"
+				]
+			}, {
+				"id": "sevensinsmobile",
+				"name": "七宗罪",
+				"eName": "7 Sins",
+				"code": "100321",
+				"state": 1,
+				"pic": "7sins.png",
+				"category": "PNG",
+				"line": "243",
+				"type": "SLO",
+				"subType": "",
+				"tag": [
+					"HOT",
+					"NEW"
+				]
+			}, {
+				"id": "jademagicianmobile",
+				"name": "翡翠魔术师",
+				"eName": "Jade Magician",
+				"code": "100326",
+				"state": 1,
+				"pic": "JadeMagician.png",
+				"category": "PNG",
+				"line": "15-20",
+				"type": "SLO",
+				"subType": "",
+				"tag": [
+					"HOT"
+				]
+			}, {
+				"id": "holidayseasonmobile",
+				"name": "节庆假日",
+				"eName": "Holiday Season",
+				"code": "100327",
+				"state": 1,
+				"pic": "HS.png",
+				"category": "PNG",
+				"line": "5-10",
+				"type": "SLO",
+				"subType": "",
+				"tag": [
+					"HOT",
+					"NEW"
+				]
+			}, {
+				"id": "wildmelonmobile",
+				"name": "万线西瓜",
+				"eName": "Wild Melon",
+				"code": "100004",
+				"state": 1,
+				"pic": "WildMelon.png",
+				"category": "PNG",
+				"line": "1",
+				"type": "SLO",
+				"subType": "",
+				"tag": [
+					"HOT",
+					"CLA"
+				]
+			}, {
+				"id": "luckydiamondsmobile",
+				"name": "幸运钻石",
+				"eName": "Lucky Diamonds",
+				"code": "100005",
+				"state": 1,
+				"pic": "LuckyDiamonds.png",
+				"category": "PNG",
+				"line": "1",
+				"type": "SLO",
+				"subType": "",
+				"tag": [
+					"HOT",
+					"CLA"
+				]
+			}, {
+				"id": "aceofspadesmobile",
+				"name": "黑桃A",
+				"eName": "Ace of Spades",
+				"code": "100099",
+				"state": 1,
+				"pic": "AceofSpades.png",
+				"category": "PNG",
+				"line": "1",
+				"type": "SLO",
+				"subType": "",
+				"tag": [
+					"HOT",
+					"CLA"
+				]
+			}, {
+				"id": "belloffortunemobile",
+				"name": "财富铃铛",
+				"eName": "Bell of Fortune",
+				"code": "100105",
+				"state": 1,
+				"pic": "BelloftheFortune.png",
+				"category": "PNG",
+				"line": "1",
+				"type": "SLO",
+				"subType": "",
+				"tag": [
+					"HOT",
+					"AMA"
+				]
+			}, {
+				"id": "speedcashmobile",
+				"name": "极速现金",
+				"eName": "Speed Cash",
+				"code": "100106",
+				"state": 1,
+				"pic": "SpeedCash.png",
+				"category": "PNG",
+				"line": "1",
+				"type": "SLO",
+				"subType": "",
+				"tag": [
+					"HOT",
+					"CLA"
+				]
+			}, {
+				"id": "giftshopmobile",
+				"name": "礼品店",
+				"eName": "Gift Shop",
+				"code": "100107",
+				"state": 1,
+				"pic": "GiftShop.png",
+				"category": "PNG",
+				"line": "1",
+				"type": "SLO",
+				"subType": "",
+				"tag": [
+					"HOT",
+					"CLA"
+				]
+			}, {
+				"id": "goldengoalmobile",
+				"name": "黄金球门",
+				"eName": "Golden Goal",
+				"code": "100108",
+				"state": 1,
+				"pic": "GoldenGoal.png",
+				"category": "PNG",
+				"line": "1",
+				"type": "SLO",
+				"subType": "",
+				"tag": [
+					"HOT",
+					"CLA"
+				]
+			}
+		]
+	}
+}

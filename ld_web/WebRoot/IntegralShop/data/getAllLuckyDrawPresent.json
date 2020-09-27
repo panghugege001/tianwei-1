@@ -1,0 +1,126 @@
+{
+  "code": "0000",
+  "desc": "成功",
+  "data": [
+    {
+      "id": "1",
+      "title": "谢谢参与",
+      "imageUrl": "https://cdn1.shzibeisy.com/points/20171127_1511751670233.png",
+      "pointsPresent": {
+        "id": "0",
+        "type": "participate"
+      },
+      "property": "谢谢参与",
+      "weight": "1250",
+      "createUser": "system",
+      "createTime": "2017-11-27 09:38:26",
+      "updateUser": "jasonleung",
+      "updateTime": "2017-11-28 08:40:47"
+    },
+    {
+      "id": "2",
+      "title": "iphone 8 plus",
+      "imageUrl": "https://cdn1.shzibeisy.com/points/20171127_1511751657551.jpg",
+      "pointsPresent": {
+        "id": "15",
+        "type": "physical"
+      },
+      "property": "磨砂黑128G",
+      "weight": "1250",
+      "createUser": "system",
+      "createTime": "2017-11-27 09:38:26",
+      "updateUser": "jasonleung",
+      "updateTime": "2017-11-28 08:40:47"
+    },
+    {
+      "id": "3",
+      "title": "彩金10元",
+      "imageUrl": "https://cdn1.shzibeisy.com/points/20171127_1511751691899.png",
+      "pointsPresent": {
+        "id": "1",
+        "type": "money"
+      },
+      "property": "10",
+      "weight": "1250",
+      "createUser": "system",
+      "createTime": "2017-11-27 09:38:26",
+      "updateUser": "jasonleung",
+      "updateTime": "2017-11-28 08:40:47"
+    },
+    {
+      "id": "4",
+      "title": "存送券",
+      "imageUrl": "https://cdn1.shzibeisy.com/points/20171127_1511748052583.png",
+      "pointsPresent": {
+        "id": "2",
+        "type": "coupon"
+      },
+      "property": "pt-88",
+      "weight": "1250",
+      "createUser": "system",
+      "createTime": "2017-11-27 09:38:26",
+      "updateUser": "jasonleung",
+      "updateTime": "2017-11-28 08:40:47"
+    },
+    {
+      "id": "5",
+      "title": "话费100元",
+      "imageUrl": "https://cdn1.shzibeisy.com/points/20171127_1511748122721.png",
+      "pointsPresent": {
+        "id": "3",
+        "type": "phoneFee"
+      },
+      "property": "100",
+      "weight": "1250",
+      "createUser": "system",
+      "createTime": "2017-11-27 09:38:26",
+      "updateUser": "jasonleung",
+      "updateTime": "2017-11-28 08:40:47"
+    },
+    {
+      "id": "6",
+      "title": "彩金10元",
+      "imageUrl": "https://cdn1.shzibeisy.com/points/20171127_1511748584844.png",
+      "pointsPresent": {
+        "id": "1",
+        "type": "money"
+      },
+      "property": "10",
+      "weight": "1250",
+      "createUser": "system",
+      "createTime": "2017-11-27 09:38:26",
+      "updateUser": "jasonleung",
+      "updateTime": "2017-11-28 08:40:47"
+    },
+    {
+      "id": "7",
+      "title": "存送券",
+      "imageUrl": "https://cdn1.shzibeisy.com/points/20171127_1511748600454.png",
+      "pointsPresent": {
+        "id": "2",
+        "type": "coupon"
+      },
+      "property": "pt-88",
+      "weight": "1250",
+      "createUser": "system",
+      "createTime": "2017-11-27 09:38:26",
+      "updateUser": "jasonleung",
+      "updateTime": "2017-11-28 08:40:47"
+    },
+    {
+      "id": "8",
+      "title": "流量100M",
+      "imageUrl": "https://cdn1.shzibeisy.com/points/20171127_1511748623850.png",
+      "pointsPresent": {
+        "id": "4",
+        "type": "phoneData"
+      },
+      "property": "100",
+      "weight": "1250",
+      "createUser": "system",
+      "createTime": "2017-11-27 09:38:26",
+      "updateUser": "jasonleung",
+      "updateTime": "2017-11-28 08:40:47"
+    }
+  ]
+}

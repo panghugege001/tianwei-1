@@ -1,0 +1,75 @@
+.header {
+    margin: 50px 0 30px 0;
+    text-align: center;
+}
+
+.m_forbidden {
+    width: 754px;
+    height: 446px;
+    margin: 0 auto;
+    padding: 102px 0 2px;
+}
+
+.m_forbidden .m_hd {
+    background: url("../images/warning.jpg") 100px 0 no-repeat;
+    padding: 16px 0 50px 308px;
+}
+
+.c_red {
+    color: #de1f00;
+}
+
+.cut_line {
+    border: 1px solid #d2d0d0;
+}
+
+.m_forbidden a{
+    text-decoration: underline;
+}
+.m_forbidden .m_hd strong {
+    color: #000;
+}
+
+.m_forbidden .m_hd p {
+    color: #5a5a5a;
+    font-size: 18px;
+}
+
+.m_forbidden .m_hd .f_zh {
+    font-size: 46px;
+}
+
+.m_forbidden .m_hd .f_en {
+    font-size: 36px;
+}
+
+.m_forbidden .m_bd {
+    font-size: 14px;
+}
+
+.m_forbidden .cont_zh {
+    padding-bottom: 10px;
+}
+
+.m_forbidden .title {
+    font-size: 18px;
+}
+
+.m_forbidden .cont_zh p {
+    line-height: 28px;
+    color: #4a4a4a;
+}
+
+.m_forbidden .cont_en {
+    padding-top: 10px;
+}
+
+.m_forbidden .cont_en p {
+    line-height: 28px;
+    color: #7f7f7f;
+}
+
+.m_forbidden .cont_en .title {
+    color: #4b4b4b;
+}
+

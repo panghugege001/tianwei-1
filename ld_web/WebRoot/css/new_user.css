@@ -1,0 +1,332 @@
+@charset "utf-8";
+*{ -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+*:before,
+*:after{ -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+/** 清除内外边距 **/
+*{ margin: 0; padding: 0;}
+a{ text-decoration: none;}
+img{ border: none;}
+
+/* structural elements 结构元素 */
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote,
+/* list elements 列表元素 */
+dl, dt, dd, ul, ol, li,
+/* text formatting elements 文本格式元素 */
+pre,
+/* form elements 表单元素 */
+form, fieldset, legend, button, input, textarea,
+/* table elements 表格元素 */
+th, td { margin: 0; padding: 0;}
+
+/** 设置默认字体 **/
+body, pre, button, input, select, textarea /* for ie */
+{ font: 14px/1.6 tahoma, arial, 'Microsoft YaHei', sans-serif;}
+
+/** 重置文档高度 **/
+html, body{ height: 100%;}
+body{ color: #c1c1c1;}
+
+h1, h2, h3, h4, h5, h6{ font-size: 100%; font-weight: normal;}
+/* 将斜体扶正 */
+address, cite, dfn, em, var{ font-style: normal;}
+/* 统一等宽字体 */
+code, kbd, pre, samp{ font-family: courier new, courier, monospace;}
+/* 小于 12px 的中文很难阅读，让 small 正常化 */
+small{ font-size: 12px;}
+
+
+/** 重置列表元素 **/
+ul, ol{ list-style: none;}
+/** 重置文本格式元素 **/
+a{ text-align: center; text-decoration: none; color: inherit;}
+a:focus{ outline: none;}
+
+
+/** 重置表单元素 **/
+legend{ color: #000;} /* for ie6 */
+fieldset, img{ border: 0; vertical-align: middle}
+/* 使得表单元素在 ie 下能继承字体大小 */
+button, input, select, textarea{ font-size: 100%;}
+/*表单元素字体*/
+input, textarea, button{ font: 14px/1.6 Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', 微软雅黑, Arial, sans-serif; outline: 0;}
+
+input[type='button'], input[type='submit'], button{ cursor: pointer;}
+button:focus{ outline: none;}
+
+input[type='button'], input[type='submit'], input[type='reset'], button{ /*input[type="file"]::-webkit-file-upload-button,*/
+    border: 1px solid transparent;}
+
+/*设置表单元素不可用的样式*/
+input[readonly],
+input:disabled,
+button:disabled,
+button[readonly],
+textarea:disabled{ color: #545454!important; background-color: #ccc!important;}
+input[readonly]:hover,
+input:disabled:hover,
+button:disabled:hover,
+button[readonly]:hover,
+textarea:disabled:hover{ cursor: not-allowed;}
+
+/** placeholder 重置 **/
+[placeholder]{ font-family: 'Microsoft yahei';}
+::-moz-placeholder{ text-indent: 5px; /* 没有用 */ opacity: 1!important; color: #bbb;}
+:-ms-input-placeholder{ text-indent: 5px; color: #bbb;}
+::-webkit-input-placeholder{ text-indent: 5px; color: #bbb;}
+
+/** 重置表格元素 **/
+table{ border-spacing: 0; border-collapse: collapse;}
+
+/* #滚动条
+=========*/
+::-webkit-scrollbar{ width: 8px; height: 8px;}
+
+::-webkit-scrollbar-track-piece{ margin: -2px; background-color: #eee;}
+
+::-webkit-scrollbar-thumb{ min-width: 150px; min-height: 150px; border-radius: 10px; background: #aaa;}
+
+::-webkit-scrollbar-thumb:vertical:hover{ background: #555;}
+
+::-webkit-scrollbar-thumb:horizontal:hover{ background: #555;}
+
+.user_new_body{ background: url(../images/hs_beijing.jpg) no-repeat center;}
+.user_new_body .container{
+    position: relative;
+    width: 1180px;
+    margin: 0 auto;	
+}
+
+#registrationtable{
+	color: #8c8c8c;
+}
+
+.hd ul li a{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}
+.user_new_body .container .user_new_header{
+	height: 260px;
+	width: 100%;
+	border-top-left-radius: 30px;
+	border-top-right-radius: 30px;
+	background: #fff;
+	margin-top: -260px;
+	background: #eeeeee url(../images/bolang.jpg) repeat-x;
+	background-position-y: 254px;
+}
+.user_new_body .user_new_top{ 
+    background: url(../images/aboutus_header.png) no-repeat;
+    width: 100%;
+    height: 440px;
+    background-position: center;
+    background-size: cover;
+    
+}
+.user_new_body .container .user_new_header .user_logo{
+	text-align: center;
+}
+	
+.user_new_body .container .user_new_header .w_1000{
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 50px;
+    color: #666666;
+    font-size: 18px;
+}
+.user_new_body .container .user_new_header .w_1000 .user_new_title span{
+    display: inline-block;
+    width: 32.9%;
+}
+.user_new_body .container .user_new_header .w_1000 .user_new_title span:nth-of-type(1){
+	text-align: left;
+}
+
+.user_new_body .container .user_new_header .w_1000 .user_new_title span:nth-of-type(2){
+	text-align: center;
+}
+
+.user_new_body .container .user_new_header .w_1000 .user_new_title span:nth-of-type(3){
+	text-align: right;
+}
+.user_new_body .container .user_new_header .w_1000  .action{
+	color: #dfa85a;
+}
+.user_new_body .container .user_new_header .w_1000 .user_action{
+	width: 100%;
+	padding: 20px;
+	position: relative;
+	margin-top: 10px;
+}
+.user_new_body .container .user_new_header .w_1000 .user_action ul li{
+	float: left;
+	width: 50%;
+	height: 10px;
+	background: #CCCCCC;
+}
+
+.user_new_body .container .user_new_header .w_1000 .user_action ul .action{
+	background: #dfa85a;
+}
+
+.user_new_body .container .user_new_header .w_1000 .user_clover span{
+    display: inline-block;
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    font-size: 18px;
+    font-weight: bold;
+    color: #666666;
+    background: #cccccc;
+    text-align: center;
+    line-height: 36px;
+}
+.user_new_body .container .user_new_header .w_1000 .user_clover .action{
+	background: #dfa85a;
+	color: #FFFFFF;
+}
+.user_new_body .container .user_new_header .w_1000 .user_clover span:nth-of-type(1){
+    position: absolute;
+    top: 5px;
+    left: 0px;	
+}
+.user_new_body .container .user_new_header .w_1000 .user_clover span:nth-of-type(2){
+    position: absolute;
+    top: 5px;
+    left: 48%;	
+}
+.user_new_body .container .user_new_header .w_1000 .user_clover span:nth-of-type(3){
+    position: absolute;
+    top: 5px;
+    right: 0px;	
+}
+.h_978{
+	width: 100%;
+	height: 740px;
+	background: #FFFFFF;
+	border-bottom-left-radius: 30px;
+	border-bottom-right-radius: 30px;
+    margin: 0px 0 40px;	
+}
+.h_978 .user_new_table{
+	padding:60px 180px;
+}
+.h_978 .user_new_table .user_new_table_box{
+	width: 100%;
+	height: 500px;
+}
+.h_978 .m-row > .col-6{
+    width: 100%;	
+}
+.h_978 .reg-page .reg-form .ui-ipt{
+    width: 430px;
+    font-size: 14px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: inherit;
+}
+.h_978 .reg-page .reg-form .ipt-tip{
+	display: block !important;
+}
+
+body .reg-page .reg-form .ui-ipt{
+    width: 430px;
+    font-size: 14px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: inherit;	
+}
+
+body .reg-page .reg-form .ipt-tip{
+
+}
+.reg-page .reg-form .ipt-tip{
+
+    float: right;
+    text-align: left;
+    width: 35%;
+}
+.next_user{
+	width: 180px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #dfa85a;
+    border-radius: 12px;	
+}
+
+.btn:hover{
+	color: #FFFFFF !important; 
+}
+
+.next_two{
+	display: none;
+}
+
+.next_game{
+	width: 180px;
+	margin: 0 auto;
+}
+ .user_ok{
+ 	text-align: center;
+ }
+.next_game a{
+    width: 180px;
+    height: 50px; 
+    line-height: 50px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #dfa85a;
+    border-radius: 12px;
+    margin-top: 30px;
+    display: inline-block;	
+}
+
+.user_name_massage{
+	display: none;
+}
+
+.email_massage{
+	display: none;
+}
+
+.phone_massage{
+	display: none; 
+}
+
+.pass_word{
+	display: none;
+}
+
+.zacipass{
+	display: none;
+}
+
+.xingming{
+	display: none;
+}
+
+.yes_ok{
+	display: inline-block;
+    background: url(../images/yes_ok.jpg) no-repeat;
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+}
+
+#loginnameId-error{
+    position: absolute;
+    right: -60px;
+    display: inline-block;
+    width: 35%;
+    top: 4px;	
+}
+
+.reg-page .reg-form label.error-tip{
+    position: absolute;
+    right: -60px !important;
+    display: inline-block;
+    width: 35%;
+    top: 4px;		
+}

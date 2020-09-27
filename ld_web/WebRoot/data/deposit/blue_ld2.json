@@ -1,0 +1,150 @@
+{
+    "code": "10000", 
+    "desc": "成功", 
+    "data": [
+        {
+            "id": 1, 
+            "showName": "点卡支付1", 
+            "fee": 0, 
+            "phoneFee": null, 
+            "pcFee": null, 
+            "minPay": 1, 
+            "maxPay": 50000, 
+            "appPay": 0, 
+            "payWay": 5, 
+            "payCenterUrl": "/dinpay/point_card"
+        }, 
+        {
+            "id": 13, 
+            "showName": "在线支付1", 
+            "fee": 0, 
+            "phoneFee": null, 
+            "pcFee": null, 
+            "minPay": 1, 
+            "maxPay": 50000, 
+            "appPay": 0, 
+            "payWay": 3, 
+            "payCenterUrl": "/dinpay/online_pay"
+        }, 
+        {
+            "id": 51, 
+            "showName": "QQ扫描支付1", 
+            "fee": 1.2, 
+            "phoneFee": null, 
+            "pcFee": null, 
+            "minPay": 2, 
+            "maxPay": 3000, 
+            "appPay": 0, 
+            "payWay": 7, 
+            "payCenterUrl": "/xb/zfb_wx"
+        }, 
+        {
+            "id": 104, 
+            "showName": "微信支付1", 
+            "fee": 1.5, 
+            "phoneFee": null, 
+            "pcFee": null, 
+            "minPay": 1, 
+            "maxPay": 3000, 
+            "appPay": 0, 
+            "payWay": 2, 
+            "payCenterUrl": "/xlb/zfb_wx"
+        }, 
+        {
+            "id": 117, 
+            "showName": "在线支付2", 
+            "fee": 0, 
+            "phoneFee": null, 
+            "pcFee": null, 
+            "minPay": 1, 
+            "maxPay": 49997, 
+            "appPay": 0, 
+            "payWay": 3, 
+            "payCenterUrl": "/xb/online_pay"
+        }, 
+        {
+            "id": 143, 
+            "showName": "微信支付2", 
+            "fee": 1.3, 
+            "phoneFee": null, 
+            "pcFee": null, 
+            "minPay": 2, 
+            "maxPay": 3000, 
+            "appPay": 0, 
+            "payWay": 2, 
+            "payCenterUrl": "/db/zfb_wx"
+        }, 
+        {
+            "id": 218, 
+            "showName": "QQ扫描支付2", 
+            "fee": 1.8, 
+            "phoneFee": null, 
+            "pcFee": null, 
+            "minPay": 10, 
+            "maxPay": 3000, 
+            "appPay": 0, 
+            "payWay": 7, 
+            "payCenterUrl": "/lf/zfb_wx"
+        }, 
+        {
+            "id": 224, 
+            "showName": "微信支付3", 
+            "fee": 1.5, 
+            "phoneFee": null, 
+            "pcFee": null, 
+            "minPay": 1, 
+            "maxPay": 3000, 
+            "appPay": 0, 
+            "payWay": 2, 
+            "payCenterUrl": "/xxlb/zfb_wx"
+        }, 
+        {
+            "id": 226, 
+            "showName": "QQ扫描支付3", 
+            "fee": 1.5, 
+            "phoneFee": null, 
+            "pcFee": null, 
+            "minPay": 1, 
+            "maxPay": 3000, 
+            "appPay": 0, 
+            "payWay": 7, 
+            "payCenterUrl": "/xxlb/zfb_wx"
+        }, 
+        {
+            "id": 240, 
+            "showName": "QQ扫描支付4", 
+            "fee": 1.5, 
+            "phoneFee": null, 
+            "pcFee": null, 
+            "minPay": 1, 
+            "maxPay": 3000, 
+            "appPay": 0, 
+            "payWay": 7, 
+            "payCenterUrl": "/xlb/zfb_wx"
+        }, 
+        {
+            "id": 255, 
+            "showName": "微信支付4", 
+            "fee": 2.2, 
+            "phoneFee": null, 
+            "pcFee": null, 
+            "minPay": 1, 
+            "maxPay": 3000, 
+            "appPay": 0, 
+            "payWay": 2, 
+            "payCenterUrl": "/saner/zfb_wx"
+        }, 
+        {
+            "id": 258, 
+            "showName": "QQ扫描支付5", 
+            "fee": 2, 
+            "phoneFee": null, 
+            "pcFee": null, 
+            "minPay": 1, 
+            "maxPay": 3000, 
+            "appPay": 0, 
+            "payWay": 7, 
+            "payCenterUrl": "/saner/zfb_wx"
+        }
+    ]
+}

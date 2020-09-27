@@ -1,0 +1,2685 @@
+[
+	{
+		"eName": "Wild Warriors",
+		"name": "强力女战士",
+		"id": "14662",
+		"code": "DiaDeMuertos&gameType=0",
+		"pic": "14662.jpg",
+		"type": "OTH",
+		"line": "30",
+		"state": 1,
+		"tag": [
+			"TTG",
+			"NEW",
+			"HOT"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"eName": "Dia De Muertos",
+		"name": "死亡日",
+		"id": "1098",
+		"code": "DiaDeMuertos&gameType=0",
+		"pic": "1098.jpg",
+		"type": "OTH",
+		"line": "20",
+		"state": 1,
+		"tag": [
+			"TTG",
+			"NEW",
+			"HOT"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"eName": "TFruits & Jokers",
+		"name": "狂野小丑",
+		"id": "14661",
+		"code": "EGIGame&gameType=0",
+		"pic": "14661.jpg",
+		"type": "OTH",
+		"line": "20",
+		"state": 1,
+		"tag": [
+			"TTG",
+			"NEW",
+			"HOT"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"eName": "Triple Dragons",
+		"name": "龙龙龙",
+		"id": "14516",
+		"code": "EGIGame&gameType=0",
+		"pic": "14516.jpg",
+		"type": "OTH",
+		"line": "20",
+		"state": 1,
+		"tag": [
+			"TTG",
+			"NEW",
+			"HOT"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"eName": "Sugar Skulls",
+		"name": "糖骷髅头",
+		"id": "14300",
+		"code": "EGIGame&gameType=0",
+		"pic": "14300.jpg",
+		"type": "OTH",
+		"line": "20",
+		"state": 1,
+		"tag": [
+			"TTG",
+			"NEW",
+			"HOT"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"eName": "Book of Gold",
+		"name": "黄金卷轴",
+		"id": "14660",
+		"code": "NeptunesGoldH5&gameType=0",
+		"pic": "14660.jpg",
+		"type": "OTH",
+		"line": "20",
+		"state": 1,
+		"tag": [
+			"TTG",
+			"NEW",
+			"HOT"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"eName": "Ancient Egypt Classic",
+		"name": "古代埃及经典版",
+		"id": "14515",
+		"code": "NeptunesGoldH5&gameType=0",
+		"pic": "14515.jpg",
+		"type": "OTH",
+		"line": "20",
+		"state": 1,
+		"tag": [
+			"TTG",
+			"NEW",
+			"HOT"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"eName": "Feng Shui Kitties",
+		"name": "风水小猫咪",
+		"id": "14299",
+		"code": "NeptunesGoldH5&gameType=0",
+		"pic": "14299.jpg",
+		"type": "OTH",
+		"line": "20",
+		"state": 1,
+		"tag": [
+			"TTG",
+			"NEW",
+			"HOT"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"eName": "Neptune's Gold H5",
+		"name": "海神秘宝",
+		"id": "1099",
+		"code": "NeptunesGoldH5&gameType=0",
+		"pic": "1099.jpg",
+		"type": "OTH",
+		"line": "20",
+		"state": 1,
+		"tag": [
+			"TTG",
+			"NEW",
+			"HOT"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"eName": "Joker Expand - 40 Lines H5",
+		"name": "王牌水果盘：40条赔付线H5",
+		"id": "14659",
+		"code": "EGIGame&gameType=0",
+		"pic": "14659.jpg",
+		"type": "OTH",
+		"line": "20",
+		"state": 1,
+		"tag": [
+			"TTG",
+			"NEW",
+			"HOT"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"eName": "Vegas Magic",
+		"name": "魔力维加斯",
+		"id": "14514",
+		"code": "EGIGame&gameType=0",
+		"pic": "14514.jpg",
+		"type": "OTH",
+		"line": "20",
+		"state": 1,
+		"tag": [
+			"TTG",
+			"NEW",
+			"HOT"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"eName": "Master Chen’s Fortune",
+		"name": "陈师傅的财富",
+		"id": "14513",
+		"code": "EGIGame&gameType=0",
+		"pic": "14513.jpg",
+		"type": "OTH",
+		"line": "20",
+		"state": 1,
+		"tag": [
+			"TTG",
+			"NEW",
+			"HOT"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"eName": "Chicago Gangsters",
+		"name": "黑帮老大",
+		"id": "14658",
+		"code": "EGIGame&gameType=0",
+		"pic": "14658.jpg",
+		"type": "OTH",
+		"line": "20",
+		"state": 1,
+		"tag": [
+			"TTG",
+			"NEW",
+			"HOT"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"eName": "Wunderfest Deluxe ",
+		"name": "奢华啤酒节",
+		"id": "14297",
+		"code": "EGIGame&gameType=0",
+		"pic": "14297.jpg",
+		"type": "OTH",
+		"line": "20",
+		"state": 1,
+		"tag": [
+			"TTG",
+			"NEW",
+			"HOT"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"eName": "Disco Bar 7s",
+		"name": "70年代迪吧",
+		"id": "14296",
+		"code": "EGIGame&gameType=0",
+		"pic": "14296.jpg",
+		"type": "OTH",
+		"line": "20",
+		"state": 1,
+		"tag": [
+			"TTG",
+			"NEW",
+			"HOT"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"eName": "Fruits And Jokers",
+		"name": "狂野小丑",
+		"id": "14656",
+		"code": "EGIGame&gameType=0",
+		"pic": "14656.jpg",
+		"type": "OTH",
+		"line": "20",
+		"state": 1,
+		"tag": [
+			"TTG",
+			"NEW",
+			"HOT"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"eName": "Phoenix Fire",
+		"name": " 浴火凤凰",
+		"id": "14657",
+		"code": "EGIGame&gameType=0",
+		"pic": "14657.jpg",
+		"type": "OTH",
+		"line": "10",
+		"state": 1,
+		"tag": [
+			"TTG",
+			"NEW",
+			"HOT"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"eName": "Kung Fu Showdown",
+		"name": " 功夫传奇对决",
+		"id": "1043",
+		"code": "KungFuShowdown&gameType=0",
+		"pic": "1043.jpg",
+		"type": "OTH",
+		"line": "5-10",
+		"state": 1,
+		"tag": [
+			"TTG",
+			"NEW",
+			"HOT"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"eName": "Super Burning Wins",
+		"name": "水果嘉年华",
+		"id": "14655",
+		"code": "EGIGame&gameType=0",
+		"pic": "14655.jpg",
+		"type": "OTH",
+		"line": "5-10",
+		"state": 1,
+		"tag": [
+			"TTG",
+			"NEW",
+			"HOT"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"eName": "Da Vincis Treasure",
+		"name": "达芬奇宝藏",
+		"id": "14512",
+		"code": "EGIGame&gameType=0",
+		"pic": "14512.jpg",
+		"type": "OTH",
+		"line": "25-25",
+		"state": 1,
+		"tag": [
+			"PRA",
+			"NEW",
+			"HOT"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"eName": "Vegas VIP Gold",
+		"name": "赌城贵宾金碧辉煌",
+		"id": "14295",
+		"code": "EGIGame&gameType=0",
+		"pic": "14295.jpg",
+		"type": "SLO",
+		"line": "15-20",
+		"state": 1,
+		"tag": [
+			"BLO",
+			"NEW"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"eName": "Battle Heroes",
+		"name": "英雄之战",
+		"id": "1091",
+		"code": "BattleHeroes&gameType=0",
+		"pic": "1091.jpg",
+		"type": "SLO",
+		"line": "",
+		"state": 1,
+		"tag": [
+			"NEW"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"eName": "Rise of Egypt",
+		"name": "黃金古埃及",
+		"id": "14654",
+		"code": "EGIGame&gameType=0",
+		"pic": "14654.jpg",
+		"type": "SLO",
+		"line": "20",
+		"state": 1,
+		"tag": [
+			"NEW"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"eName": "Miami Nights",
+		"name": "迈阿密之夜",
+		"id": "14294",
+		"code": "EGIGame&gameType=0",
+		"pic": "14294.jpg",
+		"type": "SLO",
+		"line": "20",
+		"state": 1,
+		"tag": [
+			"NEW"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"eName": "Pragmatic",
+		"name": "好运北京",
+		"id": "14511",
+		"code": "EGIGame&gameType=0",
+		"pic": "14511.jpg",
+		"type": "SLO",
+		"line": "20",
+		"state": 1,
+		"tag": [
+			"NEW"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"eName": "Joker Expand",
+		"name": "王牌水果盘",
+		"id": "14653",
+		"code": "EGIGame&gameType=0",
+		"pic": "14653.jpg",
+		"type": "SLO",
+		"line": "5",
+		"state": 1,
+		"tag": [
+			"NEW"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"eName": "Golden Royals",
+		"name": "黄金贵族",
+		"id": "14292",
+		"code": "EGIGame&gameType=0",
+		"pic": "14292.jpg",
+		"type": "SLO",
+		"line": "30",
+		"state": 1,
+		"tag": [
+			"NEW"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"eName": "Winner's Cup",
+		"name": "胜利杯",
+		"id": "14293",
+		"code": "EGIGame&gameType=0",
+		"pic": "14293.jpg",
+		"type": "SLO",
+		"line": "30",
+		"state": 1,
+		"tag": [
+			"NEW"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"eName": "Cuba Caliente",
+		"name": "热辣古巴",
+		"id": "14291",
+		"code": "EGIGame&gameType=0",
+		"pic": "14291.jpg",
+		"type": "SLO",
+		"line": "25",
+		"state": 1,
+		"tag": [
+			"NEW"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"eName": "Diamond Tower H5",
+		"name": "钻石塔 H5",
+		"id": "1104",
+		"code": "DiamondTowerH5&gameType=0",
+		"pic": "1104.jpg",
+		"type": "SLO",
+		"line": "1024",
+		"state": 1,
+		"tag": [
+			"NEW"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"eName": "God of Wild Sea",
+		"name": "怒海之神",
+		"id": "14652",
+		"code": "EGIGame&gameType=0",
+		"pic": "14652.jpg",
+		"type": "SLO",
+		"state": 1,
+		"tag": [
+			"NEW"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"eName": "Madame Destiny™",
+		"name": "命运女士™",
+		"id": "14508",
+		"code": "EGIGame&gameType=0",
+		"pic": "14508.jpg",
+		"type": "SLO",
+		"state": 1,
+		"tag": [
+			"NEW"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"eName": "Gem Riches",
+		"name": "宝石财富",
+		"id": "1101",
+		"code": "GemRiches&gameType=0",
+		"pic": "1101.jpg",
+		"state": 1,
+		"type": "SLO",
+		"tag": [
+			"NEW"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"eName": "Ying Cai Shen",
+		"name": "迎财神",
+		"id": "1087",
+		"code": "YingCaiShen&gameType=0",
+		"pic": "1087.jpg",
+		"state": 1,
+		"type": "SLO",
+		"tag": [
+			"NEW"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"eName": "Irish Charms™",
+		"name": "爱尔兰的魅力",
+		"id": "14507",
+		"code": "EGIGame&gameType=0",
+		"pic": "14507.jpg",
+		"state": 1,
+		"type": "SLO",
+		"tag": [
+			"NEW"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"eName": "Asgard™",
+		"name": "仙宫™",
+		"id": "14506",
+		"code": "EGIGame&gameType=0",
+		"pic": "14506.jpg",
+		"state": 1,
+		"type": "SLO",
+		"tag": [
+			"NEW"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"eName": "Lava Loca",
+		"name": "疯狂熔岩",
+		"id": "14290",
+		"code": "EGIGame&gameType=0",
+		"pic": "14290.jpg",
+		"state": 1,
+		"type": "SLO",
+		"tag": [
+			"NEW"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"eName": "Burning Wins",
+		"name": "呛辣水果盘:经典5线",
+		"id": "14651",
+		"code": "EGIGame&gameType=0",
+		"pic": "14651.jpg",
+		"state": 1,
+		"type": "SLO",
+		"tag": [
+			"NEW"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"eName": "Wild Triads",
+		"name": "古惑仔",
+		"id": "1102",
+		"code": "WildTriads&gameType=0",
+		"pic": "1102.jpg",
+		"state": 1,
+		"type": "SLO",
+		"tag": [
+			"NEW"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"eName": "40 Joker Staxx",
+		"name": "四十小丑",
+		"id": "14650",
+		"code": "EGIGame&gameType=0",
+		"pic": "14650.jpg",
+		"state": 1,
+		"type": "SLO",
+		"tag": [
+			"NEW"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"eName": "Lions",
+		"name": "雄狮",
+		"id": "14505",
+		"code": "EGIGame&gameType=0",
+		"pic": "14505.jpg",
+		"state": 1,
+		"type": "SLO",
+		"tag": [
+			"NEW"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"eName": "Wild Diamond",
+		"name": "狂野钻石",
+		"id": "14289",
+		"code": "EGIGame&gameType=0",
+		"pic": "14289.jpg",
+		"state": 1,
+		"type": "SLO",
+		"tag": [
+			"NEW"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"eName": "Boomerang Bonanza™",
+		"name": "回力镖时来运转™",
+		"id": "14288",
+		"code": "EGIGame&gameType=0",
+		"pic": "14288.jpg",
+		"state": 1,
+		"type": "SLO",
+		"tag": [
+			"NEW"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"eName": "The Champions™",
+		"name": "冠军杯™",
+		"id": "14504",
+		"code": "EGIGame&gameType=0",
+		"pic": "14504.jpg",
+		"state": 1,
+		"type": "SLO",
+		"tag": [
+			"NEW"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "巨大犀牛",
+		"id": "14503",
+		"code": "EGIGame&gameType=0",
+		"eName": "Great Rhino",
+		"pic": "14503.png",
+		"type": "SLO",
+		"state": 1,
+		"tag": [
+			"NEW"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "新潮派出租车",
+		"id": "14287",
+		"code": "EGIGame&gameType=0",
+		"eName": "Taxi Movida",
+		"pic": "14287.png",
+		"type": "SLO",
+		"state": 1,
+		"tag": [
+			"NEW"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"eName": "Sevens&Fruits",
+		"name": "经典水果大亨",
+		"id": "14649",
+		"code": "EGIGame&gameType=0",
+		"pic": "14649.png",
+		"state": 1,
+		"type": "SLO",
+		"tag": [
+			"NEW"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"eName": "Mexico Wins",
+		"name": "墨西哥大战",
+		"id": "14286",
+		"code": "EGIGame&gameType=0",
+		"pic": "14286.png",
+		"state": 1,
+		"type": "SLO",
+		"tag": [
+			"NEW"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"eName": "Monster Munchies",
+		"name": "怪物与零食",
+		"id": "14264",
+		"code": "EGIGame&gameType=0",
+		"pic": "14264.png",
+		"state": 1,
+		"type": "SLO",
+		"tag": [
+			"NEW"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"eName": "Golden Dragon",
+		"name": "金龙",
+		"id": "1080",
+		"code": "GoldenDragon&gameType=0",
+		"pic": "1080.png",
+		"state": 1,
+		"type": "SLO",
+		"tag": [
+			"NEW"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"eName": "Jokers Jewels",
+		"name": "小丑珠宝",
+		"id": "14502",
+		"code": "EGIGame&gameType=0",
+		"pic": "14502.png",
+		"state": 1,
+		"type": "SLO",
+		"tag": [
+			"NEW"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"eName": "Fairytale Fortune",
+		"name": "童话财富",
+		"id": "14501",
+		"code": "EGIGame&gameType=0",
+		"pic": "14501.png",
+		"state": 1,
+		"type": "SLO",
+		"tag": [
+			"NEW"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"eName": "Baby Bloomers",
+		"name": "花苞初放",
+		"id": "14285",
+		"code": "EGIGame&gameType=0",
+		"pic": "14285.png",
+		"state": 1,
+		"type": "SLO",
+		"tag": [
+			"NEW"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"eName": "CherryFortune",
+		"name": " 财富小樱桃",
+		"id": "1092",
+		"code": "CherryFortune&gameType=0",
+		"pic": "1092.png",
+		"state": 1,
+		"type": "SLO",
+		"tag": [
+			"NEW"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"eName": "Chilli Heat™",
+		"name": " 火辣辣™",
+		"id": "14500",
+		"code": "EGIGame&gameType=0",
+		"pic": "14500.png",
+		"state": 1,
+		"type": "SLO",
+		"tag": [
+			"NEW"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"eName": "Reels Of Fortune",
+		"name": "财富转转转",
+		"id": "1079",
+		"code": "ReelsOfFortune&gameType=0",
+		"pic": "1079.png",
+		"state": 1,
+		"type": "SLO",
+		"tag": [
+			"NEW"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"eName": "Doublin Gold",
+		"name": "都柏林之宝",
+		"id": "14284",
+		"code": "EGIGame&gameType=0",
+		"pic": "14284.png",
+		"state": 1,
+		"type": "SLO",
+		"tag": [
+			"NEW"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"eName": "Fire 88",
+		"name": "88火",
+		"id": "14499",
+		"code": "EGIGame&gameType=0",
+		"pic": "14499.png",
+		"state": 1,
+		"type": "SLO",
+		"tag": [
+			"NEW"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"eName": "SLOws vs Paws",
+		"name": "猫爪大战狗爪",
+		"id": "14648",
+		"code": "EGIGame&gameType=0",
+		"pic": "14648.png",
+		"state": 1,
+		"type": "SLO",
+		"tag": [
+			"NEW"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"eName": "Luck Reels",
+		"name": "幸运卷轴",
+		"id": "14616",
+		"code": "EGIGame&gameType=0",
+		"pic": "14616.png",
+		"state": 1,
+		"type": "SLO",
+		"tag": [
+			"NEW"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"eName": "Aztec Gems",
+		"name": "阿兹特克的宝石",
+		"id": "14498",
+		"code": "EGIGame&gameType=0",
+		"pic": "14498.png",
+		"state": 1,
+		"type": "SLO",
+		"tag": [
+			"NEW"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"eName": "Asia Wins",
+		"name": "亚洲风情",
+		"id": "14283",
+		"code": "EGIGame&gameType=0",
+		"pic": "14283.png",
+		"state": 1,
+		"type": "SLO",
+		"tag": [
+			"NEW"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"eName": "Golden Amazon",
+		"name": "金色亚马逊",
+		"id": "1077",
+		"code": "GoldenAmazon&gameType=0",
+		"pic": "1077.png",
+		"state": 1,
+		"type": "SLO",
+		"tag": [
+			"NEW"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"eName": "Monkey Luck",
+		"name": "吉祥猴子",
+		"id": "1089",
+		"code": "MonkeyLuck&gameType=0",
+		"pic": "1089.png",
+		"state": 1,
+		"type": "SLO",
+		"tag": [
+			"NEW"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"eName": "Ancient Egypt",
+		"name": "古代埃及",
+		"id": "14497",
+		"code": "EGIGamee&gameType=0",
+		"pic": "14497.png",
+		"state": 1,
+		"type": "SLO",
+		"tag": [
+			"NEW"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"eName": "Kingdom of the Sun: Golden Age",
+		"name": "图坦卡门-黄金帝国",
+		"id": "14647",
+		"code": "EGIGamee&gameType=0",
+		"pic": "14647.png",
+		"state": 1,
+		"type": "SLO",
+		"tag": [
+			"NEW"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"eName": "Paris Nights",
+		"name": "巴黎之夜",
+		"id": "14282",
+		"code": "EGIGamee&gameType=0",
+		"pic": "14282.jpg",
+		"state": 1,
+		"type": "SLO",
+		"tag": [
+			"NEW"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"eName": "League Of Champions",
+		"name": "英雄联盟",
+		"id": "1086",
+		"code": "LeagueOfChampions&gameType=0",
+		"pic": "1086.jpg",
+		"state": 1,
+		"type": "SLO",
+		"tag": [
+			"NEW"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"eName": "PP Gold Rush",
+		"name": "淘金热",
+		"id": "14493",
+		"code": "EGIGame&gameType=0",
+		"pic": "14493.jpg",
+		"state": 1,
+		"type": "OTH",
+		"tag": [
+			"PRA",
+			"NEW",
+			"HOT"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"eName": "Romeo",
+		"name": "浪漫故事",
+		"id": "14281",
+		"pic": "14281.png",
+		"line": "5-10",
+		"code": "EGIGame&gameType=0",
+		"type": "SLO",
+		"state": 1,
+		"tag": [
+			"NEW"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"eName": "ThunderingZeusH5",
+		"name": "天神宙斯",
+		"id": "1068",
+		"pic": "1068.jpg",
+		"line": "15-20",
+		"code": "ThunderingZeusH5&gameType=0",
+		"type": "SLO",
+		"state": 1,
+		"tag": [
+			"NEW"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"eName": "Lucky New Year",
+		"name": "幸运新年",
+		"id": "14496",
+		"pic": "14496.jpg",
+		"line": "25-30",
+		"code": "EGIGame&gameType=0",
+		"type": "SLO",
+		"state": 1,
+		"tag": [
+			"NEW"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"eName": "Royal Wins",
+		"name": "皇家之战",
+		"id": "14279",
+		"pic": "14279.png",
+		"line": "15-20",
+		"code": "EGIGame&gameType=0",
+		"type": "SLO",
+		"state": 1,
+		"tag": [
+			"NEW"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"eName": "Big Apple Wins",
+		"name": "大苹果之战",
+		"id": "14280",
+		"pic": "14280.png",
+		"line": "15-20",
+		"code": "EGIGame&gameType=0",
+		"type": "SLO",
+		"state": 1,
+		"tag": [
+			"NEW"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"eName": "Triple Tigers",
+		"name": "三只老虎",
+		"id": "14495",
+		"pic": "14495.png",
+		"line": "1-10",
+		"code": "EGIGame&gameType=0",
+		"type": "SLO",
+		"state": 1,
+		"tag": [
+			"NEW"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"eName": "Exotic Fruit Deluxe",
+		"name": "异国水果豪华版",
+		"id": "14278",
+		"pic": "14278.png",
+		"line": "15-20",
+		"code": "EGIGame&gameType=0",
+		"type": "SLO",
+		"state": 1,
+		"tag": [
+			"NEW"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"eName": "Legend of Cleopatra",
+		"name": "女王的传奇",
+		"id": "14646",
+		"pic": "14646.png",
+		"line": "100-1024",
+		"code": "EGIGame&gameType=0",
+		"type": "SLO",
+		"state": 1,
+		"tag": [
+			"NEW"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"eName": "Diamonds are Forever 3 lines",
+		"name": "永恒钻石3线",
+		"id": "14492",
+		"pic": "14492.png",
+		"line": "1-10",
+		"code": "EGIGame&gameType=0",
+		"type": "SLO",
+		"state": 1,
+		"tag": [
+			"NEW"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "水果与星星节日版",
+		"id": "14645",
+		"code": "EGIGame&gameType=0",
+		"eName": "Fruits'N'Stars HE",
+		"pic": "14645.png",
+		"type": "SLO",
+		"line": "1-10",
+		"state": 1,
+		"tag": [
+			"NEW"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "圣诞响叮当",
+		"id": "14277",
+		"code": "EGIGame&gameType=0",
+		"eName": "Jingle Jingle",
+		"pic": "14277.png",
+		"type": "SLO",
+		"subType": "BMG",
+		"line": "15-20",
+		"state": 1,
+		"tag": [
+			"NEW"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "猴子疯狂",
+		"id": "14494",
+		"code": "EGIGame&gameType=0",
+		"eName": "Monkey Madness",
+		"pic": "14494.png",
+		"type": "SLO",
+		"subType": "BMG",
+		"line": "15-20",
+		"state": 1,
+		"tag": [
+			"NEW",
+			"SLO",
+			"SM"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "恶魔 13",
+		"id": "14433",
+		"code": "EGIGame&gameType=0",
+		"eName": "Devil's 13",
+		"pic": "14433.png",
+		"type": "SLO",
+		"line": "15-20",
+		"state": 1,
+		"tag": [
+			"NEW"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "勤劳蜜蜂",
+		"id": "14403",
+		"code": "EGIGame&gameType=0",
+		"eName": "Busy Bees",
+		"pic": "14403.png",
+		"type": "SLO",
+		"line": "15-20",
+		"state": 1,
+		"tag": [
+			"NEW"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "疯狂 7s",
+		"id": "14415",
+		"code": "EGIGame&gameType=0",
+		"eName": "Crazy 7s",
+		"pic": "14415.png",
+		"type": "SLO",
+		"line": "15-20",
+		"state": 1,
+		"tag": [
+			"NEW"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "水果爆破",
+		"id": "14422",
+		"code": "EGIGame&gameType=0",
+		"eName": "Fruity Blast",
+		"pic": "14422.png",
+		"type": "SLO",
+		"line": "25-30",
+		"state": 1,
+		"tag": [
+			"NEW"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "幽灵财富",
+		"id": "14426",
+		"code": "EGIGame&gameType=0",
+		"eName": "Spooky Fortune",
+		"pic": "14426.png",
+		"type": "SLO",
+		"line": "15-20",
+		"state": 1,
+		"tag": [
+			"NEW"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "热闹酒吧",
+		"id": "14276",
+		"code": "EGIGame&gameType=0",
+		"eName": "Booming Bars",
+		"pic": "14276.png",
+		"type": "SLO",
+		"line": "1-10",
+		"state": 1,
+		"tag": [
+			"NEW",
+			"HOT"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "熊猫财富",
+		"id": "14489",
+		"code": "EGIGame&gameType=0",
+		"eName": "Panda's Fortune",
+		"pic": "14489.png",
+		"type": "SLO",
+		"line": "25-30",
+		"state": 1,
+		"tag": [
+			"NEW",
+			"HOT"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "财源滚滚",
+		"id": "14490",
+		"code": "EGIGame&gameType=0",
+		"eName": "Money Roll",
+		"pic": "14490.png",
+		"type": "SLO",
+		"line": "1-10",
+		"state": 1,
+		"tag": [
+			"NEW",
+			"HOT"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "美女火神",
+		"id": "1064",
+		"code": "FireGoddessH5&gameType=0",
+		"eName": "Fire Goddess H5",
+		"pic": "1019.png",
+		"type": "SLO",
+		"line": "100-1024",
+		"state": 1,
+		"tag": [
+			"NEW",
+			"HOT"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "帝国王朝",
+		"id": "1047",
+		"code": "DynastyEmpire&gameType=0",
+		"eName": "Dynasty Empire",
+		"pic": "1047.png",
+		"type": "SLO",
+		"line": "100-1024",
+		"state": 1,
+		"tag": [
+			"NEW"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "7 只小猪",
+		"id": "14488",
+		"code": "EGIGame&gameType=0",
+		"eName": "7 Piggies",
+		"pic": "14488.png",
+		"type": "SLO",
+		"line": "1-10",
+		"state": 1,
+		"tag": [
+			"NEW",
+			"HOT"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "狂野自尊心",
+		"id": "14275",
+		"code": "EGIGame&gameType=0",
+		"eName": "Wild Pride",
+		"pic": "14275.png",
+		"type": "SLO",
+		"line": "1-10",
+		"state": 1,
+		"tag": [
+			"HOT",
+			"NEW"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "水晶之国",
+		"id": "14644",
+		"code": "EGIGame&gameType=0",
+		"eName": "Fun Acct",
+		"pic": "14644.png",
+		"type": "SLO",
+		"line": "15-20",
+		"state": 1,
+		"tag": [
+			"HOT",
+			"NEW"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "阿拉丁神迹",
+		"id": "1066",
+		"code": "AladdinsLegacyH5&gameType=0",
+		"eName": "AladdinsLegacy",
+		"pic": "1066.png",
+		"type": "SLO",
+		"line": "15-20",
+		"state": 1,
+		"tag": [
+			"HOT",
+			"NEW"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "福星高照",
+		"id": "1063",
+		"code": "FuStarH5&gameType=0",
+		"eName": "FuStar",
+		"pic": "1063.png",
+		"line": "25-30",
+		"state": 1,
+		"type": "SLO",
+		"tag": [
+			"NEW"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "五个海盗",
+		"id": "1067",
+		"code": "FivePiratesH5&gameType=0",
+		"eName": "FivePirates",
+		"pic": "1012.png",
+		"type": "SLO",
+		"line": "1-10",
+		"state": 1,
+		"tag": [
+			"HOT"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "三叶草故事",
+		"id": "14641",
+		"code": "EGIGame&gameType=0",
+		"eName": "Clover Tales",
+		"pic": "14641.png",
+		"type": "SLO",
+		"line": "1-10",
+		"state": 1,
+		"tag": [
+			"HOT"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "硕果午休",
+		"id": "14640",
+		"code": "EGIGame&gameType=0",
+		"eName": "Fruitful Siesta",
+		"pic": "14640.png",
+		"type": "SLO",
+		"line": "1-10",
+		"state": 1,
+		"tag": [
+			"HOT"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "马里奥尼表演",
+		"id": "14639",
+		"code": "EGIGame&gameType=0",
+		"eName": "Marioni Show",
+		"pic": "14639.png",
+		"type": "SLO",
+		"line": "1-10",
+		"state": 1,
+		"tag": [
+			"HOT"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "发发发龙",
+		"id": "14481",
+		"code": "EGIGame&gameType=0",
+		"eName": "888 Dragons",
+		"pic": "14481.png",
+		"type": "SLO",
+		"line": "1-10",
+		"state": 1,
+		"tag": [
+			"HOT"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "法老谷",
+		"id": "14268",
+		"code": "EGIGame&gameType=0",
+		"eName": "Valley of Pharao",
+		"pic": "14268.png",
+		"type": "SLO",
+		"line": "1-10",
+		"state": 1,
+		"tag": [],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "黄金列车",
+		"id": "14480",
+		"code": "EGIGame&gameType=0",
+		"eName": "Gold Train",
+		"pic": "14480.png",
+		"type": "SLO",
+		"line": "1-10",
+		"state": 1,
+		"tag": [
+			"HOT"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "堆叠奶酪",
+		"id": "1044",
+		"code": "StacksOfCheese&gameType=0",
+		"eName": "Stacks Of Cheese",
+		"pic": "1044.png",
+		"type": "SLO",
+		"line": "25-30",
+		"state": 1,
+		"tag": [],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "恶魔热度",
+		"id": "14267",
+		"code": "EGIGame&gameType=0",
+		"eName": "Devil's Heat",
+		"pic": "14267.png",
+		"type": "SLO",
+		"line": "1-10",
+		"state": 1,
+		"tag": [],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "异国水果",
+		"id": "14266",
+		"code": "EGIGame&gameType=0",
+		"eName": "Exotic Fruit",
+		"pic": "14266.png",
+		"type": "SLO",
+		"line": "15-20",
+		"state": 1,
+		"tag": [],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "疯狂小丑",
+		"id": "14265",
+		"code": "EGIGame&gameType=0",
+		"eName": "Wild Jester",
+		"pic": "14265.png",
+		"type": "SLO",
+		"line": "25-30",
+		"state": 1,
+		"tag": [],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "野狼黄金",
+		"id": "14477",
+		"code": "EGIGame&gameType=0",
+		"eName": "Wolf Gold",
+		"pic": "14477.png",
+		"type": "SLO",
+		"line": "25-30",
+		"state": 1,
+		"tag": [],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "罗宾汉",
+		"id": "1033",
+		"code": "RobinHood&gameType=0",
+		"eName": "Robinhood",
+		"pic": "1033.png",
+		"type": "SLO",
+		"line": "40-60",
+		"state": 1,
+		"tag": [],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "武松打虎",
+		"id": "1037",
+		"code": "TigerSlayer&gameType=0",
+		"eName": "TigerSlayer",
+		"pic": "1037.png",
+		"type": "SLO",
+		"line": "25-30",
+		"state": 1,
+		"tag": [],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "图腾宝藏",
+		"id": "1030",
+		"code": "TikiTreasures&gameType=0",
+		"eName": "TikiTreasures",
+		"pic": "1030.png",
+		"type": "SLO",
+		"line": "100-1024",
+		"state": 1,
+		"tag": [],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "丝绸之路",
+		"id": "1024",
+		"code": "TheSilkRoad&gameType=0",
+		"eName": "TheSilkRoad",
+		"pic": "1024.png",
+		"type": "SLO",
+		"line": "100-1024",
+		"state": 1,
+		"tag": [],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "水果对对碰",
+		"id": "1038",
+		"code": "BerryBlastPlus&gameType=0",
+		"eName": "BerryBlastPlus",
+		"pic": "1038.png",
+		"type": "SLO",
+		"line": "100-1024",
+		"state": 1,
+		"tag": [],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "财神到",
+		"id": "530",
+		"code": "ChoySunDoa&gameType=0",
+		"eName": "ChoySunDoa",
+		"pic": "530.png",
+		"type": "SLO",
+		"line": "100-1024",
+		"state": 1,
+		"tag": [
+			"HOT"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "海盗宝库",
+		"id": "9",
+		"code": "GenericSlots&ttg_gameType=17",
+		"eName": "GenericSlots",
+		"pic": "9.png",
+		"type": "SLO",
+		"line": "1-10",
+		"state": 1,
+		"tag": [],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "龙宫",
+		"id": "1029",
+		"code": "DragonPalace&gameType=0",
+		"eName": "DragonPalace",
+		"pic": "1029.png",
+		"type": "SLO",
+		"line": "100-1024",
+		"state": 1,
+		"tag": [],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "中子星",
+		"id": "1031",
+		"code": "NeutronStar&gameType=0",
+		"eName": "NeutronStar",
+		"pic": "1031.png",
+		"type": "SLO",
+		"line": "1-10",
+		"state": 1,
+		"tag": [],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "埃及艳后",
+		"id": "1034",
+		"code": "Cleopatra&gameType=0",
+		"eName": "Cleopatra",
+		"pic": "1034.png",
+		"line": "25-30",
+		"state": 1,
+		"type": "SLO",
+		"tag": [],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "猴年大吉",
+		"id": "1035",
+		"code": "YearOfTheMonkey&gameType=0",
+		"eName": "YearOfTheMonkey",
+		"pic": "1035.png",
+		"type": "SLO",
+		"line": "40-60",
+		"state": 1,
+		"tag": [],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "僵尸先生",
+		"id": "1036",
+		"code": "TheHoppingDead&gameType=0",
+		"eName": "TheHoppingDead",
+		"pic": "1036.png",
+		"type": "SLO",
+		"line": "25-30",
+		"state": 1,
+		"tag": [],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "威尼斯野玫瑰",
+		"id": "1039",
+		"code": "RoseOfVenice&gameType=0",
+		"eName": "RoseOfVenice",
+		"pic": "1039.png",
+		"type": "SLO",
+		"line": "25-30",
+		"state": 1,
+		"tag": [],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "龙珠",
+		"id": "1040",
+		"code": "DragonBallReels&gameType=0",
+		"eName": "DragonBallReels",
+		"pic": "1040.png",
+		"type": "SLO",
+		"line": "25-30",
+		"state": 1,
+		"tag": [],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "水果狂欢",
+		"id": "411",
+		"code": "FruitParty&gameType=0",
+		"eName": "FruitParty",
+		"pic": "411.png",
+		"type": "SLO",
+		"line": "1-10",
+		"state": 1,
+		"tag": [
+			"HOT"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "更多猴子",
+		"id": "1014",
+		"code": "MoreMonkeys&gameType=0",
+		"eName": "MoreMonkeys",
+		"pic": "1014.png",
+		"type": "SLO",
+		"line": "100-1024",
+		"state": 1,
+		"tag": [],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "战斗英雄",
+		"id": "1006",
+		"code": "ActionHeroes&gameType=0",
+		"eName": "ActionHeroes",
+		"pic": "1006.png",
+		"type": "SLO",
+		"line": "40-60",
+		"state": 1,
+		"tag": [],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "赛车快道",
+		"id": "10",
+		"code": "FastTrack&gameType=0",
+		"eName": "FastTrack",
+		"pic": "10.png",
+		"type": "SLO",
+		"line": "1-10",
+		"state": 1,
+		"tag": [],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "狂野西部",
+		"id": "11",
+		"code": "GenericSlots&ttg_gameType=16",
+		"eName": "GenericSlots",
+		"pic": "11.png",
+		"type": "SLO",
+		"line": "1-10",
+		"state": 1,
+		"tag": [],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "好莱坞明星",
+		"id": "15",
+		"code": "HollywoodReels&gameType=0",
+		"eName": "HollywoodReels",
+		"pic": "15.png",
+		"type": "SLO",
+		"line": "1-10",
+		"state": 1,
+		"tag": [],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "太空入侵",
+		"id": "16",
+		"code": "GenericSlots&ttg_gameType=20",
+		"eName": "GenericSlots",
+		"pic": "16.png",
+		"type": "SLO",
+		"line": "1-10",
+		"state": 1,
+		"tag": [],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "幸运樱桃",
+		"id": "17",
+		"code": "GenericSlots&ttg_gameType=11",
+		"eName": "GenericSlots",
+		"pic": "17.png",
+		"type": "SLO",
+		"line": "1-10",
+		"state": 1,
+		"tag": [
+			"HOT"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "一杆进洞",
+		"id": "18",
+		"code": "HoleInOne&gameType=0",
+		"eName": "HoleInOne",
+		"pic": "18.png",
+		"type": "SLO",
+		"line": "1-10",
+		"state": 1,
+		"tag": [],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "现金地狱",
+		"id": "40",
+		"code": "FiveReelSlots&gameType=0",
+		"eName": "FiveReelSlots",
+		"pic": "40.png",
+		"type": "SLO",
+		"line": "1-10",
+		"state": 1,
+		"tag": [],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "奔向黄金",
+		"id": "57",
+		"code": "GenericSlots&ttg_gameType=10",
+		"eName": "GenericSlots",
+		"pic": "57.png",
+		"type": "SLO",
+		"line": "1-10",
+		"state": 1,
+		"tag": [],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "亚瑟寻宝之旅I",
+		"id": "63",
+		"code": "ArthursQuest&gameType=0",
+		"eName": "ArthursQuest",
+		"pic": "63.png",
+		"type": "SLO",
+		"line": "1-10",
+		"state": 1,
+		"tag": [],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "牛眼钞票",
+		"id": "64",
+		"code": "BullsEyeBucks&gameType=0",
+		"eName": "BullsEyeBucks",
+		"pic": "64.png",
+		"type": "SLO",
+		"line": "1-10",
+		"state": 1,
+		"tag": [],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "啤酒节",
+		"id": "65",
+		"code": "Oktoberfest&gameType=0",
+		"eName": "Oktoberfest",
+		"pic": "65.png",
+		"type": "SLO",
+		"line": "1-10",
+		"state": 1,
+		"tag": [],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "快抓钱",
+		"id": "391",
+		"code": "GenericSlots&ttg_gameType=21",
+		"eName": "GenericSlots",
+		"pic": "391.png",
+		"type": "SLO",
+		"line": "1-10",
+		"state": 1,
+		"tag": [],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "足球赛事",
+		"id": "401",
+		"code": "GoooalSlots&gameType=0",
+		"eName": "GoooalSlots",
+		"pic": "401.png",
+		"type": "SLO",
+		"line": "1-10",
+		"state": 1,
+		"tag": [],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "头彩假日",
+		"id": "413",
+		"code": "JackpotHolidaySlots&gameType=0",
+		"eName": "JackpotHolidaySlots",
+		"pic": "413.png",
+		"type": "SLO",
+		"line": "1-10",
+		"state": 1,
+		"tag": [],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "亚马逊奇遇",
+		"id": "414",
+		"code": "AmazonAdventureSlots&gameType=0",
+		"eName": "AmazonAdventureSlots",
+		"pic": "414.png",
+		"type": "SLO",
+		"line": "1-10",
+		"state": 1,
+		"tag": [],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "海王星的黄金",
+		"id": "416",
+		"code": "NeptunesGoldSlots&gameType=0",
+		"eName": "NeptunesGoldSlots",
+		"pic": "416.png",
+		"type": "SLO",
+		"line": "15-20",
+		"state": 1,
+		"tag": [],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "猴恋",
+		"id": "421",
+		"code": "MonkeyLoveSlots&gameType=0",
+		"eName": "MonkeyLoveSlots",
+		"pic": "421.png",
+		"type": "SLO",
+		"line": "15-20",
+		"state": 1,
+		"tag": [],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "龙8",
+		"id": "423",
+		"code": "Dragon8sSlots&gameType=0",
+		"eName": "Dragon8sSlots",
+		"pic": "423.png",
+		"type": "SLO",
+		"line": "15-20",
+		"state": 1,
+		"tag": [
+			"HOT"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "极地财宝",
+		"id": "424",
+		"code": "PolarRichesSlots&gameType=0",
+		"eName": "PolarRichesSlots",
+		"pic": "424.png",
+		"type": "SLO",
+		"line": "15-20",
+		"state": 1,
+		"tag": [],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "疯狂木乃伊",
+		"id": "428",
+		"code": "WildMummySlots&gameType=0",
+		"eName": "WildMummySlots",
+		"pic": "428.png",
+		"type": "SLO",
+		"line": "15-20",
+		"state": 1,
+		"tag": [],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "奇妙嬴现金",
+		"id": "437",
+		"code": "FanCashticSlots&gameType=0",
+		"eName": "FanCashticSlots",
+		"pic": "437.png",
+		"type": "SLO",
+		"line": "1-10",
+		"state": 1,
+		"tag": [],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "威尼斯万岁",
+		"id": "438",
+		"code": "VivaVeneziaSlots&gameType=0",
+		"eName": "VivaVeneziaSlots",
+		"pic": "438.png",
+		"type": "SLO",
+		"line": "15-20",
+		"state": 1,
+		"tag": [],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "淑女魅力",
+		"id": "439",
+		"code": "LadysCharmsSlots&gameType=0",
+		"eName": "LadysCharmsSlots",
+		"pic": "439.png",
+		"type": "SLO",
+		"line": "15-20",
+		"state": 1,
+		"tag": [],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "吉李：赏金猎人",
+		"id": "440",
+		"code": "KatLeeSlots&gameType=0",
+		"eName": "KatLeeSlots",
+		"pic": "440.png",
+		"type": "SLO",
+		"line": "40-60",
+		"state": 1,
+		"tag": [],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "浆果培击",
+		"id": "444",
+		"code": "BerryBlastSlots&gameType=0",
+		"eName": "BerryBlastSlots",
+		"pic": "444.png",
+		"type": "SLO",
+		"line": "25-30",
+		"state": 1,
+		"tag": [],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "算命嬴大奖",
+		"id": "446",
+		"code": "FortuneTellerSlots&gameType=0",
+		"eName": "FortuneTellerSlots",
+		"pic": "446.png",
+		"type": "SLO",
+		"line": "15-20",
+		"state": 1,
+		"tag": [],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "三重红利幸运大转盘",
+		"id": "447",
+		"code": "TBSpinNWinSlots&gameType=0",
+		"eName": "TBSpinNWinSlots",
+		"pic": "447.png",
+		"type": "SLO",
+		"line": "25-30",
+		"state": 1,
+		"tag": [],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "冲浪",
+		"id": "449",
+		"code": "SurfsUpSlots&gameType=0",
+		"eName": "SurfsUpSlots",
+		"pic": "449.png",
+		"type": "SLO",
+		"line": "15-20",
+		"state": 1,
+		"tag": [],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "魔法森林",
+		"id": "452",
+		"code": "MagicalGroveSlots&gameType=0",
+		"eName": "MagicalGroveSlots",
+		"pic": "452.png",
+		"type": "SLO",
+		"line": "15-20",
+		"state": 1,
+		"tag": [],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "大卡西尼",
+		"id": "453",
+		"code": "TheGreatCasiniSlots&gameType=0",
+		"eName": "TheGreatCasiniSlots",
+		"pic": "453.png",
+		"type": "SLO",
+		"line": "15-20",
+		"state": 1,
+		"tag": [],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "亚瑟寻宝之旅II",
+		"id": "462",
+		"code": "ArthursQuestIISlots&gameType=0",
+		"eName": "ArthursQuestIISlots",
+		"pic": "462.png",
+		"type": "SLO",
+		"line": "1-10",
+		"state": 1,
+		"tag": [],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "维多利山脊",
+		"id": "468",
+		"code": "VictoryRidgeSlots&gameType=0",
+		"eName": "VictoryRidgeSlots",
+		"pic": "468.png",
+		"type": "SLO",
+		"line": "15-20",
+		"state": 1,
+		"tag": [],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "酒吧门铃",
+		"id": "473",
+		"code": "BarsAndBellsSlots&gameType=0",
+		"eName": "BarsAndBellsSlots",
+		"pic": "473.png",
+		"type": "SLO",
+		"line": "15-20",
+		"state": 1,
+		"tag": [],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "万恶旋转",
+		"id": "474",
+		"code": "SinfulSpinsSlots&gameType=0",
+		"eName": "SinfulSpinsSlots",
+		"pic": "474.png",
+		"type": "SLO",
+		"line": "15-20",
+		"state": 1,
+		"tag": [],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "天龙火焰",
+		"id": "475",
+		"code": "DracosFire&gameType=0",
+		"eName": "DracosFire",
+		"pic": "475.png",
+		"type": "SLO",
+		"line": "40-60",
+		"state": 1,
+		"tag": [],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "天使的触摸",
+		"id": "477",
+		"code": "AngelsTouch&gameType=0",
+		"eName": "AngelsTouch",
+		"pic": "477.png",
+		"type": "SLO",
+		"line": "40-60",
+		"state": 1,
+		"tag": [],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "塞伦盖提之钻",
+		"id": "478",
+		"code": "SerengetiDiamonds&gameType=0",
+		"eName": "SerengetiDiamonds",
+		"pic": "478.png",
+		"line": "25-30",
+		"state": 1,
+		"type": "SLO",
+		"tag": [],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "吸血鬼大战狼人",
+		"id": "480",
+		"code": "VampiresVsWerewolves&gameType=0",
+		"eName": "VampiresVsWerewolves",
+		"pic": "480.png",
+		"type": "SLO",
+		"line": "15-20",
+		"state": 1,
+		"tag": [],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "幕府摊牌",
+		"id": "483",
+		"code": "ShogunShowdown&gameType=0",
+		"eName": "ShogunShowdown",
+		"pic": "483.png",
+		"type": "SLO",
+		"line": "40-60",
+		"state": 1,
+		"tag": [],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "失落的神庙",
+		"id": "484",
+		"code": "LostTemple&gameType=0",
+		"eName": "LostTemple",
+		"pic": "484.png",
+		"type": "SLO",
+		"line": "40-60",
+		"state": 1,
+		"tag": [],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "外道姬",
+		"id": "515",
+		"code": "SamuraiPrincess&gameType=0",
+		"eName": "SamuraiPrincess",
+		"pic": "515.png",
+		"type": "SLO",
+		"line": "40-60",
+		"state": 1,
+		"tag": [],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "计程车!",
+		"id": "516",
+		"code": "Taxi&gameType=0",
+		"eName": "Taxi",
+		"pic": "516.png",
+		"type": "SLO",
+		"line": "25-30",
+		"state": 1,
+		"tag": [],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "火辣金砖",
+		"id": "533",
+		"code": "ChilliGold&gameType=0",
+		"eName": "ChilliGold",
+		"pic": "533.png",
+		"type": "SLO",
+		"line": "40-60",
+		"state": 1,
+		"tag": [
+			"HOT"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "招财猫8",
+		"id": "540",
+		"code": "Fortune8Cat&gameType=0",
+		"eName": "Fortune8Cat",
+		"pic": "540.png",
+		"type": "SLO",
+		"line": "100-1024",
+		"state": 1,
+		"tag": [],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "招财进宝",
+		"id": "1000",
+		"code": "FortunePays&gameType=0",
+		"eName": "FortunePays",
+		"pic": "1000.png",
+		"type": "SLO",
+		"line": "40-60",
+		"state": 1,
+		"tag": [
+			"HOT"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "十二生肖",
+		"id": "1002",
+		"code": "ZodiacWilds&gameType=0",
+		"eName": "ZodiacWilds",
+		"pic": "1002.png",
+		"type": "SLO",
+		"line": "40-60",
+		"state": 1,
+		"tag": [
+			"HOT"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "金海豚",
+		"id": "1003",
+		"code": "DolphinGold&gameType=0",
+		"eName": "DolphinGold",
+		"pic": "1003.png",
+		"type": "SLO",
+		"line": "40-60",
+		"state": 1,
+		"tag": [],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "西游记",
+		"id": "1004",
+		"code": "JourneyWest&gameType=0",
+		"eName": "JourneyWest",
+		"pic": "1004.png",
+		"type": "SLO",
+		"line": "40-60",
+		"state": 1,
+		"tag": [
+			"HOT"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "银狮奖",
+		"id": "1007",
+		"code": "SilverLion&gameType=0",
+		"eName": "SilverLion",
+		"pic": "1007.png",
+		"type": "SLO",
+		"line": "100-1024",
+		"state": 1,
+		"tag": [
+			"HOT"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "快抓钱2",
+		"id": "1008",
+		"code": "CashGrabII&gameType=0",
+		"eName": "CashGrabII",
+		"pic": "1008.png",
+		"type": "SLO",
+		"line": "100-1024",
+		"state": 1,
+		"tag": [
+			"HOT"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "翡翠帝国",
+		"id": "1011",
+		"code": "JadeEmpire&gameType=0",
+		"eName": "JadeEmpire",
+		"pic": "1011.png",
+		"type": "SLO",
+		"line": "40-60",
+		"state": 1,
+		"tag": [],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "猴子捞月",
+		"id": "1013",
+		"code": "MonkeyAndTheMoon&gameType=0",
+		"eName": "MonkeyAndTheMoon",
+		"pic": "1013.png",
+		"type": "SLO",
+		"line": "40-60",
+		"state": 1,
+		"tag": [
+			"HOT"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "惹火的自由旋转",
+		"id": "1015",
+		"code": "RedHotFreeSpins&gameType=0",
+		"eName": "RedHotFreeSpins",
+		"pic": "1015.png",
+		"type": "SLO",
+		"line": "100-1024",
+		"state": 1,
+		"tag": [
+			"HOT"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "天神VS冥王",
+		"id": "1017",
+		"code": "ZeusVsHades&gameType=0",
+		"eName": "ZeusVsHades",
+		"pic": "1017.png",
+		"line": "25-30",
+		"state": 1,
+		"type": "SLO",
+		"tag": [],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "金罐子II",
+		"id": "1018",
+		"code": "PotOGoldII&gameType=0",
+		"eName": "PotOGoldII",
+		"pic": "1018.png",
+		"line": "25-30",
+		"state": 1,
+		"type": "SLO",
+		"tag": [],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "海龍王",
+		"id": "1021",
+		"code": "DragonKing&gameType=0",
+		"eName": "DragonKing",
+		"pic": "1021.png",
+		"line": "25-30",
+		"state": 1,
+		"type": "SLO",
+		"tag": [
+			"HOT"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "炽热火山",
+		"id": "1022",
+		"code": "HotVolcano&gameType=0",
+		"eName": "HotVolcano",
+		"pic": "1022.png",
+		"line": "25-30",
+		"state": 1,
+		"type": "SLO",
+		"tag": [
+			"HOT"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "耍蛇者",
+		"id": "1023",
+		"code": "SnakeCharmer&gameType=0",
+		"eName": "SnakeCharmer",
+		"pic": "1023.png",
+		"line": "25-30",
+		"state": 1,
+		"type": "SLO",
+		"tag": [
+			"HOT"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "幸运熊猫",
+		"id": "1025",
+		"code": "LuckyPanda&gameType=0",
+		"eName": "LuckyPanda",
+		"pic": "1025.png",
+		"type": "SLO",
+		"line": "40-60",
+		"state": 1,
+		"tag": [
+			"HOT"
+		],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "雅典娜",
+		"id": "1026",
+		"code": "Athena&gameType=0",
+		"eName": "Athena",
+		"pic": "1026.png",
+		"type": "SLO",
+		"line": "40-60",
+		"state": 1,
+		"tag": [],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "阿拉丁—点金手",
+		"id": "1027",
+		"code": "AladdinHandOfMidas&gameType=0",
+		"eName": "AladdinHandOfMidas",
+		"pic": "1027.png",
+		"type": "SLO",
+		"line": "25-30",
+		"state": 1,
+		"tag": [],
+		"category": "TTG",
+		"subType": "TTG"
+	},
+	{
+		"name": "国际赛车",
+		"id": "1028",
+		"code": "GrandPrix&gameType=0",
+		"eName": "GrandPrix",
+		"pic": "1028.png",
+		"type": "SLO",
+		"line": "100-1024",
+		"state": 1,
+		"tag": [],
+		"category": "TTG",
+		"subType": "TTG"
+	}
+]

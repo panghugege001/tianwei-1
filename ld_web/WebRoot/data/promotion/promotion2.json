@@ -1,0 +1,209 @@
+{
+  "success": true,
+  "msg": "",
+  "type": [{"LON": "长期"}, {"LIM": "限时"}, {"TOP": "免费彩金"}, {"PHO": "手机"},{"BRA": "品牌站"}],
+  "data": [
+    {
+      "type": "|LON|BRA",
+      "title": "赌神堂",
+      "id": "vip",
+      "url": "",
+      "image": "/images/promotion/vip.jpg", 
+       "link": "/vip.jsp",
+      "startDate": "",
+      "endDate": "长期活动" 
+    }, 
+    {   
+      "type": "|LON|BRA",
+      "title": "海派甜心", 
+      "id": "vipzhaoji",
+      "url": "", 
+      "image": "/images/promotion/tianxin_yh.jpg", 
+       "link": "/activety/meinv/index.jsp",
+      "startDate": "",
+      "endDate": "长期活动" 
+    }, 
+    {   
+      "type": "|LON|BRA",
+      "title": "新年钜惠", 
+      "id": "vipzhaoji",
+      "url": "", 
+      "image": "/images/promotion/xinnian_yh.jpg", 
+       "link": "/activety/xinnian/index.jsp",
+      "startDate": "",
+      "endDate": "长期活动" 
+    },
+    {   
+      "type": "|LON|BRA",
+      "title": "PT千里跃龙门", 
+      "id": "longmen",  
+      "url": "/data/promotion/longmen2.html?v=1",  
+      "image": "/images/promotion/yh_longmen.jpg", 
+       "link": "",
+      "startDate": "",
+      "endDate": "长期活动" 
+    },              
+    {   
+      "type": "|LON|BRA",
+      "title": "支付宝秒存领红包", 
+      "id": "vipzhaoji",
+      "url": "/data/promotion/zhifubao.html?v=1", 
+      "image": "/images/promotion/zhifubaoyh.jpg", 
+       "link": "",
+      "startDate": "",
+      "endDate": "长期活动" 
+    },    
+    {   
+      "type": "|LON|BRA",
+      "title": "VIP招募令", 
+      "id": "vipzhaoji",
+      "url": "", 
+      "image": "/images/promotion/yh_vipzm.jpg", 
+       "link": "/vip/vip.jsp",
+      "startDate": "",
+      "endDate": "长期活动" 
+    },  
+    {   
+      "type": "|LON|BRA",
+      "title": "AG连赢再送金",
+      "id": "agly",
+      "url": "/data/promotion/aglianying.html", 
+      "image": "/images/promotion/agyh.jpg", 
+       "link": "",
+      "startDate": "",
+      "endDate": "长期活动" 
+    },  
+    {   
+      "type": "|LON|BRA",
+      "title": "龙币大作战", 
+      "id": "longbi",
+      "url": "/data/promotion/lbzz.html?v=1", 
+      "image": "/images/promotion/lbyh.jpg", 
+       "link": "",
+      "startDate": "",
+      "endDate": "长期活动" 
+    },            
+    {   
+      "type": "|LON|BRA",
+      "title": "微信群发就送68红包", 
+      "id": "weixinqunfa",
+      "url": "/data/promotion/weixinqunfa.html", 
+      "image": "/images/promotion/wxqf_yh.jpg", 
+       "link": "",
+      "startDate": "",
+      "endDate": "长期活动" 
+    },      
+    {
+      "type": "|LON|BRA",
+      "title": "免费看大片",
+      "id": "dapian",
+      "url": "",
+      "image": "/images/promotion/dapian.jpg", 
+       "link": "/mobile/mb_dianying/index.html",
+      "startDate": "",
+      "endDate": "长期活动" 
+    },      
+    {   
+      "type": "|LON|BRA",
+      "title": "天威红包，日日领、日日发",
+      "id": "fuqin",
+      "url": "/data/promotion/fuqin.html?v=2", 
+      "image": "/images/promotion/y_hongbao.jpg", 
+       "link": "",
+      "startDate": "",
+      "endDate": "长期活动" 
+    },   
+    {
+      "type": "|LON|BRA", 
+      "title": "签到好礼",
+      "id": "qiandao",
+      "url": "/data/promotion/qiandao.html?v=1",
+      "image": "/images/promotion/qiandao.jpg", 
+       "link": "",
+      "startDate": "",
+      "endDate": "长期活动" 
+    },{
+      "type": "|LIM",
+      "title": "每日存、每日高额送",
+      "id": "cunsong",
+      "url": "",
+      "image": "/images/promotion/cunsong.jpg", 
+      "link": "/activety/topic/index.jsp",
+      "startDate": "",
+      "endDate": "限时活动"
+    },
+     {
+      "type": "|TOP",
+      "title": "天威8-88体验金",
+      "id": "tyj",
+      "url": "/data/promotion/tyj.html?v=1",
+      "image": "/images/promotion/tyj.jpg",
+      "link": "",
+      "startDate": "",
+      "endDate": "长期活动"
+    },
+	 
+	 {
+      "type": "|LON|BRA",
+      "title": "次次存送2888",
+      "id": "cicun",
+      "url": "/data/promotion/cicun.html?v=1",
+      "image": "/images/promotion/cicun.jpg",
+      "link": "",
+      "startDate": "",
+      "endDate": "长期活动"
+    },
+    {
+      "type": "|TOP",
+      "title": "订阅邮件领18",
+      "id": "mail",
+      "url": "/data/promotion/mail.html?v=1",
+      "image": "/images/promotion/mail.jpg",
+      "link": "",
+      "startDate": "",
+      "endDate": "2017/3/1起"
+    },
+	{
+      "type": "|LON",
+      "title": "老虎机开户首存100％",
+      "id": "shoucun",
+      "url": "/data/promotion/shoucun.html",
+      "image": "/images/promotion/shoucun.jpg",
+      "link": "",
+      "startDate": "",
+      "endDate": "长期有效"
+    },
+	{
+      "type": "|LON",
+      "title": "天威救援金无上限",
+      "id": "jyj",
+      "url": "/data/promotion/jyj.html",
+      "image": "/images/promotion/jyj.jpg",
+      "link": "",
+      "startDate": "",
+      "endDate": "长期有效"
+    },
+	{
+      "type": "|LON",
+      "title": "天天返水1％",
+      "id": "return",
+      "url": "/data/promotion/return.html?v=11",
+      "image": "/images/promotion/return.jpg",
+      "link": "",
+      "startDate": "",
+      "endDate": "长期有效"
+    }, 
+    
+    {
+      "type": "|LON",
+      "title": "秒存加赠0.5%",
+      "id": "miao",
+      "url": "/data/promotion/miao.html",
+      "image": "/images/promotion/miao.jpg",
+      "link": "",
+      "startDate": "",
+      "endDate": "长期有效"
+    }  
+
+  ]
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE validators PUBLIC "-//OpenSymphony Group//XWork Validator 1.0.2//EN"
+ "http://struts.apache.org/dtds/xwork-validator-1.0.2.dtd">
+
+<validators>
+	<field name="start">
+		<field-validator type="date">
+			<message>您输入的起始时间格式不正确</message>
+		</field-validator>
+	</field>
+	<field name="end">
+		<field-validator type="date">
+			<message>您输入的结束时间格式不正确</message>
+		</field-validator>
+	</field>
+</validators>

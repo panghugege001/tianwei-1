@@ -1,0 +1,656 @@
+{
+	"success": true,
+	"data": [{
+		"type": "pngGames",
+		"gameList": [{
+			"eName": "5xMagic",
+			"name": "魔法5X",
+			"id": "100199",
+			"gid": "5xmagicmobile",
+			"type": "slots",
+			"pic": "W88-Slots-5xMagic.jpg",
+			"urlCode": ""
+		}, {
+			"eName": "Ace of Spades",
+			"name": "黑桃A",
+			"id": "100099",
+			"gid": "aceofspadesmobile",
+			"type": "slots",
+			"pic": "W88-Slots-Ace-of-Spades.jpg",
+			"urlCode": ""
+		}, {
+			"eName": "Aztec Idols",
+			"name": "阿兹特克圣像",
+			"id": "100243",
+			"gid": "aztecidolsmobile",
+			"type": "slots",
+			"pic": "W88-Slots-Aztec-Idols.jpg",
+			"urlCode": ""
+		}, {
+			"eName": "Chinese New Year",
+			"name": "喜庆中国年",
+			"id": "100277",
+			"gid": "chinesenewyearmobile",
+			"type": "slots",
+			"pic": "W88-Slots-Chinese-New-Year.jpg",
+			"urlCode": ""
+		}, {
+			"eName": "Crazy Cows",
+			"name": "疯狂的奶牛",
+			"id": "100284",
+			"gid": "crazycowsmobile",
+			"type": "slots",
+			"pic": "W88-Slots-Crazy-Cows.jpg",
+			"urlCode": ""
+		}, {
+			"eName": "Dragon Ship",
+			"name": "龙船",
+			"id": "100238",
+			"gid": "dragonshipmobile",
+			"type": "slots",
+			"pic": "W88-Slots-Dragon-Ship.jpg",
+			"urlCode": ""
+		}, {
+			"eName": "Enchanted Crystals",
+			"name": "魔幻水晶",
+			"id": "100259",
+			"gid": "enchantedcrystalsmobile",
+			"type": "slots",
+			"pic": "W88-Slots-Enchanted-Crystals.jpg",
+			"urlCode": ""
+		}, {
+			"eName": "Enchanted Meadow",
+			"name": "魔法草地",
+			"id": "100225",
+			"gid": "enchantedmeadowmobile",
+			"type": "slots",
+			"pic": "W88-Slots-Enchanted-Meadow.jpg",
+			"urlCode": ""
+		}, {
+			"eName": "Energoonz",
+			"name": "活力小怪物",
+			"id": "100262",
+			"gid": "energoonzmobile",
+			"type": "slots",
+			"pic": "W88-Slots-Energoonz.jpg",
+			"urlCode": ""
+		}, {
+			"eName": "Fortune Teller",
+			"name": "预言者",
+			"id": "100196",
+			"gid": "fortunetellermobile",
+			"type": "slots",
+			"pic": "W88-Slots-Fortune-Teller.jpg",
+			"urlCode": ""
+		}, {
+			"eName": "GEMiX",
+			"name": "糖果爱消除",
+			"id": "100286",
+			"gid": "gemixmobile",
+			"type": "slots",
+			"pic": "W88-Slots-GEMiX.jpg",
+			"urlCode": ""
+		}, {
+			"eName": "Gold Trophy 2",
+			"name": "黄金杯2",
+			"id": "100246",
+			"gid": "goldtrophy2mobile",
+			"type": "slots",
+			"pic": "W88-Slots-Gold-Trophy-2.jpg",
+			"urlCode": ""
+		}, {
+			"eName": "Golden Ticket",
+			"name": "黄金门票",
+			"id": "100285",
+			"gid": "goldenticketmobile",
+			"type": "slots",
+			"pic": "W88-Slots-Golden-Ticket.jpg",
+			"urlCode": ""
+		}, {
+			"eName": "Irish Gold",
+			"name": "爱尔兰黄金",
+			"id": "100200",
+			"gid": "irishgoldmobile",
+			"type": "slots",
+			"pic": "W88-Slots-Irish-Gold.jpg",
+			"urlCode": ""
+		}, {
+			"eName": "Jewel Box",
+			"name": "珠宝盒",
+			"id": "100242",
+			"gid": "jewelboxmobile",
+			"type": "slots",
+			"pic": "W88-Slots-Jewel-Box.jpg",
+			"urlCode": ""
+		}, {
+			"eName": "Jolly Roger",
+			"name": "七海寻宝",
+			"id": "100040",
+			"gid": "jollyrogermobile",
+			"type": "slots",
+			"pic": "W88-Slots-Jolly-Roger.jpg",
+			"urlCode": ""
+		}, {
+			"eName": "Lady of Fortune",
+			"name": "财富女神",
+			"id": "100278",
+			"gid": "ladyoffortunemobile",
+			"type": "slots",
+			"pic": "W88-Slots-Lady-of-Fortune.jpg",
+			"urlCode": ""
+		}, {
+			"eName": "Leprechaun goes Egypt",
+			"name": "小矮妖的埃及之旅",
+			"id": "100251",
+			"gid": "\n        leprechaungoesegyptmobile\n      ",
+			"type": "slots",
+			"pic": "W88-Slots-Leprechaun-goes-Egypt.jpg",
+			"urlCode": ""
+		}, {
+			"eName": "Lucky Diamonds",
+			"name": "幸运钻石",
+			"id": "100005",
+			"gid": "luckydiamondsmobile",
+			"type": "slots",
+			"pic": "W88-Slots-Lucky-Diamonds.jpg",
+			"urlCode": ""
+		}, {
+			"eName": "Merry Xmas",
+			"name": "圣诞快乐",
+			"id": "100288",
+			"gid": "merryxmasmobile",
+			"type": "slots",
+			"pic": "W88-Slots-Merry-Xmas.jpg",
+			"urlCode": ""
+		}, {
+			"eName": "Mystery Joker",
+			"name": "神秘小丑",
+			"id": "100283",
+			"gid": "mysteryjokermobile",
+			"type": "slots",
+			"pic": "W88-Slots-Mystery-Joker.jpg",
+			"urlCode": ""
+		}, {
+			"eName": "Myth",
+			"name": "神话",
+			"id": "100245",
+			"gid": "mythmobile",
+			"type": "slots",
+			"pic": "W88-Slots-Myth.jpg",
+			"urlCode": ""
+		}, {
+			"eName": "Ninja Fruits",
+			"name": "水果忍者",
+			"id": "100253",
+			"gid": "ninjafruitsmobile",
+			"type": "slots",
+			"pic": "W88-Slots-Ninja-Fruits.jpg",
+			"urlCode": ""
+		}, {
+			"eName": "Pearl Lagoon",
+			"name": "珍珠湖",
+			"id": "100241",
+			"gid": "pearllagoonmobile",
+			"type": "slots",
+			"pic": "W88-Slots-Pearl-Lagoon.jpg",
+			"urlCode": ""
+		}, {
+			"eName": "Pearls of India",
+			"name": "印度珍珠",
+			"id": "100282",
+			"gid": "pearlsofindiamobile",
+			"type": "slots",
+			"pic": "W88-Slots-Pearls-of-India.jpg",
+			"urlCode": ""
+		}, {
+			"eName": "Photo Safari",
+			"name": "非洲掠影",
+			"id": "100197",
+			"gid": "photosafarimobile",
+			"type": "slots",
+			"pic": "W88-Slots-Photo-Safari.jpg",
+			"urlCode": ""
+		}, {
+			"eName": "Riches of RA",
+			"name": "太阳神财富",
+			"id": "100237",
+			"gid": "richesoframobile",
+			"type": "slots",
+			"pic": "W88-Slots-Riches-of-RA.jpg",
+			"urlCode": ""
+		}, {
+			"eName": "Space Race",
+			"name": "太空竞赛",
+			"id": "100198",
+			"gid": "spaceracemobile",
+			"type": "slots",
+			"pic": "W88-Slots-Space-Race.jpg",
+			"urlCode": ""
+		}, {
+			"eName": "Wild Blood",
+			"name": "狂野之血",
+			"id": "100250",
+			"gid": "wildbloodmobile",
+			"type": "slots",
+			"pic": "W88-Slots-Wild-Blood.jpg",
+			"urlCode": ""
+		}, {
+			"eName": "Wild Melon",
+			"name": "野生甜瓜",
+			"id": "100004",
+			"gid": "wildmelonmobile",
+			"type": "slots",
+			"pic": "W88-Slots-Wild-Melon.jpg",
+			"urlCode": ""
+		}, {
+			"eName": "Tower Quest",
+			"name": "探索摩天楼",
+			"id": "100287",
+			"gid": "towerquestmobile",
+			"type": "slots",
+			"pic": "W88-Slots-Tower-Quest.jpg",
+			"urlCode": ""
+		}, {
+			"eName": "Easter Eggs",
+			"name": "复活节彩蛋",
+			"id": "100293",
+			"gid": "eastereggsmobile",
+			"type": "slots",
+			"pic": "W88-Slots-Easter-Eggs.jpg",
+			"urlCode": ""
+		}, {
+			"eName": "Pimped",
+			"name": "酷酷汽车",
+			"id": "100291",
+			"gid": "pimpedmobile",
+			"type": "slots",
+			"pic": "W88-Slots-Pimped.jpg",
+			"urlCode": ""
+		}, {
+			"eName": "Tower Quest",
+			"name": "探索摩天楼",
+			"id": "100287",
+			"gid": "towerquestmobile",
+			"type": "slots",
+			"pic": "W88-Slots-Tower-Quest.jpg",
+			"urlCode": ""
+		}, {
+			"eName": "Golden Legend",
+			"name": "黄金传奇",
+			"id": "100290",
+			"gid": "goldenlegendmobile",
+			"type": "slots",
+			"pic": "W88-Slots-Golden-Legend.jpg",
+			"urlCode": ""
+		}, {
+			"eName": "Royal Masquerade",
+			"name": "皇室化妆舞会",
+			"id": "100298",
+			"gid": "masquerademobile",
+			"type": "slots",
+			"pic": "W88-Slots-Royal-Masquerade.jpg",
+			"urlCode": ""
+		}, {
+			"eName": "Spin Party",
+			"name": "旋转乐园",
+			"id": "100292",
+			"gid": "spinpartymobile",
+			"type": "slots",
+			"pic": "W88-Slots-Spin-Party.jpg",
+			"urlCode": ""
+		}, {
+			"eName": "Wild North",
+			"name": "狂野北方",
+			"id": "100294",
+			"gid": "wildnorthmobile",
+			"type": "slots",
+			"pic": "Wild-North.jpg",
+			"urlCode": ""
+		}, {
+			"eName": "Eye of the Kraken",
+			"name": "海妖之眼",
+			"id": "100297",
+			"gid": "eyeofthekrakenmobile",
+			"type": "slots",
+			"pic": "Eye-of-the-Kraken.jpg",
+			"urlCode": ""
+		}, {
+			"eName": "Happy Halloween",
+			"name": "欢度万圣节",
+			"id": "100305",
+			"gid": "happyhalloweenmobile",
+			"type": "slots",
+			"pic": "Happy-Halloween.jpg",
+			"urlCode": ""
+		}]
+	}, {
+		"type": "3DGames",
+		"gameList": [{
+			"eName": "Trick or Treat",
+			"name": "万圣惊魂夜",
+			"id": "",
+			"gid": "trickortreat",
+			"type": "slots",
+			"pic": "TrickorTreat.jpg",
+			"urlCode": ""
+		}, {
+			"eName": "Fruitilicious",
+			"name": "水果乐园",
+			"id": "",
+			"gid": "fruitilicious",
+			"type": "slots",
+			"pic": "Fruitilicious.jpg",
+			"urlCode": ""
+		}, {
+			"eName": "Queen Bee",
+			"name": "蜜花园",
+			"id": "",
+			"gid": "queenbee",
+			"type": "slots",
+			"pic": "queenbee.jpg",
+			"urlCode": ""
+		}, {
+			"eName": "KlassiK",
+			"name": "经典老虎机",
+			"id": "",
+			"gid": "klassik",
+			"type": "slots",
+			"pic": "klassik.jpg",
+			"urlCode": ""
+		}, {
+			"eName": "Pirate's Treasure",
+			"name": "海盗寻宝",
+			"id": "",
+			"gid": "piratestreasure",
+			"type": "slots",
+			"pic": "piratestreasure.jpg",
+			"urlCode": ""
+		}, {
+			"eName": "Panda",
+			"name": "萌萌哒",
+			"id": "",
+			"gid": "panda",
+			"type": "slots",
+			"pic": "panda.jpg",
+			"urlCode": ""
+		}, {
+			"eName": "Golf Tour",
+			"name": "高尔夫巡回赛",
+			"id": "",
+			"gid": "golftour",
+			"type": "slots",
+			"pic": "golftour.jpg",
+			"urlCode": ""
+		}]
+	}, {
+		"type": "bsGames",
+		"gameList": [{
+			"eName": "Three Wishes",
+			"name": "三个愿望",
+			"id": "",
+			"gid": "291|292|356",
+			"type": "slots",
+			"pic": "W88-Slots-Three-Wishes.jpg",
+			"urlCode": ""
+		}, {
+			"eName": "True Illusions",
+			"name": "真实幻想",
+			"id": "",
+			"gid": "396|397|398",
+			"type": "slots",
+			"pic": "W88-Slots-True-Illusions.jpg",
+			"urlCode": ""
+		}, {
+			"eName": "Rook's Revenge",
+			"name": "鲁克的复仇",
+			"id": "",
+			"gid": "318|319|368",
+			"type": "slots",
+			"pic": "W88-Slots-Rooks-Revenge.jpg",
+			"urlCode": ""
+		}, {
+			"eName": "Safari Sam",
+			"name": "山姆的冒险",
+			"id": "",
+			"gid": "303|304|373",
+			"type": "slots",
+			"pic": "W88-Slots-Safari-Sam.jpg",
+			"urlCode": ""
+		}, {
+			"eName": "After Night Falls",
+			"name": "夜幕降临",
+			"id": "",
+			"gid": "306|307|364",
+			"type": "slots",
+			"pic": "W88-Slots-After-Night-Falls.jpg",
+			"urlCode": ""
+		}, {
+			"eName": "Under the Bed",
+			"name": "床底世界",
+			"id": "",
+			"gid": "320|321|365",
+			"type": "slots",
+			"pic": "W88-Slots-Under-the-Bed.jpg",
+			"urlCode": ""
+		}, {
+			"eName": "Boomanji",
+			"name": "烟花祭",
+			"id": "",
+			"gid": "324|325|369",
+			"type": "slots",
+			"pic": "W88-Slots-Boomanji.jpg",
+			"urlCode": ""
+		}, {
+			"eName": "The True Sheriff",
+			"name": "正义警长",
+			"id": "",
+			"gid": "385|386|387",
+			"type": "slots",
+			"pic": "W88-Slots-The-True-Sheriff.jpg",
+			"urlCode": ""
+		}, {
+			"eName": "Lucky7",
+			"name": "幸运7",
+			"id": "",
+			"gid": "263|268|355",
+			"type": "slots",
+			"pic": "W88-Slots-Lucky7.jpg",
+			"urlCode": ""
+		}, {
+			"eName": "Under the Sea",
+			"name": "海底世界",
+			"id": "",
+			"gid": "455|456|457",
+			"type": "slots",
+			"pic": "W88-Slots-Under-the-Sea.jpg",
+			"urlCode": ""
+		}, {
+			"eName": "Sushi Bar",
+			"name": "寿司酒吧",
+			"id": "",
+			"gid": "465|466|467",
+			"type": "slots",
+			"pic": "W88-Slots-Sushi-Bar.jpg",
+			"urlCode": ""
+		}, {
+			"eName": "Sugar Pop",
+			"name": "糖果之星",
+			"id": "",
+			"gid": "494|495|496",
+			"type": "slots",
+			"pic": "W88-Slots-Sugar-Pop.jpg",
+			"urlCode": ""
+		}, {
+			"eName": "Fruit Zen",
+			"name": "水果忍者",
+			"id": "",
+			"gid": "513|514|515",
+			"type": "slots",
+			"pic": "W88-Slots-Fruit-Zen.jpg",
+			"urlCode": ""
+		}, {
+			"eName": "Gypsy Rose",
+			"name": "吉普赛玫瑰",
+			"id": "",
+			"gid": "479|480|481",
+			"type": "slots",
+			"pic": "W88-Slots-Gypsy-Rose.jpg",
+			"urlCode": ""
+		}, {
+			"eName": "Heist",
+			"name": "抢劫者",
+			"id": "",
+			"gid": "468|469|470",
+			"type": "slots",
+			"pic": "W88-Slots-Heist.jpg",
+			"urlCode": ""
+		}, {
+			"eName": "More Gold Diggin",
+			"name": "掘金者",
+			"id": "",
+			"gid": "451|452|453",
+			"type": "slots",
+			"pic": "W88-Slots-More-Gold-Diggin.jpg",
+			"urlCode": ""
+		}, {
+			"eName": "The Curious Machine Plus",
+			"name": "神奇的机器",
+			"id": "",
+			"gid": "462|463|464",
+			"type": "slots",
+			"pic": "W88-Slots-Curious-Machine.jpg",
+			"urlCode": ""
+		}, {
+			"eName": "Pinocchio",
+			"name": "木偶奇遇记",
+			"id": "",
+			"gid": "521|522|523",
+			"type": "slots",
+			"pic": "W88-Slots-Pinocchio.jpg",
+			"urlCode": ""
+		}, {
+			"eName": "Event Horizon",
+			"name": "黑洞",
+			"id": "",
+			"gid": "549|550|551",
+			"type": "slots",
+			"pic": "W88-Slots-Event-Horizon.jpg",
+			"urlCode": ""
+		}, {
+			"eName": "Weekend In Vegas",
+			"name": "拉斯维加斯的周末",
+			"id": "",
+			"gid": "591|592|593",
+			"type": "slots",
+			"pic": "Weekend-in-Vegas.jpg",
+			"urlCode": ""
+		}, {
+			"eName": "At the Movies",
+			"name": "看电影",
+			"id": "",
+			"gid": "607|608|609",
+			"type": "slots",
+			"pic": "W88-Slots-At-the-Movies.jpg",
+			"urlCode": ""
+		}, {
+			"eName": "The Tipsy Tourist",
+			"name": "休闲之旅",
+			"id": "",
+			"gid": "598|599|600",
+			"type": "slots",
+			"pic": "test.jpg",
+			"urlCode": ""
+		}]
+	}, {
+		"type": "ctxmGames",
+		"gameList": [{
+			"eName": "Atlantis Dive",
+			"name": "亚特兰蒂斯潜水",
+			"id": "",
+			"gid": "xc_mobileatlantisdiveslots",
+			"type": "slots",
+			"pic": "Atlantis_Dive.jpg",
+			"urlCode": ""
+		}, {
+			"eName": "China Megawild",
+			"name": "狂野大中华",
+			"id": "",
+			"gid": "xc_mobilewildchinaslots",
+			"type": "slots",
+			"pic": "China_MegaWild.jpg",
+			"urlCode": ""
+		}, {
+			"eName": "Freaky Fruits",
+			"name": "奇异水果",
+			"id": "",
+			"gid": "xc_mobilefreakyfruitsslots",
+			"type": "slots",
+			"pic": "Freaky_Fruits.jpg",
+			"urlCode": ""
+		}, {
+			"eName": "Party Night",
+			"name": "午夜派对",
+			"id": "",
+			"gid": "xc_mobilepartynightslots",
+			"type": "slots",
+			"pic": "Party_Night.jpg",
+			"urlCode": ""
+		}, {
+			"eName": "Summer Dream",
+			"name": "夏日梦想",
+			"id": "",
+			"gid": "xc_mobilesummerdreamslots",
+			"type": "slots",
+			"pic": "Summer_Dream.jpg",
+			"urlCode": ""
+		}, {
+			"eName": "Magic Pot",
+			"name": "魔罐",
+			"id": "",
+			"gid": "xc_mobilemagicpotslots",
+			"type": "slots",
+			"pic": "Magic_Pot.jpg",
+			"urlCode": ""
+		}, {
+			"eName": "House of Scare",
+			"name": "恐怖屋",
+			"id": "",
+			"gid": "xc_mobilehouseofscareslots",
+			"type": "slots",
+			"pic": "House_Of_Scare.jpg",
+			"urlCode": ""
+		}, {
+			"eName": "Karaoke Star Slots",
+			"name": "卡拉OK明星老虎机",
+			"id": "",
+			"gid": "xc_mobilekaraokeslots",
+			"type": "slots",
+			"pic": "W88-Slots-Karaoke-Star.jpg",
+			"urlCode": ""
+		}, {
+			"eName": "Non Stop Party",
+			"name": "不间断聚会",
+			"id": "",
+			"gid": "xc_mobilenonstoppartyslots",
+			"type": "slots",
+			"pic": "Non-Stop_Party.jpg",
+			"urlCode": ""
+		}, {
+			"eName": "Firecracker Slots",
+			"name": "幸运之夜",
+			"id": "",
+			"gid": "xc_mobilefirecrackerslots",
+			"type": "slots",
+			"pic": "W88-Slots-Midnight-Lucky-SW.jpg",
+			"urlCode": ""
+		}, {
+			"eName": "Double Bonus Slots",
+			"name": "双倍奖金老虎机",
+			"id": "",
+			"gid": "xc_mobiledoublebonusslots",
+			"type": "slots",
+			"pic": "W88-Slots-Double-Bonus-Slots.JPG",
+			"urlCode": ""
+		}]
+	}]
+}

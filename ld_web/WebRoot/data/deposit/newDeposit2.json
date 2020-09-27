@@ -1,0 +1,12 @@
+{
+  "depositId": "aaaaa",
+  "amount": "999999.0",
+  "zfbImgCode": "",
+  "accountno": "9999999999999999",
+  "username": "测试帐号",
+  "bankname": "测试银行",
+  "type": 1,
+  "paytype": 0,
+  "force": false,
+  "area": "测试开户行"
+}

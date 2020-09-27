@@ -1,0 +1,730 @@
+[
+  {
+    "id": "5912",
+    "eName": "Duo Bao2",
+    "name": "连环夺宝2",
+    "category": "BBIN",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "HOT",
+      "NEW"
+    ],
+    "pic": "5912.jpg"
+  },
+  {
+    "id": "5902",
+    "eName": "Candy Party",
+    "name": "糖果派对",
+    "category": "BBIN",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "HOT",
+      "NEW"
+    ],
+    "pic": "5902.jpg"
+  },
+  {
+    "id": "5005",
+    "eName": "Alien War",
+    "name": "惑星战记",
+    "category": "BBIN",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "HOT",
+      "NEW"
+    ],
+    "pic": "5005.jpg"
+  },
+  {
+    "id": "5010",
+    "eName": "Galaxy II",
+    "name": "外星战记",
+    "category": "BBIN",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "HOT",
+      "NEW"
+    ],
+    "pic": "5010.jpg"
+  },
+  {
+    "id": "5012",
+    "eName": "Galaxy",
+    "name": "外星争霸",
+    "category": "BBIN",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "HOT",
+      "NEW"
+    ],
+    "pic": "5012.jpg"
+  },
+  {
+    "id": "5013",
+    "eName": "Classic",
+    "name": "传统",
+    "category": "BBIN",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "HOT",
+      "NEW"
+    ],
+    "pic": "5013.jpg"
+  },
+  {
+    "id": "5014",
+    "eName": "Jungle",
+    "name": "丛林",
+    "category": "BBIN",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "HOT",
+      "NEW"
+    ],
+    "pic": "5014.jpg"
+  },
+  {
+    "id": "5015",
+    "eName": "FIFA2010",
+    "name": "FIFA2010",
+    "category": "BBIN",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "HOT",
+      "NEW"
+    ],
+    "pic": "5015.jpg"
+  },
+  {
+    "id": "5019",
+    "eName": "Fruit Paradise",
+    "name": "水果乐园",
+    "category": "BBIN",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "HOT",
+      "NEW"
+    ],
+    "pic": "5019.jpg"
+  },
+  {
+    "id": "5027",
+    "eName": "Kung Fu Loung",
+    "name": "功夫龙",
+    "category": "BBIN",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "HOT",
+      "NEW"
+    ],
+    "pic": "5027.jpg"
+  },
+  {
+    "id": "5030",
+    "eName": "Chinese Mammon",
+    "name": "幸运财神",
+    "category": "BBIN",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "HOT",
+      "NEW"
+    ],
+    "pic": "5030.jpg"
+  },
+  {
+    "id": "5043",
+    "eName": "Diamond Fruits",
+    "name": "钻石水果盘",
+    "category": "BBIN",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "HOT",
+      "NEW"
+    ],
+    "pic": "5043.jpg"
+  },
+  {
+    "id": "5044",
+    "eName": "STAR 97II",
+    "name": "明星97II",
+    "category": "BBIN",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "HOT",
+      "NEW"
+    ],
+    "pic": "5044.jpg"
+  },
+  {
+    "id": "5057",
+    "eName": "Star97",
+    "name": "明星97",
+    "category": "BBIN",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "HOT",
+      "NEW"
+    ],
+    "pic": "5057.jpg"
+  },
+  {
+    "id": "5058",
+    "eName": "Crazy Fruit",
+    "name": "疯狂水果盘",
+    "category": "BBIN",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "HOT",
+      "NEW"
+    ],
+    "pic": "5058.jpg"
+  },
+  {
+    "id": "5061",
+    "eName": "Super 7",
+    "name": "超级7",
+    "category": "BBIN",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "HOT",
+      "NEW"
+    ],
+    "pic": "5061.jpg"
+  },
+  {
+    "id": "5062",
+    "eName": "Dragon Must Die",
+    "name": "龙在囧途",
+    "category": "BBIN",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "HOT",
+      "NEW"
+    ],
+    "pic": "5062.jpg"
+  },
+  {
+    "id": "5063",
+    "eName": "Slot Cool Fruit",
+    "name": "水果拉霸",
+    "category": "BBIN",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "HOT",
+      "NEW"
+    ],
+    "pic": "5063.jpg"
+  },
+  {
+    "id": "5064",
+    "eName": "Slot Poker",
+    "name": "扑克拉霸",
+    "category": "BBIN",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "HOT",
+      "NEW"
+    ],
+    "pic": "5064.jpg"
+  },
+  {
+    "id": "5065",
+    "eName": "Slot Mahjong Ball",
+    "name": "筒子拉霸",
+    "category": "BBIN",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "HOT",
+      "NEW"
+    ],
+    "pic": "5065.jpg"
+  },
+  {
+    "id": "5066",
+    "eName": "Slot Soccer",
+    "name": "足球拉霸",
+    "category": "BBIN",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "HOT",
+      "NEW"
+    ],
+    "pic": "5066.jpg"
+  },
+  {
+    "id": "5067",
+    "eName": "A Chinese Odyssey",
+    "name": "大话西游",
+    "category": "BBIN",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "HOT",
+      "NEW"
+    ],
+    "pic": "5067.jpg"
+  },
+  {
+    "id": "5068",
+    "eName": "Kuso Circus",
+    "name": "酷搜马戏团",
+    "category": "BBIN",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "HOT",
+      "NEW"
+    ],
+    "pic": "5068.jpg"
+  },
+  {
+    "id": "5069",
+    "eName": "Fruit Fight",
+    "name": "水果擂台",
+    "category": "BBIN",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "HOT",
+      "NEW"
+    ],
+    "pic": "5069.jpg"
+  },
+  {
+    "id": "5090",
+    "eName": "Fortune of the Golden Rooster",
+    "name": "金鸡报喜",
+    "category": "BBIN",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "HOT",
+      "NEW"
+    ],
+    "pic": "5090.jpg"
+  },
+  {
+    "id": "5093",
+    "eName": "Jin Ping Mai",
+    "name": "金瓶梅",
+    "category": "BBIN",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "HOT",
+      "NEW"
+    ],
+    "pic": "5093.jpg"
+  },
+  {
+    "id": "5094",
+    "eName": "Jin Ping Mai 2",
+    "name": "金瓶梅2",
+    "category": "BBIN",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "HOT",
+      "NEW"
+    ],
+    "pic": "5094.jpg"
+  },
+  {
+    "id": "5095",
+    "eName": "Cock Fighting",
+    "name": "斗鸡",
+    "category": "BBIN",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "HOT",
+      "NEW"
+    ],
+    "pic": "5095.jpg"
+  },
+  {
+    "id": "5096",
+    "eName": "Wu Xing",
+    "name": "五行",
+    "category": "BBIN",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "HOT",
+      "NEW"
+    ],
+    "pic": "5096.jpg"
+  },
+  {
+    "id": "5097",
+    "eName": "Fantastic Ocean",
+    "name": "海底世界",
+    "category": "BBIN",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "HOT",
+      "NEW"
+    ],
+    "pic": "5097.jpg"
+  },
+  {
+    "id": "5098",
+    "eName": "WUFU LINMEN",
+    "name": "五福临门",
+    "category": "BBIN",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "HOT",
+      "NEW"
+    ],
+    "pic": "5098.jpg"
+  },
+  {
+    "id": "5099",
+    "eName": "The Wishing Dog",
+    "name": "金狗旺岁",
+    "category": "BBIN",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "HOT",
+      "NEW"
+    ],
+    "pic": "5099.jpg"
+  },
+  {
+    "id": "5106",
+    "eName": "THREE KINGDOMS",
+    "name": "三国",
+    "category": "BBIN",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "HOT",
+      "NEW"
+    ],
+    "pic": "5106.jpg"
+  },
+  {
+    "id": "5107",
+    "eName": "American Roulette",
+    "name": "美式轮盘",
+    "category": "BBIN",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "HOT",
+      "NEW"
+    ],
+    "pic": "5107.jpg"
+  },
+  {
+    "id": "5204",
+    "eName": "2014 FIFA",
+    "name": "2014 FIFA",
+    "category": "BBIN",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "HOT",
+      "NEW"
+    ],
+    "pic": "5204.jpg"
+  },
+  {
+    "id": "5402",
+    "eName": "Let's go Night-market !",
+    "name": "夜市人生",
+    "category": "BBIN",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "HOT",
+      "NEW"
+    ],
+    "pic": "5402.jpg"
+  },
+  {
+    "id": "5404",
+    "eName": "Beach Volleyball",
+    "name": "沙滩排球",
+    "category": "BBIN",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "HOT",
+      "NEW"
+    ],
+    "pic": "5404.jpg"
+  },
+  {
+    "id": "5407",
+    "eName": "Don´t call me Little Red",
+    "name": "大红帽与小野狼",
+    "category": "BBIN",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "HOT",
+      "NEW"
+    ],
+    "pic": "5407.jpg"
+  },
+  {
+    "id": "5601",
+    "eName": "Adventure of Mystical Land",
+    "name": "秘境冒险",
+    "category": "BBIN",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "HOT",
+      "NEW"
+    ],
+    "pic": "5601.jpg"
+  },
+  {
+    "id": "5801",
+    "eName": "Dolphin Reef",
+    "name": "海豚世界",
+    "category": "BBIN",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "HOT",
+      "NEW"
+    ],
+    "pic": "5801.jpg"
+  },
+  {
+    "id": "5803",
+    "eName": "Aztec's Treasure",
+    "name": "阿兹特克宝藏",
+    "category": "BBIN",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "HOT",
+      "NEW"
+    ],
+    "pic": "5803.jpg"
+  },
+  {
+    "id": "5805",
+    "eName": "Caesar's Empire",
+    "name": "凯萨帝国",
+    "category": "BBIN",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "HOT",
+      "NEW"
+    ],
+    "pic": "5805.jpg"
+  },
+  {
+    "id": "5810",
+    "eName": "Victory",
+    "name": "航海时代",
+    "category": "BBIN",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "HOT",
+      "NEW"
+    ],
+    "pic": "5810.jpg"
+  },
+  {
+    "id": "5823",
+    "eName": "Big Prosperity",
+    "name": "发大财",
+    "category": "BBIN",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "HOT",
+      "NEW"
+    ],
+    "pic": "5823.jpg"
+  },
+  {
+    "id": "5824",
+    "eName": "Mystic Dragon",
+    "name": "恶龙传说",
+    "category": "BBIN",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "HOT",
+      "NEW"
+    ],
+    "pic": "5824.jpg"
+  },
+  {
+    "id": "5828",
+    "eName": "T-Rex",
+    "name": "霸王龙",
+    "category": "BBIN",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "HOT",
+      "NEW"
+    ],
+    "pic": "5828.jpg"
+  },
+  {
+    "id": "5835",
+    "eName": "Happy Golden Ox Of Happiness",
+    "name": "喜福牛年",
+    "category": "BBIN",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "HOT",
+      "NEW"
+    ],
+    "pic": "5835.jpg"
+  },
+  {
+    "id": "5837",
+    "eName": "Happy Golden Monkey Of Happiness",
+    "name": "喜福猴年",
+    "category": "BBIN",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "HOT",
+      "NEW"
+    ],
+    "pic": "5837.jpg"
+  },
+  {
+    "id": "5839",
+    "eName": "Classic Golf",
+    "name": "经典高球",
+    "category": "BBIN",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "HOT",
+      "NEW"
+    ],
+    "pic": "5839.jpg"
+  },
+  {
+    "id": "5901",
+    "eName": "Duo Bao",
+    "name": "连环夺宝",
+    "category": "BBIN",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "HOT",
+      "NEW"
+    ],
+    "pic": "5901.jpg"
+  },
+  {
+    "id": "5903",
+    "eName": "Tomb of Dragon Emperor",
+    "name": "秦皇秘宝",
+    "category": "BBIN",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "HOT",
+      "NEW"
+    ],
+    "pic": "5903.jpg"
+  },
+  {
+    "id": "5904",
+    "eName": "Pop Bomber",
+    "name": "蒸气炸弹",
+    "category": "BBIN",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "HOT",
+      "NEW"
+    ],
+    "pic": "5904.jpg"
+  },
+  {
+    "id": "5907",
+    "eName": "Chiu Wei Tai Chiou",
+    "name": "趣味台球",
+    "category": "BBIN",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "HOT",
+      "NEW"
+    ],
+    "pic": "5907.jpg"
+  },
+  {
+    "id": "5908",
+    "eName": "Candy Party2",
+    "name": "糖果派对2",
+    "category": "BBIN",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "HOT",
+      "NEW"
+    ],
+    "pic": "5908.jpg"
+  },
+  {
+    "id": "5909",
+    "eName": "Ani Pop",
+    "name": "开心消消乐",
+    "category": "BBIN",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "HOT",
+      "NEW"
+    ],
+    "pic": "5909.jpg"
+  },
+  {
+    "id": "5910",
+    "eName": "Magic Of The Elements",
+    "name": "魔法元素",
+    "category": "BBIN",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "HOT",
+      "NEW"
+    ],
+    "pic": "5910.jpg"
+  }
+]

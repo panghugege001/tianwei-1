@@ -1,0 +1,1808 @@
+[
+    {
+    "eName": "Freaky Fruits",
+    "name": "多彩水果",
+    "code": "sw_ffruits",
+    "id": "sw_ffruits",
+    "pic": "sw_ffurits.png",
+    "state": 1,
+    "type": "POK",
+    "subType": "",
+    "category": "PTSW",
+    "line": "",
+    "tag": [
+        "NEW",
+        "HOT",
+        "SM"
+      ]
+    },
+    {
+    "eName": "China Mega Wild",
+    "name": "狂野中华",
+    "code": "sw_cmw",
+    "id": "sw_cmw",
+    "pic": "sw_cmw.png",
+    "state": 1,
+    "type": "POK",
+    "subType": "",
+    "category": "PTSW",
+    "line": "",
+    "tag": [
+        "NEW",
+        "HOT",
+        "SM"
+      ]
+    },
+    {
+      "eName": "Legend of Hou Yi",
+      "name": "后羿传奇",
+      "code": "sw_lohy",
+      "id": "sw_lohy",
+      "pic": "sw_lohy.jpg",
+      "state": 1,
+      "type": "POK",
+      "subType": "",
+      "category": "PTSW",
+      "line": "",
+      "tag": [
+        "NEW"
+      ]
+    },
+    {
+      "eName": "Metal Reel",
+      "name": "五行金送福!",
+      "code": "sw_mr",
+      "id": "sw_mr",
+      "pic": "sw_mr.jpg",
+      "state": 1,
+      "type": "POK",
+      "subType": "",
+      "category": "PTSW",
+      "line": "",
+      "tag": [
+        "NEW"
+      ]
+    },
+      {
+      "eName": "Da Mao Zhao Cai: Money Cat",
+      "name": "大猫招财",
+      "code": "sw_dmzc",
+      "id": "sw_dmzc",
+      "pic": "sw_dmzc.jpg",
+      "state": 1,
+      "type": "POK",
+      "subType": "",
+      "category": "PTSW",
+      "line": "25-30",
+      "tag": [
+        "NEW",
+        "SLO",
+        "SM"
+      ]
+    }, 
+    {
+      "eName": "Middle Shot",
+      "name": "加油,金龙!",
+      "code": "sw_mdls",
+      "id": "sw_mdls",
+      "pic": "sw_mdls.jpg",
+      "state": 1,
+      "type": "POK",
+      "subType": "",
+      "category": "PTSW",
+      "line": "25-30",
+      "tag": [
+        "NEW",
+        "SLO",
+        "SM"
+      ]
+    },
+    {
+      "eName": "Volcano Island",
+      "name": "火山岛",
+      "code": "sw_vi",
+      "id": "sw_vi",
+      "pic": "sw_vi.jpg",
+      "state": 1,
+      "type": "POK",
+      "subType": "",
+      "category": "PTSW",
+      "line": "25-30",
+      "tag": [
+        "NEW",
+        "SLO",
+        "SM"
+      ]
+    },
+    {
+      "eName": "West Shot",
+      "name": "加油,白虎!",
+      "code": "sw_ws",
+      "id": "sw_ws",
+      "pic": "sw_ws.jpg",
+      "state": 1,
+      "type": "POK",
+      "subType": "",
+      "category": "PTSW",
+      "line": "25-30",
+      "tag": [
+        "NEW",
+        "SLO",
+        "SM"
+      ]
+    },
+    {
+      "eName": "Buffalo Lightning",
+      "name": "野牛闪电",
+      "code": "sw_bul",
+      "id": "sw_bul",
+      "pic": "sw_bul.jpg",
+      "state": 1,
+      "type": "POK",
+      "subType": "",
+      "category": "PTSW",
+      "line": "",
+      "tag": [
+        "NEW",
+        "SLO",
+        "SM"
+      ]
+    },
+    {
+      "eName": "Monkey Pays",
+      "name": "猴子赏福",
+      "code": "sw_mpays",
+      "id": "sw_mpays",
+      "pic": "sw_mpays.jpg",
+      "state": 1,
+      "type": "POK",
+      "subType": "",
+      "category": "PTSW",
+      "line": "243",
+      "tag": [
+        "NEW",
+        "SLO",
+        "SM"
+      ]
+    },
+  {
+    "eName": "The Reel Macau",
+    "name": "水果财富奖池",
+    "code": "sw_sgcf_ab_jp",
+    "id": "sw_sgcf_ab_jp",
+    "pic": "sw_sgcf_ab_jp.jpg",
+    "state": 1,
+    "type": "POK",
+    "subType": "",
+    "category": "PTSW",
+    "line": "",
+    "tag": [
+      "NEW",
+      "HOT",
+      "SM"
+    ]
+  },  
+  {
+    "eName": "The Reel Macau",
+    "name": "澳门金夜",
+    "code": "sw_rmac",
+    "id": "sw_rmac",
+    "pic": "sw_rmac.jpg",
+    "state": 1,
+    "type": "POK",
+    "subType": "",
+    "category": "PTSW",
+    "line": "",
+    "tag": [
+      "NEW",
+      "HOT",
+      "SM"
+    ]
+  },
+  {
+    "eName": "Hearts & Dragons",
+    "name": "心与龙",
+    "code": "sw_hd",
+    "id": "sw_hd",
+    "pic": "sw_hd.png",
+    "state": 1,
+    "type": "POK",
+    "subType": "",
+    "category": "PTSW",
+    "line": "",
+    "tag": [
+      "NEW",
+      "HOT",
+      "SM"
+    ]
+  },
+  {
+    "eName": "Moon Palace",
+    "name": "月宫",
+    "code": "sw_mp",
+    "id": "sw_mp",
+    "pic": "sw_mp.png",
+    "state": 1,
+    "type": "POK",
+    "subType": "",
+    "category": "PTSW",
+    "line": "",
+    "tag": [
+      "NEW",
+      "HOT",
+      "SM"
+    ]
+  },
+  {
+    "eName": "Si Ling",
+    "name": "四灵",
+    "code": "sw_sl",
+    "id": "sw_sl",
+    "pic": "sw_sl1.png",
+    "state": 1,
+    "type": "POK",
+    "subType": "",
+    "category": "PTSW",
+    "line": "",
+    "tag": [
+      "NEW",
+      "HOT",
+      "SM"
+    ]
+  },
+  {
+    "eName": "Xing Yun Jin Chan",
+    "name": "幸运金蟾",
+    "code": "sw_xyjc",
+    "id": "sw_xyjc",
+    "pic": "sw_xyjc.jpg",
+    "state": 1,
+    "type": "POK",
+    "subType": "",
+    "category": "PTSW",
+    "line": "",
+    "tag": [
+      "NEW",
+      "HOT",
+      "SM"
+    ]
+  },
+  {
+    "eName": "Bao Zhu Xuan Tian",
+    "name": "爆竹喧天",
+    "code": "sw_bzxt",
+    "id": "sw_bzxt",
+    "pic": "sw_bzxt.jpg",
+    "state": 1,
+    "type": "POK",
+    "subType": "",
+    "category": "PTSW",
+    "line": "",
+    "tag": [
+      "NEW",
+      "HOT",
+      "SM"
+    ]
+  },
+  {
+    "eName": "Xuan Wu",
+    "name": "玄武",
+    "code": "sw_xw",
+    "id": "sw_xw",
+    "pic": "sw_xw.jpg",
+    "state": 1,
+    "type": "POK",
+    "subType": "",
+    "category": "PTSW",
+    "line": "",
+    "tag": [
+      "NEW",
+      "HOT",
+      "SM"
+    ]
+  },
+  {
+    "eName": "Fu Zai Yan Qian",
+    "name": "蝠在眼钱",
+    "code": "sw_fzyq",
+    "id": "sw_fzyq",
+    "pic": "sw_fzyq.jpg",
+    "state": 1,
+    "type": "POK",
+    "subType": "",
+    "category": "PTSW",
+    "line": "",
+    "tag": [
+      "NEW",
+      "HOT",
+      "SM"
+    ]
+  },
+  {
+    "eName": "By the Rivers of Buffalo",
+    "name": "水牛河畔",
+    "code": "sw_btrb",
+    "id": "sw_btrb",
+    "pic": "sw_btrb.jpg",
+    "state": 1,
+    "type": "POK",
+    "subType": "",
+    "category": "PTSW",
+    "line": "",
+    "tag": [
+      "NEW",
+      "HOT",
+      "SM"
+    ]
+  },
+  {
+    "eName": "East Wind Battle",
+    "name": "战东风",
+    "code": "sw_ewb",
+    "id": "sw_ewb",
+    "pic": "sw_ewb.jpg",
+    "state": 1,
+    "type": "POK",
+    "subType": "",
+    "category": "PTSW",
+    "line": "",
+    "tag": [
+      "NEW",
+      "HOT",
+      "SM"
+    ]
+  },
+  {
+    "eName": "Maya Jackpot",
+    "name": "玛雅头奖",
+    "code": "sw_myjp",
+    "id": "sw_myjp",
+    "pic": "sw_myjp.jpg",
+    "state": 1,
+    "type": "POK",
+    "subType": "",
+    "category": "PTSW",
+    "line": "",
+    "tag": [
+      "NEW",
+      "HOT",
+      "SM"
+    ]
+  },
+  {
+    "eName": "Magic of Oz",
+    "name": "奥兹国魔法",
+    "code": "sw_moo",
+    "id": "sw_moo",
+    "pic": "sw_moo.jpg",
+    "state": 1,
+    "type": "POK",
+    "subType": "",
+    "category": "PTSW",
+    "line": "",
+    "tag": [
+      "NEW",
+      "HOT",
+      "SM"
+    ]
+  },
+  {
+    "eName": "Maverick Saloon",
+    "name": "独行酒吧",
+    "code": "sw_ms",
+    "id": "sw_ms",
+    "pic": "sw_ms.jpg",
+    "state": 1,
+    "type": "POK",
+    "subType": "",
+    "category": "PTSW",
+    "line": "",
+    "tag": [
+      "NEW",
+      "HOT",
+      "SM"
+    ]
+  },
+  {
+    "eName": "Maya Wheel of Luck",
+    "name": "玛雅幸运轮",
+    "code": "sw_mwol",
+    "id": "sw_mwol",
+    "pic": "sw_mwol.jpg",
+    "state": 1,
+    "type": "POK",
+    "subType": "",
+    "category": "PTSW",
+    "line": "",
+    "tag": [
+      "NEW",
+      "HOT",
+      "SM"
+    ]
+  },
+  {
+    "eName": "Shen Qi Jiu Long",
+    "name": "神奇九龙",
+    "code": "sw_fd",
+    "id": "sw_fd",
+    "pic": "sw_fd.jpg",
+    "state": 1,
+    "type": "POK",
+    "subType": "",
+    "category": "PTSW",
+    "line": "",
+    "tag": [
+      "NEW",
+      "HOT",
+      "SM"
+    ]
+  },
+  {
+    "eName": "Song Cai Tong Zi",
+    "name": "送财童子",
+    "code": "sw_sctz",
+    "id": "sw_sctz",
+    "pic": "sw_sctz.jpg",
+    "state": 1,
+    "type": "POK",
+    "subType": "",
+    "category": "PTSW",
+    "line": "",
+    "tag": [
+      "NEW",
+      "HOT",
+      "SM"
+    ]
+  },
+  {
+    "eName": "Lucky Chan Chu",
+    "name": "招财蟾蜍",
+    "code": "sw_lcc",
+    "id": "sw_lcc",
+    "pic": "sw_lcc.jpg",
+    "state": 1,
+    "type": "POK",
+    "subType": "",
+    "category": "PTSW",
+    "line": "",
+    "tag": [
+      "NEW",
+      "HOT",
+      "SM"
+    ]
+  },
+  {
+    "eName": "Long Long Long",
+    "name": "龙龙龙",
+    "code": "sw_lll",
+    "pic": "sw_lll.jpg",
+    "state": 1,
+    "id": "sw_lll",
+    "type": "POK",
+    "subType": "",
+    "category": "PTSW",
+    "line": "",
+    "tag": [
+      "NEW",
+      "HOT",
+      "SM"
+    ]
+  },
+  {
+    "eName": "Jin Qian Wa",
+    "name": "金钱蛙",
+    "code": "sw_jqw",
+    "pic": "sw_jqw.jpg",
+    "state": 1,
+    "id": "sw_jqw",
+    "type": "POK",
+    "subType": "",
+    "category": "PTSW",
+    "line": "",
+    "tag": [
+      "NEW",
+      "HOT",
+      "SM"
+    ]
+  },
+  {
+    "eName": "Queen of Wands",
+    "name": "权杖女王",
+    "code": "sw_qow",
+    "pic": "sw_qow.jpg",
+    "state": 1,
+    "id": "sw_qow",
+    "type": "POK",
+    "subType": "",
+    "category": "PTSW",
+    "line": "",
+    "tag": [
+      "NEW",
+      "HOT",
+      "SM"
+    ]
+  },
+  {
+    "eName": "Inca Jackpot",
+    "name": "印加帝国头奖",
+    "code": "sw_ijp",
+    "pic": "sw_ijp.jpg",
+    "state": 1,
+    "id": "sw_ijp",
+    "type": "POK",
+    "subType": "",
+    "category": "PTSW",
+    "line": "",
+    "tag": [
+      "NEW",
+      "HOT",
+      "SM"
+    ]
+  },
+  {
+    "eName": "Feng Kuang Ma Jiang",
+    "name": "疯狂麻将",
+    "code": "sw_fkmj",
+    "pic": "sw_fkmj.jpg",
+    "state": 1,
+    "id": "sw_fkmj",
+    "type": "POK",
+    "subType": "",
+    "category": "PTSW",
+    "line": "",
+    "tag": [
+      "NEW",
+      "HOT",
+      "SM"
+    ]
+  },
+  {
+    "eName": "Gem Queen",
+    "name": "宝石女王",
+    "code": "sw_gq",
+    "pic": "sw_gq.jpg",
+    "state": 1,
+    "id": "sw_gq",
+    "type": "POK",
+    "subType": "",
+    "category": "PTSW",
+    "line": "",
+    "tag": [
+      "NEW",
+      "HOT",
+      "SM"
+    ]
+  },
+  {
+    "eName": "Si Xiang",
+    "name": "四象",
+    "code": "sw_sixng",
+    "pic": "sw_sixng.jpg",
+    "state": 1,
+    "id": "sw_sixng",
+    "type": "POK",
+    "subType": "",
+    "category": "PTSW",
+    "line": "",
+    "tag": [
+      "NEW",
+      "HOT",
+      "SM"
+    ]
+  },
+  {
+    "eName": "Chaoji 888",
+    "name": "超级八",
+    "code": "sw_ch8",
+    "pic": "sw_ch8.jpg",
+    "state": 1,
+    "id": "sw_ch8",
+    "type": "POK",
+    "subType": "",
+    "category": "PTSW",
+    "line": "",
+    "tag": [
+      "NEW",
+      "HOT",
+      "SM"
+    ]
+  },
+  {
+    "eName": "Fortune Lions",
+    "name": "幸运狮子",
+    "code": "sw_fl",
+    "pic": "sw_fl.jpg",
+    "state": 1,
+    "id": "sw_fl",
+    "type": "POK",
+    "subType": "",
+    "category": "PTSW",
+    "line": "",
+    "tag": [
+      "NEW",
+      "HOT",
+      "SM"
+    ]
+  },
+  {
+    "eName": "Hao Shi Cheng Shuang",
+    "name": "好事成双",
+    "code": "sw_hcs",
+    "pic": "sw_hcs.jpg",
+    "state": 1,
+    "id": "sw_hcs",
+    "type": "POK",
+    "subType": "",
+    "category": "PTSW",
+    "line": "",
+    "tag": [
+      "NEW",
+      "HOT",
+      "SM"
+    ]
+  },
+  {
+    "eName": "Five Tiger Generals",
+    "name": "五虎将",
+    "code": "sw_whmj",
+    "pic": "sw_whmj.jpg",
+    "state": 1,
+    "id": "sw_whmj",
+    "type": "POK",
+    "subType": "",
+    "category": "PTSW",
+    "line": "",
+    "tag": [
+      "NEW",
+      "HOT",
+      "SM"
+    ]
+  },
+  {
+    "eName": "Asian Fantasy",
+    "name": "亚洲幻想",
+    "code": "sw_af",
+    "pic": "sw_af.jpg",
+    "state": 1,
+    "id": "sw_af",
+    "type": "POK",
+    "subType": "",
+    "category": "PTSW",
+    "line": "",
+    "tag": [
+      "NEW",
+      "HOT",
+      "SM"
+    ]
+  },
+  {
+    "eName": "Zhao Cai Tong Zi",
+    "name": "招财童子",
+    "code": "sw_shctz",
+    "pic": "sw_shctz.jpg",
+    "state": 1,
+    "id": "sw_shctz",
+    "type": "POK",
+    "subType": "",
+    "category": "PTSW",
+    "line": "",
+    "tag": [
+      "NEW",
+      "HOT",
+      "SM"
+    ]
+  },
+  {
+    "eName": "Pot Shot",
+    "name": "加油, 金罐!",
+    "code": "sw_ps",
+    "id": "sw_ps",
+    "pic": "sw_ps.jpg",
+    "state": 1,
+    "type": "POK",
+    "subType": "",
+    "category": "PTSW",
+    "line": "",
+    "tag": [
+      "NEW",
+      "HOT",
+      "SM"
+    ]
+  },
+  {
+    "eName": "Gold Shot",
+    "name": "加油, 金块!",
+    "code": "sw_gs",
+    "id": "sw_gs",
+    "pic": "sw_gs.jpg",
+    "state": 1,
+    "type": "POK",
+    "subType": "",
+    "category": "PTSW",
+    "line": "",
+    "tag": [
+      "NEW",
+      "HOT",
+      "SM"
+    ]
+  },
+  {
+    "eName": "Riverboat Reel",
+    "name": "河船送福",
+    "code": "sw_rr",
+    "id": "sw_rr",
+    "pic": "sw_rr.jpg",
+    "state": 1,
+    "type": "POK",
+    "subType": "",
+    "category": "PTSW",
+    "line": "",
+    "tag": [
+      "NEW",
+      "HOT",
+      "SM"
+    ]
+  },
+  {
+    "eName": "Queen of the Pharaohs",
+    "name": "法老女王",
+    "code": "sw_qotp",
+    "id": "sw_qotp",
+    "pic": "sw_qotp.png",
+    "state": 1,
+    "type": "POK",
+    "subType": "",
+    "category": "PTSW",
+    "line": "",
+    "tag": [
+      "NEW",
+      "HOT",
+      "SM"
+    ]
+  },
+  {
+    "eName": "Aztec Reel",
+    "name": "阿兹特克送福",
+    "code": "sw_ar",
+    "id": "sw_ar",
+    "pic": "sw_ar.jpg",
+    "state": 1,
+    "type": "POK",
+    "subType": "",
+    "category": "PTSW",
+    "line": "",
+    "tag": [
+      "NEW",
+      "HOT",
+      "SM"
+    ]
+  },
+  {
+    "eName": "Si Mei",
+    "name": "四美",
+    "code": "sw_fb",
+    "id": "sw_fb",
+    "pic": "sw_fb.jpg",
+    "state": 1,
+    "type": "POK",
+    "subType": "",
+    "category": "PTSW",
+    "line": "",
+    "tag": [
+      "NEW",
+      "HOT",
+      "SM"
+    ]
+  },
+  {
+    "eName": "Fire Reel",
+    "name": "五行火送福",
+    "code": "sw_fr",
+    "id": "sw_fr",
+    "pic": "sw_fire_reel.jpg",
+    "state": 1,
+    "type": "POK",
+    "subType": "",
+    "category": "PTSW",
+    "line": "",
+    "tag": [
+      "NEW"
+    ]
+  },
+  {
+    "eName": "Water Reel",
+    "name": "五行水送福",
+    "code": "sw_wrl",
+    "id": "sw_wrl",
+    "pic": "sw_water_reel.jpg",
+    "state": 1,
+    "type": "POK",
+    "subType": "",
+    "category": "PTSW",
+    "line": "",
+    "tag": [
+      "NEW"
+    ]
+  },
+  {
+    "eName": "Lucky OMQ",
+    "name": "走运老夫子",
+    "code": "sw_lucky_omq",
+    "id": "sw_lucky_omq",
+    "pic": "sw_lucky_omq.jpg",
+    "state": 1,
+    "type": "POK",
+    "subType": "",
+    "category": "PTSW",
+    "line": "",
+    "tag": [
+      "NEW",
+      "HOT",
+      "SM"
+    ]
+  },
+  {
+    "eName": "Gem King",
+    "name": "宝石王",
+    "code": "sw_gk",
+    "id": "sw_gk",
+    "pic": "sw_gk.jpg",
+    "state": 1,
+    "type": "POK",
+    "subType": "",
+    "category": "PTSW",
+    "line": "25-30",
+    "tag": [
+      "NEW",
+      "HOT",
+      "SM"
+    ]
+  },
+  {
+    "eName": "Panda Vs Goat",
+    "name": "熊猫vs山羊",
+    "code": "sw_pvg",
+    "id": "sw_pvg",
+    "pic": "sw_pvg.jpg",
+    "state": 1,
+    "type": "POK",
+    "subType": "",
+    "category": "PTSW",
+    "line": "243",
+    "tag": [
+      "NEW"
+    ]
+  },
+  {
+    "eName": "King of Gods",
+    "name": "众神之王",
+    "code": "sw_kog",
+    "id": "sw_kog",
+    "pic": "sw_kog.jpg",
+    "state": 1,
+    "type": "POK",
+    "subType": "",
+    "category": "PTSW",
+    "line": "5-10",
+    "tag": [
+      "NEW"
+    ]
+  },
+  {
+    "eName": "Ji Xiang Long",
+    "name": "吉祥龙",
+    "code": "sw_jxl",
+    "id": "sw_jxl",
+    "pic": "sw_jxl.jpg",
+    "state": 1,
+    "type": "POK",
+    "subType": "",
+    "category": "PTSW",
+    "line": "243",
+    "tag": [
+      "NEW"
+    ]
+  },
+  {
+    "eName": "Zhao Cai Xiong Mao",
+    "name": "招财熊猫",
+    "code": "sw_zcxm",
+    "id": "sw_zcxm",
+    "pic": "sw_zcxm.jpg",
+    "state": 1,
+    "type": "POK",
+    "subType": "",
+    "category": "PTSW",
+    "line": "25-25",
+    "tag": [
+      "NEW",
+      "HOT",
+      "SM"
+    ]
+  },
+  {
+    "eName": "Pirate Empress",
+    "name": "海盗女皇",
+    "code": "sw_pe",
+    "id": "sw_pe",
+    "pic": "sw_pe.jpg",
+    "state": 1,
+    "type": "POK",
+    "subType": "",
+    "category": "PTSW",
+    "line": "243-243",
+    "tag": [
+      "NEW",
+      "HOT",
+      "SM"
+    ]
+  },
+  {
+    "eName": "Ku Xuan Cai Shen",
+    "name": "酷炫财神",
+    "code": "sw_kxcs",
+    "id": "sw_kxcs",
+    "pic": "sw_kxcs.jpg",
+    "state": 1,
+    "type": "POK",
+    "subType": "",
+    "category": "PTSW",
+    "line": "",
+    "tag": [
+      "NEW",
+      "HOT",
+      "SM"
+    ]
+  },
+  {
+    "eName": "Da Lan Deluxe",
+    "name": "豪华大蓝",
+    "code": "sw_dld",
+    "id": "sw_dld",
+    "pic": "sw_dld.jpg",
+    "state": 1,
+    "type": "POK",
+    "subType": "",
+    "category": "PTSW",
+    "line": "25-25",
+    "tag": [
+      "NEW",
+      "HOT",
+      "SM"
+    ]
+  },
+  {
+    "eName": "Big Lion",
+    "name": "百搭雄狮",
+    "code": "sw_bl",
+    "id": "sw_bl",
+    "pic": "sw_bl.jpg",
+    "state": 1,
+    "type": "POK",
+    "subType": "",
+    "category": "PTSW",
+    "line": "5-10",
+    "tag": [
+      "NEW",
+      "HOT",
+      "SM"
+    ]
+  },
+  {
+    "eName": "Rocket Candies",
+    "name": "糖果炸弹",
+    "code": "sw_rc",
+    "id": "sw_rc",
+    "pic": "sw_rc.jpg",
+    "state": 1,
+    "type": "POK",
+    "subType": "",
+    "category": "PTSW",
+    "line": "25-30",
+    "tag": [
+      "NEW",
+      "HOT",
+      "SM"
+    ]
+  },
+  {
+    "eName": "T-Rex Cash",
+    "name": "现金霸王龙",
+    "code": "sw_tr",
+    "pic": "sw_tr.jpg",
+    "state": 1,
+    "id": "sw_tr",
+    "type": "POK",
+    "subType": "",
+    "category": "PTSW",
+    "line": "243-243",
+    "tag": [
+      "NEW",
+      "HOT",
+      "SM"
+    ]
+  },
+  {
+    "eName": "Three Sisters",
+    "name": "三姐妹",
+    "code": "sw_ts",
+    "pic": "sw_ts.jpg",
+    "state": 1,
+    "id": "sw_ts",
+    "type": "POK",
+    "subType": "",
+    "category": "PTSW",
+    "line": "25-30",
+    "tag": [
+      "NEW",
+      "HOT",
+      "SM"
+    ]
+  },
+  {
+    "eName": "Goddess of 8 Directions",
+    "name": "八方女神",
+    "code": "sw_go8d",
+    "pic": "sw_go8d.jpg",
+    "state": 1,
+    "id": "sw_go8d",
+    "type": "POK",
+    "subType": "",
+    "category": "PTSW",
+    "line": "243-243",
+    "tag": [
+      "NEW",
+      "HOT",
+      "SM"
+    ]
+  },
+  {
+    "eName": "Tale of Two Dragons",
+    "name": "双龙传",
+    "code": "sw_t2d",
+    "pic": "sw_t2d.jpg",
+    "state": 1,
+    "id": "sw_t2d",
+    "type": "POK",
+    "subType": "",
+    "category": "PTSW",
+    "line": "5-10",
+    "tag": [
+      "NEW",
+      "HOT",
+      "SM"
+    ]
+  },
+  {
+    "eName": "Shuang Xi",
+    "name": "囍",
+    "code": "sw_sx",
+    "pic": "sw_sx.jpg",
+    "state": 1,
+    "id": "sw_sx",
+    "type": "POK",
+    "subType": "",
+    "category": "PTSW",
+    "line": "15-20",
+    "tag": [
+      "NEW",
+      "HOT",
+      "SM"
+    ]
+  },
+  {
+    "eName": "Go Gold",
+    "name": "名利双收",
+    "code": "sw_gg",
+    "pic": "sw_gg.jpg",
+    "state": 1,
+    "id": "sw_gg",
+    "type": "POK",
+    "subType": "",
+    "category": "PTSW",
+    "line": "25-25",
+    "tag": [
+      "NEW",
+      "HOT",
+      "SM"
+    ]
+  },
+  {
+    "eName": "The Orca, the Iceberg and the Penguin",
+    "name": "逆戟鲸，冰山和企鹅",
+    "code": "sw_totiatp",
+    "pic": "sw_totiatp.jpg",
+    "state": 1,
+    "id": "sw_totiatp",
+    "type": "POK",
+    "subType": "",
+    "category": "PTSW",
+    "line": "",
+    "tag": [
+      "NEW",
+      "HOT",
+      "SM"
+    ]
+  },
+  {
+    "eName": "Fortune Castle",
+    "name": "财富城堡",
+    "code": "sw_fc",
+    "pic": "sw_fc.jpg",
+    "state": 1,
+    "id": "sw_fc",
+    "type": "POK",
+    "subType": "",
+    "category": "PTSW",
+    "line": "",
+    "tag": [
+      "NEW",
+      "HOT",
+      "SM"
+    ]
+  },
+  {
+    "eName": "Panda Prize",
+    "name": "熊猫奖励",
+    "code": "sw_pp",
+    "pic": "sw_pp.jpg",
+    "state": 1,
+    "id": "sw_pp",
+    "type": "POK",
+    "subType": "",
+    "category": "PTSW",
+    "line": "",
+    "tag": [
+      "NEW",
+      "HOT",
+      "SM"
+    ]
+  },
+  {
+    "eName": "Queen of the Vikings",
+    "name": "维京女王",
+    "code": "sw_qv",
+    "pic": "sw_qv.jpg",
+    "state": 1,
+    "id": "sw_qv",
+    "type": "POK",
+    "subType": "",
+    "category": "PTSW",
+    "line": "",
+    "tag": [
+      "NEW",
+      "HOT",
+      "SM"
+    ]
+  },
+  {
+    "eName": "Panda Gold",
+    "name": "熊猫财富",
+    "code": "sw_pg",
+    "pic": "sw_pg.jpg",
+    "state": 1,
+    "id": "sw_pg",
+    "type": "POK",
+    "subType": "",
+    "category": "PTSW",
+    "line": "",
+    "tag": [
+      "NEW",
+      "HOT",
+      "SM"
+    ]
+  },
+  {
+    "name": "88 师父",
+    "eName": "88 Shi fu",
+    "code": "sw_88sf",
+    "pic": "sw_88sf.jpg",
+    "state": 1,
+    "id": "sw_88sf",
+    "type": "SW",
+    "subType": "",
+    "category": "PTSW",
+    "line": "1-50",
+    "tag": [
+      "NEW",
+      "HOT",
+      "AMA"
+    ]
+  },
+  {
+    "name": "游园会",
+    "eName": "Choi”s Travelling Show",
+    "code": "sw_cts",
+    "pic": "sw_cts.jpg",
+    "state": 1,
+    "id": "sw_cts",
+    "type": "SW",
+    "subType": "",
+    "category": "PTSW",
+    "line": "1-50",
+    "tag": [
+      "NEW",
+      "HOT",
+      "AMA"
+    ]
+  },
+  {
+    "name": "美人鱼宝藏",
+    "eName": "Mermaid Jewels",
+    "code": "sw_mj",
+    "pic": "sw_mj.jpg",
+    "state": 1,
+    "id": "sw_mj",
+    "type": "SW",
+    "subType": "",
+    "category": "PTSW",
+    "line": "1-50",
+    "tag": [
+      "NEW",
+      "HOT",
+      "AMA"
+    ]
+  },
+  {
+    "name": "九子一王",
+    "eName": "9 Sons, 1 King",
+    "code": "sw_9s1k",
+    "pic": "sw_9s1k.jpg",
+    "state": 1,
+    "id": "sw_9s1k",
+    "type": "SW",
+    "subType": "",
+    "category": "PTSW",
+    "line": "1-50",
+    "tag": [
+      "NEW",
+      "HOT",
+      "AMA"
+    ]
+  },
+  {
+    "name": "狂野麒麟",
+    "eName": "Wild Qilin",
+    "code": "sw_wq",
+    "pic": "sw_wq.jpg",
+    "state": 1,
+    "id": "sw_wq",
+    "type": "SW",
+    "subType": "",
+    "category": "PTSW",
+    "line": "1-50",
+    "tag": [
+      "NEW",
+      "HOT",
+      "AMA"
+    ]
+  },
+  {
+    "name": "超强三人组",
+    "eName": "Mighty Trio",
+    "code": "sw_mt",
+    "pic": "sw_mt.jpg",
+    "state": 1,
+    "id": "sw_mt",
+    "type": "SW",
+    "subType": "",
+    "category": "PTSW",
+    "line": "1-50",
+    "tag": [
+      "NEW",
+      "HOT",
+      "AMA"
+    ]
+  },
+  {
+    "name": "传奇巨龙",
+    "eName": "Legendary Dragons",
+    "code": "sw_ld",
+    "pic": "sw_ld.jpg",
+    "state": 1,
+    "id": "sw_ld",
+    "type": "SW",
+    "subType": "",
+    "category": "PTSW",
+    "line": "1-50",
+    "tag": [
+      "NEW",
+      "HOT",
+      "AMA"
+    ]
+  },
+  {
+    "name": "黄金花园",
+    "eName": "Golden Garden",
+    "code": "sw_ggdn",
+    "pic": "sw-ggdn.jpg",
+    "state": 1,
+    "id": "sw_ggdn",
+    "type": "SW",
+    "subType": "",
+    "category": "PTSW",
+    "line": "1-25",
+    "tag": [
+      "NEW",
+      "HOT",
+      "AMA"
+    ]
+  },
+  {
+    "name": "老夫子",
+    "eName": "Old Master Q",
+    "code": "sw_omqjp",
+    "pic": "sw_omqjp.jpg",
+    "state": 1,
+    "id": "sw_omqjp",
+    "type": "SW",
+    "subType": "",
+    "category": "PTSW",
+    "line": "1-10",
+    "tag": [
+      "JPT"
+    ]
+  },
+  {
+    "name": "龙鲤传奇",
+    "eName": "Legend of Dragon KoiRising Samurai",
+    "code": "sw_lodk",
+    "pic": "sw_lodk.jpg",
+    "state": 1,
+    "id": "sw_lodk",
+    "type": "SW",
+    "subType": "",
+    "category": "PTSW",
+    "line": "1-10",
+    "tag": [
+      "NEW",
+      "HOT",
+      "AMA"
+    ]
+  },
+  {
+    "name": "崛起的武士",
+    "eName": "Maneki Fortunes",
+    "code": "sw_rs",
+    "pic": "sw_rs.jpg",
+    "state": 1,
+    "id": "sw_rs",
+    "type": "SW",
+    "subType": "",
+    "category": "PTSW",
+    "line": "1-10",
+    "tag": [
+      "NEW",
+      "HOT",
+      "AMA"
+    ]
+  },
+  {
+    "name": "生财有道",
+    "eName": "Sheng Cai You Dao",
+    "code": "sw_scyd",
+    "pic": "sw_scyd.jpg",
+    "state": 1,
+    "id": "sw_scyd",
+    "type": "SW",
+    "subType": "",
+    "category": "PTSW",
+    "line": "1-10",
+    "tag": [
+      "NEW",
+      "HOT",
+      "AMA"
+    ]
+  },
+  {
+    "name": "金龟发发发",
+    "eName": "888 Turtles",
+    "code": "sw_888t",
+    "pic": "sw_888t.jpg",
+    "state": 1,
+    "id": "sw_888t",
+    "type": "SW",
+    "subType": "",
+    "category": "PTSW",
+    "line": "1-10",
+    "tag": [
+      "NEW",
+      "HOT",
+      "AMA"
+    ]
+  },
+  {
+    "name": "心连心",
+    "eName": "Heart to Heart",
+    "code": "sw_h2h",
+    "pic": "sw_h2h.jpg",
+    "state": 1,
+    "id": "sw_h2h",
+    "type": "SW",
+    "subType": "",
+    "category": "PTSW",
+    "line": "1-10",
+    "tag": [
+      "NEW",
+      "HOT",
+      "AMA"
+    ]
+  },
+  {
+    "name": "天上凤凰",
+    "eName": "Heavenly Phoenix",
+    "code": "sw_hp",
+    "pic": "sw_hp.jpg",
+    "state": 1,
+    "id": "sw_hp",
+    "type": "SW",
+    "subType": "",
+    "category": "PTSW",
+    "line": "1-10",
+    "tag": [
+      "NEW",
+      "HOT",
+      "AMA"
+    ]
+  },
+  {
+    "name": "吉祥招财猫",
+    "eName": "Maneki Fortunes",
+    "code": "sw_mf",
+    "pic": "sw_mf.jpg",
+    "state": 1,
+    "id": "sw_mf",
+    "type": "SW",
+    "subType": "",
+    "category": "PTSW",
+    "line": "1-10",
+    "tag": [
+      "AMA"
+    ]
+  },
+  {
+    "name": "闪电之神",
+    "eName": "God of Lightning",
+    "code": "sw_gol",
+    "pic": "sw_gol.jpg",
+    "state": 1,
+    "id": "sw_gol",
+    "type": "SW",
+    "subType": "",
+    "category": "PTSW",
+    "line": "1-10",
+    "tag": [
+      "AMA"
+    ]
+  },
+  {
+    "name": "虎虎生财",
+    "eName": "Tiger Cash",
+    "code": "sw_tc",
+    "pic": "sw_tc.jpg",
+    "state": 1,
+    "id": "sw_tc",
+    "type": "SW",
+    "subType": "",
+    "category": "PTSW",
+    "line": "1-10",
+    "tag": [
+      "AMA"
+    ]
+  },
+  {
+    "name": "欲火凤凰",
+    "eName": "Flaming Phoenix",
+    "code": "sw_fp",
+    "pic": "sw_fp.jpg",
+    "state": 1,
+    "id": "sw_fp",
+    "type": "SW",
+    "subType": "",
+    "category": "PTSW",
+    "line": "1-10",
+    "tag": [
+      "AMA"
+    ]
+  },
+  {
+    "name": "猴子先生",
+    "eName": "Mr Monkey",
+    "code": "sw_mrmnky",
+    "pic": "sw_mrmnky.jpg",
+    "state": 1,
+    "id": "sw_mrmnky",
+    "type": "SW",
+    "subType": "",
+    "category": "PTSW",
+    "line": "1-10",
+    "tag": [
+      "AMA"
+    ]
+  },
+  {
+    "name": "美人鱼",
+    "eName": "Mermaids Beauty",
+    "code": "sw_mer",
+    "pic": "sw_mer.jpg",
+    "state": 1,
+    "id": "sw_mer",
+    "type": "SW",
+    "subType": "",
+    "category": "PTSW",
+    "line": "1-10",
+    "tag": [
+      "AMA"
+    ]
+  },
+  {
+    "name": "亚马逊美人",
+    "eName": "Amazon Lady",
+    "code": "sw_al",
+    "pic": "sw_al.jpg",
+    "state": 1,
+    "id": "sw_al",
+    "type": "SW",
+    "subType": "",
+    "category": "PTSW",
+    "line": "1-10",
+    "tag": [
+      "AMA"
+    ]
+  },
+  {
+    "name": "钻石交响曲",
+    "eName": "Symphony Of Diamonds",
+    "code": "sw_sod",
+    "pic": "sw_sod.jpg",
+    "state": 1,
+    "id": "sw_sod",
+    "type": "SW",
+    "subType": "",
+    "category": "PTSW",
+    "line": "1-10",
+    "tag": [
+      "AMA"
+    ]
+  },
+  {
+    "name": "冰火女王",
+    "eName": "Queens of Ice and Fire",
+    "code": "sw_qoiaf",
+    "pic": "sw_qoiaf.jpg",
+    "state": 1,
+    "id": "sw_qoiaf",
+    "type": "SW",
+    "subType": "",
+    "category": "PTSW",
+    "line": "1-10",
+    "tag": [
+      "AMA"
+    ]
+  },
+  {
+    "name": "熊猫厨神",
+    "eName": "Panda Chef",
+    "code": "sw_pc",
+    "pic": "sw_pc.jpg",
+    "state": 1,
+    "id": "sw_pc",
+    "type": "SW",
+    "subType": "",
+    "category": "PTSW",
+    "line": "1-10",
+    "tag": [
+      "AMA"
+    ]
+  },
+  {
+    "name": "神龙宝石",
+    "eName": "Shen Long Bao Shi",
+    "code": "sw_slbs",
+    "pic": "sw_slbs.jpg",
+    "state": 1,
+    "id": "sw_slbs",
+    "type": "SW",
+    "subType": "",
+    "category": "PTSW",
+    "line": "1-10",
+    "tag": [
+      "AMA"
+    ]
+  },
+  {
+    "name": "新年财富",
+    "eName": "New Years Fortune",
+    "code": "sw_nyf",
+    "pic": "sw_nyf.jpg",
+    "state": 1,
+    "id": "sw_nyf",
+    "type": "SW",
+    "subType": "",
+    "category": "PTSW",
+    "line": "1-10",
+    "tag": [
+      "AMA"
+    ]
+  },
+  {
+    "name": "双倍奖金",
+    "eName": "Double Bonus",
+    "code": "sw_db",
+    "pic": "sw_db.jpg",
+    "state": 1,
+    "id": "sw_db",
+    "type": "SW",
+    "subType": "",
+    "category": "PTSW",
+    "line": "1-10",
+    "tag": [
+      "AMA"
+    ]
+  },
+  {
+    "name": "快乐海豚",
+    "eName": "Dolphin Delight",
+    "code": "sw_dd",
+    "pic": "sw_dd.jpg",
+    "state": 1,
+    "id": "sw_dd",
+    "type": "SW",
+    "subType": "",
+    "category": "PTSW",
+    "line": "1-10",
+    "tag": [
+      "AMA"
+    ]
+  },
+  {
+    "name": "拉美西斯财富",
+    "eName": "Ramses Fortune",
+    "code": "sw_rf",
+    "pic": "sw_rf.jpg",
+    "state": 1,
+    "id": "sw_rf",
+    "type": "SW",
+    "subType": "",
+    "category": "PTSW",
+    "line": "1-10",
+    "tag": [
+      "AMA"
+    ]
+  },
+  {
+    "name": "疯狂重转",
+    "eName": "Respin Mania",
+    "code": "sw_rm",
+    "pic": "sw_rm.jpg",
+    "state": 1,
+    "id": "sw_rm",
+    "type": "SW",
+    "subType": "",
+    "category": "PTSW",
+    "line": "1-10",
+    "tag": [
+      "AMA"
+    ]
+  },
+  {
+    "name": "冰雪女王",
+    "eName": "Snowfall Queen",
+    "code": "sw_sq",
+    "pic": "sw_sq.jpg",
+    "state": 1,
+    "id": "sw_sq",
+    "type": "SW",
+    "subType": "",
+    "category": "PTSW",
+    "line": "1-10",
+    "tag": [
+      "AMA"
+    ]
+  },
+  {
+    "name": "大黑赐福",
+    "eName": "Da Hei Ci Fu",
+    "code": "sw_dhcf",
+    "pic": "sw_dhcf.jpg",
+    "state": 1,
+    "id": "sw_dhcf",
+    "type": "SW",
+    "subType": "",
+    "category": "PTSW",
+    "line": "1-10",
+    "tag": [
+      "AMA"
+    ]
+  },
+  {
+    "name": "从林翻倍赢",
+    "eName": "Double Jungle",
+    "code": "sw_dj",
+    "pic": "sw_dj.jpg",
+    "state": 1,
+    "id": "sw_dj",
+    "type": "SW",
+    "subType": "",
+    "category": "PTSW",
+    "line": "1-10",
+    "tag": [
+      "AMA"
+    ]
+  },
+  {
+    "name": "水果财富",
+    "eName": "Shui Guo Cai Fu",
+    "code": "sw_sgcf",
+    "pic": "sw_sgcf.jpg",
+    "state": 1,
+    "id": "sw_sgcf",
+    "type": "SW",
+    "subType": "",
+    "category": "PTSW",
+    "line": "1-10",
+    "tag": [
+      "AMA"
+    ]
+  },
+  {
+    "name": "猩猩月亮",
+    "eName": "Gorilla Moon",
+    "code": "sw_gm",
+    "pic": "sw_gm.jpg",
+    "state": 1,
+    "id": "sw_gm",
+    "type": "SW",
+    "subType": "",
+    "category": "PTSW",
+    "line": "1-10",
+    "tag": [
+      "AMA"
+    ]
+  },
+  {
+    "name": "迎财神",
+    "eName": "Ying Cai Shen",
+    "code": "sw_ycs",
+    "pic": "sw_ycs.jpg",
+    "state": 1,
+    "id": "sw_ycs",
+    "type": "SW",
+    "subType": "",
+    "category": "PTSW",
+    "line": "1-10",
+    "tag": [
+      "AMA"
+    ]
+  },
+  {
+    "name": "三福",
+    "eName": "San Fu",
+    "code": "sw_sf",
+    "pic": "sw_sf.jpg",
+    "state": 1,
+    "id": "sw_sf",
+    "type": "SW",
+    "subType": "",
+    "category": "PTSW",
+    "line": "1-10",
+    "tag": [
+      "AMA"
+    ]
+  },
+  {
+    "name": "福宝宝",
+    "eName": "Fu Bao Bao",
+    "code": "sw_fbb",
+    "pic": "sw_fbb.jpg",
+    "state": 1,
+    "id": "sw_fbb",
+    "type": "SW",
+    "subType": "",
+    "category": "PTSW",
+    "line": "1-10",
+    "tag": [
+      "AMA"
+    ]
+  }
+]

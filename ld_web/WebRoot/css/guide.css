@@ -1,0 +1,247 @@
+/*彩金攻略
+===========*/
+.container{
+    width: 1200px;
+}
+.sp {
+    background-image: url(../images/guide/sprite.png);
+    background-repeat: no-repeat;
+    display: block;
+    /* background-color: #260307; */
+}
+
+.sp-ele-1 {
+    width: 173px;
+    height: 219px;
+    background-position: -5px -5px;
+}
+
+.sp-ele-2 {
+    width: 182px;
+    height: 206px;
+    background-position: -5px -234px;
+}
+
+.sp-ele-3 {
+    width: 200px;
+    height: 217px;
+    background-position: -5px -450px;
+}
+
+.sp-ele-4 {
+    width: 155px;
+    height: 205px;
+    background-position: -5px -677px;
+}
+
+/*
+ * 免费彩金
+ * ================================*/
+.guide-bg{
+    background:#260307 url("../images/guide/banner-top.jpg") no-repeat 50% 0 ;
+    /*padding-top: 662px;*/
+}
+.top-h{
+    height: 440px;
+}
+
+.top-box{
+    position: relative;
+    background: url("../images/guide/guide-box.png") no-repeat 50% 0;
+    height: 239px;
+    padding-top: 54px;
+    width: 847px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+.top-box h2{
+    font-size: 26px;
+    margin-bottom: 17px;
+    color:#b0b0b0;
+}
+.top-box .btn-wp{
+    font-size: 30px;
+    color:#fff;
+    line-height: 1;
+}
+.top-box .add{
+    padding:0 20px;
+    font-size: 50px;
+    vertical-align: middle;
+}
+.top-box .btn{
+    background: #2a1829;
+    border: 2px solid #30232f;
+    height: 65px;
+    width: 242px;
+    line-height: 60px;
+    border-radius: 70px;
+    font-size: 26px;
+    color: #fff;
+}
+.top-box .btn em{
+    font-size: 50px;
+    color: #ac7dff;
+    margin-right:10px;
+    vertical-align: middle;
+}
+.top-box .btn .t {
+    vertical-align: middle;
+}
+.section{
+    position: relative;
+    padding: 20px;
+    border-radius: 16px;
+    transition: .3s all;
+    color: #fff;
+    margin-bottom: 90px;
+}
+.section .inner{
+    padding: 20px 44px;
+}
+.section .section-top,
+.section .section-bottom{
+    position: absolute;
+    left: 0;
+    right:0;
+}
+.section .section-top{
+    top:0;
+    background: url(../images/guide/section-top.png) no-repeat 50% 0;
+    height: 112px;
+}
+
+.section.two .section-top{
+    background: url(../images/guide/section-top-two.png) no-repeat 50% 0;
+    height: 119px;
+}
+.section .border{
+    position: absolute;
+    left: -4px;
+    top: 270px;
+    bottom: 86px;
+    background: url(../images/guide/section-border.png) repeat-y 50% 0;
+    width: 47px;
+}
+.section .border .border-top{
+    background: url(../images/guide/section-border-top.png) repeat-y 50% 0;
+    width: 47px;
+    height: 30px;
+    margin-top:-30px;
+}
+.section .border.right{
+    left:auto;
+    right: -8px;
+    top: 279px;
+}
+.section.two .border{
+    background: url(../images/guide/section-border-two.png) repeat-y 50% 0;
+}
+.section.two .border .border-top{
+    background: url(../images/guide/section-border-top-two.png) repeat-y 50% 0;
+
+}
+
+.section .section-bottom{
+    bottom:0;
+    background: url(../images/guide/section-bottom.png) no-repeat 50% 0;
+    height: 86px;
+}
+
+.section.two .section-bottom{
+    background: url(../images/guide/section-bottom-two.png) no-repeat 50% 0;
+    height: 86px;
+}
+.section .border-top-left{
+    width: 200px;
+    height:40px;
+    border:7px solid rgba(240, 156, 188, 0.9);
+    border-right:none;
+    border-bottom:none;
+}
+.section .sp-ele-1,
+.section.two .sp-ele-3{
+    position: absolute;
+    left: -90px;
+    top:40px;
+    transition: .3s all;
+}
+.section:hover .sp-ele-1,
+.section.two:hover .sp-ele-3{
+    left: -109px;
+}
+
+.section .sp-ele-2,
+.section.two .sp-ele-4{
+    position: absolute;
+    right: -64px;
+    top:40px;
+    transition: .3s all;
+}
+.section:hover .sp-ele-2,
+.section.two:hover .sp-ele-4{
+    right: -74px;
+}
+.section.two .sp-ele-3,
+.section.two .sp-ele-4{
+    top:70px;
+}
+.section .item{
+    display: block;
+    padding-top: 38px;
+    border-bottom:2px solid #503637;
+    font-size: 16px;
+    text-align: left;
+}
+.section .item:last-child{
+    border-bottom:none;
+}
+.section .tit{
+    position: absolute;
+    padding: 0 20px;
+    left: 50%;
+    width: 310px;
+    top: -27px;
+    font-size: 30px;
+    margin-left: -155px;
+    color: #eb93b4;
+    background: #260307;
+    text-align: center;
+    text-shadow:0 0 22px rgba(240, 156, 187,.9);
+}
+.section h3{
+    font-size: 22px;
+    color: #ff005e;
+}
+.section.two h3{
+    color: #00b0ff;
+}
+.section .meta{
+
+}
+.section .summary{
+    padding: 32px 0;
+    color: #fff;
+}
+.section-ft{
+    background: url('../images/guide/city-bg.jpg') no-repeat left 30px,
+    url('../images/guide/city-bg.jpg') no-repeat right 30px;
+    color: #7d4742;
+
+}
+.section-ft .inner{
+    padding: 0 40px 60px;
+}
+
+.gb-footer {
+    color: #7d4742;
+    background-color: #261614;
+}.gb-footer .footer-nav{
+    border-bottom:1px solid #7d4742;
+ }
+.gb-footer .footer-sub{
+    background-color: #170e0c;
+}
+
+
+

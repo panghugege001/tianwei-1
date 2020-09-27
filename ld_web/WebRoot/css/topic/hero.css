@@ -1,0 +1,258 @@
+body{
+    color: #ccc;
+    background-color: #0a1215;
+    font: 14px/1.5 tahoma, arial, 'Microsoft YaHei', sans-serif;
+}
+
+/*css sprite*/
+.sp {
+    background-image: url(../../images/topic/hero/sprite.png?v=333);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sp-tit-three {
+    width: 343px;
+    height: 55px;
+    background-position: -74px -1204px;
+    margin-left: 20px!important;
+}
+
+.sp-tit-one {
+    width: 440px;
+    height: 55px;
+    background-position: -5px -1269px;
+}
+
+.sp-tit-two {
+    width: 386px;
+    height: 55px;
+    background-position: -5px -1334px;
+}
+
+.tit-one{
+    width: 413px;
+}
+
+.sp-menu {
+    width: 291px;
+    height: 683px;
+    background-position: -5px -5px;
+}
+
+.c-strong{
+    color: #ff0!important;
+}
+.c-red{
+    color: #930405;
+}
+
+
+/*头部
+=======*/
+.header{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 84px;
+    padding-top: 5px;
+    background-color: #0b1426;
+    background-color: rgba(0,0,0,.5);
+    z-index: 99;
+}
+.header-inner{
+    width: 1200px;
+    margin: 0 auto;
+}
+.header .toplink{
+    padding-top: 28px;
+}
+.header .toplink a{
+    display: inline-block;
+    line-height: 16px;
+    margin-right: 4px;
+    text-align: center;
+    font-size: 14px;
+    padding:0 16px;
+    color: #fff;
+    vertical-align: middle;
+    border-left: 1px solid #fff;
+}
+.header .toplink a:first-child{
+    border-left: none;
+}
+.header .toplink .i-btn{
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    width: 80px;
+    background-color: #fb9b08;
+    color: #fff;
+    padding: 0;
+    border:none;
+}
+.header .toplink .i-btn.two{
+    background-color: #24406c;
+}
+
+
+/*main
+=======*/
+
+.bg-top{
+    background:#0a1215 url('/images/topic/hero/bg-top.jpg') no-repeat 50% 0;
+    padding-top: 874px;
+    position: relative;
+}
+.bg-center{
+    /* height: 467px; */
+    background: #0c1117 url('/images/topic/hero/bg-center.jpg') no-repeat 50% 0 ;
+    position: relative;
+}
+.bg-gradient{
+    position:absolute;
+    left: 0;
+    right:0;
+    top: 467px;
+    bottom:0;
+    background: linear-gradient(to bottom,#05090c 0%,#0c1117 100%);
+}
+.bg-bottom{
+    background:#0a1215 url('/images/topic/hero/bg-bottom.jpg') no-repeat 50% 0;
+    height: 240px;
+    /* padding-top: 700px; */
+}
+
+.table{
+    margin: 24px 0;
+}
+.table tr th{
+    background-color: #431b00;
+    color: #ccc;
+    font-weight: normal;
+}
+.table tr th,
+.table tr td{
+    border: 2px solid #010202;
+}
+.table tr td{
+    background-color: #1e0e05;
+    color: #fff;
+    padding: 8px 10px;
+    font-size: 13px;
+}
+.table tr:nth-child(even) td{
+    /* background-color: #12191f; */
+}
+
+
+.m-content{
+    padding:0 56px 60px;
+    color: #ccc;
+}
+.m-content h3{
+    color: #ff0;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.container{
+    width: 1200px;
+}
+
+/*menu*/
+.menu,
+.menu  a{
+    background-image:url(/images/topic/hero/sprite.png);
+    background-repeat: no-repeat;
+    background-position-x: 140px;
+    display: block;
+    transition: background-position-x .3s;
+}
+.menu{
+    float: left;
+    width: 291px;
+    height: 683px;
+    margin-right: 47px;
+    background-position:-5px -5px;
+    position: relative;
+}
+.menu a{
+    position: absolute;
+    text-indent: -999em;
+    overflow: hidden;
+}
+.sp-menu-1 {
+    width: 141px;
+    height: 154px;
+    left: 125px;
+    top: 4px;
+}
+.active .sp-menu-1 {
+    background-position: -5px -698px;
+}
+
+.sp-menu-2 {
+    width: 140px;
+    height: 150px;
+    left: 0;
+    top: 186px;
+}
+.active .sp-menu-2 {
+    background-position: -5px -862px;
+}
+
+.sp-menu-3 {
+    width: 148px;
+    height: 158px;
+    left: 138px;
+    top: 366px;
+}
+.active .sp-menu-3 {
+    background-position: -5px -1022px;
+}
+.main-box{
+    /* position: absolute; */
+    /* left: 50%; */
+    width: 1200px;
+    margin: 0 auto;
+}
+.box-content{
+    width: 786px;
+    background: rgba(0,0,0,.8);
+    position: relative;
+}
+.box-content .box-left,
+.box-content .box-right{
+    background: url("/images/topic/hero/border.jpg") repeat-y;
+    width: 7px;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+}
+.box-content .box-left{
+    left: 0;
+}
+.box-content .box-right{
+    right: 0;
+}
+.tab-panel .tit{
+    position: absolute;
+    left: 174px;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+}
+.tab-panel.active .tit{
+    top: -100px;
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+
+
+

@@ -1,0 +1,61 @@
+body, button{font-family:Tahoma, Helvetica, Arial, "Microsoft Yahei", STXihei, 华文细黑, sans-serif;}
+body{padding:0; margin:0; background:url("../../images/topic/dog/bg.jpg") no-repeat top;}
+.page{width:960px; margin:0 auto;}
+.top{height:653px;}
+.top .logo{width:174px; margin:23px auto 0;}
+.top .banner{position:relative; height:542px;}
+.top .banner .position{position:absolute; bottom:-29px; left:calc(50% - 177px);}
+.center{margin:17px 0 123px;}
+.center .activity{}
+.center .activity .date{height:60px;}
+.center .activity .date ul, .center .activity .date li{margin:0; padding:0; list-style-type:none;}
+.center .activity .date ul{display:table; margin:0 auto;}
+.center .activity .date li{float:left;/* margin:0 64px; */padding: 0 30px;}
+.center .activity .date li .title{color:#e4b72f; font-size:14px;}
+.center .list{margin:50px 0;}
+.center .list .title{color:#e4b72f; font-size:27px; border-bottom:8px solid #e4b72f; display:inline-block; margin:0 0 23px 30px; padding:0 0 0 26px; position:relative;}
+.center .list .title i{background:url("../../images/topic/dog/listicon.png") no-repeat; width:50px; height:50px; position:absolute; left:-31px; bottom:-9px;}
+.center .list .title span{font-size:42px;}
+.center .activity .date li .text{color:#827345; font-size:22px;}
+.center .list table.table{border-collapse:collapse; width:100%;}
+.center .list table.table th{color:#000; background:#e4b72f; font-size:22px; padding:10px 0 10px 39px; text-align:left;}
+.center .list table.table tr td{color:#827345; font-size:18px; padding:15px 0 15px 39px;}
+.center .list table.table tr:nth-child(2n+1) td{background:#f2f2f2;}
+.center .list p{color:#827345; font-size:14px; line-height:1.8;}
+.page .btn-more{
+    line-height: 56px;
+    width: 232px;
+    height: 56px;
+    display: block;
+    font-size: 18px;
+    color: #fff;
+    background: #e4b72f;
+    border: 0 none;
+    transition: background .3s ease;
+    box-shadow: 5px 10px 15px -4px rgba(96, 75, 72, .59);
+}
+.page .center .pagination{
+    color: #cdccc6;
+    font-size: 16px;
+
+    margin: 18px auto 0;
+    text-align: center;
+}
+.center .pagination a {
+    display: inline-block;
+    vertical-align: middle;
+    width: 57px;
+    height: 32px;
+    line-height: 32px;
+    color: #fff;
+    margin: 0 5px;
+    border: 0 none;
+    background: #cdccc6;
+}
+.center .pagination select{
+    width: 60px;
+    height: 32px;
+    display: inline-block;
+    line-height: 32px;
+    margin: 0 16px;
+}

@@ -1,0 +1,17 @@
+{"success":true,"message":"",
+"data":[
+{"value":"","name":"请选择银行"},
+{"value":"ABC","name":"农业银行"},
+{"value":"ICBC","name":"工商银行"},
+{"value":"CCB","name":"建设银行"},
+{"value":"BCOM","name":"交通银行"},
+{"value":"BOC","name":"中国银行"},
+{"value":"CMB","name":"招商银行"},
+{"value":"CMBC","name":"民生银行"},
+{"value":"CEBB","name":"光大银行"},
+{"value":"CIB","name":"兴业银行"},
+{"value":"PSBC","name":"中国邮政"},
+{"value":"SPABANK","name":"平安银行"},
+{"value":"ECITIC","name":"中信银行"},
+{"value":"HXB","name":"华夏银行"},
+{"value":"SPDB","name":"浦发银行"}]}

@@ -1,0 +1,72 @@
+body{
+    background: #2d2926;
+    color: #555;
+}
+
+.mb10{
+    margin-bottom: 10px;
+}
+.mb20{
+    margin-bottom: 20px;
+}
+.mb30{
+    margin-bottom: 30px;
+}
+.header {
+    height: 132px;
+    line-height: 132px;
+    text-align: center;
+    background: #2d2926;
+}
+
+.main {
+    background-color: #eee;
+}
+
+.main .inner {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 70px 0 50px 0;
+}
+
+.weihu-box {
+    width: 580px;
+    /* float: right; */
+    overflow: hidden;
+    margin: 0 auto 0;
+    min-height: 600px;
+}
+
+.weihu-box h2 {
+    line-height: 53px;
+    color: #000;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.weihu-box h3 {
+    line-height: 45px;
+    font-size: 30px;
+    color: #de1f00;
+    font-weight: 700;
+}
+
+.weihu-box p {
+    line-height: 27px;
+    font-size: 16px;
+}
+
+.weihu-box .t {
+    color: #de1f00;
+    font-size: 18px;
+    font-weight: 700
+}
+
+.weihu-box a {
+    color: #df3c22;
+}
+
+.footer{
+    height: 132px;
+    background: #2d2926;
+}

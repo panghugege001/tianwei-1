@@ -1,0 +1,70 @@
+.reg-wp{
+    background-color: #fff;
+    background-color: rgba(255,255,255,.8);
+}
+.reg-wp .table-wp{
+    padding: 28px 36px;
+    background-color: #fff;
+    border:2px solid #ff265a;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+.reg-wp .sub-regtit{
+    font-size: 20px; 
+    color:#777;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.reg-wp .label{
+    display: inline-block;
+    width: 82px;
+    font-size: 16px;
+    font-weight: 100;
+    color: #ff265a;
+}
+.reg-wp .label.rq-value:before{
+    content: '*';
+    display: inline-block;
+    margin-left: -9px;
+    color: #f50000;
+}
+.reg-wp .ipt-txt{
+    width: 290px;
+    height: 30px;
+    line-height: 30px;
+    padding: 2px;
+    font-size: 14px;
+    border: 1px solid #777;
+}
+.reg-wp .agree-label{
+    display: inline-block;
+    width: 450px;
+    margin-top: 28px;
+    margin-bottom: 10px;
+}
+.reg-wp .reg-table td{
+    padding: 4px 6px 16px;
+}
+.reg-wp .btn-reg{
+    width: 180px;
+    height: 50px;
+    line-height: 45px;
+    font-size: 20px;
+    background-color: #ff6a6b;
+    color: #fff;
+}
+.reg-wp .reg-table .input-cell{
+    position: relative;
+}
+.reg-wp .reg-table label.error-tip{
+    position: absolute;
+    left: 220px;
+    top: -16px;
+    font-size: 12px;
+    display: block;
+    padding: 3px 10px;
+    background-color: #ff6a6b;
+    border-radius: 10em;
+    color: #fff;
+    white-space: nowrap;
+}

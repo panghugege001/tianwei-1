@@ -1,0 +1,28 @@
+@charset "UTF-8";
+.main-wrap .content table { width: 100%; border-collapse: collapse; border-spacing: 0; text-align: center; line-height: 1.5em; }
+.main-wrap .content li { margin-bottom: 1rem;  }
+.main-wrap .content li a{ display:block;   }
+.main-wrap .content li.active .title {   color: #3f3b35; }
+.main-wrap .content li.active .page {display: inline-block; }
+.main-wrap .content li .title { display: inline-block; width: 100%; letter-spacing: 3px; font-size: 1.3em; line-height:3rem; text-indent: .5em; text-align: left;  background-color: #301f13;  }
+.main-wrap .content li .page {display: none; width: 100%;  }
+.main-wrap .content li .page .content { display: inline-block; width: 100%; padding: .5em; line-height: 100%; }
+.main-wrap .content li .page .content p { text-indent: 2em; }
+.main-wrap .content li .page .content .title2 { line-height: 100%; font-size: 150%; text-align: center; }
+.main-wrap .content li .page .content .title3 { line-height: 100%; font-size: 110%; text-align: center; }
+.main-wrap .content li .page .content .panel { padding: .5em; }
+.main-wrap .content li .page .content .panel ol { padding-left: 25px; font-size: 80%; line-height: 120%; letter-spacing: 1px; }
+.main-wrap .content li .page .content .panel ol li { margin-bottom: .5em; }
+.mt5, .record{ margin-top:5rem;}
+.tishi, .record{ margin-bottom:5rem;}
+.zf-sele select{ height:3rem; line-height:3rem; border:none; background:#372b24 url(../images/down.png) no-repeat 100% 50%;    background-size: 15px 9px;  width:65%; display: block;  margin-top: .5rem;}
+.zf-sele1 select{ width:55%}
+.zf-sele2 select{ width:45%}
+.tishi ol {color: #5c4a3e; list-style: decimal;}
+.ui-input-row2{ padding:.5rem 0;}
+
+.title a:focus,.title a:hover {
+    color: #bcada4;
+	text-decoration: none !important; 
+}
+ 

@@ -1,0 +1,164 @@
+{
+  "code": "10000",
+  "desc": "成功",
+  "data": [
+      {
+      "id": 12,
+      "showName": "支付宝支付1",
+      "fee": 1.2,
+      "phoneFee": null,
+      "pcFee": null,
+      "minPay": 1.0,
+      "maxPay": 300000.0,
+      "appPay": 0,
+      "payWay": 1,
+      "payCenterUrl": "/ddb/zfb_wx"
+    },
+    {
+      "id": 18,
+      "showName": "支付宝支付2",
+      "fee": 0.9,
+      "phoneFee": null,
+      "pcFee": null,
+      "minPay": 1.0,
+      "maxPay": 30000.0,
+      "appPay": 0,
+      "payWay": 1,
+      "payCenterUrl": "/xb/zfb_wx"
+    },
+    {
+      "id": 42,
+      "showName": "支付宝支付3",
+      "fee": 0.8,
+      "phoneFee": null,
+      "pcFee": null,
+      "minPay": 1.0,
+      "maxPay": 2000.0,
+      "appPay": 0,
+      "payWay": 1,
+      "payCenterUrl": "/jhb/zfb_wx"
+    },
+    {
+      "id": 43,
+      "showName": "支付宝支付4",
+      "fee": 2.5,
+      "phoneFee": null,
+      "pcFee": null,
+      "minPay": 2.0,
+      "maxPay": 3000.0,
+      "appPay": 0,
+      "payWay": 1,
+      "payCenterUrl": "/db/zfb_wx2"
+    },
+    {
+      "id": 44,
+      "showName": "支付宝支付5",
+      "fee": 2.5,
+      "phoneFee": null,
+      "pcFee": null,
+      "minPay": 2.0,
+      "maxPay": 3000.0,
+      "appPay": 0,
+      "payWay": 1,
+      "payCenterUrl": "/db/zfb_wx"
+    },
+    {
+      "id": 45,
+      "showName": "支付宝支付6",
+      "fee": 2.5,
+      "phoneFee": null,
+      "pcFee": null,
+      "minPay": 2.0,
+      "maxPay": 3000.0,
+      "appPay": 0,
+      "payWay": 1,
+      "payCenterUrl": "/db/zfb_wx"
+    },
+    {
+      "id": 46,
+      "showName": "支付宝支付7",
+      "fee": 2.5,
+      "phoneFee": null,
+      "pcFee": null,
+      "minPay": 2.0,
+      "maxPay": 3000.0,
+      "appPay": 0,
+      "payWay": 1,
+      "payCenterUrl": "/db/zfb_wx"
+    },
+
+    {
+      "id": 65,
+      "showName": "支付宝支付8",
+      "fee": 0.9,
+      "phoneFee": null,
+      "pcFee": null,
+      "minPay": 1.0,
+      "maxPay": 3000.0,
+      "appPay": 0,
+      "payWay": 1,
+      "payCenterUrl": "/dinpay/zfb_wx"
+    },
+
+    {
+      "id": 80,
+      "showName": "支付宝支付9",
+      "fee": 0.9,
+      "phoneFee": null,
+      "pcFee": null,
+      "minPay": 1.0,
+      "maxPay": 3000.0,
+      "appPay": 0,
+      "payWay": 1,
+      "payCenterUrl": "/xb/zfb_wx"
+    },
+    {
+      "id": 113,
+      "showName": "支付宝支付10",
+      "fee": 1.7,
+      "phoneFee": null,
+      "pcFee": null,
+      "minPay": 1.0,
+      "maxPay": 3000.0,
+      "appPay": 0,
+      "payWay": 1,
+      "payCenterUrl": "/shb/zfb_wx"
+    },
+    {
+      "id": 114,
+      "showName": "支付宝支付11",
+      "fee": 1.7,
+      "phoneFee": null,
+      "pcFee": null,
+      "minPay": 1.0,
+      "maxPay": 3000.0,
+      "appPay": 0,
+      "payWay": 1,
+      "payCenterUrl": "/shb/zfb_wx"
+    },
+    {
+      "id": 115,
+      "showName": "支付宝支付12",
+      "fee": 1.7,
+      "phoneFee": null,
+      "pcFee": null,
+      "minPay": 1.0,
+      "maxPay": 3000.0,
+      "appPay": 0,
+      "payWay": 1,
+      "payCenterUrl": "/shb/zfb_wx"
+    },
+    {
+      "id": 116,
+      "showName": "支付宝支付13",
+      "fee": 1.7,
+      "phoneFee": null,
+      "pcFee": null,
+      "minPay": 1.0,
+      "maxPay": 3000.0,
+      "appPay": 0,
+      "payWay": 1,
+      "payCenterUrl": "/shb/zfb_wx"
+    }
+  ]
+}

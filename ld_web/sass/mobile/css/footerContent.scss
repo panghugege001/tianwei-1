@@ -1,0 +1,82 @@
+@import "base/common";
+
+
+		
+.footer-content{
+    position: absolute;
+  	bottom: 3em;
+  	left:0px;
+  		
+    display: inline-block;
+    width: 100%;
+    padding-bottom:.5em;
+    
+    background: #3f3b35;
+    color:#fff; 
+    
+    .items{
+		width:100%;
+		overflow: hidden;
+		
+		white-space: nowrap;
+		text-align: center;
+	    line-height: 200%;
+		    
+		color:#fb9b08;
+			
+		.item{
+			position: relative;
+			display:inline-block;
+  			padding: 0 .3em 0 .3em;
+  				
+			
+			&.active{
+	   	 		color: #fff;
+	   	 		
+	   	 		&:after {
+			    	opacity: 1;
+					@include transform(scaleX(1));
+				}
+			}
+			
+			&:hover{
+	   	 		color: #fff;
+	   	 		
+	   	 		&:after {
+			    	opacity: 1;
+				    @include transform(scaleX(1));
+				}
+			}
+			
+			&:after {
+			    position: absolute;
+			    left: 0;
+			    right: 0;
+			    top: 1px;
+			    
+			    display: block;
+			    height: 3px;
+			    
+			    background: #fff;
+			    opacity: 0;
+			    
+			    content: '';
+			    
+			    @include transform(scaleX(.2));
+			    
+			    @include transition;
+			}
+		}
+	}
+    
+    .text{
+	    text-align: center;
+	    font-size: 80%;
+	    line-height: 2em;
+    }
+}
+
+.footer-content-margin{
+    display: inline-block;
+    width: 100%;
+}

@@ -1,0 +1,106 @@
+    body {
+        font-size: 16px;
+    }
+
+/*common*/
+    .container {
+        width: 1200px;
+        margin:0 auto;
+    }
+    .c-yellow {
+        color: #d8a459!important;
+    }
+/*common*/
+/*header*/
+    .activety_logo {
+        background:url(/images/zhuanti-logo.png) no-repeat;
+        width: 76px;
+        height: 60px;
+        position: absolute;
+        background-size: 100% 100%;
+        left: 15px;
+        display: block !important;
+    }
+
+    .activety_muee {
+        float: right;
+    }
+
+    .activety_muee a {
+        display: inline-block;
+        /*width: 85px;*/
+        padding: 0 10px;
+        height: 30px;
+        font-size: 14px;
+        color: #fff;
+        border:1px solid #666666;
+        border-radius: 5px;
+        line-height: 30px;
+        text-align: center;
+        margin-right: 20px;
+        cursor: pointer;
+    }
+    .activety_muee a.active {
+        background-color: #d8a459;
+    }    .activety_muee a:hover {
+        background-color: #d8a459;
+    }
+
+    #asidebar {
+        display: none !important;
+    }
+
+    .back_index {
+        display: none;
+    }
+
+    .back_index a {
+        height: 40px;
+        display: inline-block;
+        width: 110px;
+        background: #dfa85a;
+        border-radius: 10px;
+        color: #FFFFFF;
+        line-height: 40px;
+        font-size: 16px;
+    }
+    .activety_header .container {
+        height: 60px;
+        width: 1200px;
+        position: relative;
+        margin: 0 auto;
+        z-index: 10;
+        line-height: 60px;
+    }
+    
+    .activety_header {
+        position: relative;
+        z-index: 10;
+    }
+/*header*/
+/*footer*/
+    body .user_game,body .gb-footer,body .gb-footer .footer-sub{
+  /*      background-color: #14192c!important;*/
+    }
+    .gb-footer .footer-nav {
+        padding-top:0;
+    }
+/*footer*/
+    @media screen and (max-width: 750px) {
+        .activety_muee, .gb-footer, .activety_logo {
+            display: none !important;
+        }
+
+        .activety_header .container {
+            width: 100% !important;
+            height: 80px;
+            line-height: 80px;
+            padding: 0 !important;
+        }
+        .back_index {
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: 5%;
+            margin-top: 6px;
+        }
+    }

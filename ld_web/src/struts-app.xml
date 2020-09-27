@@ -1,0 +1,53 @@
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN" "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="app" namespace="/app" extends="struts-default,json-default">
+		
+		<!-- 手机游戏配置开始处   -->
+		
+		<action name="verifyDomain" class="app.action.GameAction" method="verifyDomain"></action>
+		
+		<action name="enterGameHall" class="app.action.GameAction" method="enterGameHall">
+			<result name="view">/mobile/app/slotGame.jsp</result>
+			<result name="pth5Login">/mobile/app/pth5Login.jsp</result> 
+			<result name="error">/mobile/app/appPayError.jsp</result>
+		</action>
+		
+		<!-- pt小游戏进入 -->
+		<action name="ptH5Login" class="app.action.GameAction" method="ptH5Login">
+			<result name="success">/mobile/app/pth5Login.jsp</result>
+			<result name="error" >/mobile/app/slotGame.jsp</result>
+		</action>
+		
+		
+		<!-- 游戏大厅改动平凡，给前端调试用的action   -->
+		<action name="enterGameHall_test" class="app.action.GameAction" method="enterGameHall_test">
+			<result name="view">/mobile/app/slotGame.jsp</result>
+			<result name="error">/mobile/app/appPayError.jsp</result>
+		</action>
+		
+		<!-- 手机游戏配置结束处   -->
+		
+		
+		<!-- 品牌app 在线支付嵌入页面入口 start -->
+		<action name="appPayOnline"
+			class="app.action.AppCommonAction" method="appPayOnline">
+			<result name="appPayindex">/mobile/app/fundsManage.jsp</result>
+			<result name="error">/mobile/app/appPayError.jsp</result>
+		</action>
+		<!-- 品牌app 嵌入页面入口 end -->	
+		
+					
+		<!-- 微社区进入 start -->
+		<action name="appCommunity"
+			class="app.action.AppCommonAction" method="appCommunity">
+				<result name="success">/e68bbs.jsp</result>
+		</action>
+		<!-- 微社区进入end -->		
+		
+		<!-- 获取App 定制版本信息  -->
+		<action name="getAppVersionCustomInfo"
+			class="app.action.AppCommonAction" method="getAppVersionCustomInfo">
+		</action>
+				
+	</package>
+</struts>

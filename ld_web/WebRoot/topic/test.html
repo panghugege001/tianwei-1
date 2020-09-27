@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="description" content="Focus Audio Player" />
+    <meta name="keywords" content="Widget,audio,player,jplayer,jplayer skin,mp3 player,music player,playlist" />
+    <meta name="author" content="MetroThemes" />
+
+
+    <link rel="stylesheet" href="../css/topic/jplayer.css">
+    <!--<link rel="stylesheet" href="../css/topic/metroplayericon.css">-->
+    <script src="../js/lib/jquery-1.11.2.min.js"></script>
+    <script src="../js/player/jquery.jplayer.min.js"></script>
+    <script src="../js/player/jplayer.config.js"></script>
+    <script src="../js/player/jplayer.playlist.min.js"></script>
+    <style>
+
+        html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline; }
+        article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+            display: block}
+        body {
+            line-height: 1; }
+        ol, ul {
+            list-style: none; }
+        blockquote, q {
+            quotes: none; }
+        blockquote:before, blockquote:after, q:before, q:after {
+            content: '';
+            content: none; }
+        table {
+            border-collapse: collapse;
+            border-spacing: 0}
+
+        html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; -webkit-font-smoothing: antialiased; }
+
+        body{
+            background: #D2D5D6;
+        }
+        .focus-container {
+            margin: 0 auto;
+            width: 600px;
+        }
+        .boxed {
+            background: none repeat scroll 0 0 #EEF1F2;
+            border-radius: 18px;
+            margin-bottom: 30px;
+            margin-top: 50px;
+            position: relative;
+            z-index: 0;
+            -webkit-box-shadow: 0 0 12px rgba(58, 51, 46, 0.26);
+            -moz-box-shadow: 0 0 12px rgba(58, 51, 46, 0.26);
+            box-shadow: 0 0 12px rgba(58, 51, 46, 0.26);
+        }
+
+        @media(max-width: 600px){
+            .focus-container{
+                width: 400px;
+            }
+        }
+        @media(max-width: 360px){
+            .focus-container{
+                width: 300px;
+            }
+            .song_title img{
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <!-- Focus Audio Player -->
+    <div class="focus-container focus-audio boxed">
+        <div id="jquery_jplayer_1" class="jp-jplayer"></div>
+        <div id="jp_container_1" class="jp-audio">
+            <div class="inner">
+                <div class="jp-gui jp-interface">
+                    <div class="jp-controls-wrap">
+                        <div class="song_title"></div>
+                        <div class="jp-current-time"></div>
+                        <div class="jp-duration"></div>
+                        <div class="jp-progress">
+                            <div class="jp-seek-bar">
+                                <div class="jp-play-bar"></div>
+                            </div>
+                        </div>
+                        <ul class="jp-controls clearfix">
+                            <li><a href="javascript:;" class="jp-mute" tabindex="1" title="mute"><i class="icon iconfont">&#xe63b;</i></a></li>
+                            <li><a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute"><i class="icon iconfont">&#xe636;</i></a></li>
+                            <li><a href="javascript:;" class="jp-previous disabled" tabindex="1"><i class="icon iconfont">&#xe62f;
+                            </i></a></li>
+                            <li><a href="javascript:;" class="jp-play" tabindex="1"><i class="icon iconfont">&#xe720;</i></a>
+                            </li>
+                            <li><a href="javascript:;" class="jp-pause" tabindex="1"><i class="icon iconfont">&#xe605;</i>
+                            </a></li>
+                            <li><a href="javascript:;" class="jp-next" tabindex="1"><i class="icon iconfont">&#xe61f;</i>
+                            </a></li>
+                            <li><a href="javascript:;" class="jp-stop" tabindex="1"></a></li>
+                            <li>
+                                <a href="javascript:;" class="jp-repeat" tabindex="1" title="repeat">
+                                    <i class="icon iconfont">&#xe600;</i>
+                                </a>
+                            </li>
+                            <li><a href="javascript:;" class="jp-repeat-off" tabindex="1" title="repeat off"><i class="icon iconfont" style="color:red">&#xe600;</i></a></li>
+                            <li><a href="javascript:;" class="jp-volume-max" tabindex="1" title="max volume"></a>
+                            </li>
+                            <li><a href="javascript:;" class="jp-shuffle" tabindex="1" title="shuffle"></a></li>
+                            <li><a href="javascript:;" class="jp-shuffle-off" tabindex="1" title="shuffle off"></a>
+                            </li>
+                            <li><a href="javascript:;" class="jp-playlist-toggle" tabindex="1" title="Toggle PlayList">
+                                <i class="icon iconfont">&#xe622;</i></a></li>
+                        </ul>
+                        <div class="jp-volume-bar">
+                            <div class="jp-volume-bar-value">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="jp-playlist">
+                    <ul class="jp-playlist-inner">
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Focus Audio Player -->
+</div>
+</body>
+</html>
+<script>
+
+    $(document).ready(function(){
+
+        new jPlayerPlaylist({
+            jPlayer: "#jquery_jplayer_1",
+            cssSelectorAncestor: "#jp_container_1"
+        }, [
+            {
+                title:"<div class='item-song'>He lives in you, he lives in me</div><div class='item-artist'>Elton John, Hans Zimmer</div>",
+                itunes :"#",
+                amazon : "#",
+                buy : "",
+                download : "",
+                mp3:"http://www.jplayer.org/audio/mp3/TSP-05-Your_face.mp3",
+                oga:""
+            },
+            {
+                title:"<div class='item-song'>I saw you dancing</div><div class='item-artist'>Yaki Da</div>",
+                buy : "",
+                download : "#",
+                mp3:"http://www.jplayer.org/audio/mp3/TSP-07-Cybersonnet.mp3",
+                oga:""
+            },
+            {
+                title:"<div class='item-song'>Sands of Time</div><div class='item-artist'>Pandora</div>",
+                buy : "#",
+                itunes :"",
+                amazon : "",
+                download : "",
+                mp3:"http://www.jplayer.org/audio/mp3/Miaow-07-Bubble.mp3",
+                oga:""
+            }
+        ], {
+            swfPath: "js",
+            supplied: "oga, mp3",
+            wmode: "window",
+            smoothPlayBar: false,
+            keyEnabled: false
+        });
+    });
+</script>

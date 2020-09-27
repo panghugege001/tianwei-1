@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE validators PUBLIC "-//OpenSymphony Group//XWork Validator 1.0.2//EN"
+ "http://struts.apache.org/dtds/xwork-validator-1.0.2.dtd">
+
+<validators>	
+	<field name="loginname">
+		<field-validator type="requiredstring" short-circuit="true">
+			<param name="trim">true</param>
+			<message>Please specify a Login Name</message>
+		</field-validator>
+		<field-validator type="stringlength" short-circuit="true">
+			<param name="minLength">6</param>
+			<param name="maxLength">16</param>
+			<message>Login Name must be between 6 - 16 characters.</message>
+		</field-validator>
+		<field-validator type="regex" short-circuit="true">
+			<param name="expression">^[a-z]([a-z]|[0-9])*$</param>
+			<message>Login Name must be in lower case, starts with a character and must be alphanumeric.</message>
+		</field-validator>
+	</field>
+	<field name="password">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message>Please specify a password for this account.</message>
+		</field-validator>
+		<field-validator type="stringlength">
+			<param name="minLength">6</param>
+			<param name="maxLength">20</param>
+			<message>Password must be between 6 - 20 characters.</message>
+		</field-validator>
+	</field>
+	<field name="retypepassword">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message>Please retype your password.</message>
+		</field-validator>
+		<field-validator type="stringlength">
+			<param name="minLength">6</param>
+			<param name="maxLength">20</param>
+			<message>Retype Password must be between 6 - 20 characters.</message>
+		</field-validator>
+		<field-validator type="fieldexpression">
+			<param name="expression">
+				password eq retypepassword
+			</param>
+			<message>Password and Retype Password must match.</message>
+		</field-validator>
+	</field>
+		<field name="amount">
+		<field-validator type="required" short-circuit="true">
+			<param name="trim">true</param>
+			<message>请输入提款额度</message>
+		</field-validator>
+		<field-validator type="fieldexpression">
+			<param name="expression">
+				amount>0
+			</param>
+			<message>提款额度必须大于0</message>
+		</field-validator>
+				<field-validator type="double">
+			<param name="minInclusive">1</param>
+			<param name="maxInclusive">200000</param>
+			<message>提款金额在 ${minInclusive}和 ${maxInclusive}之间</message>
+		</field-validator>
+	</field>
+</validators>

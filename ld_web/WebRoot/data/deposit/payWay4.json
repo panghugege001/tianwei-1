@@ -1,0 +1,66 @@
+{
+  "code": "10000",
+  "desc": "成功",
+  "data": [
+    {
+      "id": 9,
+      "showName": "快捷支付1",
+      "fee": 0.0,
+      "phoneFee": null,
+      "pcFee": null,
+      "minPay": 1.0,
+      "maxPay": 3000.0,
+      "appPay": 0,
+      "payWay": 4,
+      "payCenterUrl": "/hc/online_pay"
+    },
+    {
+      "id": 137,
+      "showName": "快捷支付2",
+      "fee": 1.0,
+      "phoneFee": null,
+      "pcFee": null,
+      "minPay": 1.0,
+      "maxPay": 3000.0,
+      "appPay": 0,
+      "payWay": 4,
+      "payCenterUrl": "/shb/online_pay"
+    },
+    {
+      "id": 138,
+      "showName": "快捷支付3",
+      "fee": 1.0,
+      "phoneFee": null,
+      "pcFee": null,
+      "minPay": 1.0,
+      "maxPay": 3000.0,
+      "appPay": 0,
+      "payWay": 4,
+      "payCenterUrl": "/shb/online_pay"
+    },
+    {
+      "id": 139,
+      "showName": "快捷支付4",
+      "fee": 1.0,
+      "phoneFee": null,
+      "pcFee": null,
+      "minPay": 1.0,
+      "maxPay": 3000.0,
+      "appPay": 0,
+      "payWay": 4,
+      "payCenterUrl": "/shb/online_pay"
+    },
+    {
+      "id": 140,
+      "showName": "快捷支付5",
+      "fee": 1.0,
+      "phoneFee": null,
+      "pcFee": null,
+      "minPay": 1.0,
+      "maxPay": 3000.0,
+      "appPay": 0,
+      "payWay": 4,
+      "payCenterUrl": "/shb/online_pay"
+    }
+  ]
+}

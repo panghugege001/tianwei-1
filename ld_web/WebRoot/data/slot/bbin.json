@@ -1,0 +1,968 @@
+[
+  {
+    "id": "5901",
+    "eName": "Duo Bao",
+    "name": "连环夺宝",
+    "category": "BBIN",
+    "mode": "flash",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "NEW",
+      "HOT"
+    ],
+    "pic": "5901.jpg"
+  },
+  {
+    "id": "5902",
+    "eName": "Candy Party",
+    "name": "糖果派对",
+    "category": "BBIN",
+    "mode": "flash",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "NEW",
+      "HOT"
+    ],
+    "pic": "5902.jpg"
+  },
+  {
+    "id": "5005",
+    "eName": "Alien War",
+    "name": "惑星战记",
+    "category": "BBIN",
+    "mode": "flash",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "NEW",
+      "HOT"
+    ],
+    "pic": "5005.jpg"
+  },
+  {
+    "id": "5006",
+    "eName": "Staronic",
+    "name": "Staronic",
+    "category": "BBIN",
+    "mode": "flash",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "NEW",
+      "HOT"
+    ],
+    "pic": "5006.jpg"
+  },
+  {
+    "id": "5007",
+    "eName": "Fruits Boom",
+    "name": "激爆水果盘",
+    "category": "BBIN",
+    "mode": "flash",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "NEW",
+      "HOT"
+    ],
+    "pic": "5007.jpg"
+  },
+  {
+    "id": "5008",
+    "eName": "Monkey GoGo",
+    "name": "猴子爬树",
+    "category": "BBIN",
+    "mode": "flash",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "NEW",
+      "HOT"
+    ],
+    "pic": "5008.jpg"
+  },
+  {
+    "id": "5009",
+    "eName": "King Kong",
+    "name": "金刚爬楼",
+    "category": "BBIN",
+    "mode": "flash",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "NEW",
+      "HOT"
+    ],
+    "pic": "5009.jpg"
+  },
+  {
+    "id": "5010",
+    "eName": "Galaxy II",
+    "name": "外星战记",
+    "category": "BBIN",
+    "mode": "flash",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "NEW",
+      "HOT"
+    ],
+    "pic": "5010.jpg"
+  },
+  {
+    "id": "5012",
+    "eName": "Galaxy",
+    "name": "外星争霸",
+    "category": "BBIN",
+    "mode": "flash",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "NEW",
+      "HOT"
+    ],
+    "pic": "5012.jpg"
+  },
+  {
+    "id": "5013",
+    "eName": "Classic",
+    "name": "传统",
+    "category": "BBIN",
+    "mode": "flash",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "NEW",
+      "HOT"
+    ],
+    "pic": "5013.jpg"
+  },
+  {
+    "id": "5014",
+    "eName": "Jungle",
+    "name": "丛林",
+    "category": "BBIN",
+    "mode": "flash",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "NEW",
+      "HOT"
+    ],
+    "pic": "5014.jpg"
+  },
+  {
+    "id": "5015",
+    "eName": "FIFA2010",
+    "name": "FIFA2010",
+    "category": "BBIN",
+    "mode": "flash",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "NEW",
+      "HOT"
+    ],
+    "pic": "5015.jpg"
+  },
+  {
+    "id": "5016",
+    "eName": "Prehistoric Jungle",
+    "name": "史前丛林冒险",
+    "category": "BBIN",
+    "mode": "flash",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "NEW",
+      "HOT"
+    ],
+    "pic": "5016.jpg"
+  },
+  {
+    "id": "5017",
+    "eName": "Star Wars",
+    "name": "星际大战",
+    "category": "BBIN",
+    "mode": "flash",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "NEW",
+      "HOT"
+    ],
+    "pic": "5017.jpg"
+  },
+  {
+    "id": "5018",
+    "eName": "Monkey King",
+    "name": "齐星际大战天大圣",
+    "category": "BBIN",
+    "mode": "flash",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "NEW",
+      "HOT"
+    ],
+    "pic": "5018.jpg"
+  },
+  {
+    "id": "5019",
+    "eName": "Fruit Paradise",
+    "name": "水果乐园",
+    "category": "BBIN",
+    "mode": "flash",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "NEW",
+      "HOT"
+    ],
+    "pic": "5019.jpg"
+  },
+  {
+    "id": "5025",
+    "eName": "White Snake",
+    "name": "法海斗白蛇",
+    "category": "BBIN",
+    "mode": "flash",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "NEW",
+      "HOT"
+    ],
+    "pic": "5025.jpg"
+  },
+  {
+    "id": "5026",
+    "eName": "London 2012",
+    "name": "2012 伦敦奥运",
+    "category": "BBIN",
+    "mode": "flash",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "NEW",
+      "HOT"
+    ],
+    "pic": "5026.jpg"
+  },
+  {
+    "id": "5028",
+    "eName": "Moon Festival Party",
+    "name": "中秋月光派对",
+    "category": "BBIN",
+    "mode": "flash",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "NEW",
+      "HOT"
+    ],
+    "pic": "5028.jpg"
+  },
+  {
+    "id": "5029",
+    "eName": "X'mas Party",
+    "name": "圣诞派对",
+    "category": "BBIN",
+    "mode": "flash",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "NEW",
+      "HOT"
+    ],
+    "pic": "5029.jpg"
+  },
+  {
+    "id": "5030",
+    "eName": "Chinese Mammon",
+    "name": "幸运财神",
+    "category": "BBIN",
+    "mode": "flash",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "NEW",
+      "HOT"
+    ],
+    "pic": "5030.jpg"
+  },
+  {
+    "id": "5043",
+    "eName": "Diamond Fruits",
+    "name": "钻石水果盘",
+    "category": "BBIN",
+    "mode": "flash",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "NEW",
+      "HOT"
+    ],
+    "pic": "5043.jpg"
+  },
+  {
+    "id": "5044",
+    "eName": "STAR 97II",
+    "name": "明星97II",
+    "category": "BBIN",
+    "mode": "flash",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "NEW",
+      "HOT"
+    ],
+    "pic": "5044.jpg"
+  },
+  {
+    "id": "5048",
+    "eName": "Spy Crisis",
+    "name": "特务危机",
+    "category": "BBIN",
+    "mode": "flash",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "NEW",
+      "HOT"
+    ],
+    "pic": "5048.jpg"
+  },
+  {
+    "id": "5049",
+    "eName": "Sex And Zen",
+    "name": "玉蒲团",
+    "category": "BBIN",
+    "mode": "flash",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "NEW",
+      "HOT"
+    ],
+    "pic": "5049.jpg"
+  },
+  {
+    "id": "5057",
+    "eName": "Star97",
+    "name": "明星97",
+    "category": "BBIN",
+    "mode": "flash",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "NEW",
+      "HOT"
+    ],
+    "pic": "5057.jpg"
+  },
+  {
+    "id": "5058",
+    "eName": "Crazy Fruit",
+    "name": "疯狂水果盘",
+    "category": "BBIN",
+    "mode": "flash",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "NEW",
+      "HOT"
+    ],
+    "pic": "5058.jpg"
+  },
+  {
+    "id": "5060",
+    "eName": "Fantastic Animals 5th",
+    "name": "动物奇观五",
+    "category": "BBIN",
+    "mode": "flash",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "NEW",
+      "HOT"
+    ],
+    "pic": "5060.jpg"
+  },
+  {
+    "id": "5061",
+    "eName": "Super 7",
+    "name": "超级7",
+    "category": "BBIN",
+    "mode": "flash",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "NEW",
+      "HOT"
+    ],
+    "pic": "5061.jpg"
+  },
+  {
+    "id": "5062",
+    "eName": "Dragon Must Die",
+    "name": "龙在囧途",
+    "category": "BBIN",
+    "mode": "flash",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "NEW",
+      "HOT"
+    ],
+    "pic": "5062.jpg"
+  },
+  {
+    "id": "5063",
+    "eName": "Slot Cool Fruit",
+    "name": "水果拉霸",
+    "category": "BBIN",
+    "mode": "flash",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "NEW",
+      "HOT"
+    ],
+    "pic": "5063.jpg"
+  },
+  {
+    "id": "5064",
+    "eName": "Slot Poker",
+    "name": "扑克拉霸",
+    "category": "BBIN",
+    "mode": "flash",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "NEW",
+      "HOT"
+    ],
+    "pic": "5064.jpg"
+  },
+  {
+    "id": "5065",
+    "eName": "Slot Mahjong Ball",
+    "name": "筒子拉霸",
+    "category": "BBIN",
+    "mode": "flash",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "NEW",
+      "HOT"
+    ],
+    "pic": "5065.jpg"
+  },
+  {
+    "id": "5066",
+    "eName": "Slot Soccer",
+    "name": "足球拉霸",
+    "category": "BBIN",
+    "mode": "flash",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "NEW",
+      "HOT"
+    ],
+    "pic": "5066.jpg"
+  },
+  {
+    "id": "5094",
+    "eName": "Jin Ping Mai 2",
+    "name": "金瓶梅2",
+    "category": "BBIN",
+    "mode": "flash",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "NEW",
+      "HOT"
+    ],
+    "pic": "5094.jpg"
+  },
+  {
+    "id": "5095",
+    "eName": "Cock Fighting",
+    "name": "斗鸡",
+    "category": "BBIN",
+    "mode": "flash",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "NEW",
+      "HOT"
+    ],
+    "pic": "5095.jpg"
+  },
+  {
+    "id": "5106",
+    "eName": "THREE KINGDOMS",
+    "name": "三国",
+    "category": "BBIN",
+    "mode": "flash",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "NEW",
+      "HOT"
+    ],
+    "pic": "5106.jpg"
+  },
+  {
+    "id": "5107",
+    "eName": "American Roulette",
+    "name": "美式轮盘",
+    "category": "BBIN",
+    "mode": "flash",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "NEW",
+      "HOT"
+    ],
+    "pic": "5107.jpg"
+  },
+  {
+    "id": "5201",
+    "eName": "Flaming Mountain",
+    "name": "火焰山",
+    "category": "BBIN",
+    "mode": "flash",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "NEW",
+      "HOT"
+    ],
+    "pic": "5201.jpg"
+  },
+  {
+    "id": "5202",
+    "eName": "Pandora’s Box",
+    "name": "月光宝盒",
+    "category": "BBIN",
+    "mode": "flash",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "NEW",
+      "HOT"
+    ],
+    "pic": "5202.jpg"
+  },
+  {
+    "id": "5203",
+    "eName": "Forever Love",
+    "name": "爱你一万年",
+    "category": "BBIN",
+    "mode": "flash",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "NEW",
+      "HOT"
+    ],
+    "pic": "5203.jpg"
+  },
+  {
+    "id": "5204",
+    "eName": "2014 FIFA",
+    "name": "2014 FIFA",
+    "category": "BBIN",
+    "mode": "flash",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "NEW",
+      "HOT"
+    ],
+    "pic": "5204.jpg"
+  },
+  {
+    "id": "5402",
+    "eName": "Let's go Night-market !",
+    "name": "夜市人生",
+    "category": "BBIN",
+    "mode": "flash",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "NEW",
+      "HOT"
+    ],
+    "pic": "5402.jpg"
+  },
+  {
+    "id": "5404",
+    "eName": "Beach Volleyball",
+    "name": "沙滩排球",
+    "category": "BBIN",
+    "mode": "flash",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "NEW",
+      "HOT"
+    ],
+    "pic": "5404.jpg"
+  },
+  {
+    "id": "5406",
+    "eName": "Starship27",
+    "name": "神舟27",
+    "category": "BBIN",
+    "mode": "flash",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "NEW",
+      "HOT"
+    ],
+    "pic": "5406.jpg"
+  },
+  {
+    "id": "5407",
+    "eName": "Don´t call me Little Red",
+    "name": "大红帽与小野狼",
+    "category": "BBIN",
+    "mode": "flash",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "NEW",
+      "HOT"
+    ],
+    "pic": "5407.jpg"
+  },
+  {
+    "id": "5601",
+    "eName": "Adventure of Mystical Land",
+    "name": "秘境冒险",
+    "category": "BBIN",
+    "mode": "flash",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "NEW",
+      "HOT"
+    ],
+    "pic": "5601.jpg"
+  },
+  {
+    "id": "5801",
+    "eName": "Dolphin Reef",
+    "name": "海豚世界",
+    "category": "BBIN",
+    "mode": "flash",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "NEW",
+      "HOT"
+    ],
+    "pic": "5801.jpg"
+  },
+  {
+    "id": "5802",
+    "eName": "Achilles",
+    "name": "阿基里斯",
+    "category": "BBIN",
+    "mode": "flash",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "NEW",
+      "HOT"
+    ],
+    "pic": "5802.jpg"
+  },
+  {
+    "id": "5803",
+    "eName": "Aztec's Treasure",
+    "name": "阿兹特克宝藏",
+    "category": "BBIN",
+    "mode": "flash",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "NEW",
+      "HOT"
+    ],
+    "pic": "5803.jpg"
+  },
+  {
+    "id": "5804",
+    "eName": "Big Shot",
+    "name": "大明星",
+    "category": "BBIN",
+    "mode": "flash",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "NEW",
+      "HOT"
+    ],
+    "pic": "5804.jpg"
+  },
+  {
+    "id": "5805",
+    "eName": "Caesar's Empire",
+    "name": "凯萨帝国",
+    "category": "BBIN",
+    "mode": "flash",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "NEW",
+      "HOT"
+    ],
+    "pic": "5805.jpg"
+  },
+  {
+    "id": "5806",
+    "eName": "Enchanced Garden",
+    "name": "奇幻花园",
+    "category": "BBIN",
+    "mode": "flash",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "NEW",
+      "HOT"
+    ],
+    "pic": "5806.jpg"
+  },
+  {
+    "id": "5808",
+    "eName": "Ronin",
+    "name": "浪人武士",
+    "category": "BBIN",
+    "mode": "flash",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "NEW",
+      "HOT"
+    ],
+    "pic": "5808.jpg"
+  },
+  {
+    "id": "5809",
+    "eName": "Tally Ho",
+    "name": "空战英豪",
+    "category": "BBIN",
+    "mode": "flash",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "NEW",
+      "HOT"
+    ],
+    "pic": "5809.jpg"
+  },
+  {
+    "id": "5810",
+    "eName": "Victory",
+    "name": "航海时代",
+    "category": "BBIN",
+    "mode": "flash",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "NEW",
+      "HOT"
+    ],
+    "pic": "5810.jpg"
+  },
+  {
+    "id": "5811",
+    "eName": "A Night Out",
+    "name": "狂欢夜",
+    "category": "BBIN",
+    "mode": "flash",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "NEW",
+      "HOT"
+    ],
+    "pic": "5811.jpg"
+  },
+  {
+    "id": "5821",
+    "eName": "Football",
+    "name": "国际足球",
+    "category": "BBIN",
+    "mode": "flash",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "NEW",
+      "HOT"
+    ],
+    "pic": "5821.jpg"
+  },
+  {
+    "id": "5823",
+    "eName": "Big Prosperity",
+    "name": "发大财",
+    "category": "BBIN",
+    "mode": "flash",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "NEW",
+      "HOT"
+    ],
+    "pic": "5823.jpg"
+  },
+  {
+    "id": "5824",
+    "eName": "Mystic Dragon",
+    "name": "恶龙传说",
+    "category": "BBIN",
+    "mode": "flash",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "NEW",
+      "HOT"
+    ],
+    "pic": "5824.jpg"
+  },
+  {
+    "id": "5825",
+    "eName": "Golden Lotus",
+    "name": "金莲",
+    "category": "BBIN",
+    "mode": "flash",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "NEW",
+      "HOT"
+    ],
+    "pic": "5825.jpg"
+  },
+  {
+    "id": "5826",
+    "eName": "Pay Dirt",
+    "name": "金矿工",
+    "category": "BBIN",
+    "mode": "flash",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "NEW",
+      "HOT"
+    ],
+    "pic": "5826.jpg"
+  },
+  {
+    "id": "5827",
+    "eName": "Sea Captain",
+    "name": "老船长",
+    "category": "BBIN",
+    "mode": "flash",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "NEW",
+      "HOT"
+    ],
+    "pic": "5827.jpg"
+  },
+  {
+    "id": "5828",
+    "eName": "T-Rex",
+    "name": "霸王龙",
+    "category": "BBIN",
+    "mode": "flash",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "NEW",
+      "HOT"
+    ],
+    "pic": "5828.jpg"
+  },
+  {
+    "id": "5832",
+    "eName": "Highway Kings",
+    "name": "高速卡车",
+    "category": "BBIN",
+    "mode": "flash",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "NEW",
+      "HOT"
+    ],
+    "pic": "5832.jpg"
+  },
+  {
+    "id": "5833",
+    "eName": "Silent Samurai",
+    "name": "沉默武士",
+    "category": "BBIN",
+    "mode": "flash",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "NEW",
+      "HOT"
+    ],
+    "pic": "5833.jpg"
+  },
+  {
+    "id": "5835",
+    "eName": "Happy Golden Ox Of Happiness",
+    "name": "喜福牛年",
+    "category": "BBIN",
+    "mode": "flash",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "NEW",
+      "HOT"
+    ],
+    "pic": "5835.jpg"
+  },
+  {
+    "id": "5836",
+    "eName": "Triple Twister",
+    "name": "龙卷风",
+    "category": "BBIN",
+    "mode": "flash",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "NEW",
+      "HOT"
+    ],
+    "pic": "5836.jpg"
+  },
+  {
+    "id": "5837",
+    "eName": "Happy Golden Monkey Of Happiness",
+    "name": "喜福猴年",
+    "category": "BBIN",
+    "mode": "flash",
+    "type": "SLO",
+    "line": "0-100",
+    "tag": [
+      "NEW",
+      "HOT"
+    ],
+    "pic": "5837.jpg"
+  }
+]

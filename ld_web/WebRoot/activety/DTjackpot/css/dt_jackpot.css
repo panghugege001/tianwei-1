@@ -1,0 +1,261 @@
+
+@charset "utf-8";
+*{ -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+*:before,
+*:after{ -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+/** 清除内外边距 **/
+*{ margin: 0; padding: 0;}
+a{ text-decoration: none;}
+img{ border: none;}
+
+/* structural elements 结构元素 */
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote,
+/* list elements 列表元素 */
+dl, dt, dd, ul, ol, li,
+/* text formatting elements 文本格式元素 */
+pre,
+/* form elements 表单元素 */
+form, fieldset, legend, button, input, textarea,
+/* table elements 表格元素 */
+th, td { margin: 0; padding: 0;}
+
+/** 设置默认字体 **/
+body, pre, button, input, select, textarea /* for ie */
+{ font: 14px/1.6 tahoma, arial, 'Microsoft YaHei', sans-serif;}
+
+/** 重置文档高度 **/
+html, body{ height: 100%;}
+body{ color: #c1c1c1;}
+
+h1, h2, h3, h4, h5, h6{ font-size: 100%; font-weight: normal;}
+/* 将斜体扶正 */
+address, cite, dfn, em, var{ font-style: normal;}
+/* 统一等宽字体 */
+code, kbd, pre, samp{ font-family: courier new, courier, monospace;}
+/* 小于 12px 的中文很难阅读，让 small 正常化 */
+small{ font-size: 12px;}
+
+
+/** 重置列表元素 **/
+ul, ol{ list-style: none;}
+/** 重置文本格式元素 **/
+a{ text-align: center; text-decoration: none; color: inherit;}
+a:focus{ outline: none;}
+
+
+/** 重置表单元素 **/
+legend{ color: #000;} /* for ie6 */
+fieldset, img{ border: 0; vertical-align: middle}
+/* 使得表单元素在 ie 下能继承字体大小 */
+button, input, select, textarea{ font-size: 100%;}
+/*表单元素字体*/
+input, textarea, button{ font: 14px/1.6 Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', 微软雅黑, Arial, sans-serif; outline: 0;}
+
+input[type='button'], input[type='submit'], button{ cursor: pointer;}
+button:focus{ outline: none;}
+
+input[type='button'], input[type='submit'], input[type='reset'], button{ /*input[type="file"]::-webkit-file-upload-button,*/
+    border: 1px solid transparent;}
+
+/*设置表单元素不可用的样式*/
+input[readonly],
+input:disabled,
+button:disabled,
+button[readonly],
+textarea:disabled{ color: #545454!important; background-color: #ccc!important;}
+input[readonly]:hover,
+input:disabled:hover,
+button:disabled:hover,
+button[readonly]:hover,
+textarea:disabled:hover{ cursor: not-allowed;}
+
+/** placeholder 重置 **/
+[placeholder]{ font-family: 'Microsoft yahei';}
+::-moz-placeholder{ text-indent: 5px; /* 没有用 */ opacity: 1!important; color: #bbb;}
+:-ms-input-placeholder{ text-indent: 5px; color: #bbb;}
+::-webkit-input-placeholder{ text-indent: 5px; color: #bbb;}
+
+/** 重置表格元素 **/
+table{ border-spacing: 0; border-collapse: collapse;}
+a{
+	text-decoration: none;
+}
+/* #滚动条
+=========*/
+::-webkit-scrollbar{ width: 8px; height: 8px;}
+
+::-webkit-scrollbar-track-piece{ margin: -2px; background-color: #eee;}
+
+::-webkit-scrollbar-thumb{ min-width: 150px; min-height: 150px; border-radius: 10px; background: #aaa;}
+
+::-webkit-scrollbar-thumb:vertical:hover{ background: #555;}
+
+::-webkit-scrollbar-thumb:horizontal:hover{ background: #555;}
+
+
+body{
+ background: #2b2938;	
+}
+
+.div_body{
+    background: url(../img/jackpot_bj.jpg) no-repeat;
+    background-size: cover;
+    width: 100%;
+    background-position: center;
+    height: 1686px;
+}
+
+.gb-footer .footer-nav{ 
+	clear: both;
+}
+.top{
+	height: 52px;
+	width: 100%;
+	border-top: 2px solid #ffac1c;
+	background: #000000;
+	line-height: 50px;
+}
+.top >.container{
+	text-align: center;
+}
+.l_left{
+	float: left;
+}
+.l_left a{
+	display: inline-block;
+	color: #909090;
+}
+.r_rigth{
+	float: right;
+}
+.r_rigth a{
+	display: inline-block;
+	color: #909090;
+	float: left;
+    margin-left: 10px;	
+}
+.r_rigth span{
+	display: inline-block;
+	color: #909090;
+	float: left;
+    margin-left: 10px;		
+}
+.jackpot_text >.container{
+	position: relative;
+}
+.jackpot_text >.container .box_text{
+ 	text-align: center;
+}
+.jackpot_text >.container .box_text img{
+	max-width: 100%;
+	margin-top: 95px;
+}
+.jackpot_btn{
+	border: 3px solid #464456;
+	height: 75px;
+	border-radius: 40px;
+	line-height: 70px;
+	padding: 0px;
+    margin-top: 116px; 	
+}
+.jackpot_btn ul li{
+	float: left;
+	width: 50%;
+	text-align: center;
+	cursor: pointer;
+	color: #565175;
+	font-size: 30px;
+	font-weight: bold;
+}
+.jackpot_btn ul .action{
+	background: #ffac1c;
+	border-radius: 40px;
+	font-size: 30px;
+	font-weight: bold;
+	color: #000000;
+}
+.jackpot_center{
+	width: 100%;
+	float: left;
+	text-align: center;
+	font-size: 16px;
+    margin-bottom: 30px;	
+}
+.jackpot_center>h3{
+	line-height: 50px;
+	font-size: 26px;
+	color: #FFAC1C;
+	font-weight: bold;
+    margin-top: 30px;	
+}
+.table_box .container table{
+	width: 100%;
+}
+.table_box .container .hd_1 table tr td{
+	width: 33.3%;
+	height: 40px;
+	line-height: 40px;
+}
+.table_box .container .hd_2 table tr td{
+	height: 40px;
+	line-height: 40px;	
+}
+
+.table_box .container .hd_2 table tr td,.table_box .container .hd_2 table tr th{
+	text-align: center;
+}
+.table_box .container table tr th{
+	background: #433f57;
+    line-height: 55px;	
+}
+.table_box .container .hd_1 table tr th:first-child{
+	padding-left: 30px;
+}
+.table_box .container .hd_1 table tr td:first-child{
+	padding-left: 30px;
+}
+.table_box .container table tr:nth-of-type(odd){
+	background: #343242;
+}
+.table_box .container table tr:nth-of-type(even){
+	background: #312f3e;
+}
+.massage{
+	width: 100%;
+	color: #636070;
+}
+.massage h3{
+	height: 70px;
+	line-height: 70px;
+}
+.massage p{
+	padding-bottom: 30px;
+}
+
+@media screen and (max-width: 750px) {
+	.r_rigth{
+		display: none;
+	}
+	.container{
+		width: 100% !important;
+	}
+	
+	.gb-footer{
+		display: none !important;
+	}
+	#asidebar{
+		display: none;
+	}
+}
+
+body .gb-footer .footer-hd{
+	clear: both;
+}
+
+body .gb-footer .partner-link a{
+	margin-left: 9px;
+}
+
+body .gb-footer{
+	clear: both;
+}

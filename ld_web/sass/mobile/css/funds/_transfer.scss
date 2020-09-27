@@ -1,0 +1,55 @@
+
+.transfer-content{
+	display:inline-block;
+	width:100%;
+	padding:.3em .5em;
+	
+	background-color: #fff;
+	
+	.change-button{
+	  	position: absolute;
+	  	top: 4em;
+	  	right: -5px;
+	  	
+		display: inline-block;
+	  	padding: 0 .5em 0 .5em;
+    	border: 1px solid #aaa;
+	  	font-size: 150%;
+	  	
+	    background-color: #fff;
+	    color: #3c3c3c;
+	    
+    	@include transform(rotate(90deg));
+	  	
+	}
+	
+	.load {
+	  	width: 110px;
+	  	height: 10px;
+	  	background: url(../images/bank_loading.gif) no-repeat;
+	}
+	
+	.form{
+		.row{
+			.combobox{
+				select{
+					width: 80%
+				}
+				
+				&:after{
+   					right: 25%;
+				}
+			}
+		}
+	}
+		
+	.button{
+		width: 8em;
+	    margin: 1em auto;
+	    
+	    text-align: center;
+	    line-height: 2em;
+	    
+	    background-color: #C9862F;
+	}
+}

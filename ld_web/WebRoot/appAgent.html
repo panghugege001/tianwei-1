@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>天威-APP下载</title>
+    <script>
+        var u = navigator.userAgent;
+        var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
+        var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+        if(isAndroid){
+            document.location = "https://dn-longbaoclouddn.qbox.me/app/apk/204/lehu_agent.apk";
+        }else if(isiOS){
+            document.location = "itms-services:///?action=download-manifest&url=https://app.software-ios.com/APP/IOS/lehu/lehudl.plist";
+        }else{
+            document.write('请用安卓或者苹果设备打开！！');
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

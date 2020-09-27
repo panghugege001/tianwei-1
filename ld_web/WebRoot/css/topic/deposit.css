@@ -1,0 +1,200 @@
+body {
+    background: #29292d;
+    color: #9b978f
+}
+
+.mb40 {
+    margin-bottom: 40px!important
+}
+
+.text-indent {
+    text-indent: 2em
+}
+
+.table tr th{
+    background: #303030;
+    border: 1px solid #1f1a1b;
+    color: #fff;
+    font-size: 16px;
+}
+.table tr td {
+    padding: 18px 10px;
+    border: 1px solid #ccc;
+    background: #fff;
+    color: #555;
+}
+
+.table tr:nth-child(even) td {
+    background: #fff
+}
+.container{
+    width: 1000px;
+    margin:0 auto;
+}
+
+/*css sprite*/
+.sp {
+    background-image: url(/images/topic/deposit/sprite.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.sp-ele-1 {
+    width: 159px;
+    height: 152px;
+    background-position: -5px -5px;
+}
+
+.sp-ele-2 {
+    width: 158px;
+    height: 152px;
+    background-position: -174px -5px;
+}
+
+.sp-ele-3 {
+    width: 159px;
+    height: 152px;
+    background-position: -342px -5px;
+}
+
+.sp-tit {
+    width: 602px;
+    height: 196px;
+    background-position: -511px -5px;
+}
+
+
+.page-bg {
+    background: url(/images/topic/deposit/bg.jpg) 50% 0 no-repeat,url(/images/topic/deposit/bg-repeate.png) repeat;
+    overflow: hidden;
+    padding-bottom: 96px;
+}
+
+/*header*/
+#header{
+    height: 36px;
+    padding-top: 6px;
+    background:#e5e5e5;
+}
+#header a{
+    padding: 0 12px 0;
+    color: inherit;
+}
+#header a:hover{
+    text-decoration: underline;
+}
+
+/*banner 顶部*/
+.top-banner{
+    position: relative;
+    padding-top: 282px;
+}
+
+.top-banner .btn{
+    position: relative;
+    height: 70px;
+    width: 240px;
+    line-height: 64px;
+    color: #fff;
+    text-align: center;
+    font-size: 28px;
+    border-radius: 90px;
+    background: #da2e2e;
+    background: linear-gradient(to bottom,#da2e2e 0%,#bf2424 50%,#a81c1b 100%);
+    border: 3px solid #8a0000;
+    margin-bottom: 28px;
+    cursor: pointer;
+}
+.top-banner .desc{
+    color: #ffe4b5;
+    margin-bottom: 20px;
+}
+.top-banner .box-list li{
+    position: relative;
+    width: 218px;
+    height: 364px;
+    background: #161616;
+    padding: 30px 27px 0;
+    margin: 0 auto 40px;
+    border-radius: 140px;
+    text-align: center;
+    overflow: hidden;
+    z-index:9;
+}
+.top-banner .box-list .sp{
+    position:relative;
+    z-index:9;
+    transition: all .5s;
+}
+.top-banner .box-list li:hover .sp{
+    transform: rotate(360deg);
+}
+.top-banner .box-list .arrow{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 228px 228px 0 0;
+    border-color: #1f1f1f transparent transparent transparent;
+}
+.top-banner .box-list h2{
+    padding-bottom: 8px;
+    color: #7b7b7b;
+    border-bottom:1px solid #7b7b7b;
+    font-size: 18px;
+}
+.top-banner .box-list h2 p{
+    color: #fff;
+}
+
+.light {
+    position: absolute;
+    top:0;
+    right: 14px;
+    background: url(/images/topic/deposit/light.png);
+    width: 457px;
+    height: 692px;
+    transform-origin: 50% 0;
+}
+
+.light.left{
+    left: -61px;
+    right:auto;
+    -webkit-animation: rotate-left 3s linear infinite backwards alternate;
+    animation: rotate-left 3s linear infinite backwards alternate;
+}
+.light.right{
+    -webkit-animation: rotate-right 4s linear infinite backwards alternate;
+    animation: rotate-right 4s linear infinite backwards alternate;
+}
+
+.main .main-bottom a {
+    display: inline-block;
+    width: 350px;
+    height: 100%;
+    text-indent: -9999em
+}
+
+@-webkit-keyframes rotate-left {
+    0% {
+        -webkit-transform: rotate(-40deg)
+    }
+
+    100% {
+        -webkit-transform: rotate(0deg)
+    }
+}
+
+@keyframes rotate-right {
+    0% {
+        transform: rotate(40deg)
+    }
+
+    100% {
+        transform: rotate(0deg)
+    }
+}
+
+

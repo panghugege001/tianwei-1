@@ -1,0 +1,857 @@
+[
+      {
+    "eName": "Champion football",
+    "name": "冠军足球",
+    "id": "WH03",
+    "category": "AG",
+    "subType": "",
+    "state": 1,
+    "pic": "WH03.jpg",
+    "language": "zh_CN",
+    "type": "CLA",
+    "line": "100-1024",
+    "tag": [
+      "LS"
+    ]
+  },  
+  {
+    "eName": "Alibaba",
+    "name": "阿里巴巴",
+    "id": "WHGWH01",
+    "category": "AG",
+    "subType": "",
+    "state": 1,
+    "pic": "WHGWH01.jpg",
+    "language": "zh_CN",
+    "type": "CLA",
+    "line": "100-1024",
+    "tag": [
+      "LS"
+    ]
+  },
+  {
+    "eName": "Mystic Gems",
+    "name": "神奇宝石",
+    "id": "158",
+    "category": "AG",
+    "subType": "",
+    "state": 1,
+    "pic": "158.jpg",
+    "language": "zh_CN",
+    "type": "CLA",
+    "line": "100-1024",
+    "tag": [
+      "LS"
+    ]
+  },
+  {
+    "eName": "MR XIN",
+    "name": "XIN哥来了",
+    "id": "161",
+    "category": "AG",
+    "state": 1,
+    "pic": "161.jpg",
+    "language": "zh_CN",
+    "type": "SLO",
+    "line": "MORE",
+    "tag": [
+      "HOT",
+      "BIG",
+      "SLO"
+    ]
+  },
+  {
+    "eName": "Five Elements",
+    "name": "五行世界",
+    "id": "DTGDTA8",
+    "category": "AG",
+    "subType": "",
+    "state": 1,
+    "pic": "DTA8.jpg",
+    "language": "zh_CN",
+    "type": "CLA",
+    "line": "100-1024",
+    "tag": [
+      "LS"
+    ]
+  },
+  {
+    "eName": "Battle of Red Cliffs",
+    "name": "赤壁之战",
+    "id": "DTGDTA4",
+    "category": "AG",
+    "subType": "",
+    "state": 1,
+    "pic": "DTA4.jpg",
+    "language": "zh_CN",
+    "type": "CLA",
+    "line": "100-1024",
+    "tag": [
+      "LS"
+    ]
+  },
+  {
+    "eName": "Fantasy Forest",
+    "name": "梦幻森林",
+    "id": "DTGDTAB",
+    "category": "AG",
+    "subType": "",
+    "state": 1,
+    "pic": "DTAB.jpg",
+    "language": "zh_CN",
+    "type": "CLA",
+    "line": "100-1024",
+    "tag": [
+      "LS"
+    ]
+  },
+  {
+    "eName": "Wealthy God Arriving",
+    "name": "财神到",
+    "id": "DTGDTAF",
+    "category": "AG",
+    "subType": "",
+    "state": 1,
+    "pic": "DTAF.jpg",
+    "language": "zh_CN",
+    "type": "CLA",
+    "line": "100-1024",
+    "tag": [
+      "LS"
+    ]
+  },
+  {
+    "eName": "Happy New Year",
+    "name": "新年到",
+    "id": "DTGDTAG",
+    "category": "AG",
+    "subType": "",
+    "state": 1,
+    "pic": "DTAG.jpg",
+    "language": "zh_CN",
+    "type": "CLA",
+    "line": "100-1024",
+    "tag": [
+      "LS"
+    ]
+  },
+  {
+    "eName": "FULUSHOU",
+    "name": "福禄寿",
+    "id": "DTGDTAT",
+    "category": "AG",
+    "subType": "",
+    "state": 1,
+    "pic": "DTAT.jpg",
+    "language": "zh_CN",
+    "type": "CLA",
+    "line": "100-1024",
+    "tag": [
+      "LS"
+    ]
+  },
+  {
+    "eName": "The Dragon Pearl Gold",
+    "name": "金龙珠",
+    "id": "160",
+    "category": "AG",
+    "state": 1,
+    "pic": "160.jpg",
+    "language": "zh_CN",
+    "type": "SLO",
+    "line": "other",
+    "tag": [
+      "HOT",
+      "BIG",
+      "SLO"
+    ]
+  },
+  {
+    "eName": "Legend of the Dragon",
+    "name": "猛龙传奇",
+    "id": "156",
+    "category": "AG",
+    "state": 1,
+    "pic": "156.jpg",
+    "language": "zh_CN",
+    "type": "SLO",
+    "line": "other",
+    "tag": [
+      "HOT",
+      "BIG",
+      "SLO"
+    ]
+  },
+  {
+    "eName": "SX02",
+    "name": "街头烈战",
+    "id": "221",
+    "category": "AG",
+    "state": 1,
+    "pic": "221.jpg",
+    "language": "zh_CN",
+    "type": "SLO",
+    "line": "other",
+    "tag": [
+      "HOT",
+      "BIG",
+      "SLO"
+    ]
+  },
+  {
+    "eName": "Gold Class",
+    "name": "金拉霸",
+    "id": "802",
+    "category": "AG",
+    "subType": "",
+    "state": 1,
+    "pic": "802.gif",
+    "language": "zh_CN",
+    "type": "CLA",
+    "line": "other",
+    "tag": [
+      "LS"
+    ]
+  },
+  {
+    "eName": "Samurai slots",
+    "name": "日本武士",
+    "id": "513",
+    "category": "AG",
+    "subType": "",
+    "state": 1,
+    "pic": "513.gif",
+    "language": "zh_CN",
+    "type": "CLA",
+    "line": "other",
+    "tag": [
+      "LS"
+    ]
+  },
+  {
+    "eName": "Candy Quest",
+    "name": "糖果碰碰乐",
+    "id": "544",
+    "category": "AG",
+    "subType": "",
+    "state": 1,
+    "pic": "544.gif",
+    "language": "zh_CN",
+    "type": "CLA",
+    "line": "15-20",
+    "tag": []
+  },
+  {
+    "eName": "Fuit Slot 2",
+    "name": "水果拉霸2",
+    "id": "546",
+    "category": "AG",
+    "subType": "",
+    "state": 1,
+    "pic": "546.gif",
+    "language": "zh_CN",
+    "type": "CLA",
+    "line": "other",
+    "tag": []
+  },
+  {
+    "eName": "SexyMaid",
+    "name": "性感女仆",
+    "id": "537",
+    "category": "AG",
+    "subType": "",
+    "state": 1,
+    "pic": "537.gif",
+    "language": "zh_CN",
+    "type": "CLA",
+    "line": "other",
+    "tag": [
+      "RQ"
+    ]
+  },
+  {
+    "eName": "Happy Farm",
+    "name": "开心农场",
+    "id": "517",
+    "category": "AG",
+    "subType": "",
+    "state": 1,
+    "pic": "517.gif",
+    "language": "zh_CN",
+    "type": "CLA",
+    "line": "25-30",
+    "tag": [
+      "CF",
+      "LS"
+    ]
+  },
+  {
+    "eName": "Fish Hunter King",
+    "name": "捕鱼王者",
+    "id": "548",
+    "category": "AG",
+    "subType": "",
+    "state": 1,
+    "pic": "548.gif",
+    "language": "zh_CN",
+    "type": "CLA",
+    "line": "other",
+    "tag": []
+  },
+  {
+    "eName": "Funny Clown",
+    "name": "鬼马小丑",
+    "id": "520",
+    "category": "AG",
+    "subType": "",
+    "state": 1,
+    "pic": "520.gif",
+    "language": "zh_CN",
+    "type": "CLA",
+    "line": "other",
+    "tag": []
+  },
+  {
+    "eName": "Sweets Home",
+    "name": "甜一甜屋",
+    "id": "512",
+    "category": "AG",
+    "subType": "",
+    "state": 1,
+    "pic": "512.gif",
+    "language": "zh_CN",
+    "type": "CLA",
+    "line": "other",
+    "tag": []
+  },
+  {
+    "eName": "Chinese Chess slots",
+    "name": "象棋老虎机",
+    "id": "514",
+    "category": "AG",
+    "subType": "",
+    "state": 1,
+    "pic": "514.gif",
+    "language": "zh_CN",
+    "type": "CLA",
+    "line": "25-30",
+    "tag": [
+      "LS"
+    ]
+  },
+  {
+    "eName": "Amazing Rides",
+    "name": "机动乐园",
+    "id": "521",
+    "category": "AG",
+    "subType": "",
+    "state": 1,
+    "pic": "521.gif",
+    "language": "zh_CN",
+    "type": "CLA",
+    "line": "other",
+    "tag": [
+      "RQ"
+    ]
+  },
+  {
+    "eName": "Farm Cafe",
+    "name": "牧场咖啡",
+    "id": "511",
+    "category": "AG",
+    "subType": "",
+    "state": 1,
+    "pic": "511.gif",
+    "language": "zh_CN",
+    "type": "CLA",
+    "line": "other",
+    "tag": [
+      "CF"
+    ]
+  },
+  {
+    "eName": "Rio Fever",
+    "name": "竞技狂热",
+    "id": "550",
+    "category": "AG",
+    "subType": "",
+    "state": 1,
+    "pic": "550.gif",
+    "language": "zh_CN",
+    "type": "CLA",
+    "line": "other",
+    "tag": []
+  },
+  {
+    "eName": "Euro Football Champ",
+    "name": "欧洲列强争霸",
+    "id": "547",
+    "category": "AG",
+    "subType": "",
+    "state": 1,
+    "pic": "547.gif",
+    "language": "zh_CN",
+    "type": "CLA",
+    "line": "15-20",
+    "tag": []
+  },
+  {
+    "eName": "Oden",
+    "name": "关东煮",
+    "id": "510",
+    "category": "AG",
+    "subType": "",
+    "state": 1,
+    "pic": "510.gif",
+    "language": "zh_CN",
+    "type": "CLA",
+    "line": "other",
+    "tag": []
+  },
+  {
+    "eName": "Summer Campsite",
+    "name": "夏日营地",
+    "id": "518",
+    "category": "AG",
+    "subType": "",
+    "state": 1,
+    "pic": "518.gif",
+    "language": "zh_CN",
+    "type": "CLA",
+    "line": "25-30",
+    "tag": []
+  },
+  {
+    "eName": "Spooky House",
+    "name": "惊吓鬼屋",
+    "id": "522",
+    "category": "AG",
+    "subType": "",
+    "state": 1,
+    "pic": "522.gif",
+    "language": "zh_CN",
+    "type": "CLA",
+    "line": "other",
+    "tag": [
+      "CF"
+    ]
+  },
+  {
+    "eName": "Sea World Odyssey",
+    "name": "海底漫游",
+    "id": "519",
+    "category": "AG",
+    "subType": "",
+    "state": 1,
+    "pic": "511.gif",
+    "language": "zh_CN",
+    "type": "CLA",
+    "line": "25-30",
+    "tag": []
+  },
+  {
+    "eName": "Aerial Warfare",
+    "name": "空中战争",
+    "id": "526",
+    "category": "AG",
+    "subType": "",
+    "state": 1,
+    "pic": "526.gif",
+    "language": "zh_CN",
+    "type": "CLA",
+    "line": "other",
+    "tag": []
+  },
+  {
+    "eName": "God of Land Fortune",
+    "name": "土地神",
+    "id": "532",
+    "category": "AG",
+    "subType": "",
+    "state": 1,
+    "pic": "532.gif",
+    "language": "zh_CN",
+    "type": "CLA",
+    "line": "25-30",
+    "tag": [
+      "RQ"
+    ]
+  },
+  {
+    "eName": "Jurassic Slot",
+    "name": "侏罗纪",
+    "id": "531",
+    "category": "AG",
+    "subType": "",
+    "state": 1,
+    "pic": "531.gif",
+    "language": "zh_CN",
+    "type": "CLA",
+    "line": "other",
+    "tag": []
+  },
+  {
+    "eName": "Egypt Mystery",
+    "name": "埃及奥秘",
+    "id": "529",
+    "category": "AG",
+    "subType": "",
+    "state": 1,
+    "pic": "529.gif",
+    "language": "zh_CN",
+    "type": "CLA",
+    "line": "other",
+    "tag": []
+  },
+  {
+    "eName": "Crazy Circus",
+    "name": "疯狂马戏团",
+    "id": "523",
+    "category": "AG",
+    "subType": "",
+    "state": 1,
+    "pic": "523.gif",
+    "language": "zh_CN",
+    "type": "CLA",
+    "line": "other",
+    "tag": [
+      "RQ"
+    ]
+  },
+  {
+    "eName": "Happy Hour",
+    "name": "欢乐时光",
+    "id": "530",
+    "category": "AG",
+    "subType": "",
+    "state": 1,
+    "pic": "530.gif",
+    "language": "zh_CN",
+    "type": "CLA",
+    "line": "other",
+    "tag": []
+  },
+  {
+    "eName": "God of Bag Monk Fortune",
+    "name": "布袋和尚",
+    "id": "533",
+    "category": "AG",
+    "subType": "",
+    "state": 1,
+    "pic": "533.gif",
+    "language": "zh_CN",
+    "type": "CLA",
+    "line": "25-30",
+    "tag": []
+  },
+  {
+    "eName": "Chess slots",
+    "name": "西洋棋老虎机",
+    "id": "516",
+    "category": "AG",
+    "subType": "",
+    "state": 1,
+    "pic": "516.gif",
+    "language": "zh_CN",
+    "type": "CLA",
+    "line": "25-30",
+    "tag": []
+  },
+  {
+    "eName": "Ocean Theatre",
+    "name": "海洋剧场",
+    "id": "524",
+    "category": "AG",
+    "subType": "",
+    "state": 1,
+    "pic": "524.gif",
+    "language": "zh_CN",
+    "type": "CLA",
+    "line": "other",
+    "tag": []
+  },
+  {
+    "eName": "God of Fortune",
+    "name": "正财神",
+    "id": "534",
+    "category": "AG",
+    "subType": "",
+    "state": 1,
+    "pic": "534.gif",
+    "language": "zh_CN",
+    "type": "CLA",
+    "line": "25-30",
+    "tag": [
+      "RQ"
+    ]
+  },
+  {
+    "eName": "Motor Gear",
+    "name": "越野机车",
+    "id": "528",
+    "category": "AG",
+    "subType": "",
+    "state": 1,
+    "pic": "528.gif",
+    "language": "zh_CN",
+    "type": "CLA",
+    "line": "other",
+    "tag": []
+  },
+  {
+    "eName": "Wonderful Waterpark",
+    "name": "水上乐园",
+    "id": "525",
+    "category": "AG",
+    "subType": "",
+    "state": 1,
+    "pic": "525.gif",
+    "language": "zh_CN",
+    "type": "CLA",
+    "line": "other",
+    "tag": []
+  },
+  {
+    "eName": "Rock And Roll",
+    "name": "摇滚狂迷",
+    "id": "527",
+    "category": "AG",
+    "subType": "",
+    "state": 1,
+    "pic": "527.gif",
+    "language": "zh_CN",
+    "type": "CLA",
+    "line": "other",
+    "tag": []
+  },
+  {
+    "eName": "God of Gamble Fortune",
+    "name": "偏财神",
+    "id": "536",
+    "category": "AG",
+    "subType": "",
+    "state": 1,
+    "pic": "536.gif",
+    "language": "zh_CN",
+    "type": "CLA",
+    "line": "25-30",
+    "tag": []
+  },
+  {
+    "eName": "SW Guardians",
+    "name": "天空守护者",
+    "id": "542",
+    "category": "AG",
+    "subType": "",
+    "state": 1,
+    "pic": "542.gif",
+    "language": "zh_CN",
+    "type": "CLA",
+    "line": "25-30",
+    "tag": []
+  },
+  {
+    "eName": "Fruit slots",
+    "name": "水果拉霸",
+    "id": "501",
+    "category": "AG",
+    "subType": "",
+    "state": 1,
+    "pic": "501.gif",
+    "language": "zh_CN",
+    "type": "CLA",
+    "line": "other",
+    "tag": [
+      "LS"
+    ]
+  },
+  {
+    "eName": "Garden Vintage",
+    "name": "复古花园",
+    "id": "509",
+    "category": "AG",
+    "subType": "",
+    "state": 1,
+    "pic": "509.gif",
+    "language": "zh_CN",
+    "type": "CLA",
+    "line": "other",
+    "tag": [
+      "RQ",
+      "CF",
+      "LS"
+    ]
+  },
+  {
+    "eName": "Space Odyssey",
+    "name": "太空漫游",
+    "id": "508",
+    "category": "AG",
+    "subType": "",
+    "state": 1,
+    "pic": "508.gif",
+    "language": "zh_CN",
+    "type": "CLA",
+    "line": "other",
+    "tag": [
+      "LS"
+    ]
+  },
+  {
+    "eName": "Year of the Monkey",
+    "name": "灵猴献瑞",
+    "id": "539",
+    "category": "AG",
+    "subType": "",
+    "state": 1,
+    "pic": "539.gif",
+    "language": "zh_CN",
+    "type": "CLA",
+    "line": "other",
+    "tag": [
+      "LS"
+    ]
+  },
+  {
+    "eName": "Golden Dragon",
+    "name": "金龙献宝",
+    "id": "TA0Y",
+    "category": "AG",
+    "subType": "",
+    "state": 1,
+    "pic": "TA0Y.gif",
+    "language": "zh_CN",
+    "type": "CLA",
+    "line": "5-10",
+    "tag": []
+  },
+  {
+    "eName": "Galactic Cash",
+    "name": "星际大战",
+    "id": "TA0V",
+    "category": "AG",
+    "subType": "",
+    "state": 1,
+    "pic": "TA0V.gif",
+    "language": "zh_CN",
+    "type": "CLA",
+    "line": "5-10",
+    "tag": []
+  },
+  {
+    "eName": "Lowriders",
+    "name": "经典轿车",
+    "id": "TA0U",
+    "category": "AG",
+    "subType": "",
+    "state": 1,
+    "pic": "TA0U.gif",
+    "language": "zh_CN",
+    "type": "CLA",
+    "line": "5-10",
+    "tag": []
+  },
+  {
+    "eName": "Jolly Roger",
+    "name": "海盗夺宝",
+    "id": "TA0W",
+    "category": "AG",
+    "subType": "",
+    "state": 1,
+    "pic": "TA0W.gif",
+    "language": "zh_CN",
+    "type": "CLA",
+    "line": "5-10",
+    "tag": []
+  },
+  {
+    "eName": "Cafe de Paris",
+    "name": "巴黎茶座",
+    "id": "TA0X",
+    "category": "AG",
+    "subType": "",
+    "state": 1,
+    "pic": "TA0X.gif",
+    "language": "zh_CN",
+    "type": "CLA",
+    "line": "5-10",
+    "tag": []
+  },
+  {
+    "eName": "Mahjong slots",
+    "name": "麻将老虎机",
+    "id": "515",
+    "category": "AG",
+    "subType": "",
+    "state": 1,
+    "pic": "515.gif",
+    "language": "zh_CN",
+    "type": "CLA",
+    "line": "25-30",
+    "tag": [
+      "RQ",
+      "CF",
+      "LS"
+    ]
+  },
+  {
+    "eName": "Monkey King",
+    "name": "齐天大圣",
+    "id": "543",
+    "category": "AG",
+    "subType": "",
+    "state": 1,
+    "pic": "543.gif",
+    "language": "zh_CN",
+    "type": "CLA",
+    "line": "25-30",
+    "tag": [
+      "RQ"
+    ]
+  },
+  {
+    "eName": "Ice Crush",
+    "name": "冰河世界",
+    "id": "545",
+    "category": "AG",
+    "subType": "",
+    "state": 1,
+    "pic": "545.gif",
+    "language": "zh_CN",
+    "type": "CLA",
+    "line": "15-20",
+    "tag": [
+      "RQ"
+    ]
+  },
+  {
+    "eName": "God of Wu Fortune",
+    "name": "武财神",
+    "id": "535",
+    "category": "AG",
+    "subType": "",
+    "state": 1,
+    "pic": "535.gif",
+    "language": "zh_CN",
+    "type": "CLA",
+    "line": "other",
+    "tag": [
+      "LS"
+    ]
+  },
+  {
+    "eName": "Shanghai Bund",
+    "name": "上海百乐门",
+    "id": "549",
+    "category": "AG",
+    "subType": "",
+    "state": 1,
+    "pic": "549.gif",
+    "language": "zh_CN",
+    "type": "CLA",
+    "line": "other",
+    "tag": [
+      "CF"
+    ]
+  }
+]

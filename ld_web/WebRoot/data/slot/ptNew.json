@@ -1,0 +1,2413 @@
+[{
+    "name": "狂野的遗产",
+    "eName": " Legacy Of The Wild",
+    "code": "legwld",
+    "pic": "legwld1.jpg",
+    "state": 1,
+    "id": "legwld",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "25-25",
+    "tag": [
+    "HOT",
+    "SLO"
+    ],
+    "language": ""
+}, {
+    "name": "大蓝",
+    "eName": "Great Blue Jackpot",
+    "code": "grbjp",
+    "pic": "grbjpj.jpg",
+    "state": 1,
+    "id": "grbjp",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "25-25",
+    "tag": [
+        "HOT",
+        "SLO"
+    ],
+    "language": ""
+}, {
+    "name": "古怪猴子",
+    "eName": "Funky Monkey Jackpot",
+    "code": "fmjp",
+    "pic": "fmjp.jpg",
+    "state": 1,
+    "id": "fmjp",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "25-25",
+    "tag": [
+        "HOT",
+        "SLO"
+    ],
+    "language": ""
+}, {
+    "name": "冰窟",
+    "eName": "Ice Cave",
+    "code": "ashicv",
+    "pic": "ashicv.jpg",
+    "state": 1,
+    "id": "ashicv",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "25-25",
+    "tag": [
+        "HOT",
+        "SLO"
+    ],
+    "language": ""
+}, {
+    "name": "边境的心脏",
+    "eName": "Heart of the Frontier",
+    "code": "ashhof",
+    "pic": "ashhof.jpg",
+    "state": 1,
+    "id": "ashhof",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "25-25",
+    "tag": [
+        "HOT",
+        "SLO"
+    ],
+    "language": ""
+},{
+    "name": "上帝时代：风暴之神 ",
+    "eName": "Age of the Gods: God of Storms",
+    "code": "aeolus",
+    "pic": "aeolus1.jpg",
+    "state": 1,
+    "id": "aeolus",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "25-25",
+    "tag": [
+        "HOT",
+        "SLO"
+    ],
+    "language": ""
+}, {
+    "name": "紫红水果屋",
+    "eName": "Purple Hot",
+    "code": "phot",
+    "pic": "photk.jpg",
+    "state": 1,
+    "id": "phot",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "5-10",
+    "tag": [
+        "AMA"
+    ],
+    "language": ""
+},{
+    "name": "年年有余",
+    "eName": "Nian Nian You Yu",
+    "code": "nian",
+    "pic": "nian_k.jpg",
+    "state": 1,
+    "id": "nian",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "5-10",
+    "tag": [
+        "HOT",
+        "AMA"
+    ],
+    "language": ""
+},{
+    "name": "猫女王",
+    "eName": " Cat Queen",
+    "code": "catqc",
+    "pic": "catqk.jpg",
+    "state": 1,
+    "id": "catqc",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "25-25",
+    "tag": [
+        "HOT",
+        "SLO"
+    ],
+    "language": ""
+},{
+    "name": "糖果大陆",
+    "eName": "Sugar Land",
+    "code": "sugla",
+    "pic": "sugla.jpg",
+    "state": "1",
+    "id": "sugla",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "",
+    "tag": [
+      "HOT",
+      "NEW"
+    ]
+  },
+  {
+    "name": "火热KTV",
+    "eName": "Hot KTV",
+    "code": "hotktv",
+    "pic": "hotktv.jpg",
+    "state": "1",
+    "id": "hotktv",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "",
+    "tag": [
+      "HOT",
+      "NEW"
+    ]
+  },
+  {
+    "name": "黄金武士",
+    "eName": "Warriors Gold",
+    "code": "warg",
+    "pic": "warg.jpg",
+    "state": "1",
+    "id": "warg",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "",
+    "tag": [
+      "HOT",
+      "NEW"
+    ]
+  },
+  {
+    "name": "八宝一后",
+    "eName": "8 Treasures 1 Queen",
+    "code": "treasq",
+    "pic": "treasq.jpg",
+    "state": "1",
+    "id": "treasq",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "",
+    "tag": [
+      "HOT",
+      "NEW"
+    ]
+  },
+  {
+    "name": "跳跳猫猫",
+    "eName": "Tiao Tiao Mao Mao",
+    "code": "titimama",
+    "pic": "titimama.jpg",
+    "state": "1",
+    "id": "titimama",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "",
+    "tag": [
+      "HOT",
+      "NEW"
+    ]
+  },
+  {
+    "name": "埃及旋转",
+    "eName": "Egypt Spin",
+    "code": "egspin",
+    "pic": "egspin.jpg",
+    "state": "1",
+    "id": "egspin",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "",
+    "tag": [
+      "HOT",
+      "NEW"
+    ]
+  },
+  {
+    "name": "亚洲幻想",
+    "eName": "Asian Fantasy",
+    "code": "asfa",
+    "pic": "asfa.png",
+    "state": 1,
+    "id": "asfa",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": [
+      "AMA"
+    ]
+  },
+  {
+    "name": "武则天",
+    "eName": "Heavenly Ruler",
+    "code": "heavru",
+    "pic": "heavru.jpg",
+    "state": 1,
+    "id": "heavru",
+    "type": "SLO",
+    "subType": "TWO",
+    "category": "PT",
+    "line": "1-10",
+    "tag": [
+      "AMA"
+    ]
+  },
+  {
+    "name": "四灵",
+    "eName": "Si Ling",
+    "code": "sling",
+    "pic": "sling.jpg",
+    "state": 1,
+    "id": "sling",
+    "type": "SLO",
+    "subType": "TWO",
+    "category": "PT",
+    "line": "1-10",
+    "tag": [
+      "AMA"
+    ]
+  },
+  {
+    "name": "好事成双",
+    "eName": "Haoshi Cheng Shuang",
+    "code": "haocs",
+    "pic": "haocs.jpg",
+    "state": 1,
+    "id": "haocs",
+    "type": "SLO",
+    "subType": "TWO",
+    "category": "PT",
+    "line": "1-10",
+    "tag": [
+      "AMA"
+    ]
+  },
+  {
+    "name": "豪华版仙境大冒险",
+    "eName": "Adventures in Wonderland Deluxe",
+    "code": "ashadv",
+    "pic": "ashadv.jpg",
+    "state": 1,
+    "id": "ashadv",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": [
+      "AMA"
+    ]
+  },
+  {
+    "name": "幸运狮子",
+    "eName": "Fortune Lions",
+    "code": "frtln",
+    "pic": "frtln.jpg",
+    "state": 1,
+    "id": "frtln",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": [
+      "AMA"
+    ]
+  },
+  {
+    "name": "五虎将",
+    "eName": "Five Tiger Generals",
+    "code": "ftg",
+    "pic": "ftg.jpg",
+    "state": 1,
+    "id": "ftg",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": [
+      "AMA"
+    ]
+  },
+  {
+    "name": "大草原现金",
+    "eName": "Savannah Cash",
+    "code": "savcas",
+    "pic": "savcas.jpg",
+    "state": 1,
+    "id": "savcas",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": [
+      "AMA"
+    ]
+  },
+  {
+    "name": "幸运船长5",
+    "eName": "Fortunate Five",
+    "code": "frtf",
+    "pic": "frtf.jpg",
+    "state": 1,
+    "id": "frtf",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": [
+      "AMA"
+    ]
+  },
+  {
+    "name": "狂欢夜",
+    "eName": "ANightOut",
+    "code": "hb",
+    "pic": "hb.jpg",
+    "state": 1,
+    "id": "hb",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": [
+      "AMA"
+    ]
+  },
+  {
+    "name": "众神的时代",
+    "eName": "AgeOfTheGods™",
+    "code": "aogs",
+    "pic": "aogs.jpg",
+    "state": 1,
+    "id": "aogs",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": [
+      "AMA"
+    ]
+  },
+  {
+    "name": "野生亚马逊",
+    "eName": "AmazonWild",
+    "code": "ashamw",
+    "pic": "ashamw.jpg",
+    "state": 1,
+    "id": "ashamw",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": []
+  },
+  {
+    "name": "弓箭手",
+    "eName": "Archer",
+    "code": "arc",
+    "pic": "arc.jpg",
+    "state": 1,
+    "id": "arc",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": []
+  },
+  {
+    "name": "白狮",
+    "eName": "BaiShi",
+    "code": "bs",
+    "pic": "bs.jpg",
+    "state": 1,
+    "id": "bs",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": []
+  },
+  {
+    "name": "海滨嘉年华",
+    "eName": "BeachLife",
+    "code": "bl",
+    "pic": "bl.jpg",
+    "state": 1,
+    "id": "bl",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": [
+      "AMA"
+    ]
+  },
+  {
+    "name": "百慕大三角",
+    "eName": "BermudaTriangle",
+    "code": "bt",
+    "pic": "bt.jpg",
+    "state": 1,
+    "id": "bt",
+    "type": "CLA",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": []
+  },
+  {
+    "name": "熊之舞",
+    "eName": "BonusBears",
+    "code": "bob",
+    "pic": "bob.jpg",
+    "state": 1,
+    "id": "bob",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": []
+  },
+  {
+    "name": "布法罗闪电战",
+    "eName": "BuffaloBlitz",
+    "code": "bfb",
+    "pic": "bfb.jpg",
+    "state": 1,
+    "id": "bfb",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": []
+  },
+  {
+    "name": "船长的宝藏",
+    "eName": "CaptainsTreasure",
+    "code": "ct",
+    "pic": "ct.jpg",
+    "state": 1,
+    "id": "ct",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": [
+      "AMA"
+    ]
+  },
+  {
+    "name": "船长的宝藏2",
+    "eName": "Captain'sTreasurePro",
+    "code": "ctp2",
+    "pic": "ctp2.jpg",
+    "state": 1,
+    "id": "ctp2",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": []
+  },
+  {
+    "name": "猫女王",
+    "eName": "CatQueenKiosk",
+    "code": "catqk",
+    "pic": "catqk.jpg",
+    "state": 1,
+    "id": "catqk",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": []
+  },
+  {
+    "name": "超级888",
+    "eName": "Chaoji888",
+    "code": "chao",
+    "pic": "chao.jpg",
+    "state": 1,
+    "id": "chao",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": []
+  },
+  {
+    "name": "樱之恋",
+    "eName": "CherryLove",
+    "code": "chl",
+    "pic": "chl.jpg",
+    "state": 1,
+    "id": "chl",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": []
+  },
+  {
+    "name": "财宝箱",
+    "eName": "ChestsofPlenty",
+    "code": "ashcpl",
+    "pic": "ashcpl.jpg",
+    "state": 1,
+    "id": "ashcpl",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": [
+      "AMA"
+    ]
+  },
+  {
+    "name": "中国厨房",
+    "eName": "ChineseKitchen",
+    "code": "cm",
+    "pic": "cm.jpg",
+    "state": 1,
+    "id": "cm",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": []
+  },
+  {
+    "name": "警察土匪",
+    "eName": "CopsN'Bandits",
+    "code": "gtscnb",
+    "pic": "gtscnb.jpg",
+    "state": 1,
+    "id": "gtscnb",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": []
+  },
+  {
+    "name": "牛仔和外星人",
+    "eName": "Cowboys&Aliens",
+    "code": "gtscbl",
+    "pic": "gtscbl.jpg",
+    "state": 1,
+    "id": "gtscbl",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": []
+  },
+  {
+    "name": "疯狂之七",
+    "eName": "Crazy7",
+    "code": "c7",
+    "pic": "c7.jpg",
+    "state": 1,
+    "id": "c7",
+    "type": "CLA",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": []
+  },
+  {
+    "name": "沙漠之宝/沙漠寻宝",
+    "eName": "DesertTreasure",
+    "code": "dt",
+    "pic": "dt.jpg",
+    "state": 1,
+    "id": "dt",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": [
+      "AMA"
+    ]
+  },
+  {
+    "name": "海豚礁",
+    "eName": "DolphinReef",
+    "code": "dnr",
+    "pic": "dnr.jpg",
+    "state": 1,
+    "id": "dnr",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": []
+  },
+  {
+    "name": "复活节惊喜/复活节大惊喜",
+    "eName": "EasterSurprise",
+    "code": "eas",
+    "pic": "eas.jpg",
+    "state": 1,
+    "id": "eas",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": []
+  },
+  {
+    "name": "埃斯梅拉达",
+    "eName": "EsmeraldaKiosk",
+    "code": "esmk",
+    "pic": "esmk.jpg",
+    "state": 1,
+    "id": "esmk",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": [
+      "AMA"
+    ]
+  },
+  {
+    "name": "全民大奖",
+    "eName": "Everybody'sJackpot",
+    "code": "evj",
+    "pic": "evj.jpg",
+    "state": 1,
+    "id": "evj",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": [
+      "AMA"
+    ]
+  },
+  {
+    "name": "翡翠公主",
+    "eName": "FeiCuiGongZhu",
+    "code": "fcgz",
+    "pic": "fcgz.jpg",
+    "state": 1,
+    "id": "fcgz",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": [
+      "AMA"
+    ]
+  },
+  {
+    "name": "飞龙在天",
+    "eName": "FeiLongZaiTian",
+    "code": "gtsflzt",
+    "pic": "gtsflzt.jpg",
+    "state": 1,
+    "id": "gtsflzt",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": []
+  },
+  {
+    "name": "疯狂麻将",
+    "eName": "FengKuangMaJiang",
+    "code": "fkmj",
+    "pic": "fkmj.jpg",
+    "state": 1,
+    "id": "fkmj",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": []
+  },
+  {
+    "name": "终极足球",
+    "eName": "FootballRules",
+    "code": "fbr",
+    "pic": "fbr.jpg",
+    "state": 1,
+    "id": "fbr",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": [
+      "AMA"
+    ]
+  },
+  {
+    "name": "惊异之林",
+    "eName": "ForestofWonder",
+    "code": "fow",
+    "pic": "fow.jpg",
+    "state": 1,
+    "id": "fow",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": [
+      "AMA"
+    ]
+  },
+  {
+    "name": "青春之泉",
+    "eName": "FountainofYouth",
+    "code": "foy",
+    "pic": "foy.jpg",
+    "state": 1,
+    "id": "foy",
+    "type": "CLA",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": []
+  },
+  {
+    "name": "狐狸的命运",
+    "eName": "FoxyFortunes",
+    "code": "fxf",
+    "pic": "fxf.jpg",
+    "state": 1,
+    "id": "fxf",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": []
+  },
+  {
+    "name": "戴图理/戴图理：神奇七",
+    "eName": "FrankieDettori'sMagicSeven",
+    "code": "fdt",
+    "pic": "fdt.jpg",
+    "state": 1,
+    "id": "fdt",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": []
+  },
+  {
+    "name": "戴图理累计大奖：神奇七",
+    "eName": "FrankieDettori'sMagicSevenJackpot",
+    "code": "fdtjg",
+    "pic": "fdtjg.jpg",
+    "state": 1,
+    "id": "fdtjg",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": [
+      "AMA"
+    ]
+  },
+  {
+    "name": "满月财富",
+    "eName": "FullMoonFortunes",
+    "code": "ashfmf",
+    "pic": "ashfmf.jpg",
+    "state": 1,
+    "id": "ashfmf",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": []
+  },
+  {
+    "name": "酷炫水果农场",
+    "eName": "FunkyFruitsFarm",
+    "code": "fff",
+    "pic": "fff.jpg",
+    "state": 1,
+    "id": "fff",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": []
+  },
+  {
+    "name": "酷炫水果累积奖池",
+    "eName": "FunkyFruitsJackpotGame",
+    "code": "fnfrj",
+    "pic": "fnfrj.jpg",
+    "state": 1,
+    "id": "fnfrj",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": [
+      "AMA"
+    ]
+  },
+  {
+    "name": "古怪猴子",
+    "eName": "FunkyMonkey",
+    "code": "fm",
+    "pic": "fm.jpg",
+    "state": 1,
+    "id": "fm",
+    "type": "CLA",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": []
+  },
+  {
+    "name": "众神的时代:狂怒四",
+    "eName": "FuriousFour",
+    "code": "furf",
+    "pic": "furf.jpg",
+    "state": 1,
+    "id": "furf",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": [
+      "AMA"
+    ]
+  },
+  {
+    "name": "艺妓的故事/艺伎回忆录",
+    "eName": "GeishaStory",
+    "code": "ges",
+    "pic": "ges.jpg",
+    "state": 1,
+    "id": "ges",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": [
+      "AMA"
+    ]
+  },
+  {
+    "name": "艺妓的故事Jackpot",
+    "eName": "GeishaStoryJackpot",
+    "code": "gesjp",
+    "pic": "gesjp.jpg",
+    "state": 1,
+    "id": "gesjp",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": []
+  },
+  {
+    "name": "宝石女王",
+    "eName": "GemQueen",
+    "code": "gemq",
+    "pic": "gemq.jpg",
+    "state": 1,
+    "id": "gemq",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": []
+  },
+  {
+    "name": "角斗士",
+    "eName": "Gladiator",
+    "code": "glr",
+    "pic": "glr.jpg",
+    "state": 1,
+    "id": "glr",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": []
+  },
+  {
+    "name": "角斗士(奖池)",
+    "eName": "GladiatorJackpot",
+    "code": "glrj",
+    "pic": "glrj.jpg",
+    "state": 1,
+    "id": "glrj",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": [
+      "AMA"
+    ]
+  },
+  {
+    "name": "黄金之旅",
+    "eName": "GoldenTour",
+    "code": "gos",
+    "pic": "gos.jpg",
+    "state": 1,
+    "id": "gos",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": [
+      "AMA"
+    ]
+  },
+  {
+    "name": "大蓝",
+    "eName": "GreatBlue",
+    "code": "bib",
+    "pic": "bib.jpg",
+    "state": 1,
+    "id": "bib",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": []
+  },
+  {
+    "name": "万圣节财富/万圣节",
+    "eName": "HalloweenFortune",
+    "code": "hlf",
+    "pic": "hlf.jpg",
+    "state": 1,
+    "id": "hlf",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": []
+  },
+  {
+    "name": "万圣节财富Ⅱ",
+    "eName": "HalloweenFortuneII",
+    "code": "hlf2",
+    "pic": "hlf2.jpg",
+    "state": 1,
+    "id": "hlf2",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": []
+  },
+  {
+    "name": "鬼屋",
+    "eName": "HauntedHouse",
+    "code": "hh",
+    "pic": "hh.jpg",
+    "state": 1,
+    "id": "hh",
+    "type": "CLA",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": []
+  },
+  {
+    "name": "丛林的心脏/丛林之心",
+    "eName": "HeartofTheJungle",
+    "code": "ashhotj",
+    "pic": "ashhotj.jpg",
+    "state": 1,
+    "id": "ashhotj",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": []
+  },
+  {
+    "name": "公路王国",
+    "eName": "HighwayKings",
+    "code": "hk",
+    "pic": "hk.jpg",
+    "state": 1,
+    "id": "hk",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": [
+      "AMA"
+    ]
+  },
+  {
+    "name": "高速公路临国王",
+    "eName": "HighwayKingsPro",
+    "code": "gtshwkp",
+    "pic": "gtshwkp.jpg",
+    "state": 1,
+    "id": "gtshwkp",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": []
+  },
+  {
+    "name": "炙热宝石",
+    "eName": "HotGems",
+    "code": "gts50",
+    "pic": "gts50.jpg",
+    "state": 1,
+    "id": "gts50",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": []
+  },
+  {
+    "name": "印加帝国头奖",
+    "eName": "IncaJackpot",
+    "code": "aztec",
+    "pic": "aztec.jpg",
+    "state": 1,
+    "id": "aztec",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": [
+      "AMA"
+    ]
+  },
+  {
+    "name": "幸运草",
+    "eName": "IrishLuck",
+    "code": "gtsirl",
+    "pic": "gtsirl.jpg",
+    "state": 1,
+    "id": "gtsirl",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": []
+  },
+  {
+    "name": "中奖巨头/巨人",
+    "eName": "JackpotGiant",
+    "code": "jpgt",
+    "pic": "jpgt.jpg",
+    "state": 1,
+    "id": "jpgt",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": [
+      "AMA"
+    ]
+  },
+  {
+    "name": "金钱蛙",
+    "eName": "JinQianWa",
+    "code": "jqw",
+    "pic": "jqw.jpg",
+    "state": 1,
+    "id": "jqw",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": []
+  },
+  {
+    "name": "众神的时代：奥林匹斯之王",
+    "eName": "KingofOlympus",
+    "code": "zeus",
+    "pic": "zeus.jpg",
+    "state": 1,
+    "id": "zeus",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": [
+      "AMA"
+    ]
+  },
+  {
+    "name": "第八大奇迹",
+    "eName": "KongTheEighthWonderOfTheWorld",
+    "code": "kkg",
+    "pic": "kkg.jpg",
+    "state": 1,
+    "id": "kkg",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": []
+  },
+  {
+    "name": "黄金之地",
+    "eName": "LandofGold",
+    "code": "lndg",
+    "pic": "lndg.jpg",
+    "state": 1,
+    "id": "lndg",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": [
+      "AMA"
+    ]
+  },
+  {
+    "name": "烈焰钻石",
+    "eName": "LieYanZuanShi",
+    "code": "ght_a",
+    "pic": "ght_a.jpg",
+    "state": 1,
+    "id": "ght_a",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": []
+  },
+  {
+    "name": "六福兽",
+    "eName": "LiuFuShou",
+    "code": "kfp",
+    "pic": "kfp.jpg",
+    "state": 1,
+    "id": "kfp",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": [
+      "AMA"
+    ]
+  },
+  {
+    "name": "龙龙龙",
+    "eName": "LongLongLong",
+    "code": "longlong",
+    "pic": "longlong.jpg",
+    "state": 1,
+    "id": "longlong",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": []
+  },
+  {
+    "name": "疯狂乐透",
+    "eName": "LottoMadness",
+    "code": "lm",
+    "pic": "lm.jpg",
+    "state": 1,
+    "id": "lm",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": [
+      "AMA"
+    ]
+  },
+  {
+    "name": "神奇的堆栈",
+    "eName": "MagicalStacks",
+    "code": "mgstk",
+    "pic": "mgstk.jpg",
+    "state": 1,
+    "id": "mgstk",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": []
+  },
+  {
+    "name": "玛丽莲梦露",
+    "eName": "MarilynMonroe",
+    "code": "gtsmrln",
+    "pic": "gtsmrln.jpg",
+    "state": 1,
+    "id": "gtsmrln",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": []
+  },
+  {
+    "name": "现金返还先生/大富豪",
+    "eName": "Mr.Cashback",
+    "code": "mcb",
+    "pic": "mcb.jpg",
+    "state": 1,
+    "id": "mcb",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": []
+  },
+  {
+    "name": "海王星王国",
+    "eName": "NeptunesKingdom",
+    "code": "nk",
+    "pic": "nk.jpg",
+    "state": 1,
+    "id": "nk",
+    "type": "CLA",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": []
+  },
+  {
+    "name": "满月财富",
+    "eName": "PantherMoon",
+    "code": "pmn",
+    "pic": "pmn.jpg",
+    "state": 1,
+    "id": "pmn",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": []
+  },
+  {
+    "name": "舞线",
+    "eName": "PartyLine",
+    "code": "pl",
+    "pic": "pl.jpg",
+    "state": 1,
+    "id": "pl",
+    "type": "CLA",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": []
+  },
+  {
+    "name": "法老的秘密",
+    "eName": "Pharaoh'sSecrets",
+    "code": "pst",
+    "pic": "pst.jpg",
+    "state": 1,
+    "id": "pst",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": []
+  },
+  {
+    "name": "大量的财富/巨额财宝",
+    "eName": "PlentyO'Fortune",
+    "code": "gtspor",
+    "pic": "gtspor.jpg",
+    "state": 1,
+    "id": "gtspor",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": []
+  },
+  {
+    "name": "众神的时代：奥林匹斯之子",
+    "eName": "PrinceofOlympus",
+    "code": "hrcls",
+    "pic": "hrcls.jpg",
+    "state": 1,
+    "id": "hrcls",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": []
+  },
+  {
+    "name": "紫色热",
+    "eName": "PurpleHotKiosk",
+    "code": "photk",
+    "pic": "photk.jpg",
+    "state": 1,
+    "id": "photk",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": [
+      "AMA"
+    ]
+  },
+  {
+    "name": "权杖女王",
+    "eName": "QueenOfWands",
+    "code": "qnw",
+    "pic": "qnw.jpg",
+    "state": 1,
+    "id": "qnw",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": []
+  },
+  {
+    "name": "日日生财",
+    "eName": "RiRiShengCai",
+    "code": "ririshc",
+    "pic": "ririshc.jpg",
+    "state": 1,
+    "id": "ririshc",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": [
+      "AMA"
+    ]
+  },
+  {
+    "name": "游猎炙热",
+    "eName": "SafariHeat",
+    "code": "sfh",
+    "pic": "sfh.jpg",
+    "state": 1,
+    "id": "sfh",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": []
+  },
+  {
+    "name": "桑巴舞",
+    "eName": "SambaBrazil",
+    "code": "gtssmbr",
+    "pic": "gtssmbr.jpg",
+    "state": 1,
+    "id": "gtssmbr",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": []
+  },
+  {
+    "name": "圣诞老人惊喜/圣诞惊喜",
+    "eName": "SantaSurprise",
+    "code": "ssp",
+    "pic": "ssp.jpg",
+    "state": 1,
+    "id": "ssp",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": []
+  },
+  {
+    "name": "亚马逊的秘密",
+    "eName": "SecretsoftheAmazon",
+    "code": "samz",
+    "pic": "samz.jpg",
+    "state": 1,
+    "id": "samz",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": []
+  },
+  {
+    "name": "神探夏洛克",
+    "eName": "SherlockMystery",
+    "code": "shmst",
+    "pic": "shmst.jpg",
+    "state": 1,
+    "id": "shmst",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": []
+  },
+  {
+    "name": "四象",
+    "eName": "SiXiang",
+    "code": "sx",
+    "pic": "sx.jpg",
+    "state": 1,
+    "id": "sx",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": []
+  },
+  {
+    "name": "沉默武士",
+    "eName": "SilentSamurai",
+    "code": "sis",
+    "pic": "sis.jpg",
+    "state": 1,
+    "id": "sis",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": []
+  },
+  {
+    "name": "沉默武士彩池",
+    "eName": "SilentSamuraiJackpot",
+    "code": "sisjp",
+    "pic": "sisjp.jpg",
+    "state": 1,
+    "id": "sisjp",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": [
+      "AMA"
+    ]
+  },
+  {
+    "name": "银弹/银子弹",
+    "eName": "SilverBullet",
+    "code": "sib",
+    "pic": "sib.jpg",
+    "state": 1,
+    "id": "sib",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": [
+      "AMA"
+    ]
+  },
+  {
+    "name": "辛巴达航行",
+    "eName": "Sinbad'sGoldenVoyage",
+    "code": "ashsbd",
+    "pic": "ashsbd.jpg",
+    "state": 1,
+    "id": "ashsbd",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": []
+  },
+  {
+    "name": "幸运直击/幸运时刻",
+    "eName": "StreakofLuck",
+    "code": "sol",
+    "pic": "sol.jpg",
+    "state": 1,
+    "id": "sol",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": [
+      "AMA"
+    ]
+  },
+  {
+    "name": "孙悟空",
+    "eName": "SunWukong",
+    "code": "gtsswk",
+    "pic": "gtsswk.jpg",
+    "state": 1,
+    "id": "gtsswk",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": []
+  },
+  {
+    "name": "甜蜜派对",
+    "eName": "SweetParty",
+    "code": "cnpr",
+    "pic": "cnpr.jpg",
+    "state": 1,
+    "id": "cnpr",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": [
+      "AMA"
+    ]
+  },
+  {
+    "name": "大明帝国",
+    "eName": "TheGreatMingEmpire",
+    "code": "gtsgme",
+    "pic": "gtsgme.jpg",
+    "state": 1,
+    "id": "gtsgme",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": []
+  },
+  {
+    "name": "爱之船",
+    "eName": "TheLoveBoat",
+    "code": "lvb",
+    "pic": "lvb.jpg",
+    "state": 1,
+    "id": "lvb",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": [
+      "AMA"
+    ]
+  },
+  {
+    "name": "堂吉诃德的财富",
+    "eName": "TheRichesofDonQuixote",
+    "code": "donq",
+    "pic": "donq.jpg",
+    "state": 1,
+    "id": "donq",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": []
+  },
+  {
+    "name": "壮志凌云",
+    "eName": "TopGun",
+    "code": "topg",
+    "pic": "topg.jpg",
+    "state": 1,
+    "id": "topg",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": []
+  },
+  {
+    "name": "三个朋友",
+    "eName": "TresAmigos",
+    "code": "ta",
+    "pic": "ta.jpg",
+    "state": 1,
+    "id": "ta",
+    "type": "CLA",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": []
+  },
+  {
+    "name": "三倍猴子",
+    "eName": "TripleMonkey",
+    "code": "trpmnk",
+    "pic": "trpmnk.jpg",
+    "state": 1,
+    "id": "trpmnk",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": [
+      "AMA"
+    ]
+  },
+  {
+    "name": "真爱",
+    "eName": "TrueLove",
+    "code": "trl",
+    "pic": "trl.jpg",
+    "state": 1,
+    "id": "trl",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": []
+  },
+  {
+    "name": "丛林巫师",
+    "eName": "UggaBugga",
+    "code": "ub",
+    "pic": "ub.jpg",
+    "state": 1,
+    "id": "ub",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": []
+  },
+  {
+    "name": "开心假期/奢华假日",
+    "eName": "VacationStation",
+    "code": "er",
+    "pic": "er.jpg",
+    "state": 1,
+    "id": "er",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": []
+  },
+  {
+    "name": "开心假期/奢华假日",
+    "eName": "VacationStationDeluxe",
+    "code": "vcstd",
+    "pic": "vcstd.jpg",
+    "state": 1,
+    "id": "vcstd",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": []
+  },
+  {
+    "name": "白王",
+    "eName": "WhiteKing",
+    "code": "whk",
+    "pic": "whk.jpg",
+    "state": 1,
+    "id": "whk",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": []
+  },
+  {
+    "name": "野生赌徒/动物世界",
+    "eName": "WildGambler",
+    "code": "gtswg",
+    "pic": "gtswg.jpg",
+    "state": 1,
+    "id": "gtswg",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": []
+  },
+  {
+    "name": "舞龙",
+    "eName": "WuLong",
+    "code": "wlg",
+    "pic": "wlg.jpg",
+    "state": 1,
+    "id": "wlg",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": []
+  },
+  {
+    "name": "舞龙Jackpot",
+    "eName": "WuLongJackpot",
+    "code": "wlgjp",
+    "pic": "wlgjp.jpg",
+    "state": 1,
+    "id": "wlgjp",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": []
+  },
+  {
+    "name": "五路财神",
+    "eName": "WuLuCaiShen",
+    "code": "wlcsh",
+    "pic": "wlcsh.jpg",
+    "state": 1,
+    "id": "wlcsh",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": [
+      "AMA"
+    ]
+  },
+  {
+    "name": "招财进宝",
+    "eName": "ZhaoCaiJinBao",
+    "code": "zcjb",
+    "pic": "zcjb.jpg",
+    "state": 1,
+    "id": "zcjb",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": []
+  },
+  {
+    "name": "招财进宝彩池",
+    "eName": "ZhaoCaiJinBaoJackpot",
+    "code": "zcjbjp",
+    "pic": "zcjbjp.jpg",
+    "state": 1,
+    "id": "zcjbjp",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": [
+      "AMA"
+    ]
+  },
+  {
+    "name": "招财童子",
+    "eName": "ZhaoCaiTongZi",
+    "code": "zctz",
+    "pic": "zctz.jpg",
+    "state": 1,
+    "id": "zctz",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": []
+  },
+  {
+    "name": "维加斯的猫",
+    "eName": "CatInVegas",
+    "code": "ctiv",
+    "pic": "ctiv.jpg",
+    "state": 1,
+    "id": "ctiv",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "15-20",
+    "tag": [
+      "HOT",
+      "AMA"
+    ]
+  },
+  {
+    "name": "维京狂热",
+    "eName": "Vikingmania",
+    "code": "gts52",
+    "pic": "gts52.jpg",
+    "state": 1,
+    "id": "gts52",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "15-20",
+    "tag": [
+      "HOT",
+      "NEW"
+    ]
+  },
+  {
+    "name": "足球嘉年华",
+    "eName": "FootballCarnival",
+    "code": "gtsfc",
+    "pic": "gtsfc.jpg",
+    "state": 1,
+    "id": "gtsfc",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "15-20",
+    "tag": [
+      "HOT",
+      "NEW"
+    ]
+  },
+  {
+    "name": "幸运日",
+    "eName": "FortuneDay",
+    "code": "fday",
+    "pic": "fday.jpg",
+    "state": 1,
+    "id": "fday",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "15-20",
+    "tag": [
+      "HOT",
+      "NEW"
+    ]
+  },
+  {
+    "name": "泰庙",
+    "eName": "ThaiTempleKiosk",
+    "code": "thtk",
+    "pic": "thtk.jpg",
+    "state": 1,
+    "id": "thtk",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "25",
+    "tag": [
+      "AMA",
+      "HOT"
+    ]
+  },
+  {
+    "name": "三剑客和女王的钻石",
+    "eName": "TheThreeMusketeersandTheQueen'sDiamond",
+    "code": "tmqd",
+    "pic": "tmqd.jpg",
+    "state": 1,
+    "id": "tmqd",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "40-60",
+    "tag": [
+      "HOT",
+      "NEW"
+    ]
+  },
+  {
+    "name": "财富小姐",
+    "eName": "MissFortune",
+    "code": "mfrt",
+    "pic": "mfrt.jpg",
+    "state": 1,
+    "id": "mfrt",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "",
+    "tag": [
+      "HOT",
+      "NEW"
+    ]
+  },
+  {
+    "name": "幸运熊猫",
+    "eName": "LuckyPanda",
+    "code": "gts51",
+    "pic": "gts51.jpg",
+    "state": 1,
+    "id": "gts51",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "100-1024",
+    "tag": [
+      "HOT",
+      "NEW"
+    ]
+  },
+  {
+    "name": "3个小丑刮刮乐",
+    "eName": "3ClownsScratch",
+    "code": "tclsc",
+    "pic": "tclsc.jpg",
+    "state": 1,
+    "id": "tclsc",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "",
+    "tag": [
+      "HOT",
+      "NEW"
+    ]
+  },
+  {
+    "name": "蒙提·派森之火腿骑士",
+    "eName": "MontyPython'sLifeofBrian",
+    "code": "ashlob",
+    "pic": "ashlob.jpg",
+    "state": 1,
+    "id": "ashlob",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "15-20",
+    "tag": [
+      "AMA",
+      "HOT"
+    ]
+  },
+  {
+    "name": "经典老虎机刮刮乐",
+    "eName": "ClassicSlotScratch",
+    "code": "scs",
+    "pic": "scs.jpg",
+    "state": 1,
+    "id": "scs",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "",
+    "tag": [
+      "HOT",
+      "NEW"
+    ]
+  },
+  {
+    "name": "洛奇传奇",
+    "eName": "Rocky",
+    "code": "rky",
+    "pic": "rky.jpg",
+    "state": 1,
+    "id": "rky",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "25",
+    "tag": [
+      "HOT",
+      "NEW"
+    ]
+  },
+  {
+    "name": "三只小猪与大灰狼",
+    "eName": "PiggiesandtheWolf",
+    "code": "paw",
+    "pic": "paw.jpg",
+    "state": 1,
+    "id": "paw",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "40-60",
+    "tag": [
+      "HOT",
+      "NEW"
+    ]
+  },
+  {
+    "name": "木乃伊",
+    "eName": "TheMummy",
+    "code": "mmy",
+    "pic": "mmy.jpg",
+    "state": 1,
+    "id": "mmy",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "25",
+    "tag": [
+      "HOT",
+      "NEW"
+    ]
+  },
+  {
+    "name": "金字塔女王",
+    "eName": "QueenofPyramids",
+    "code": "qop",
+    "pic": "qop.jpg",
+    "state": 1,
+    "id": "qop",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": [
+      "AMA",
+      "HOT"
+    ]
+  },
+  {
+    "name": "金色召集",
+    "eName": "GoldRally",
+    "code": "grel",
+    "pic": "grel.jpg",
+    "state": 1,
+    "id": "grel",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": [
+      "AMA",
+      "HOT"
+    ]
+  },
+  {
+    "name": "无畏的戴夫",
+    "eName": "DaringDave&theEyeofRa",
+    "code": "gtsdrdv",
+    "pic": "gtsdrdv.jpg",
+    "state": 1,
+    "id": "gtsdrdv",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "15-20",
+    "tag": [
+      "HOT",
+      "NEW"
+    ]
+  },
+  {
+    "name": "粉红豹/顽皮豹",
+    "eName": "PinkPanther",
+    "code": "pnp",
+    "pic": "pnp.jpg",
+    "state": 1,
+    "id": "pnp",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "40-60",
+    "tag": [
+      "HOT",
+      "NEW"
+    ]
+  },
+  {
+    "name": "美丽的人",
+    "eName": "FairestofThemAll",
+    "code": "ashfta",
+    "pic": "ashfta.jpg",
+    "state": 1,
+    "id": "ashfta",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "15-20",
+    "tag": [
+      "HOT",
+      "NEW"
+    ]
+  },
+  {
+    "name": "黄金游戏",
+    "eName": "GoldenGames",
+    "code": "glg",
+    "pic": "glg.jpg",
+    "state": 1,
+    "id": "glg",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "25",
+    "tag": [
+      "HOT",
+      "NEW"
+    ]
+  },
+  {
+    "name": "魔方的财富",
+    "eName": "Rubik'sRiches",
+    "code": "gtsru",
+    "pic": "gtsru.jpg",
+    "state": 1,
+    "id": "gtsru",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "",
+    "tag": [
+      "HOT",
+      "NEW"
+    ]
+  },
+  {
+    "name": "成交时刻",
+    "eName": "TimeforaDeal",
+    "code": "ashtmd",
+    "pic": "ashtmd.jpg",
+    "state": 1,
+    "id": "ashtmd",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "25",
+    "tag": [
+      "HOT",
+      "NEW"
+    ]
+  },
+  {
+    "name": "魔幻老虎机",
+    "eName": "MagicSlots",
+    "code": "ms",
+    "pic": "ms.jpg",
+    "state": 1,
+    "id": "ms",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "",
+    "tag": [
+      "AMA",
+      "HOT"
+    ]
+  },
+  {
+    "name": "沙漠宝藏2",
+    "eName": "DesertTreasureII",
+    "code": "dt2",
+    "pic": "dt2.jpg",
+    "state": 1,
+    "id": "dt2",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "15-20",
+    "tag": [
+      "HOT",
+      "NEW"
+    ]
+  },
+  {
+    "name": "顶级王牌明星",
+    "eName": "TopTrumpsCelebs",
+    "code": "ttc",
+    "pic": "ttc.jpg",
+    "state": 1,
+    "id": "ttc",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "15-20",
+    "tag": [
+      "HOT",
+      "NEW"
+    ]
+  },
+  {
+    "name": "水果狂",
+    "eName": "FruitMania",
+    "code": "fmn",
+    "pic": "fmn.jpg",
+    "state": 1,
+    "id": "fmn",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": [
+      "AMA",
+      "HOT"
+    ]
+  },
+  {
+    "name": "现金彩色方块",
+    "eName": "Cashblox",
+    "code": "gtscb",
+    "pic": "gtscb.jpg",
+    "state": 1,
+    "id": "gtscb",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "",
+    "tag": [
+      "HOT",
+      "NEW"
+    ]
+  },
+  {
+    "name": "约翰韦恩",
+    "eName": "JohnWayne",
+    "code": "gtsjhw",
+    "pic": "gtsjhw.jpg",
+    "state": 1,
+    "id": "gtsjhw",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "25",
+    "tag": [
+      "HOT",
+      "NEW"
+    ]
+  },
+  {
+    "name": "龙王国",
+    "eName": "DragonKingdom",
+    "code": "gtsdgk",
+    "pic": "gtsdgk.jpg",
+    "state": 1,
+    "id": "gtsdgk",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "15-20",
+    "tag": [
+      "HOT",
+      "NEW"
+    ]
+  },
+  {
+    "name": "土豆啊 蕾莉农作物的黄金",
+    "eName": "SpudOReillysCropsofGold",
+    "code": "spud",
+    "pic": "spud.jpg",
+    "state": 1,
+    "id": "spud",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "15-20",
+    "tag": [
+      "HOT",
+      "NEW"
+    ]
+  },
+  {
+    "name": "爵士俱乐部",
+    "eName": "JazzClub",
+    "code": "gtsjzc",
+    "pic": "gtsjzc.jpg",
+    "state": 1,
+    "id": "gtsjzc",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "25",
+    "tag": [
+      "HOT",
+      "NEW"
+    ]
+  },
+  {
+    "name": "神的时代：智慧之神",
+    "eName": "AgeofthegodsGoddessofWisdom",
+    "code": "athn",
+    "pic": "athn.jpg",
+    "state": 1,
+    "id": "athn",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "1-10",
+    "tag": [
+      "AMA",
+      "HOT"
+    ]
+  },
+  {
+    "name": "冰流",
+    "eName": "IceRun",
+    "code": "gtsir",
+    "pic": "gtsir.jpg",
+    "state": 1,
+    "id": "gtsir",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "25",
+    "tag": [
+      "HOT",
+      "NEW"
+    ]
+  },
+  {
+    "name": "众神时代:命运姐妹",
+    "eName": "FateSisters",
+    "code": "ftsis",
+    "pic": "ftsis.jpg",
+    "state": 1,
+    "id": "ftsis",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "",
+    "tag": [
+      "AMA",
+      "HOT"
+    ]
+  },
+  {
+    "name": "黄金之翼",
+    "eName": "WingsOfGoldRegular",
+    "code": "gtswng",
+    "pic": "gtswng.jpg",
+    "state": 1,
+    "id": "gtswng",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "15-20",
+    "tag": [
+      "HOT",
+      "NEW"
+    ]
+  },
+  {
+    "name": "情圣博士",
+    "eName": "DrLoveMore",
+    "code": "dlm",
+    "pic": "dlm.jpg",
+    "state": 1,
+    "id": "dlm",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "15-20",
+    "tag": [
+      "AMA",
+      "HOT"
+    ]
+  },
+  {
+    "name": "野生精神",
+    "eName": "WildSpirit",
+    "code": "wis",
+    "pic": "wis.jpg",
+    "state": 1,
+    "id": "wis",
+    "type": "SLO",
+    "subType": "",
+    "category": "PT",
+    "line": "15-20",
+    "tag": [
+      "HOT",
+      "NEW"
+    ]
+  }
+]

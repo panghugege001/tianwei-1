@@ -1,0 +1,64 @@
+/*头部导航栏
+===========*/
+#header .header-top-wp .i-btn { margin-top: 7px; }
+.agent-bg { background: #26180f url("/images/agent/agent-bj.jpg") no-repeat center 50px; padding-bottom: 58px; }
+.gb-nav > li { width: 12.8%; }
+.gb-nav .center { margin-right: 10px; }
+.agent-center{ width:560px;   height:240px;    margin-top:100px;    position: relative;}  
+.agent-center .btn-mod a{ width:156px; height:49px; display:inline-block; margin-left:33px;} 
+.agent-center .btn-mod .login{ background: url(../images/agent/login.png) no-repeat 0 0;}
+.agent-center .btn-mod .reg{ background: url(../images/agent/reg.png) no-repeat 0 0;}
+.agent-bar{ overflow:hidden;height:53px; line-height:53px;}
+.agent-bar li{ width:33%; float:left;  font-size:18px; color:#fff; text-align:center;}
+.reg-page .reg-form .ui-form-item{padding-left: 110px;}
+ 
+
+
+
+
+/* banner
+*=====*/
+#agent-slide { position: relative; height: 468px; }
+#agent-slide .ele { position: absolute; left: 20%; bottom: 5px; width: auto; }
+#agent-slide .carousel-inner .item { padding:34px 0 26px; }
+#agent-slide .slide-box { position: static; display: block; width: auto; /* padding: 30px 0 40px; */
+    margin: 0 -10px; }
+#agent-slide .slide-box li { padding: 38px 30px; width: 31.66666%; line-height: 1; float: left; margin: 0 10px 0 10px; border-radius: 0; text-indent: 1px; text-align:left; height: auto; color:#c1c1c1; border: 1px solid #5c5853; background-color: #3f3b35; box-shadow: 4px 4px 8px rgba(0,0,0,.4); }
+#agent-slide .slide-box li h2 { font-size: 22px; margin-bottom: 8px; }
+#agent-slide .slide-box li.active { color: #fb9b08; }
+.agent-main .box { min-height: 570px; }
+.agent-main .m-content { padding: 28px; }
+.agent-main .m-content h2{ text-align:center; font-size:22px; font-weight:700; }
+.agent-main .m-content h2, .agent-main .m-content h3{color: #ee6325;}
+.agent-form .ipt-group { position: relative; margin-bottom: 12px; }
+.agent-form .ipt-txt { width: 270px; height: 26px; line-height: 26px; }
+.agent-form .tip { padding: 0; max-width:270px; margin-left: 6px; }
+.agent-form label.error-tip, .agent-form .mark { background: #fbe6e6; color: #ef0808; padding: 6px 10px; }
+.agent-form .mark { width: 96%; margin: 0 auto; }
+.agent-form label.error-tip { position: absolute; left: 376px; top: 20px; max-width:330px; }
+.agent-form .btn, .btn-panel { width:140px;height:46px; line-height:46px;background:#ee6325; color:#fff; display:inline-block; border-radius:6px; font-size:16px;  text-align: center; white-space: nowrap; cursor: pointer; user-select: none; text-shadow: 1px 0px 0px #702f11, -1px 0px 0px #702f11, 0px 1px 0px #702f11, 0px -1px 0px #702f11;}
+.m-content .ask { margin-top: 20px; margin-bottom: 16px; font-weight: 600; font-size: 16px; }
+/*联系方式
+=========*/
+ 
+.contact-list .sp { background-image: url(/images/contact-sprite.png); background-repeat: no-repeat; display: inline-block; }
+.sp-mail { width: 60px; height: 58px; background-position: -5px -5px; }
+.sp-qq { width: 53px; height: 61px; background-position: -5px -73px; }
+.sp-SWpe { width: 53px; height: 53px; background-position: -5px -144px; }
+.sp-weichar{ width: 65px; height: 61px; background-position: -5px -197px;}
+.contact-list li {width:20.4%; margin-right: 30px; float: left; text-align:center; }
+ 
+.contact-list li h2 { font-size: 16px; color: #fff; }
+.contact-list li .c-text { padding-top: 18px; line-height: 1.6; }
+/*合作协议弹框
+===========*/
+.dialog-agentreg .modal-hd { border-bottom: 1px solid #ccc; }
+.dialog-agentreg .modal-dialog { width: 780px; margin-top: 0; }
+ @media screen and (min-width: 1366px) {
+.dialog-agentreg .modal-dialog { margin-top: 80px; }
+}
+.dialog-agentreg .modal-title { font-size: 18px; font-weight: 600; }
+.dialog-agentreg .modal-title .tip { margin-left: 10px; font-size: 12px; font-weight: normal; }
+.reg-page .reg-form .ui-form-item { position: relative; }
+.form-ft .agree { position: relative; }
+.form-ft .agree label.error-tip { top: 77px; left: 120px; }

@@ -1,0 +1,1420 @@
+﻿[  
+{
+    "id": "catsandcashmobile",
+    "name": "猫与钞票",
+    "eName": "Cat and Cash",
+    "code": "100193",
+    "state": 1,
+    "pic": "catsandcash.jpg",
+    "category": "PNG",
+    "line": "1-10",
+    "type": "SLO",
+    "subType": "",
+    "tag": [
+      "NEW",
+      "BM"
+    ]
+  }, 
+ {
+    "id": "houseofdoommobile",
+    "name": "末日之星",
+    "eName": "House of Doom",
+    "code": "10666",
+    "state": 1,
+    "pic": "houseofdoom.png",
+    "category": "PNG",
+    "line": "1-10",
+    "type": "SLO",
+    "subType": "",
+    "tag": [
+      "NEW",
+      "BM"
+    ]
+  }, 
+{
+    "id": "legacyofegyptmobile",
+    "name": "埃及的遗产",
+    "eName": "Legacy of Egypt",
+    "code": "100339",
+    "state": 1,
+    "pic": "legacyofegypt.png",
+    "category": "PNG",
+    "line": "1-10",
+    "type": "SLO",
+    "subType": "",
+    "tag": [
+      "NEW",
+      "BM"
+    ]
+  },
+	{
+    "id": "bakerstreatmobile",
+    "name": "开心下午茶",
+    "eName": "Baker's Treat",
+    "code": "100349",
+    "state": 1,
+    "pic": "bakerstreat.png",
+    "category": "PNG",
+    "line": "1-10",
+    "type": "SLO",
+    "subType": "",
+    "tag": [
+      "NEW",
+      "HOT"
+    ],
+    "language": "en_GB"
+  }, 
+ {
+    "eName": "Sweet Alchemy",
+    "name": "魔力小甜心",
+    "id": "sweetalchemymobile",
+    "code": "100336",
+    "state": 1,
+    "pic": "100336.jpg",
+    "category": "PNG",
+    "line": "",
+    "type": "SLO",
+    "subType": "",
+    "tag": [
+      "NEW",
+      "HOT"
+    ],
+    "language": "en_GB"
+  },
+	{
+		"eName": " Imperial Opera",
+		"name": "京城曲艺",
+		"id": "imperialopera",
+		"code": "100348",
+		"state": 1,
+		"pic": "imperialopera.jpg",
+		"category": "PNG",
+		"line": "",
+		"type": "SLO",
+		"subType": "",
+		"tag": [
+			"NEW",
+			"HOT"
+		],
+		"language": "en_GB"
+	}, {
+		"eName": "Gold King",
+		"name": "黄金国王",
+		"id": "goldking",
+		"code": "100341",
+		"state": 1,
+		"pic": "goldking.png",
+		"category": "PNG",
+		"line": "",
+		"type": "SLO",
+		"subType": "",
+		"tag": [
+			"NEW",
+			"HOT"
+		],
+		"language": "en_GB"
+	}, {
+		"eName": "Planet Fortune",
+		"name": "星球寻宝",
+		"id": "planetfortunemobile",
+		"code": "100345",
+		"state": 1,
+		"pic": "planetfortune.png",
+		"category": "PNG",
+		"line": "",
+		"type": "SLO",
+		"subType": "",
+		"tag": [
+			"NEW",
+			"HOT"
+		],
+		"language": "en_GB"
+	}, {
+		"eName": "Mystery Joker 6000",
+		"name": "神秘小丑6000",
+		"id": "mysteryjoker6000",
+		"code": "100338",
+		"state": 1,
+		"pic": "mysteryjoker6000.png",
+		"category": "PNG",
+		"line": "",
+		"type": "SLO",
+		"subType": "",
+		"tag": [
+			"NEW",
+			"HOT"
+		],
+		"language": "en_GB"
+	}, {
+		"eName": "Sea Hunter",
+		"name": "深海猎人",
+		"id": "seahunter",
+		"code": "100331",
+		"state": 1,
+		"pic": "seahunter.jpg",
+		"category": "PNG",
+		"line": "",
+		"type": "SLO",
+		"subType": "",
+		"tag": [
+			"NEW",
+			"HOT"
+		],
+		"language": "en_GB"
+	}, {
+		"id": "fuerdaimobile",
+		"name": "富二代",
+		"eName": "FU ER DAI",
+		"code": "100337",
+		"state": 1,
+		"pic": "fuerdai.png",
+		"category": "PNG",
+		"line": "1-10",
+		"type": "SLO",
+		"subType": "",
+		"tag": [
+			"NEW",
+			"BM"
+		]
+	}, {
+		"id": "bigwincatmobile",
+		"name": "好运招财猫 ",
+		"eName": "Big Win Ca",
+		"code": "100342",
+		"state": 1,
+		"pic": "bigwincat2.png",
+		"category": "PNG",
+		"line": "1-10",
+		"type": "SLO",
+		"subType": "",
+		"tag": [
+			"NEW"
+		]
+	}, {
+		"id": "reactoonzmobile",
+		"name": "外星实验室 ",
+		"eName": "reactoonz",
+		"code": "100333",
+		"state": 1,
+		"pic": "reactoonz.png",
+		"category": "PNG",
+		"line": "1-10",
+		"type": "SLO",
+		"subType": "",
+		"tag": [
+			"NEW"
+		]
+	}, {
+		"id": "prosperitypalacemobile",
+		"name": "黄金帝国 ",
+		"eName": "Prosperity Palace",
+		"code": "100328",
+		"state": 1,
+		"pic": "prosperitypalace.png",
+		"category": "PNG",
+		"line": "1-10",
+		"type": "SLO",
+		"subType": "",
+		"tag": [
+			"NEW"
+		]
+	}, {
+		"id": "mermaidsdiamondmobile",
+		"name": "美人鱼的宝石 ",
+		"eName": "Mermaid's Diamond",
+		"code": "100329",
+		"state": 1,
+		"pic": "mermaidsdiamond.png",
+		"category": "PNG",
+		"line": "1-10",
+		"type": "SLO",
+		"subType": "",
+		"tag": [
+			"NEW"
+		]
+	}, {
+		"id": "moonprincess",
+		"name": "月亮守护者",
+		"eName": "Moon Princess7",
+		"code": "100334",
+		"state": 1,
+		"pic": "moonprincess.png",
+		"category": "PNG",
+		"line": "1-10",
+		"type": "SLO",
+		"subType": "",
+		"tag": [
+			"NEW"
+		]
+	}, {
+		"id": "sweet27",
+		"name": "甜蜜27",
+		"eName": "sweet 27",
+		"code": "100335",
+		"state": 1,
+		"pic": "sweet27.png",
+		"category": "PNG",
+		"line": "1-10",
+		"type": "SLO",
+		"subType": "",
+		"tag": [
+			"NEW"
+		]
+	}, {
+		"id": "multifruit81",
+		"name": "水果多多81",
+		"eName": "MultiFruit 81",
+		"code": "100330",
+		"state": 1,
+		"pic": "multifruit81.png",
+		"category": "PNG",
+		"line": "1-10",
+		"type": "SLO",
+		"subType": "",
+		"tag": [
+			"NEW"
+		]
+	}, {
+		"id": "aztecwarriorprincess",
+		"name": "阿斯德克战士公主",
+		"eName": "Aztec Warrior Princess",
+		"code": "100332",
+		"state": 1,
+		"pic": "aztecwarriorprincess.png",
+		"category": "PNG",
+		"line": "15-20",
+		"type": "SLO",
+		"dektop_id": "332",
+		"mobile_id": "100332",
+		"dektop_gid": "aztecwarriorprincess",
+		"mobile_gid": "aztecwarriorprincessmobile",
+		"subType": "",
+		"subType": "",
+		"tag": [
+			"NEW"
+		]
+	}, {
+		"id": "vikingrunecraftmobile",
+		"name": "维京人世界",
+		"eName": "Viking Runecraft",
+		"code": "100319",
+		"state": 1,
+		"pic": "vikingrunecraft.png",
+		"category": "PNG",
+		"line": "1-10",
+		"type": "SLO",
+		"dektop_id": "325",
+		"mobile_id": "100319",
+		"dektop_gid": "vikingrunecraft",
+		"mobile_gid": "vikingrunecraft",
+		"subType": "",
+		"tag": [
+			"NEW"
+		]
+	}, {
+		"id": "matsurimobile",
+		"name": "夏日庆典",
+		"eName": "Prissy Princess",
+		"code": "100320",
+		"state": 1,
+		"pic": "matsuri.png",
+		"category": "PNG",
+		"line": "1-10",
+		"type": "SLO",
+		"dektop_id": "325",
+		"mobile_id": "100325",
+		"dektop_gid": "matsuri",
+		"mobile_gid": "matsurimobile",
+		"subType": "",
+		"tag": [
+			"NEW"
+		]
+	}, {
+		"id": "prissyprincessmobile",
+		"name": "淘气 小公主",
+		"eName": "Prissy Princess",
+		"code": "100325",
+		"state": 1,
+		"pic": "prissyprincess.png",
+		"category": "PNG",
+		"line": "1-10",
+		"type": "SLO",
+		"dektop_id": "325",
+		"mobile_id": "100325",
+		"dektop_gid": "prissyprincess",
+		"mobile_gid": "prissyprincessmobile",
+		"subType": "",
+		"tag": [
+			"NEW"
+		]
+	}, {
+		"id": "gemix",
+		"name": "五彩宝石",
+		"eName": "GEMiX",
+		"dektop_id": "286",
+		"mobile_id": "100286",
+		"dektop_gid": "gemix",
+		"mobile_gid": "gemixmobile",
+		"game_type": "grid",
+		"score": "9.0",
+		"state": 1,
+		"pic": "Gemix2.png",
+		"category": "PNG",
+		"line": "other",
+		"type": "HOT",
+		"subType": "",
+		"tag": [
+			"HOT"
+		]
+	}, {
+		"id": "towerquest",
+		"name": "高塔任务",
+		"eName": "Tower Quest",
+		"dektop_id": "287",
+		"mobile_id": "100287",
+		"dektop_gid": "towerquest",
+		"mobile_gid": "towerquestmobile",
+		"game_type": "five-real",
+		"score": "9.0",
+		"state": 1,
+		"pic": "TowerQuest.png",
+		"category": "PNG",
+		"line": "15-20",
+		"type": "HOT",
+		"subType": "",
+		"tag": [
+			"HOT"
+		]
+	}, {
+		"id": "cloudquest",
+		"name": "天际战神",
+		"eName": "Cloud Quest",
+		"dektop_id": "300",
+		"mobile_id": "100300",
+		"dektop_gid": "cloudquest",
+		"mobile_gid": "cloudquestmobile",
+		"game_type": "grid",
+		"score": "9.0",
+		"state": 1,
+		"pic": "CloudQuest.png",
+		"category": "PNG",
+		"line": "other",
+		"type": "HOT",
+		"subType": "",
+		"tag": [
+			"HOT"
+		]
+	}, {
+		"id": "energoonz",
+		"name": "能量小精灵",
+		"eName": "Energoonz",
+		"dektop_id": "262",
+		"mobile_id": "100262",
+		"dektop_gid": "energoonz",
+		"mobile_gid": "energoonzmobile",
+		"game_type": "five-real",
+		"score": "9.0",
+		"state": 1,
+		"pic": "Energoons.png",
+		"category": "PNG",
+		"line": "other",
+		"type": "HOT",
+		"subType": "",
+		"tag": [
+			"HOT"
+		]
+	}, {
+		"id": "wizardofgems",
+		"name": "宝石巫师",
+		"eName": "Wizard of Gems",
+		"dektop_id": "302",
+		"mobile_id": "100302",
+		"dektop_gid": "wizardofgems",
+		"mobile_gid": "wizardofgemsmobile",
+		"game_type": "five-real",
+		"score": "9.0",
+		"state": 1,
+		"pic": "WizardofGems.png",
+		"category": "PNG",
+		"line": "15-20",
+		"type": "HOT",
+		"subType": "",
+		"tag": [
+			"HOT"
+		]
+	}, {
+		"id": "superflip",
+		"name": "超级翻转",
+		"eName": "Super Flip",
+		"dektop_id": "295",
+		"mobile_id": "100295",
+		"dektop_gid": "superflip",
+		"mobile_gid": "superflipmobile",
+		"game_type": "five-real",
+		"score": "9.0",
+		"state": 1,
+		"pic": "SuperFlip.png",
+		"category": "PNG",
+		"line": "15-20",
+		"type": "HOT",
+		"subType": "",
+		"tag": [
+			"HOT"
+		]
+	}, {
+		"id": "enchantedcrystals",
+		"name": "魔法水晶",
+		"eName": "Enchanted Crystals",
+		"dektop_id": "259",
+		"mobile_id": "100259",
+		"dektop_gid": "enchantedcrystals",
+		"mobile_gid": "enchantedcrystalsmobile",
+		"game_type": "five-real",
+		"score": "9.0",
+		"state": 1,
+		"pic": "EnchantedCrystals.png",
+		"category": "PNG",
+		"line": "5-10",
+		"type": "HOT",
+		"subType": "",
+		"tag": [
+			"HOT"
+		]
+	}, {
+		"id": "jollyroger",
+		"name": "海盗旗帜",
+		"eName": "Jolly Roger",
+		"dektop_id": "40",
+		"mobile_id": "100040",
+		"dektop_gid": "jollyroger",
+		"mobile_gid": "jollyrogermobile",
+		"game_type": "five-real",
+		"state": 1,
+		"pic": "JollyRogers.png",
+		"category": "PNG",
+		"line": "15-20",
+		"type": "HOT",
+		"subType": "",
+		"tag": [
+			"HOT"
+		]
+	}, {
+		"id": "fruitbonanza",
+		"name": "水果财富",
+		"eName": "Fruit Bonanza",
+		"dektop_id": "43",
+		"mobile_id": "100043",
+		"dektop_gid": "fruitbonanza",
+		"mobile_gid": "fruitbonanzamobile",
+		"game_type": "five-real",
+		"state": 1,
+		"pic": "FruitBonanza.png",
+		"category": "PNG",
+		"line": "15-20",
+		"type": "HOT",
+		"subType": "",
+		"tag": [
+			"HOT"
+		]
+	}, {
+		"id": "fortuneteller",
+		"name": "占卜师",
+		"eName": "Fortune Teller",
+		"dektop_id": "196",
+		"mobile_id": "100196",
+		"dektop_gid": "fortuneteller",
+		"mobile_gid": "fortunetellermobile",
+		"game_type": "five-real",
+		"state": 1,
+		"pic": "FortuneTeller.png",
+		"category": "PNG",
+		"line": "15-20",
+		"type": "HOT",
+		"subType": "",
+		"tag": [
+			"HOT"
+		]
+	}, {
+		"id": "photosafari",
+		"name": "非洲掠影",
+		"eName": "Photo Safari",
+		"dektop_id": "197",
+		"mobile_id": "100197",
+		"dektop_gid": "photosafari",
+		"mobile_gid": "photosafarimobile",
+		"game_type": "five-real",
+		"state": 1,
+		"pic": "PhotoSafari.png",
+		"category": "PNG",
+		"line": "15-20",
+		"type": "HOT",
+		"subType": "",
+		"tag": [
+			"HOT"
+		]
+	}, {
+		"id": "spacerace",
+		"name": "太空竞赛",
+		"eName": "Space Race",
+		"dektop_id": "198",
+		"mobile_id": "100198",
+		"dektop_gid": "spacerace",
+		"mobile_gid": "spaceracemobile",
+		"game_type": "five-real",
+		"state": 1,
+		"pic": "SpaceRace.png",
+		"category": "PNG",
+		"line": "15-20",
+		"type": "HOT",
+		"subType": "",
+		"tag": [
+			"HOT"
+		]
+	}, {
+		"id": "5xmagic",
+		"name": "5X魔术",
+		"eName": "5x Magic",
+		"dektop_id": "199",
+		"mobile_id": "100199",
+		"dektop_gid": "5xmagic",
+		"mobile_gid": "5xmagicmobile",
+		"game_type": "three-real",
+		"state": 1,
+		"pic": "5xMagic.png",
+		"category": "PNG",
+		"line": "5-10",
+		"type": "HOT",
+		"subType": "",
+		"tag": [
+			"HOT"
+		]
+	}, {
+		"id": "irishgold",
+		"name": "爱尔兰黄金",
+		"eName": "Irish Gold",
+		"dektop_id": "200",
+		"mobile_id": "100200",
+		"dektop_gid": "irishgold",
+		"mobile_gid": "irishgoldmobile",
+		"game_type": "three-real",
+		"state": 1,
+		"pic": "IrishGold.png",
+		"category": "PNG",
+		"line": "5-10",
+		"type": "HOT",
+		"subType": "",
+		"tag": [
+			"HOT"
+		]
+	}, {
+		"id": "enchantedmeadow",
+		"name": "魔法草原",
+		"eName": "Enchanted Meadow",
+		"dektop_id": "225",
+		"mobile_id": "100225",
+		"dektop_gid": "enchantedmeadow",
+		"mobile_gid": "enchantedmeadowmobile",
+		"game_type": "five-real",
+		"state": 1,
+		"pic": "EnchantedMeaddow.png",
+		"category": "PNG",
+		"line": "243",
+		"type": "HOT",
+		"subType": "",
+		"tag": [
+			"HOT"
+		]
+	}, {
+		"id": "richesofra",
+		"name": "太阳神的财富",
+		"eName": "Riches of RA",
+		"dektop_id": "237",
+		"mobile_id": "100237",
+		"dektop_gid": "richesofra",
+		"mobile_gid": "richesoframobile",
+		"game_type": "five-real",
+		"state": 1,
+		"pic": "RichesofRa.png",
+		"category": "PNG",
+		"line": "15-20",
+		"type": "HOT",
+		"subType": "",
+		"tag": [
+			"HOT"
+		]
+	}, {
+		"id": "dragonship",
+		"name": "龙船",
+		"eName": "Dragon Ship",
+		"dektop_id": "238",
+		"mobile_id": "100238",
+		"dektop_gid": "dragonship",
+		"mobile_gid": "dragonshipmobile",
+		"game_type": "five-real",
+		"state": 1,
+		"pic": "DragonShip.png",
+		"category": "PNG",
+		"line": "15-20",
+		"type": "HOT",
+		"subType": "",
+		"tag": [
+			"HOT"
+		]
+	}, {
+		"id": "pearllagoon",
+		"name": "珍珠湖",
+		"eName": "Pearl Lagoon",
+		"dektop_id": "241",
+		"mobile_id": "100241",
+		"dektop_gid": "pearllagoon",
+		"mobile_gid": "pearllagoonmobile",
+		"game_type": "five-real",
+		"state": 1,
+		"pic": "PearlLagoon.png",
+		"category": "PNG",
+		"line": "15-20",
+		"type": "HOT",
+		"subType": "",
+		"tag": [
+			"HOT"
+		]
+	}, {
+		"id": "jewelbox",
+		"name": "珠宝盒",
+		"eName": "Jewel Box",
+		"dektop_id": "242",
+		"mobile_id": "100242",
+		"dektop_gid": "jewelbox",
+		"mobile_gid": "jewelboxmobile",
+		"game_type": "five-real",
+		"state": 1,
+		"pic": "JewelBox.png",
+		"category": "PNG",
+		"line": "15-20",
+		"type": "HOT",
+		"subType": "",
+		"tag": [
+			"HOT"
+		]
+	}, {
+		"id": "aztecidols",
+		"name": "阿兹特克人像",
+		"eName": "Aztec Idols",
+		"dektop_id": "243",
+		"mobile_id": "100243",
+		"dektop_gid": "aztecidols",
+		"mobile_gid": "aztecidolsmobile",
+		"game_type": "five-real",
+		"state": 1,
+		"pic": "AztecIdols.png",
+		"category": "PNG",
+		"line": "15-20",
+		"type": "HOT",
+		"subType": "",
+		"tag": [
+			"HOT"
+		]
+	}, {
+		"id": "myth",
+		"name": "神话",
+		"eName": "Myth",
+		"dektop_id": "245",
+		"mobile_id": "100245",
+		"dektop_gid": "myth",
+		"mobile_gid": "mythmobile",
+		"game_type": "five-real",
+		"state": 1,
+		"pic": "Myth.png",
+		"category": "PNG",
+		"line": "25+",
+		"type": "HOT",
+		"subType": "",
+		"tag": [
+			"HOT"
+		]
+	}, {
+		"id": "goldtrophy2",
+		"name": "黄金奖杯2",
+		"eName": "Gold Trophy 2",
+		"dektop_id": "246",
+		"mobile_id": "100246",
+		"dektop_gid": "goldtrophy2",
+		"mobile_gid": "goldtrophy2mobile",
+		"game_type": "five-real",
+		"state": 1,
+		"pic": "GoldTrophy2.png",
+		"category": "PNG",
+		"line": "15-20",
+		"type": "HOT",
+		"subType": "",
+		"tag": [
+			"HOT"
+		]
+	}, {
+		"id": "wildblood",
+		"name": "狂野血液",
+		"eName": "Wild Blood",
+		"dektop_id": "250",
+		"mobile_id": "100250",
+		"dektop_gid": "wildblood",
+		"mobile_gid": "wildbloodmobile",
+		"game_type": "five-real",
+		"state": 1,
+		"pic": "WildBlood.png",
+		"category": "PNG",
+		"line": "15-20",
+		"type": "HOT",
+		"subType": "",
+		"tag": [
+			"HOT"
+		]
+	}, {
+		"id": "leprechaungoesegypt",
+		"name": "矮精灵埃及之旅",
+		"eName": "Leprechaun goes Egypt",
+		"dektop_id": "251",
+		"mobile_id": "100251",
+		"dektop_gid": "leprechaungoesegypt",
+		"mobile_gid": "leprechaungoesegyptmobile",
+		"game_type": "five-real",
+		"state": 1,
+		"pic": "LeprechaungoesEgypt.png",
+		"category": "PNG",
+		"line": "15-20",
+		"type": "HOT",
+		"subType": "",
+		"tag": [
+			"HOT"
+		]
+	}, {
+		"id": "ninjafruits",
+		"name": "忍者水果",
+		"eName": "Ninja Fruits",
+		"dektop_id": "253",
+		"mobile_id": "100253",
+		"dektop_gid": "ninjafruits",
+		"mobile_gid": "ninjafruitsmobile",
+		"game_type": "five-real",
+		"state": 1,
+		"pic": "NinjaFruit.png",
+		"category": "PNG",
+		"line": "15-20",
+		"type": "HOT",
+		"subType": "",
+		"tag": [
+			"HOT"
+		]
+	}, {
+		"id": "trollhunters",
+		"name": "追击巨怪",
+		"eName": "Troll Hunters",
+		"dektop_id": "254",
+		"mobile_id": "100254",
+		"dektop_gid": "trollhunters",
+		"mobile_gid": "trollhuntersmobile",
+		"game_type": "five-real",
+		"state": 1,
+		"pic": "trollhunters.png",
+		"category": "PNG",
+		"line": "15-20",
+		"type": "NEW",
+		"subType": "",
+		"tag": [
+			"HOT"
+		]
+	}, {
+		"id": "ragetoriches",
+		"name": "财富崛起",
+		"eName": "Rage to Riches",
+		"dektop_id": "257",
+		"mobile_id": "100257",
+		"dektop_gid": "ragetoriches",
+		"mobile_gid": "ragetorichesmobile",
+		"game_type": "five-real",
+		"state": 1,
+		"pic": "RagestoRiches.png",
+		"category": "PNG",
+		"line": "15-20",
+		"type": "HOT",
+		"subType": "",
+		"tag": [
+			"HOT"
+		]
+	}, {
+		"id": "chinesenewyear",
+		"name": "中国新年",
+		"eName": "Chinese New Year",
+		"dektop_id": "277",
+		"mobile_id": "100277",
+		"dektop_gid": "chinesenewyear",
+		"mobile_gid": "chinesenewyearmobile",
+		"game_type": "five-real",
+		"state": 1,
+		"pic": "ChineseNewYear.png",
+		"category": "PNG",
+		"line": "15-20",
+		"type": "NEW",
+		"subType": "",
+		"tag": [
+			"HOT"
+		]
+	}, {
+		"id": "ladyoffortune",
+		"name": "财富淑女",
+		"eName": "Lady of Fortune",
+		"dektop_id": "278",
+		"mobile_id": "100278",
+		"dektop_gid": "ladyoffortune",
+		"mobile_gid": "ladyoffortunemobile",
+		"game_type": "five-real",
+		"state": 1,
+		"pic": "LadyofFortune.png",
+		"category": "PNG",
+		"line": "15-20",
+		"type": "HOT",
+		"subType": "",
+		"tag": [
+			"HOT"
+		]
+	}, {
+		"id": "pearlsofindia",
+		"name": "印度珍珠",
+		"eName": "Pearls of India",
+		"dektop_id": "282",
+		"mobile_id": "100282",
+		"dektop_gid": "pearlsofindia",
+		"mobile_gid": "pearlsofindiamobile",
+		"game_type": "five-real",
+		"state": 1,
+		"pic": "PearlsofIndia.png",
+		"category": "PNG",
+		"line": "15-20",
+		"type": "HOT",
+		"subType": "",
+		"tag": [
+			"HOT"
+		]
+	}, {
+		"id": "mysteryjoker",
+		"name": "神秘小丑",
+		"eName": "Mystery Joker",
+		"dektop_id": "283",
+		"mobile_id": "100283",
+		"dektop_gid": "mysteryjoker",
+		"mobile_gid": "mysteryjokermobile",
+		"game_type": "three-real",
+		"state": 1,
+		"pic": "MysteryJoker.png",
+		"category": "PNG",
+		"line": "5-10",
+		"type": "HOT",
+		"subType": "",
+		"tag": [
+			"HOT"
+		]
+	}, {
+		"id": "crazycows",
+		"name": "疯狂奶牛",
+		"eName": "Crazy Cows",
+		"dektop_id": "284",
+		"mobile_id": "100284",
+		"dektop_gid": "crazycows",
+		"mobile_gid": "crazycowsmobile",
+		"game_type": "five-real",
+		"state": 1,
+		"pic": "CrazyCow.png",
+		"category": "PNG",
+		"line": "15-20",
+		"type": "HOT",
+		"subType": "",
+		"tag": [
+			"HOT"
+		]
+	}, {
+		"id": "goldenticket",
+		"name": "黄金入场券",
+		"eName": "Golden Ticket",
+		"dektop_id": "285",
+		"mobile_id": "100285",
+		"dektop_gid": "goldenticket",
+		"mobile_gid": "goldenticketmobile",
+		"game_type": "grid",
+		"state": 1,
+		"pic": "GoldenTicket.png",
+		"category": "PNG",
+		"line": "other",
+		"type": "HOT",
+		"subType": "",
+		"tag": [
+			"HOT"
+		]
+	}, {
+		"id": "merryxmas",
+		"name": "欢乐圣诞节",
+		"eName": "Merry Xmas",
+		"dektop_id": "288",
+		"mobile_id": "100288",
+		"dektop_gid": "merryxmas",
+		"mobile_gid": "merryxmasmobile",
+		"game_type": "five-real",
+		"state": 1,
+		"pic": "MerryXmas.png",
+		"category": "PNG",
+		"line": "15-20",
+		"type": "HOT",
+		"subType": "",
+		"tag": [
+			"HOT"
+		]
+	}, {
+		"id": "goldenlegend",
+		"name": "黄金传奇",
+		"eName": "Golden Legend",
+		"dektop_id": "290",
+		"mobile_id": "100290",
+		"dektop_gid": "goldenlegend",
+		"mobile_gid": "goldenlegendmobile",
+		"game_type": "five-real",
+		"state": 1,
+		"pic": "GoldenLegend.png",
+		"category": "PNG",
+		"line": "25+",
+		"type": "NEW",
+		"subType": "",
+		"tag": [
+			"HOT"
+		]
+	}, {
+		"id": "pimped",
+		"name": "酷炫一族",
+		"eName": "Pimped",
+		"dektop_id": "291",
+		"mobile_id": "100291",
+		"dektop_gid": "pimped",
+		"mobile_gid": "pimpedmobile",
+		"game_type": "five-real",
+		"state": 1,
+		"pic": "Pimped.png",
+		"category": "PNG",
+		"line": "5-10",
+		"type": "NEW",
+		"subType": "",
+		"tag": [
+			"HOT"
+		]
+	}, {
+		"id": "spinparty",
+		"name": "旋转派对",
+		"eName": "Spin Party",
+		"dektop_id": "292",
+		"mobile_id": "100292",
+		"dektop_gid": "spinparty",
+		"mobile_gid": "spinpartymobile",
+		"game_type": "five-real",
+		"state": 1,
+		"pic": "SpinParty.png",
+		"category": "PNG",
+		"line": "5-10",
+		"type": "HOT",
+		"subType": "",
+		"tag": [
+			"HOT"
+		]
+	}, {
+		"id": "eastereggs",
+		"name": "复活节彩蛋",
+		"eName": "Easter Eggs",
+		"dektop_id": "293",
+		"mobile_id": "100293",
+		"dektop_gid": "eastereggs",
+		"mobile_gid": "eastereggsmobile",
+		"game_type": "five-real",
+		"state": 1,
+		"pic": "EasterEgg.png",
+		"category": "PNG",
+		"line": "15-20",
+		"type": "NEW",
+		"subType": "",
+		"tag": [
+			"HOT"
+		]
+	}, {
+		"id": "wildnorth",
+		"name": "北部荒野",
+		"eName": "Wild North",
+		"dektop_id": "294",
+		"mobile_id": "100294",
+		"dektop_gid": "wildnorth",
+		"mobile_gid": "wildnorthmobile",
+		"game_type": "five-real",
+		"state": 1,
+		"pic": "WildNorth.png",
+		"category": "PNG",
+		"line": "25+",
+		"type": "HOT",
+		"subType": "",
+		"tag": [
+			"HOT"
+		]
+	}, {
+		"id": "eyeofthekraken",
+		"name": "克拉肯的眼睛",
+		"eName": "Eye of the Kraken",
+		"dektop_id": "297",
+		"mobile_id": "100297",
+		"dektop_gid": "eyeofthekraken",
+		"mobile_gid": "eyeofthekrakenmobile",
+		"game_type": "three-real",
+		"state": 1,
+		"pic": "EyeoftheKraken.png",
+		"category": "PNG",
+		"line": "other",
+		"type": "HOT",
+		"subType": "",
+		"tag": [
+			"HOT"
+		]
+	}, {
+		"id": "masquerade",
+		"name": "化妆舞会",
+		"eName": "Royal Masquerade",
+		"dektop_id": "298",
+		"mobile_id": "100298",
+		"dektop_gid": "masquerade",
+		"mobile_gid": "masquerademobile",
+		"game_type": "five-real",
+		"state": 1,
+		"pic": "RoyalMasquerade.png",
+		"category": "PNG",
+		"line": "5-10",
+		"type": "NEW",
+		"subType": "",
+		"tag": [
+			"HOT"
+		]
+	}, {
+		"id": "grimmuerto",
+		"name": "冷酷亡灵",
+		"eName": "Grim Muerto",
+		"dektop_id": "303",
+		"mobile_id": "100303",
+		"dektop_gid": "grimmuerto",
+		"mobile_gid": "grimmuertomobile",
+		"game_type": "five-real",
+		"state": 1,
+		"pic": "GrimMuerto.png",
+		"category": "PNG",
+		"line": "15-20",
+		"type": "HOT",
+		"subType": "",
+		"tag": [
+			"HOT"
+		]
+	}, {
+		"id": "sambacarnival",
+		"name": "桑巴嘉年华",
+		"eName": "Samba Carnival",
+		"dektop_id": "304",
+		"mobile_id": "100304",
+		"dektop_gid": "sambacarnival",
+		"mobile_gid": "sambacarnivalmobile",
+		"game_type": "five-real",
+		"state": 1,
+		"pic": "SambaCarnival.png",
+		"category": "PNG",
+		"line": "5-10",
+		"type": "HOT",
+		"subType": "",
+		"tag": [
+			"HOT"
+		]
+	}, {
+		"id": "happyhalloween",
+		"name": "欢乐万圣节",
+		"eName": "Happy Halloween",
+		"dektop_id": "305",
+		"mobile_id": "100305",
+		"dektop_gid": "happyhalloween",
+		"mobile_gid": "happyhalloweenmobile",
+		"game_type": "five-real",
+		"state": 1,
+		"pic": "HappyHalloween.png",
+		"category": "PNG",
+		"line": "other",
+		"type": "HOT",
+		"subType": "",
+		"tag": [
+			"HOT"
+		]
+	}, {
+		"id": "firejoker",
+		"name": "火焰小丑",
+		"eName": "Fire Joker",
+		"dektop_id": "307",
+		"mobile_id": "100307",
+		"dektop_gid": "firejoker",
+		"mobile_gid": "firejokermobile",
+		"game_type": "three-real",
+		"state": 1,
+		"pic": "FireJoker.png",
+		"category": "PNG",
+		"line": "5-10",
+		"type": "HOT",
+		"subType": "",
+		"tag": [
+			"HOT"
+		]
+	}, {
+		"id": "christmasjoker",
+		"name": "圣诞小丑",
+		"eName": "Xmas Joker",
+		"dektop_id": "309",
+		"mobile_id": "100309",
+		"dektop_gid": "christmasjoker",
+		"mobile_gid": "christmasjokermobile",
+		"game_type": "three-real",
+		"state": 1,
+		"pic": "XmasJoker.png",
+		"category": "PNG",
+		"line": "5-10",
+		"type": "HOT",
+		"subType": "",
+		"tag": [
+			"HOT"
+		]
+	}, {
+		"id": "bookofdead",
+		"name": "亡灵书",
+		"eName": "Book of Dead",
+		"dektop_id": "310",
+		"mobile_id": "100310",
+		"dektop_gid": "bookofdead",
+		"mobile_gid": "bookofdeadmobile",
+		"game_type": "five-real",
+		"state": 1,
+		"pic": "BookofDead.png",
+		"category": "PNG",
+		"line": "5-10",
+		"type": "HOT",
+		"subType": "",
+		"tag": [
+			"HOT"
+		]
+	}, {
+		"id": "sailsofgold",
+		"name": "黄金之帆",
+		"eName": "Sails of Gold",
+		"dektop_id": "311",
+		"mobile_id": "100311",
+		"dektop_gid": "sailsofgold",
+		"mobile_gid": "sailsofgoldmobile",
+		"game_type": "five-real",
+		"state": 1,
+		"pic": "SailsofGold.png",
+		"category": "PNG",
+		"line": "5-10",
+		"type": "HOT",
+		"subType": "",
+		"tag": [
+			"HOT"
+		]
+	}, {
+		"id": "goldencaravan",
+		"name": "金色商队",
+		"eName": "Golden Caravan",
+		"dektop_id": "312",
+		"mobile_id": "100312",
+		"dektop_gid": "goldencaravan",
+		"mobile_gid": "goldencaravanmobile",
+		"game_type": "five-real",
+		"state": 1,
+		"pic": "GoldenCaravan.png",
+		"category": "PNG",
+		"line": "5-10",
+		"type": "HOT",
+		"subType": "",
+		"tag": [
+			"HOT"
+		]
+	}, {
+		"id": "sevensins",
+		"name": "七宗罪",
+		"eName": "7 Sins",
+		"dektop_id": "321",
+		"mobile_id": "100321",
+		"dektop_gid": "sevensins",
+		"mobile_gid": "sevensinsmobile",
+		"game_type": "five-real",
+		"state": 1,
+		"pic": "7sins.png",
+		"category": "PNG",
+		"line": "243",
+		"type": "NEW",
+		"subType": "",
+		"tag": [
+			"HOT"
+		]
+	}, {
+		"id": "jademagician",
+		"name": "翡翠魔术师",
+		"eName": "Jade Magician",
+		"dektop_id": "326",
+		"mobile_id": "100326",
+		"dektop_gid": "jademagician",
+		"mobile_gid": "jademagicianmobile",
+		"game_type": "five-real",
+		"state": 1,
+		"pic": "JadeMagician.png",
+		"category": "PNG",
+		"line": "15-20",
+		"type": "HOT",
+		"subType": "",
+		"tag": [
+			"HOT"
+		]
+	}, {
+		"id": "holidayseason",
+		"name": "节庆假日",
+		"eName": "Holiday Season",
+		"dektop_id": "327",
+		"mobile_id": "100327",
+		"dektop_gid": "holidayseason",
+		"mobile_gid": "holidayseasonmobile",
+		"game_type": "five-real",
+		"state": 1,
+		"pic": "HS.png",
+		"category": "PNG",
+		"line": "5-10",
+		"type": "NEW",
+		"subType": "",
+		"tag": [
+			"HOT"
+		]
+	}, {
+		"id": "wildmelon",
+		"name": "万能西瓜",
+		"eName": "Wild Melon",
+		"dektop_id": "4",
+		"mobile_id": "100004",
+		"dektop_gid": "wildmelon",
+		"mobile_gid": "wildmelonmobile",
+		"game_type": "three-real",
+		"state": 1,
+		"pic": "WildMelon.png",
+		"category": "PNG",
+		"line": "single",
+		"type": "CLA",
+		"subType": "",
+		"tag": [
+			"HOT"
+		]
+	}, {
+		"id": "luckydiamonds",
+		"name": "幸运钻石",
+		"eName": "Lucky Diamonds",
+		"dektop_id": "5",
+		"mobile_id": "100005",
+		"dektop_gid": "luckydiamonds",
+		"mobile_gid": "luckydiamondsmobile",
+		"game_type": "three-real",
+		"state": 1,
+		"pic": "LuckyDiamonds.png",
+		"category": "PNG",
+		"line": "single",
+		"type": "CLA",
+		"subType": "",
+		"tag": [
+			"HOT"
+		]
+	}, {
+		"id": "aceofspades",
+		"name": "黑桃A",
+		"eName": "Ace of Spades",
+		"dektop_id": "99",
+		"mobile_id": "100099",
+		"dektop_gid": "aceofspades",
+		"mobile_gid": "aceofspadesmobile",
+		"game_type": "three-real",
+		"state": 1,
+		"pic": "AceofSpades.png",
+		"category": "PNG",
+		"line": "single",
+		"type": "CLA",
+		"subType": "",
+		"tag": [
+			"HOT"
+		]
+	}, {
+		"id": "belloffortune",
+		"name": "财富铃铛",
+		"eName": "Bell of Fortune",
+		"dektop_id": "105",
+		"mobile_id": "100105",
+		"dektop_gid": "belloffortune",
+		"mobile_gid": "belloffortunemobile",
+		"game_type": "three-real",
+		"state": 1,
+		"pic": "BelloftheFortune.png",
+		"category": "PNG",
+		"line": "single",
+		"type": "AMA",
+		"subType": "",
+		"tag": [
+			"HOT"
+		]
+	}, {
+		"id": "speedcash",
+		"name": "极速现金",
+		"eName": "Speed Cash",
+		"dektop_id": "106",
+		"mobile_id": "100106",
+		"dektop_gid": "speedcash",
+		"mobile_gid": "speedcashmobile",
+		"game_type": "three-real",
+		"state": 1,
+		"pic": "SpeedCash.png",
+		"category": "PNG",
+		"line": "single",
+		"type": "CLA",
+		"subType": "",
+		"tag": [
+			"HOT"
+		]
+	}, {
+		"id": "giftshop",
+		"name": "礼品店",
+		"eName": "Gift Shop",
+		"dektop_id": "107",
+		"mobile_id": "100107",
+		"dektop_gid": "giftshop",
+		"mobile_gid": "giftshopmobile",
+		"game_type": "three-real",
+		"state": 1,
+		"pic": "GiftShop.png",
+		"category": "PNG",
+		"line": "single",
+		"type": "CLA",
+		"subType": "",
+		"tag": [
+			"HOT"
+		]
+	}, {
+		"id": "goldengoal",
+		"name": "黄金球门",
+		"eName": "Golden Goal",
+		"dektop_id": "108",
+		"mobile_id": "100108",
+		"dektop_gid": "goldengoal",
+		"mobile_gid": "goldengoalmobile",
+		"game_type": "three-real",
+		"state": 1,
+		"pic": "GoldenGoal.png",
+		"category": "PNG",
+		"line": "single",
+		"type": "CLA",
+		"subType": "",
+		"tag": [
+			"HOT"
+		]
+	}
+]

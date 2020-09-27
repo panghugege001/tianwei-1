@@ -1,0 +1,350 @@
+{
+  "success": true,
+  "msg": "",
+  "type": [{"LON": "长期"}, {"LIM": "限时"}, {"TOP": "免费彩金"}, {"PHO": "手机"},{"BRA": "品牌站"},{"OVER":"过期"}],
+  "data": [  
+    {
+      "type": "|LON|BRA",
+      "title": "VIP中心",
+      "id": "vip2",
+      "class": "vip2",
+      "url": "",
+      "image": "/images/promotion/new_promotion/vip.jpg", 
+       "link": "/activety/vip2/index.jsp",
+      "startDate": "",
+      "endDate": "限时优惠"
+    },{
+      "type": "|LON|BRA|LIM",
+      "title": "百家乐赢彩金",
+      "id": "tsyj",
+      "class": "tsyj",
+      "url": "",
+      "image": "/images/promotion/new_promotion/tsyj.jpg", 
+       "link": "/activety/tsyj/index.jsp",
+      "startDate": "",
+      "endDate": "长期活动" 
+    },  
+    {
+      "type": "|LON|LIM",
+      "title": "邀请好友",
+      "id": "tjhy",
+      "url": "",
+      "image": "/images/promotion/new_promotion/tjhy.jpg",
+      "link": "/activety/tjhy/index.jsp",
+      "startDate": "",
+      "endDate": "长期活动"
+    },{
+      "type": "|LON|BRA",
+      "title": "老虎机次存",
+      "id": "cicun",
+      "url": "/data/promotion/cicun.html?v=1",
+      "image": "/images/promotion/new_promotion/cicun.jpg",
+      "link": "",
+      "startDate": "",
+      "endDate": "长期活动"
+    },{   
+      "type": "|LON|LIM",
+      "title": "美女空降", 
+      "id": "vipzhaoji",
+      "url": "", 
+      "image": "/images/promotion/new_promotion/tianxin_yh.jpg", 
+       "link": "/activety/meinv/index.jsp",
+      "startDate": "",
+      "endDate": "长期活动" 
+    },   
+    {   
+      "type": "|LON|LIM",
+      "title": "VIP火热招募", 
+      "id": "vipzhaoji",
+      "url": "", 
+      "image": "/images/promotion/new_promotion/yh_vipzm.jpg", 
+       "link": "/vip/vip.jsp",
+      "startDate": "",
+      "endDate": "长期活动" 
+    },{
+      "type": "|LON|BRA", 
+      "title": "每日签到",
+      "id": "qiandao",
+      "url": "/data/promotion/qiandao.html?v=1",
+      "image": "/images/promotion/new_promotion/qiandao.jpg", 
+       "link": "",
+      "startDate": "",
+      "endDate": "长期活动" 
+    },
+    {
+      "type": "|LIM",
+      "title": "每日存送",
+      "id": "cunsong",
+      "url": "",
+      "image": "/images/promotion/new_promotion/cunsong.jpg", 
+      "link": "/activety/topic/index.jsp",
+      "startDate": "",
+      "endDate": "限时活动"
+    },
+     {
+      "type": "|PHO",
+      "title": "体验金",
+      "id": "tyj",
+      "url": "/data/promotion/tyj.html?v=1",
+      "image": "/images/promotion/new_promotion/tyj.jpg",
+      "link": "",
+      "startDate": "",
+      "endDate": "长期活动"
+    },  {
+      "type": "|LON",
+      "title": "老虎机首存",
+      "id": "shoucun",
+      "url": "/data/promotion/shoucun.html",
+      "image": "/images/promotion/new_promotion/shoucun.png",
+      "link": "",
+      "startDate": "",
+      "endDate": "长期有效"
+    },
+  {
+      "type": "|LON",
+      "title": "救援金",
+      "id": "jyj",
+      "url": "/data/promotion/jyj.html",
+      "image": "/images/promotion/new_promotion/jyj.png",
+      "link": "",
+      "startDate": "",
+      "endDate": "长期有效"
+    },
+    {
+      "type": "|LON|LIM",
+      "title": "体育福利",
+      "id": "tyfl",
+      "url": "/data/promotion/tyfl.html",
+      "image": "/images/promotion/new_promotion/tycj.jpg",
+      "link": "",
+      "startDate": "",
+      "endDate": "长期有效"
+    },
+    {
+      "type": "|LON|LIM",
+      "title": "PT、DT千百倍",
+      "id": "qbbsjx",
+      "url": "/data/promotion/qbbsjx.html",
+      "image": "/images/promotion/new_promotion/xyqbb.jpg",
+      "link": "",
+      "startDate": "",
+      "endDate": "长期有效"
+    },
+    {
+      "type": "|LON|LIM",
+      "title": "存款送红包",
+      "id": "ckhb",
+      "url": "/data/promotion/ckhb.html",
+      "image": "/images/promotion/new_promotion/ckhb.jpg",
+      "link": "",
+      "startDate": "",
+      "endDate": "长期有效"
+    },
+  {
+      "type": "|LON",
+      "title": "返水",
+      "id": "return",
+      "url": "/data/promotion/return.html?v=11",
+      "image": "/images/promotion/new_promotion/return.jpg",
+      "link": "",
+      "startDate": "",
+      "endDate": "长期有效"
+    },{
+      "type": "|OVER",
+      "title": "周周送金",
+      "id": "zzrw",
+      "class": "zzrw",
+      "url": "",
+      "image": "/images/promotion/new_promotion/zzrw.jpg", 
+       "link": "/activety/zzrw/index.jsp",
+      "startDate": "",
+      "endDate": "长期活动" 
+    }, {
+      "type": "|OVER",
+      "title": "七夕拥抱爱无限",
+      "id": "qixi",
+      "class": "qixi",
+      "url": "",
+      "image": "/mobile/img/promotion/qixi.jpg", 
+      "link": "/activety/qixi/index.jsp",
+      "startDate": "",
+      "endDate": "限时优惠"
+    },{
+      "type": "|OVER",
+      "title": "胜负预测",
+      "id": "sfyc",
+      "class": "sfyc",
+      "url": "",
+      "image": "/images/promotion/new_promotion/sfyc.jpg", 
+       "link": "/activety/sfyc/index.jsp",
+      "startDate": "",
+      "endDate": "限时优惠"
+    }, 
+    {
+      "type": "|OVER",
+      "title": "决战世界杯",
+      "id": "jzsjb",
+      "class": "jzsjb",
+      "url": "",
+      "image": "/images/promotion/new_promotion/jzsjb.jpg", 
+       "link": "/activety/jzsjb/index.jsp",
+      "startDate": "",
+      "endDate": "限时优惠"
+    },     {
+      "type": "|OVER",
+      "title": "DT免费游戏",
+      "id": "mfyx66",
+      "class": "mfyx66",
+      "url": "",
+      "image": "/images/promotion/new_promotion/mfyx66.jpg", 
+       "link": "/activety/mfyx66/index.jsp",
+      "startDate": "",
+      "endDate": "限时优惠"
+    }, 
+    {
+      "type": "|OVER",
+      "title": "世界杯竞猜",
+      "id": "football",
+      "class": "football",
+      "url": "",
+      "image": "/images/promotion/new_promotion/football.jpg", 
+       "link": "/activety/football/index.jsp",
+      "startDate": "",
+      "endDate": "长期活动" 
+    },
+   {
+      "type": "|OVER",
+      "title": "母亲节，送大礼",
+      "id": "muqinjie",
+      "url": "/data/promotion/muqinjie.html?v=1",
+      "image": "/images/promotion/new_promotion/muqinjie.jpg",
+      "link": "",
+      "startDate": "",
+      "endDate": "长期活动"
+    },    
+    {
+      "type": "|OVER",
+      "title": "天威周年盛典",
+      "id": "anniversary",
+      "class": "anniversary",
+      "url": "",
+      "image": "/images/promotion/anniversary.jpg", 
+      "link": "/activety/anniversary/index.jsp",
+      "startDate": "",
+      "endDate": "限时优惠"
+    },{
+      "type": "|OVER",
+      "title": "相约好友群发领彩金",
+      "id": "lottery",
+      "url": "/data/promotion/lottery.html?v=2",
+      "image": "/images/promotion/lottery.jpg",
+      "link": "",
+      "startDate": "",
+      "endDate": "长期活动"
+    },
+    {
+      "type": "|OVER",
+      "title": "2018闹元宵答题抢彩金",
+      "id": "yuanxiao",
+      "url": "/data/promotion/yuanxiao.html?v=2",
+      "image": "/images/promotion/yuanxiao.jpg",
+      "link": "",
+      "startDate": "",
+      "endDate": "限时活动"
+    },
+    {
+      "type": "|OVER",
+      "title": "百万红包雨",
+      "id": "redpacket",
+      "class": "redpacket",
+      "url": "",
+      "image": "/images/promotion/new_promotion/redpacket.jpg",
+      "link": "/activety/redpacket/index.jsp",
+      "startDate": "",
+      "endDate": "长期活动"
+    },
+    {
+      "type": "|OVER",
+      "title": "瑞狗迎新年",
+      "id": "newyear",
+      "class": "newyear",
+      "url": "",
+      "image": "/images/promotion/new_promotion/newyear.jpg",
+      "link": "/activety/newyear/index.jsp",
+      "startDate": "",
+      "endDate": "限时"
+    }, 
+    {   
+      "type": "|OVER",
+      "title": "新年钜惠", 
+      "id": "vipzhaoji",
+      "url": "", 
+      "image": "/images/promotion/new_promotion/xinnian_yh.jpg", 
+       "link": "/activety/xinnian/index.jsp",
+      "startDate": "",
+      "endDate": "长期活动" 
+    },  
+    {   
+      "type": "|OVER",
+      "title": "PT千里跃龙门", 
+      "id": "longmen",  
+      "url": "/data/promotion/longmen2.html?v=1",  
+      "image": "/images/promotion/new_promotion/yh_longmen.jpg", 
+       "link": "",
+      "startDate": "",
+      "endDate": "长期活动" 
+    },        
+    {   
+      "type": "|OVER",
+      "title": "周末狂欢", 
+      "id": "vipzhaoji",
+      "url": "", 
+      "image": "/images/promotion/new_promotion/zhoumo_yh.jpg", 
+       "link": "/activety/zhoumo/index.jsp",
+      "startDate": "",
+      "endDate": "限时" 
+    }, 
+    {   
+      "type": "|OVER",
+      "title": "秒存存款领红包", 
+      "id": "zhifubao",  
+      "url": "/data/promotion/zhifubao.html",  
+      "image": "/images/promotion/new_promotion/zhifubaoyh.jpg", 
+       "link": "",
+      "startDate": "",
+      "endDate": "长期活动" 
+    },        
+    {   
+      "type": "|OVER",
+      "title": "AG连赢再送金",
+      "id": "agly",
+      "url": "/data/promotion/aglianying.html", 
+      "image": "/images/promotion/new_promotion/agyh.jpg", 
+       "link": "",
+      "startDate": "",
+      "endDate": "长期活动" 
+    },{   
+      "type": "|OVER",
+      "title": "天威红包，日日领、日日发",
+      "id": "fuqin",
+      "url": "/data/promotion/fuqin.html?v=2", 
+      "image": "/images/promotion/new_promotion/y_hongbao.jpg", 
+       "link": "",
+      "startDate": "",
+      "endDate": "长期活动" 
+    },   
+    {
+      "type": "|OVER",
+      "title": "庆圣诞迎元旦",
+      "id": "vipzhaoji",
+      "url": "",
+      "image": "/images/promotion/new_promotion/yuandan.jpg",
+      "link": "/activety/shengdang/index.jsp",
+      "startDate": "",
+      "endDate": "限时"
+    }
+  ],
+  "overdue":[
+
+  ]
+}

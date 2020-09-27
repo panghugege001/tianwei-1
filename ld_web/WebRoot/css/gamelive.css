@@ -1,0 +1,227 @@
+@charset "utf-8";
+*{ -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+*:before,
+*:after{ -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+/** 清除内外边距 **/
+*{ margin: 0; padding: 0;}
+a{ text-decoration: none;}
+img{ border: none;}
+
+/* structural elements 结构元素 */
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote,
+/* list elements 列表元素 */
+dl, dt, dd, ul, ol, li,
+/* text formatting elements 文本格式元素 */
+pre,
+/* form elements 表单元素 */
+form, fieldset, legend, button, input, textarea,
+/* table elements 表格元素 */
+th, td { margin: 0; padding: 0;}
+
+/** 设置默认字体 **/
+body, pre, button, input, select, textarea /* for ie */
+{ font: 14px/1.6 tahoma, arial, 'Microsoft YaHei', sans-serif;}
+
+/** 重置文档高度 **/
+html, body{ height: 100%;}
+body{ color: #c1c1c1;}
+
+h1, h2, h3, h4, h5, h6{ font-size: 100%; font-weight: normal;}
+/* 将斜体扶正 */
+address, cite, dfn, em, var{ font-style: normal;}
+/* 统一等宽字体 */
+code, kbd, pre, samp{ font-family: courier new, courier, monospace;}
+/* 小于 12px 的中文很难阅读，让 small 正常化 */
+small{ font-size: 12px;}
+
+
+/** 重置列表元素 **/
+ul, ol{ list-style: none;}
+/** 重置文本格式元素 **/
+a{ text-align: center; text-decoration: none; color: inherit;}
+a:focus{ outline: none;}
+
+
+/** 重置表单元素 **/
+legend{ color: #000;} /* for ie6 */
+fieldset, img{ border: 0; vertical-align: middle}
+/* 使得表单元素在 ie 下能继承字体大小 */
+button, input, select, textarea{ font-size: 100%;}
+/*表单元素字体*/
+input, textarea, button{ font: 14px/1.6 Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', 微软雅黑, Arial, sans-serif; outline: 0;}
+
+input[type='button'], input[type='submit'], button{ cursor: pointer;}
+button:focus{ outline: none;}
+
+input[type='button'], input[type='submit'], input[type='reset'], button{ /*input[type="file"]::-webkit-file-upload-button,*/
+    border: 1px solid transparent;}
+
+/*设置表单元素不可用的样式*/
+input[readonly],
+input:disabled,
+button:disabled,
+button[readonly],
+textarea:disabled{ color: #545454!important; background-color: #ccc!important;}
+input[readonly]:hover,
+input:disabled:hover,
+button:disabled:hover,
+button[readonly]:hover,
+textarea:disabled:hover{ cursor: not-allowed;}
+
+/** placeholder 重置 **/
+[placeholder]{ font-family: 'Microsoft yahei';}
+::-moz-placeholder{ text-indent: 5px; /* 没有用 */ opacity: 1!important; color: #bbb;}
+:-ms-input-placeholder{ text-indent: 5px; color: #bbb;}
+::-webkit-input-placeholder{ text-indent: 5px; color: #bbb;}
+
+/** 重置表格元素 **/
+table{ border-spacing: 0; border-collapse: collapse;}
+
+/* #滚动条
+=========*/
+::-webkit-scrollbar{ width: 8px; height: 8px;}
+
+::-webkit-scrollbar-track-piece{ margin: -2px; background-color: #eee;}
+
+::-webkit-scrollbar-thumb{ min-width: 150px; min-height: 150px; border-radius: 10px; background: #aaa;}
+
+::-webkit-scrollbar-thumb:vertical:hover{ background: #555;}
+
+::-webkit-scrollbar-thumb:horizontal:hover{ background: #555;}
+
+.live{
+    width: 1233px;
+    height: 459px;
+    text-align: center;
+    margin: 100px auto;
+    position: relative;
+    overflow: hidden;
+	
+} 
+
+.live2{
+    width: 1200px;
+    height: 459px;
+    text-align: center;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    margin-top: 340px;
+    margin-bottom: 30px;    
+}
+
+body{
+	background:url(../images/hs_beijing.jpg) repeat;
+}
+.overlay{
+	position: absolute;
+    top: 72px;
+    bottom: 0px;
+    background: rgba(0,0,0,.5);
+    display: none;
+    left: 17px;
+    width: 97.5%;
+    height: 353px;
+    border-radius: 27px;
+}
+.overlay2{
+    position: absolute;
+    top: 81px;
+    bottom: 0px;
+    background: rgba(0,0,0,.5);
+    display: none;
+    left: 15px;
+    width: 97.5%;
+    height: 353px;
+    border-radius: 27px;	
+}
+
+
+.live:hover .overlay{
+	display: block;
+}
+
+.live2:hover .overlay2{
+	display: block;
+}
+.overlay a,.overlay2 a{
+	display: inline-block;
+	width: 120px;
+	height: 40px;
+	text-align: center;
+	background: #2c3469;
+	color: #FFFFFF;
+	font-size: 16px;
+	border-radius: 15px;
+	line-height: 40px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -60px;
+	margin-top: -20px;
+}
+.gb-footer .footer-sub{
+	margin: 0px;
+}
+.live_bannar{
+    background: url(../images/live/live_bannaer.jpg) no-repeat center 50px;
+    padding-bottom: 30px;
+    height: 685px;
+    background-position: center;
+}
+.btn_foot{
+    width: 275px;
+    height: 40px;
+    position: absolute;
+    bottom: 65px;
+    right: 111px;
+}
+
+.btn_foot ul li{
+	float: left;
+}
+.btn_foot ul li:last-child{
+	margin-left: 15px;
+}
+
+
+li .pc_btn{
+	background: url(../images/live/pc_btn.png) no-repeat;
+	width: 130px;
+	height: 40px;
+	display: inline-block;
+}
+li .wb_btn{
+	background: url(../images/live/wb_btn.png) no-repeat;
+	width: 130px;
+	height: 40px;
+	display: inline-block;
+}
+
+li .pc_btn:hover{
+	background: url(../images/live/pc_btn_jh.png) no-repeat;	
+}
+li .wb_btn:hover{
+	background: url(../images/live/wb_btn_jh.png) no-repeat;
+}
+.code_hide{
+    width: 270px;
+    height: 270px;
+    position: absolute;
+    top: 115px;
+    left: 50%;
+    margin-left: -150px;
+    display: none;
+    background: #fff;
+    padding-top: 18px;
+}
+.code_hide img{
+    width: 225px;
+}
+.code_hide span{
+	display: inline-block;
+}
+
+.game_shaba .shaba_btn{
+	
+}

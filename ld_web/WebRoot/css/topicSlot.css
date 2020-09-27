@@ -1,0 +1,174 @@
+body{
+  background-color: #0c1c3e;
+}
+html,body{ height: 100%}
+.c-red{
+  color: #FF7C7C!important;
+}
+.text-center{
+  text-align: center;
+}
+.banner,.main{
+  position: relative;
+}
+.banner img{
+  width: 100%;
+}
+.section{
+  position: relative;
+  width: 960px;
+  margin: 10px auto 180px;
+  background-color: #05244c;
+  background-color: rgba(5,36,76,1);
+  padding: 9px;
+  border: 1px solid #063c8a;
+  border-radius: 6px;
+  color: #fff;
+  line-height: 1.8;
+}
+.section .section-hd{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -113px;
+}
+.section-body .ele{
+  display: inline-block;
+  background: url("../images/topic/slotgame-ele.png") no-repeat;
+}
+
+.section .section-inner{
+  border: 1px solid #063c8a;
+  background-color: #042652;
+  border-radius: 6px;
+  padding: 38px;
+  min-height: 400px;
+}
+.section .sectiontop{
+  background-position:0 0;
+  width: 321px;
+  height: 113px;
+}
+.section .slot-wrapper{
+  position: relative;
+  background: url('../images/topic/slotgame-ele.png') no-repeat 0 -149px;
+  width: 792px;
+  height: 360px;
+  margin: 40px auto 0;
+  padding-top: 100px;
+  padding-left: 148px;
+}
+.slot-wrapper .slot-col{
+  float: left;
+  width: 143px;
+  margin-left: 16px;
+  height: 218px;
+  overflow: hidden;
+}
+.slot-wrapper .slot-col:first-child{
+  margin-left: 0;
+}
+.slot-wrapper .slot-col .slot-item{
+  height: 210px;
+  line-height: 210px;
+  background-image:url('../images/topic/icon-slot.png');
+  background-repeat: no-repeat;
+  text-align: center;
+}
+.slot-wrapper .gamepad-wrapper{
+  position: absolute;
+  top: 90px;
+  right: 57px;
+  background: url('../images/topic/slotgame-ele.png') no-repeat -947px -315px;
+  width: 77px;
+  height: 123px;
+  transition: .3s transform;
+  transform-origin:50% 100%;
+}
+.gamepad-wrapper.active{
+  transform: rotateZ(-7deg) rotateX(-168deg) translateY(10px) translateZ(-10px);
+}
+.gamepad-wrapper .ball{
+  position: absolute;
+  background: url('../images/topic/slotgame-ele.png') no-repeat -956px -220px;
+  width: 66px;
+  height: 68px;
+  top: -47px;
+  right: -32px;
+}
+.slot-wrapper .click-me{
+  position: absolute;
+  background: url('../images/topic/slotgame-ele.png') no-repeat -633px 0;
+  width: 124px;
+  height: 121px;
+  top: -70px;
+  right: -61px;
+  -webkit-animation:scale 1s ease-out infinite;
+  animation:scale 1s ease-out infinite;
+}
+
+.section-body .hand-one{
+  position: absolute;
+  background-position:0 -531px;
+  width: 505px;
+  height: 486px;
+  left: 0;
+  bottom: 22%;
+  opacity: .25;
+}
+.section-body .hand-two{
+  position: absolute;
+  background-position:-531px -534px;
+  width: 493px;
+  height: 476px;
+  right:0;
+  bottom: 28%;
+  opacity: .25;
+}
+
+.icon-slot-wechat{
+  background-position: 0 0;
+}
+.icon-slot-pt{
+  background-position: 0 -210px;
+}
+.icon-slot-ttg{
+  background-position: 0 -420px;
+}
+.icon-slot-deposit{
+  background-position: 0 -630px;
+}
+#modal-ret .modal-dialog{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 666px;
+  height: 444px;
+  margin-left: -333px;
+  margin-top: -222px;
+  padding-top: 213px;
+  border: none;
+  box-shadow: none;
+  background: transparent url("../images/topic/modal-win.png") no-repeat;
+}
+#modal-ret .modal-cnt p{
+  font-size: 26px;
+  line-height: 1.5;
+  margin-bottom: 0;
+  color: #ffea39;
+  text-align: center;
+}
+#modal-ret .close{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #fff;
+  background: #d92a1e;
+  border: 2px solid #7b0303;
+  font-size: 30px;
+  top: 36px;
+  right: 30px;
+}
+

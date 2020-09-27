@@ -1,0 +1,157 @@
+
+
+.winner-bg{
+    background: url('/images/winnerList/bg.jpg') 50% 0 no-repeat #1d0605;
+    /*padding-top: 230px;*/
+    color: #fff;
+}
+
+/*年份导航*/
+.aside-nav{
+    float: left;
+    width: 120px;
+}
+
+.aside-nav .nav-year.affix{
+    position: fixed;
+    top: 62px;
+}
+
+
+.aside-nav .nav-year  a{
+    display: block;
+    padding: 5px 0 5px 20px;
+    color: #756148;
+    transition: all .3s;
+    text-align: left;
+}
+.aside-nav .nav-year .active a{
+    position: relative;
+    font-size: 18px;
+    padding-left: 0;
+    color: #f4ed96;
+    text-align: left;
+}
+.aside-nav .nav-year .active a:after{
+    position: absolute;
+    top: 10px;
+    right: 4px;
+    content: '';
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #f4ed96;
+}
+
+/*时间轴*/
+.time-line{
+    position: absolute;
+    top: 13px;
+    bottom: 0;
+    left: 103px;
+    width: 3px;
+    background: #f4ed96;
+}
+
+.winner-list{
+    margin-left: 130px;
+}
+
+.winner-item{
+    text-align: left;
+    cursor: pointer;
+    display: block;
+    padding-top:34px;
+    padding-bottom: 34px;
+    border-bottom: 2px solid #311312;
+}
+.winner-hd{
+    margin-bottom: 40px;
+}
+.winner-pic{
+    display: table;
+    background: url('/images/winnerList/box-pic.png') no-repeat;
+    width: 564px;
+    height: 322px;
+    padding: 58px 26px 8px 26px;
+    overflow: hidden;
+    float: left;
+	position:relative;
+}
+.winner-pic .pic{
+	width:116px; 
+	height:50px; 
+	background: url('/images/winnerList/vip-ico.png') no-repeat;
+	position:absolute;    
+	left: 50px; 
+	top: 15px;
+}
+.winner-pic .winner-pic-wp{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+.winner-pic .winner-pic-wp .pic-box{
+    max-height: 256px;
+    max-width: 512px;
+    overflow: hidden;
+}
+.winner-pic .winner-pic-wp img{
+    max-width: 100%;
+}
+
+.winner-brief{
+    padding-top: 50px;
+    color: #fff;
+    margin-left: 590px;
+}
+.winner-brief .text{
+    font-size:16px;
+    text-shadow:2px 2px 2px rgba(0,0,0,.8);
+    margin-bottom:10px;
+}
+.winner-brief h2{
+    font-size: 38px;
+    margin-bottom: 28px;
+}
+.winner-brief h2 strong{
+    color: #fcff00;
+    padding-left: 8px;
+}
+.winner-brief .fund-pic{
+    display: block;
+    position: relative;
+    height: 146px;
+    width: 286px;
+    border:1px solid #696969;
+    border-radius: 13px;
+    cursor: pointer;
+    overflow: hidden;
+}
+.winner-brief .fund-pic .fund-text{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 20px;
+    text-align: center;
+    color: #c2c2c2;
+}
+.winner-brief .fund-pic .fund-text .icon-search{
+    font-size: 40px;
+    margin-bottom: 8px;
+}
+.winner-brief .fund-overlay{
+    position: absolute;
+    left: 0;
+    right: -1px;
+    top: 0;
+    bottom: 0;
+    opacity:.8;
+    background: #000;
+}
+.winner-bd{
+    color: #755a59;
+    padding-left: 14px;
+}
+

@@ -1,0 +1,258 @@
+/*
+ * 天威风采
+ * ================================*/
+.header-top{
+    padding-top: 20px;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+.header-top .btn{
+    padding: 10px 16px;
+    color: #9e8c74;
+    background: #403018;
+    line-height: 1;
+    background: rgba(0,0,0,.3);
+    border:1px solid #5a462b;
+    border-radius: 4px;
+}
+
+.page-bg{
+    background: url(/images/history/bg-top.jpg?v=3) 50% 0 no-repeat #1e1101;
+    /*padding-top: 480px;*/
+}
+.page-bg .top-h{
+    height: 480px;
+}
+.top-area{
+    padding-bottom:40px;
+}
+.top-area h1{
+    font-size: 36px;
+    color: #fff;
+}
+.top-area .text{
+    margin-bottom: 42px;
+}
+.top-area  .btn{
+    display: inline-block;
+    vertical-align: middle;
+    width: 30%;
+    height: 58px;
+    line-height: 58px;
+    background: #69461c;
+    font-size: 18px;
+    color: #fff;
+    margin-right: 20px;
+    border: none;
+}
+.top-area .btn .icon{
+    margin-right: 16px;
+}
+
+/*顶部链接菜单*/
+.link-action a{
+    font-size:16px;
+    padding: 10px;
+}
+.link-action a:hover{
+    text-decoration: underline;
+}
+.time-line{
+    position: relative;
+    background: #241502;
+    padding: 60px 0;
+}
+.time-line .time-list{
+    padding-left: 140px;
+}
+/*
+.time-line .nav-year{
+    position: absolute;
+    left: -30px;
+    top: 6px;
+}
+*/
+.aside-nav{
+    float: left;
+    width: 100px;
+}
+
+.aside-nav .nav-year.affix{
+    position: fixed;
+    top: 62px;
+}
+
+/*年份导航*/
+.time-line .nav-year  a{
+    display: inline-block;
+    padding: 5px 20px;
+    color: #756148;
+    transition: all .3s;
+}
+.time-line .nav-year .active a{
+    font-size: 20px;
+    padding-left: 0;
+    color: #e7cfb0;
+}
+.main{
+    margin-left: 100px;
+}
+.time-list .item{
+    position: relative;
+    padding:20px 0;
+    border-bottom:1px solid #69461c;
+    text-align: left;
+    transition: all .3s;
+}
+.time-list .item:hover{
+    transform: translateX(10px);
+}
+.time-list .item a{
+    text-align: inherit;
+    color: inherit;
+}
+.time-list .tit,
+.time-list .date{
+    color: #e7cfb0;
+}
+.time-list .date{
+    position: absolute;
+    left: -100px;
+    top: 1px;
+    font-size: 34px;
+}
+.time-list .dot{
+    position:absolute;
+    top:20px;
+    left: -147px;
+    width:16px;
+    height:16px;
+    background:#5f4720;
+    border-radius:50%;
+}
+.time-list .line{
+    position: absolute;
+    top: -60px;
+    bottom: -60px;
+    left: 98px;
+    width: 3px;
+    background: #5f4720;
+}
+.time-list .tit{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.time-list .pic{
+    float: left;
+    width: 228px;
+    height: 120px;
+    overflow: hidden;
+    margin-right: 20px;
+}
+.time-list .desc{
+    color: #6b5f50;
+}
+.time-list .live-box:hover{
+    transform: translateY(-8px);
+    box-shadow: 10px 10px 12px rgba(0,0,0,.2);
+}
+.time-list .m-row{
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+
+.banner {
+    position: relative;
+    /* height: 380px; */
+    padding: 50px 0 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.dg-container {
+    position: relative;
+    width: 100%;
+    /* height: 500px; */
+}
+
+.dg-wrapper {
+    width: 550px;
+    height: 400px;
+    margin: 0 auto;
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+.dg-wrapper a {
+    width: 100%;
+    /* height: 530px; */
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.dg-wrapper a:first-child {
+    z-index: 2;
+}
+
+.dg-wrapper a img {
+    display: block;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.20);
+    border-radius: 4px;
+    width: 100%;
+    height: 378px;
+}
+
+.dg-wrapper a.dg-transition {
+    transition: all 0.5s ease-in-out;
+}
+
+.dg-wrapper a.dg-transition-fast {
+    transition: all 0.2s ease-in-out;
+}
+
+.dg-container .nav{
+    text-align: right;
+}
+.dg-container .nav span {
+    display: inline-block;
+    width: 60px;
+    height: 36px;
+    line-height: 36px;
+    border:2px solid #302415;
+    border-radius: 4px;
+    color: #f19719;
+    font-weight: bold;
+    font-size:20px;
+    text-align: center;
+    margin-left: 8px;
+}
+
+.dg-container #lightButton2 {
+    bottom: 20px;
+}
+
+.dg-container .button {
+    position: relative;
+    z-index: 5;
+}
+
+.dg-container .button li {
+    cursor: pointer;
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    margin-right: 5px;
+    background: rgba(255, 255, 255, 0.30);
+    border: 1px solid rgba(0, 0, 0, 0.20);
+}
+
+.dg-container .button .light {
+    background: #01BDFF;
+}

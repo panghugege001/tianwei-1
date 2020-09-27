@@ -1,0 +1,337 @@
+{
+  "code": "10000",
+  "desc": "成功",
+  "data": [
+       {
+      "id": 7,
+      "showName": "微信支付1",
+      "fee": 0.9,
+      "phoneFee": null,
+      "pcFee": null,
+      "minPay": 1.0,
+      "maxPay": 3000.0,
+      "appPay": 0,
+      "payWay": 2,
+      "payCenterUrl": "/dinpay/zfb_wx"
+    },
+
+    {
+      "id": 13,
+      "showName": "微信支付2",
+      "fee": 1.7,
+      "phoneFee": null,
+      "pcFee": null,
+      "minPay": 1.0,
+      "maxPay": 3000.0,
+      "appPay": 0,
+      "payWay": 2,
+      "payCenterUrl": "/shb/zfb_wx"
+    },
+
+    {
+      "id": 26,
+      "showName": "微信支付3",
+      "fee": 1.7,
+      "phoneFee": null,
+      "pcFee": null,
+      "minPay": 1.0,
+      "maxPay": 3000.0,
+      "appPay": 0,
+      "payWay": 2,
+      "payCenterUrl": "/shb/zfb_wx"
+    },
+
+    {
+      "id": 40,
+      "showName": "微信支付4",
+      "fee": 0.8,
+      "phoneFee": null,
+      "pcFee": null,
+      "minPay": 1.0,
+      "maxPay": 3000.0,
+      "appPay": 0,
+      "payWay": 2,
+      "payCenterUrl": "/jhb/zfb_wx"
+    },
+    {
+      "id": 57,
+      "showName": "微信支付5",
+      "fee": 1.5,
+      "phoneFee": null,
+      "pcFee": null,
+      "minPay": 1.0,
+      "maxPay": 3000.0,
+      "appPay": 0,
+      "payWay": 2,
+      "payCenterUrl": "/xh/zfb_wx"
+    },
+    {
+      "id": 58,
+      "showName": "微信支付6",
+      "fee": 1.5,
+      "phoneFee": null,
+      "pcFee": null,
+      "minPay": 1.0,
+      "maxPay": 3000.0,
+      "appPay": 0,
+      "payWay": 2,
+      "payCenterUrl": "/xh/zfb_wx"
+    },
+
+    {
+      "id": 81,
+      "showName": "微信支付7",
+      "fee": 1.4,
+      "phoneFee": null,
+      "pcFee": null,
+      "minPay": 10.0,
+      "maxPay": 3000.0,
+      "appPay": 0,
+      "payWay": 2,
+      "payCenterUrl": "/shb/zfb_wx"
+    },
+    {
+      "id": 82,
+      "showName": "微信支付8",
+      "fee": 1.5,
+      "phoneFee": null,
+      "pcFee": null,
+      "minPay": 10.0,
+      "maxPay": 3000.0,
+      "appPay": 0,
+      "payWay": 2,
+      "payCenterUrl": "/shb/zfb_wx"
+    },
+
+    {
+      "id": 123,
+      "showName": "微信支付9",
+      "fee": 1.7,
+      "phoneFee": null,
+      "pcFee": null,
+      "minPay": 10.0,
+      "maxPay": 3000.0,
+      "appPay": 0,
+      "payWay": 2,
+      "payCenterUrl": "/shb/zfb_wx"
+    },
+    {
+      "id": 124,
+      "showName": "微信支付10",
+      "fee": 1.7,
+      "phoneFee": null,
+      "pcFee": null,
+      "minPay": 10.0,
+      "maxPay": 3000.0,
+      "appPay": 0,
+      "payWay": 2,
+      "payCenterUrl": "/shb/zfb_wx"
+    },
+    {
+      "id": 125,
+      "showName": "微信支付11",
+      "fee": 1.7,
+      "phoneFee": null,
+      "pcFee": null,
+      "minPay": 10.0,
+      "maxPay": 3000.0,
+      "appPay": 0,
+      "payWay": 2,
+      "payCenterUrl": "/shb/zfb_wx"
+    },
+    {
+      "id": 126,
+      "showName": "微信支付12",
+      "fee": 1.7,
+      "phoneFee": null,
+      "pcFee": null,
+      "minPay": 10.0,
+      "maxPay": 3000.0,
+      "appPay": 0,
+      "payWay": 2,
+      "payCenterUrl": "/shb/zfb_wx"
+    },
+
+    {
+      "id": 131,
+      "showName": "微信支付13",
+      "fee": 2.0,
+      "phoneFee": null,
+      "pcFee": null,
+      "minPay": 1.0,
+      "maxPay": 3000.0,
+      "appPay": 0,
+      "payWay": 2,
+      "payCenterUrl": "/jh/zfb_wx"
+    },
+    {
+      "id": 132,
+      "showName": "微信支付14",
+      "fee": 2.0,
+      "phoneFee": null,
+      "pcFee": null,
+      "minPay": 1.0,
+      "maxPay": 3000.0,
+      "appPay": 0,
+      "payWay": 2,
+      "payCenterUrl": "/jh/zfb_wx"
+    },
+    {
+      "id": 133,
+      "showName": "微信支付15",
+      "fee": 2.0,
+      "phoneFee": null,
+      "pcFee": null,
+      "minPay": 1.0,
+      "maxPay": 3000.0,
+      "appPay": 0,
+      "payWay": 2,
+      "payCenterUrl": "/jh/zfb_wx"
+    },
+    {
+      "id": 134,
+      "showName": "微信支付16",
+      "fee": 2.0,
+      "phoneFee": null,
+      "pcFee": null,
+      "minPay": 1.0,
+      "maxPay": 3000.0,
+      "appPay": 0,
+      "payWay": 2,
+      "payCenterUrl": "/jh/zfb_wx"
+    },
+
+    {
+      "id": 141,
+      "showName": "微信支付17",
+      "fee": 1.5,
+      "phoneFee": null,
+      "pcFee": null,
+      "minPay": 1.0,
+      "maxPay": 3000.0,
+      "appPay": 0,
+      "payWay": 2,
+      "payCenterUrl": "/zhf/zfb_wx"
+    },
+    {
+      "id": 142,
+      "showName": "微信支付18",
+      "fee": 1.5,
+      "phoneFee": null,
+      "pcFee": null,
+      "minPay": 1.0,
+      "maxPay": 3000.0,
+      "appPay": 0,
+      "payWay": 2,
+      "payCenterUrl": "/zhf/zfb_wx"
+    },
+    {
+      "id": 143,
+      "showName": "微信支付19",
+      "fee": 1.5,
+      "phoneFee": null,
+      "pcFee": null,
+      "minPay": 1.0,
+      "maxPay": 3000.0,
+      "appPay": 0,
+      "payWay": 2,
+      "payCenterUrl": "/zhf/zfb_wx"
+    },
+    {
+      "id": 144,
+      "showName": "微信支付20",
+      "fee": 1.5,
+      "phoneFee": null,
+      "pcFee": null,
+      "minPay": 1.0,
+      "maxPay": 3000.0,
+      "appPay": 0,
+      "payWay": 2,
+      "payCenterUrl": "/zhf/zfb_wx"
+    },
+    {
+      "id": 145,
+      "showName": "微信支付21",
+      "fee": 1.5,
+      "phoneFee": null,
+      "pcFee": null,
+      "minPay": 1.0,
+      "maxPay": 3000.0,
+      "appPay": 0,
+      "payWay": 2,
+      "payCenterUrl": "/zhf/zfb_wx"
+    },
+    {
+      "id": 146,
+      "showName": "微信支付22",
+      "fee": 1.5,
+      "phoneFee": null,
+      "pcFee": null,
+      "minPay": 1.0,
+      "maxPay": 3000.0,
+      "appPay": 0,
+      "payWay": 2,
+      "payCenterUrl": "/zhf/zfb_wx"
+    },
+    {
+      "id": 148,
+      "showName": "微信支付23",
+      "fee": 0.8,
+      "phoneFee": null,
+      "pcFee": null,
+      "minPay": 1.0,
+      "maxPay": 3000.0,
+      "appPay": 0,
+      "payWay": 2,
+      "payCenterUrl": "/db/zfb_wx"
+    },
+    {
+      "id": 149,
+      "showName": "微信支付24",
+      "fee": 0.8,
+      "phoneFee": null,
+      "pcFee": null,
+      "minPay": 1.0,
+      "maxPay": 3000.0,
+      "appPay": 0,
+      "payWay": 2,
+      "payCenterUrl": "/db/zfb_wx"
+    },
+    {
+      "id": 150,
+      "showName": "微信支付25",
+      "fee": 0.8,
+      "phoneFee": null,
+      "pcFee": null,
+      "minPay": 1.0,
+      "maxPay": 3000.0,
+      "appPay": 0,
+      "payWay": 2,
+      "payCenterUrl": "/db/zfb_wx"
+    },
+    {
+      "id": 151,
+      "showName": "微信支付26",
+      "fee": 0.8,
+      "phoneFee": null,
+      "pcFee": null,
+      "minPay": 1.0,
+      "maxPay": 3000.0,
+      "appPay": 0,
+      "payWay": 2,
+      "payCenterUrl": "/db/zfb_wx"
+    },
+    {
+      "id": 154,
+      "showName": "微信支付27",
+      "fee": 0.0,
+      "phoneFee": null,
+      "pcFee": null,
+      "minPay": 1.0,
+      "maxPay": 3000.0,
+      "appPay": 0,
+      "payWay": 2,
+      "payCenterUrl": "/zhf/zfb_wx"
+    }
+  ]
+}

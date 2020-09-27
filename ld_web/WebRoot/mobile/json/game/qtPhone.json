@@ -1,0 +1,1719 @@
+{
+	"success": true,
+	"data": [
+		{
+			"type": "qtGames",
+			"gameList": [
+				{
+					"eName": "Fairy Gate",
+					"name": "仙境之门",
+					"gid": "QS-fairygate",
+					"pic": "QS-fairygate.jpg",
+					"urlCode": "",
+					"subType": "H5"
+				}, {
+					"eName": "Hidden",
+					"name": "古埃法老王",
+					"gid": "ELK-hidden",
+					"pic": "hidden.jpg",
+					"urlCode": "",
+					"subType": "H5"
+				}, {
+					"eName": "Serengeti Lions Stellar Jackpots",
+					"name": "塞伦盖蒂雄狮",
+					"gid": "OGS-serengetilionsstellarjackpots",
+					"pic": "OGS-serengetilionsstellarjackpots.jpg",
+					"urlCode": "",
+					"subType": "H5"
+				}, {
+					"eName": "Scruffy Scallywags",
+					"name": "欢乐帮",
+					"gid": "HAB-scruffyscallywags",
+					"pic": "HAB-scruffyscallywags.jpg",
+					"urlCode": "",
+					"subType": "H5"
+				}, {
+					"eName": "Full Moon Romance",
+					"name": "满月传说",
+					"gid": "OGS-fullmoonromance",
+					"pic": "OGS-fullmoonromance.jpg",
+					"urlCode": "",
+					"subType": "H5"
+				}, {
+					"eName": "Wild Run",
+					"name": "极速奔跑",
+					"gid": "OGS-wildrun",
+					"pic": "OGS-wildrun.jpg",
+					"urlCode": "",
+					"subType": "H5"
+				}, {
+					"eName": "Venice Magic",
+					"name": "魔力威尼斯",
+					"gid": "OGS-venicemagic",
+					"pic": "OGS-venicemagic.jpg",
+					"urlCode": "",
+					"subType": "H5"
+				}, {
+					"eName": "Joker 10000",
+					"name": "小丑10k",
+					"gid": "OGS-joker10000",
+					"pic": "OGS-joker10000.jpg",
+					"urlCode": "",
+					"subType": "H5"
+				}, {
+					"eName": "Thai Sunrise",
+					"name": "泰国日出",
+					"gid": "OGS-thaisunrise",
+					"pic": "OGS-thaisunrise.jpg",
+					"urlCode": "",
+					"subType": "H5"
+				}, {
+					"eName": "Platinum Pyramid",
+					"name": "金字塔",
+					"gid": "OGS-platinumpyramid",
+					"pic": "OGS-platinumpyramid.jpg",
+					"urlCode": "",
+					"subType": "H5"
+				}, {
+					"eName": "Valhalla",
+					"name": "瓦尔哈拉",
+					"gid": "OGS-valhalla",
+					"pic": "OGS-valhalla.jpg",
+					"urlCode": "",
+					"subType": "H5"
+				}, {
+					"eName": "Golden Mane",
+					"name": "金鬃马",
+					"gid": "OGS-goldenmane",
+					"pic": "OGS-goldenmane.jpg",
+					"urlCode": "",
+					"subType": "H5"
+				}, {
+					"eName": "Sticky Bandits",
+					"name": "西部劫匪",
+					"gid": "QS-stickybandits",
+					"pic": "QS-stickybandits.png",
+					"urlCode": "",
+					"subType": "H5"
+				}, {
+					"eName": "Goldilocks",
+					"name": "金发姑娘",
+					"gid": "QS-goldilocks",
+					"pic": "QS-goldilocks.jpg",
+					"urlCode": "",
+					"subType": "H5"
+				}, {
+					"eName": "The Dead Escape",
+					"name": "死海逃生",
+					"gid": "HAB-thedeadescape",
+					"pic": "HAB-thedeadescape.jpg",
+					"urlCode": "",
+					"subType": "H5"
+				}, {
+					"eName": "Wild Play Superbet",
+					"name": "超级投注",
+					"gid": "OGS-wildplaysuperbet",
+					"pic": "OGS-wildplaysuperbet.jpg",
+					"urlCode": "",
+					"subType": "H5"
+				}, {
+					"eName": "Glorious Empire HQ H5",
+					"name": "帝国荣耀H5 HQ",
+					"gid": "OGS-gloriousempirehqh5",
+					"pic": "OGS-gloriousempirehqh5.jpg",
+					"urlCode": "",
+					"subType": "H5"
+				}, {
+					"eName": "Dolphin Gold H5 HQ",
+					"name": "闪光海豚H5 HQ",
+					"gid": "OGS-dolphingoldh5hq",
+					"pic": "OGS-dolphingoldh5hq.jpg",
+					"urlCode": "",
+					"subType": "H5"
+				}, {
+					"eName": "Prosperity Twin",
+					"name": "财运亨通",
+					"gid": "OGS-prosperitytwin",
+					"pic": "OGS-prosperitytwin.jpg",
+					"urlCode": "",
+					"subType": "H5"
+				}, {
+					"eName": "Red Roo",
+					"name": "赤焰袋鼠",
+					"gid": "OGS-redroo",
+					"pic": "OGS-redroo.jpg",
+					"urlCode": "",
+					"subType": "H5"
+				}, {
+					"eName": "Medusa 2",
+					"name": "新-美杜莎2",
+					"gid": "OGS-medusa2h5hq",
+					"pic": "OGS-medusa2h5hq.jpg",
+					"urlCode": "",
+					"subType": "H5"
+				}, {
+					"eName": "Wins of Fortune",
+					"name": "美猴王",
+					"gid": "QS-winsoffortune",
+					"pic": "QS-winsoffortune.jpg",
+					"urlCode": "",
+					"subType": "H5"
+				}, {
+					"eName": "Ivanhoe",
+					"name": "劫后英雄传",
+					"gid": "ELK-ivanhoe",
+					"pic": "ELK-ivanhoe.jpg",
+					"urlCode": "",
+					"subType": "H5"
+				}, {
+					"eName": "Barber Shop Uncut",
+					"name": "巴尔伯理发师",
+					"gid": "OGS-barbershopuncut",
+					"pic": "OGS-barbershopuncut.jpg",
+					"urlCode": "",
+					"subType": "H5"
+				}, {
+					"eName": "Creepy Carnival",
+					"name": "惊悚嘉年华",
+					"gid": "NLC-creepycarnival",
+					"pic": "NLC-creepycarnival.jpg",
+					"urlCode": "",
+					"subType": "H5"
+				}, {
+					"eName": "Oktoberfest",
+					"name": "慕尼黑啤酒节",
+					"gid": "NLC-oktoberfest",
+					"pic": "NLC-oktoberfest.jpg",
+					"urlCode": "",
+					"subType": "H5"
+				}, {
+					"eName": "Space Arcade",
+					"name": "太空游乐场",
+					"gid": "NLC-spacearcade",
+					"pic": "NLC-spacearcade.jpg",
+					"urlCode": "",
+					"subType": "H5"
+				}, {
+					"eName": "Sushi Mania",
+					"name": "寿司大餐",
+					"gid": "NLC-sushimania",
+					"pic": "NLC-sushimania.jpg",
+					"urlCode": "",
+					"subType": "H5"
+				}, {
+					"eName": "DoublePlay Superbet H5 HQ",
+					"name": "新-超级赢家",
+					"gid": "OGS-doubleplaysuperbeth5hq",
+					"pic": "OGS-doubleplaysuperbeth5hq.jpg",
+					"urlCode": "",
+					"subType": "H5"
+				}, {
+					"eName": "Merlins Millions Superbet H5 HQ",
+					"name": "新-梅林法宝",
+					"gid": "OGS-merlinsmillionssuperbeth5hq",
+					"pic": "OGS-merlinsmillionssuperbeth5hq.jpg",
+					"urlCode": "",
+					"subType": "H5"
+				}, {
+					"eName": "Shangri-La",
+					"name": "香格里拉",
+					"gid": "OGS-shangri-la",
+					"pic": "OGS-shangri-la.jpg",
+					"urlCode": "",
+					"subType": "H5"
+				}, {
+					"eName": "Owl Eyes (Nova)",
+					"name": "新-猫头鹰之眼",
+					"gid": "OGS-owleyesnova",
+					"pic": "OGS-owleyesnova.jpg",
+					"urlCode": "",
+					"subType": "H5"
+				}, {
+					"eName": "Danger High Voltage",
+					"name": "霹雳娇娃",
+					"gid": "OGS-dangerhighvoltage",
+					"pic": "OGS-dangerhighvoltage.jpg",
+					"urlCode": "",
+					"subType": "H5"
+				}, {
+					"eName": "Roasty McFry and The Flame Busters",
+					"name": "灭火特工队",
+					"gid": "OGS-roastymcfryandtheflamebusters",
+					"pic": "OGS-roastymcfryandtheflamebusters.jpg",
+					"urlCode": "",
+					"subType": "H5"
+				}, {
+					"eName": "Panda Panda",
+					"name": "双喜熊猫",
+					"gid": "HAB-pandapanda",
+					"pic": "HAB-pandapanda.jpg",
+					"urlCode": "",
+					"subType": "H5"
+				}, {
+					"eName": "Panda Pow",
+					"name": "熊猫勇士",
+					"gid": "OGS-pandapow",
+					"pic": "OGS-pandapow.jpg",
+					"urlCode": "",
+					"subType": "H5"
+				}, {
+					"eName": "Theatre of Night",
+					"name": "午夜剧院",
+					"gid": "OGS-theatreofnight",
+					"pic": "OGS-theatreofnight.jpg",
+					"urlCode": "",
+					"subType": "H5"
+				}, {
+					"eName": "Luchadora",
+					"name": "拳击场",
+					"gid": "OGS-luchadora",
+					"pic": "OGS-luchadora.jpg",
+					"urlCode": "",
+					"subType": "H5"
+				}, {
+					"eName": "Bird of Thunder",
+					"name": "雷鸟",
+					"gid": "HAB-birdofthunder",
+					"pic": "HAB-birdofthunder.jpg",
+					"urlCode": "",
+					"subType": "H5"
+				}, {
+					"eName": "Hongkong Tower",
+					"name": "香港摩天大楼",
+					"gid": "ELK-hongkongtower",
+					"pic": "ELK-hongkongtower.jpg",
+					"urlCode": "",
+					"subType": "H5"
+				}, {
+					"eName": "Xing Guardian",
+					"name": "星辰守护",
+					"gid": "OGS-xingguardian",
+					"pic": "OGS-xingguardian.jpg",
+					"urlCode": "",
+					"subType": "H5"
+				}, {
+					"eName": "Sakura Fortune",
+					"name": "樱花侠女",
+					"gid": "QS-sakurafortune",
+					"pic": "QS-sakurafortune.jpg",
+					"urlCode": "",
+					"subType": "H5"
+				}, {
+					"eName": "Dolphin Gold Stellar Jackpots",
+					"name": "闪光海豚-星空大战",
+					"gid": "OGS-dolphingoldstellarjackpots",
+					"pic": "OGS-dolphingoldstellarjackpots.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Well of Wonders",
+					"name": "魔幻森林",
+					"gid": "OGS-wellofwonders",
+					"pic": "OGS-wellofwonders.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Leprechaun Hills",
+					"name": "精灵山",
+					"gid": "QS-leprechaunhills",
+					"pic": "QS-leprechaunhills.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Koi Gate",
+					"name": "鲤鱼门",
+					"gid": "HAB-koigate",
+					"pic": "HAB-koigate.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Snowflakes",
+					"name": "雪绒花",
+					"gid": "OGS-snowflakes",
+					"pic": "OGS-snowflakes.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Sam on the Beach",
+					"name": "夏日海滩",
+					"gid": "ELK-samonthebeach",
+					"pic": "ELK-samonthebeach.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Hot Sync",
+					"name": "火热旋转",
+					"gid": "QS-hotsync",
+					"pic": "QS-hotsync.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Fenghuang",
+					"name": "凤凰",
+					"gid": "HAB-fenghuang",
+					"pic": "HAB-fenghuang.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Fire Rooster",
+					"name": "公鸡王",
+					"gid": "HAB-firerooster",
+					"pic": "HAB-firerooster.png",
+					"urlCode": ""
+				}, {
+					"eName": "Golden",
+					"name": "金鸡报喜",
+					"gid": "OGS-golden",
+					"pic": "OGS-golden.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Bonanza",
+					"name": "矿山探险",
+					"gid": "OGS-bonanza",
+					"pic": "OGS-bonanza.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Glorious Empire",
+					"name": "帝国荣耀",
+					"gid": "OGS-gloriousempire",
+					"pic": "OGS-gloriousempire.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Phoenix Sun",
+					"name": "凤凰的涅槃",
+					"gid": "QS-phoenixsun",
+					"pic": "QS-phoenixsun.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Silver Lion",
+					"name": "万兽之王",
+					"gid": "OGS-silverlion",
+					"pic": "OGS-silverlion.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Taco Brothers Saving Christmas",
+					"name": "塔科的圣诞使命",
+					"gid": "ELK-tacobrotherssavingchristmas",
+					"pic": "ELK-tacobrotherssavingchristmas.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Turning Totems",
+					"name": "旋转图腾",
+					"gid": "OGS-turningtotems",
+					"pic": "OGS-turningtotems.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Astro Cat",
+					"name": "阿斯特罗猫",
+					"gid": "OGS-astrocat",
+					"pic": "OGS-astrocat.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Viking Fire",
+					"name": "维京之火",
+					"gid": "OGS-vikingfire",
+					"pic": "OGS-vikingfire.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Buccaneers Bay",
+					"name": "海盗湾",
+					"gid": "OGS-bucaneersbay",
+					"pic": "OGS-bucaneersbay.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Juggle Naut",
+					"name": "惊喜秀",
+					"gid": "HAB-jugglenaut",
+					"pic": "HAB-jugglenaut.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Manic Millions",
+					"name": "科学怪人",
+					"gid": "OGS-manicmillions",
+					"pic": "OGS-manicmillions.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Dragon Shrine",
+					"name": "龙神殿",
+					"gid": "QS-dragonshrine",
+					"pic": "QS-dragonshrine.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Wild Toro",
+					"name": "卑鄙的斗牛士",
+					"gid": "ELK-wildtoro",
+					"pic": "ELK-wildtoro.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Blood Lore Vampire Clan",
+					"name": "吸血鬼家族",
+					"gid": "OGS-bloodlorevampireclan",
+					"pic": "OGS-bloodlorevampireclan.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Charms and Witches",
+					"name": "女巫的魔咒",
+					"gid": "OGS-charmsandwitches",
+					"pic": "OGS-charmsandwitches.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Star Quest",
+					"name": "星际探索",
+					"gid": "OGS-starquest",
+					"pic": "OGS-starquest.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Frog Grog",
+					"name": "格罗格醉蛙",
+					"gid": "OGS-froggrog",
+					"pic": "OGS-froggrog.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Ocean's Call",
+					"name": "海洋之音",
+					"gid": "HAB-oceanscall",
+					"pic": "HAB-oceanscall.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Bloopers",
+					"name": "幕后花絮",
+					"gid": "ELK-bloopers",
+					"pic": "ELK-bloopers.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Champions Goal",
+					"name": "足球宝贝",
+					"gid": "ELK-championsgoal",
+					"pic": "ELK-championsgoal.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "DJ Wild",
+					"name": "狂野DJ",
+					"gid": "ELK-djwild",
+					"pic": "ELK-djwild.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Electric Sam",
+					"name": "美女和野兽",
+					"gid": "ELK-electricsam",
+					"pic": "ELK-electricsam.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Poltava",
+					"name": "波尔塔瓦之战",
+					"gid": "ELK-poltava",
+					"pic": "ELK-poltava.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Taco Brothers",
+					"name": "塔科兄弟",
+					"gid": "ELK-tacobrothers",
+					"pic": "ELK-tacobrothers.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "The Lab",
+					"name": "神奇实验室",
+					"gid": "ELK-thelab",
+					"pic": "ELK-thelab.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Genie’s Touch ",
+					"name": "阿拉丁神灯",
+					"gid": "QS-geniestouch",
+					"pic": "QS-geniestouch.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Jewel Blast ",
+					"name": "宝石爆炸",
+					"gid": "QS-jewelblast",
+					"pic": "QS-jewelblast.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Second Strike ",
+					"name": "连环炮",
+					"gid": "QS-secondstrike",
+					"pic": "QS-secondstrike.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Fiesta Cubana",
+					"name": "热辣古巴",
+					"gid": "OGS-fiestacubana",
+					"pic": "OGS-fiestacubana.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Gangsters ",
+					"name": "黑手党",
+					"gid": "HAB-gangsters",
+					"pic": "HAB-gangsters.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Crystal Queen",
+					"name": "冰雪奇缘",
+					"gid": "QS-crystalqueen",
+					"pic": "QS-crystalqueen.png",
+					"urlCode": ""
+				}, {
+					"eName": "Gold Lab",
+					"name": "黄金实验室",
+					"gid": "QS-goldlab",
+					"pic": "QS-goldlab.png",
+					"urlCode": ""
+				}, {
+					"eName": "Sinbad",
+					"name": "辛巴达",
+					"gid": "QS-sinbad",
+					"pic": "QS-sinbad.png",
+					"urlCode": ""
+				}, {
+					"eName": "Babushkas",
+					"name": "俄罗斯老太",
+					"gid": "OGS-babushkas",
+					"pic": "OGS-babushkas.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Spectra",
+					"name": "光谱",
+					"gid": "OGS-spectra",
+					"pic": "OGS-spectra.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Sunset Delight",
+					"name": "日落余晖",
+					"gid": "OGS-sunsetdelight",
+					"pic": "OGS-sunsetdelight.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Illuminous",
+					"name": "嗨翻珠宝",
+					"gid": "QS-illuminous",
+					"pic": "QS-illuminous.png",
+					"urlCode": ""
+				}, {
+					"eName": "Emerald Isle",
+					"name": "翡翠岛",
+					"gid": "OGS-emeraldisle",
+					"pic": "OGS-emeraldisle.png",
+					"urlCode": ""
+				}, {
+					"eName": "Sevens High",
+					"name": "疯狂777",
+					"gid": "QS-sevenshigh",
+					"pic": "QS-sevenshigh.png",
+					"urlCode": ""
+				}, {
+					"eName": "The Wild Chase",
+					"name": "侠盗猎车手",
+					"gid": "QS-thewildchase ",
+					"pic": "QS-thewildchase.png",
+					"urlCode": ""
+				}, {
+					"eName": "Treasure Island",
+					"name": "宝藏岛",
+					"gid": "QS-treasureisland",
+					"pic": "QS-treasureisland.png",
+					"urlCode": ""
+				}, {
+					"eName": "Big Bad Wolf",
+					"name": "灰太狼",
+					"gid": "QS-bigbadwolf",
+					"pic": "QS-bigbadwolf.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Firestorm",
+					"name": "火暴",
+					"gid": "QS-firestorm",
+					"pic": "QS-firestorm.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Razortooth",
+					"name": "虎口狼牙",
+					"gid": "QS-razortooth",
+					"pic": "QS-razortooth.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Sparta",
+					"name": "斯巴达",
+					"gid": "HAB-sparta",
+					"pic": "HAB-sparta.png",
+					"urlCode": ""
+				}, {
+					"eName": "Dragon's Realm",
+					"name": "神龙之境",
+					"gid": "HAB-dragonsrealm",
+					"pic": "HAB-dragonsrealm.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Indian Cash Catcher",
+					"name": "印第安追梦",
+					"gid": "HAB-indiancashcatcher",
+					"pic": "HAB-indiancashcatcher.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Roman Empire",
+					"name": "罗马帝国",
+					"gid": "HAB-romanempire",
+					"pic": "HAB-romanempire.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Ruffled Up",
+					"name": "触电的小鸟",
+					"gid": "HAB-ruffledup",
+					"pic": "HAB-ruffledup.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Dragon Palace",
+					"name": "龙宫",
+					"gid": "OGS-dragonpalace",
+					"pic": "OGS-dragonpalace.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Zoom",
+					"name": "水果幻灯片",
+					"gid": "OGS-zoom",
+					"pic": "OGS-zoom.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Arcane Elements",
+					"name": "神秘元素",
+					"gid": "HAB-arcaneelements",
+					"pic": "HAB-arcaneelements.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Coyote Crash",
+					"name": "狼贼夺宝",
+					"gid": "HAB-coyotecrash",
+					"pic": "HAB-coyotecrash.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Mystic Fortune",
+					"name": "神秘宝藏",
+					"gid": "HAB-mysticfortune",
+					"pic": "HAB-mysticfortune.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Super Twister",
+					"name": "超级龙卷风",
+					"gid": "HAB-supertwister",
+					"pic": "HAB-supertwister.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Egyptian Rise",
+					"name": "埃及的崛起",
+					"gid": "OGS-egyptianrise",
+					"pic": "OGS-egyptianrise.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Giant Gems",
+					"name": "巨型宝石",
+					"gid": "OGS-giantgems",
+					"pic": "OGS-giantgems.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Great Wild Elk",
+					"name": "麋鹿之光",
+					"gid": "OGS-greatwildelk",
+					"pic": "OGS-greatwildelk.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Fa Cai Shen",
+					"name": "发财神  ",
+					"gid": "HAB-facaishen",
+					"pic": "HAB-facaishen.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "12 Zodiacs",
+					"name": "十二生肖",
+					"gid": "HAB-12zodiacs",
+					"pic": "HAB-12zodiacs.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Dragon’s Throne",
+					"name": "龙之宝座",
+					"gid": "HAB-dragonsthrone",
+					"pic": "HAB-dragonsthrone.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Queen of Riches",
+					"name": "埃及艳后  ",
+					"gid": "OGS-queenofriches",
+					"pic": "OGS-queenofriches.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Monster Wins",
+					"name": "怪兽大学  ",
+					"gid": "OGS-monsterwins",
+					"pic": "OGS-monsterwins.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Chilli Gold x2",
+					"name": "黄金辣椒2  ",
+					"gid": "OGS-chilligoldx2",
+					"pic": "OGS-chilligoldx2.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Blazing Goddess",
+					"name": "炽热女神  ",
+					"gid": "OGS-blazinggoddess",
+					"pic": "OGS-blazinggoddess.png",
+					"urlCode": ""
+				}, {
+					"eName": "King Kong",
+					"name": "金刚",
+					"gid": "OGS-kingkong",
+					"pic": "OGS-kingkong.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Robin Hood - the Prince of Tweets",
+					"name": "绿林英雄—罗宾汉",
+					"gid": "OGS-robinhoodprinceoftweets",
+					"pic": "OGS-robinhoodprinceoftweets.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Wolfpack Pays",
+					"name": "狼群嚎叫",
+					"gid": "OGS-wolfpackpays",
+					"pic": "OGS-wolfpackpays.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "The Rift",
+					"name": "密室逃亡",
+					"gid": "OGS-therift",
+					"pic": "OGS-therift.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Mad Mad Monkey",
+					"name": "疯狂的猴子",
+					"gid": "OGS-madmadmonkey",
+					"pic": "OGS-madmadmonkey.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Bingo Billions",
+					"name": "百万宾果",
+					"gid": "OGS-bingobillions",
+					"pic": "OGS-bingobillions.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "King Kong Island of Skull Mountain*",
+					"name": "金刚勇闯骷髅岛",
+					"gid": "OGS-kingkongislandofskullmountain",
+					"pic": "OGS-kingkongislandofskullmountain.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Irish Eyes",
+					"name": "爱尔兰之眼",
+					"gid": "OGS-irisheyes",
+					"pic": "OGS-irisheyes.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Psycho",
+					"name": "神经兮兮",
+					"gid": "OGS-psycho",
+					"pic": "OGS-psycho.png",
+					"urlCode": ""
+				}, {
+					"eName": "Volcano Eruption",
+					"name": "火山爆发",
+					"gid": "OGS-volcanoeruption",
+					"pic": "OGS-volcanoeruption.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Esqueleto Explosivo",
+					"name": "骷髅乐队",
+					"gid": "OGS-esqueletoexplosivo",
+					"pic": "OGS-esqueletoexplosivo.png",
+					"urlCode": ""
+				}, {
+					"eName": "Leonidas",
+					"name": "莱奥尼达斯国王",
+					"gid": "OGS-leonidas",
+					"pic": "OGS-leonidas.png",
+					"urlCode": ""
+				}, {
+					"eName": "Toki Time",
+					"name": "开心消消乐",
+					"gid": "OGS-tokitime",
+					"pic": "OGS-tokitime.png",
+					"urlCode": ""
+				}, {
+					"eName": "A Dragon's Story",
+					"name": "龙的传说",
+					"gid": "OGS-adragonstory",
+					"pic": "OGS-adragonstory.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Fruit Warp",
+					"name": "水果大战",
+					"gid": "OGS-fruitwarp",
+					"pic": "OGS-fruitwarp.png",
+					"urlCode": ""
+				}, {
+					"eName": "Casinomeister",
+					"name": "赌场大亨",
+					"gid": "OGS-casinomeister",
+					"pic": "OGS-casinomeister.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "1 Can 2 Can",
+					"name": "丛林鹦鹉",
+					"gid": "OGS-1can2can",
+					"pic": "OGS-1can2can.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Magicious",
+					"name": "魔术大师",
+					"gid": "OGS-magicious",
+					"pic": "OGS-magicious.png",
+					"urlCode": ""
+				}, {
+					"eName": "The Snake Charmer",
+					"name": "耍蛇老爹",
+					"gid": "OGS-thesnakecharmer",
+					"pic": "OGS-thesnakecharmer.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Diamond Tower",
+					"name": "钻石大厦",
+					"gid": "OGS-diamondtower",
+					"pic": "OGS-diamondtower.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Dolphin Gold",
+					"name": "闪光海豚",
+					"gid": "OGS-dolphingold",
+					"pic": "OGS-dolphingold.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Unicorn Legend",
+					"name": "独角兽传奇",
+					"gid": "OGS-unicornlegend",
+					"pic": "OGS-unicornlegend.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Dr Love on Vacation",
+					"name": "爱情假日",
+					"gid": "OGS-drloveonvacation",
+					"pic": "OGS-drloveonvacation.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "1429 Uncharted Seas",
+					"name": "未知海洋探险-1429",
+					"gid": "OGS-1429unchartedseas",
+					"pic": "OGS-1429unchartedseas.png",
+					"urlCode": ""
+				}, {
+					"eName": "Superman Last Son of Krypton*",
+					"name": "终极氪星之子超人",
+					"gid": "OGS-supermanlastsonofkrypton",
+					"pic": "OGS-supermanlastsonofkrypton.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Ramesses Riches",
+					"name": "拉美西斯宝藏",
+					"gid": "OGS-ramessesriches",
+					"pic": "OGS-ramessesriches.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Lost Temple",
+					"name": "消失的神庙",
+					"gid": "OGS-losttemple",
+					"pic": "OGS-losttemple.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "James Dean",
+					"name": "詹姆斯·迪恩",
+					"gid": "OGS-jamesdean",
+					"pic": "OGS-jamesdean.png",
+					"urlCode": ""
+				}, {
+					"eName": "Wildcat Canyon",
+					"name": "野猫峡谷",
+					"gid": "OGS-wildcatcanyon",
+					"pic": "OGS-wildcatcanyon.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Witch Pickings",
+					"name": "美妙巫师",
+					"gid": "OGS-witchpickings",
+					"pic": "OGS-witchpickings.png",
+					"urlCode": ""
+				}, {
+					"eName": "Easy Slider",
+					"name": "公路漂移",
+					"gid": "OGS-easyslider",
+					"pic": "OGS-easyslider.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Oil Mania",
+					"name": "狂热石油",
+					"gid": "OGS-oilmania",
+					"pic": "OGS-oilmania.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Moon Temple",
+					"name": "月光神庙",
+					"gid": "OGS-moontemple",
+					"pic": "OGS-moontemple.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Gorilla Go Wild",
+					"name": "疯狂大猩猩",
+					"gid": "OGS-gorillagowild",
+					"pic": "OGS-gorillagowild.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Judge Dredd",
+					"name": "特警判官",
+					"gid": "OGS-judgedredd",
+					"pic": "OGS-judgedredd.png",
+					"urlCode": ""
+				}, {
+					"eName": "GOLD",
+					"name": "黄金",
+					"gid": "OGS-gold",
+					"pic": "OGS-gold.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Foxin Wins",
+					"name": "狐狸家族",
+					"gid": "OGS-foxinwins",
+					"pic": "OGS-foxinwins.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Arcader",
+					"name": "神秘的巨石",
+					"gid": "OGS-arcader",
+					"pic": "OGS-arcader.png",
+					"urlCode": ""
+				}, {
+					"eName": "Chilli Gold",
+					"name": "黄金辣椒",
+					"gid": "OGS-chilligold",
+					"pic": "OGS-chilligold.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Miss Midas",
+					"name": "蜜达斯小姐",
+					"gid": "OGS-missmidas",
+					"pic": "OGS-missmidas.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "The Spin Lab",
+					"name": "旋转实验室",
+					"gid": "OGS-thespinlab",
+					"pic": "OGS-thespinlab.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Pixie Gold",
+					"name": "调皮精灵",
+					"gid": "OGS-pixiegold",
+					"pic": "OGS-pixiegold.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Joker Jester",
+					"name": "滑稽小丑",
+					"gid": "OGS-jokerjester",
+					"pic": "OGS-jokerjester.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Jukepot",
+					"name": "音乐盒",
+					"gid": "OGS-jukepot",
+					"pic": "OGS-jukepot.png",
+					"urlCode": ""
+				}, {
+					"eName": "Fortunes of the Amazon",
+					"name": "亚马逊财富",
+					"gid": "OGS-fortunesoftheamazon",
+					"pic": "OGS-fortunesoftheamazon.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "An Evening with Holly Madison",
+					"name": "霍莉麦迪逊之夜",
+					"gid": "OGS-aneveningwithhollymadison",
+					"pic": "OGS-aneveningwithhollymadison.png",
+					"urlCode": ""
+				}, {
+					"eName": "Bars and Bells",
+					"name": "酒吧门铃",
+					"gid": "OGS-barsandbells",
+					"pic": "OGS-barsandbells.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Serengeti Diamonds",
+					"name": "塞伦盖蒂之钻",
+					"gid": "OGS-serengetidiamonds",
+					"pic": "OGS-serengetidiamonds.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Merlin's Magic Respins",
+					"name": "梅林的魔法药剂",
+					"gid": "OGS-merlinsmagicrespins",
+					"pic": "OGS-merlinsmagicrespins.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Doctor Love",
+					"name": "爱情医生",
+					"gid": "OGS-doctorlove",
+					"pic": "OGS-doctorlove.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Eastern Dragon",
+					"name": "东海龙王",
+					"gid": "OGS-easterndragon",
+					"pic": "OGS-easterndragon.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "More Monkeys",
+					"name": "齐天大圣",
+					"gid": "OGS-moremonkeys",
+					"pic": "OGS-moremonkeys.png",
+					"urlCode": ""
+				}, {
+					"eName": "Foxin' Wins Again",
+					"name": "狐狸家族再临",
+					"gid": "OGS-foxinwinsagain",
+					"pic": "OGS-foxinwinsagain.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Irish Eyes 2",
+					"name": "爱尔兰之眼2",
+					"gid": "OGS-irisheyes2",
+					"pic": "OGS-irisheyes2.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Jackpot Jester Wild Nudge",
+					"name": "头奖幸运小丑",
+					"gid": "OGS-jackpotjesterwildnudge",
+					"pic": "OGS-jackpotjesterwildnudge.png",
+					"urlCode": ""
+				}, {
+					"eName": "Merlin magic-Xmas",
+					"name": "梅林魔法－圣诞版",
+					"gid": "OGS-merlinsmagicrespinschristmas",
+					"pic": "OGS-merlinsmagicrespinschristmas.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Merlin's Millions Superbet",
+					"name": "梅林的法宝",
+					"gid": "OGS-merlinsmillionssuperbet",
+					"pic": "OGS-merlinsmillionssuperbet.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Pandamania",
+					"name": "熊猫团圆",
+					"gid": "OGS-pandamania",
+					"pic": "OGS-pandamania.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Teddy Bears' Picnic",
+					"name": "可爱泰迪",
+					"gid": "OGS-teddybearspicnic",
+					"pic": "OGS-teddybearspicnic.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "300 Shields",
+					"name": "斯巴达之盾",
+					"gid": "OGS-300shields",
+					"pic": "OGS-300shields.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Big Foot",
+					"name": "寻找大脚怪",
+					"gid": "OGS-bigfoot",
+					"pic": "OGS-bigfoot.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Potion Commotion",
+					"name": "骚动药水",
+					"gid": "OGS-potioncommotion",
+					"pic": "OGS-potioncommotion.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Venetian Rose",
+					"name": "情定威尼斯",
+					"gid": "OGS-venetianrose",
+					"pic": "OGS-venetianrose.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Spanish Eyes",
+					"name": "情定西班牙",
+					"gid": "OGS-spanisheyes",
+					"pic": "OGS-spanisheyes.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "The Codfather",
+					"name": "鳕鱼之父",
+					"gid": "OGS-thecodfather",
+					"pic": "OGS-thecodfather.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Dragon Drop",
+					"name": "驯龙记",
+					"gid": "OGS-dragondrop",
+					"pic": "OGS-dragondrop.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Birds On A Wire",
+					"name": "愤怒的小鸟",
+					"gid": "OGS-birdsonawire",
+					"pic": "OGS-birdsonawire.png",
+					"urlCode": ""
+				}, {
+					"eName": "Extra Cash!!",
+					"name": "好多钞票",
+					"gid": "OGS-extracash",
+					"pic": "OGS-extracash.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Call of the Colosseum",
+					"name": "罗马竞技场",
+					"gid": "OGS-callofthecolosseum",
+					"pic": "OGS-callofthecolosseum.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Cash Stampede",
+					"name": "现金踩踏",
+					"gid": "OGS-cashstampede",
+					"pic": "OGS-cashstampede.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Emperor's Garden",
+					"name": "皇庭踏青",
+					"gid": "OGS-emperorsgarden",
+					"pic": "OGS-emperorsgarden.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Genie Wild",
+					"name": "精灵仙子",
+					"gid": "OGS-geniewild",
+					"pic": "OGS-geniewild.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Cherry Blossoms",
+					"name": "樱花恋",
+					"gid": "OGS-cherryblossoms",
+					"pic": "OGS-cherryblossoms.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Pizza Prize",
+					"name": "披萨锦标赛",
+					"gid": "OGS-pizzaprize",
+					"pic": "OGS-pizzaprize.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Super Safari",
+					"name": "丛林之王",
+					"gid": "OGS-supersafari",
+					"pic": "OGS-supersafari.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Titan Storm",
+					"name": "泰坦风暴",
+					"gid": "OGS-titanstorm",
+					"pic": "OGS-titanstorm.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Jack's Beanstalk",
+					"name": "杰克的豌豆唠",
+					"gid": "OGS-jacksbeanstalk",
+					"pic": "OGS-jacksbeanstalk.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Starmania",
+					"name": "星星点灯",
+					"gid": "OGS-starmania",
+					"pic": "OGS-starmania.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Jackpot Jester 50k",
+					"name": "小丑奖池",
+					"gid": "OGS-jackpotjester50k",
+					"pic": "OGS-jackpotjester50k.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Double Play SuperBet",
+					"name": "超级赢家",
+					"gid": "OGS-doubleplaysuperbet",
+					"pic": "OGS-doubleplaysuperbet.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Wild West",
+					"name": "狂野西部",
+					"gid": "OGS-wildwest",
+					"pic": "OGS-wildwest.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Scratch Call of the Colosseum",
+					"name": "刮刮乐－罗马竞技场",
+					"gid": "OGS-scracthcallofthecolosseum",
+					"pic": "OGS-scracthcallofthecolosseum.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Scratch Dr Love",
+					"name": "刮刮乐－爱情医生",
+					"gid": "OGS-scratchdrlove",
+					"pic": "OGS-scratchdrlove.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Scratch Dr Love On Vacation",
+					"name": "刮刮乐－爱情假日",
+					"gid": "OGS-scratchdrloveonvacation",
+					"pic": "OGS-scratchdrloveonvacation.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Scratch Emperors Garden",
+					"name": "刮刮乐－皇庭踏青",
+					"gid": "OGS-scratchemperorsgarden",
+					"pic": "OGS-scratchemperorsgarden.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Scratch Foxin Wins",
+					"name": "刮刮乐－狐狸家族",
+					"gid": "OGS-scratchfoxinwins",
+					"pic": "OGS-scratchfoxinwins.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Scratch Gorilla Go Wild",
+					"name": "刮刮乐－疯狂大猩猩",
+					"gid": "OGS-scratchgorillagowild",
+					"pic": "OGS-scratchgorillagowild.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Scratch Irish Eyes",
+					"name": "刮刮乐－爱尔兰之眼",
+					"gid": "OGS-scratchirisheyes",
+					"pic": "OGS-scratchirisheyes.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Scratch Irish Eyes 2",
+					"name": "刮刮乐－爱尔兰之眼2",
+					"gid": "OGS-scratchirisheyes2",
+					"pic": "OGS-scratchirisheyes2.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Scratch Medusa",
+					"name": "刮刮乐－美杜莎",
+					"gid": "OGS-scratchmedusa",
+					"pic": "OGS-scratchmedusa.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Scratch Merlins Millions",
+					"name": "刮刮乐－梅林的百宝箱",
+					"gid": "OGS-scratchmerlinsmillions",
+					"pic": "OGS-scratchmerlinsmillions.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Scratch Ramesses Riches",
+					"name": "刮刮乐－拉美西斯宝藏",
+					"gid": "OGS-scratchramessesriches",
+					"pic": "OGS-scratchramessesriches.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Scratch The Codfather",
+					"name": "刮刮乐－鳕鱼之父",
+					"gid": "OGS-scratchthecodfather",
+					"pic": "OGS-scratchthecodfather.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Scratch Volcano Eruption",
+					"name": "刮刮乐－火山爆发",
+					"gid": "OGS-scratchvolcanoeruption",
+					"pic": "OGS-scratchvolcanoeruption.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Scratch Pandamania",
+					"name": "刮刮乐－熊猫团圆",
+					"gid": "OGS-scratchpandamania",
+					"pic": "OGS-scratchpandamania.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Scratch Genie Wild",
+					"name": "刮刮乐－精灵仙子",
+					"gid": "OGS-scratchgeniewild",
+					"pic": "OGS-scratchgeniewild.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Scratch Oil Mania",
+					"name": "刮刮乐－狂热石油",
+					"gid": "OGS-scratchoilmania",
+					"pic": "OGS-scratchoilmania.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Scratch Big Foot",
+					"name": "刮刮乐－寻找大脚怪",
+					"gid": "OGS-scratchbigfoot",
+					"pic": "OGS-scratchbigfoot.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Scratch The Snake Charmer",
+					"name": "刮刮乐－耍蛇老爹",
+					"gid": "OGS-scratchthesnakecharmer",
+					"pic": "OGS-scratchthesnakecharmer.jpg",
+					"urlCode": ""
+				}
+			]
+		}, {
+			"type": "hotGames",
+			"gameList": [
+				{
+					"eName": "Mad Mad Monkey",
+					"name": "疯狂的猴子",
+					"gid": "OGS-madmadmonkey",
+					"pic": "OGS-madmadmonkey.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "A Dragon's Story",
+					"name": "龙的传说",
+					"gid": "OGS-adragonstory",
+					"pic": "OGS-adragonstory.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Bingo Billions",
+					"name": "百万宾果",
+					"gid": "OGS-bingobillions",
+					"pic": "OGS-bingobillions.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "King Kong Island of Skull Mountain*",
+					"name": "金刚勇闯骷髅岛",
+					"gid": "OGS-kingkongislandofskullmountain",
+					"pic": "OGS-kingkongislandofskullmountain.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Irish Eyes",
+					"name": "爱尔兰之眼",
+					"gid": "OGS-irisheyes",
+					"pic": "OGS-irisheyes.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Volcano Eruption",
+					"name": "火山爆发",
+					"gid": "OGS-volcanoeruption",
+					"pic": "OGS-volcanoeruption.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Esqueleto Explosivo",
+					"name": "骷髅乐队",
+					"gid": "OGS-esqueletoexplosivo",
+					"pic": "OGS-esqueletoexplosivo.png",
+					"urlCode": ""
+				}, {
+					"eName": "Casinomeister",
+					"name": "赌场大亨",
+					"gid": "OGS-casinomeister",
+					"pic": "OGS-casinomeister.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "1 Can 2 Can",
+					"name": "丛林鹦鹉",
+					"gid": "OGS-1can2can",
+					"pic": "OGS-1can2can.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Fortunes of the Amazon",
+					"name": "亚马逊财富",
+					"gid": "OGS-fortunesoftheamazon",
+					"pic": "OGS-fortunesoftheamazon.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Birds On A Wire",
+					"name": "愤怒的小鸟",
+					"gid": "OGS-birdsonawire",
+					"pic": "OGS-birdsonawire.png",
+					"urlCode": ""
+				}, {
+					"eName": "The Snake Charmer",
+					"name": "耍蛇老爹",
+					"gid": "OGS-thesnakecharmer",
+					"pic": "OGS-thesnakecharmer.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Diamond Tower",
+					"name": "钻石大厦",
+					"gid": "OGS-diamondtower",
+					"pic": "OGS-diamondtower.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Spin Sorceress",
+					"name": "旋转女巫",
+					"gid": "OGS-spinsorceress",
+					"pic": "OGS-spinsorceress.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Unicorn Legend",
+					"name": "独角兽传奇",
+					"gid": "OGS-unicornlegend",
+					"pic": "OGS-unicornlegend.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Dolphin Gold",
+					"name": "闪光海豚",
+					"gid": "OGS-dolphingold",
+					"pic": "OGS-dolphingold.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Dr Love on Vacation",
+					"name": "爱情假日",
+					"gid": "OGS-drloveonvacation",
+					"pic": "OGS-drloveonvacation.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Superman Last Son of Krypton*",
+					"name": "终极氪星之子超人",
+					"gid": "OGS-supermanlastsonofkrypton",
+					"pic": "OGS-supermanlastsonofkrypton.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Ramesses Riches",
+					"name": "拉美西斯宝藏",
+					"gid": "OGS-ramessesriches",
+					"pic": "OGS-ramessesriches.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Wildcat Canyon",
+					"name": "野猫峡谷",
+					"gid": "OGS-wildcatcanyon",
+					"pic": "OGS-wildcatcanyon.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Flux",
+					"name": "水晶宝藏",
+					"gid": "OGS-flux",
+					"pic": "OGS-flux.png",
+					"urlCode": ""
+				}, {
+					"eName": "Witch Pickings",
+					"name": "美妙巫师",
+					"gid": "OGS-witchpickings",
+					"pic": "OGS-witchpickings.png",
+					"urlCode": ""
+				}, {
+					"eName": "Easy Slider",
+					"name": "公路漂移",
+					"gid": "OGS-easyslider",
+					"pic": "OGS-easyslider.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Oil Mania",
+					"name": "狂热石油",
+					"gid": "OGS-oilmania",
+					"pic": "OGS-oilmania.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Gorilla Go Wild",
+					"name": "疯狂大猩猩",
+					"gid": "OGS-gorillagowild",
+					"pic": "OGS-gorillagowild.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Foxin Wins",
+					"name": "狐狸家族",
+					"gid": "OGS-foxinwins",
+					"pic": "OGS-foxinwins.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Chilli Gold",
+					"name": "黄金辣椒",
+					"gid": "OGS-chilligold",
+					"pic": "OGS-chilligold.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Miss Midas",
+					"name": "蜜达斯小姐",
+					"gid": "OGS-missmidas",
+					"pic": "OGS-missmidas.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "The Spin Lab",
+					"name": "旋转实验室",
+					"gid": "OGS-thespinlab",
+					"pic": "OGS-thespinlab.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Joker Jester",
+					"name": "滑稽小丑",
+					"gid": "OGS-jokerjester",
+					"pic": "OGS-jokerjester.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Jukepot",
+					"name": "音乐盒",
+					"gid": "OGS-jukepot",
+					"pic": "OGS-jukepot.png",
+					"urlCode": ""
+				}, {
+					"eName": "Merlin's Magic Respins",
+					"name": "梅林的魔法药剂",
+					"gid": "OGS-merlinsmagicrespins",
+					"pic": "OGS-merlinsmagicrespins.jpg",
+					"urlCode": ""
+				}
+			]
+		}, {
+			"type": "newGames",
+			"gameList": [
+				{
+					"eName": "Gangsters ",
+					"name": "黑手党",
+					"gid": "HAB-gangsters",
+					"pic": "HAB-gangsters.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Crystal Queen",
+					"name": "冰雪奇缘",
+					"gid": "QS-crystalqueen",
+					"pic": "QS-crystalqueen.png",
+					"urlCode": ""
+				}, {
+					"eName": "Gold Lab",
+					"name": "黄金实验室",
+					"gid": "QS-goldlab",
+					"pic": "QS-goldlab.png",
+					"urlCode": ""
+				}, {
+					"eName": "Sinbad",
+					"name": "辛巴达",
+					"gid": "QS-sinbad",
+					"pic": "QS-sinbad.png",
+					"urlCode": ""
+				}, {
+					"eName": "Babushkas",
+					"name": "俄罗斯老太",
+					"gid": "OGS-babushkas",
+					"pic": "OGS-babushkas.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Spectra",
+					"name": "光谱",
+					"gid": "OGS-spectra",
+					"pic": "OGS-spectra.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Sunset Delight",
+					"name": "日落余晖",
+					"gid": "OGS-sunsetdelight",
+					"pic": "OGS-sunsetdelight.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Illuminous",
+					"name": "嗨翻珠宝",
+					"gid": "QS-illuminous",
+					"pic": "QS-illuminous.png",
+					"urlCode": ""
+				}, {
+					"eName": "Emerald Isle",
+					"name": "翡翠岛",
+					"gid": "OGS-emeraldisle",
+					"pic": "OGS-emeraldisle.png",
+					"urlCode": ""
+				}, {
+					"eName": "Sevens High",
+					"name": "疯狂777",
+					"gid": "QS-sevenshigh",
+					"pic": "QS-sevenshigh.png",
+					"urlCode": ""
+				}, {
+					"eName": "The Wild Chase",
+					"name": "侠盗猎车手",
+					"gid": "QS-thewildchase ",
+					"pic": "QS-thewildchase.png",
+					"urlCode": ""
+				}, {
+					"eName": "Treasure Island",
+					"name": "宝藏岛",
+					"gid": "QS-treasureisland",
+					"pic": "QS-treasureisland.png",
+					"urlCode": ""
+				}, {
+					"eName": "Big Bad Wolf",
+					"name": "灰太狼",
+					"gid": "QS-bigbadwolf",
+					"pic": "QS-bigbadwolf.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Firestorm",
+					"name": "火暴",
+					"gid": "QS-firestorm",
+					"pic": "QS-firestorm.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Razortooth",
+					"name": "虎口狼牙",
+					"gid": "QS-razortooth",
+					"pic": "QS-razortooth.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Sparta",
+					"name": "斯巴达",
+					"gid": "HAB-sparta",
+					"pic": "HAB-sparta.png",
+					"urlCode": ""
+				}, {
+					"eName": "Dragon's Realm",
+					"name": "神龙之境",
+					"gid": "HAB-dragonsrealm",
+					"pic": "HAB-dragonsrealm.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Indian Cash Catcher",
+					"name": "印第安追梦",
+					"gid": "HAB-indiancashcatcher",
+					"pic": "HAB-indiancashcatcher.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Roman Empire",
+					"name": "罗马帝国",
+					"gid": "HAB-romanempire",
+					"pic": "HAB-romanempire.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Ruffled Up",
+					"name": "触电的小鸟",
+					"gid": "HAB-ruffledup",
+					"pic": "HAB-ruffledup.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Dragon Palace",
+					"name": "龙宫",
+					"gid": "OGS-dragonpalace",
+					"pic": "OGS-dragonpalace.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Zoom",
+					"name": "水果幻灯片",
+					"gid": "OGS-zoom",
+					"pic": "OGS-zoom.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Arcane Elements",
+					"name": "神秘元素",
+					"gid": "HAB-arcaneelements",
+					"pic": "HAB-arcaneelements.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Coyote Crash",
+					"name": "狼贼夺宝",
+					"gid": "HAB-coyotecrash",
+					"pic": "HAB-coyotecrash.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Mystic Fortune",
+					"name": "神秘宝藏",
+					"gid": "HAB-mysticfortune",
+					"pic": "HAB-mysticfortune.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Super Twister",
+					"name": "超级龙卷风",
+					"gid": "HAB-supertwister",
+					"pic": "HAB-supertwister.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Egyptian Rise",
+					"name": "埃及的崛起",
+					"gid": "OGS-egyptianrise",
+					"pic": "OGS-egyptianrise.jpg",
+					"urlCode": ""
+				}, {
+					"eName": "Giant Gems",
+					"name": "巨型宝石",
+					"gid": "OGS-giantgems",
+					"pic": "OGS-giantgems.jpg",
+					"urlCode": ""
+				}
+			]
+		}
+	]
+}

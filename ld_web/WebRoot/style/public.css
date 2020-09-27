@@ -1,0 +1,189 @@
+﻿/*public_banner 开始*/
+.public_banner{
+	height:301px;
+	background:url("../images/public_banner.jpg") no-repeat top center;	
+}
+.public_banner_bottom{
+	height:20px;
+	background:url("../images/vip_banner_bottom.png") repeat-x left top;	
+}
+/*public_banner 结束*/
+
+.public_date{
+	height:90px;
+	padding:22px 0;	
+	clear:both;
+	text-align:center;
+}
+.public_date .all{
+	width:90px;
+	height:68px;
+	padding-top:22px;
+	float:left;
+	background:url("../images/public_date_span.png") no-repeat;	
+}
+.public_date .all span{
+	display:inline-block;
+	width:90px;
+	text-align:center;
+	color:#4b4745;
+	font-size:13px;	
+}
+.public_date .all strong{
+	font-size:20px;
+	color:#fff;		
+}
+.public_date .date_list{
+	width:756px;
+	height:78px;
+	float:left;
+	margin-top:6px;
+	position:relative;
+	overflow:hidden;	
+	background:url("../images/public_date_bg.png") repeat-x left center;
+}
+.public_date .date_list .s_outer{
+	width:756px;
+	height:78px;
+	position:relative;
+	overflow:hidden;		
+}
+.public_date .date_list a{
+	display:inline-block;
+	width:78px;
+	height:60px;
+	padding-top:18px;
+	float:left;
+	background:url("../images/public_date_a.png") no-repeat;	
+	margin-left:30px;
+}
+.public_date .date_list a:hover,.public_date .date_list a.hover{
+	background:url("../images/public_date_ah.png") no-repeat;		
+}
+.public_date .date_list span{
+	display:inline-block;
+	width:78px;
+	font-size:13px;
+	height:15px;
+	line-height:15px;
+	text-align:center;	
+	color:#4b4745;
+}
+.public_date .date_list strong{
+	font-size:20px;
+	display:inline-block;
+	width:78px;
+	text-align:center;
+	color:#87827f;	
+}
+.public_date .date_list a:hover strong,.public_date .date_list a.hover strong{
+	color:#fff;	
+}
+.public_date .c_btn{
+	width:105px;
+	float:right;
+	height:45px;	
+	margin-top:22px;
+}
+.public_date .c_btn a{
+	display:inline-block;
+	width:50px;
+	height:45px;	
+}
+.public_date .c_btn .pre{
+	background:url("../images/public_date_pre.png") no-repeat;		
+	float:left;
+}
+.public_date .c_btn .pre:hover{
+	background:url("../images/public_date_pre_h.png") no-repeat;			
+}
+.public_date .c_btn .next{
+	background:url("../images/public_date_next.png") no-repeat;		
+	float:right;
+}
+.public_date .c_btn .next:hover{
+	background:url("../images/public_date_next_h.png") no-repeat;			
+}
+
+/*public_list 开始*/
+.public_list{
+	padding:10px 30px 100px 30px;
+	background:#e7e3e4;	
+	position:relative;
+	display:none;
+}
+.show{
+	display:block;	
+}
+.public_li{
+	padding:14px 44px;
+	background:url("../images/public_li.png") repeat-x left bottom;	
+}
+.public_li .ad_time dt{
+	height:18px;
+	line-height:18px;	
+}
+.public_li .ad_time dt span{
+	display:inline-block;
+	width:70px;	
+	height:18px;
+	background:url("../images/public_ad_time.png") no-repeat;
+	text-align:center;
+	font-family:"宋体";
+}
+.public_li .ad_time dd{
+	font-size:20px;
+	font-weight:bold;
+	color:#5a5d50;	
+}
+.public_li .ad_time dd em{
+	color:#c20000;	
+}
+.public_li h2{
+	font-size:18px;
+	font-weight:bold;
+	height:40px;
+	line-height:40px;	
+}
+.public_li h2 a{
+	color:#000;	
+}
+.public_li p{
+	line-height:160%;	
+}
+/*public_list 结束*/
+
+.page{
+	position:absolute;
+	right:40px;
+	bottom:40px;
+	margin:0;	
+}
+
+/*reg_play 开始*/
+.reg_play{
+	margin-bottom:28px;	
+	height:82px;
+	padding-top:21px;
+	background:#55524d;
+	text-align:center;	
+}
+.reg_play a{
+	display:inline-block;	
+	width:192px;
+	height:61px;
+	margin:0 7px;
+}
+.reg_play .reg{
+	background:url("../images/vip_reg.png");	
+}
+.reg_play .reg:hover{
+	background:url("../images/vip_reg_h.png");	
+}
+.reg_play .play{
+	background:url("../images/vip_play.png");	
+}
+.reg_play .play:hover{
+	background:url("../images/vip_play_h.png");	
+}
+/*reg_play 结束*/

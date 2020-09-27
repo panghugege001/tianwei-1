@@ -1,0 +1,720 @@
+﻿[
+	{
+		"eName": "Bollywood Story",
+		"name": "宝莱坞故事H5",
+		"id": "bollywoodstory_not_mobile",
+		"realid": "bollywoodstory_mobile_html",
+		"code": "bollywoodstory_not_mobile",
+		"pic": "bollywoodstory_mobile_html.jpg",
+		"type": "SLO",
+		"category": "NT",
+		"line": "",
+		"tag": [
+			"NEW"
+		]
+	}, {
+		"eName": "Warlords Crystals of Power",
+		"name": "战神-水晶力量H5",
+		"id": "warlords_not_mobile",
+		"realid": "warlords_mobile_html",
+		"code": "warlords_not_mobile",
+		"pic": "warlords_mobile_html.jpg",
+		"type": "SLO",
+		"category": "NT",
+		"line": "",
+		"tag": [
+			"NEW"
+		]
+	}, {
+		"eName": "Fairytale Legends: Hansel and Gretel",
+		"name": "童话传奇H5",
+		"id": "fairyhansel_not_mobile",
+		"realid": "fairyhansel_mobile_html",
+		"code": "fairyhansel_not_mobile",
+		"pic": "fairyhansel_mobile_html.jpg",
+		"type": "SLO",
+		"category": "NT",
+		"line": "",
+		"tag": [
+			"NEW"
+		]
+	}, {
+		"eName": "Secret of Christmas",
+		"name": "圣诞节的秘密H5",
+		"id": "secretsofchristmas_not_mobile",
+		"realid": "secretsofchristmas_mobile_html",
+		"code": "secretsofchristmas_not_mobile",
+		"pic": "secretsofchristmas_mobile_html.jpg",
+		"type": "SLO",
+		"category": "NT",
+		"line": "",
+		"tag": [
+			"NEW"
+		]
+	}, {
+		"eName": "Butterfly Staxx",
+		"name": "蝴蝶StaxxH5",
+		"id": "butterflystaxx_not_mobile",
+		"realid": "butterflystaxx_mobile_html",
+		"code": "butterflystaxx_not_mobile",
+		"pic": "butterflystaxx_mobile_html.jpg",
+		"type": "SLO",
+		"category": "NT",
+		"line": "",
+		"tag": [
+			"NEW"
+		]
+	}, {
+		"eName": "FairyTale Legends: Red Riding Hood",
+		"name": "红色童话传奇H5",
+		"id": "fairyred_not_mobile",
+		"realid": "fairyred_mobile_html",
+		"code": "fairyred_not_mobile",
+		"pic": "fairyred_mobile_html.jpg",
+		"type": "SLO",
+		"category": "NT",
+		"line": "",
+		"tag": [
+			"NEW"
+		]
+	}, {
+		"eName": "Wild Wild West",
+		"name": "狂野西部H5",
+		"id": "wildwildwest_not_mobile",
+		"realid": "wildwildwest_mobile_html",
+		"code": "wildwildwest_not_mobile",
+		"pic": "wildwildwest_mobile_html.jpg",
+		"type": "SLO",
+		"category": "NT",
+		"line": "",
+		"tag": [
+			"NEW"
+		]
+	}, {
+		"eName": "Flowers Christmas Edition",
+		"name": "花圣诞版H5",
+		"id": "flowerschristmas_not_mobile",
+		"realid": "flowerschristmas_mobile_html",
+		"code": "flowerschristmas_not_mobile",
+		"pic": "flowerschristmas_mobile_html.jpg",
+		"type": "SLO",
+		"category": "NT",
+		"line": "",
+		"tag": [
+			"NEW"
+		]
+	}, {
+		"eName": "Fruit Shop Christmas Edition",
+		"name": "水果店圣诞版H5",
+		"id": "fruitshopchristmas_not_mobile",
+		"realid": "fruitshopchristmas_mobile_html",
+		"code": "fruitshopchristmas_not_mobile",
+		"pic": "fruitshopchristmas_mobile_html.jpg",
+		"type": "SLO",
+		"category": "NT",
+		"line": "",
+		"tag": [
+			"NEW"
+		]
+	}, {
+		"eName": "Disco Spins",
+		"name": "迪斯科旋转",
+		"id": "discospins",
+		"code": "discospins",
+		"pic": "discospins.png",
+		"type": "SLO",
+		"category": "NT",
+		"line": "",
+		"tag": [
+			"NEW"
+		]
+	}, {
+		"eName": "The Legend of Shangrila",
+		"name": "香格里拉传奇",
+		"id": "shangrila_mobile_html",
+		"code": "shangrila_mobile_html",
+		"pic": "shangrila_mobile_html.jpg",
+		"type": "SLO",
+		"category": "NT",
+		"line": "",
+		"tag": [
+			"NEW"
+		]
+	}, {
+		"eName": "Planet of the Apes",
+		"name": "猿星球",
+		"id": "pota_mobile_html",
+		"code": "pota_mobile_html",
+		"pic": "pota_mobile_html.jpg",
+		"type": "SLO",
+		"category": "NT",
+		"line": "",
+		"tag": [
+			"NEW"
+		]
+	}, {
+		"eName": "Emoji Planet",
+		"name": "符号星球",
+		"id": "emoji_mobile_html",
+		"code": "emoji_mobile_html",
+		"pic": "emoji_mobile_html.jpg",
+		"type": "SLO",
+		"category": "NT",
+		"line": "",
+		"tag": [
+			"NEW"
+		]
+	}, {
+		"eName": "copycats_mobile_html",
+		"name": "复制猫",
+		"id": "copycats_mobile_html",
+		"code": "copycats_mobile_html",
+		"pic": "copycats_mobile_html.jpg",
+		"type": "SLO",
+		"category": "NT",
+		"line": "",
+		"tag": [
+			"HOT"
+		]
+	}, {
+		"eName": "wolfcub_mobile_html",
+		"name": "群狼会",
+		"id": "wolfcub_mobile_html",
+		"code": "wolfcub_mobile_html",
+		"pic": "wolfcub_mobile_html.jpg",
+		"type": "SLO",
+		"category": "NT",
+		"line": "",
+		"tag": [
+			"HOT"
+		]
+	}, {
+		"eName": "junglespirit_mobile_html",
+		"name": "森林舞会",
+		"id": "junglespirit_mobile_html",
+		"code": "junglespirit_mobile_html",
+		"pic": "junglespirit_mobile_html.jpg",
+		"type": "SLO",
+		"category": "NT",
+		"line": "",
+		"tag": [
+			"HOT"
+		]
+	}, {
+		"eName": "bloodsuckers2_mobile_html",
+		"name": "吸血鬼2",
+		"id": "bloodsuckers2_mobile_html",
+		"code": "bloodsuckers2_mobile_html",
+		"pic": "bloodsuckers2_mobile_html.jpg",
+		"type": "SLO",
+		"category": "NT",
+		"line": "",
+		"tag": [
+			"HOT"
+		]
+	}, {
+		"eName": "jokerpro_mobile_html",
+		"name": "专业小丑",
+		"id": "jokerpro_mobile_html",
+		"code": "jokerpro_mobile_html",
+		"pic": "jokerpro_mobile_html.jpg",
+		"type": "SLO",
+		"category": "NT",
+		"line": "",
+		"tag": [
+			"HOT"
+		]
+	}, {
+		"eName": "scruffyduck_mobile_html",
+		"name": "丑小鸭",
+		"id": "scruffyduck_mobile_html",
+		"code": "scruffyduck_mobile_html",
+		"pic": "scruffyduck_mobile_html.jpg",
+		"type": "SLO",
+		"category": "NT",
+		"line": "",
+		"tag": [
+			"HOT"
+		]
+	}, {
+		"eName": "highlights_mobile_html",
+		"name": "高光",
+		"id": "highlights_mobile_html",
+		"code": "highlights_mobile_html",
+		"pic": "highlights_mobile_html.jpg",
+		"type": "SLO",
+		"category": "NT",
+		"line": "",
+		"tag": [
+			"HOT"
+		]
+	}, {
+		"eName": "motorhead_mobile_html",
+		"name": "摩托头",
+		"id": "motorhead_mobile_html",
+		"code": "motorhead_mobile_html",
+		"pic": "motorhead_mobile_html.jpg",
+		"type": "SLO",
+		"category": "NT",
+		"line": "",
+		"tag": [
+			"HOT"
+		]
+	}, {
+		"eName": "nrvna_mobile_html",
+		"name": "涅槃",
+		"id": "nrvna_mobile_html",
+		"code": "nrvna_mobile_html",
+		"pic": "nrvna_mobile_html.jpg",
+		"type": "SLO",
+		"category": "NT",
+		"line": "",
+		"tag": [
+			"HOT"
+		]
+	}, {
+		"eName": "whenpigsfly_mobile_html",
+		"name": "飞天小猪",
+		"id": "whenpigsfly_mobile_html",
+		"code": "whenpigsfly_mobile_html",
+		"pic": "whenpigsfly_mobile_html.jpg",
+		"type": "SLO",
+		"category": "NT",
+		"line": "",
+		"tag": [
+			"HOT"
+		]
+	}, {
+		"name": "主题公园",
+		"eName": "theme park",
+		"id": "themepark_mobile_html",
+		"code": "themepark_mobile_html",
+		"pic": "themepark_mobile_html.jpg",
+		"type": "SLO",
+		"category": "NT",
+		"line": "",
+		"tag": [
+			"NEW"
+		]
+	}, {
+		"name": "足球",
+		"eName": "football",
+		"id": "football_mobile_html",
+		"code": "football_mobile_html",
+		"pic": "football_mobile_html.jpg",
+		"type": "SLO",
+		"category": "NT",
+		"line": "",
+		"tag": [
+			"NEW"
+		]
+	}, {
+		"name": "吉米",
+		"eName": "jimi hendrix",
+		"id": "jimihendrix_mobile_html",
+		"code": "jimihendrix_mobile_html",
+		"pic": "jimihendrix_mobile_html.jpg",
+		"type": "SLO",
+		"category": "NT",
+		"line": "",
+		"tag": [
+			"NEW"
+		]
+	}, {
+		"name": "绚丽",
+		"eName": "glow",
+		"id": "glow_mobile_html",
+		"code": "glow_mobile_html",
+		"pic": "glow_mobile_html.jpg",
+		"type": "SLO",
+		"category": "NT",
+		"line": "",
+		"tag": [
+			"NEW"
+		]
+	}, {
+		"name": "贴图",
+		"eName": "stickers",
+		"id": "stickers_mobile_html",
+		"code": "stickers_mobile_html",
+		"pic": "stickers_mobile_html.jpg",
+		"type": "SLO",
+		"category": "NT",
+		"line": "",
+		"tag": [
+			"NEW"
+		]
+	}, {
+		"name": "闪光",
+		"eName": "sparks",
+		"id": "sparks_mobile_html",
+		"code": "sparks_mobile_html",
+		"pic": "sparks_mobile_html.jpg",
+		"type": "SLO",
+		"category": "NT",
+		"line": "",
+		"tag": [
+			"NEW"
+		]
+	}, {
+		"name": "吸血鬼",
+		"eName": "dracula",
+		"id": "dracula_mobile_html",
+		"code": "dracula_mobile_html",
+		"pic": "dracula_mobile_html.jpg",
+		"type": "SLO",
+		"category": "NT",
+		"line": "",
+		"tag": [
+			"NEW"
+		]
+	}, {
+		"name": "金字塔",
+		"eName": "pyramid",
+		"id": "pyramid_mobile_html",
+		"code": "pyramid_mobile_html",
+		"pic": "pyramid_mobile_html.jpg",
+		"type": "SLO",
+		"category": "NT",
+		"line": "",
+		"tag": [
+			"NEW"
+		]
+	}, {
+		"name": "品塔斯",
+		"eName": "colossal pinatas",
+		"id": "colossalpinatas_mobile_html",
+		"code": "colossalpinatas_mobile_html",
+		"pic": "colossalpinatas_mobile_html.jpg",
+		"type": "SLO",
+		"category": "NT",
+		"line": "",
+		"tag": [
+			"NEW"
+		]
+	}, {
+		"name": "铁钩船长",
+		"eName": "hooks heroes",
+		"id": "hooksheroes_mobile_html",
+		"code": "hooksheroes_mobile_html",
+		"pic": "hooksheroes_mobile_html.jpg",
+		"type": "SLO",
+		"category": "NT",
+		"line": "",
+		"tag": [
+			"NEW"
+		]
+	}, {
+		"name": "萤火虫",
+		"eName": "fireflies",
+		"id": "fireflies_mobile_html",
+		"code": "fireflies_mobile_html",
+		"pic": "fireflies_mobile_html.jpg",
+		"type": "SLO",
+		"category": "NT",
+		"line": "",
+		"tag": [
+			"NEW"
+		]
+	}, {
+		"name": "魔法之门",
+		"eName": "magic portals",
+		"id": "magicportals_mobile_html",
+		"code": "magicportals_mobile_html",
+		"pic": "magicportals_mobile_html.jpg",
+		"type": "SLO",
+		"category": "NT",
+		"line": "",
+		"tag": [
+			"NEW"
+		]
+	}, {
+		"name": "南方公园2",
+		"eName": "south park2",
+		"id": "southpark2_mobile_html",
+		"code": "southpark2_mobile_html",
+		"pic": "southpark2_mobile_html.jpg",
+		"type": "SLO",
+		"category": "NT",
+		"line": "",
+		"tag": [
+			"NEW"
+		]
+	}, {
+		"name": "啊罗哈",
+		"eName": "aloha",
+		"id": "aloha_mobile_html",
+		"code": "aloha_mobile_html",
+		"pic": "aloha_mobile_html.jpg",
+		"type": "SLO",
+		"category": "NT",
+		"line": "",
+		"tag": [
+			"HOT"
+		]
+	}, {
+		"name": "魔法师",
+		"eName": "masterofmystery",
+		"id": "masterofmystery_mobile_html",
+		"code": "masterofmystery_mobile_html",
+		"pic": "masterofmystery_mobile_html.png",
+		"type": "SLO",
+		"category": "NT",
+		"line": "243",
+		"tag": []
+	}, {
+		"name": "赛车手",
+		"eName": "multipliermayhem",
+		"id": "multipliermayhem_mobile_html",
+		"code": "multipliermayhem_mobile_html",
+		"pic": "multipliermayhem_mobile_html.jpg",
+		"type": "SLO",
+		"category": "NT",
+		"line": "15",
+		"tag": []
+	}, {
+		"name": "枪炮玫瑰",
+		"eName": "gunsnroses",
+		"id": "gunsnroses_mobile_html",
+		"code": "gunsnroses_mobile_html",
+		"pic": "gunsnroses_mobile_html.jpg",
+		"type": "SLO",
+		"category": "NT",
+		"line": "20",
+		"tag": []
+	}, {
+		"name": "dazzle",
+		"eName": "dazzle",
+		"id": "dazzle_mobile_html",
+		"code": "dazzle_mobile_html",
+		"pic": "dazzle_mobile_html.jpg",
+		"type": "SLO",
+		"category": "NT",
+		"line": "",
+		"tag": []
+	}, {
+		"name": "霓虹灯",
+		"eName": "neonstaxx",
+		"id": "neonstaxx_mobile_html",
+		"code": "neonstaxx_mobile_html",
+		"pic": "neonstaxx_mobile_html.jpg",
+		"type": "SLO",
+		"category": "NT",
+		"line": "",
+		"tag": []
+	}, {
+		"name": "捷克哈默垂",
+		"eName": "jackhammer",
+		"id": "jackhammer_mobile_html",
+		"code": "jackhammer_mobile_html",
+		"pic": "jackhammer_mobile_html.jpg",
+		"type": "SLO",
+		"category": "NT",
+		"line": "",
+		"tag": []
+	}, {
+		"name": "隐形人",
+		"eName": "invisibleman",
+		"id": "invisibleman_mobile_html",
+		"code": "invisibleman_mobile_html",
+		"pic": "invisibleman_mobile_html.jpg",
+		"type": "SLO",
+		"category": "NT",
+		"line": "",
+		"tag": []
+	}, {
+		"name": "大爆炸",
+		"eName": "bigbang",
+		"id": "bigbang_mobile_html",
+		"code": "bigbang_mobile_html",
+		"pic": "bigbang_mobile_html.jpg",
+		"type": "SLO",
+		"category": "NT",
+		"line": "25",
+		"tag": [
+			"HOT"
+		]
+	}, {
+		"name": "吸血鬼",
+		"eName": "bloodsuckers",
+		"id": "bloodsuckers_mobile_html",
+		"code": "bloodsuckers_mobile_html",
+		"pic": "bloodsuckers_mobile_html.jpg",
+		"type": "SLO",
+		"category": "NT",
+		"line": "25",
+		"tag": [
+			"HOT"
+		]
+	}, {
+		"name": "贡左的探索",
+		"eName": "eldorado",
+		"id": "eldorado_mobile_html",
+		"code": "eldorado_mobile_html",
+		"pic": "eldorado_mobile_html.jpg",
+		"type": "SLO",
+		"category": "NT",
+		"line": "20",
+		"tag": [
+			"HOT"
+		]
+	}, {
+		"name": "花",
+		"eName": "flowers",
+		"id": "flowers_mobile_html",
+		"code": "flowers_mobile_html",
+		"pic": "flowers_mobile_html.jpg",
+		"type": "SLO",
+		"category": "NT",
+		"line": "30",
+		"tag": [
+			"NEW"
+		]
+	}, {
+		"name": "魔豆",
+		"eName": "jackandbeanstalk",
+		"id": "jackandbeanstalk_mobile_html",
+		"code": "jackandbeanstalk_mobile_html",
+		"pic": "jackandbeanstalk_mobile_html.png",
+		"type": "SLO",
+		"category": "NT",
+		"line": "20",
+		"tag": [
+			"HOT"
+		]
+	}, {
+		"name": "捷克哈默垂2",
+		"eName": "jackhammer2",
+		"id": "jackhammer2_mobile_html",
+		"code": "jackhammer2_mobile_html",
+		"pic": "jackhammer2_mobile_html.jpg",
+		"type": "SLO",
+		"category": "NT",
+		"line": "99",
+		"tag": []
+	}, {
+		"name": "神秘少女",
+		"eName": "mythicmaiden",
+		"id": "mythicmaiden_mobile_html",
+		"code": "mythicmaiden_mobile_html",
+		"pic": "mythicmaiden_mobile_html.jpg",
+		"type": "SLO",
+		"category": "NT",
+		"line": "30",
+		"tag": []
+	}, {
+		"name": "老虎机王",
+		"eName": "kingofslots",
+		"id": "kingofslots_mobile_html",
+		"code": "kingofslots_mobile_html",
+		"pic": "kingofslots_mobile_html.jpg",
+		"type": "SLO",
+		"category": "NT",
+		"line": "25",
+		"tag": [
+			"NEW"
+		]
+	}, {
+		"name": "星空",
+		"eName": "starburst",
+		"id": "starburst_mobile_html",
+		"code": "starburst_mobile_html",
+		"pic": "starburst_mobile_html.png",
+		"type": "SLO",
+		"category": "NT",
+		"line": "10",
+		"tag": [
+			"NEW"
+		]
+	}, {
+		"name": "海底城",
+		"eName": "subtopia",
+		"id": "subtopia_mobile_html",
+		"code": "subtopia_mobile_html",
+		"pic": "subtopia_mobile_html.jpg",
+		"type": "SLO",
+		"category": "NT",
+		"line": "20",
+		"tag": [
+			"NEW"
+		]
+	}, {
+		"name": "富贵猪",
+		"eName": "piggyriches",
+		"id": "piggyriches_mobile_html",
+		"code": "piggyriches_mobile_html",
+		"pic": "piggyriches_mobile_html.png",
+		"type": "SLO",
+		"category": "NT",
+		"line": "15",
+		"tag": [
+			"HOT"
+		]
+	}, {
+		"name": "冠军荣耀",
+		"eName": "victorious",
+		"id": "victorious_mobile_html",
+		"code": "victorious_mobile_html",
+		"pic": "victorious_mobile_html.jpg",
+		"type": "SLO",
+		"category": "NT",
+		"line": "243",
+		"tag": [
+			"HOT"
+		]
+	}, {
+		"name": "双向旋转",
+		"eName": "twinspin",
+		"id": "twinspin_mobile_html",
+		"code": "twinspin_mobile_html",
+		"pic": "twinspin_mobile_html.jpg",
+		"type": "SLO",
+		"category": "NT",
+		"line": "243",
+		"tag": []
+	}, {
+		"name": "龙卷风",
+		"eName": "tornado",
+		"id": "tornado_mobile_html",
+		"code": "tornado_mobile_html",
+		"pic": "tornado_mobile_html.png",
+		"type": "SLO",
+		"category": "NT",
+		"line": "20",
+		"tag": [
+			"NEW"
+		]
+	}, {
+		"name": "蒸汽巨塔",
+		"eName": "steamtower",
+		"id": "steamtower_mobile_html",
+		"code": "steamtower_mobile_html",
+		"pic": "steamtower_mobile_html.jpg",
+		"type": "SLO",
+		"category": "NT",
+		"line": "15",
+		"tag": [
+			"HOT"
+		]
+	}, {
+		"name": "水果铺",
+		"eName": "fruitshop",
+		"id": "fruitshop_mobile_html",
+		"code": "fruitshop_mobile_html",
+		"pic": "fruitshop_mobile_html.jpg",
+		"type": "SLO",
+		"category": "NT",
+		"line": "15",
+		"tag": []
+	}, {
+		"name": "卷轴旋转",
+		"eName": "reelrush",
+		"id": "reelrush_mobile_html",
+		"code": "reelrush_mobile_html",
+		"pic": "reelrush_mobile_html.jpg",
+		"type": "SLO",
+		"category": "NT",
+		"line": "全赔",
+		"tag": []
+	}
+]

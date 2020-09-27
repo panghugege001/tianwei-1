@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE validators PUBLIC "-//OpenSymphony Group//XWork Validator 1.0.2//EN"
+ "http://struts.apache.org/dtds/xwork-validator-1.0.2.dtd">
+
+<validators>
+	<field name="bank">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message>银行类别必填</message>
+		</field-validator>
+	</field>
+	<field name="accountName">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message>账户姓名必填</message>
+		</field-validator>
+	</field>
+	<field name="accountType">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message>账户类型必填</message>
+		</field-validator>
+	</field>
+	<field name="accountCity">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message>开户城市必填</message>
+		</field-validator>
+	</field>
+	<field name="bankAddress">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message>开户网点必填</message>
+		</field-validator>
+	</field>
+	<field name="accountNo">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message>银行帐号必填</message>
+		</field-validator>
+	</field>
+</validators>

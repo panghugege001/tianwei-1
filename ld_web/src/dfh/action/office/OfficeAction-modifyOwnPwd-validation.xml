@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE validators PUBLIC "-//OpenSymphony Group//XWork Validator 1.0.2//EN"
+ "http://struts.apache.org/dtds/xwork-validator-1.0.2.dtd">
+
+<validators>
+	<field name="oldPassword">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message>请输入当前密码</message>
+		</field-validator>
+	</field>
+	<field name="newPassword">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message>请输入新密码</message>
+		</field-validator>
+		<field-validator type="stringlength">
+			<param name="minLength">6</param>
+			<param name="maxLength">12</param>
+			<message>密码长度在6-12位</message>
+		</field-validator>
+	</field>
+	<field name="retypePassword">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message>请重复输入新密码</message>
+		</field-validator>
+		<field-validator type="fieldexpression">
+			<param name="expression">
+				newPassword.equals(retypePassword) 
+			</param>
+			<message>重复密码必须和新密码一致</message>
+		</field-validator>
+	</field>
+</validators>

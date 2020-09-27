@@ -1,0 +1,203 @@
+.main-wrap > .container > .content input[type=checkbox] {
+  margin-top: 0;
+}
+.main-wrap > .container > .content > ul > li {
+  border-bottom: 1px solid #ccc;
+}
+.main-wrap > .container > .content > ul > li.active .title {
+  background-color: #D0D1CC;
+  color: #262d38;
+}
+.main-wrap > .container > .content > ul > li.active .title:BEFORE {
+  transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  /* IE 9 */
+  -moz-transform: rotate(90deg);
+  /* Firefox */
+  -webkit-transform: rotate(90deg);
+  /* SafariChrome */
+  -o-transform: rotate(90deg);
+}
+.main-wrap > .container > .content > ul > li.active .page {
+  display: inline-block;
+  width: 100%;
+}
+.main-wrap > .container > .content > ul > li .title {
+  position: relative;
+  width: 100%;
+  padding: .2em;
+  font-size: 1.5em;
+  text-align: left;
+  letter-spacing: 3px;
+  background-color: #0056AD;
+  color: #fff;
+}
+.main-wrap > .container > .content > ul > li .title:BEFORE {
+  display: inline-block;
+  transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  /* IE 9 */
+  -moz-transform: rotate(0deg);
+  /* Firefox */
+  -webkit-transform: rotate(0deg);
+  /* SafariChrome */
+  -o-transform: rotate(0deg);
+  transition: transform 0.5s ease-in-out;
+  -webkit-transition: transform 0.5s ease-in-out;
+  -moz-transition: transform 0.5s ease-in-out;
+  -o-transition: transform 0.5s ease-in-out;
+  -ms-transition: transform 0.5s ease-in-out;
+}
+ .content > ul > li .page {
+  display: none;
+}
+.content > ul > li .page .content-in {
+  display: block;
+  padding: 1em 12px;
+  line-height: 100%;
+  /*background-color: #fff;*/
+  max-width:750px;
+  margin:0 auto;
+}
+.page .content-in ol,.page .content-in ul {
+  padding-left: 20px;
+}
+table{
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+td,th{border:1px solid #fff;}
+.my-table{width:100%;}
+.my-table td{
+  background:#e3e1e1;
+  color:#4e4e4e;
+  padding:5px 3px;
+}
+.my-table th{
+  background:#2abc7a;
+  color:#fff;
+  padding:5px 3px;
+}
+
+
+.page .content-in .s-title {
+padding: .8em 0 .5em 0;
+line-height: 150%;
+font-size: 100%;
+}
+
+.page .content-in table {
+  width: 100%;
+  border: 1px solid #A0C3FE;
+  font-size: 80%;
+  text-align: center;
+}
+.page .content-in th {
+  text-align: center;
+  background-color: #3787D7;
+  color: #fff;
+}
+
+.main-wrap > .container > .content > ul > li.active .page{
+  background: #f1f1f1;
+}
+.coop-inputs{
+  position: relative;
+}
+.coop-inputs .message{
+ height:24px;
+  line-height: 24px;
+  font-size:90%;
+}
+.coop-inputs input{
+  border:0;
+  height:40px;
+  width:100%;
+  background: #fff;
+  border-radius: 6px;
+  padding: 0 10px;
+}
+input[placeholder]{
+  font-size:12px;
+}
+.agent-btn{
+  height:42px;
+  width:100%;
+  line-height: 42px;
+  text-align: center;
+  border:0;
+  background: #a50000;
+  color:#fff;
+  border-radius: 8px;
+  margin:15px 0;
+}
+.agreement{
+  display:inline-block;
+  padding:0 5px 5px 5px;
+  font-size:90%;
+  text-decoration: underline;
+  color:#cf3636;
+}
+.red{color:#cf3636;}
+.agent-image{
+  position: absolute;
+  right: 2px;
+  top: 44px;
+  border-radius: 0 8px 8px 0;
+  height:41px;
+  width:122px;
+}
+.agreement-box{
+  position:fixed;
+  height:100%;
+  width:100%;
+  top:-100%;
+  left:0;
+  background: rgba(0,0,0,0.6);
+  display:none;
+  transition: 0.5s top ease-in;
+}
+.agreement-box-in{
+  background:#f1f1f1;
+  padding:5% 2% 40px;
+}
+.agreement-detail h2{
+  font-size: 120%;
+  color:#111;
+}.agreement-detail h3{
+   font-size: 110%;
+ }
+.agreement-detail h4{
+  font-size: 90%;
+}
+.agreement-detail p{
+  font-size: 90%;
+}
+.agreement-detail .agreement-title{
+ text-align: center;
+  font-size:118%;
+}
+.agreement-detail{
+  padding:0 10px;
+  max-height:100%;
+}
+.agreement-detail .hzbox{
+  max-height:80%; overflow:scroll;
+}
+.agent-close-btn{
+  display:block;
+  width:100px;
+  height:40px;
+  line-height: 40px;
+  text-align: center;
+  background: #a50000; color:#fff;
+  border-radius: 50px;
+  margin:10px auto;
+}
+
+@media screen and (max-width:320px){
+  .agreement-detail .hzbox{
+    max-height:80%; overflow:scroll;
+  }
+
+}

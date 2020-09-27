@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE validators PUBLIC "-//OpenSymphony Group//XWork Validator 1.0.2//EN"
+ "http://struts.apache.org/dtds/xwork-validator-1.0.2.dtd">
+
+<validators>
+	<field name="title">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message>请选择用户类型</message>
+		</field-validator>
+	</field>
+	<field name="loginname">
+		<field-validator type="requiredstring" short-circuit="true">
+			<param name="trim">true</param>
+			<message>请输入帐号</message>
+		</field-validator>
+	</field>
+	<field name="amount">
+		<field-validator type="required" short-circuit="true">
+			<param name="trim">true</param>
+			<message>请输入提款额度</message>
+		</field-validator>
+		<field-validator type="double">
+			<param name="minInclusive">1</param>
+			<param name="maxInclusive">200000</param>
+			<message>提款金额在 ${minInclusive}和 ${maxInclusive}之间</message>
+		</field-validator>
+	</field>
+	<field name="accountNo">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message>请填写银行帐号</message>
+		</field-validator>
+	</field>
+	<field name="accountName">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message>请填写帐号姓名</message>
+		</field-validator>
+	</field>
+	<field name="accountType">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message>请填写账户类型</message>
+		</field-validator>
+	</field>
+	<field name="accountCity">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message>请填写开户城市</message>
+		</field-validator>
+	</field>
+	<field name="bankAddress">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message>请填写银行网点</message>
+		</field-validator>
+	</field>
+	<!--
+		<field name="phone"> <field-validator type="requiredstring"> <param
+		name="trim">true</param> <message>请填写电话号码</message> </field-validator>
+		</field>
+	-->
+</validators>

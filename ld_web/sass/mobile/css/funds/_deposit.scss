@@ -1,0 +1,86 @@
+.deposit-content{
+
+   	>ul{
+	
+		>li{
+			margin-bottom: 3px;
+			
+			background-color: #fff;
+			
+				
+			@include box-shadow(0px 1px 3px #777);
+			
+			&.active{
+			
+				.title{
+					
+					background-color: $primary2;
+    				color: $primary;
+				}
+				
+				.page{
+					display:inline-block;
+				}
+			}
+			
+			.title{
+				display: inline-block;
+			    width:100%;
+			    
+				letter-spacing: 3px;
+			    font-size:1.5em;
+				line-height: 2em;
+    			text-indent: .5em;
+			    text-align: left;
+				
+				background-color: $primary;
+			  	color: #fff;
+						
+			}
+			
+			.page{
+				display:none;
+			    width:100%;
+				
+				.remark{
+		    		font-size: 150%;
+		    	    
+					color: #517BBD;
+				}
+				
+				.weixin-message{
+					padding:10px;
+					
+					text-align:center;
+					
+					color:red;
+				}
+				
+				table{
+				    width:100%;
+				  	border: 1px solid $primary;
+				  	
+				  	th{
+					    padding: 5px;
+					    border-bottom: 1px solid $primary;
+					    
+					    text-align: center;
+					    font-size:80%;
+					    
+					    background-color: $primary;
+					    color:#fff;
+					}
+					
+					td {
+					    padding: 5px;
+					    border-bottom: 1px solid $primary;
+					    
+					    text-align: center;
+					    font-size:80%;
+					}
+				}
+			}
+		}
+	}
+}
+

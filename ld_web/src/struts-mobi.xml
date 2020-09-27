@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN" "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<package name="mobile" namespace="/mobi" extends="json-default">
+		<action class="MobileMemberActionClass" name="mwgLogin"  method="mwgLogin"></action>    
+		<action class="MobileMemberActionClass" name="login" method="mobileLogin"></action>
+		<action class="MobileMemberActionClass" name="logout" method="mobileLogout"></action>
+		<action class="MobileMemberActionClass" name="getDepositRedEnvelopeData"  method="mobileGetDepositRedEnvelopeData"/>
+		<action class="MobileMemberActionClass" name="register" method="mobileRegister"></action>
+		<action class="MobileMemberActionClass" name="registerAgent" method="mobileRegisterAgent"></action>
+		<action class="MobileMemberActionClass" name="modifyPassword" method="mobileModifyPassword"></action>
+		<action class="MobileMemberActionClass" name="transfer" method="mobileTransfer"></action>
+		<action class="MobileMemberActionClass" name="queryHistory" method="mobileQueryHistory"></action>
+		<action class="MobileMemberActionClass" name="credit" method="mobileCredit"></action>
+		<action class="MobileMemberActionClass" name="gameAmount" method="mobileGameAmount"></action>
+		<action class="MobileMemberActionClass" name="bankData" method="mobileBankData"></action>
+		<action class="MobileMemberActionClass" name="bindBankNo" method="mobileBindBankNo"></action>
+		<action class="MobileMemberActionClass" name="isBindBankNo" method="isBindBankNo"></action>
+		<action class="MobileMemberActionClass" name="withdrawl" method="mobileWithdraw"></action>
+		<action class="MobileMemberActionClass" name="verifyDeposit" method="mobileVerifyDeposit"></action>
+		<action class="MobileMemberActionClass" name="getWorkThirdPartyPayments" method="mobileGetWorkThirdPartyPayments"></action>
+		<action class="MobileMemberActionClass" name="thirdPartyPayment" method="mobileThirdPartyPayment"></action>
+		<action class="MobileMemberActionClass" name="getFastBankInfo" method="mobileGetFastBankInfo"></action>
+		<action class="MobileMemberActionClass" name="getRemark" method="mobileGetRemark"></action>
+		<action class="MobileMemberActionClass" name="findPasswordByEmail" method="modifyFindPasswordByEmail"></action>
+		<action class="MobileMemberActionClass" name="findPasswordByPhone" method="modifyFindPasswordByPhone"></action>
+		<action class="MobileMemberActionClass" name="getGame" method="mobileGetGame"></action>
+		<action class="MobileMemberActionClass" name="getXimaData" method="mobileGetXimaData"></action>
+		<action class="MobileMemberActionClass" name="doXima" method="mobileDoXima"></action>
+		<action class="MobileMemberActionClass" name="checkSecurityUser" method="mobileCheckSecurityUser"></action>
+		<action class="MobileMemberActionClass" name="sendSmsCode" method="mobileSendSmsCode"></action>
+		<action class="MobileMemberActionClass" name="sendVoiceCode" method="mobileSendVoiceCode"></action>
+		<action class="MobileMemberActionClass" name="queryPTLosePromo" method="mobileQueryPTLosePromo"></action>
+		<action class="MobileMemberActionClass" name="optLosePromo" method="mobileOptLosePromo"></action>
+		<action class="MobileMemberActionClass" name="queryBetOfPlatform" method="mobileQueryBetOfPlatform"></action>
+		<action class="MobileMemberActionClass" name="queryBetOfPlatformWeek" method="mobileQueryBetOfPlatformWeek"></action>
+		<action class="MobileMemberActionClass" name="checkUpgrade" method="mobileCheckUpgrade"></action>
+		<action class="MobileMemberActionClass" name="queryPTBigBang" method="mobileQueryPTBigBang"></action>
+		<action class="MobileMemberActionClass" name="getPTBigBangBonus" method="mobileGetPTBigBangBonus"></action>
+		<action class="MobileMemberActionClass" name="queryCreditlogs" method="mobileQueryCreditlogs"></action>
+		<action class="MobileMemberActionClass" name="getProposalType" method="mobileGetProposalType"></action>
+		<action class="MobileMemberActionClass" name="querySubProposal" method="mobileQuerySubProposal"></action>
+		<action class="MobileMemberActionClass" name="queryPlatformDetails" method="mobileQueryPlatformDetails"></action>
+		<action class="MobileMemberActionClass" name="queryAgentBetProfit" method="mobileQueryAgentBetProfit"></action>
+		<action class="MobileMemberActionClass" name="queryAgentSubUserInfo" method="mobileQueryAgentSubUserInfo"></action>
+		<action class="MobileMemberActionClass" name="queryAgentCommission" method="mobileQueryAgentCommission"></action>
+		<action class="MobileMemberActionClass" name="queryPtCommission" method="mobileQueryPtCommission"></action>
+		<action class="MobileMemberActionClass" name="modifyInfo" method="mobileModifyInfo"></action>
+		<action class="MobileMemberActionClass" name="getQuestion" method="mobileGetQuestion"></action>
+		<action class="MobileMemberActionClass" name="mSaveQuestion" method="mobileSaveQuestion"></action>
+		<action class="MobileMemberActionClass" name="getAllNews" method="mobileGetAllNews"></action>
+		<action class="MobileMemberActionClass" name="getGPIGame" method="mobileGetGPIGame"></action>
+		<action class="MobileMemberActionClass" name="getQTGame" method="mobileGetQTGame"></action>
+		<action class="MobileMemberActionClass" name="gameH5MGS" method="gameH5MGS"></action>
+		<action class="MobileMemberActionClass" name="gameH5CQ9" method="gameH5CQ9"></action>
+		<action class="MobileMemberActionClass" name="gameH5PG" method="gameH5PG"></action>
+		<action class="MobileMemberActionClass" name="getNTGame" method="mobileGetNTGame" />
+		<action class="MobileMemberActionClass" name="gamePNGMobile" method="gamePNGMobile"></action>
+		<action class="MobileMemberActionClass" name="sendAlipayPhoneVoiceCode" method="mobileSendAlipayPhoneVoiceCode"></action>
+		<action class="MobileMemberActionClass" name="sendAlipayPhoneSmsCode" method="mobileSendAlipayPhoneSmsCode"></action>
+		<action class="MobileMemberActionClass" name="makeCall" method="mobileMakeCall"></action>
+		<action class="MobileMemberActionClass" name="getSportGame" method="mobileGetSportGame"></action>
+		<action class="MobileMemberActionClass" name="getKENO2" method="mobileGetKENO2"></action>
+		<action class="MobileMemberActionClass" name="agentReport" method="mobileAgentReport"></action>
+		<action class="MobileMemberActionClass" name="transferInforCoupon" method="mobileTransferInforCoupon"></action>
+		<action class="MobileMemberActionClass" name="transferInforRedCoupon" method="mobileTransferInforRedCoupon"></action>
+		<action class="MobileMemberActionClass" name="queryWeekSentReccords" method="mobileQueryWeekSentReccords"></action>
+		<action class="MobileMemberActionClass" name="optWeekSent" method="mobileOptWeekSent"></action>
+		<action class="MobileMemberActionClass" name="getBBINGame" method="mobileGetBBINGame"></action>
+		<action class="MobileMemberActionClass" name="querySignMoney" method="mobileQuerySignMoney"></action>
+		<action class="MobileMemberActionClass" name="doSign" method="mobileDoSign"></action>
+		<action class="MobileMemberActionClass" name="signStatus" method="mobileSignStatus"></action>
+		<action class="MobileMemberActionClass" name="transferInforSign" method="mobileTransferInforSign"></action>
+		<action class="MobileMemberActionClass" name="queryEmail" method="mobileQueryEmail"></action>
+		<action class="MobileMemberActionClass" name="readEmail" method="mobileReadEmail"></action>
+		<action class="MobileMemberActionClass" name="unreadEmailCount" method="mobileUnreadEmailCount"></action>
+		<action class="MobileMemberActionClass" name="getAlipayAccount" method="mobileGetAlipayAccount"></action>
+		<action class="MobileMemberActionClass" name="getZFBBankInfo" method="mobileGetZFBBankInfo"></action>
+		<action class="MobileMemberActionClass" name="saveAlipayAccount" method="mobileSaveAlipayAccount"></action>
+		<action class="MobileMemberActionClass" name="queryPoints" method="mobileQueryPoints"></action>
+		<action class="MobileMemberActionClass" name="transferPoints" method="mobileTransferPoints"></action>
+		<action class="MobileMemberActionClass" name="getYouhuiData" method="mobileGetYouhuiData"></action>
+		<action class="MobileMemberActionClass" name="doYouhui" method="mobileDoYouhui"></action>
+		<action class="MobileMemberActionClass" name="queryFriendBonue" method="mobileQueryFriendBonue"></action>
+		<action class="MobileMemberActionClass" name="transferFriend" method="mobileTransferFriend"></action>
+		<action class="MobileMemberActionClass" name="isOpenWeixin" method="mobileIsOpenWeixin"></action>
+		<action class="MobileMemberActionClass" name="getWorkWeixin" method="mobileGetWorkWeixin"></action>
+		<action class="MobileMemberActionClass" name="getDCardPayWork" method="mobileGetDCardPayWork"></action>
+		<action class="MobileMemberActionClass" name="dCardPay" method="mobileDCardPay"></action>
+		<action class="MobileMemberActionClass" name="getPhoneAndCode" method="mobileGetPhoneAndCode"></action>
+		<action class="MobileMemberActionClass" name="checkSameInfo" method="mobileCheckSameInfo"></action>
+		<action class="MobileMemberActionClass" name="getAllPayments" method="mobileGetAllPayments"></action>
+		<action class="MobileMemberActionClass" name="checkValidCode" method="mobileCheckValidCode"></action>
+		<action class="MobileMemberActionClass" name="checkPhoneCode" method="mobileCheckPhoneCode"></action>
+		<action class="MobileMemberActionClass" name="checkRepeatBankCards" method="mobileCheckRepeatBankCards"></action>
+		<action class="MobileMemberActionClass" name="experienceSendSmsCode" method="mobileExperienceSendSmsCode"></action>
+		<action class="MobileMemberActionClass" name="getExperience" method="mobileGetExperience"></action>
+		<action class="MobileMemberActionClass" name="ticketLogin" method="mobileTicketLogin"></action>
+		<action class="MobileMemberActionClass" name="getEmigratedStatus" method="mobileGetEmigratedStatus"></action>
+		<action class="MobileMemberActionClass" name="applyEmigrated" method="mobileApplyEmigrated"></action>
+		<action class="MobileMemberActionClass" name="getEmigratedAward" method="mobileGetEmigratedAward"></action>
+		<action class="MobileMemberActionClass" name="transferEmigrated" method="mobileTransferEmigrated"></action>
+		<action class="MobileMemberActionClass" name="loginTTG" method="mobileLoginTTG"></action>
+		<action class="MobileMemberActionClass" name="loginDT" method="mobileloginDT"></action>
+		<action class="MobileMemberActionClass" name="systemConfig" method="mobileSystemConfig"></action>
+		<action class="MobileMemberActionClass" name="getWXValidateDepositInfo" method="mobileWXValidateDepositInfo"></action>
+		<action class="MobileMemberActionClass" name="gameAginRedirect" method="mobileGetAginGame" />
+		<action class="MobileMemberActionClass" name="getEbetToken" method="mobileGetEbetToken" />
+		<action class="MobileMemberActionClass" name="getWorkZfbqr2" method="mobileGetWorkZfbqr2"></action>
+		<!-- app下载彩金 -->
+		<action class="MobileMemberActionClass" name="checkForAppPreferential" method="checkForAppPreferential" />
+		<action class="MobileMemberActionClass" name="getAppPreferential" method="mobileGetAppPreferential" />
+
+		<action class="MobileMemberActionClass" name="mobileSignLottery" method="mobileSignLottery" />
+
+		<action name="gamePTRedirect" class="dfh.action.customer.BaseAction" method="gameLogin">
+			<result name="success">/mobile/ptMobileLogin.jsp</result>
+			<result name="error" type="redirect">/mobile/index.jsp</result>
+		</action>
+		
+		<!-- 获取DT奖池 -->
+		<action class="MobileMemberActionClass" name="dtJackpot" method="mobileDtJackpot"></action>
+		
+		<!-- 微信秒存 -->
+		<action class="MobileMemberActionClass" name="getWxDeposti" method="mobileGetWxDeposti"></action>  
+		
+		<!-- 通联支付 -->
+		<action class="MobileMemberActionClass" name="getGatherDeposti" method="mobileGetGatherDeposti"></action>     
+		
+		<action name="gamePNGRedirect" class="dfh.action.customer.BaseAction" method="gamePNGRedirect">
+			<result name="success">/WEB-INF/pages/gamePNGRedirectMobile.jsp</result>
+			<result name="error" type="redirect">/mobile/index.jsp</result>
+		</action>
+
+		<action name="gameKenoRedirect2" class="dfh.action.customer.BaseAction" method="gameLogin">
+			<result name="success">/WEB-INF/pages/gameKenoRedirect2Mobile.jsp</result>
+			<result name="error" type="redirect">/mobile/index.jsp</result>
+		</action>
+		<action name="gameAgRedirect" class="dfh.action.customer.BaseAction" method="gameLogin">
+			<result name="success">/WEB-INF/pages/gameAgRedirectMobile.jsp</result>
+			<result name="error" type="redirect">/mobile/index.jsp</result>
+		</action>
+		<action name="gameSport" class="dfh.action.customer.BaseAction" method="gameSport">
+			<result name="success">/WEB-INF/pages/gameSportContentMobile.jsp</result>
+			<result name="error" type="redirect">/mobile/index.jsp</result>
+		</action>
+		<action name="gameKenoRedirect" class="dfh.action.customer.BaseAction" method="gameLogin">
+			<result name="success">/WEB-INF/pages/gameKenoRedirectMobile.jsp</result>
+			<result name="error" type="redirect">/mobile/index.jsp</result>
+		</action>
+
+		<action name="gameSixLottery" class="dfh.action.customer.BaseAction" method="gameSixLottery">
+			<result name="success">/WEB-INF/pages/gameSixLotteryContent.jsp</result>
+			<result name="error" type="redirect">/mobile/index.jsp</result>
+		</action>
+
+		<action name="gameGPIMobile" class="dfh.action.customer.BaseAction" method="gameGPIMobile">
+			<result name="success">/WEB-INF/pages/gameGPI.jsp</result>
+			<result name="error" type="redirect">/mobile/index.jsp</result>
+		</action>
+		<action name="gameNTwoAppRedirect" class="dfh.action.customer.BaseAction" method="gameNTwoAppRedirect">
+			<result name="success">/WEB-INF/pages/gameNTwoAppRedirect.jsp</result>
+			<result name="error" type="redirect">/mobile/index.jsp</result>
+		</action>
+		<action name="gameNTwoRedirect" class="dfh.action.customer.BaseAction" method="gameNTwoRedirect">
+			<result name="success">/WEB-INF/pages/gameNTwoRedirectMobile.jsp</result>
+			<result name="error" type="redirect">/mobile/index.jsp</result>
+		</action>
+		
+		<action name="mobileValidateCode" class="dfh.action.pub.MobileValidateImageAction">
+			<param name="wordLength">4</param>
+			<param name="width">250</param>
+			<param name="height">84</param>
+			<result type="stream"></result>
+		</action>
+		
+	</package>
+</struts>

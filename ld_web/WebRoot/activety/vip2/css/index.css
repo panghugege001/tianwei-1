@@ -1,0 +1,500 @@
+@charset "utf-8";
+*{ -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+*:before,
+*:after{ -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+/** 清除内外边距 **/
+*{ margin: 0; padding: 0;}
+a{ text-decoration: none;}
+img{ border: none;}
+
+/* structural elements 结构元素 */
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote,
+/* list elements 列表元素 */
+dl, dt, dd, ul, ol, li,
+/* text formatting elements 文本格式元素 */
+pre,
+/* form elements 表单元素 */
+form, fieldset, legend, button, input, textarea,
+/* table elements 表格元素 */
+th, td { margin: 0; padding: 0;}
+
+/** 设置默认字体 **/
+body, pre, button, input, select, textarea /* for ie */
+{ font: 14px/1.6 tahoma, arial, 'Microsoft YaHei', sans-serif;}
+
+/** 重置文档高度 **/
+html, body{ height: 100%;}
+body{ color: #c1c1c1;}
+
+h1, h2, h3, h4, h5, h6{ font-size: 100%; font-weight: normal;}
+/* 将斜体扶正 */
+address, cite, dfn, em, var{ font-style: normal;}
+/* 统一等宽字体 */
+code, kbd, pre, samp{ font-family: courier new, courier, monospace;}
+/* 小于 12px 的中文很难阅读，让 small 正常化 */
+small{ font-size: 12px;}
+
+
+/** 重置列表元素 **/
+ul, ol{ list-style: none;}
+/** 重置文本格式元素 **/
+a{ text-align: center; text-decoration: none; color: inherit;}
+a:focus{ outline: none;}
+
+
+/** 重置表单元素 **/
+legend{ color: #000;} /* for ie6 */
+fieldset, img{ border: 0; vertical-align: middle}
+/* 使得表单元素在 ie 下能继承字体大小 */
+button, input, select, textarea{ font-size: 100%;}
+/*表单元素字体*/
+input, textarea, button{ font: 14px/1.6 Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', 微软雅黑, Arial, sans-serif; outline: 0;}
+
+input[type='button'], input[type='submit'], button{ cursor: pointer;}
+button:focus{ outline: none;}
+
+input[type='button'], input[type='submit'], input[type='reset'], button{ /*input[type="file"]::-webkit-file-upload-button,*/
+    border: 1px solid transparent;}
+
+/*设置表单元素不可用的样式*/
+input[readonly],
+input:disabled,
+button:disabled,
+button[readonly],
+textarea:disabled{ color: #545454!important; background-color: #ccc!important;}
+input[readonly]:hover,
+input:disabled:hover,
+button:disabled:hover,
+button[readonly]:hover,
+textarea:disabled:hover{ cursor: not-allowed;}
+
+/** placeholder 重置 **/
+[placeholder]{ font-family: 'Microsoft yahei';}
+::-moz-placeholder{ text-indent: 5px; /* 没有用 */ opacity: 1!important; color: #bbb;}
+:-ms-input-placeholder{ text-indent: 5px; color: #bbb;}
+::-webkit-input-placeholder{ text-indent: 5px; color: #bbb;}
+
+/** 重置表格元素 **/
+table{ border-spacing: 0; border-collapse: collapse;}
+
+/* #滚动条
+=========*/
+::-webkit-scrollbar{ width: 8px; height: 8px;}
+
+::-webkit-scrollbar-track-piece{ margin: -2px; background-color: #eee;}
+
+::-webkit-scrollbar-thumb{ min-width: 150px; min-height: 150px; border-radius: 10px; background: #aaa;}
+
+::-webkit-scrollbar-thumb:vertical:hover{ background: #555;}
+
+::-webkit-scrollbar-thumb:horizontal:hover{ background: #555;}
+
+.vip_body{
+	background: #FFFFFF;
+}
+.vip_bannar{
+	background: url(../img/vip_bannar.jpg) no-repeat;
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	height: 1080px;
+}
+.vip_bannar .bannar_text{
+	text-align: center;
+	padding-top: 90px;
+}
+
+.container .vip_listbox ul li{
+	float: left;
+	margin-left: 30px;
+}
+
+.container .vip_listbox ul li:first-child{
+	margin-left: 0px;
+}
+.container .vip_listbox{
+	padding: 0px;
+	padding-top: 550px;
+	margin-bottom: 40px;
+	height: 660px;
+}
+.container .vip_listbox ul li a{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}
+
+.container .section{
+    background: #EEEEEE;
+    border-radius: 30px;
+    width: 100%;
+	float: left;
+    margin-top: 40px;
+    margin-bottom: 40px;    
+}
+
+.container .section .section_title1 .title1_img{
+	text-align: center;
+    display: inline-block;
+    margin-bottom: 30px;
+    width: 100%;
+}
+.container .section .section_title1 .section_list .row ul li span{
+	text-align: center;
+	width: 100%;
+	display: inline-block;
+}
+.container .section .section_title1 .section_list .row ul li label{
+	width: 100%;
+	text-align: center;
+	color: #666666;
+	margin-top: 10px;
+}
+
+.section_table1{
+	clear: both;
+}
+
+.section_table1 .vip_table1 table{
+	width: 100%;
+}
+.section_table1 .vip_table1 table tr th{
+	background: #2c8ba3;
+	color: #FFFFFF;
+	height: 55px;
+	line-height: 55px;
+	border: 1px solid #FFFFFF;
+	text-align: center;
+}
+
+.section_table1 .vip_table1 table tr td{
+	height: 40px;
+	line-height: 40px;
+	border: 1px solid #FFFFFF;
+	color: #666666;
+	background: #cccccc;
+	text-align: center;
+}
+.section_table1 .vip_table1{
+	background: #dfa85a;
+	padding: 45px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;	
+}
+.section2{
+    clear: both;
+    text-align: center;
+    margin-top: 40px;
+    border-radius: 30px;
+    min-height: 645px;
+    background: #eeeeee;	
+}
+
+.section2 .vip_box{
+    padding: 60px;	
+}
+
+.section2 .section_title1{
+
+}
+.section2 .section_title1 .title1_img{
+    display: inline-block;
+    width: 100%;	
+}
+.vip_box ul li{
+    background: url(../img/vip_lv.png) no-repeat;
+    height: 90px;
+    float: left;
+    background-position: center;
+	cursor: pointer;
+	padding-top: 10px;	
+}
+
+.vip_box ul .active{
+background: url(../img/vip_bj.png) no-repeat;
+    height: 127px;
+    float: left;
+    background-position: center;
+    cursor: pointer;
+    /* padding-top: 10px; */
+    margin-top: -20px;
+}
+.vip_box ul .active i{
+    background: url(../img/vip_lv_jh.png) no-repeat;
+    width: 126px;
+    height: 126px;
+    display: inline-block;
+    position: absolute;
+    left: 56px;
+    padding-top: 8px;
+    margin-top: 7px;
+}
+.vip_box ul .active i span:nth-of-type(2){
+	padding-left: 3px;
+}
+.vip_box ul li span{
+	display: inline-block;
+    width: 100%;
+    text-align: center;
+    color: #666666;
+    font-size: 16px;
+}
+
+.vip_box ul li i{
+ font-style:normal	
+}
+
+.vip_box ul .active span{
+	color: #FFFFFF;
+    text-align: left;
+    text-indent: 15px;
+}
+
+.section2 .vip_table2{
+	background: #dfa85a;
+    padding: 45px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;	
+    clear: both;    
+}
+.vip_icon{
+    background: url(../img/vip_lv_jh.png) no-repeat;
+    height: 90px;
+    float: left;
+    width: 100%;
+    background-position: center;
+	cursor: pointer;
+	padding-top: 10px;
+	position: relative;	
+}
+.vip_table2 table{
+	width: 100%;
+}
+
+.vip_table2 table tr th {
+    background: #2c8ba3;
+    color: #FFFFFF;
+    height: 55px;
+    line-height: 55px;
+    border: 1px solid #FFFFFF;
+    text-align: center;
+}
+
+.vip_table2 table  tr td {
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #FFFFFF;
+    color: #666666;
+    background: #cccccc;
+    text-align: center;
+}
+.vip_body .header{
+	display: none;
+}
+
+.vip_icon .user_vip{
+    position: absolute;
+    left: 43px;
+    font-size: 16px;
+    color: #fff;
+    top: 6px;
+}
+
+.vip_icon .user_lv{
+    position: absolute;
+    left: 44px;
+    top: 24px;
+    font-size: 16px;
+    color: #fff;	
+}
+
+.section3{
+    clear: both;
+    text-align: center;
+    margin-top: 40px;
+    border-radius: 30px;
+    min-height: 551px;
+    background: #eeeeee;	
+    margin-bottom: 40px;
+    color: #666666;    
+}
+
+.section3 .section_title1 .title1_img {
+    display: inline-block;
+    width: 100%;
+}
+
+.section3 .huodong{
+    padding: 60px 120px;
+    font-size: 16px;
+}
+.section3 .huodong ul li{
+	text-align: left;
+	line-height: 30px;	
+}
+.section3 .huodong ul li span{
+	color: #dfa85a;
+}
+
+.guize{
+	padding: 60px 120px;
+    font-size: 16px;
+    background: #DFA85A;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.vip_body .header{
+	height: 50px;
+	line-height: 50px;
+	background:#000000;
+}
+
+.guize p{
+text-align: left;
+    color: #fff;
+    line-height: 35px;	
+}
+
+.vip_table2{
+	display: none;
+}
+#zhizun{
+	text-indent: 9px;
+}
+
+.vip_table2 table tr th:nth-of-type(1){
+	width: 10.5%;
+}
+.vip_table2 table tr th:nth-of-type(2){
+	width: 44.5%;
+}
+.vip_table2 table tr th:nth-of-type(3){
+	width: 44.5%;
+}
+
+
+
+#header .header-top-wp .f_flat span:nth-of-type(1){
+top: -2px;	
+}
+
+
+
+@media (min-width: 1200px){
+.vip_body .container {
+    width: 1200px;
+}	
+}
+
+@media screen and (max-width:768px){
+.container .section .section_title1 .section_list .row ul li span{
+	width: 100%;
+    float: left;
+    display: inline-block;	
+}
+
+.container .vip_listbox ul li:first-child{
+	margin-left: 0px;
+    width: 100%;
+    text-align: center;	
+}
+.container .vip_listbox ul li{
+	margin-left: 0px;
+    width: 100%;
+    text-align: center;		
+}
+fieldset, img{
+	max-width: 100%;
+}
+.container{
+	padding: 0px;
+}
+.section_list .row ul li{
+	width: 50%;
+	float: left;
+}
+#clear{
+clear: both;	
+}
+.section_table1 .vip_table1{
+	padding: 0px;
+}
+.section2 .vip_table2{
+	padding: 0px;
+}
+
+.vip_icon{
+	background: none;
+}
+.vip_icon .user_lv{
+	position: initial;
+}
+.vip_icon .user_vip{
+	position: initial;	
+}
+.section3 .huodong{
+	padding: 20px;
+}
+.guize{
+	padding: 20px;
+}
+.section2 .vip_box{
+	padding: 0px;
+    padding-top: 10px;	
+}
+.vip_box ul li{
+	background: none;
+	height: auto;
+	padding: 0px;
+	margin: 0px;
+	width: 50%;
+	float: left;
+	background-color: #DFA85A;
+	color: #FFFFFF;
+}
+.vip_box ul .active{
+	background: #2c8ba3;
+	height: auto;
+	margin: 0px;
+	padding: 0px;
+}
+.vip_box ul .active i{
+	width: auto;
+	height: auto;
+	position: initial;
+	margin: 0px;
+	padding: 0px;
+}
+.vip_box ul .active span{
+	color: #FFFFFF;
+}
+.vip_box ul .active span{
+	text-align: center;
+	text-indent: initial;
+}
+.vip_box ul li span{
+	color: #FFFFFF;
+}
+.container .vip_listbox{
+	padding-top: 50px;
+}
+.vip_body .header{
+	display: block;
+}
+#header .header-top-wp{
+	display: none;
+}
+.gb-footer{
+	display: none;
+}
+
+#asidebar{
+	display: none;
+}
+.container{
+	width: 100% !important;
+}
+#header{
+	min-width:100% !important;
+	}
+}

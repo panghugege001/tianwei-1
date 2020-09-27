@@ -1,0 +1,3266 @@
+[
+    {
+        "eName": "Fire Queen2",
+        "name": "火之女王2",
+        "code": "186",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "fireQueen2.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "HUGA",
+        "name": "野蛮世界",
+        "code": "BU02",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "huga.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Empress Wu",
+        "name": "武媚娘",
+        "code": "BU05",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "empressWu.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Dragon Ball",
+        "name": "龙珠",
+        "code": "185",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "dragonBall.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "JumpHigh",
+        "name": "跳高高",
+        "code": "52",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "jumpHigh.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "RaveJump",
+        "name": "跳起来",
+        "code": "7",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "raveJump.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Jump High 2",
+        "name": "跳高高2",
+        "code": "179",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "jumpHigh2.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "JumpHigher",
+        "name": "跳更高",
+        "code": "99",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "jumpHigher.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "LuckyBats",
+        "name": "五福临门",
+        "code": "10",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "luckyBats.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "FlyOut",
+        "name": "飞起来",
+        "code": "111",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "flyOut.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "God of War",
+        "name": "武圣",
+        "code": "31",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "godofWar.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Good Fortune",
+        "name": "鸿福齐天",
+        "code": "50",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "goodFortune.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Zeus",
+        "name": "宙斯",
+        "code": "64",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "zeus.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "jumping mobile",
+        "name": "单手跳高高",
+        "code": "105",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "jumpingmobile.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "DiscoNight",
+        "name": "蹦迪",
+        "code": "205",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "discoNight.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Move n' Jump",
+        "name": "跳过来",
+        "code": "138",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "moven'Jump.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "FaCaiShen",
+        "name": "发财神",
+        "code": "69",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "faCaiShen.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Fa Cai Shen2",
+        "name": "发财神2",
+        "code": "160",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "faCaiShen2.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "DiscoNight M",
+        "name": "直式蹦迪",
+        "code": "137",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "discoNightM.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Fire Queen",
+        "name": "火之女王",
+        "code": "83",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "fireQueen.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "THOR",
+        "name": "雷神",
+        "code": "89",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "tHOR.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "RaveJump2",
+        "name": "跳起来2",
+        "code": "24",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "raveJump2.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Six Candy",
+        "name": "六颗糖",
+        "code": "153",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "sixCandy.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Wolf Disco",
+        "name": "野狼Disco",
+        "code": "183",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "wolfDisco.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Good Fortune M",
+        "name": "直式洪福齐天",
+        "code": "133",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "goodFortuneM.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Fire Chibi 2",
+        "name": "火烧连环船2",
+        "code": "140",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "fireChibi2.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "5 God Beasts",
+        "name": "东方神起",
+        "code": "117",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "5GodBeasts.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "God of War M",
+        "name": "直式武圣",
+        "code": "127",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "godofWarM.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "ZhongKui",
+        "name": "钟馗运财",
+        "code": "9",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "zhongKui.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "GuGuGu",
+        "name": "金鸡报喜",
+        "code": "15",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "guGuGu.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Cricket Fever",
+        "name": "板球狂热",
+        "code": "188",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "cricketFever.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Chameleon",
+        "name": "变色龙",
+        "code": "79",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "chameleon.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Snow Queen",
+        "name": "冰雪女王",
+        "code": "115",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "snowQueen.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "WaterWorld",
+        "name": "水世界",
+        "code": "29",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "waterWorld.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Flying Cai Shen",
+        "name": "飞天财神",
+        "code": "113",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "flyingCaiShen.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "SoSweet",
+        "name": "甜蜜蜜",
+        "code": "8",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "soSweet.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "RaveHigh",
+        "name": "嗨起来",
+        "code": "203",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "raveHigh.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Rave Jump mobile",
+        "name": "单手跳起來",
+        "code": "109",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "raveJumpmobile.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Kronos",
+        "name": "宙斯他爹",
+        "code": "154",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "kronos.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "TreasureBowl",
+        "name": "聚宝盆",
+        "code": "74",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "treasureBowl.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "6 Toros",
+        "name": "666",
+        "code": "173",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "6Toros.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "GuGuGu2",
+        "name": "金鸡报囍2",
+        "code": "58",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "guGuGu2.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Fire Chibi",
+        "name": "火烧连环船",
+        "code": "33",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "fireChibi.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Heracles",
+        "name": "大力神",
+        "code": "161",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "heracles.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Flower Fortunes",
+        "name": "花开富贵",
+        "code": "147",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "flowerFortunes.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Double Fly",
+        "name": "双飞",
+        "code": "152",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "doubleFly.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Hephaestus",
+        "name": "火神",
+        "code": "142",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "hephaestus.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "HappyRichYear",
+        "name": "好运年年",
+        "code": "72",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "happyRichYear.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "MuayThai",
+        "name": "拳霸",
+        "code": "201",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "muayThai.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Fa Cai Shen M",
+        "name": "直式发财神",
+        "code": "131",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "faCaiShenM.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Super5",
+        "name": "五行",
+        "code": "16",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "super5.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "FruitKing",
+        "name": "钻石水果王",
+        "code": "1",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "fruitKing.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Gu Gu Gu 3",
+        "name": "金鸡报囍3",
+        "code": "180",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "guGuGu3.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Wing Chun",
+        "name": "咏春",
+        "code": "187",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "wingChun.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "TreasureHouse",
+        "name": "金玉满堂",
+        "code": "12",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "treasureHouse.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Water Margin",
+        "name": "水浒传",
+        "code": "BU01",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "waterMargin.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "LuckyBats M",
+        "name": "直式五福临门",
+        "code": "123",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "luckyBatsM.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Fa Cai Fu Wa",
+        "name": "发财福娃",
+        "code": "143",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "faCaiFuWa.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Wonderland",
+        "name": "梦游仙境",
+        "code": "116",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "wonderland.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Zeus M",
+        "name": "直式宙斯",
+        "code": "125",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "zeusM.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Mr.Rich",
+        "name": "金大款",
+        "code": "5",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "mr.Rich.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Wheel Money",
+        "name": "转大钱",
+        "code": "128",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "wheelMoney.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Ne Zha Advent",
+        "name": "哪吒再临",
+        "code": "163",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "neZhaAdvent.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "OrientalBeauty",
+        "name": "舞媚娘",
+        "code": "202",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "orientalBeauty.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Invincible Elephant",
+        "name": "锁象无敌",
+        "code": "124",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "invincibleElephant.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "5 Boxing",
+        "name": "五形拳",
+        "code": "157",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "5Boxing.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "WildTarzan",
+        "name": "森林泰后",
+        "code": "4",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "wildTarzan.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Apollo",
+        "name": "阿波罗",
+        "code": "78",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "apollo.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Fire Chibi M",
+        "name": "直式火烧连环船",
+        "code": "139",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "fireChibiM.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "VampireKiss",
+        "name": "血之吻",
+        "code": "3",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "vampireKiss.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Golden Eggs",
+        "name": "赚金蛋",
+        "code": "67",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "goldenEggs.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Wolf Moon",
+        "name": "狼月",
+        "code": "46",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "wolfMoon.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "The Beast War",
+        "name": "神兽争霸",
+        "code": "57",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "theBeastWar.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "YuanBao",
+        "name": "金元宝",
+        "code": "23",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "yuanBao.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Shou-Xin",
+        "name": "寿星大发",
+        "code": "150",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "shou-Xin.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Funny Alpaca",
+        "name": "火草泥马",
+        "code": "54",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "funnyAlpaca.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "GreatLion",
+        "name": "祥狮献瑞",
+        "code": "17",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "greatLion.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Fortune Totem",
+        "name": "有如神柱",
+        "code": "148",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "fortuneTotem.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "HotSpin",
+        "name": "风火轮",
+        "code": "19",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "hotSpin.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "WuKong&Peaches",
+        "name": "悟空偷桃",
+        "code": "68",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "wuKong&Peaches.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "SkrSkr",
+        "name": "老司机",
+        "code": "118",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "skrSkr.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "TreasureIsland",
+        "name": "金银岛",
+        "code": "81",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "treasureIsland.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Dracula",
+        "name": "黯夜公爵",
+        "code": "56",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "dracula.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Dragon Heart",
+        "name": "魔龙传奇",
+        "code": "55",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "dragonHeart.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Gemstone",
+        "name": "钻饱宝",
+        "code": "114",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "gemstone.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Pyramid Raider",
+        "name": "盗法老墓",
+        "code": "112",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "pyramidRaider.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Running Animals",
+        "name": "奔跑吧猛兽",
+        "code": "136",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "runningAnimals.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "ZumaWild",
+        "name": "印加祖玛",
+        "code": "122",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "zumaWild.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Apsaras",
+        "name": "飞天",
+        "code": "39",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "apsaras.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Mine at home",
+        "name": "家里有矿",
+        "code": "134",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "mineathome.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "RedPhoenix",
+        "name": "火凤凰",
+        "code": "77",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "redPhoenix.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "RaveJump2 M",
+        "name": "直式跳起来2",
+        "code": "121",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "raveJump2M.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Wonderland2",
+        "name": "梦游仙境2",
+        "code": "11",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "wonderland2.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Sky Lanterns",
+        "name": "九连宝灯",
+        "code": "146",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "skyLanterns.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Casting Gold",
+        "name": "印金工厂",
+        "code": "145",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "castingGold.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "888",
+        "name": "发发发",
+        "code": "20",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "888.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Dragon Boat",
+        "name": "龙舟",
+        "code": "149",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "dragonBoat.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Ecstatic Circus",
+        "name": "嗨爆大马戏",
+        "code": "51",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "ecstaticCircus.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "The Ghouls",
+        "name": "寻龙诀",
+        "code": "63",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "theGhouls.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Diamond treasure",
+        "name": "钻更多",
+        "code": "144",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "diamondtreasure.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Gong He Xin Xi",
+        "name": "恭贺新禧",
+        "code": "43",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "gongHeXinXi.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "WanBaoDino",
+        "name": "万饱龙",
+        "code": "70",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "wanBaoDino.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "ChickyParmParm",
+        "name": "海滨消消乐",
+        "code": "104",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "chickyParmParm.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Sherlock Holmes",
+        "name": "福尔摩斯",
+        "code": "42",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "sherlockHolmes.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "GodOfChess",
+        "name": "棋圣",
+        "code": "2",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "godOfChess.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "RunningToro",
+        "name": "牛逼快跑",
+        "code": "86",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "runningToro.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Six Gacha",
+        "name": "六颗扭蛋",
+        "code": "184",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "sixGacha.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "JewelLuxury",
+        "name": "宝石配对",
+        "code": "103",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "jewelLuxury.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "FruitKingII",
+        "name": "豪华水果王",
+        "code": "44",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "fruitKingII.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "777",
+        "name": "777",
+        "code": "26",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "777.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "MahjongKing",
+        "name": "雀王",
+        "code": "18",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "mahjongKing.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "All Wilds",
+        "name": "舞力全开",
+        "code": "38",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "allWilds.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Darts Championship",
+        "name": "镖王争霸",
+        "code": "40",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "dartsChampionship.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Football star",
+        "name": "世界杯明星",
+        "code": "93",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "footballstar.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Super8",
+        "name": "超级发",
+        "code": "45",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "super8.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Fire777",
+        "name": "火爆777",
+        "code": "66",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "fire777.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Detective Dee2",
+        "name": "狄仁杰四大天王",
+        "code": "221",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "detectiveDee2.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Gold Stealer",
+        "name": "偷金妹子",
+        "code": "130",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "goldStealer.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "SuperDiamonds",
+        "name": "非常钻",
+        "code": "62",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "superDiamonds.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Fortune Cats",
+        "name": "喵财进宝",
+        "code": "AR02",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "fortuneCats.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Lotus",
+        "name": "莲",
+        "code": "48",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "lotus.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Zombie's Fortune",
+        "name": "僵尸的宝藏",
+        "code": "AR39",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "zombie'sFortune.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "FruityCarnival",
+        "name": "水果派对",
+        "code": "102",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "fruityCarnival.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "CQ9Humming",
+        "name": "宾果消消消",
+        "code": "100",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "jellypopHumming.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Love Night",
+        "name": "来电99",
+        "code": "53",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "loveNight.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Gu Gu Gu M",
+        "name": "直式金鸡报喜",
+        "code": "135",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "guGuGuM.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "SummerMood",
+        "name": "夏日猩情",
+        "code": "59",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "summerMood.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Water Balloons",
+        "name": "水球大战",
+        "code": "41",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "waterBalloons.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Detective Dee",
+        "name": "通天神探狄仁杰",
+        "code": "32",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "detectiveDee.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Warrior legend",
+        "name": "三国序",
+        "code": "30",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "warriorlegend.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Gophers War",
+        "name": "地鼠战役",
+        "code": "34",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "gophersWar.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Pharaoh's Gold",
+        "name": "法老宝藏",
+        "code": "47",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "pharaoh'sGold.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Paywire",
+        "name": "疯狂赚钞票",
+        "code": "BA203",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "paywire.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "WonWonWon",
+        "name": "旺旺旺",
+        "code": "76",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "wonWonWon.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Piggy Farm",
+        "name": "转珠猪",
+        "code": "126",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "piggyFarm.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "All Star Team",
+        "name": "世界杯全明星",
+        "code": "98",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "allStarTeam.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Five Ghosts",
+        "name": "五鬼运财",
+        "code": "AR11",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "fiveGhosts.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Magic World",
+        "name": "魔法世界",
+        "code": "27",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "magicWorld.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Meow",
+        "name": "再喵一个",
+        "code": "132",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "meow.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Poseidon",
+        "name": "传奇海神",
+        "code": "80",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "poseidon.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Typhoon Cash",
+        "name": "8级台风",
+        "code": "AR12",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "typhoonCash.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "SakuraLegend",
+        "name": "樱花妹子",
+        "code": "13",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "sakuraLegend.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Wild Magic",
+        "name": "奇幻魔术",
+        "code": "84",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "wildMagic.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Football Baby",
+        "name": "足球宝贝",
+        "code": "96",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "footballBaby.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "PokerSLOT",
+        "name": "扑克拉霸",
+        "code": "25",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "pokerSLOT.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Backyard Gold",
+        "name": "此地无银300两",
+        "code": "AR03",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "backyardGold.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Lonely Planet",
+        "name": "寂寞星球",
+        "code": "49",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "lonelyPlanet.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "The Magic Brush",
+        "name": "妙笔生财",
+        "code": "AR01",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "theMagicBrush.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Doggone Lucky",
+        "name": "汪财进宝",
+        "code": "AR13",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "doggoneLucky.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "WorldCup Field",
+        "name": "世界杯球场",
+        "code": "97",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "worldCupField.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "MONKEY KING",
+        "name": "齐天大圣",
+        "code": "BU04",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "mONKEYKING.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "God of Cookery",
+        "name": "食神",
+        "code": "28",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "godofCookery.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "GettingEnergies",
+        "name": "集电宝",
+        "code": "87",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "gettingEnergies.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Five Lucky Elements",
+        "name": "五运",
+        "code": "AR23",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "fiveLuckyElements.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "StarMatching",
+        "name": "星星消消乐",
+        "code": "101",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "starMatching.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Double Happy",
+        "name": "囍",
+        "code": "AR14",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "doubleHappy.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Rabbit Rampage",
+        "name": "守株待兔",
+        "code": "AR16",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "rabbitRampage.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Beauty & Beast",
+        "name": "美女与野兽",
+        "code": "BA202",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "beauty&Beast.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "World Cup Russia 2018",
+        "name": "2018世界杯",
+        "code": "92",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "worldCupRussia2018.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "LuckyBoxes",
+        "name": "百宝箱",
+        "code": "204",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "luckyBoxes.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Dragon Pachinko",
+        "name": "招财龙小钢珠",
+        "code": "GO169",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "dragonPachinko.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Dou Di Zhu",
+        "name": "斗地主经典版",
+        "code": "AR04",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "douDiZhu.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Football Jerseys",
+        "name": "世界杯球衣",
+        "code": "94",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "footballJerseys.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Wealthy Chicken",
+        "name": "富贵金鸡",
+        "code": "AR29",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "wealthyChicken.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "MonkeyOfficeLegend",
+        "name": "庶务西游二课",
+        "code": "22",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "monkeyOfficeLegend.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Hu Got Lucky",
+        "name": "隔壁王二不曾偷",
+        "code": "AR09",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "huGotLucky.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Eternal Fortune",
+        "name": "财运亨通",
+        "code": "AR18",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "eternalFortune.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Stone to Gold",
+        "name": "点石成金",
+        "code": "AR08",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "stonetoGold.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Dragon Gate",
+        "name": "鱼跃龙门",
+        "code": "AR05",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "dragonGate.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Xiao Fu Xing",
+        "name": "麻将小福星",
+        "code": "AR24",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "xiaoFuXing.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Xmas",
+        "name": "圣诞来啦",
+        "code": "141",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "xmas.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Ba Xian Chuan Qi",
+        "name": "八仙传奇",
+        "code": "AR25",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "baXianChuanQi.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Le Cirque",
+        "name": "马戏团连连发",
+        "code": "AR17",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "leCirque.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Golden Mayan",
+        "name": "黄金玛雅",
+        "code": "AS08",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "goldenMayan.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Magpie Bridge",
+        "name": "鹊桥",
+        "code": "AR21",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "magpieBridge.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "BigWolf",
+        "name": "野狼传说",
+        "code": "21",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "bigWolf.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Football Boots",
+        "name": "世界杯球鞋",
+        "code": "95",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "footballBoots.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Dou Di Zhu Plus",
+        "name": "斗地主升级版",
+        "code": "AR41",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "douDiZhuPlus.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Love Story",
+        "name": "爱琴海",
+        "code": "AR15",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "loveStory.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Lotus Lantern",
+        "name": "宝莲灯",
+        "code": "AR20",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "lotusLantern.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Pub Tycoon",
+        "name": "夜店大亨",
+        "code": "36",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "pubTycoon.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Mazu",
+        "name": "妈祖传奇",
+        "code": "AR22",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "mazu.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Jungle Treasure",
+        "name": "丛林宝藏",
+        "code": "AR06",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "jungleTreasure.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Pig Of Luck",
+        "name": "猪的运气",
+        "code": "AS33",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "pigOfLuck.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Hungry Cats",
+        "name": "贪吃猫",
+        "code": "AR28",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "hungryCats.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Burn the Office",
+        "name": "火烧办公处",
+        "code": "AU03",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "burntheOffice.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Kickin' Kash",
+        "name": "功夫小神通",
+        "code": "AR07",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "kickin'Kash.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Sheng Xiao Chuan Qi",
+        "name": "生肖传奇",
+        "code": "AR26",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "shengXiaoChuanQi.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Fortune Spirits",
+        "name": "财富幽灵",
+        "code": "AS04",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "fortuneSpirits.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Dragon Hunters",
+        "name": "驯龙高手",
+        "code": "AS03",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "dragonHunters.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Treasure of Seti",
+        "name": "塞特的宝藏",
+        "code": "AS17",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "treasureofSeti.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Lucky 3",
+        "name": "幸运3",
+        "code": "AS10",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "lucky3.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Meow Meow",
+        "name": "喵喵",
+        "code": "AU01",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "meowMeow.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Feed the Zombie",
+        "name": "丧尸大餐",
+        "code": "AU02",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "feedtheZombie.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Wild Fudge",
+        "name": "疯狂软糖",
+        "code": "AS18",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "wildFudge.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Unlikelyroyals",
+        "name": "不太可能的王室",
+        "code": "AKunlikelyroyals",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "unlikelyroyals.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Oh Crap",
+        "name": "厕所囧境",
+        "code": "AU06",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "ohCrap.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Cirque de fous",
+        "name": "疯狂马戏团",
+        "code": "AS02",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "cirquedefous.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Queen Of Dead",
+        "name": "死亡女王",
+        "code": "AS20",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "queenOfDead.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Hollywood Pets",
+        "name": "好莱坞宠物",
+        "code": "AS09",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "hollywoodPets.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Strange Encounter",
+        "name": "异外来客",
+        "code": "AU05",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "strangeEncounter.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Ellasriches",
+        "name": "艾拉的财富",
+        "code": "AKellasriches",
+        "category": "CQ9s",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "ellasriches.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Snowwild",
+        "name": "雪野生",
+        "code": "AKsnowwild",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "snowwild.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    },
+    {
+        "eName": "Goddessofasia",
+        "name": "亚洲女神",
+        "code": "AKgoddessofasia",
+        "category": "CQ9",
+        "type": "SLO",
+        "subType": "",
+        "line": "",
+        "state": 1,
+        "pic": "goddessofasia.jpg",
+        "tag": [
+            "SLO",
+            "NEW",
+            "HOT"
+        ]
+    }
+]

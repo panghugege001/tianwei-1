@@ -1,0 +1,100 @@
+@import "base/common";
+
+body>.main-wrap>.content{
+	input[type=checkbox]{
+		margin-top:0;
+	}
+
+	.swiper-wrapper{
+		height:auto;
+		
+		.swiper-slide{
+			height:auto;
+    		width: 100% !important;
+		}
+	}
+	
+	
+	>ul{
+	
+		>li{
+			margin-bottom: 3px;
+			
+			background-color: #fff;
+			
+			@include box-shadow(0px 1px 3px #777);
+			
+			&.active{
+			
+				.title{
+					background-color: $primary2;
+					
+				    color:$primary;
+				    
+				}
+				.page{
+					display:block;
+				}
+			}
+			
+			.title{
+				display: inline-block;
+			    width:100%;
+				
+			    font-size:1.5em;
+				line-height: 2em;
+    			text-indent: .5em;
+			    text-align: left;
+				
+				background-color: $primary;
+			  	color: #fff;
+						
+			}
+			
+			.page{
+				display:none;
+				
+				.content{
+				    display: inline-block;
+					padding: 1em .5em;
+					
+				    line-height: 100%;
+				    
+					background-color:#fff;
+					
+				    ol,ul{
+				    	padding-left: 20px;
+				    }
+				    
+				    p{
+				    	padding:.5em 0 .5em 0;
+	 							line-height: 150%;
+	 							font-size: 90%;
+					}
+					
+					a{
+						color:$primary;
+					}
+					
+					table{
+	  					width: 100%;
+				  		border: 1px solid $primary;
+				  		
+						font-size: 80%;
+						text-align: center;
+						
+						th{
+					    	border-bottom: 1px solid $primary;
+					    	
+							text-align: center;
+							font-weight: normal;
+							
+							background-color:$primary;
+							color:#fff;
+						}
+					}
+				}
+			}
+		}
+	}
+}

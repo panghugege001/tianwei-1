@@ -1,0 +1,315 @@
+@charset "utf-8";
+/* CSS Document */
+*{ padding:0; margin:0; font:12px '宋体',Arial; color:#b1aa9e;}
+img{ border:none;}
+.clear{ clear:both;}
+.news-txt2{color:#b1aa9e;}
+/*会员登录*/
+#memberlogincontent{background:url(images/memberlogin_bg.jpg) no-repeat; width:656px; height:409px; margin-top:17px; margin-bottom:21px; padding-left:325px;}
+#membertitle{ width:177px; height:19px; padding-top:75px; padding-left:25px;}
+#memberform{ width:294px; height:173px;padding-left:56px; padding-top:16px;#height:162px;#padding-top:27px; border:#251923 solid 1px; margin-top:23px; background-color:#0d0310; }
+#memberform label{ vertical-align:middle;}
+.memberinput{ width:155px; height:20px; line-height:20px; border:#2a1a2a solid 1px; background:none; margin-left:6px;_margin-left:3px;}
+.codecon{ margin-top:12px; #margin-bottom:-12px;}
+.memberuser{ margin-bottom:0;}
+.codenumtxt{ float:left; width:auto; line-height:20px;}
+.codenuminput{ float:left;width:85px; height:20px; line-height:20px; border:#2a1a2a solid 1px; background:none; margin-left:6px;}
+.random{ float:left; width:60px; height:23px; margin-left:10px;}
+.memberloginbtn{ background:url(images/memberlogin_btnbg.jpg) no-repeat; width:64px; height:25px; border:none; margin-top:13px; margin-left:56px;}
+.lostbtn{ background:url(images/lost_bg.jpg) no-repeat; width:100px; height:25px; border:none; margin-top:13px; margin-left:10px;}
+/*会员登录*/
+/*index1*/
+#aftercontainercon{ background:#0c0213 url(images/index1_bg.jpg) repeat-x;width:100%; height:100%;overflow-x:hidden;}
+#afterbulletincon{float:left; width:auto; margin-left:21px;_margin-left:10px; height:23px; background:url(images/afterbulletin_bg.jpg) no-repeat; line-height:23px; padding-left:75px; color:#828385;}
+.managementbtn{ float:left;background:url(images/management_bg.jpg) no-repeat; width:72px; height:22px; margin-left:11px; }
+.exitbtn{ float:left; background:url(images/exit_bg.jpg) no-repeat; width:47px; height:22px;margin-left:9px; }
+/*index1*/
+/*账户管理01*/
+#managementcontent{ background:url(images/managementcon_bg.jpg) no-repeat; width:833px; height:449px; margin-top:17px; margin-bottom:21px; padding-left:148px;}
+.managementitle{ padding-top:40px; padding-left:44px;}
+.welcome{ padding-top:30px; padding-left:43px;} 
+#welcomelist{ margin-top:23px; margin-left:44px; height:22px; width:720px;#width:720px;_width:720px; border-bottom:#5b424a dotted 1px; padding-left:35px;#padding-left:23px;_padding-left:20px;}
+#inventorylist li,#welcomelist li{ float:left; width:auto; list-style:none; margin-left:23px;height:15px; line-height:15px;}
+#welcomelist li{#margin-left:22px;_margin-left:20px;}
+#inventorylist li a,#welcomelist li a{ color:#726164; text-decoration:none;}
+h2{ margin-top:20px; padding-left:46px; color:#988f86; font:bold 14px '宋体',Arial;}
+#inventorylist{ margin-top:25px; margin-left:44px; height:36px; width:605px; border:#251923 solid 1px;}
+#inventorylist ul{ width:534px;_width:440px; height:15px; margin:0 auto; margin-top:11px;}
+#inventorylist li{ margin-left:5px; }
+.fundstxt{ padding-top:37px; padding-left:210px;}
+/*账户管理01*/
+/*账户管理03*/
+.transfertxt{ padding-top:23px; padding-left:128px;}
+.remain{ padding-left:85px;}
+.remaintxt{ padding-left:19px;}
+#transferform{ padding-left:86px;}
+#transferform label{ vertical-align:middle;}
+.transferinput{ height:23px; width:180px; line-height:23px; border:#392736 solid 1px; background-color:#11030e; vertical-align:middle;}
+.referbtn{ background:url(images/refer_bg.jpg) no-repeat; width:64px; height:25px; border:none; vertical-align:middle; margin-bottom:5px;}
+.resetbtn{ background:url(images/reset_bg.jpg) no-repeat; width:66px; height:25px; border:none; vertical-align:middle; margin-left:4px; margin-bottom:5px;}
+.transfertips{ padding-top:20px;}
+/*账户管理03*/
+/*账户管理06*/
+.passwordtips{ padding-top:18px; padding-left:47px;}
+#passwordform{ margin-top:35px; margin-left:194px; width:auto;}
+#passwordform label{ padding-top:10px;}
+.definesubmit{ background:url(images/define_bg.jpg) no-repeat; width:64px; height:25px; vertical-align:middle; border:none; margin-left:72px; margin-top:12px;}
+.definesubmit2{ background:url(images/define_bg.jpg) no-repeat; width:64px; height:25px; vertical-align:middle; border:none; margin-left:20px; margin-top:14px;}
+.cancelsubmit{ background:url(images/cancel_bg.jpg) no-repeat; width:66px; height:25px; vertical-align:middle; border:none; margin-top:12px; margin-left:10px;}
+/*账户管理06*/
+/*账户管理04*/
+#requstcontent{background:url(images/request_bg.jpg) no-repeat; width:833px; height:579px; margin-top:17px; margin-bottom:21px; padding-left:148px;}
+.requestname{ padding-left:128px; padding-top:23px;}
+.requestxt{ padding-left:24px;margin-top:-5px; margin-top:5px\9;}
+#requestform{ margin-left:183px; margin-top:19px; width:535px;}
+#bandingform{ margin-left:183px; margin-top:19px; width:535px;}
+#requestform label{ vertical-align:middle;}
+.requestselect{margin-bottom:5px; margin-left:0px; margin-top:0px; width:185px; #font-size:13px;}
+.checkinput{ margin-left:90px; vertical-align:middle;}
+.requestsubmit{margin-left:90px; #margin-left:-90px; margin-top:14px;}
+.requestcancel{ #margin-left:-15px;}
+.withdrawaltips{width:245px; float:right; margin-top:5px; line-height:18px;}
+/*账户管理04*/
+/*账户管理05*/
+#selform{ width:625px; margin-top:22px; margin-left:96px;}
+#selform label{ vertical-align:middle; }
+.selftips{ margin-left:12px; margin-top:25px;}
+.selftipseg{ padding-left:95px; line-height:18px; margin-top:-15px;}
+.selfsubmit{ background:url(images/refer_bg.jpg) no-repeat; width:64px; height:25px; margin-left:96px;#margin-left:0px; margin-top:20px; border:none;}
+.searchDedail{ background:url(images/searchDedail.jpg) no-repeat; width:64px; height:25px; #margin-left:0px; border:none;}
+.searchDedail_button{ background:url(images/searchDedail_button.jpg) no-repeat; width:64px; height:25px; #margin-left:0px; margin-bottom:0px; border:none;}
+.goback{ background:url(images/goback.jpg) no-repeat; width:64px; height:25px;#margin-left:0px;border:none;}
+.searchDedail_input{ height:22px; width:130px; line-height:20px; border:#392736 solid 1px; background-color:#11030e; }
+.searchCreditlogs_input{ height:22px; width:150px; line-height:20px; border:#392736 solid 1px; background-color:#11030e; }
+.searchproposal_input{ height:22px; width:150px; line-height:20px; border:#392736 solid 1px; background-color:#11030e; }
+.searchuserproposal_input{ height:22px; width:150px; line-height:20px; border:#392736 solid 1px; background-color:#11030e; }
+/*账户管理05*/
+/*账户管理07*/
+#modifyform{ margin-left:192px; margin-top:13px;}
+#addcashinform{ margin-left:72px; margin-top:13px;}
+#modifyform p{ vertical-align:middle; width:auto; padding-left:12px; padding-top:15px;}
+.modifyqq{ margin-top:12px;}
+.nickname{ color:#8c837c; text-indent:20px; margin-top:12px;}
+.telnum{ margin-top:4px; margin-bottom:15px;}
+.modifycheck{ float:left;margin-left:88px;#margin-left:86px; vertical-align:middle;}
+.modifysubmit{ background:url(images/define_bg.jpg) no-repeat; width:64px; height:25px; border:none;float:left; margin-left:87px;#margin-left:89px; margin-top:14px;}
+.modifycancel{ background:url(images/cancel_bg.jpg) no-repeat; width:66px; height:25px; border:none; float:left; margin-left:10px; margin-top:13px;}
+/*账户管理07*/
+/*百家乐*/
+#baccaratcontentcon{ width:981px; margin:0 auto; margin-top:4px;margin-bottom:21px;}
+#baccaratop{ background:url(images/baccarat_topbg.jpg) no-repeat; width:981px; height:40px;}
+#baccaratcontent{ background:url(images/baccarat_repeaty.jpg) repeat-y; width:981px; height:auto; padding-bottom:60px}
+#baccaratleft{ float:left; background:url(images/game_helpbg.jpg) no-repeat; width:281px; height:121px; padding-top:51px; padding-left:55px;}
+#baccaratleft span{color:#b20047;}
+#baccaratleft span a{ color:#b20047;}
+#baccaratright{ float:left; width:auto;}
+.baccaratitle{ margin-bottom:32px;}
+h3{ color:#8d8d8d; font-weight:bold; font-size:14px; margin-top:24px;}
+.baccaratxt{ margin-top:30px; width:597px; line-height:24px;}
+.rate{ margin-top:13px; border-right:#251923 solid 1px; border-top:#251923 solid 1px; width:280px; height:auto;}
+.rate li{ border-left:#251923 solid 1px; border-bottom:#251923 solid 1px; width:100px; height:40px; text-align:center; list-style:none; float:left; line-height:40px;}
+.rate .rateeg{ width:178px;}
+.rate .oddnumber{ background-color:#0d0310;}
+.consult{ color:#988e86; margin-top:32px; text-align:center; margin-bottom:17px;}
+.consultlist{ width:595px;border-left:#251923 solid 1px; border-top:#251923 solid 1px;}
+.consultlist li{ width:40px; height:35px;border-right:#251923 solid 1px; border-bottom:#251923 solid 1px; text-align:center; list-style:none; float:left; line-height:35px; }
+.consultlist .third{ width:184px;}
+.consultlist .points{ width:409px;}
+.consultlist .odd{ background-color:#0d0310;}
+.makers{ width:595px;border-left:#251923 solid 1px; border-top:#251923 solid 1px;}
+.makers li{ width:120px; height:40px;border-right:#251923 solid 1px; border-bottom:#251923 solid 1px; text-align:center; list-style:none; float:left; line-height:40px; }
+.makers .xianjia{ width:142px;}
+.makers .total{ width:106px;}
+.makers .zhuang{ width:223px;}
+.makers .odd{ background-color:#0d0310;}
+.makers .left{ text-align:left; text-indent:30px;}
+.makers .leftxian{ text-align:left; text-indent:40px;}
+.makers .makerslast{width:595px; height:auto; height:60px; padding-top:14px;}
+.makers .makerslast p{ width:345px;line-height:26px; text-align:center; margin:0 auto; }
+.baccaratdot{ padding-left:30px; padding-top:16px;}
+.baccaratdot li{ margin-top:10px; list-style:none; width:auto; height:14px; line-height:14px;}
+.baccaratxtitle{ font-weight:bold; margin-top:30px; margin-bottom:8px;}
+.baccaratxtitlenum{ margin-top:0;}
+.super{ margin-top:17px; width:524px;border-left:#251923 solid 1px; border-top:#251923 solid 1px;}
+.super li{ width:120px;height:40px;border-right:#251923 solid 1px; border-bottom:#251923 solid 1px; text-align:center; list-style:none; float:left; line-height:40px;}
+.super .explain{ width:254px;}
+.super .pay{ width:147px}
+.super .odd{ background-color:#0d0310;}
+.super .twentyleft{ text-align:left; text-indent:20px;}
+.super .wholetotal{ width:524px;}
+.super .row{ height:122px; line-height:122px;}
+.roulettelist{ margin-top:17px;  width:472px;border-left:#251923 solid 1px; border-top:#251923 solid 1px;}
+.roulettelist li{width:323px;height:35px;border-right:#251923 solid 1px; border-bottom:#251923 solid 1px; text-align:center; list-style:none; float:left; line-height:35px;}
+.roulettelist .pay{ width:147px}
+.roulettelist .odd{ background-color:#0d0310;}
+.roulettelist .threerow{ height:99px;line-height:100px;}
+.super .roulettesuper{ width:81px;}
+.super .bitno{ width:320px;}
+#baccaratbottom{ background:url(images/baccarat_bottombg.jpg) no-repeat; width:981px; height:6px;}
+/*百家乐*/
+/*index*/
+#indexheader{ width:981px;height:auto; margin:0 auto; padding-top:9px;}
+#indexnavcontainer{ margin-top:10px; background:url(images/index_navbg.jpg) no-repeat; width:659px; height:79px; padding-top:40px; padding-left:314px;}
+#index_midcontainer{ background:url(images/index_midbg.jpg) no-repeat; width:1190px; height:705px; padding-left:229px; margin:0 auto; margin-bottom:20px;}
+#flashmid{ position:absolute; top:222px; left:300px;}
+#flashgame{ position:absolute; top:528px; left:488px;}
+#index_mid{ padding-top:456px;}
+#index_customer{ padding-top:60px; float:left; width:284px;}
+#index_news{ float:left; width:370px; padding-top:77px; margin-left:20px;}
+.index_thanksgiving{ padding-top:19px; line-height:18px; color:#705963;}
+#index_newslist{ margin-top:12px;}
+#index_newslist li{ width:355px; list-style:none; height:18px; padding-top:7px; border-bottom:#473041 dotted 1px; background:url(images/contactlist_bg.jpg) no-repeat 0 center; text-indent:15px;}
+#index_newslist li a{ text-decoration:none; color:#887777;}
+#index_playerhelp{ float:left; margin-left:46px; width:250px; background:url(images/index_minutes.gif) no-repeat 0 top; height:148px; padding-top:90px;}
+#indexplayerlist{ margin-top:17px; margin-left:2px;}
+#indexplayerlist li{ width:250px; list-style:none; height:15px; line-height:15px; margin-top:10px; color:#b30043;}
+#indexplayerlist li a{ color:#b30043;}
+/*index*/
+/*密码遗失帮助*/
+#containercon{ background:#0c0213 url(images/body_bg.jpg) repeat-x; width:100%; height:100%;overflow-x:hidden;}
+#container{ width:981px; margin:0 auto; height:auto;}
+#header{ width:981px; height:153px; margin:0 auto; padding-top:9px;}
+#logincontainer{width:981px; height:23px; margin:0 auto;}
+#bulletincon{ float:left; width:auto; margin-left:21px;_margin-left:10px; height:23px; background:url(images/bulletin_bg.jpg) no-repeat; line-height:23px; padding-left:75px;}
+#loginform{ float:right; margin-right:13px;_margin-right:3px; width:auto; height:23px;}
+#loginform label{ float:left; width:auto;padding-top:4px;   }
+#loginform input{border:none;}
+.password{ margin-left:7px; }
+.userinput{ float:left;background:url(images/user_bg.jpg) no-repeat; width:116px;height:22px; padding-top:1px; padding-left:5px;#padding-left:0px; #width:121px; margin-left:6px;}
+.userinput input{ background:transparent;border:none; width:112px; padding-top:2px;padding-top:5px\9;#padding-top:3px;}
+.loginbtn{ float:left;background:url(images/login_bg.jpg) no-repeat; width:47px; height:23px; margin-left:11px; }
+.registration{ float:left;background:url(images/registration_bg.jpg) no-repeat; width:47px; height:23px;margin-left:6px; }
+#navcontainer{ margin-top:10px; background:url(images/nav_bg.jpg) no-repeat; width:663px; height:82px; padding-top:38px; padding-left:312px;}
+#indexnavcontainer ul,#navcontainer ul{ _margin-left:-20px;}
+#indexnavcontainer li,#navcontainer li{ float:left; width:auto; list-style:none; margin-left:18px;}
+#contentpassword{ margin:14px 0 11px 10px;background:url(images/password_bg.jpg) no-repeat; width:789px;padding-left:182px; height:439px;}
+.passwordtitle{ padding-top:40px;}
+.ifpassword{ margin-top:32px; color:#988e86; font-size:14px; font-weight:bold;}
+.passwordtxt{ line-height:24px; margin-top:5px; width:712px;}
+.prompt{ margin-top:30px;}
+#footer{ width:855px;height:38px; margin:0 auto; background:url(images/password_34.jpg) no-repeat; padding-bottom:36px; padding-left:126px; }
+#footermenu{ padding-top:8px; height:28px;}
+#footermenu ul{ _margin-left:-20px;}
+#footermenu li{ float:left; margin-left:15px; list-style:none; width:auto; height:14px; line-height:14px;}
+#footermenu li a{ color:#b1aa9e; text-decoration:none;}
+#copyright{ width:840px; height:6px;margin-top:8px;#margin-top:6px; margin-left:16px; }
+/*密码遗失帮助*/
+/*游戏帮助*/
+#contenthelp{ margin:14px 0 24px 10px;}
+#helptop{width:789px;height:473px;padding-left:182px; background:url(images/helpheader_bg.jpg) no-repeat; }
+.helpimgtxt{ margin-top:10px;}
+.helpimg{ margin-top:21px;}
+#helpmidtxt{ width:787px; height:3300px;padding-left:182px; border-left:#27142b solid 1px; border-right:#27142b solid 1px; background:url(images/helpmid_bg.jpg) repeat-x; margin-top:-5px;_margin-top:-7px;}
+.setup{padding-top:29px; padding-top:24px\9;}
+.interface{ margin-top:28px;line-height:24px;width:712px;}
+#helpbottom{ background:url(images/helpbottom_bg.jpg) no-repeat; width:971px; height:6px;}
+/*游戏帮助*/
+/*合作代理*/
+#contentcooperation{margin:14px 0 11px 10px;background:url(images/cooperation_bg.jpg) no-repeat; width:878px;padding-left:93px; height:659px;}
+#cooperationleft{ float:left; width:628px;}
+.cooperationtxt{line-height:24px; margin-top:5px; width:628px;}
+.riches{padding-top:15px; }
+.joint{padding-left:108px; line-height:24px;}
+.email{ background:url(images/cooperationemail_bg.jpg) no-repeat 0 center; padding-left:25px;float:left; width:auto; line-height:24px;}
+.qq{ background:url(images/cooperationqq_bg.jpg) no-repeat 0 center; display:block; float:left; width:auto; padding-left:20px; height:16px; margin-left:33px; line-height:24px;}
+.cooperationtxt a{ color:#857774; font-family:Arial, Helvetica, sans-serif;}
+#cooperationright{ float:right; width:216px; padding-top:60px;}
+#cooperationright ul{ margin:0 auto; width:150px;}
+#cooperationright li{ margin-top:29px; list-style:none;}
+/*合作代理*/
+/*免费注册*/
+#contentfree{margin:14px 0 11px 10px;background:url(images/free_bg.jpg) no-repeat; width:789px;padding-left:182px; height:639px;}
+#registrationtable{ margin-top:13px; border:#251923 solid 1px; width:604px; height:507px;}
+.money{ height:36px; border-bottom:#251923 solid 1px; background-color:#0d0310;}
+.even{ background-color:#0f0712;}
+.choose{ width:88px; float:left; border-right:#251923 solid 1px; line-height:36px; text-align:right; padding-right:14px;}
+.choose span{ color:#ab0057;}
+     /*select人民币有问题*/
+.renminbi{ float:left; width:177px; border-right:#251923 solid 1px;height:36px;}
+.moneyselect{ }
+select{ width:158px; height:23px; border:#2a1a2a solid 1px;line-height:20px; margin-top:6px; margin-left:10px; background:#0d040b; text-align:center; }
+#registrationtable .optioneg{text-align:center; background:#0d040b; border:#2a1a2a solid 1px; }
+
+.logininput{width:150px; border:#2a1a2a solid 1px; height:16px; padding-top:5px; margin-top:7px; margin-left:10px; background:#0d040b; padding-left:5px;}
+.num{ width:82px; float:left;}
+.codenum{ float:left; width:60px; height:23px; margin-top:6px; margin-left:8px;} 
+.tips{ float:left; width:313px; line-height:36px; padding-left:10px;}
+.choosecheckbox{float:left; width:auto; margin-left:15px; margin-top:13px;#margin-top:8px; vertical-align:middle;}
+.checktxt{ width:467px; float:left; margin-left:10px; line-height:36px; }
+.accept{ height:60px; }
+.agreetxt{ padding-left:10px;line-height:24px; width:467px; float:left; padding-top:7px;}
+.moneylast{ border-bottom:none; padding-top:8px; padding-left:200px; height:31px;}
+.ok{background:url(images/freeok_bg.jpg) no-repeat; width:64px; height:23px; margin-left:11px; border:none;}
+.cancel{ background:url(images/freecancel_bg.jpg) no-repeat; width:66px; height:25px; border:none;margin-left:11px;}
+/*免费注册*/
+/*联系我们*/
+#contentcontact{ margin-top:4px; background:url(images/contact_bg.jpg) no-repeat; width:981px; height:419px; margin-bottom:21px;}
+.contactips{ margin-top:30px; color:#b1aa9e;}
+#contactlist{ margin-top:17px;}
+#contactlist li{ list-style:none; height:18px; width:386px; border-bottom:#614d57 dotted 1px; background:url(images/contactlist_bg.jpg) no-repeat 0 center; text-indent:17px; padding-top:7px;}
+#contactlist li a{ color:#726164; text-decoration:none;}
+.listfont{ font-family:Arial, Helvetica, sans-serif;}
+.listfont a{ text-decoration:none; font-family:Arial, Helvetica, sans-serif;}
+/*联系我们*/
+/*关于我们*/
+#contentabout{ margin-top:4px;background:url(images/aboutcontent_bg.jpg) no-repeat; height:850px;width:981px;margin-bottom:21px;}
+#contentaboutleft{ float:left; width:389px;}
+#contentaboutright{ float:left; width:auto; margin-left:-53px;}
+.aboutxt{ width:590px;}
+.aboutxt p{ line-height:24px; }
+.aboutitle{ margin-top:23px;}
+.aboutxtfirst{margin-top:28px;}
+/*关于我们*/
+/*博彩责任*/
+#survey,#promotionscrollbar{ margin-top:30px; width:626px; height:auto;}
+#survey p{ width:586px;}
+.surveytitle{ margin-top:0;}
+.problems{margin-top:25px; line-height:24px;}
+/*博彩责任*/
+/*取款步骤*/
+.know{ margin-top:20px;margin-top:28px\9;_margin-top:26px;}
+#contentaboutchange{ width:981px;height:auto; margin:0 auto;margin-bottom:21px; margin-top:4px;}
+#changetop{ background:url(images/chang_topdiv.jpg) no-repeat; width:981px; height:20px;}
+#changecon{ width:969px; border-left:#27142b solid 1px;border-right:#27142b solid 1px; height:auto; margin-left:10px; background:#0d0510 url(images/change_repeatxbg.jpg) repeat-x; padding-bottom:37px; position:relative;}
+#changeleft{ float:left; width:389px; position:absolute; left:-11px;}
+#changeright{ float:right; width:auto;  position:relative; margin-right:50px;_margin-right:25px;}
+.changetitle{ padding-top:20px;}
+#surveychange{ width:586px; margin-top:30px;}
+#surveychange p{ width:586px;}
+#changebottom{ background:url(images/change_bottombg.jpg) no-repeat; width:981px; height:5px;}
+/*取款步骤*/
+/*最新优惠-天威八手连赢奖*/
+#contentpromotions{ background:url(images/promotionscontent_bg.jpg) no-repeat; width:981px; height:529px; margin-top:13px; margin-bottom:24px;}
+#promotiontitle{width:194px; height:auto; margin-top:17px; margin-left:93px;}
+#customerleft{ margin-top:19px;}
+#promotionmenucon{ float:left; width:636px; margin-left:-63px; margin-top:37px;}
+#promotionmenulist li{ float:left; height:51px; width:auto; list-style:none; margin-right:1px;}
+#menucontent{ margin-left:9px; width:626px; height:355px;}
+#promotionscrollbar{ height:305px;}
+#promotionscrollbar p{ width:586px; margin-top:0;}
+#contentpromotionschange{width:981px; height:auto; margin-top:13px; margin-bottom:24px;}
+#promotionstop{ background:url(images/prochange_topbg.jpg) no-repeat; width:981px; height:17px;}
+#promotionright{ float:right;width:636px; position:relative; margin-right:18px;_margin-right:6px; margin-top:20px;}
+#promotionscrollbarchange{ height:auto; margin-top:30px;}
+#promotionscrollbarchange p{ width:586px; margin-top:0;}
+#menucontentchange{ margin-left:15px; width:626px; height:auto;}
+#promotiontitlechange{width:194px; height:auto;margin-left:93px; margin-top:0;}
+/*最新优惠-天威八手连赢奖*/
+/*最新优惠-多重洗码大赠送*/
+h1{ color:#8d817c; font:18px '微软雅黑','宋体',Arial; margin-top:26px;}
+.multipletxt{ width:586px; padding-top:5px;}
+/*最新优惠-多重洗码大赠送*/
+/*最新优惠-幸运大抽奖*/
+.luckycondition{ color:#726164; font-size:12px;}
+#luckytable{ border:#251923 solid 1px; width:494px; height:auto; margin-top:6px;}
+#luckytable li{ float:left; width:auto; list-style:none; height:35px; line-height:35px; border-bottom:#251923 solid 1px;border-left:#251923 solid 1px; width:137px;  text-align:center; background-color:#0f0712; color:#726164;}
+#luckytable .awards{ width:218px; border-left:none;}
+#luckytable .firstrow{ color:#9f968d; height:40px;line-height:40px; font-weight:bold;}
+#luckytable .secondrow{}
+#luckytable .oddnumber{ background-color:#0d0310;}
+#luckytable .lastrow{ border-bottom:none;}
+/*最新优惠-幸运大抽奖*/
+.mytable,.mytable td {   
+   border:#251923 solid 1px;   
+   border-collapse:collapse;  
+}

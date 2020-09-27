@@ -1,0 +1,436 @@
+ .winner-box{ width:230px;height:200px;}
+/*nav icon
+==========*/
+ 
+.index-bg{}   
+.eName_text{
+    display: inline-block;
+    width: 100%;
+} 
+.banner-top .jackpot-top{ width:620px; height:238px;margin: 1px 0 0 25px; position:relative;} 
+.banner-top ul{ width:105px;} 
+ body .banner-top .pt_jack{
+    background: url(../images/game/jackpot_bj.png) no-repeat;
+    width: 1185px;
+    height: 145px;
+    background-size: 100% 100%;
+    margin-top: -75px;
+    position: relative;
+    z-index: 1;
+    margin-left: -3px;     
+} 
+
+ body .banner-top .dt_jack{
+    background: url(../images/game/jackpot_bj.png) no-repeat;
+    width: 1183px;
+    height: 145px;
+    background-size: 100% 100%;
+    margin-top: -75px; 
+    position: relative;
+    z-index: 1;
+     margin-left: -3px;   
+}
+
+.dt_jack{
+    background:url(../images/slot/dt_jc.png) no-repeat 0 20px; 
+}
+.banner-top ul li{ width:100%; height:118px;border-bottom:1px solid #534031; overflow:hidden; text-align:center; position:relative; font-size:12px;} 
+.banner-top ul .pt-client{ width:51px;  height: 36px;display: inline-block;  background: url(../images/index-ico.png) no-repeat -51px 0; position:absolute; left:28px;top:22px;}
+.banner-top ul p{ font-size:12px; line-height:25px;}
+.banner-top ul li:last-child{border-bottom:none;    padding-top: 70px;}
+.banner-top .yuan{ webkit-animation: light_yuan 1s linear infinite; animation: light_yuan 1s linear infinite; position:absolute; top:96px;left:8px}
+.banner-top .yuan1{ webkit-animation: light_yuan1 .5s linear infinite; animation: light_yuan1 .5s linear infinite;position:absolute;top:97px;left:8px}
+ 
+.jackpot-div{
+    width: 760px;
+    /* margin: 100px 0 0 40px; */
+    /* position: absolute; */
+    float: right;
+    margin-right: 5px;
+    margin-top: 20px;
+}
+.jackpot-div .num-item{
+    background: #2c8ba3;
+    border-radius: 10px;
+    display: inline-block;
+    
+}
+.jackpot-div .num-item{
+    font-size: 60px;
+    font-weight: 700;
+    /* text-shadow: -2px 0 1px #ffb001; */
+    /* -webkit-text-fill-color: transparent; */
+    color: #FFFFFF;
+    width: 45px;
+    text-align: center;
+    margin-top: 6px;
+    margin-left: 5px;
+   }
+
+.slotgame_box{
+    background:url(../images/hs_beijing.jpg) repeat;
+}        
+.slotgame_box .slotgame_bannar{
+    background: url(../images/banner/game/tianweislotGame_bj.png) no-repeat center 50px;
+    /*background: #161a28 url(https://www.qnapplehu.com/longduslotGame_bj.jpg) no-repeat center 50px;*/
+    height: 496px;
+    background-position: center; 
+    background-position-y: 0px;          
+}
+.game_imgbox{
+    width: 122px;
+    height: 78px;
+    border: 1px solid #dfa85a;
+    float: left;
+    margin-right: 16px;
+}
+
+.game_imgbox>img{
+    width: 100%;
+}
+.p_10{
+    padding-top: 10px;
+}
+.p_10 .cfe{
+    color: #dfa85a;
+}
+.p_10 .r_red{
+    color: red;
+}
+.winner_box .bd  ul li{
+    width: 100%;
+    float: left;
+    height: 87px;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.winner_box .bd  ul li .li_left{
+    width: 40%;
+    margin-left: 90px;
+    float: left;
+}
+
+.winner_box .bd  ul li .li_rigth{
+    width: 40%;
+    margin-left: 90px;
+    float: left;
+}
+
+.game_imgbox .box1{
+    background: url(../images/ptgames/bl.jpg) no-repeat;
+    background-size: cover;
+    width: 120px;
+    height: 75px;
+    display: inline-block;
+}
+
+.game_imgbox .box2{
+    background: url(../images/ptgames/nian.jpg) no-repeat;
+    background-size: cover;
+    width: 120px;
+    height: 75px;
+    display: inline-block;
+}
+
+.game_imgbox .box3{
+    background: url(../images/ptgames/fnfrj.jpg) no-repeat;
+    background-size: cover;
+    width: 120px;
+    height: 75px;
+    display: inline-block;
+}
+
+.li_rigth .p_10{
+    margin-top: -15px;
+}
+
+.slotgame_box .slotgame_bannar .h_300{
+    width: 100%;
+    height: 300px;
+}
+.slotgame_box .slotgame_bannar .winner_box{
+    width: 919px;
+    height: 117px;
+    margin: 0 auto;
+    background-size: cover;
+    margin-top: 15px;
+    overflow: hidden;
+
+}
+#j-winner-box >li{
+    width: 100%;
+    float: left;
+    height: 116px;
+    padding-top: 30px
+}
+#j-winner-box{
+    padding-left: 162px;
+}
+.game-pic2{
+    float: left;
+    width: 30%; 
+}
+.text_box{
+    float: left;
+}
+.text_box p{
+    text-align: left;
+    color: #fff;    
+}
+.text_box p .c-white{
+    color: #fb9b08 !important;
+}
+.jackpot-top .jackpot_text{
+    float: left;
+    margin-top: 25px;
+    margin-left: 120px;
+}
+.game_1200{
+    background: #FFFFFF;
+    padding: 50px 66px;
+    border-radius: 20px;
+    margin-bottom: 30px;    
+}
+.game-list .user_sc{
+    background: url(../images/game/user_sc.png) no-repeat;
+    width: 50px;
+    height: 120px;
+}
+.game-list .user_wg{
+    background: url(../images/game/user_wg.png) no-repeat;
+    width: 50px;
+    height: 120px;  
+}        
+/*游戏搜索表单*/
+.search-info .label, .search-info .search-row dt { 
+    display: inline-block;
+    vertical-align: middle;
+    color: #666666;
+    width: 65px;
+    text-align: left;
+     }
+.search-info { width: 78%; padding: 0; }
+.search-info .search-hd, .search-info .search-bd, .transfer-box .transfer-hd { padding: 10px 18px 0; border-bottom: 1px dashed #5c5853; height: 60px; }
+.search-info .search-bd { border:none; height:200px; overflow: hidden;font-size: 14px; }
+.search-info .ipt-group { position: relative; display: inline-block; vertical-align: middle;  width: 240px; background-color: #4a3d35; border-radius: 6px; padding-right: 40px; }
+.search-info .ipt-group .ipt { border: none; width: 100%; padding:0 10px; height: 34px; line-height: 34px; background-color:#4a3d35; color: #c1c1c1; }
+.search-info .ipt-group .iconfont { position: absolute; font-size: 20px; color: #837f74; top: 4px; right: 3px; cursor:pointer; }
+.search-info .search-hd .btn { vertical-align:middle; height:38px; }
+.search-info .select-list { display: none; position: absolute; z-index: 9; left: -1px; right: -1px; top: 31px; background: rgb(68, 64, 55); border: 1px solid #5c5853; border-top: none; border-radius: 0 0 8px 8px; }
+.search-info .select-list a { display: block; color: #c1c1c1; padding: 6px 6px 6px 12px; text-align: left; }
+.search-info .select-list a:hover { background: #3a362a; }
+
+.search_info .select_list { 
+    display: none; 
+    position: absolute;
+    z-index: 9;
+    left: -1px;
+    right: -1px;
+    top: 30px;
+    background: #dfa85a;
+    border: 1px solid #5c5853;
+    border-top: none;
+    border-radius: 0 0 8px 8px;
+    overflow-y: auto;
+    height: 300px;
+    padding-bottom: 30px;   
+     }
+.search_info .select_list a { display: block; color: #FFFFFF; padding: 6px 6px 6px 12px; text-align: left; }
+.search_info .select_list a:hover { background: #3a362a; }
+
+.search-info .search-row { height:41px; line-height: 41px; }
+.search-info .search-row dt, .search-info .search-row dd { display: inline-block; vertical-align: middle; }
+.search-info .search-row a { margin-right: 18px; }
+.search-info .search-row .active { padding: 6px 10px; background-color:#dfa85a; color: #FFFFFF; border-radius: 4px; }
+.search-info .btn.btn-two { color: #fb9b08; padding: 10px; line-height: 1; height: auto; }
+.search-info .btn.btn-two .iconfont { font-size: 42px; display: block; margin: 0 auto 10px; }
+.g_left{float: left;}
+.ipt-group .j-ipt{
+    width: 130px;
+    border: 1px solid #dfa85a;
+    border-radius: 5px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 8px;
+    color: #dfa85a; 
+}
+.g_left i{
+    width: 40px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 30px;
+    text-align: center;
+    background: #dfa85a;
+    color: #fff;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-size: 24px;
+    line-height: 30px;
+    cursor: pointer;
+}
+#j-searchForm .ipt-group .label{
+    display: inline-block;
+    line-height: 30px;
+    font-size: 14px;
+    color: #747474; 
+}
+#j-resetBtn{
+    margin-top: 50px;
+    background: #dfa85a;
+    border: none;
+    color: #fff;    
+}
+#j-filter{
+    color: #747474; 
+}
+/*游戏列表和详情
+==============*/
+.game-list { position: relative; font-size: 0; padding-bottom: 160px; margin-left: -10px; margin-right: -10px; }
+.game-info { float: left; width: 193px; padding:1px; margin: 0 10px 30px 10px; position: relative; cursor: pointer; font-size: 14px; color: #c1c1c1; text-align: left; transition:all .3s; }
+.game-list .game-info:nth-child(-n+8) { -webkit-animation-duration: .8s; animation-duration: .8s; }
+.game-list .game-info:nth-child(1) { animation-delay: .4s; }
+.game-list .game-info:nth-child(2) { animation-delay: .5s; }
+.game-list .game-info:nth-child(3) { animation-delay: .6s; }
+.game-list .game-info:nth-child(4) { animation-delay: .7s; }
+.game-list .game-info:nth-child(5) { animation-delay: .8s; }
+.game-list .game-info:nth-child(6) { animation-delay: 1s; }
+.game-list .game-info:nth-child(7) { animation-delay: 1.1s; }
+.game-list .game-info:nth-child(8) { animation-delay: 1.2s; }
+.game-list .game-info:nth-child(9) { animation-delay: 1.3s; }
+.game-list .game-info:nth-child(10) { animation-delay: 1.4s; }
+.game-info:hover { transform: translateY(-6px); }
+.game-info { overflow:hidden; }
+.game-info .game-pic { height: 235px; overflow: hidden; }
+.game-info .game-pic img { height: 100%; width: 100%; }
+.game-info .name {text-align: left; transition: background 0.2s; -webkit-transition: background 0.2s; overflow: hidden; }
+.game-info .name h4 { 
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    height: 50px;
+    background: #eeeeee;
+    color: #474747;
+    /* line-height: 40px; */
+}
+.game-info .name h4 sub { display: block; font-size: 12px; }
+.game-info .score { font-size: 36px; margin-top: 6px; line-height: 1; color: #fb9b08; }
+.game-info .biref-top { height: 38px; line-height: 38px; color:#615844; font-size:14px; }
+.game-info .like { font-size: 18px; }
+.game-info .game-brief { /* height: 58px; */
+    /* padding-top: 10px; */
+}
+.hover-bar .game-brief .btn-wp a:nth-of-type(1){
+    display: block;
+    position: absolute;
+    text-align: center;
+    width: 43%;
+    height: 34px;
+    line-height: 34px;
+    left: 50%;
+    top: 50%;
+    margin-top: -30px;
+    margin-left: -45px;
+    background: #2c8ba3;
+    border-radius: 18px;            
+}
+.hover-bar .game-brief .btn-wp a:nth-of-type(2){
+    display: block;
+    position: absolute;
+    text-align: center;
+    width: 43%;
+    height: 34px;
+    line-height: 34px;
+    left: 50%;
+    top: 50%;
+    margin-top: 22px;
+    margin-left: -45px;
+    background: #DFA85A;
+    color: #614723;
+    border-radius: 18px;
+}
+
+.jackpot-icon {
+    display: inline-block;
+    position: absolute;
+    top: 6px;
+    right: 7px;
+    width: 35px;
+    background: url(../images/game/dt_jackpot.gif) no-repeat;
+    background-size: 100%;
+    height: 41px;
+}
+
+.collect{
+    top: 0 !important;
+    right: 0 !important;    
+}
+
+.game-pic .game-info:hover .name{
+    background: #2c8ba3;
+}
+
+.game-info .btn { /*display: block;*/  margin:10px 4px; width: 96px; height: 36px; line-height: 36px; border:none; color:#fff;}
+.game-info .btn-demo{ background:#5c4d44; }
+.game-info .btn-play{}
+.game-info .hover-bar {
+    position: absolute;
+    /* left: 8px; */
+    /* right: 8px; */
+    top: -287px;
+    height: 220px;
+    color: #d6d6d5;
+    background: #000;
+    background: rgba(0,0,0,.7);
+    transition: all .3s;
+    width: 100%;
+    height: 100%;
+    transition: all .3s;
+     }
+
+.game_titlename{
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    height: 50px;
+    background: #2c8ba3;
+    color: #474747; 
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    color: #fff;
+}   
+
+.game_slot>a{
+    width: 40%;
+    float: left;
+    height: 116px;
+    padding-top: 30px;  
+}
+ 
+.game-info:hover .hover-bar { top: 0px; }
+.game-info .hover-bar a { display:block; position:absolute; text-align:center; width:100%; top:48%; height:34px; line-height:34px; }
+.game-info .hover-bar .iconfont { color: #d6d6d5; font-size: 26px; margin-right: 10px; }
+.game-info .hover-bar .icon-heart2 { color: #c33e3e; }
+/*游戏侧边栏菜单
+=========*/
+.aside-menu { position: absolute; width: 68px; left:-68px; top: 0; }
+.aside-menu li a { display: block; padding: 14px 0; color: #c1c1c1; height:120px; font-size: 12px; }
+.aside-menu .iconfont { font-size: 30px; display: block; line-height: 1; transition:all .3s; }
+.aside-menu a:hover .iconfont { transform:scale(1.2); text-shadow:0 0 6px rgba(0,0,0,.8); }
+.aside-menu .icon-heart2 { color: #ee6325; }
+.aside-menu .icon-game { color: #3a78bb; }
+
+.banner-top{
+
+}
+
+.fr_dt{
+    margin-right: 40px;
+    margin-top: -6px;   
+}

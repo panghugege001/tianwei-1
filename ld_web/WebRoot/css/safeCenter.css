@@ -1,0 +1,52 @@
+/* * 新版找回密码safeCenter.jsp
+* ================================*/
+body#pageSafeCenter{ background: url(../images/hs_beijing.jpg) no-repeat center;}
+#pageSafeCenter .safecenter-banner-wp{background: url(../images/safecenter-bga.png) no-repeat;background-size: cover;background-position: center;height: 481px;}
+#pageSafeCenter .safecenter-con-box{width: 1200px;margin: 0 auto;}
+#pageSafeCenter .safecenter-con-box .safecenter-tab-box:after{content: "";clear: both;zoom: 1;display: block;}
+#pageSafeCenter .safecenter-con-box .safecenter-tab-box{position: relative;top: 421px;border-radius: 10px 10px 0 0;overflow: hidden;}
+#pageSafeCenter .safecenter-con-box .safecenter-tab-box a{height: 60px;line-height: 60px;text-align: center;width: 25%;float: left;color: #FFF;background-color: #dfa85a;font-size: 20px;position: relative;}
+#pageSafeCenter .safecenter-con-box .safecenter-tab-box a.active{color: #333;}
+#pageSafeCenter .safecenter-tab-item{display: none;}
+#pageSafeCenter .safecenter-tab-item.active{display: block;}
+#pageSafeCenter .ui-form-item .ui-ipt.divipt{border: none !important;height: auto;box-shadow: none;}
+#pageSafeCenter .ui-form-item .ui-ipt.divipt h3{font-weight: bold;}
+#pageSafeCenter .ui-form-item .ui-ipt.divipt p{font-size: 14px;color: #dfa85a;}
+#pageSafeCenter #tab-Unlock .ui-label{padding-top: 8px;font-size: 16px;}
+#pageSafeCenter #tab-Unlock .btn-gotofind{position: static;}
+#pageSafeCenter .divipt.contact_kf{position: relative;bottom: 20px;left: -10px;}
+#pageSafeCenter .ui-form-item .ui-ipt.divipt{    display: inline-block;width: auto;}
+#pageSafeCenter .safecenter-con-box .safecenter-tab-box a.mid-a:after{content: '|';font-size: 23px;position: absolute;right: 0;color: #fff;}
+#pageSafeCenter .safecenter-con-box .safecenter-tab-box a.mid-a#tag-unbank:after{content: '';}
+#pageSafeCenter #tab-Unlock,#pageSafeCenter #tab-Unbank,#pageSafeCenter #tab-Unpdq{padding-left: 275px;}
+#pageSafeCenter .safecenter-con-box .safecenter-tab-box a.mid-a:before{content: '|';font-size: 23px;position: absolute;left: 0;color: #fff;}
+#pageSafeCenter .wrong-tip{display:none;position: absolute;font-size: 14px;color: #dfa85a;left: 237px;bottom: 3px;}
+#pageSafeCenter .wrong-tip:before{content: '';position: absolute;left: -33px;top: -4px;width: 32px;height: 32px;background: url(../images/wrong-icon.png) no-repeat;}
+#pageSafeCenter .ui-form-item{padding-bottom: 25px!important;position: relative;padding-left:0;}
+#pageSafeCenter #untab1 .ui-form-item,#tab-Unbank .ui-form-item{padding-left: 0;}
+#pageSafeCenter #untab1 .ui-ipt,#tab-Unbank .ui-ipt{width: 400px;box-shadow: none;}
+#pageSafeCenter .safecenter-con-box > div.safecenter-tab-item{background-color: #fff;padding-top: 25px;height:500px;border-radius: 0 0 10px 10px;}
+#pageSafeCenter .con-item-box{border-bottom: 2px solid #ececec;background-color: #ffffff;width: 850px;margin: 0 auto;padding-left: 100px;position: relative;height: 140px;padding-top: 40px;}
+#pageSafeCenter .con-item-box i.icon{position: absolute;width: 44px;height: 44px;background: url(../images/safecenter-icons.png) no-repeat;left: 25px;top: 50px;}
+#pageSafeCenter .con-item-box i.icon1{background-position: -1px 0px;}
+#pageSafeCenter .con-item-box i.icon2{background-position: -69px 0;}
+#pageSafeCenter .con-item-box i.icon3{background-position: -136px 0;} 
+#pageSafeCenter .con-item-box h5{font-size: 20px;color: #dfa85a;}
+#pageSafeCenter .con-item-box p{font-size: 16px;color: #787878;}
+#pageSafeCenter .btn-gotofind,#pageSafeCenter .btn-find{display:inline-block; width: 148px;height: 40px;line-height: 40px;text-align: center;background-color: #dfa85a;font-size: 16px;color: #fff;border-radius: 5px;}
+#pageSafeCenter .safecenter-tab-item .btn-gotofind{position: absolute;right: 0;top: 50px;}
+#pageSafeCenter .img_code{position: absolute;bottom: 37px;right: 163px;width: 54px;height: 18px;}
+#pageSafeCenter #j-modal-email .ui-form-item .ui-ipt,#j-modal-sms .ui-form-item .ui-ipt,#j-modal-email-act .ui-form-item .ui-ipt,#j-modal-sms-act .ui-form-item .ui-ipt{width:288px}
+#pageSafeCenter #j-modal-email .ui-label,#j-modal-sms .ui-label{width:231px;}
+#pageSafeCenter .safecenter-modal .modal-dialog {width: 740px;text-align: center;}
+#pageSafeCenter .safecenter-modal .modal-dialog h2{text-align:left;padding: 40px 0 20px 30px;color: #999999;font-weight: bold;border-bottom: 1px solid #ccc;margin: 0 30px 0;}
+#pageSafeCenter .safecenter-modal .modal-dialog p{color: #666666;font-size: 18px;text-align: center;padding-top: 40px;}
+#pageSafeCenter .btn-gotofind.modal-btn{margin: 40px 0;}
+#pageSafeCenter .ui-label {padding-top: 10px;margin-left: 0;}
+#pageSafeCenter .safecenter-con-wp {margin-bottom: 30px;}
+#pageSafeCenter #pwTab { color: #fff; background: #dfa85a; padding: 10px; margin-left: 20px; cursor: pointer; border-radius:5px;}
+#pageSafeCenter .ui-form-item .ui-label {font-size: 16px;width: 231px;}
+#pageSafeCenter #j-modal-sms-act .ui-form-item,#pageSafeCenter #j-modal-email-act .ui-form-item {padding:0;}
+#pageSafeCenter .modal-bd{padding: 40px 20px 0px 20px;}
+.ui-ipt {line-height: 32px; height: 42px; padding-left: 3px;vertical-align: middle;color: #000;border: 1px solid #bdbdbd;border-radius: 6px;box-shadow: inset 0 0 6px rgba(0,0,0,.2);
+}

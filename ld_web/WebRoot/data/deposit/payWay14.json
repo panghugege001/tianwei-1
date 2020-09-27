@@ -1,0 +1,19 @@
+{
+  "code": "10000",
+  "desc": "成功",
+  "data": [
+    {
+      "id": 763,
+      "showName": "美团支付1",
+      "fee": 2.8,
+      "phoneFee": null,
+      "pcFee": null,
+      "minPay": 10.0,
+      "maxPay": 100.0,
+      "appPay": 0,
+      "payWay": 14,
+      "payCenterUrl": "/xyt/zfb_wx",
+      "payPlatform": "xymt"
+    }
+  ]
+}

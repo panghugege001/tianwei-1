@@ -1,0 +1,105 @@
+@charset "UTF-8";
+body .common-header { box-shadow: none; -ms-box-shadow: none; /* IE 9 */
+  -moz-box-shadow: none; /* Firefox */
+  -webkit-box-shadow: none; /* Safari 嚙瞎 Chrome */
+  -o-box-shadow: none; }
+.main-wrap .header-margin { height: 4em; }
+.main-wrap > .content .tab-block { height:2.5rem; line-height:2.5rem; position: fixed; top: 4.5em; left: 0; z-index: 2; width: 100%; overflow-x: auto; white-space: nowrap; background-color: #1c1c1c; box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24); -ms-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24); /* IE 9 */
+  -moz-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24); /* Firefox */
+  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24); /* Safari 嚙瞎 Chrome */
+  -o-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24); transition: top 0.3s ease-in-out; -webkit-transition: top 0.3s ease-in-out; -moz-transition: top 0.3s ease-in-out; -o-transition: top 0.3s ease-in-out; -ms-transition: top 0.3s ease-in-out; }
+.main-wrap > .content .tab-block .tab-button { position: relative; display: inline-block; width: 4.5em; min-width: 50%; text-align: center; color: #cfb590; }
+.main-wrap > .content .tab-block .tab-button .text { width: 100%; margin-bottom: .5em; font-size: 50%; text-align: center; }
+.main-wrap > .content .tab-block .tab-button .icon { font-size: 150%; }
+.main-wrap > .content .tab-block .tab-button.active { color: #fb9b08; }
+.main-wrap > .content .tab-block .tab-button.active:after { opacity: 1; transform: scaleX(1); -ms-transform: scaleX(1); /* IE 9 */
+  -moz-transform: scaleX(1); /* Firefox */
+  -webkit-transform: scaleX(1); /* Safari 嚙瞎 Chrome */
+  -o-transform: scaleX(1); }
+.main-wrap > .content .tab-block .tab-button:hover { color: #fff; }
+.main-wrap > .content .tab-block .tab-button:hover:after { opacity: 1; transform: scaleX(1); -ms-transform: scaleX(1); /* IE 9 */
+  -moz-transform: scaleX(1); /* Firefox */
+  -webkit-transform: scaleX(1); /* Safari 嚙瞎 Chrome */
+  -o-transform: scaleX(1); }
+.main-wrap > .content .tab-block .tab-button:after { position: absolute; left: 0; right: 0; bottom: 0; display: block; height: 3px; background: #fb9b08; opacity: 0; content: ''; transform: scaleX(0.2); -ms-transform: scaleX(0.2); /* IE 9 */
+  -moz-transform: scaleX(0.2); /* Firefox */
+  -webkit-transform: scaleX(0.2); /* Safari 嚙瞎 Chrome */
+  -o-transform: scaleX(0.2); transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; }
+.main-wrap .content .game-detail { position: relative; display: inline-block; width: 100%;  margin-top:1.5rem;}
+.main-wrap .content .game-detail .game-box { position: relative; display: inline-block; width: 100%; margin-bottom: .5em; background-color: #342923; padding:.4rem; text-align:center;color: #c1c1c1; }
+.main-wrap .content .game-detail .game-box.loaded img { height: 12em; opacity: 1; }
+.main-wrap .content .game-detail .game-box.broken:before { position: absolute; top: 50%; left: 50%; content: 'Image Not Found'; transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); /* IE 9 */
+  -moz-transform: translate(-50%, -50%); /* Firefox */
+  -webkit-transform: translate(-50%, -50%); /* Safari 嚙瞎 Chrome */
+  -o-transform: translate(-50%, -50%); }
+.main-wrap .content .game-detail .game-box img { width: 100%; height: 10em; opacity: 0; transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; }
+.main-wrap .game-box .name { display: inline-block; width: 100%; margin:1rem 0; text-align: center; font-size:120%; height: 1.8rem;overflow: hidden;} 
+.main-wrap .game-box .buttons { display: inline-block; width: 100%; font-size: 60%; line-height: 250%; text-align: center; }
+.main-wrap .game-box .buttons a { height:2.7rem; line-height:2.7rem; display: inline-block; width: 45%; text-align: center; background-color: #5c4e45; border-radius: 3px;margin-right: .4rem; color:#fff;}
+.main-wrap .content .game-detail .game-box .buttons a:FIRST-CHILD { background-color: #ed6325; }
+ 
+.main-wrap .game-detail .message { position: relative; line-height: 250%; border-bottom: 1px solid #d8ad56; }
+.main-wrap .game-detail .message .text { display: inline-block; width: 100%; padding-right: 4em; box-sizing: border-box; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.main-wrap .game-detail .message .text a:link { color: #d8ad56; }
+.main-wrap .game-detail .message .text a:visited { color: #d8ad56; }
+.main-wrap .game-detail .message .text a:hover { color: #d8ad56; }
+.main-wrap .game-detail .message .text a:active { color: #d8ad56; }
+.main-wrap .game-detail .message .date { position: absolute; top: 0; right: 0; bottom: 0; font-size: 50%; color: #DB890C; }
+.main-wrap .game-detail .message .game-content { height: 0; overflow: hidden; text-indent: 2em; line-height: 150%; font-size: 80%; color: #fff; transition: all 0.5s ease-in-out; -webkit-transition: all 0.5s ease-in-out; -moz-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; -ms-transition: all 0.5s ease-in-out; }
+#cashSplash, #megaMoolah， #treasureNile{display:none;}
+
+.dt_gamebox{
+    background: url(../../images/dtgame_bj.jpg) no-repeat;
+    width: 100%;
+    height: 11em;
+    /* float: left; */
+    margin-top: 3em;
+    background-size: contain;
+    position: relative;
+}
+.dt_gamebox .dt_jc{
+    background: url(../../images/dt_jc.png) no-repeat;
+    width: 18em;
+    height: 8em;
+    position: absolute;
+    right: 0px;
+    background-size: contain;
+    top: 2em;
+}
+
+.jackpot-div{
+    position: absolute;
+    /* bottom: 0.7em; */
+    text-align: center;
+    width: 100%;
+    font-size: 1.3em;
+    color: #fff;
+    line-height: 175px;	
+}
+
+
+@media (max-width: 320px) {
+	.dt_gamebox .dt_jc{
+	    top: 1em;
+	     width: 14em;	
+	}
+	
+	.jackpot-div{
+    line-height: 160px;			
+	}
+}
+
+@media (max-width: 375px) {
+	.dt_gamebox .dt_jc{
+	    top: 1.5em;
+	     width: 16em;	
+	}
+	.jackpot-div{
+    line-height: 162px;			
+	}	
+}
+
+
+
+
+

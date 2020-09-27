@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE validators PUBLIC "-//OpenSymphony Group//XWork Validator 1.0.2//EN"
+ "http://struts.apache.org/dtds/xwork-validator-1.0.2.dtd">
+
+<validators>
+	<field name="content">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message>请输入内容</message>
+		</field-validator>
+		<field-validator type="stringlength">
+			<param name="maxLength">1000</param>
+			<message>留言长度在1000以内</message>
+		</field-validator>
+	</field>
+	<field name="title">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message>请输入标题</message>
+		</field-validator>
+		<field-validator type="stringlength">
+			<param name="maxLength">20</param>
+			<message>标题长度在20以内</message>
+		</field-validator>
+	</field>
+	<field name="username">
+		<field-validator type="stringlength">
+			<param name="maxLength">20</param>
+			<message>姓名长度在20以内</message>
+		</field-validator>
+	</field>
+	<field name="email">
+		<field-validator type="email">
+			<message>Email格式不正确</message>
+		</field-validator>
+	</field>
+	<field name="phone">
+		<field-validator type="regex" short-circuit="true">
+			<param name="expression">^[0-9]{7,20}$</param>
+			<message>非法手机/电话格式</message>
+		</field-validator>
+	</field>
+	<field name="qq">
+		<field-validator type="regex" short-circuit="true">
+			<param name="expression">^([1-9][0-9]{4,9})$</param>
+			<message>QQ号格式不正确</message>
+		</field-validator>
+	</field>
+</validators>

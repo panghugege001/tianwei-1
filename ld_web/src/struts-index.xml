@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN" "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<package name="index" namespace="/" extends="json-default"> 
+		<action name="userCoupons" class="dfh.action.customer.BaseAction" method="gameLogin">
+			<result name="success">/manageCoupons.jsp</result>
+			<result name="error" type="redirect">index.jsp</result>
+		</action>
+
+		<action name="agentManage" class="dfh.action.customer.BaseAction" method="agentManage">
+			<!-- <result name="success">/agentManage.jsp</result> -->
+			<result name="success">/agentManageNew.jsp</result>
+			<result name="error" type="redirect">index.jsp</result>
+		</action>
+		<!-- <action name="gameKeno" class="dfh.action.customer.BaseAction" method="gameLogin"> <result name="success">/WEB-INF/pages/gameKeno.jsp</result> <result name="error" type="redirect">index.jsp</result> 
+			</action> -->
+		<action name="gameKeno2" class="dfh.action.customer.BaseAction" method="gameLogin">
+			<result name="success">/WEB-INF/pages/gameKeno2.jsp</result>
+			<result name="error" type="redirect">index.jsp</result>
+		</action>
+		<action name="gameKenoRedirect" class="dfh.action.customer.BaseAction" method="gameLogin">
+			<result name="success">/WEB-INF/pages/gameKenoRedirect.jsp</result>
+			<result name="error" type="redirect">index.jsp</result>
+		</action>
+		<!-- <action name="gameSixLottery" class="dfh.action.customer.BaseAction" method="gameSixLottery"> <result name="success">/WEB-INF/pages/gameSixLottery.jsp</result> <result name="error" type="redirect">index.jsp</result> 
+			</action> -->
+		<action name="gameKenoRedirect2" class="dfh.action.customer.BaseAction" method="gameLogin">
+			<result name="success">/WEB-INF/pages/gameKenoRedirect2.jsp</result>
+			<result name="error" type="redirect">index.jsp</result>
+		</action>
+		<action name="gameSport" class="dfh.action.customer.BaseAction" method="gameSport">
+			<result name="success">/WEB-INF/pages/gameSport.jsp</result>
+			<result name="error" type="redirect">index.jsp</result>
+		</action>
+		<action name="gameEa" class="dfh.action.customer.BaseAction" method="gameLogin">
+			<result name="success">/WEB-INF/pages/gameEa.jsp</result>
+			<result name="error" type="redirect">index.jsp</result>
+		</action>
+		<action name="gameAg" class="dfh.action.customer.BaseAction" method="gameLogin">
+			<result name="success">/WEB-INF/pages/gameAg.jsp</result>
+			<result name="error" type="redirect">index.jsp</result>
+		</action>
+		<action name="gameAgRedirect" class="dfh.action.customer.BaseAction" method="gameLogin">
+			<result name="success">/WEB-INF/pages/gameAgRedirect.jsp</result>
+			<result name="error" type="redirect">index.jsp</result>
+		</action>
+		<action name="gameAgin" class="dfh.action.customer.BaseAction" method="gameLogin">
+			<result name="success">/WEB-INF/pages/gameAgin.jsp</result>
+			<result name="error" type="redirect">index.jsp</result>
+		</action>
+		<action name="gameAginRedirect" class="dfh.action.customer.BaseAction" method="gameLogin">
+			<result name="success">/WEB-INF/pages/gameAginRedirect.jsp</result>
+			<result name="error" type="redirect">index.jsp</result>
+		</action>
+
+		<action name="gameAginBuyu" class="dfh.action.customer.BaseAction" method="gameLogin">
+			<result name="success">/WEB-INF/pages/gameAginBuyu.jsp</result>
+			<result name="error" type="redirect">index.jsp</result>
+		</action>
+		<action name="gameAginBuyuRedirect" class="dfh.action.customer.BaseAction" method="gameLogin">
+			<result name="success">/WEB-INF/pages/gameAginBuyuRedirect.jsp</result>
+			<result name="error" type="redirect">index.jsp</result>
+		</action>
+		<action name="gameEbetLoginNew" class="dfh.action.customer.BaseAction" method="gameEbetLoginNew">
+			<result name="success">/WEB-INF/pages/gameEbetLoginNew.jsp</result>
+			<result name="error" type="redirect">index.jsp</result>
+		</action>
+		<action name="loginDT" class="MemberActionClass" method="loginDT">
+			<result name="success">/WEB-INF/pages/gameDT.jsp</result>
+			<result name="error">/WEB-INF/pages/gameDT.jsp</result>
+		</action>
+
+		<action name="gameEbet" class="dfh.action.customer.BaseAction" method="gameEbetLogin">
+			<result name="success">/WEB-INF/pages/gameEbet.jsp</result>
+			<result name="error" type="redirect">index.jsp</result>
+		</action>
+
+		<action name="gameBbin" class="dfh.action.customer.BaseAction" method="gameLogin">
+			<result name="success">/WEB-INF/pages/gameBbin.jsp</result>
+			<result name="error" type="redirect">index.jsp</result>
+		</action>
+		<action name="gameSun" class="dfh.action.customer.BaseAction" method="gameSun">
+			<result name="success">/WEB-INF/pages/gameSun.jsp</result>
+			<result name="input">/WEB-INF/pages/gameSunRegister.jsp</result>
+			<result name="error" type="redirect">index.jsp</result>
+		</action>
+		<action name="games" class="dfh.action.customer.BaseAction" method="indexGame">
+			<result name="success">/WEB-INF/pages/games.jsp</result>
+			<result name="error" type="redirect">index.jsp</result>
+		</action>
+		<action name="gamePt" class="dfh.action.customer.BaseAction" method="indexGame">
+			<result name="success">/WEB-INF/pages/gamePt.jsp</result>
+			<result name="error" type="redirect">index.jsp</result>
+		</action>
+		<action name="gamePtPlay" class="dfh.action.customer.BaseAction" method="gamePtPlay">
+			<result name="success">/WEB-INF/pages/gamePtPlay.jsp</result>
+			<result name="error" type="redirect">index.jsp</result>
+		</action>
+		<action name="gameQT" class="dfh.action.customer.BaseAction" method="gameQT">
+			<result name="success">/WEB-INF/pages/gameQT.jsp</result>
+			<result name="error" type="redirect">index.jsp</result>
+		</action>
+		
+		<action name="gameQTForTp" class="dfh.action.customer.BaseAction" method="gameQTForTp">
+			<result name="success">/WEB-INF/pages/gameQT.jsp</result>
+			<result name="error" type="redirect">index.jsp</result>
+		</action>
+		
+		
+		<action name="gameGPI" class="dfh.action.customer.BaseAction" method="gameGPI">
+			<result name="success">/WEB-INF/pages/gameGPI.jsp</result>
+			<result name="error" type="redirect">index.jsp</result>
+		</action>
+		<action name="gamePNG" class="dfh.action.customer.BaseAction" method="gamePNGOfGPI">
+			<result name="success">/WEB-INF/pages/gameGPI.jsp</result>
+			<result name="PNG">/WEB-INF/pages/gamePNG.jsp</result>
+			<result name="error" type="redirect">index.jsp</result>
+		</action>
+		<action name="gameNTwoRedirect" class="dfh.action.customer.BaseAction" method="gameNTwoRedirect">
+			<result name="success">/WEB-INF/pages/gameNTwoRedirectMobile.jsp</result>
+			<result name="error" type="redirect">/index.jsp</result>
+		</action>
+		
+		<action name="userOnlineZfb" class="dfh.action.customer.BaseAction" method="gameLogin">
+			<result name="success">/WEB-INF/pages/userOnlineZfb.jsp</result>
+			<result name="error" type="redirect">index.jsp</result>
+		</action>
+		<action name="userOnlineBfb" class="dfh.action.customer.BaseAction" method="gameLogin">
+			<result name="success">/WEB-INF/pages/userOnlineBfb.jsp</result>
+			<result name="error" type="redirect">index.jsp</result>
+		</action>
+
+		<action name="gameMGS" class="dfh.action.customer.BaseAction" method="gameMGS">
+			<result name="success">/WEB-INF/pages/gameMGS.jsp</result>
+			<result name="MG" type="redirect">slotGame.jsp</result>
+		</action>
+
+		<action name="gameMGS4H5Desktop" class="dfh.action.customer.BaseAction" method="gameMGS4H5Desktop">
+			<result name="success">/WEB-INF/pages/gameMGS.jsp</result>
+			<result name="MG" type="redirect">slotGame.jsp</result>
+			<!-- <result name="MG">/WEB-INF/pages/gamePt.jsp</result> -->
+		</action>
+
+		<action name="getActivityCalendarDetail" class="dfh.action.customer.BaseAction" method="getActivityCalendarDetail">
+			<result name="input">/activityCalendarShow.jsp</result>
+		</action>
+
+		<!-- 海尔支付 -->
+		<action name="commonHaier" class="dfh.action.customer.BaseAction" method="gameLogin">
+			<result name="success">/WEB-INF/pages/haier/commonHaier.jsp</result>
+			<result name="error" type="redirect">index.jsp</result>
+		</action>
+
+		<action name="userOnlineZf" class="dfh.action.customer.BaseAction" method="gameLogin">
+			<result name="success">/WEB-INF/pages/userOnlineZf.jsp</result>
+			<result name="error" type="redirect">index.jsp</result>
+		</action>
+		<action name="userOnlineZfTwo" class="dfh.action.customer.BaseAction" method="gameLogin">
+			<result name="success">/WEB-INF/pages/userOnlineZfTwo.jsp</result>
+			<result name="error" type="redirect">index.jsp</result>
+		</action>
+		<action name="userOnlineZfThree" class="dfh.action.customer.BaseAction" method="gameLogin">
+			<result name="success">/WEB-INF/pages/userOnlineZfThree.jsp</result>
+			<result name="error" type="redirect">index.jsp</result>
+		</action>
+		<action name="userOnlineZfDk" class="dfh.action.customer.BaseAction" method="gameLogin">
+			<result name="success">/WEB-INF/pages/userOnlineZfDk.jsp</result>
+			<result name="error" type="redirect">index.jsp</result>
+		</action>
+		<action name="userOnlineZfDk1" class="dfh.action.customer.BaseAction" method="gameLogin">
+			<result name="success">/WEB-INF/pages/userOnlineZfDk1.jsp</result>
+			<result name="error" type="redirect">index.jsp</result>
+		</action>
+		<action name="commonZf" class="dfh.action.customer.BaseAction" method="gameLogin">
+			<result name="success">/WEB-INF/pages/commonZf.jsp</result>
+			<result name="error" type="redirect">index.jsp</result>
+		</action>
+		<action name="commonZfWx" class="dfh.action.customer.BaseAction" method="gameLogin">
+			<result name="success">/WEB-INF/pages/commonZfWx.jsp</result>
+			<result name="error" type="redirect">index.jsp</result>
+		</action>
+		<action name="weixinpay" class="dfh.action.customer.BaseAction" method="gameLogin">
+			<result name="success">/WEB-INF/pages/weixinpay.jsp</result>
+			<result name="error" type="redirect">index.jsp</result>
+		</action>
+		<action name="commonGfb" class="dfh.action.customer.BaseAction" method="gameLogin">
+			<result name="success">/WEB-INF/pages/gfb/commonGfb.jsp</result>
+			<result name="error" type="redirect">index.jsp</result>
+		</action>
+
+		<!-- 汇付宝微信 -->
+		<action name="commonHhbWxZf" class="dfh.action.customer.BaseAction" method="gameLogin">
+			<result name="success">/WEB-INF/pages/commonHhbWxZf.jsp</result>
+			<result name="error" type="redirect">index.jsp</result>
+		</action>
+		<!-- 聚宝支付宝 支付金额页面跳转 -->
+		<action name="commonJubZfb" class="dfh.action.customer.BaseAction" method="gameLogin">
+			<result name="success">/WEB-INF/pages/commonJubZfb.jsp</result>
+			<result name="error" type="redirect">index.jsp</result>
+		</action>
+		<!-- 迅联宝微信 -->
+		<action name="userOnlineXlb" class="dfh.action.customer.BaseAction" method="gameLogin">
+			<result name="success">/WEB-INF/pages/commonXlbWxZf.jsp</result>
+			<result name="error" type="redirect">index.jsp</result>
+		</action>
+
+		<!-- 微信额度支付 -->
+		<action name="wechatDepositRedirect" class="dfh.action.customer.DinpayAction" method="wechatDepositRedirect">
+			<result name="success">/WEB-INF/pages/userDepositWechat.jsp</result>
+			<result name="error">/member_dinpay_error.jsp</result>
+		</action>
+
+		<!-- 迅联宝网银 -->
+		<action name="userOnlineXlbWy" class="dfh.action.customer.BaseAction" method="gameLogin">
+			<result name="success">/WEB-INF/pages/commonXlbWy.jsp</result>
+			<result name="error" type="redirect">index.jsp</result>
+		</action>
+
+		<!-- 优付支付宝 -->
+		<action name="commonYfZfb" class="dfh.action.customer.BaseAction" method="gameLogin">
+			<result name="success">/WEB-INF/pages/commonYfZfb.jsp</result>
+			<result name="error" type="redirect">index.jsp</result>
+		</action>
+
+		<!--口袋支付宝2 -->
+		<action name="commonKdZfb2" class="dfh.action.customer.BaseAction" method="gameLogin">
+			<result name="success">/WEB-INF/pages/commonKdzfb2.jsp</result>
+			<result name="error" type="redirect">index.jsp</result>
+		</action>
+
+		<!--口袋支付宝 -->
+		<action name="commonKdZfb" class="dfh.action.customer.BaseAction" method="gameLogin">
+			<result name="success">/WEB-INF/pages/commonKdZf.jsp</result>
+			<result name="error" type="redirect">index.jsp</result>
+		</action>
+
+		<!-- 优付微信 -->
+		<action name="commonYfWx" class="dfh.action.customer.BaseAction" method="gameLogin">
+			<result name="success">/WEB-INF/pages/commonYfWx.jsp</result>
+			<result name="error" type="redirect">index.jsp</result>
+		</action>
+
+		<!-- 汇潮一麻袋 -->
+		<action name="userOnlineHcYmd" class="dfh.action.customer.BaseAction" method="gameLogin">
+			<result name="success">/WEB-INF/pages/userOnlineHCYmd.jsp</result>
+			<result name="error" type="redirect">index.jsp</result>
+		</action>
+
+		<!-- 新贝 支付宝 -->
+		<action name="commonXbZfb" class="dfh.action.customer.BaseAction" method="gameLogin">
+			<result name="success">/WEB-INF/pages/commonXbZfb.jsp</result>
+			<result name="error" type="redirect">index.jsp</result>
+		</action>
+
+		<!-- 银宝 支付宝 -->
+		<action name="commonYbZfb" class="dfh.action.customer.BaseAction" method="gameLogin">
+			<result name="success">/WEB-INF/pages/commonYbZfb.jsp</result>
+			<result name="error" type="redirect">index.jsp</result>
+		</action>
+
+		<!-- 千网 支付宝 -->
+		<action name="commonQwZf" class="dfh.action.customer.BaseAction" method="gameLogin">
+			<result name="success">/WEB-INF/pages/commonQwZfb.jsp</result>
+			<result name="error" type="redirect">index.jsp</result>
+		</action>
+
+		<!-- 千网 微信 -->
+		<action name="commonQwWx" class="dfh.action.customer.BaseAction" method="gameLogin">
+			<result name="success">/WEB-INF/pages/commonQwWx.jsp</result>
+			<result name="error" type="redirect">index.jsp</result>
+		</action>
+
+		<!-- 迅联宝 支付宝 -->
+		<action name="commonXlbZfb" class="dfh.action.customer.BaseAction" method="gameLogin">
+			<result name="success">/WEB-INF/pages/commonXlbZfb.jsp</result>
+			<result name="error" type="redirect">index.jsp</result>
+		</action>
+
+		<action name="commonLfWx" class="dfh.action.customer.BaseAction" method="gameLogin">
+			<result name="success">/WEB-INF/pages/commonLfWx.jsp</result>
+			<result name="error" type="redirect">index.jsp</result>
+		</action>
+		<action name="commonXbWx" class="dfh.action.customer.BaseAction" method="gameLogin">
+			<result name="success">/WEB-INF/pages/commonXbWx.jsp</result>
+			<result name="error" type="redirect">index.jsp</result>
+		</action>
+		<action name="commonKdWxZf" class="dfh.action.customer.BaseAction" method="gameLogin">
+			<result name="success">/WEB-INF/pages/commonKdWxZf.jsp</result>
+			<result name="error" type="redirect">index.jsp</result>
+		</action>
+
+		<!-- 口袋微信支付2 -->
+		<action name="commonKdWxZf2" class="dfh.action.customer.BaseAction" method="gameLogin">
+			<result name="success">/WEB-INF/pages/commonKdWxZfs.jsp</result>
+			<result name="error" type="redirect">index.jsp</result>
+		</action>
+
+		<!-- 口袋微信支付1 and 口袋微信支付2 and 口袋微信支付3 -->
+		<action name="commonKdWxZfs" class="dfh.action.customer.BaseAction" method="gameLogin">
+			<result name="success">/WEB-INF/pages/commonKdWxZfs.jsp</result>
+			<result name="error" type="redirect">index.jsp</result>
+		</action>
+
+		<action name="commonKdZf" class="dfh.action.customer.BaseAction" method="gameLogin">
+			<result name="success">/WEB-INF/pages/commonKdZf.jsp</result>
+			<result name="error" type="redirect">index.jsp</result>
+		</action>
+		<action name="commonHhbZf" class="dfh.action.customer.BaseAction" method="gameLogin">
+			<result name="success">/WEB-INF/pages/commonHhbZf.jsp</result>
+			<result name="error" type="redirect">index.jsp</result>
+		</action>
+
+		<action name="ptClientCardPay" class="dfh.action.customer.DinpayAction" method="ptClientCardPay">
+			<!-- <result name="success">/WEB-INF/pages/userOnlineZfDk.jsp</result> -->
+			<result name="success">/WEB-INF/pages/userOnlineZfDk1.jsp</result>
+			<result name="index">/index.jsp</result>
+		</action>
+		<action name="ptClientZfbPay" class="dfh.action.customer.DinpayAction" method="ptClientZfbPay">
+			<result name="success" type="redirect">/asp/zfbDepositRedirect.aspx</result>
+			<result name="index">/index.jsp</result>
+		</action>
+		<action name="userOnlineHf" class="dfh.action.customer.BaseAction" method="gameLogin">
+			<result name="success">/WEB-INF/pages/userOnlineHf.jsp</result>
+			<result name="error" type="redirect">index.jsp</result>
+		</action>
+
+		<action name="userOnlineHf1" class="dfh.action.customer.BaseAction" method="gameLogin">
+			<result name="success">/WEB-INF/pages/userOnlineHf1.jsp</result>
+			<result name="error" type="redirect">index.jsp</result>
+		</action>
+
+		<action name="userOnlineIps" class="dfh.action.customer.BaseAction" method="gameLogin">
+			<result name="success">/WEB-INF/pages/userOnlineIps.jsp</result>
+			<result name="error" type="redirect">index.jsp</result>
+		</action>
+		<action name="loginGame" class="dfh.action.customer.BaseAction" method="gameLogin">
+			<result name="success">/WEB-INF/pages/gamePtLogin.jsp</result>
+			<result name="error" type="redirect">index.jsp</result>
+		</action>
+		<action name="loginGamePt" class="dfh.action.customer.BaseAction" method="loginGamePt"></action>
+		<action name="loginGameJc" class="dfh.action.customer.BaseAction" method="loginGameJc">
+			<result name="success">/WEB-INF/pages/gameJcLogin.jsp</result>
+			<result name="error" type="redirect">index.jsp</result>
+		</action>
+		<action name="loginNT" class="dfh.action.customer.BaseAction" method="loginGameNT">
+			<!-- <result name="success">/gameNt.jsp</result> -->
+			<result name="success">/redirectGameNt.jsp</result>
+			<result name="error" type="redirect">/gameNt.jsp</result>
+		</action>
+		
+		
+		
+		<action name="loginGameEbetApp" class="dfh.action.customer.EBetAppAction" method="loginGameEBetApp" />
+
+		<action name="userOnlineHc" class="dfh.action.customer.BaseAction" method="gameLogin">
+			<result name="success">/userOnlineHC.jsp</result>
+			<result name="error" type="redirect">index.jsp</result>
+		</action>
+
+		<action name="playerInfo4Live800" class="dfh.action.customer.BaseAction" method="playerInfo4Live800">
+			<result name="success">/player_info.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+
+		<action name="updatePassword" class="dfh.action.customer.BaseAction" method="updatePassword">
+			<result name="success">/WEB-INF/pages/updatePassword.jsp</result>
+			<result name="error" type="redirect">index.jsp</result>
+		</action>
+		
+		<action name="gamePNGFlash" class="dfh.action.customer.BaseAction" method="gamePNGFlash">
+			<result name="success">/WEB-INF/pages/gamePNGFlash.jsp</result>
+			<result name="error" type="redirect">index.jsp</result>
+		</action>
+		
+		<action name="gamePNGFlashForTp" class="dfh.action.customer.BaseAction" method="gamePNGFlashForTp">
+			<result name="success">/WEB-INF/pages/gamePNGFlashForTp.jsp</result>
+			<result name="error" type="redirect">index.jsp</result>
+		</action>
+		
+	</package>
+</struts>

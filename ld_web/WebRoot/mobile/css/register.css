@@ -1,0 +1,23 @@
+.ui-form {
+  margin-top: 1em;
+}
+
+p {
+  text-indent: 2em;
+  font-size: 80%;
+  letter-spacing: 1px;
+  line-height: 200%;
+}
+
+.h4 {
+  color: #6BA6DA;
+}
+
+ol {
+  padding-left: 20px;
+  font-size: 80%;
+  letter-spacing: 1px;
+  line-height: 200%;
+}
+.ui-row{ margin:1em 0; display: block;}
+.agent-reg .message{ padding:.5rem 1rem; color:#534338;}  

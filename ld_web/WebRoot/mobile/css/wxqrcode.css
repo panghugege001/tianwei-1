@@ -1,0 +1,70 @@
+body > .qrcode-block {
+  position: relative;
+  padding: 10px 0;
+  margin: 0 auto;
+  /* 		border-bottom:2px solid #0785cc; */
+  /* 		border-top: 2px solid #0785cc; */
+  text-align: center;
+}
+body > .qrcode-block .qrcode {
+  z-index: 1;
+  margin: 0 auto;
+  border: 1px solid #ddd;
+  padding: 5px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 5px 5px 5px #aaa;
+  -ms-box-shadow: 5px 5px 5px #aaa;
+  /* IE 9 */
+  -moz-box-shadow: 5px 5px 5px #aaa;
+  /* Firefox */
+  -webkit-box-shadow: 5px 5px 5px #aaa;
+  /* Safari Chrome */
+  -o-box-shadow: 5px 5px 5px #aaa;
+}
+body > .qrcode-block .logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 2;
+  display: none;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  /* IE 9 */
+  -moz-transform: translate(-50%, -50%);
+  /* Firefox */
+  -webkit-transform: translate(-50%, -50%);
+  /* SafariChrome */
+  -o-transform: translate(-50%, -50%);
+}
+body > .qrcode-block .logo.show {
+  display: block;
+}
+body .message {
+  line-height: 200%;
+  text-align: center;
+  font-weight: bold;
+  color: #3c3c3c;
+}
+body .message img {
+  margin: 10px auto;
+}
+body.desktop > .qrcode-block {
+  width: 520px;
+}
+body.desktop > .qrcode-block .qrcode {
+  width: 200px;
+  height: 200px;
+}
+body.desktop .message img {
+  width: 100px;
+}
+body.mobile .qrcode-block {
+  width: 100%;
+}
+body.mobile .qrcode-block .qrcode {
+  width: 80%;
+}
+body.mobile .message img {
+  width: 50%;
+}

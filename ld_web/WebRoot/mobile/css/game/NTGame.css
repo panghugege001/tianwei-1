@@ -1,0 +1,230 @@
+@charset "UTF-8";
+body .common-header {
+  box-shadow: none;
+  -ms-box-shadow: none;
+  /* IE 9 */
+  -moz-box-shadow: none;
+  /* Firefox */
+  -webkit-box-shadow: none;
+  /* Safari 嚙瞎 Chrome */
+  -o-box-shadow: none;
+}
+body > .main-wrap .header-margin {
+  height: 3em;
+}
+body > .main-wrap > .content .tab-block {
+  position: fixed;
+  top: 2.5em;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+  background-color: #1c1c1c;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+  -ms-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+  /* IE 9 */
+  -moz-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+  /* Firefox */
+  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+  /* Safari 嚙瞎 Chrome */
+  -o-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+  transition: top 0.3s ease-in-out;
+  -webkit-transition: top 0.3s ease-in-out;
+  -moz-transition: top 0.3s ease-in-out;
+  -o-transition: top 0.3s ease-in-out;
+  -ms-transition: top 0.3s ease-in-out;
+}
+body > .main-wrap > .content .tab-block .tab-button {
+  position: relative;
+  display: inline-block;
+  width: 4.5em;
+  min-width: 50%;
+  text-align: center;
+  color: #cfb590;
+}
+body > .main-wrap > .content .tab-block .tab-button .text {
+  width: 100%;
+  margin-bottom: .5em;
+  font-size: 50%;
+  text-align: center;
+}
+body > .main-wrap > .content .tab-block .tab-button .icon {
+  font-size: 150%;
+}
+body > .main-wrap > .content .tab-block .tab-button.active {
+  color: #fb9b08;
+}
+body > .main-wrap > .content .tab-block .tab-button.active:after {
+  opacity: 1;
+  transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  /* IE 9 */
+  -moz-transform: scaleX(1);
+  /* Firefox */
+  -webkit-transform: scaleX(1);
+  /* Safari 嚙瞎 Chrome */
+  -o-transform: scaleX(1);
+}
+body > .main-wrap > .content .tab-block .tab-button:hover {
+  color: #fff;
+}
+body > .main-wrap > .content .tab-block .tab-button:hover:after {
+  opacity: 1;
+  transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  /* IE 9 */
+  -moz-transform: scaleX(1);
+  /* Firefox */
+  -webkit-transform: scaleX(1);
+  /* Safari 嚙瞎 Chrome */
+  -o-transform: scaleX(1);
+}
+body > .main-wrap > .content .tab-block .tab-button:after {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  height: 3px;
+  background: #fb9b08;
+  opacity: 0;
+  content: '';
+  transform: scaleX(0.2);
+  -ms-transform: scaleX(0.2);
+  /* IE 9 */
+  -moz-transform: scaleX(0.2);
+  /* Firefox */
+  -webkit-transform: scaleX(0.2);
+  /* Safari 嚙瞎 Chrome */
+  -o-transform: scaleX(0.2);
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+body > .main-wrap > .content .game-detail {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+body > .main-wrap > .content .game-detail .game-box {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: .5em;
+  background-color: #CACACA;
+}
+body > .main-wrap > .content .game-detail .game-box.loaded img {
+  height: auto;
+  opacity: 1;
+}
+body > .main-wrap > .content .game-detail .game-box.broken:before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  content: 'Image Not Found';
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  /* IE 9 */
+  -moz-transform: translate(-50%, -50%);
+  /* Firefox */
+  -webkit-transform: translate(-50%, -50%);
+  /* Safari 嚙瞎 Chrome */
+  -o-transform: translate(-50%, -50%);
+}
+body > .main-wrap > .content .game-detail .game-box img {
+  width: 100%;
+  height: 10em;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+body > .main-wrap > .content .game-detail .game-box .name {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  line-height: 200%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #d8ad56;
+}
+body > .main-wrap > .content .game-detail .game-box .buttons {
+  display: inline-block;
+  width: 100%;
+  font-size: 60%;
+  line-height: 250%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+body > .main-wrap > .content .game-detail .game-box .buttons a {
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+  background-color: #F44336;
+}
+body > .main-wrap > .content .game-detail .game-box .buttons a:FIRST-CHILD {
+  background-color: #fb9b08;
+}
+body > .main-wrap > .content .game-detail .game-box .buttons a:link {
+  color: #fff;
+}
+body > .main-wrap > .content .game-detail .game-box .buttons a:visited {
+  color: #fff;
+}
+body > .main-wrap > .content .game-detail .game-box .buttons a:hover {
+  color: #fff;
+}
+body > .main-wrap > .content .game-detail .game-box .buttons a:active {
+  color: #fff;
+}
+body > .main-wrap > .content .game-detail .message {
+  position: relative;
+  line-height: 250%;
+  border-bottom: 1px solid #d8ad56;
+}
+body > .main-wrap > .content .game-detail .message .text {
+  display: inline-block;
+  width: 100%;
+  padding-right: 4em;
+  box-sizing: border-box;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+body > .main-wrap > .content .game-detail .message .text a:link {
+  color: #d8ad56;
+}
+body > .main-wrap > .content .game-detail .message .text a:visited {
+  color: #d8ad56;
+}
+body > .main-wrap > .content .game-detail .message .text a:hover {
+  color: #d8ad56;
+}
+body > .main-wrap > .content .game-detail .message .text a:active {
+  color: #d8ad56;
+}
+body > .main-wrap > .content .game-detail .message .date {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  font-size: 50%;
+  color: #DB890C;
+}
+body > .main-wrap > .content .game-detail .message .game-content {
+  height: 0;
+  overflow: hidden;
+  text-indent: 2em;
+  line-height: 150%;
+  font-size: 80%;
+  color: #fff;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN" "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+
+
+    <!-- 积分商城 -->
+    <package name="point" namespace="/points" extends="struts-default,json-default">
+        <action name="getAllPointsPresents" class="dfh.action.points.PointsAction" method="getAllPointsPresents"></action>
+        <action name="getPointsCost" class="dfh.action.points.PointsAction" method="getPointsCost"></action>
+        <action name="getAllLuckyDrawPresent" class="dfh.action.points.PointsAction" method="getAllLuckyDrawPresent"></action>
+        <action name="luckyDrawCost" class="dfh.action.points.PointsAction" method="luckyDrawCost"></action>
+        <action name="pointsExchange" class="dfh.action.points.PointsAction" method="pointsExchange"></action>
+        <action name="luckyDraw" class="dfh.action.points.PointsAction" method="luckyDraw"></action>
+        <action name="completeLuckyDrawRecord" class="dfh.action.points.PointsAction" method="completeLuckyDrawRecord"></action>
+        <action name="pointsRecord" class="dfh.action.points.PointsAction" method="pointsRecord"></action>
+        <action name="handleAddress" class="dfh.action.points.PointsAction" method="handleAddress"></action>
+        <action name="getLevelSave" class="dfh.action.points.PointsAction" method="getLevelSave"></action>
+        <action name="queryPoints" class="dfh.action.points.PointsAction" method="queryPoints"></action>
+        <action name="eggDraw" class="dfh.action.points.PointsAction" method="eggDraw"></action>
+        <action name="eggDrawBonus" class="dfh.action.points.PointsAction" method="eggDrawBonus"></action>
+        <action name="enterPointsHall" class="dfh.action.points.PointsAction" method="enterPointsHall">
+			<result name="input" type="redirect">/mobile/integral/integral.jsp</result>
+			<result name="error">/app/appPayError.jsp</result>
+		</action>
+        <action name="queryState" class="dfh.action.points.PointsAction" method="queryState"></action>
+        <action name="eggDrawBonusAll" class="dfh.action.points.PointsAction" method="eggDrawBonusAll"></action>
+        <action name="queryEggDrawHistory" class="dfh.action.points.PointsAction" method="queryEggDrawHistory"></action>
+
+    </package>
+
+</struts>

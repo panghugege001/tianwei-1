@@ -1,0 +1,76 @@
+[
+	{
+		"name": "AG捕鱼",
+		"eName": "Catch Fish",
+		"id": "ag",
+		"code": "ag",
+		"pic": "agfish.png",
+		"type": "SLO",
+		"category": "AG",
+		"line": "",
+		"tag": ["HOT"]
+	},
+	{
+		"name": "高速公路之王",
+		"eName": "Highway Kings",
+		"id": "hk",
+		"code": "hk",
+		"pic": "highway.png",
+		"type": "SLO",
+		"category": "PT",
+		"line": "9",
+		"tag": ["AMA","HOT"]
+	},
+	{
+		"eName": "Break Away",
+		"name": "冰封陷阵",
+		"id": "breakAway",
+		"code": "breakAway",
+		"category": "MGS",
+		"type": "SLO",
+		"line": "243",
+		"state": 1,
+		"pic": "breakaway.png",
+		"tag": [
+			"HOT"
+		]
+	},
+	{
+		"eName": "SLAMDUNK",
+		"name": "灌篮高手",
+		"id": "sd",
+		"category": "DT",
+		"subType": "DT-2",
+		"type": "SLO",
+		"line": "",
+		"state": 1,
+		"language": "zh_CN",
+		"pic": "sd.jpg",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"name": "贡左的探索",
+		"eName": "eldorado",
+		"id": "eldorado_mobile_html",
+		"code": "eldorado_mobile_html",
+		"pic": "eldorado_mobile_html.jpg",
+		"type": "SLO",
+		"category": "NT",
+		"line": "20",
+		"tag": ["HOT"]
+	},
+	{
+		"name": "疯狂的猴子",
+		"eName": "Mad Mad Monkey",
+		"id": "OGS-madmadmonkey",
+		"code": "OGS-madmadmonkey",
+		"pic": "OGS-madmadmonkey.jpg",
+		"type": "SLO",
+		"category": "QT",
+		"line": "50",
+		"tag": ["HOT"]
+	}
+]

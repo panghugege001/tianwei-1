@@ -1,0 +1,18 @@
+{
+  "code": "10000",
+  "desc": "成功",
+  "data": [
+    {
+      "id": 9,
+      "showName": "秒存",
+      "fee": 0.0,
+      "phoneFee": null,
+      "pcFee": null,
+      "minPay": 1.0,
+      "maxPay": 3000.0,
+      "appPay": 0,
+      "payWay": 6,
+      "payCenterUrl": "/hc/online_pay"
+    }
+  ]
+}

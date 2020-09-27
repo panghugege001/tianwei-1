@@ -1,0 +1,84 @@
+@import "base/common";
+
+body{
+	>.common-header{
+		@include box-shadow(none);
+	}
+	
+	>.main-wrap{
+		.header-margin{
+			height:6em;
+		}
+		
+		>.content{
+			.tab-block{
+				position: fixed;
+				top:2.5em;
+				left:0;
+				z-index:2;
+				
+				width:100%;
+				overflow: hidden;
+
+    			letter-spacing: 2px;
+				
+		   		background-color: $primary3;
+				
+		   		@include box-shadow(0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24));
+				@include transition(top .3s ease-in-out);
+				
+				.tab{
+		   			position: relative;
+		   			
+		   			padding: .5em;
+					
+					white-space: nowrap;
+					text-align: left;
+		   			line-height: 200%;
+		   			font-size: 120%;
+					
+		   			color: #fff;
+		   
+				}
+			}
+			
+			.tab-panel{
+				display:none;
+				width:100%;
+				padding:10px;
+				
+				&.active{
+					display:inline-block;
+				}
+			}
+			
+			.email-content{
+		   		position: relative;
+		   		
+		   		min-height: 3em;
+				padding:10px;
+				
+		   		line-height: 200%;
+		   		
+		   		.email-content-date{
+		   			text-align:right;
+		   		}
+			}
+			
+			.unread{
+				color:#521407;
+				font-weight: bold;
+			}
+			
+			.unread-count{
+			    color: #FF5555;
+		    }
+		    
+		    .text-overflow{
+			    overflow: hidden;
+			    text-overflow: ellipsis;
+			    max-width: 9em;
+		    }
+		}
+	}
+}

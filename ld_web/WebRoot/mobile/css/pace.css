@@ -1,0 +1,539 @@
+@charset "UTF-8";
+.pace-running {
+  overflow: hidden !important;
+}
+
+.pace-done .pace-progress {
+  transform: translate3d(100%, 0px, 0px);
+  -ms-transform: translate3d(100%, 0px, 0px);
+  /* IE 9 */
+  -moz-transform: translate3d(100%, 0px, 0px);
+  /* Firefox */
+  -webkit-transform: translate3d(100%, 0px, 0px);
+  /* Safari 嚙瞎 Chrome */
+  -o-transform: translate3d(100%, 0px, 0px);
+}
+
+.pace {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 2000;
+  display: inline-block;
+  width: 200px;
+  height: 50px;
+  overflow: hidden;
+  background-clip: padding-box;
+  -ms-background-clip: padding-box;
+  /* IE 9 */
+  -moz-background-clip: padding-box;
+  /* Firefox */
+  -webkit-background-clip: padding-box;
+  /* Safari 嚙瞎 Chrome */
+  -o-background-clip: padding-box;
+  user-select: none;
+  -ms-user-select: none;
+  /* IE 9 */
+  -moz-user-select: none;
+  /* Firefox */
+  -webkit-user-select: none;
+  /* Safari 嚙瞎 Chrome */
+  -o-user-select: none;
+  pointer-events: none;
+  -ms-pointer-events: none;
+  /* IE 9 */
+  -moz-pointer-events: none;
+  /* Firefox */
+  -webkit-pointer-events: none;
+  /* Safari 嚙瞎 Chrome */
+  -o-pointer-events: none;
+  /* 	@include transform(translate(-50%,-50%)); */
+  border-radius: 10px;
+  -ms-border-radius: 10px;
+  /* IE 9 */
+  -moz-border-radius: 10px;
+  /* Firefox */
+  -webkit-border-radius: 10px;
+  /* Safari 嚙瞎 Chrome */
+  -o-border-radius: 10px;
+  box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  /* IE 9 */
+  -moz-box-sizing: border-box;
+  /* Firefox */
+  -webkit-box-sizing: border-box;
+  /* Safari 嚙瞎 Chrome */
+  -o-box-sizing: border-box;
+  /* 	@include box-shadow(120px 0 #fff, 240px 0 #fff); */
+}
+.pace.pace-inactive {
+  /* 	  display: none; */
+}
+.pace .pace-progress {
+  position: absolute;
+  top: 7px;
+  right: 100%;
+  display: inline-block;
+  width: 93%;
+  height: 14px;
+  margin-right: -7px;
+  font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 150%;
+  line-height: 60px;
+  font-weight: bold;
+  background: #29d;
+  color: #29d;
+  background-clip: padding-box;
+  -ms-background-clip: padding-box;
+  /* IE 9 */
+  -moz-background-clip: padding-box;
+  /* Firefox */
+  -webkit-background-clip: padding-box;
+  /* Safari 嚙瞎 Chrome */
+  -o-background-clip: padding-box;
+  border-radius: 2px;
+  -ms-border-radius: 2px;
+  /* IE 9 */
+  -moz-border-radius: 2px;
+  /* Firefox */
+  -webkit-border-radius: 2px;
+  /* Safari 嚙瞎 Chrome */
+  -o-border-radius: 2px;
+  box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  /* IE 9 */
+  -moz-box-sizing: border-box;
+  /* Firefox */
+  -webkit-box-sizing: border-box;
+  /* Safari 嚙瞎 Chrome */
+  -o-box-sizing: border-box;
+  /* 	  	@include box-shadow(120px 0 #fff, 240px 0 #fff); */
+  /* 	  	@include transform(translate3d(0, 0, 0)); */
+}
+.pace .pace-progress:after {
+  position: absolute;
+  top: 4px;
+  right: 0;
+  display: inline-block;
+  text-align: right;
+  color: #fff;
+  content: attr(data-progress-text);
+}
+.pace .pace-activity {
+  position: absolute;
+  width: 100%;
+  height: 28px;
+  z-index: 2001;
+  box-shadow: inset 0 0 0 2px #29d, inset 0 0 0 7px #FFF;
+  -ms-box-shadow: inset 0 0 0 2px #29d, inset 0 0 0 7px #FFF;
+  /* IE 9 */
+  -moz-box-shadow: inset 0 0 0 2px #29d, inset 0 0 0 7px #FFF;
+  /* Firefox */
+  -webkit-box-shadow: inset 0 0 0 2px #29d, inset 0 0 0 7px #FFF;
+  /* Safari 嚙瞎 Chrome */
+  -o-box-shadow: inset 0 0 0 2px #29d, inset 0 0 0 7px #FFF;
+  border-radius: 10px;
+  -ms-border-radius: 10px;
+  /* IE 9 */
+  -moz-border-radius: 10px;
+  /* Firefox */
+  -webkit-border-radius: 10px;
+  /* Safari 嚙瞎 Chrome */
+  -o-border-radius: 10px;
+}
+
+.pace .pace-progress[data-progress-text="0%"]:after {
+  right: -190px !important;
+}
+
+.pace .pace-progress[data-progress-text="1%"]:after {
+  right: -188.1px !important;
+}
+
+.pace .pace-progress[data-progress-text="2%"]:after {
+  right: -186.2px !important;
+}
+
+.pace .pace-progress[data-progress-text="3%"]:after {
+  right: -184.3px !important;
+}
+
+.pace .pace-progress[data-progress-text="4%"]:after {
+  right: -182.4px !important;
+}
+
+.pace .pace-progress[data-progress-text="5%"]:after {
+  right: -180.5px !important;
+}
+
+.pace .pace-progress[data-progress-text="6%"]:after {
+  right: -178.6px !important;
+}
+
+.pace .pace-progress[data-progress-text="7%"]:after {
+  right: -176.7px !important;
+}
+
+.pace .pace-progress[data-progress-text="8%"]:after {
+  right: -174.8px !important;
+}
+
+.pace .pace-progress[data-progress-text="9%"]:after {
+  right: -172.9px !important;
+}
+
+.pace .pace-progress[data-progress-text="10%"]:after {
+  right: -171px !important;
+}
+
+.pace .pace-progress[data-progress-text="11%"]:after {
+  right: -169.1px !important;
+}
+
+.pace .pace-progress[data-progress-text="12%"]:after {
+  right: -167.2px !important;
+}
+
+.pace .pace-progress[data-progress-text="13%"]:after {
+  right: -165.3px !important;
+}
+
+.pace .pace-progress[data-progress-text="14%"]:after {
+  right: -163.4px !important;
+}
+
+.pace .pace-progress[data-progress-text="15%"]:after {
+  right: -161.5px !important;
+}
+
+.pace .pace-progress[data-progress-text="16%"]:after {
+  right: -159.6px !important;
+}
+
+.pace .pace-progress[data-progress-text="17%"]:after {
+  right: -157.7px !important;
+}
+
+.pace .pace-progress[data-progress-text="18%"]:after {
+  right: -155.8px !important;
+}
+
+.pace .pace-progress[data-progress-text="19%"]:after {
+  right: -153.9px !important;
+}
+
+.pace .pace-progress[data-progress-text="20%"]:after {
+  right: -152px !important;
+}
+
+.pace .pace-progress[data-progress-text="21%"]:after {
+  right: -150.1px !important;
+}
+
+.pace .pace-progress[data-progress-text="22%"]:after {
+  right: -148.2px !important;
+}
+
+.pace .pace-progress[data-progress-text="23%"]:after {
+  right: -146.3px !important;
+}
+
+.pace .pace-progress[data-progress-text="24%"]:after {
+  right: -144.4px !important;
+}
+
+.pace .pace-progress[data-progress-text="25%"]:after {
+  right: -142.5px !important;
+}
+
+.pace .pace-progress[data-progress-text="26%"]:after {
+  right: -140.6px !important;
+}
+
+.pace .pace-progress[data-progress-text="27%"]:after {
+  right: -138.7px !important;
+}
+
+.pace .pace-progress[data-progress-text="28%"]:after {
+  right: -136.8px !important;
+}
+
+.pace .pace-progress[data-progress-text="29%"]:after {
+  right: -134.9px !important;
+}
+
+.pace .pace-progress[data-progress-text="30%"]:after {
+  right: -133px !important;
+}
+
+.pace .pace-progress[data-progress-text="31%"]:after {
+  right: -131.1px !important;
+}
+
+.pace .pace-progress[data-progress-text="32%"]:after {
+  right: -129.2px !important;
+}
+
+.pace .pace-progress[data-progress-text="33%"]:after {
+  right: -127.3px !important;
+}
+
+.pace .pace-progress[data-progress-text="34%"]:after {
+  right: -125.4px !important;
+}
+
+.pace .pace-progress[data-progress-text="35%"]:after {
+  right: -123.5px !important;
+}
+
+.pace .pace-progress[data-progress-text="36%"]:after {
+  right: -121.6px !important;
+}
+
+.pace .pace-progress[data-progress-text="37%"]:after {
+  right: -119.7px !important;
+}
+
+.pace .pace-progress[data-progress-text="38%"]:after {
+  right: -117.8px !important;
+}
+
+.pace .pace-progress[data-progress-text="39%"]:after {
+  right: -115.9px !important;
+}
+
+.pace .pace-progress[data-progress-text="40%"]:after {
+  right: -114px !important;
+}
+
+.pace .pace-progress[data-progress-text="41%"]:after {
+  right: -112.1px !important;
+}
+
+.pace .pace-progress[data-progress-text="42%"]:after {
+  right: -110.2px !important;
+}
+
+.pace .pace-progress[data-progress-text="43%"]:after {
+  right: -108.3px !important;
+}
+
+.pace .pace-progress[data-progress-text="44%"]:after {
+  right: -106.4px !important;
+}
+
+.pace .pace-progress[data-progress-text="45%"]:after {
+  right: -104.5px !important;
+}
+
+.pace .pace-progress[data-progress-text="46%"]:after {
+  right: -102.6px !important;
+}
+
+.pace .pace-progress[data-progress-text="47%"]:after {
+  right: -100.7px !important;
+}
+
+.pace .pace-progress[data-progress-text="48%"]:after {
+  right: -98.8px !important;
+}
+
+.pace .pace-progress[data-progress-text="49%"]:after {
+  right: -96.9px !important;
+}
+
+.pace .pace-progress[data-progress-text="50%"]:after {
+  right: -95px !important;
+}
+
+.pace .pace-progress[data-progress-text="51%"]:after {
+  right: -93.1px !important;
+}
+
+.pace .pace-progress[data-progress-text="52%"]:after {
+  right: -91.2px !important;
+}
+
+.pace .pace-progress[data-progress-text="53%"]:after {
+  right: -89.3px !important;
+}
+
+.pace .pace-progress[data-progress-text="54%"]:after {
+  right: -87.4px !important;
+}
+
+.pace .pace-progress[data-progress-text="55%"]:after {
+  right: -85.5px !important;
+}
+
+.pace .pace-progress[data-progress-text="56%"]:after {
+  right: -83.6px !important;
+}
+
+.pace .pace-progress[data-progress-text="57%"]:after {
+  right: -81.7px !important;
+}
+
+.pace .pace-progress[data-progress-text="58%"]:after {
+  right: -79.8px !important;
+}
+
+.pace .pace-progress[data-progress-text="59%"]:after {
+  right: -77.9px !important;
+}
+
+.pace .pace-progress[data-progress-text="60%"]:after {
+  right: -76px !important;
+}
+
+.pace .pace-progress[data-progress-text="61%"]:after {
+  right: -74.1px !important;
+}
+
+.pace .pace-progress[data-progress-text="62%"]:after {
+  right: -72.2px !important;
+}
+
+.pace .pace-progress[data-progress-text="63%"]:after {
+  right: -70.3px !important;
+}
+
+.pace .pace-progress[data-progress-text="64%"]:after {
+  right: -68.4px !important;
+}
+
+.pace .pace-progress[data-progress-text="65%"]:after {
+  right: -66.5px !important;
+}
+
+.pace .pace-progress[data-progress-text="66%"]:after {
+  right: -64.6px !important;
+}
+
+.pace .pace-progress[data-progress-text="67%"]:after {
+  right: -62.7px !important;
+}
+
+.pace .pace-progress[data-progress-text="68%"]:after {
+  right: -60.8px !important;
+}
+
+.pace .pace-progress[data-progress-text="69%"]:after {
+  right: -58.9px !important;
+}
+
+.pace .pace-progress[data-progress-text="70%"]:after {
+  right: -57px !important;
+}
+
+.pace .pace-progress[data-progress-text="71%"]:after {
+  right: -55.1px !important;
+}
+
+.pace .pace-progress[data-progress-text="72%"]:after {
+  right: -53.2px !important;
+}
+
+.pace .pace-progress[data-progress-text="73%"]:after {
+  right: -51.3px !important;
+}
+
+.pace .pace-progress[data-progress-text="74%"]:after {
+  right: -49.4px !important;
+}
+
+.pace .pace-progress[data-progress-text="75%"]:after {
+  right: -47.5px !important;
+}
+
+.pace .pace-progress[data-progress-text="76%"]:after {
+  right: -45.6px !important;
+}
+
+.pace .pace-progress[data-progress-text="77%"]:after {
+  right: -43.7px !important;
+}
+
+.pace .pace-progress[data-progress-text="78%"]:after {
+  right: -41.8px !important;
+}
+
+.pace .pace-progress[data-progress-text="79%"]:after {
+  right: -39.9px !important;
+}
+
+.pace .pace-progress[data-progress-text="80%"]:after {
+  right: -38px !important;
+}
+
+.pace .pace-progress[data-progress-text="81%"]:after {
+  right: -36.1px !important;
+}
+
+.pace .pace-progress[data-progress-text="82%"]:after {
+  right: -34.2px !important;
+}
+
+.pace .pace-progress[data-progress-text="83%"]:after {
+  right: -32.3px !important;
+}
+
+.pace .pace-progress[data-progress-text="84%"]:after {
+  right: -30.4px !important;
+}
+
+.pace .pace-progress[data-progress-text="85%"]:after {
+  right: -28.5px !important;
+}
+
+.pace .pace-progress[data-progress-text="86%"]:after {
+  right: -26.6px !important;
+}
+
+.pace .pace-progress[data-progress-text="87%"]:after {
+  right: -24.7px !important;
+}
+
+.pace .pace-progress[data-progress-text="88%"]:after {
+  right: -22.8px !important;
+}
+
+.pace .pace-progress[data-progress-text="89%"]:after {
+  right: -20.9px !important;
+}
+
+.pace .pace-progress[data-progress-text="90%"]:after {
+  right: -19px !important;
+}
+
+.pace .pace-progress[data-progress-text="91%"]:after {
+  right: -17.1px !important;
+}
+
+.pace .pace-progress[data-progress-text="92%"]:after {
+  right: -15.2px !important;
+}
+
+.pace .pace-progress[data-progress-text="93%"]:after {
+  right: -13.3px !important;
+}
+
+.pace .pace-progress[data-progress-text="94%"]:after {
+  right: -11.4px !important;
+}
+
+.pace .pace-progress[data-progress-text="95%"]:after {
+  right: -9.5px !important;
+}
+
+.pace .pace-progress[data-progress-text="96%"]:after {
+  right: -7.6px !important;
+}
+
+.pace .pace-progress[data-progress-text="97%"]:after {
+  right: -5.7px !important;
+}
+
+.pace .pace-progress[data-progress-text="98%"]:after {
+  right: -3.8px !important;
+}

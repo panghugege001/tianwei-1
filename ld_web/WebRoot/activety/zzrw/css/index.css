@@ -1,0 +1,189 @@
+*{ padding: 0; margin: 0; box-sizing: border-box;-moz-box-sizing: border-box;-o-box-sizing: border-box;-webkit-box-sizing: border-box;}
+input{border:none;outline: none;background:none;}
+a{color: inherit; text-decoration: none;}
+body{font:lighter 18px/1 "微软雅黑",arial; color: #fff;min-width: 1200px;}
+p {color: #fff2e0;}
+.clearfix:after {
+    content: '';
+    clear: both;
+    zoom: 1;
+    display: block;
+}
+ul,ol{list-style: none;}
+table{ border-spacing: none;border-collapse:collapse;}
+.activety_header {
+    background-color: #333333!important;
+    border-bottom: 5px solid #333333!important;
+}
+body .user_game, body .gb-footer, body .gb-footer .footer-sub {
+    background-color: #333333!important;
+}
+.margin{margin: 0!important;}
+table.table {
+	margin:30px 0!important;
+	border-radius: 15px;
+	overflow: hidden;
+}
+body table.table thead tr th {
+	background-color:#d8a459;
+	font-size: 24px;
+	color: #333333;
+	border:none;
+	border-right: 1px solid #444444;
+	border-bottom: 1px solid #444444;
+	padding: 0!important;
+	height: 50px;
+}
+body table.table tbody tr td {
+	background-color:#333333;
+	font-size: 18px;
+	color: #fff;
+	border-right: 1px solid #444444;
+	border-bottom: 1px solid #444444;
+	padding: 0!important;
+	height: 40px;
+}
+body table.table thead tr th:last {
+	border-right:none;
+} body table.table tbody tr td:last {
+	border-right:none;
+}
+body .c-yellow {
+	color: #e8bf84!important;
+}
+.banner-wp  {
+    background: url(../img/banner.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 697px;
+    position: relative;
+    overflow: hidden;
+}
+#pageZzrw .container {
+	width: 1200px;
+	margin:0 auto;
+}
+.text-box {
+	position: relative;
+	margin-top: 160px;
+}
+.txt-p {
+	position: relative;
+    padding: 20px;
+    background: rgba(171,9,46,0.8);
+    border: 2px solid #d1062e;
+    font-size: 18px;
+    width: 568px;
+    margin-top: 15px;
+    border-radius: 15px;
+}
+.girl {
+	position: absolute;
+    right: -700px;
+    top: 0;
+    opacity:0.2;
+}
+.tab-btn {
+	background:url(../img/tab2.png) no-repeat;
+	width: 271px;
+	height: 95px;
+	position: absolute;
+	top: -15px;
+	font-size: 40px;
+    color: #fff1d0;
+    line-height: 83px;
+}
+.tab-btn.tab1 {
+	left: 500px;
+}.tab-btn.tab2 {
+	right: 500px;
+}
+.tab-btn.active {
+	background:url(../img/tab1.png) no-repeat;
+}
+.center-box {
+	background:url(../img/con-bg.png) no-repeat;
+	background-size: 100% 100%;
+	width: 1180px;
+	height: 1125px;
+	margin:0 auto;
+	padding: 120px 160px;
+}
+p.text-ind6{
+	text-indent:6rem;
+}
+p.text-ind4 {
+	text-indent:3rem;
+}
+p.text-ind2 {
+	text-indent:1rem;
+}
+h3.ruler-title {
+    font-size: 30px;
+    color: #e8bf84;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.ruler-box p {
+	padding-bottom: 15px;
+	font-size: 18px;
+}
+.tab-item p {
+	font-size: 22px;
+}
+.content-wp {
+	background: url(../img/bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 1228px;
+    position: relative;;
+}
+.tab-con .tab-item {
+	display: none;
+}
+.tab-con .tab-item.active {
+	display: block;
+}
+
+@media screen and (max-width: 750px) {
+	body {
+		min-width: auto;
+		width: 100%;
+	}
+	.banner-wp {
+		margin-bottom: 10px;
+		height: auto;
+	}
+	.container {
+		min-width: auto;
+		width: 100%!important;
+	}
+	.container img {
+		width: 100%;
+	}
+	.txt-p {
+		width: 100%;
+	}
+	.center-box {
+		width: 100%;
+		padding:10px;
+		height: auto;
+	}
+	.girl {
+		display: none;
+	}
+	p.text-ind6,p.text-ind4,p.text-ind2  {
+	text-indent:0rem;
+	}
+	.tab-btn {
+	    background: url(../img/tab2.png) no-repeat;
+	    width: 49%;
+	    height: 95px;
+	    font-size: 40px;
+	    color: #fff1d0;
+	    line-height: 83px;
+	    display: inline-block;
+	    position: static;
+}
+	}
+}

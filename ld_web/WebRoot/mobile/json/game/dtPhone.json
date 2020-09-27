@@ -1,0 +1,548 @@
+{
+	"success": true,
+	"data": [
+		{
+			"eName": "rocknight",
+			"name": "摇滚之夜",
+			"id": "rocknight",
+			"category": "DT",
+			"subType": "DT-2",
+			"type": "SLO",
+			"line": " ",
+			"state": "1",
+			"language": "zh_CN",
+			"pic": "rocknight.jpg",
+			"tag": [
+				"HOT",
+				"NEW"
+			]
+		}, {
+			"eName": "football",
+			"name": "传奇之路",
+			"id": "football",
+			"category": "DT",
+			"subType": "",
+			"type": "SLO",
+			"line": "",
+			"state": "1",
+			"language": "zh_CN",
+			"pic": "football.png",
+			"tag": [
+				"HOT",
+				"NEW"
+			]
+		}, {
+			"eName": "crazy",
+			"name": "疯狂转转转",
+			"id": "crazy5x243",
+			"category": "DT",
+			"subType": "",
+			"type": "SLO",
+			"line": "",
+			"state": "1",
+			"language": "zh_CN",
+			"pic": "crazy5x243.png",
+			"tag": [
+				"HOT",
+				"NEW"
+			]
+		}, {
+			"eName": "casino",
+			"name": "3D老虎机",
+			"id": "casino",
+			"category": "DT",
+			"subType": "DT-2",
+			"type": "SLO",
+			"line": "",
+			"state": "1",
+			"language": "zh_CN",
+			"pic": "casino.png",
+			"tag": [
+				"HOT",
+				"NEW"
+			]
+		}, {
+			"eName": "nightclub",
+			"name": "夜店之王",
+			"id": "nightclub5x20",
+			"category": "DT",
+			"subType": "DT-2",
+			"type": "SLO",
+			"line": "",
+			"state": "1",
+			"language": "zh_CN",
+			"pic": "nightclub5x20.png",
+			"tag": [
+				"HOT",
+				"NEW"
+			]
+		}, {
+			"eName": "Fourss",
+			"name": "四圣兽",
+			"id": "fourss",
+			"category": "DT",
+			"subType": "DT-2",
+			"type": "SLO",
+			"line": "",
+			"state": "1",
+			"language": "zh_CN",
+			"pic": "fourss.png",
+			"tag": [
+				"HOT",
+				"NEW"
+			]
+		}, {
+			"eName": "FULUSHOU",
+			"name": "福禄寿",
+			"id": "fls",
+			"category": "DT",
+			"subType": "DT-2",
+			"type": "SLO",
+			"line": " ",
+			"state": "1",
+			"language": "zh_CN",
+			"pic": "fls.png",
+			"tag": [
+				"HOT",
+				"NEW",
+				"SLO"
+			]
+		}, {
+			"eName": "Chinese Paladin",
+			"name": "仙剑奇缘Jackpot",
+			"id": "xjqy5x9",
+			"category": "DT",
+			"subType": "DT-2",
+			"type": "SLO",
+			"line": " ",
+			"state": "1",
+			"language": "zh_CN",
+			"pic": "xjqy5x9.png",
+			"tag": [
+				"HOT",
+				"NEW",
+				"SLO"
+			]
+		}, {
+			"eName": "Glory of Heroes",
+			"name": "英雄荣耀",
+			"id": "crystal",
+			"category": "DT",
+			"subType": "DT-2",
+			"type": "SLO",
+			"line": "",
+			"state": "1",
+			"language": "zh_CN",
+			"pic": "crystal.png",
+			"tag": [
+				"HOT",
+				"NEW"
+			]
+		}, {
+			"eName": "DragonPhoenix Prosper",
+			"name": "龙凤呈祥",
+			"id": "dnp",
+			"category": "DT",
+			"subType": "DT-2",
+			"type": "SLO",
+			"line": "",
+			"state": "1",
+			"language": "zh_CN",
+			"pic": "dnp.png",
+			"tag": [
+				"HOT",
+				"NEW"
+			]
+		}, {
+			"eName": "Crazy Basketball",
+			"name": "劲爆篮球",
+			"id": "btball5x20",
+			"category": "DT",
+			"subType": "DT-2",
+			"type": "SLO",
+			"line": "",
+			"state": "1",
+			"language": "zh_CN",
+			"pic": "btball5x20.png",
+			"tag": [
+				"HOT",
+				"NEW"
+			]
+		}, {
+			"eName": "whitesnake",
+			"name": "白蛇传",
+			"id": "whitesnake",
+			"category": "DT",
+			"subType": "DT-2",
+			"type": "SLO",
+			"line": "",
+			"state": "1",
+			"language": "zh_CN",
+			"pic": "whitesnake.png",
+			"tag": [
+				"HOT",
+				"NEW"
+			]
+		}, {
+			"eName": "Demon Hunt to West",
+			"name": "西游降妖",
+			"id": "jtw",
+			"category": "DT",
+			"subType": "DT-2",
+			"type": "SLO",
+			"line": "",
+			"state": 1,
+			"language": "zh_CN",
+			"pic": "jtw.png",
+			"tag": [
+				"HOT",
+				"NEW"
+			]
+		}, {
+			"eName": "Investiture of Gods",
+			"name": "封神榜",
+			"id": "tlod",
+			"category": "DT",
+			"subType": "DT-2",
+			"type": "SLO",
+			"line": "",
+			"state": 1,
+			"language": "zh_CN",
+			"pic": "tlod.png",
+			"tag": [
+				"HOT",
+				"NEW"
+			]
+		}, {
+			"eName": "Saiyan Battle",
+			"name": "赛亚烈战",
+			"id": "dragonball",
+			"category": "DT",
+			"subType": "DT-2",
+			"type": "SLO",
+			"line": "",
+			"state": 1,
+			"language": "zh_CN",
+			"pic": "dragonball.png",
+			"tag": [
+				"HOT",
+				"NEW"
+			]
+		}, {
+			"eName": "Happy New Year",
+			"name": "新年到",
+			"id": "newyear",
+			"category": "DT",
+			"subType": "DT-2",
+			"type": "SLO",
+			"line": "",
+			"state": 1,
+			"language": "zh_CN",
+			"pic": "newyear.png",
+			"tag": [
+				"HOT",
+				"NEW"
+			]
+		}, {
+			"eName": "Tales Of Wusong",
+			"name": "武松传",
+			"id": "watermargin",
+			"category": "DT",
+			"subType": "DT-2",
+			"type": "SLO",
+			"line": "",
+			"state": 1,
+			"language": "zh_CN",
+			"pic": "watermargin.png",
+			"tag": [
+				"HOT",
+				"NEW"
+			]
+		}, {
+			"eName": "Wealthy God Arriving",
+			"name": "财神到",
+			"id": "tgow",
+			"category": "DT",
+			"subType": "DT-2",
+			"type": "SLO",
+			"line": "",
+			"state": 1,
+			"language": "zh_CN",
+			"pic": "tgow.png",
+			"tag": [
+				"NEW",
+				"HOT"
+			]
+		}, {
+			"eName": "SEIYA",
+			"name": "圣域传说",
+			"id": "seiya",
+			"category": "DT",
+			"subType": "DT-2",
+			"type": "SLO",
+			"line": "",
+			"state": 1,
+			"language": "zh_CN",
+			"pic": "seiya.png",
+			"tag": [
+				"NEW",
+				"HOT"
+			]
+		}, {
+			"eName": "BATTLE OF RED CLIFFS",
+			"name": "赤壁之战",
+			"id": "san",
+			"category": "DT",
+			"subType": "DT-2",
+			"type": "SLO",
+			"line": "",
+			"state": 1,
+			"language": "zh_CN",
+			"pic": "san.png",
+			"tag": [
+				"HOT",
+				"NEW"
+			]
+		}, {
+			"eName": "ONEPIECE",
+			"name": "海盗无双",
+			"id": "onepiece",
+			"category": "DT",
+			"subType": "DT-2",
+			"type": "SLO",
+			"line": "",
+			"state": 1,
+			"language": "zh_CN",
+			"pic": "onepiece.png",
+			"tag": [
+				"HOT",
+				"NEW"
+			]
+		}, {
+			"eName": "THE KING OF FIGHTERS",
+			"name": "拳皇",
+			"id": "kof",
+			"language": "zh_CN",
+			"category": "DT",
+			"subType": "DT-2",
+			"type": "SLO",
+			"line": "",
+			"state": 1,
+			"pic": "kof.png",
+			"tag": [
+				"HOT",
+				"NEW"
+			]
+		}, {
+			"eName": "Basketball Master",
+			"name": "灌篮大师",
+			"id": "sd",
+			"category": "DT",
+			"subType": "DT-2",
+			"type": "SLO",
+			"line": "",
+			"state": 1,
+			"language": "zh_CN",
+			"pic": "sd.png",
+			"tag": [
+				"HOT",
+				"NEW"
+			]
+		}, {
+			"eName": "Basketball Master 2",
+			"name": "灌篮大师2",
+			"id": "sd5",
+			"category": "DT",
+			"subType": "DT-2",
+			"type": "SLO",
+			"line": "",
+			"state": 1,
+			"language": "zh_CN",
+			"pic": "sd5.png",
+			"tag": [
+				"HOT",
+				"NEW"
+			]
+		}, {
+			"eName": "Naruto",
+			"name": "NINJA",
+			"id": "naruto",
+			"category": "DT",
+			"subType": "DT-2",
+			"type": "SLO",
+			"line": "",
+			"state": 1,
+			"language": "zh_CN",
+			"pic": "naruto.png",
+			"tag": [
+				"HOT",
+				"NEW"
+			]
+		}, {
+			"eName": "Fantasy Forest",
+			"name": "梦幻森林",
+			"id": "fantasyforest3x1",
+			"language": "zh_CN",
+			"pic": "fantasyforest3x1.png",
+			"category": "DT",
+			"subType": "DT-2",
+			"type": "SLO",
+			"line": "",
+			"state": 1,
+			"tag": [
+				"HOT",
+				"NEW"
+			]
+		}, {
+			"eName": "Watermargin",
+			"name": "水浒传",
+			"id": "watermargin5x25",
+			"language": "zh_CN",
+			"pic": "watermargin5x25.png",
+			"category": "DT",
+			"subType": "DT-2",
+			"type": "SLO",
+			"line": "",
+			"state": 1,
+			"tag": [
+				"HOT",
+				"NEW"
+			]
+		}, {
+			"eName": "Five Elements",
+			"name": "五行世界",
+			"id": "fiveelements5x9",
+			"language": "zh_CN",
+			"pic": "fiveelements5x9.png",
+			"category": "DT",
+			"subType": "DT-2",
+			"type": "SLO",
+			"line": "",
+			"state": 1,
+			"tag": [
+				"HOT",
+				"NEW"
+			]
+		}, {
+			"eName": "Allah Lamp",
+			"name": "阿拉丁神灯",
+			"id": "aladdin5x243",
+			"language": "zh_CN",
+			"pic": "aladdin5x243.png",
+			"category": "DT",
+			"subType": "DT-2",
+			"type": "SLO",
+			"line": "",
+			"state": 1,
+			"tag": [
+				"HOT",
+				"NEW"
+			]
+		}, {
+			"eName": "Doraemon",
+			"name": "哆啦A梦",
+			"id": "doraemon3x5",
+			"language": "zh_CN",
+			"pic": "doraemon3x5.png",
+			"category": "DT",
+			"subType": "DT-2",
+			"type": "SLO",
+			"line": "",
+			"state": 1,
+			"tag": [
+				"HOT",
+				"NEW"
+			]
+		}, {
+			"eName": "The King of Fighters98",
+			"name": "拳皇98",
+			"id": "kof5x9",
+			"language": "zh_CN",
+			"pic": "kof5x9.png",
+			"category": "DT",
+			"subType": "DT-2",
+			"type": "SLO",
+			"line": "",
+			"state": 1,
+			"tag": [
+				"HOT",
+				"NEW"
+			]
+		}, {
+			"eName": "Street Fighter II",
+			"name": "街霸",
+			"id": "streetfighter3x1",
+			"language": "zh_CN",
+			"pic": "streetfighter3x1.png",
+			"category": "DT",
+			"subType": "DT-2",
+			"type": "SLO",
+			"line": "",
+			"state": 1,
+			"tag": [
+				"HOT",
+				"NEW"
+			]
+		}, {
+			"eName": "Onepiece",
+			"name": "海贼王",
+			"id": "onepiece3x1",
+			"language": "zh_CN",
+			"pic": "onepiece3x1.png",
+			"category": "DT",
+			"subType": "DT-2",
+			"type": "SLO",
+			"line": "",
+			"state": 1,
+			"tag": [
+				"HOT",
+				"NEW"
+			]
+		}, {
+			"eName": "Xiyouji",
+			"name": "西游记",
+			"id": "xiyouji5x25",
+			"language": "zh_CN",
+			"pic": "xiyouji5x25.png",
+			"category": "DT",
+			"subType": "DT-2",
+			"type": "SLO",
+			"line": "",
+			"state": 1,
+			"tag": [
+				"HOT",
+				"NEW"
+			]
+		}, {
+			"eName": "XIYOUCHUANQI",
+			"name": "降妖传奇",
+			"id": "xiyouji5x9",
+			"category": "DT",
+			"subType": "DT-2",
+			"type": "SLO",
+			"line": "",
+			"state": 1,
+			"language": "zh_CN",
+			"pic": "xiyouji5x9.png",
+			"tag": [
+				"HOT",
+				"NEW"
+			]
+		}, {
+			"eName": "gundam3x5",
+			"name": "高达",
+			"id": "gundam3x5",
+			"category": "DT",
+			"subType": "DT-2",
+			"type": "SLO",
+			"line": "",
+			"state": 1,
+			"language": "zh_CN",
+			"pic": "gundam3x5.png",
+			"tag": [
+				"HOT",
+				"NEW"
+			]
+		}
+	]
+}

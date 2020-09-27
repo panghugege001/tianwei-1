@@ -1,0 +1,325 @@
+@charset "UTF-8";
+.main-wrap > .container > .content .account-info {
+  float: left;
+  width: 100%;
+  background-color: #fff;
+  position: relative;
+}
+.main-wrap > .container > .content .account-info .user-photo {
+  margin: 5px;
+  float: left;
+  font-size: 500%;
+  color: #9E9E9E;
+}
+.main-wrap > .container > .content .account-info .info {
+  display: inline-block;
+  margin-top: 2em;
+  color: #9E9E9E;
+}
+.main-wrap > .container > .content .account-info .refre {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  display: inline-block;
+  font-size: 200%;
+  color: #ffa34c;
+  cursor: pointer;
+}
+.main-wrap > .container > .content .account-info .refre.credit-query {
+  animation: refresh 0.8s linear 0s infinite;
+  -moz-animation: refresh 0.8s linear 0s infinite;
+  -webkit-animation: refresh 0.8s linear 0s infinite;
+  -o-animation: refresh 0.8s linear 0s infinite;
+  -ms-animation: refresh 0.8s linear 0s infinite;
+}
+.main-wrap > .container > .content .tab-block {
+  display: inline-block;
+  width: 100%;
+  margin-top: .2em;
+  margin-bottom: .2em;
+  background-color: #fff;
+}
+.main-wrap > .container > .content .tab-block .tab-button {
+  position: relative;
+  float: left;
+  width: 33.333%;
+  text-align: center;
+  color: #82694d;
+}
+.main-wrap > .container > .content .tab-block .tab-button .text {
+  width: 100%;
+  margin-bottom: 1em;
+  text-align: center;
+}
+.main-wrap > .container > .content .tab-block .tab-button .icon {
+  margin-top: .2em;
+  font-size: 300%;
+}
+.main-wrap > .container > .content .tab-block .tab-button.active {
+  background-color: #ffa34c;
+  color: #fff;
+}
+.main-wrap > .container > .content .tab-block .tab-button.active .arrow {
+  position: absolute;
+  bottom: -1px;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: .8em solid transparent;
+  border-bottom-color: #BAAA97;
+  transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  /* IE 9 */
+  -moz-transform: translate(-50%, 0);
+  /* Firefox */
+  -webkit-transform: translate(-50%, 0);
+  /* Safari 和 Chrome */
+  -o-transform: translate(-50%, 0);
+}
+
+
+@-webkit-keyframes refresh {
+  from {
+    transform: rotateZ(0deg);
+    -ms-transform: rotateZ(0deg);
+    /* IE 9 */
+    -moz-transform: rotateZ(0deg);
+    /* Firefox */
+    -webkit-transform: rotateZ(0deg);
+    /* Safari 和 Chrome */
+    -o-transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+    -ms-transform: rotateZ(360deg);
+    /* IE 9 */
+    -moz-transform: rotateZ(360deg);
+    /* Firefox */
+    -webkit-transform: rotateZ(360deg);
+    /* Safari 和 Chrome */
+    -o-transform: rotateZ(360deg);
+  }
+}
+@-ms-keyframes refresh {
+  from {
+    transform: rotateZ(0deg);
+    -ms-transform: rotateZ(0deg);
+    /* IE 9 */
+    -moz-transform: rotateZ(0deg);
+    /* Firefox */
+    -webkit-transform: rotateZ(0deg);
+    /* Safari 和 Chrome */
+    -o-transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+    -ms-transform: rotateZ(360deg);
+    /* IE 9 */
+    -moz-transform: rotateZ(360deg);
+    /* Firefox */
+    -webkit-transform: rotateZ(360deg);
+    /* Safari 和 Chrome */
+    -o-transform: rotateZ(360deg);
+  }
+}
+@-moz-keyframes refresh {
+  from {
+    transform: rotateZ(0deg);
+    -ms-transform: rotateZ(0deg);
+    /* IE 9 */
+    -moz-transform: rotateZ(0deg);
+    /* Firefox */
+    -webkit-transform: rotateZ(0deg);
+    /* Safari 和 Chrome */
+    -o-transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+    -ms-transform: rotateZ(360deg);
+    /* IE 9 */
+    -moz-transform: rotateZ(360deg);
+    /* Firefox */
+    -webkit-transform: rotateZ(360deg);
+    /* Safari 和 Chrome */
+    -o-transform: rotateZ(360deg);
+  }
+}
+@-o-keyframes refresh {
+  from {
+    transform: rotateZ(0deg);
+    -ms-transform: rotateZ(0deg);
+    /* IE 9 */
+    -moz-transform: rotateZ(0deg);
+    /* Firefox */
+    -webkit-transform: rotateZ(0deg);
+    /* Safari 和 Chrome */
+    -o-transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+    -ms-transform: rotateZ(360deg);
+    /* IE 9 */
+    -moz-transform: rotateZ(360deg);
+    /* Firefox */
+    -webkit-transform: rotateZ(360deg);
+    /* Safari 和 Chrome */
+    -o-transform: rotateZ(360deg);
+  }
+}
+@keyframes refresh {
+  from {
+    transform: rotateZ(0deg);
+    -ms-transform: rotateZ(0deg);
+    /* IE 9 */
+    -moz-transform: rotateZ(0deg);
+    /* Firefox */
+    -webkit-transform: rotateZ(0deg);
+    /* Safari 和 Chrome */
+    -o-transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+    -ms-transform: rotateZ(360deg);
+    /* IE 9 */
+    -moz-transform: rotateZ(360deg);
+    /* Firefox */
+    -webkit-transform: rotateZ(360deg);
+    /* Safari 和 Chrome */
+    -o-transform: rotateZ(360deg);
+  }
+}
+.deposit-content > ul > li {
+  /*margin-bottom: 3px;*/
+  background-color: #f8f8f8;
+  /*box-shadow: 0px 1px 3px #777;*/
+  /*-ms-box-shadow: 0px 1px 3px #777;*/
+  /*!* IE 9 *!*/
+  /*-moz-box-shadow: 0px 1px 3px #777;*/
+  /*!* Firefox *!*/
+  /*-webkit-box-shadow: 0px 1px 3px #777;*/
+  /*!* Safari 和 Chrome *!*/
+  /*-o-box-shadow: 0px 1px 3px #777;*/
+}
+
+.deposit-content > ul > li.active .title:BEFORE {
+  transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  /* IE 9 */
+  -moz-transform: rotate(90deg);
+  /* Firefox */
+  -webkit-transform: rotate(90deg);
+  /* Safari 和 Chrome */
+  -o-transform: rotate(90deg);
+}
+.deposit-content > ul > li.active .page {
+  display: inline-block;
+}
+.deposit-content > ul > li .title {
+  position: relative;
+  width: 100%;
+  padding: .2em;
+  letter-spacing: 3px;
+  font-size: 1.5em;
+  text-align: left;
+  /*background-color: #F6C799;*/
+  color: #1d1d26;
+}
+.deposit-content > ul > li .title:BEFORE {
+  display: inline-block;
+  transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  /* IE 9 */
+  -moz-transform: rotate(0deg);
+  /* Firefox */
+  -webkit-transform: rotate(0deg);
+  /* Safari 和 Chrome */
+  -o-transform: rotate(0deg);
+  transition: transform 0.5s ease-in-out;
+  -webkit-transition: transform 0.5s ease-in-out;
+  -moz-transition: transform 0.5s ease-in-out;
+  -o-transition: transform 0.5s ease-in-out;
+  -ms-transition: transform 0.5s ease-in-out;
+}
+.deposit-content > ul > li .page {
+  display: none;
+  width: 100%;
+}
+.deposit-content > ul > li .page .remark {
+  font-size: 150%;
+  color: #517BBD;
+}
+.deposit-content > ul > li .page .weixin-message {
+  padding: 10px;
+  text-align: center;
+  color: red;
+}
+.deposit-content > ul > li .page table {
+  width: 100%;
+  border: 1px solid #F6C799;
+}
+.deposit-content > ul > li .page table th {
+  padding:10px 5px;
+  border-bottom: 1px solid #fcab52;
+  text-align: center;
+  font-size: 80%;
+  background-color: #f19819;
+  border-right: 1px solid #fcab52;
+  color: #f1f1f1;
+  font-weight:400;
+}
+.deposit-content > ul > li .page table td {
+  padding: 5px;
+  border-bottom: 1px solid #e8e8e8;
+  border-right: 1px solid #e8e8e8;
+  border-left: 1px solid #e8e8e8;
+  text-align: center;
+  font-size: 80%;
+}
+
+.withdrawal-content {
+  display: inline-block;
+  width: 100%;
+}
+
+.transfer-content {
+  display: inline-block;
+  width: 100%;
+  padding: .3em .5em;
+}
+.transfer-content .change-button {
+  position: absolute;
+  top: 4em;
+  right: -5px;
+  display: inline-block;
+  padding: 0 .5em 0 .5em;
+  border: 1px solid #aaa;
+  font-size: 150%;
+  background-color: #fff;
+  color: #3c3c3c;
+  transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  /* IE 9 */
+  -moz-transform: rotate(90deg);
+  /* Firefox */
+  -webkit-transform: rotate(90deg);
+  /* Safari 和 Chrome */
+  -o-transform: rotate(90deg);
+}
+.transfer-content .load {
+  width: 110px;
+  height: 10px;
+  background: url(../images/bank_loading.gif) no-repeat;
+}
+.transfer-content .from .row .combobox select {
+  width: 80%;
+}
+.transfer-content .from .row .combobox:after {
+  right: 25%;
+}
+.transfer-content .button {
+  width: 8em;
+  margin: 1em auto;
+  text-align: center;
+  line-height: 2em;
+  background-color: #C9862F;
+}

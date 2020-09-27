@@ -1,0 +1,209 @@
+@import "base/common";
+
+body>.main-wrap {
+	
+	.header-margin{
+		height:7em;
+	}
+	
+	.content{
+		.game-title{    
+			position: fixed;
+			top:2.5em;
+			left:0;
+			z-index:1;
+			
+			width:100%;
+			padding-top: .5em;
+			padding-bottom: .5em;
+			overflow: hidden;
+			
+			background-image: url(../../images/index-bg-gray.jpg);
+			background-repeat:repeat;
+			
+			.bar{
+				white-space: nowrap;
+				text-align: center;
+			    line-height: 200%;
+			    
+			    color: #517bbd;
+				
+				.title{
+					position: relative;
+					display:inline-block;
+		  			padding: 0 .3em 0 .3em;
+		  			
+					&.active{
+					    background-color: $primary2;
+			   	 		color: $primary;
+					}
+				}
+			}
+			
+			.message{
+			    margin: .5em;
+			    
+			    font-size: 50%;
+			    
+			    color: $primary;
+			}
+		}
+		
+   		.game-detail{
+			position: relative;
+			
+			display: inline-block;
+			width:100%;
+			
+			.game-box{
+				position:relative;
+		
+				display: inline-block;
+				width:100%;
+    			margin-bottom: .5em;
+    			
+    			background-color: #CACACA;
+				
+				&.loaded{
+					img{
+						height:auto;
+						
+						opacity:1;
+					}
+				}
+				
+				&.broken{
+					&:before{
+						position: absolute;
+						top:50%;
+						left:50%;
+						content:'Image Not Found';
+						
+						@include transform(translate(-50%,-50%));
+					}
+				}
+				
+				img{
+					width:100%;
+					height:10em;
+					
+					opacity:0;
+					
+					@include transition;
+				}
+				
+				.name{
+					position: absolute;
+					top:0;
+					left:0;
+					
+					width:100%;
+					
+					text-align: center;
+					line-height:200%;
+					
+					background-color: rgba(0, 0, 0, 0.7);
+		    		color: #d8ad56;
+				}
+				
+				.buttons{
+					position: absolute;
+					bottom:0;
+					left:0;
+					
+					width:100%;
+					
+				    font-size: 60%;
+				    line-height: 250%;
+					text-align: center;
+					
+					background-color: rgba(0, 0, 0, .7);
+					
+					a{
+						display:inline-block;
+						width:50%;
+						
+						text-align: center;
+						background-color:rgba(255, 180, 16, .7);
+						
+						&:FIRST-CHILD{
+							background-color:rgba(122, 192, 248, .7);
+						}
+						
+						&:link{
+		    				color: #fff;
+   						}
+   						&:visited{
+   							color: #fff;
+   						}
+   						&:hover{
+   							color: #fff;
+   						}
+   						&:active{
+   							color: #fff;
+   						}
+					}
+				}
+			}
+			
+			.message{
+			    position: relative;
+			    
+			    line-height:250%;
+			    border-bottom: 1px solid #d8ad56;
+			    
+			    .text{
+				    display: inline-block;
+				    width: 100%;
+				    padding-right: 4em;
+				    box-sizing: border-box;
+				    overflow: hidden;
+				    
+				    white-space: nowrap;
+				    text-overflow:ellipsis;
+				    
+				    a {
+   						
+   						&:link{
+		    				color: #d8ad56;
+   						}
+   						&:visited{
+   							color: #d8ad56;
+   						}
+   						&:hover{
+   							color: #d8ad56;
+   						}
+   						&:active{
+   							color: #d8ad56;
+   						}
+   					}
+			    }
+			    
+				.date{
+					position:absolute;
+					top:0;
+				    right:0;
+				    bottom: 0;
+				    
+				    font-size: 50%;
+				    
+				    color: #DB890C;
+				}
+				
+				.game-content{
+					height: 0;
+   					overflow: hidden;
+   					
+					text-indent:2em;
+				    line-height: 150%;
+				    font-size: 80%;
+				    
+				    color: #fff;
+				    
+					@include transition(all .5s ease-in-out);
+					
+				}
+			}
+	    }
+	}
+}

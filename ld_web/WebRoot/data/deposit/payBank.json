@@ -1,0 +1,72 @@
+{
+  "code": "10000",
+  "desc": "成功",
+  "data": [
+    {
+      "dictName": "工商银行",
+      "dictValue": "ICBC",
+      "dictShow": null,
+      "dictDesc": ""
+    },
+    {
+      "dictName": "农业银行",
+      "dictValue": "ABC",
+      "dictShow": null,
+      "dictDesc": ""
+    },
+    {
+      "dictName": "中国银行",
+      "dictValue": "BOC",
+      "dictShow": null,
+      "dictDesc": null
+    },
+    {
+      "dictName": "建设银行",
+      "dictValue": "CCB",
+      "dictShow": null,
+      "dictDesc": null
+    },
+    {
+      "dictName": "浦发银行",
+      "dictValue": "SPDB",
+      "dictShow": null,
+      "dictDesc": null
+    },
+    {
+      "dictName": "交通银行",
+      "dictValue": "COMM",
+      "dictShow": null,
+      "dictDesc": null
+    },
+    {
+      "dictName": "邮政储蓄银行",
+      "dictValue": "PSBC",
+      "dictShow": null,
+      "dictDesc": null
+    },
+    {
+      "dictName": "中信银行",
+      "dictValue": "CNCB",
+      "dictShow": null,
+      "dictDesc": null
+    },
+    {
+      "dictName": "民生银行",
+      "dictValue": "CMBC",
+      "dictShow": null,
+      "dictDesc": null
+    },
+    {
+      "dictName": "光大银行",
+      "dictValue": "CEB",
+      "dictShow": null,
+      "dictDesc": null
+    },
+    {
+      "dictName": "平安银行",
+      "dictValue": "PAB",
+      "dictShow": null,
+      "dictDesc": null
+    }
+  ]
+}

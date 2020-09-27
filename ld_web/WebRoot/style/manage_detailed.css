@@ -1,0 +1,83 @@
+﻿.detailed .con{
+	/*width:742px;*//*TODO: 去掉宽度*/
+	/*margin:0 auto;*/
+	background:#fff;	
+	border:1px solid #efa5a4;
+	box-shadow: 0 0 3px #ebbdbd;
+	padding-bottom:70px;
+	position:relative;
+}
+.detailed .manage_page{
+	position:absolute;
+	bottom:15px;
+	width:722px;
+	letter-spacing:2px;
+	left: -31px;
+}
+.detailed .manage_page a{
+	display:inline-block;
+	line-height:30px;
+	padding:0 10px;
+	background: #383431;
+	color:#fff;
+}
+.detailed .manage_page a:hover{ background: #191817; }
+.detailed table{
+	text-align:center;
+	background:#f8f8f8;
+	cursor:pointer;	
+	border-bottom:2px solid #383431; width:100%;
+}
+.detailed th{
+	height:48px;	
+	border-bottom:1px solid #fff;
+	background: #383431;
+/*	font-weight:normal;*/
+	color:#fff;
+
+}
+.detailed .db td{
+	background:#fff;	
+}
+.detailed td{
+	height:40px;	
+	border-bottom:1px solid #ebebeb;
+}
+.detailed tr:hover>td{
+	background:#5f5b55;
+	color:#fff;
+}
+.detailed tr:hover .money{
+	color:#ffae00;
+}
+.detailed tr.tit1,
+.detailed tr.tit2{
+	background: #383431;
+	color:#fff;
+}
+ 
+.detailed .t_1{
+	width:60px;	
+}
+.detailed .money{
+	text-align:right;
+	color:#e00000;
+	font-size:14px;
+	font-weight:bold;	
+}
+.detailed .type{
+	color:#2d2926;	
+}
+.detailed tr.hover td{
+	background:#383431;	
+	color:#fff;
+}
+.detailed tr.hover .money{
+	color:#ffae00;	
+}
+.personal_main.nav_data >.tab_bd{
+	padding: 22px 18px 22px 210px;
+}
+.personal_main.nav_data .nav_side{
+	width: 190px;
+}

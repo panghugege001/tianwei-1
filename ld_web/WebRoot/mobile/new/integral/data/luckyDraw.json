@@ -1,0 +1,82 @@
+[
+  {
+    "code": "0000",
+    "desc": "成功",
+    "data": {
+      "id": "109",
+      "pointsPresentId": "2",
+      "property": "pt-88",
+      "orderNo": "",
+      "status": "已完成",
+      "loginName": "randy",
+      "points": 1.2,
+      "name": "存送券",
+      "type": "luckyDraw",
+      "luckyDrawPresentId": "7",
+      "luckyDrawPresentType": "coupon",
+      "createUser": "randy",
+      "createTime": "2017-11-28 08:43:00",
+      "updateTime": "2017-11-28 08:43:00"
+    }
+  },
+  {
+    "code": "0000",
+    "desc": "成功",
+    "data": {
+      "id": "134",
+      "pointsPresentId": "0",
+      "property": "谢谢参与",
+      "orderNo": "",
+      "status": "已完成",
+      "loginName": "randy",
+      "points": 1.2,
+      "name": "谢谢参与",
+      "type": "luckyDraw",
+      "luckyDrawPresentId": "1",
+      "luckyDrawPresentType": "participate",
+      "createUser": "randy",
+      "createTime": "2017-11-28 10:02:01",
+      "updateTime": "2017-11-28 10:02:01"
+    }
+  },
+  {
+    "code": "0000",
+    "desc": "成功",
+    "data": {
+      "id": "136",
+      "pointsPresentId": "1",
+      "property": "10",
+      "orderNo": "",
+      "status": "已完成",
+      "loginName": "randy",
+      "points": 1.2,
+      "name": "彩金10元",
+      "type": "luckyDraw",
+      "luckyDrawPresentId": "3",
+      "luckyDrawPresentType": "money",
+      "createUser": "randy",
+      "createTime": "2017-11-28 10:03:27",
+      "updateTime": "2017-11-28 10:03:27"
+    }
+  },
+  {
+    "code": "0000",
+    "desc": "成功",
+    "data": {
+      "id": "138",
+      "pointsPresentId": "15",
+      "property": "磨砂黑128G",
+      "orderNo": "421171128ugnw32oyki",
+      "status": "已抽奖",
+      "loginName": "randy",
+      "points": 1.2,
+      "name": "iphone 8 plus",
+      "type": "luckyDraw",
+      "luckyDrawPresentId": "2",
+      "luckyDrawPresentType": "physical",
+      "createUser": "randy",
+      "createTime": "2017-11-28 10:04:30",
+      "updateTime": "2017-11-28 10:04:30"
+    }
+  }
+]

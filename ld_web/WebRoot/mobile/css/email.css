@@ -1,0 +1,22 @@
+@charset "UTF-8";
+body > .common-header { box-shadow: none; -ms-box-shadow: none; /* IE 9 */
+  -moz-box-shadow: none; /* Firefox */
+  -webkit-box-shadow: none; /* Safari 嚙瞎 Chrome */
+  -o-box-shadow: none; }
+ 
+.main-wrap .content .tab-block {  width: 100%; overflow: hidden; line-height:3rem; letter-spacing: 2px; background-color: #342923; box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24); -ms-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24); /* IE 9 */
+  -moz-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24); /* Firefox */
+  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24); /* Safari 嚙瞎 Chrome */
+  -o-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24); transition: top 0.3s ease-in-out; -webkit-transition: top 0.3s ease-in-out; -moz-transition: top 0.3s ease-in-out; -o-transition: top 0.3s ease-in-out; -ms-transition: top 0.3s ease-in-out; }
+.main-wrap .content .tab-block .tab { position: relative; padding: .5em; white-space: nowrap; text-align: center; line-height: 200%; font-size: 120%; color: #fff; } 
+.main-wrap .content .tab-panel { display: none; width: 100%; padding: 10px; }
+.main-wrap .content .tab-panel.active { display: inline-block; }
+.main-wrap .content .email-content { position: relative; min-height: 3em; padding: 10px; line-height: 200%; }
+.main-wrap .content .email-content .email-content-date { text-align: right; }
+.main-wrap .content .unread { color: #521407; font-weight: bold; }
+.main-wrap .content .unread-count { color: #FF5555; }
+.main-wrap .content .text-overflow { overflow: hidden; text-overflow: ellipsis; max-width: 9em; }
+#j-container .read .notice-hd >h3{
+	color: #4c4436;
+}
+

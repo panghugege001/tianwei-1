@@ -1,0 +1,676 @@
+{
+    "success": true,
+    "data": [
+	
+        {
+			"name": "印加帝国头奖",
+			"eName": "Inca Jackpot",
+			"id": "aztec",
+			 
+			"pic": "aztec.jpg",
+			"type": "ngm",
+			"state": 1,
+			"category": ""
+		},{
+			"name": "玉皇大帝",
+			"eName": "Jade Emperor",
+			"id": "gtsje",
+			 
+			"pic": "gtsje.jpg",
+			"type": "ngm",
+			"state": 1,
+			"category": ""
+		},{
+			"name": "日日生财",
+			"eName": "Ri Ri Sheng Cai",
+			"id": "ririshc",
+			 
+			"pic": "ririshc.jpg",
+			"type": "ngm",
+			"state": 1,
+			"category": ""
+		},{
+			"name": "游猎炙热",
+			"eName": "Safari Heat",
+			"id": "sfh",
+			 
+			"pic": "sfh.jpg",
+			"type": "ngm",
+			"state": 1,
+			"category": ""
+		},{
+			"name": "孙悟空",
+			"eName": "Sun Wu Kong",
+			"id": "gtsswk",
+			 
+			"pic": "gtsswk.jpg",
+			"type": "ngm",
+			"state": 1,
+			"category": ""
+		},{
+			"name": "大明帝国",
+			"eName": "gtsgme",
+			"id": "gtsgme",
+			 
+			"pic": "gtsgme.jpg",
+			"type": "ngm",
+			"state": 1,
+			"category": ""
+		},{
+			"name": "招财进宝彩池",
+			"eName": "Zhao Cai Jin Bao Jackpot",
+			"id": "zcjbjp",
+			 
+			"pic": "zcjbjp.jpg",
+			"type": "ngm",
+			"state": 1,
+			"category": ""
+		},{
+			"name": "幸运日",
+			"eName": "Fortune Day",
+			"id": "fday",
+			 
+			"pic": "fday.jpg",
+			"type": "ngm",
+			"state": 1,
+			"category": ""
+		},{
+			"name": "顶级王牌明星",
+			"eName": "Top Trump Celebs",
+			"id": "ttc",
+			 
+			"pic": "ttc.jpg",
+			"type": "SLO",
+			"state": 1,
+			"category": ""
+		},{
+			"name": "幸运狮子",
+			"eName": "Fortune Lions",
+			"id": "frtln",
+			 
+			"pic": "frtln.jpg",
+			"type": "ngm",
+			"state": 1,
+			"category": ""
+		},{
+			"name": "火热KTV",
+			"eName": "Hot KTV",
+			"id": "hotktv",
+			 
+			"pic": "hotktv.jpg",
+			"type": "ngm",
+			"state": 1,
+			"category": ""
+		},{
+			"name": "武则天",
+			"eName": "Heavenly Ruler",
+			"id": "heavru",
+			
+			"pic": "heavru.jpg",
+			"type": "ngm",
+			"state": 1,
+			"category": ""
+		},{
+			"name": "超级狮子",
+			"eName": "Super Lion",
+			"id": "slion",
+			"pic": "slion.jpg",
+			"type": "ngm",
+			"state": 1,
+			"category": ""
+		},{
+            "name": "五虎将",
+            "eName": "Five Tiger Generals",
+            "id": "ftg",
+            "pic": "ftg.jpg",
+            "type": "ngm",
+            "state": 1,
+            "category": ""
+        },
+        {
+            "name": "北极宝藏",
+            "eName": "Arctic Treasure",
+            "id": "art",
+            "pic": "art.png",
+            "type": "ngm",
+            "state": 1,
+            "category": ""
+        },
+        {
+            "name": "海滨嘉年华",
+            "eName": "Beach Life",
+            "id": "bl",
+            "pic": "bl.png",
+            "type": "ngm",
+            "state": 1,
+            "category": ""
+        },
+        {
+            "name": "熊之舞",
+            "eName": "Bonus Bears",
+            "id": "bob",
+            "pic": "bob.png",
+            "type": "ngm",
+            "state": 1,
+            "category": ""
+        },
+        {
+            "name": "船长的宝藏",
+            "eName": "Captains Treasure",
+            "id": "ct",
+            "pic": "ct.png",
+            "type": "ngm",
+            "state": 1,
+            "category": [
+                "HOT",
+                "NEW",
+                "CLA",
+                "ELE"
+            ]
+        },
+        {
+            "name": "猫女王",
+            "eName": "Cat Queen",
+            "id": "catqc",
+            "pic": "catqc.png",
+            "type": "ngm",
+            "state": 1,
+            "category": ""
+        },
+        {
+            "name": "樱之恋",
+            "eName": "Cherry Love",
+            "id": "chl",
+            "pic": "chl.png",
+            "type": "ngm",
+            "state": 1,
+            "category": ""
+        },
+        {
+            "name": "财宝箱",
+            "eName": "Chests of Plenty",
+            "id": "ashcpl",
+            "pic": "ashcpl.png",
+            "type": "ngm",
+            "state": 1,
+            "category": ""
+        },
+        {
+            "name": "沙漠寻宝",
+            "eName": "Desert Treasure",
+            "id": "mobdt",
+            "pic": "mobdt.png",
+            "type": "ngm",
+            "state": 1,
+            "category": ""
+        },
+        {
+            "name": "Dr Lovemore",
+            "eName": "Dr Lovemore",
+            "id": "dlm",
+            "pic": "dlm.png",
+            "type": "ngm",
+            "state": 1,
+            "category": ""
+        },
+        {
+            "name": "复活节大惊喜",
+            "eName": "Easter Surprise",
+            "id": "eas",
+            "pic": "eas.png",
+            "type": "ngm",
+            "state": 1,
+            "category": ""
+        },
+        {
+            "name": "埃斯梅拉达",
+            "eName": "Esmeralda",
+            "id": "esm",
+            "pic": "esm.png",
+            "type": "ngm",
+            "state": 1,
+            "category": ""
+        },
+        {
+            "name": "全民大奖",
+            "eName": "Everybodys Jackpot",
+            "id": "evj",
+            "pic": "evj.png",
+            "type": "ngm",
+            "state": 1,
+            "category": ""
+        },
+        {
+            "name": "神奇四侠",
+            "eName": "Fantastic Four",
+            "id": "fsf",
+            "pic": "fsf.png",
+            "type": "ngm",
+            "state": 1,
+            "category": ""
+        },
+        {
+            "name": "戴图理",
+            "eName": "Frankie Dettoris",
+            "id": "fdt",
+            "pic": "fdt.png",
+            "type": "ngm",
+            "state": 1,
+            "category": ""
+        },
+        {
+            "name": "戴图理累计大奖",
+            "eName": "Frankie Dettoris JP",
+            "id": "fdtjg",
+            "pic": "fdtjg.png",
+            "type": "ngm",
+            "state": 1,
+            "category": ""
+        },
+        {
+            "name": "满月财富",
+            "eName": "Full Moon Fortunes",
+            "id": "ashfmf",
+            "pic": "ashfmf.png",
+            "type": "ngm",
+            "state": 1,
+            "category": ""
+        },
+        {
+            "name": "酷炫水果",
+            "eName": "Funky Fruits",
+            "id": "fnfrj",
+            "pic": "fnfrj.png",
+            "type": "ngm",
+            "state": 1,
+            "category": ""
+        },
+        {
+            "name": "艺伎回忆录",
+            "eName": "Geisha Story",
+            "id": "ges",
+            "pic": "ges.png",
+            "type": "ngm",
+            "state": 1,
+            "category": ""
+        },
+        {
+            "name": "角斗士",
+            "eName": "Gladiator Jackpot",
+            "id": "glrj",
+            "pic": "glrj.png",
+            "type": "ngm",
+            "state": 1,
+            "category": ""
+        },
+        {
+            "name": "大蓝",
+            "eName": "Great Blue",
+            "id": "bib",
+            "pic": "bib.png",
+            "type": "ngm",
+            "state": 1,
+            "category": ""
+        },
+        {
+            "name": "万圣节",
+            "eName": "Halloween Fortune",
+            "id": "hlf",
+            "pic": "hf.png",
+            "type": "ngm",
+            "state": 1,
+            "category": ""
+        },
+        {
+            "name": "丛林之心",
+            "eName": "Heart of the Jungle",
+            "id": "ashhotj",
+            "pic": "ashhotj.png",
+            "type": "ngm",
+            "state": 1,
+            "category": ""
+        },
+        {
+            "name": "高速公路之路",
+            "eName": "Highway Kings",
+            "id": "hk",
+            "pic": "hk.png",
+            "type": "ngm",
+            "state": 1,
+            "category": ""
+        },
+        {
+            "name": "绿巨人",
+            "eName": "Hulk",
+            "id": "hlk2",
+            "pic": "hlk2.png",
+            "type": "ngm",
+            "state": 1,
+            "category": ""
+        },
+        {
+            "name": "Ice Run",
+            "eName": "Ice Run",
+            "id": "ir",
+            "pic": "ir.png",
+            "type": "ngm",
+            "state": 1,
+            "category": ""
+        },
+        {
+            "name": "幸运草",
+            "eName": "Irish Luck",
+            "id": "irl",
+            "pic": "irl.png",
+            "type": "ngm",
+            "state": 1,
+            "category": ""
+        },
+        {
+            "name": "钢铁侠2",
+            "eName": "Iron Man 2",
+            "id": "ir2",
+            "pic": "ir2.png",
+            "type": "ngm",
+            "state": 1,
+            "category": ""
+        },
+        {
+            "name": "钢铁侠3",
+            "eName": "Iron Man 3",
+            "id": "irmn3",
+            "pic": "irmn3.png",
+            "type": "ngm",
+            "state": 1,
+            "category": ""
+        },
+        {
+            "name": "巨人",
+            "eName": "Jackpot Giant",
+            "id": "jpgt",
+            "pic": "jpgt.png",
+            "type": "ngm",
+            "state": 1,
+            "category": ""
+        },
+        {
+            "name": "Kong",
+            "eName": "Kong",
+            "id": "kkg",
+            "pic": "kkg.png",
+            "type": "ngm",
+            "state": 1,
+            "category": ""
+        },
+        {
+            "name": "疯狂乐透",
+            "eName": "Lotto Madness",
+            "id": "lm",
+            "pic": "lm.png",
+            "type": "ngm",
+            "state": 1,
+            "category": ""
+        },
+        {
+            "name": "玛丽莲·梦露",
+            "eName": "Marilyn Monroe",
+            "id": "gtsmrln",
+            "pic": "gtsmrln.png",
+            "type": "ngm",
+            "state": 1,
+            "category": ""
+        },
+        {
+            "name": "大富豪",
+            "eName": "Mr. Cashback",
+            "id": "mrcb",
+            "pic": "mrcb.png",
+            "type": "ngm",
+            "state": 1,
+            "category": ""
+        },
+        {
+            "name": "年年有余",
+            "eName": "Nian Nian You Yu",
+            "id": "nian",
+            "pic": "nian.png",
+            "type": "ngm",
+            "state": 1,
+            "category": ""
+        },
+        {
+            "name": "Panther Moon",
+            "eName": "Panther Moon",
+            "id": "pmn",
+            "pic": "pmn.png",
+            "type": "ngm",
+            "state": 1,
+            "category": ""
+        },
+        {
+            "name": "法老的秘密",
+            "eName": "Pharaohs Secrets",
+            "id": "pst",
+            "pic": "pst.png",
+            "type": "ngm",
+            "state": 1,
+            "category": ""
+        },
+        {
+            "name": "顽皮豹",
+            "eName": "Pink Panther",
+            "id": "pnp",
+            "pic": "pnp.png",
+            "type": "ngm",
+            "state": 1,
+            "category": ""
+        },
+        {
+            "name": "巨额财宝",
+            "eName": "Plenty O Fortune",
+            "id": "gtspor",
+            "pic": "gtspor.png",
+            "type": "ngm",
+            "state": 1,
+            "category": ""
+        },
+        {
+            "name": "桑巴舞",
+            "eName": "Samba Brazil",
+            "id": "gtssmbr",
+            "pic": "gtssmbr.png",
+            "type": "ngm",
+            "state": 1,
+            "category": ""
+        },
+        {
+            "name": "圣诞惊喜",
+            "eName": "Santa Surprise",
+            "id": "ssp",
+            "pic": "ssp.png",
+            "type": "ngm",
+            "state": 1,
+            "category": ""
+        },
+        {
+            "name": "亚马逊的秘密",
+            "eName": "Secrets of the Amazon",
+            "id": "samz",
+            "pic": "samz.png",
+            "type": "ngm",
+            "state": 1,
+            "category": ""
+        },
+        {
+            "name": "神探夏洛克",
+            "eName": "Sherlock Mystery",
+            "id": "shmst",
+            "pic": "shmst.png",
+            "type": "ngm",
+            "state": 1,
+            "category": ""
+        },
+        {
+            "name": "沉默的武士",
+            "eName": "Silent Samurai",
+            "id": "sis",
+            "pic": "sis.png",
+            "type": "ngm",
+            "state": 1,
+            "category": ""
+        },
+        {
+            "name": "银子弹",
+            "eName": "Silver Bullet",
+            "id": "sib",
+            "pic": "sib.png",
+            "type": "ngm",
+            "state": 1,
+            "category": ""
+        },
+        {
+            "name": "蜘蛛侠",
+            "eName": "Spider-Man",
+            "id": "spidc",
+            "pic": "spidc.png",
+            "type": "ngm",
+            "state": 1,
+            "category": ""
+        },
+        {
+            "name": "幸运时刻",
+            "eName": "Streak of Luck",
+            "id": "sol",
+            "pic": "sol.png",
+            "type": "ngm",
+            "state": 1,
+            "category": ""
+        },
+        {
+            "name": "甜蜜派对",
+            "eName": "Sweet Party",
+            "id": "cnpr",
+            "pic": "cnpr.png",
+            "type": "ngm",
+            "state": 1,
+            "category": ""
+        },
+        {
+            "name": "泰国天堂",
+            "eName": "Thai Paradise",
+            "id": "tpd2",
+            "pic": "tpd2.png",
+            "type": "ngm",
+            "state": 1,
+            "category": ""
+        },
+        {
+            "name": "复仇者",
+            "eName": "The Avengers",
+            "id": "avng",
+            "pic": "avng.png",
+            "type": "ngm",
+            "state": 1,
+            "category": ""
+        },
+        {
+            "name": "堂吉诃德的财富",
+            "eName": "The Riches of<br>Don Quixote",
+            "id": "donq",
+            "pic": "donq.png",
+            "type": "ngm",
+            "state": 1,
+            "category": ""
+        },
+        {
+            "name": "黑道家族",
+            "eName": "The Sopranos",
+            "id": "gtssprs",
+            "pic": "gtssprs.png",
+            "type": "ngm",
+            "state": 1,
+            "category": ""
+        },
+        {
+            "name": "三个火枪手",
+            "eName": "The Three Musketeers",
+            "id": "tmqd",
+            "pic": "tmqd.png",
+            "type": "ngm",
+            "state": 1,
+            "category": ""
+        },
+        {
+            "name": "奢华假日",
+            "eName": "Vacation Station Deluxe",
+            "id": "vcstd",
+            "pic": "vcstd.png",
+            "type": "ngm",
+            "state": 1,
+            "category": ""
+        },
+        {
+            "name": "白王",
+            "eName": "White King",
+            "id": "whk",
+            "pic": "whk.png",
+            "type": "ngm",
+            "state": 1,
+            "category": ""
+        },
+        {
+            "name": "百万富翁",
+            "eName": "Who Wants To Be<br>A Millionaire",
+            "id": "ashwwm",
+            "pic": "ashwwm.png",
+            "type": "ngm",
+            "state": 1,
+            "category": ""
+        },
+        {
+            "name": "动物世界",
+            "eName": "Wild Gambler",
+            "id": "gtswg",
+            "pic": "gtswg.png",
+            "type": "ngm",
+            "state": 1,
+            "category": ""
+        },
+        {
+            "name": "北极探险",
+            "eName": "Wild Gambler<br>Arctic Adventure",
+            "id": "ashwgaa",
+            "pic": "ashwgaa.png",
+            "type": "ngm",
+            "state": 1,
+            "category": ""
+        },
+        {
+            "name": "舞龙",
+            "eName": "Wu Long",
+            "id": "wlg",
+            "pic": "wlg.png",
+            "type": "ngm",
+            "state": 1,
+            "category": ""
+        },
+        {
+            "name": "X战警50线",
+            "eName": "X-Men 50 Lines",
+            "id": "xmn50",
+            "pic": "xmn50.png",
+            "type": "ngm",
+            "state": 1,
+            "category": ""
+        },
+        {
+            "name": "招财进宝",
+            "eName": "Zhao Cai Jin Bao",
+            "id": "zcjb",
+            "pic": "zcjb.png",
+            "type": "ngm",
+            "state": 1,
+            "category": ""
+        }
+    ]
+}

@@ -1,0 +1,1342 @@
+[
+  {
+      "eName": "Playson  Rise of Egypt",
+      "name": "黃金古埃及",
+      "id": "14654",
+      "code": "EGIGame&gameType=0",
+      "pic": "14654.png",
+      "type": "SLO",
+      "line": "10",
+      "state": 1,
+      "tag": [
+          "NEW"
+      ],
+      "category": "TTG",
+      "subType": "",
+      "language": ""
+  },
+  {
+      "eName": "Pragmatic  Peking Luck",
+      "name": "好运北京",
+      "id": "14511",
+      "code": "EGIGame&gameType=0",
+      "pic": "14511.png",
+      "type": "SLO",
+      "line": "10",
+      "state": 1,
+      "tag": [
+          "NEW"
+      ],
+      "category": "TTG",
+      "subType": "",
+      "language": ""
+  },
+  {
+      "eName": "Madame Destiny™",
+      "name": "怒海之神",
+      "id": "14652",
+      "code": "EGIGame&gameType=0",
+      "pic": "14652.jpg",
+      "type": "SLO",
+      "line": "10",
+      "state": 1,
+      "tag": [
+        "NEW"
+      ],
+      "category": "TTG",
+      "subType": "",
+      "language": ""
+    },
+    {
+      "eName": "Madame Destiny™",
+      "name": "命运女士™",
+      "id": "14508",
+      "code": "EGIGame&gameType=0",
+      "pic": "14508.jpg",
+      "type": "SLO",
+      "line": "10",
+      "state": 1,
+      "tag": [
+        "NEW"
+      ],
+      "category": "TTG",
+      "subType": "",
+      "language": ""
+    },
+    {
+      "eName": "Gem Riches",
+      "name": "宝石财富",
+      "id": "1101",
+      "code": "GemRiches&gameType=0",
+      "pic": "1101.jpg",
+      "type": "SLO",
+      "line": "10",
+      "state": 1,
+      "tag": [
+        "NEW"
+      ],
+      "category": "TTG",
+      "subType": "",
+      "language": ""
+    },
+    {
+      "eName": "Ying Cai Shen",
+      "name": "迎财神",
+      "id": "1087",
+      "code": "YingCaiShen&gameType=0",
+      "pic": "1087.jpg",
+      "type": "SLO",
+      "line": "10",
+      "state": 1,
+      "tag": [
+        "NEW"
+      ],
+      "category": "TTG",
+      "subType": "",
+      "language": ""
+    },
+    {
+      "eName": "Burning Wins",
+      "name": "呛辣水果盘:经典5线",
+      "id": "14651",
+      "code": "PL_BurningWins&gameType=0",
+      "pic": "14651.jpg",
+      "type": "SLO",
+      "line": "5",
+      "state": 1,
+      "tag": [
+        "NEW",
+        "SLO",
+        "HOT"
+      ],
+      "category": "TTG",
+      "subType": "",
+      "language": ""
+    },
+    {
+      "eName": "Irish Charms™",
+      "name": "爱尔兰的魅力",
+      "id": "14507",
+      "code": "PP_IrishCharms&gameType=0",
+      "pic": "14507.jpg",
+      "type": "SLO",
+      "line": "3",
+      "state": 1,
+      "tag": [
+        "NEW",
+        "SLO",
+        "HOT"
+      ],
+      "category": "TTG",
+      "subType": "",
+      "language": ""
+    },
+    {
+      "eName": "Asgard™",
+      "name": "仙宫™",
+      "id": "14506",
+      "code": "PP_Asgard&gameType=0",
+      "pic": "14506.jpg",
+      "type": "SLO",
+      "line": "25",
+      "state": 1,
+      "tag": [
+        "NEW",
+        "SLO",
+        "HOT"
+      ],
+      "category": "TTG",
+      "subType": "",
+      "language": ""
+    },
+    {
+      "eName": "Lava Loca",
+      "name": "疯狂熔岩",
+      "id": "14290",
+      "code": "BG_LavaLoca&gameType=0",
+      "pic": "14290.jpg",
+      "type": "SLO",
+      "line": "20",
+      "state": 1,
+      "tag": [
+        "NEW",
+        "SLO",
+        "HOT"
+      ],
+      "category": "TTG",
+      "subType": "",
+      "language": ""
+    },
+        {
+      "name": "失落的神庙H5",
+      "id": "1058",
+      "code": "LostTempleH5&gameType=0",
+      "eName": "Lost Temple H5",
+      "pic": "484.jpg",
+      "type": "SLO",
+      "line": "MORE",
+      "state": 1,
+      "tag": [
+        "NEW",
+          "SLO",
+          "HOT"
+      ],
+      "category": "TTG"
+    },
+    {
+    "eName": "Wild tRIADS",
+    "name": "古惑仔",
+    "id": "1102",
+    "code": "EGIGame&gameType=0",
+    "pic": "1102.jpg",
+    "type": "SLO",
+    "line": "25-25",
+    "state": 1,
+    "tag": [
+      "NEW",
+      "SLO",
+      "HOT"
+    ],
+    "category": "TTG",
+    "subType": "",
+    "language": ""
+  },
+  {
+    "eName": "40JokerStaxx",
+    "name": "四十小丑",
+    "id": "14650",
+    "code": "EGIGame&gameType=0",
+    "pic": "14650.jpg",
+    "type": "SLO",
+    "line": "25-25",
+    "state": 1,
+    "tag": [
+      "NEW",
+      "SLO",
+      "HOT"
+    ],
+    "category": "TTG",
+    "subType": "",
+    "language": ""
+  },
+  {
+    "eName": "Lions",
+    "name": "雄狮",
+    "id": "14505",
+    "code": "EGIGame&gameType=0",
+    "pic": "14505.jpg",
+    "type": "SLO",
+    "line": "25-25",
+    "state": 1,
+    "tag": [
+      "NEW",
+      "SLO",
+      "HOT"
+    ],
+    "category": "TTG",
+    "subType": "",
+    "language": ""
+  },
+  {
+    "eName": "Wild Diamond",
+    "name": "狂野钻石",
+    "id": "14289",
+    "code": "EGIGame&gameType=0",
+    "pic": "14289.jpg",
+    "type": "SLO",
+    "line": "25-25",
+    "state": 1,
+    "tag": [
+      "NEW",
+      "SLO",
+      "HOT"
+    ],
+    "category": "TTG",
+    "subType": "",
+    "language": ""
+  },
+        {
+    "eName": "The Champions™",
+    "name": "冠军杯™",
+    "id": "14504",
+    "code": "EGIGame&gameType=0",
+    "pic": "14504.jpg",
+    "type": "SLO",
+    "line": "25-25", 
+    "state": 1,
+    "tag": [
+      "NEW",
+      "SLO",
+      "HOT"
+    ],
+    "category": "TTG",
+    "subType": "",
+    "language": ""
+  }, 
+    {
+    "eName": "Tiny Door Gods",
+    "name": "小门神",
+    "id": "1100",
+    "code": "TinyDoorGods&gameType=0",
+    "pic": "1100.png",
+    "type": "SLO",
+    "line": "25-25", 
+    "state": 1,
+    "tag": [
+      "NEW",
+      "SLO",
+      "HOT"
+    ],
+    "category": "TTG",
+    "subType": "",
+    "language": ""
+  }, 
+  {
+    "eName": "Doublin Gold",
+    "name": "都柏林之宝",
+    "id": "14284",
+    "pic": "14284.png",
+    "line": "15-20",
+    "code": "EGIGame&gameType=0",
+    "type": "SLO",
+    "state": 1,
+    "tag": [
+      "BLO",
+      "NEW",
+      "HOT"
+    ],
+    "category": "TTG",
+    "subType": "BMG",
+    "language": ""
+  },
+  {
+    "eName": "Fire 88",
+    "name": "88火",
+    "id": "14499",
+    "code": "EGIGame&gameType=0",
+    "pic": "14499.png",
+    "state": 1,
+    "type": "SLO",
+    "tag": [
+      "PRA",
+      "NEW",
+      "HOT"
+    ],
+    "line": "5-10",
+    "category": "TTG",
+    "subType": "PMT",
+    "language": ""
+  },
+  {
+    "eName": "KTV",
+    "name": "KTV",
+    "id": "14410",
+    "code": "EGIGame&gameType=0",
+    "pic": "14410.png",
+    "state": 1,
+    "type": "SLO",
+    "tag": [
+      "PRA",
+      "NEW",
+      "HOT"
+    ],
+    "line": "15-20",
+    "category": "TTG",
+    "subType": "PMT",
+    "language": ""
+  },
+  {
+    "eName": "Hockey League Wild Match",
+    "name": "狂野冰球赛",
+    "id": "14416",
+    "code": "EGIGame&gameType=0",
+    "pic": "14416.png",
+    "state": 1,
+    "type": "SLO",
+    "tag": [
+      "PRA",
+      "NEW",
+      "HOT"
+    ],
+    "line": "15-20",
+    "category": "TTG",
+    "subType": "PMT",
+    "language": ""
+  },
+  {
+    "eName": "Glorious Rome",
+    "name": "荣耀罗马",
+    "id": "14435",
+    "code": "EGIGame&gameType=0",
+    "pic": "14435.png",
+    "state": 1,
+    "type": "SLO",
+    "tag": [
+      "PRA",
+      "NEW",
+      "HOT"
+    ],
+    "line": "15-20",
+    "category": "TTG",
+    "subType": "PMT",
+    "language": ""
+  },
+  {
+    "eName": "Suger Rush Summer Time",
+    "name": "极速糖果夏日版",
+    "id": "14438",
+    "code": "EGIGame&gameType=0",
+    "pic": "14438.png",
+    "state": 1,
+    "type": "SLO",
+    "tag": [
+      "PRA",
+      "NEW",
+      "HOT"
+    ],
+    "line": "15-20",
+    "category": "TTG",
+    "subType": "PMT",
+    "language": ""
+  },
+  {
+    "eName": "Tales of Egypt",
+    "name": "埃及传说",
+    "id": "14430",
+    "code": "EGIGame&gameType=0",
+    "pic": "14430.png",
+    "state": 1,
+    "type": "SLO",
+    "tag": [
+      "PRA",
+      "NEW",
+      "HOT"
+    ],
+    "line": "15-20",
+    "category": "TTG",
+    "subType": "PMT",
+    "language": ""
+  },
+  {
+    "eName": "Magic Crystals",
+    "name": "魔幻水晶",
+    "id": "14411",
+    "code": "EGIGame&gameType=0",
+    "pic": "14411.png",
+    "state": 1,
+    "type": "SLO",
+    "tag": [
+      "PRA",
+      "NEW",
+      "HOT"
+    ],
+    "line": "243",
+    "category": "TTG",
+    "subType": "PMT",
+    "language": ""
+  },
+  {
+    "eName": "The Catfather",
+    "name": "猫咪派对",
+    "id": "14418",
+    "code": "EGIGame&gameType=0",
+    "pic": "14418.png",
+    "state": 1,
+    "type": "SLO",
+    "tag": [
+      "PRA",
+      "NEW",
+      "HOT"
+    ],
+    "line": "5-10",
+    "category": "TTG",
+    "subType": "PMT",
+    "language": ""
+  },
+  {
+    "eName": "Romeo and Juliet",
+    "name": "罗密欧与朱丽叶",
+    "id": "14413",
+    "code": "EGIGame&gameType=0",
+    "pic": "14413.png",
+    "state": 1,
+    "type": "SLO",
+    "tag": [
+      "PRA",
+      "NEW",
+      "HOT"
+    ],
+    "line": "25-25",
+    "category": "TTG",
+    "subType": "PMT",
+    "language": ""
+  },
+  {
+    "eName": "Dwarven Gold Deluxe",
+    "name": "矮人黄金",
+    "id": "14409",
+    "code": "EGIGame&gameType=0",
+    "pic": "14409.png",
+    "state": 1,
+    "type": "SLO",
+    "tag": [
+      "PRA",
+      "NEW",
+      "HOT"
+    ],
+    "line": "25-25",
+    "category": "TTG",
+    "subType": "PMT",
+    "language": ""
+  },
+  {
+    "eName": "Luck Reels",
+    "name": "幸运卷轴",
+    "id": "14616",
+    "code": "EGIGame&gameType=0",
+    "pic": "14616.png",
+    "state": 1,
+    "type": "SLO",
+    "tag": [
+      "PS",
+      "NEW",
+      "HOT"
+    ],
+    "line": "5-10",
+    "category": "TTG",
+    "subType": "PSG",
+    "language": ""
+  },
+  {
+    "eName": "Claws vs Paws",
+    "name": "猫爪大战狗爪",
+    "id": "14648",
+    "code": "EGIGame&gameType=0",
+    "pic": "14648.png",
+    "state": 1,
+    "type": "SLO",
+    "tag": [
+      "PS",
+      "NEW",
+      "HOT"
+    ],
+    "line": "15-20",
+    "category": "TTG",
+    "subType": "PSG",
+    "language": ""
+  },
+ {
+    "eName": "Asia Wins",
+    "name": "亚洲风情",
+    "id": "14283",
+    "pic": "14283.png",
+    "line": "15-20",
+    "code": "EGIGame&gameType=0",
+    "type": "SLO",
+    "state": 1,
+    "tag": [
+      "BLO",
+      "NEW",
+      "HOT"
+    ],
+    "category": "TTG",
+    "subType": "BMG",
+    "language": ""
+  },
+  {
+    "eName": "Aztec Gems",
+    "name": "阿兹特克的宝石",
+    "id": "14498",
+    "code": "EGIGame&gameType=0",
+    "pic": "14498.png",
+    "state": 1,
+    "type": "SLO",
+    "tag": [
+      "PRA",
+      "NEW",
+      "HOT"
+    ],
+    "line": "1-10",
+    "category": "TTG",
+    "subType": "PMT",
+    "language": ""
+  },
+  {
+    "eName": "Ancient Egypt",
+    "name": "古代埃及",
+    "id": "14497",
+    "code": "EGIGame&gameType=0",
+    "pic": "14497.jpg",
+    "state": 1,
+    "type": "SLO",
+    "tag": [
+      "PRA",
+      "NEW",
+      "HOT"
+    ],
+    "line": "10-10",
+    "category": "TTG",
+    "subType": "PMT",
+    "language": ""
+  },
+  {
+    "eName": "Kingdom of the Sun Golden Age",
+    "name": "图坦卡门-黄金帝国",
+    "id": "14647",
+    "code": "EGIGame",
+    "pic": "14674.jpg",
+    "state": 1,
+    "type": "SLO",
+    "tag": [
+      "PSG",
+      "NEW",
+      "HOT",
+      "PS"
+    ],
+    "line": "",
+    "category": "TTG",
+    "subType": "PSG",
+    "language": ""
+  },
+  {
+    "eName": "Paris Nights",
+    "name": "巴黎之夜",
+    "id": "14282",
+    "pic": "14282.png",
+    "line": "15-20",
+    "code": "EGIGame&gameType=0",
+    "type": "SLO",
+    "state": 1,
+    "tag": [
+      "BLO",
+      "NEW",
+      "HOT"
+    ],
+    "category": "TTG",
+    "subType": "BMG",
+    "language": ""
+  },
+  {
+    "eName": "League Of Champions",
+    "name": "英雄联盟",
+    "id": "1086",
+    "code": "LeagueOfChampions&gameType=0",
+    "pic": "1086.jpg",
+    "type": "SLO",
+    "line": "",
+    "state": 1,
+    "tag": [
+      "NEW",
+      "SLO",
+      "HOT"
+    ],
+    "category": "TTG",
+    "subType": "",
+    "language": ""
+  },
+  {
+    "eName": "PP Gold Rush",
+    "name": "淘金热",
+    "id": "14493",
+    "code": "EGIGame&gameType=0",
+    "pic": "14493.jpg",
+    "state": 1,
+    "type": "SLO",
+    "tag": [
+      "PRA",
+      "NEW",
+      "HOT"
+    ],
+    "line": "",
+    "category": "TTG",
+    "subType": "PMT",
+    "language": ""
+  },
+  {
+    "eName": "Romeo",
+    "name": "浪漫故事",
+    "id": "14281",
+    "pic": "14281.png",
+    "line": "5-10",
+    "code": "EGIGame&gameType=0",
+    "type": "SLO",
+    "state": 1,
+    "tag": [
+      "BLO",
+      "NEW",
+      "HOT"
+    ],
+    "category": "TTG",
+    "subType": "BMG",
+    "language": ""
+  },
+  {
+    "eName": "Lucky New Year",
+    "name": "幸运新年",
+    "id": "14496",
+    "code": "EGIGame&gameType=0",
+    "pic": "14496.jpg",
+    "state": 1,
+    "type": "SLO",
+    "tag": [
+      "PRA",
+      "NEW",
+      "HOT"
+    ],
+    "line": "25-25",
+    "category": "TTG",
+    "subType": "PMT",
+    "language": ""
+  },
+  {
+    "eName": "Big Apple Wins",
+    "name": "大苹果之战",
+    "id": "14280",
+    "pic": "14280.png",
+    "line": "15-20",
+    "code": "EGIGame&gameType=0",
+    "type": "SLO",
+    "state": 1,
+    "tag": [
+      "BLO",
+      "NEW",
+      "HOT"
+    ],
+    "category": "TTG",
+    "subType": "BMG",
+    "language": ""
+  },
+  {
+    "eName": "Royal Wins",
+    "name": "皇家之战",
+    "id": "14279",
+    "pic": "14279.png",
+    "line": "15-20",
+    "code": "EGIGame&gameType=0",
+    "type": "SLO",
+    "state": 1,
+    "tag": [
+      "BLO",
+      "NEW",
+      "HOT"
+    ],
+    "category": "TTG",
+    "subType": "BMG",
+    "language": ""
+  },
+  {
+    "name": "三只老虎",
+    "id": "14495",
+    "code": "EGIGame&gameType=0",
+    "eName": "Triple Tigers",
+    "pic": "14495.png",
+    "type": "SLO",
+    "state": 1,
+    "tag": [
+      "NEW",
+      "BM",
+      "SLO",
+      "MORE"
+    ],
+    "line": "",
+    "category": "TTG",
+    "subType": "BMG",
+    "language": ""
+  },
+  {
+    "eName": "Fruits N Stars HE",
+    "name": "水果与星星节日版",
+    "id": "14645",
+    "pic": "14745.png",
+    "line": "25-10",
+    "code": "EGIGame&gameType=0",
+    "type": "SLO",
+    "state": 1,
+    "tag": [
+      "BLO",
+      "NEW",
+      "HOT"
+    ],
+    "category": "TTG",
+    "subType": "BMG",
+    "language": ""
+  },
+  {
+    "eName": "Jingle Jingle",
+    "name": "圣诞响叮当",
+    "id": "14277",
+    "pic": "14277.png",
+    "line": "25-25",
+    "code": "EGIGame&gameType=0",
+    "type": "SLO",
+    "state": 1,
+    "tag": [
+      "BLO",
+      "NEW",
+      "HOT"
+    ],
+    "category": "TTG",
+    "subType": "BMG",
+    "language": ""
+  },
+  {
+    "eName": "Monkey Madness",
+    "name": "猴子也疯狂",
+    "id": "14494",
+    "code": "EGIGame&gameType=0",
+    "pic": "14494.png",
+    "state": 1,
+    "type": "SLO",
+    "tag": [
+      "PRA",
+      "NEW",
+      "HOT"
+    ],
+    "line": "5-10",
+    "category": "TTG",
+    "subType": "PMT",
+    "language": ""
+  },
+  {
+    "name": "圣诞老人",
+    "id": "14491",
+    "code": "EGIGame&gameType=0",
+    "eName": "Santa",
+    "pic": "14491.png",
+    "type": "SLO",
+    "subType": "PMT",
+    "line": "15-20",
+    "state": 1,
+    "tag": [
+      "NEW",
+      "HOT"
+    ],
+    "category": "TTG"
+  },
+  {
+    "name": "法老谷",
+    "eName": "Valley of Pharaohs",
+    "id": "14268",
+    "code": "EGIGAme&gameType=0",
+    "pic": "14268.png",
+    "state": 1,
+    "type": "SLO",
+    "tag": [],
+    "line": "",
+    "category": "TTG",
+    "subType": "BMG"
+  },
+  {
+    "name": "发发发龙",
+    "id": "14481",
+    "code": "EGIGame&gameType=0",
+    "eName": "888 Dragons",
+    "pic": "14481.png",
+    "type": "SLO",
+    "line": "25-25",
+    "state": 1,
+    "tag": [
+      "PRA",
+      "NEW",
+      "HOT"
+    ],
+    "category": "TTG",
+    "subType": "PMT",
+    "language": ""
+  },
+  {
+    "name": "龙发",
+    "id": "14478",
+    "code": "EGIGame&gameType=0",
+    "eName": "8Dragon",
+    "pic": "14478.png",
+    "type": "SLO",
+    "line": "25-25",
+    "state": 1,
+    "tag": [
+      "PRA",
+      "NEW",
+      "HOT"
+    ],
+    "category": "TTG",
+    "subType": "PMT",
+    "language": ""
+  },
+  {
+    "name": "金狼",
+    "id": "14477",
+    "code": "EGIGame&gameType=0",
+    "eName": "Wolf Gold",
+    "pic": "14477.jpg",
+    "type": "SLO",
+    "line": "25-25",
+    "state": 1,
+    "tag": [
+      "PRA",
+      "NEW",
+      "HOT"
+    ],
+    "category": "TTG",
+    "subType": "PMT",
+    "language": ""
+  },
+  {
+    "name": "冰冻现金",
+    "id": "14263",
+    "code": "EGIGame&gameType=0",
+    "eName": "PantherQueen",
+    "pic": "14263.png",
+    "type": "SLO",
+    "line": "20-20",
+    "state": 1,
+    "tag": [
+      "BLO",
+      "NEW",
+      "HOT"
+    ],
+    "category": "TTG",
+    "subType": "PMT"
+  },
+  {
+    "name": "火龙王国",
+    "id": "14471",
+    "code": "EGIGame&gameType=0",
+    "eName": "Dragon Kingdom",
+    "pic": "14471.png",
+    "type": "SLO",
+    "state": 1,
+    "tag": [],
+    "line": "",
+    "category": "TTG",
+    "subType": "PMT"
+  },
+  {
+    "name": "大堡礁",
+    "id": "14427",
+    "code": "EGIGame&gameType=0",
+    "eName": "Great Reef",
+    "pic": "14427.png",
+    "type": "SLO",
+    "state": 1,
+    "tag": [],
+    "line": "",
+    "category": "TTG",
+    "subType": "PMT"
+  },
+  {
+    "name": "女神戈帝梵",
+    "id": "14417",
+    "code": "EGIGame&gameType=0",
+    "eName": "Lady Godiva",
+    "pic": "14417.png",
+    "type": "SLO",
+    "state": 1,
+    "tag": [],
+    "line": "",
+    "category": "TTG",
+    "subType": "PMT"
+  },
+  {
+    "name": "极速糖果",
+    "id": "14405",
+    "code": "EGIGame&gameType=0",
+    "eName": "Sugar Rush Summer Time",
+    "pic": "14405.png",
+    "type": "SLO",
+    "state": 1,
+    "tag": [],
+    "line": "",
+    "category": "TTG",
+    "subType": "PMT"
+  },
+  {
+    "name": "野生动物园",
+    "id": "14404",
+    "code": "EGIGame&gameType=0",
+    "eName": "Hot Safari",
+    "pic": "14404.png",
+    "type": "SLO",
+    "state": 1,
+    "tag": [],
+    "line": "",
+    "category": "TTG",
+    "subType": "PMT"
+  },
+  {
+    "name": "月之女神",
+    "id": "14408",
+    "code": "EGIGame&gameType=0",
+    "eName": "Lady of the Moon",
+    "pic": "14408.png",
+    "type": "SLO",
+    "state": 1,
+    "tag": [],
+    "line": "",
+    "category": "TTG",
+    "subType": "PMT"
+  },
+  {
+    "name": "7只猴子",
+    "id": "14402",
+    "code": "EGIGame&gameType=0",
+    "eName": "7 Monkeys",
+    "pic": "14402.png",
+    "type": "SLO",
+    "state": 1,
+    "tag": [],
+    "line": "",
+    "category": "TTG",
+    "subType": "PMT"
+  },
+  {
+    "name": "金牌天神",
+    "eName": "Golden Profits",
+    "id": "14269",
+    "code": "EGIGAme&gameType=0",
+    "pic": "14269.png",
+    "state": 1,
+    "type": "SLO",
+    "tag": [],
+    "line": "",
+    "category": "TTG",
+    "subType": "BMG"
+  },
+  {
+    "name": "恶魔热度",
+    "eName": "Devil’s Heat",
+    "id": "14267",
+    "code": "EGIGAme&gameType=0",
+    "pic": "14267.png",
+    "state": 1,
+    "type": "SLO",
+    "tag": [],
+    "line": "",
+    "category": "TTG",
+    "subType": "BMG"
+  },
+  {
+    "name": "异国水果",
+    "eName": "Exotic Fruit",
+    "id": "14266",
+    "code": "EGIGAme&gameType=0",
+    "pic": "14266.png",
+    "state": 1,
+    "type": "SLO",
+    "tag": [],
+    "line": "",
+    "category": "TTG",
+    "subType": "BMG"
+  },
+  {
+    "name": "非诚勿扰",
+    "eName": "",
+    "id": "14226",
+    "code": "EGIGAme&gameType=0",
+    "pic": "14226.png",
+    "state": 1,
+    "type": "SLO",
+    "tag": [],
+    "line": "",
+    "category": "TTG",
+    "subType": "BMG"
+  },
+  {
+    "name": "樱桃炸弹升级版",
+    "eName": "",
+    "id": "14261",
+    "code": "EGIGAme&gameType=0",
+    "pic": "14261.png",
+    "state": 1,
+    "type": "SLO",
+    "tag": [],
+    "line": "",
+    "category": "TTG",
+    "subType": "BMG"
+  },
+  {
+    "name": "英雄和野兽",
+    "eName": "",
+    "id": "14232",
+    "code": "EGIGAme&gameType=0",
+    "pic": "14232.png",
+    "state": 1,
+    "type": "SLO",
+    "tag": [],
+    "line": "",
+    "category": "TTG",
+    "subType": "BMG"
+  },
+  {
+    "name": "中国麻将馆",
+    "eName": "",
+    "id": "14234",
+    "code": "EGIGAme&gameType=0",
+    "pic": "14234.png",
+    "state": 1,
+    "type": "SLO",
+    "tag": [],
+    "line": "",
+    "category": "TTG",
+    "subType": "BMG"
+  },
+  {
+    "name": "芝加哥之夜",
+    "eName": "",
+    "id": "14227",
+    "code": "EGIGAme&gameType=0",
+    "pic": "14227.png",
+    "state": 1,
+    "type": "SLO",
+    "tag": [],
+    "line": "",
+    "category": "TTG",
+    "subType": "BMG"
+  },
+  {
+    "name": "可爱表情符",
+    "eName": "",
+    "id": "14241",
+    "code": "EGIGAme&gameType=0",
+    "pic": "14241.png",
+    "state": 1,
+    "type": "SLO",
+    "tag": [],
+    "line": "",
+    "category": "TTG",
+    "subType": "BMG"
+  },
+  {
+    "name": "疯狂的猴子",
+    "eName": "",
+    "id": "1016",
+    "code": "MadMonkey&gameType=0",
+    "pic": "1016.png",
+    "state": 1,
+    "type": "SLO",
+    "tag": [],
+    "line": "",
+    "category": "TTG",
+    "subType": "BMG"
+  },
+  {
+    "name": "Oh 卡特里娜",
+    "id": "14236",
+    "code": "EGIGame&gameType=0",
+    "eName": "Oh Catrina",
+    "pic": "14236.png",
+    "type": "SLO",
+    "state": 1,
+    "tag": [],
+    "line": "",
+    "category": "TTG",
+    "subType": "BMG"
+  },
+  {
+    "name": "恒星石",
+    "id": "14204",
+    "code": "EGIGame&gameType=0",
+    "eName": "Stellar Stones",
+    "pic": "14204.png",
+    "type": "SLO",
+    "state": 1,
+    "tag": [],
+    "line": "",
+    "category": "TTG",
+    "subType": "BMG"
+  },
+  {
+    "name": "疯狂的小丑",
+    "id": "14219",
+    "code": "EGIGame&gameType=0",
+    "eName": "Jokers Wild",
+    "pic": "14219.png",
+    "type": "SLO",
+    "state": 1,
+    "tag": [],
+    "line": "",
+    "category": "TTG",
+    "subType": "BMG"
+  },
+  {
+    "name": "莲花之恋",
+    "id": "14211",
+    "code": "EGIGame&gameType=0",
+    "eName": "Lotus Love",
+    "pic": "14211.png",
+    "type": "SLO",
+    "state": 1,
+    "tag": [],
+    "line": "",
+    "category": "TTG",
+    "subType": "BMG"
+  },
+  {
+    "name": "Booming 7",
+    "id": "14210",
+    "code": "EGIGame&gameType=0",
+    "eName": "Booming 7",
+    "pic": "14210.png",
+    "type": "SLO",
+    "state": 1,
+    "tag": [],
+    "line": "",
+    "category": "TTG",
+    "subType": "BMG"
+  },
+  {
+    "name": "爱丽丝梦游老虎机世界",
+    "eName": "",
+    "id": "14600",
+    "code": "EGIGame&gameType=0",
+    "pic": "14600.png",
+    "state": 1,
+    "type": "SLO",
+    "tag": [],
+    "line": "",
+    "category": "TTG",
+    "subType": "PSG"
+  },
+  {
+    "name": "僵尸生日",
+    "eName": "",
+    "id": "14630",
+    "code": "EGIGame&gameType=0",
+    "pic": "14630.png",
+    "state": 1,
+    "type": "SLO",
+    "tag": [],
+    "line": "",
+    "category": "TTG",
+    "subType": "PSG"
+  },
+  {
+    "name": "讽刺王后",
+    "eName": "",
+    "id": "14605",
+    "code": "EGIGame&gameType=0",
+    "pic": "14605.png",
+    "state": 1,
+    "type": "SLO",
+    "tag": [],
+    "line": "",
+    "category": "TTG",
+    "subType": "PSG"
+  },
+  {
+    "name": "淘金热狂",
+    "eName": "",
+    "id": "14611",
+    "code": "EGIGame&gameType=0",
+    "pic": "14611.png",
+    "state": 1,
+    "type": "SLO",
+    "tag": [],
+    "line": "",
+    "category": "TTG",
+    "subType": "PSG"
+  },
+  {
+    "name": "快乐丛林",
+    "eName": "",
+    "id": "14612",
+    "code": "EGIGame&gameType=0",
+    "pic": "14612.png",
+    "state": 1,
+    "type": "SLO",
+    "tag": [],
+    "line": "",
+    "category": "TTG",
+    "subType": "PSG"
+  },
+  {
+    "name": "艺术之劫",
+    "eName": "",
+    "id": "14634",
+    "code": "EGIGame&gameType=0",
+    "pic": "14634.png",
+    "state": 1,
+    "type": "SLO",
+    "tag": [],
+    "line": "",
+    "category": "TTG",
+    "subType": "PSG"
+  },
+  {
+    "name": "魔法艺术",
+    "eName": "",
+    "id": "14632",
+    "code": "EGIGame&gameType=0",
+    "pic": "14632.png",
+    "state": 1,
+    "type": "SLO",
+    "tag": [],
+    "line": "",
+    "category": "TTG",
+    "subType": "PSG"
+  },
+  {
+    "name": "德古拉家族",
+    "id": "14607",
+    "code": "EGIGame&gameType=0",
+    "eName": "Dracula’s Family",
+    "pic": "14607.png",
+    "type": "SLO",
+    "state": 1,
+    "tag": [],
+    "line": "",
+    "category": "TTG",
+    "subType": "PSG"
+  },
+  {
+    "name": "太空海盗",
+    "id": "16321",
+    "code": "EGIGame&gameType=0",
+    "eName": "Space Corsairs",
+    "pic": "16321.png",
+    "type": "SLO",
+    "state": 1,
+    "tag": [],
+    "line": "",
+    "category": "TTG",
+    "subType": "PSG"
+  },
+  {
+    "name": "丰收",
+    "id": "14604",
+    "code": "EGIGame&gameType=0",
+    "eName": "Bumper Crop",
+    "pic": "14604.png",
+    "type": "SLO",
+    "state": 1,
+    "tag": [],
+    "line": "",
+    "category": "TTG",
+    "subType": "PSG"
+  },
+  {
+    "name": "幸运海盗",
+    "id": "14615",
+    "code": "EGIGame&gameType=0",
+    "eName": "Lucky Pirates",
+    "pic": "14615.png",
+    "type": "SLO",
+    "state": 1,
+    "tag": [],
+    "line": "",
+    "category": "TTG",
+    "subType": "PSG"
+  },
+  {
+    "name": "荒野猎人",
+    "id": "14629",
+    "code": "EGIGame&gameType=0",
+    "eName": "Wild Hunter",
+    "pic": "14629.png",
+    "type": "SLO",
+    "state": 1,
+    "tag": [],
+    "line": "",
+    "category": "TTG",
+    "subType": "PSG"
+  }
+]

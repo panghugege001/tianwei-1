@@ -1,0 +1,1892 @@
+[
+  {
+    "eName": "9 Pots of Gold",
+    "name": "9罐黄金",
+    "itemId": 5619,
+    "appId": 1002,
+    "code": "9PotsofGold",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "9PotsofGold.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Age of Conquest",
+    "name": "征服时代",
+    "itemId": 5618,
+    "appId": 1002,
+    "code": "ageofConquest",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "ageofConquest.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Lucky Riches Hyperspins",
+    "name": "幸运富豪",
+    "itemId": 5620,
+    "appId": 1002,
+    "code": "luckyRichesHyperspins",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "luckyRichesHyperspins.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Castle Builder II",
+    "name": "城堡建筑师II",
+    "itemId": 1894,
+    "appId": 1002,
+    "code": "castleBuilderII",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "castleBuilderII.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Classic Blackjack Gold",
+    "name": "经典黄金21点",
+    "itemId": 1052,
+    "appId": 1002,
+    "code": "classicBlackjackGold",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "classicBlackjackGold.png",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "108 Heroes",
+    "name": "108好汉",
+    "itemId": 1302,
+    "appId": 1002,
+    "code": "108Heroes",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "108Heroes.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "108 Heroes Multiplier Fortunes",
+    "name": "108好汉乘数财富",
+    "itemId": 1897,
+    "appId": 1002,
+    "code": "108HeroesMultiplierFortunes",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "108HeroesMultiplierFortunes.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "A Dark Matter",
+    "name": "黑暗阴影",
+    "itemId": 5382,
+    "appId": 1002,
+    "code": "aDarkMatter",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "aDarkMatter.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Action Ops Snow & Sable",
+    "name": "秘密行动雪诺和塞布尔",
+    "itemId": 2076,
+    "appId": 1002,
+    "code": "actionOpsSnow&Sable",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "actionOpsSnow&Sable.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Adventure Palace HD",
+    "name": "冒险宫殿",
+    "itemId": 1010,
+    "appId": 1002,
+    "code": "adventurePalaceHD",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "adventurePalaceHD.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Asian Beauty",
+    "name": "亚洲美人",
+    "itemId": 1384,
+    "appId": 1002,
+    "code": "asianBeauty",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "asianBeauty.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Aurora Wilds",
+    "name": "极光百搭",
+    "itemId": 4328,
+    "appId": 1002,
+    "code": "auroraWilds",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "auroraWilds.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Avalon HD",
+    "name": "阿瓦隆",
+    "itemId": 1013,
+    "appId": 1002,
+    "code": "avalonHD",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "avalonHD.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Banana Odyssey",
+    "name": "香蕉奥德赛",
+    "itemId": 4296,
+    "appId": 1002,
+    "code": "bananaOdyssey",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "bananaOdyssey.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Basketball Star",
+    "name": "篮球巨星",
+    "itemId": 1159,
+    "appId": 1002,
+    "code": "basketballStar",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "basketballStar.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Battle Royale",
+    "name": "大逃杀",
+    "itemId": 1995,
+    "appId": 1002,
+    "code": "battleRoyale",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "battleRoyale.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Beautiful Bones",
+    "name": "美丽骷髅",
+    "itemId": 1890,
+    "appId": 1002,
+    "code": "beautifulBones",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "beautifulBones.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Big Top",
+    "name": "马戏篷",
+    "itemId": 1133,
+    "appId": 1002,
+    "code": "bigTop",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "bigTop.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Bikini Party",
+    "name": "比基尼派对",
+    "itemId": 1290,
+    "appId": 1002,
+    "code": "bikiniParty",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "bikiniParty.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Boat of Fortune",
+    "name": "金龙财宝",
+    "itemId": 5491,
+    "appId": 1002,
+    "code": "boatofFortune",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "boatofFortune.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Book of Oz",
+    "name": "Oz之书",
+    "itemId": 2075,
+    "appId": 1002,
+    "code": "bookofOz",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "bookofOz.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Bookie of Odds",
+    "name": "好运经纪人",
+    "itemId": 2089,
+    "appId": 1002,
+    "code": "bookieofOdds",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "bookieofOdds.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Break Away",
+    "name": "冰球突破",
+    "itemId": 1229,
+    "appId": 1002,
+    "code": "breakAway",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "breakAway.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Break Away Deluxe",
+    "name": "冰球突破豪华版",
+    "itemId": 2074,
+    "appId": 1002,
+    "code": "breakAwayDeluxe",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "breakAwayDeluxe.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Break Away Lucky Wilds",
+    "name": "冰球突破幸运百搭",
+    "itemId": 5325,
+    "appId": 1002,
+    "code": "breakAwayLuckyWilds",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "breakAwayLuckyWilds.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Candy Dreams",
+    "name": "梦果子乐园",
+    "itemId": 1886,
+    "appId": 1002,
+    "code": "candyDreams",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "candyDreams.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Cash of Kingdoms",
+    "name": "富贵王国",
+    "itemId": 2067,
+    "appId": 1002,
+    "code": "cashofKingdoms",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "cashofKingdoms.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Couch Potato",
+    "name": "沙发土豆",
+    "itemId": 1327,
+    "appId": 1002,
+    "code": "couchPotato",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "couchPotato.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Crazy Chameleons",
+    "name": "疯狂变色龙",
+    "itemId": 1202,
+    "appId": 1002,
+    "code": "crazyChameleons",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "crazyChameleons.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Cricket Star",
+    "name": "板球明星",
+    "itemId": 1075,
+    "appId": 1002,
+    "code": "cricketStar",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "cricketStar.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Deco Diamonds",
+    "name": "德科钻石",
+    "itemId": 2047,
+    "appId": 1002,
+    "code": "decoDiamonds",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "decoDiamonds.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Diamond Empire",
+    "name": "钻石帝国",
+    "itemId": 1949,
+    "appId": 1002,
+    "code": "diamondEmpire",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "diamondEmpire.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Dolphin Coast",
+    "name": "海豚海岸",
+    "itemId": 2065,
+    "appId": 1002,
+    "code": "dolphinCoast",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "dolphinCoast.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Dolphin Quest",
+    "name": "寻访海豚",
+    "itemId": 1309,
+    "appId": 1002,
+    "code": "dolphinQuest",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "dolphinQuest.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Dragon Dance",
+    "name": "舞龙",
+    "itemId": 1037,
+    "appId": 1002,
+    "code": "dragonDance",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "dragonDance.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Dragon Shard",
+    "name": "神龙碎片",
+    "itemId": 4257,
+    "appId": 1002,
+    "code": "dragonShard",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "dragonShard.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Dream Date",
+    "name": "梦幻邂逅",
+    "itemId": 1948,
+    "appId": 1002,
+    "code": "dreamDate",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "dreamDate.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "EmotiCoins",
+    "name": "表情金币",
+    "itemId": 1895,
+    "appId": 1002,
+    "code": "emotiCoins",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "emotiCoins.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Exotic Cats",
+    "name": "异域狂兽",
+    "itemId": 2060,
+    "appId": 1002,
+    "code": "exoticCats",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "exoticCats.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Football Star Deluxe",
+    "name": "足球明星豪华版",
+    "itemId": 5488,
+    "appId": 1002,
+    "code": "footballStarDeluxe",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "footballStarDeluxe.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Fortune Girl",
+    "name": "金库甜心",
+    "itemId": 1888,
+    "appId": 1002,
+    "code": "fortuneGirl",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "fortuneGirl.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Fortunium",
+    "name": "财富之都",
+    "itemId": 1993,
+    "appId": 1002,
+    "code": "fortunium",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "fortunium.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Gold Factory",
+    "name": "黄金工厂",
+    "itemId": 1267,
+    "appId": 1002,
+    "code": "goldFactory",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "goldFactory.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Golden Era",
+    "name": "黄金时代",
+    "itemId": 1041,
+    "appId": 1002,
+    "code": "goldenEra",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "goldenEra.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Golden Princess",
+    "name": "黄金公主",
+    "itemId": 1190,
+    "appId": 1002,
+    "code": "goldenPrincess",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "goldenPrincess.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Halloweenies",
+    "name": "万圣节",
+    "itemId": 1047,
+    "appId": 1002,
+    "code": "halloweenies",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "halloweenies.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Happy Monster Claw",
+    "name": "开心娃娃机",
+    "itemId": 2101,
+    "appId": 1002,
+    "code": "happyMonsterClaw",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "happyMonsterClaw.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "High Society",
+    "name": "上流社会",
+    "itemId": 1163,
+    "appId": 1002,
+    "code": "highSociety",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "highSociety.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Huangdi - The Yellow Emperor",
+    "name": "轩辕帝传",
+    "itemId": 1849,
+    "appId": 1002,
+    "code": "huangdi-TheYellowEmperor",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "huangdi-TheYellowEmperor.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Immortal Romance",
+    "name": "不朽情缘",
+    "itemId": 1103,
+    "appId": 1002,
+    "code": "immortalRomance",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "immortalRomance.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Incan Adventure",
+    "name": "挖到宝",
+    "itemId": 5489,
+    "appId": 1002,
+    "code": "incanAdventure",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "incanAdventure.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "King Tusk",
+    "name": "大象之王",
+    "itemId": 1908,
+    "appId": 1002,
+    "code": "kingTusk",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "kingTusk.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Kitty Cabana",
+    "name": "凯蒂卡巴拉",
+    "itemId": 1286,
+    "appId": 1002,
+    "code": "kittyCabana",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "kittyCabana.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Ladies Nite 2 Turn Wild",
+    "name": "淑女之夜2狂野变身",
+    "itemId": 5487,
+    "appId": 1002,
+    "code": "ladiesNite2TurnWild",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "ladiesNite2TurnWild.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Legend of the Moon Lovers",
+    "name": "奔月传说",
+    "itemId": 4295,
+    "appId": 1002,
+    "code": "legendoftheMoonLovers",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "legendoftheMoonLovers.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Lion's Pride",
+    "name": "狮子的骄傲",
+    "itemId": 1049,
+    "appId": 1002,
+    "code": "lion'sPride",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "lion'sPride.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Liquid Gold",
+    "name": "液体黄金",
+    "itemId": 1756,
+    "appId": 1002,
+    "code": "liquidGold",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "liquidGold.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Long Mu Fortunes",
+    "name": "龙母财富",
+    "itemId": 5365,
+    "appId": 1002,
+    "code": "longMuFortunes",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "longMuFortunes.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Lucha Legends",
+    "name": "摔角传奇",
+    "itemId": 2066,
+    "appId": 1002,
+    "code": "luchaLegends",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "luchaLegends.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Lucky Bachelors",
+    "name": "幸运单身族",
+    "itemId": 4339,
+    "appId": 1002,
+    "code": "luckyBachelors",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "luckyBachelors.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Lucky Little Gods",
+    "name": "宝贝财神",
+    "itemId": 1944,
+    "appId": 1002,
+    "code": "luckyLittleGods",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "luckyLittleGods.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Lucky Twins",
+    "name": "幸运双星",
+    "itemId": 1283,
+    "appId": 1002,
+    "code": "luckyTwins",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "luckyTwins.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Lucky Twins Jackpot",
+    "name": "幸运双星大奖",
+    "itemId": 5142,
+    "appId": 1002,
+    "code": "luckyTwinsJackpot",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "luckyTwinsJackpot.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Mad Hatters",
+    "name": "疯狂的帽子",
+    "itemId": 1314,
+    "appId": 1002,
+    "code": "madHatters",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "madHatters.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Magic of Sahara",
+    "name": "魔力撒哈拉",
+    "itemId": 4288,
+    "appId": 1002,
+    "code": "magicofSahara",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "magicofSahara.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Max Damage & The Alien Attack",
+    "name": "终结侵略者",
+    "itemId": 1223,
+    "appId": 1002,
+    "code": "maxDamage&TheAlienAttack",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "maxDamage&TheAlienAttack.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Mayan Princess",
+    "name": "玛雅公主",
+    "itemId": 1343,
+    "appId": 1002,
+    "code": "mayanPrincess",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "mayanPrincess.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Mega Money Multiplier",
+    "name": "巨额现金乘数",
+    "itemId": 1885,
+    "appId": 1002,
+    "code": "megaMoneyMultiplier",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "megaMoneyMultiplier.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Moby Dick",
+    "name": "白鲸记",
+    "itemId": 1905,
+    "appId": 1002,
+    "code": "mobyDick",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "mobyDick.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Monster Wheels",
+    "name": "怪物赛车",
+    "itemId": 1903,
+    "appId": 1002,
+    "code": "monsterWheels",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "monsterWheels.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Our Days",
+    "name": "有你的校园",
+    "itemId": 2073,
+    "appId": 1002,
+    "code": "ourDays",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "ourDays.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Pistoleras",
+    "name": "持枪王者",
+    "itemId": 1160,
+    "appId": 1002,
+    "code": "pistoleras",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "pistoleras.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Playboy",
+    "name": "花花公子",
+    "itemId": 1188,
+    "appId": 1002,
+    "code": "playboy",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "playboy.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Playboy Gold",
+    "name": "黄金花花公子",
+    "itemId": 1946,
+    "appId": 1002,
+    "code": "playboyGold",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "playboyGold.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Playboy™ Gold Jackpots",
+    "name": "花花公子黄金大奖",
+    "itemId": 4327,
+    "appId": 1002,
+    "code": "playboyGoldJackpots",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "playboyGoldJackpots.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Poke The Guy",
+    "name": "进击的猿人",
+    "itemId": 1954,
+    "appId": 1002,
+    "code": "pokeTheGuy",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "pokeTheGuy.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Pretty Kitty",
+    "name": "漂亮猫咪",
+    "itemId": 1045,
+    "appId": 1002,
+    "code": "prettyKitty",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "prettyKitty.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Pure Platinum",
+    "name": "纯铂",
+    "itemId": 1312,
+    "appId": 1002,
+    "code": "purePlatinum",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "purePlatinum.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Reel Talent",
+    "name": "真正高手",
+    "itemId": 2070,
+    "appId": 1002,
+    "code": "reelTalent",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "reelTalent.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Relic Seekers",
+    "name": "探陵人",
+    "itemId": 4109,
+    "appId": 1002,
+    "code": "relicSeekers",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "relicSeekers.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Romanov Riches",
+    "name": "罗曼诺夫财富",
+    "itemId": 2068,
+    "appId": 1002,
+    "code": "romanovRiches",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "romanovRiches.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Rugby Star",
+    "name": "橄榄球明星",
+    "itemId": 1287,
+    "appId": 1002,
+    "code": "rugbyStar",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "rugbyStar.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Rugby Star Deluxe",
+    "name": "橄榄球明星豪华版",
+    "itemId": 5447,
+    "appId": 1002,
+    "code": "rugbyStarDeluxe",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "rugbyStarDeluxe.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Secret Romance",
+    "name": "秘密爱慕者",
+    "itemId": 1877,
+    "appId": 1002,
+    "code": "secretRomance",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "secretRomance.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Shanghai Beauty",
+    "name": "上海美人",
+    "itemId": 1421,
+    "appId": 1002,
+    "code": "shanghaiBeauty",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "shanghaiBeauty.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Sherlock of London",
+    "name": "伦敦夏洛克",
+    "itemId": 4287,
+    "appId": 1002,
+    "code": "sherlockofLondon",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "sherlockofLondon.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Shogun Of Time",
+    "name": "时界门之将军",
+    "itemId": 2086,
+    "appId": 1002,
+    "code": "shogunOfTime",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "shogunOfTime.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Showdown Saloon",
+    "name": "对决沙龙",
+    "itemId": 2077,
+    "appId": 1002,
+    "code": "showdownSaloon",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "showdownSaloon.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Six Acrobats",
+    "name": "杂技群英会",
+    "itemId": 1892,
+    "appId": 1002,
+    "code": "sixAcrobats",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "sixAcrobats.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Songkran Party",
+    "name": "狂欢泼水节",
+    "itemId": 5480,
+    "appId": 1002,
+    "code": "songkranParty",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "songkranParty.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Stardust",
+    "name": "星尘",
+    "itemId": 1404,
+    "appId": 1002,
+    "code": "stardust",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "stardust.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Sterling Silver",
+    "name": "纯银",
+    "itemId": 1170,
+    "appId": 1002,
+    "code": "sterlingSilver",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "sterlingSilver.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Sugar Parade",
+    "name": "糖果巡游",
+    "itemId": 1893,
+    "appId": 1002,
+    "code": "sugarParade",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "sugarParade.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Tasty Street",
+    "name": "妹妹很饿",
+    "itemId": 1901,
+    "appId": 1002,
+    "code": "tastyStreet",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "tastyStreet.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "The Great Albini",
+    "name": "伟大魔术师",
+    "itemId": 2087,
+    "appId": 1002,
+    "code": "theGreatAlbini",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "theGreatAlbini.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "The Incredible Balloon Machine",
+    "name": "不可思议的气球机",
+    "itemId": 5448,
+    "appId": 1002,
+    "code": "theIncredibleBalloonMachine",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "theIncredibleBalloonMachine.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "The Rat Pack",
+    "name": "鼠帮",
+    "itemId": 1398,
+    "appId": 1002,
+    "code": "theRatPack",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "theRatPack.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Tomb Raider",
+    "name": "古墓丽影",
+    "itemId": 1122,
+    "appId": 1002,
+    "code": "tombRaider",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "tombRaider.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Treasures of Lion City",
+    "name": "海底宝城",
+    "itemId": 4286,
+    "appId": 1002,
+    "code": "treasuresofLionCity",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "treasuresofLionCity.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Wacky Panda",
+    "name": "囧囧熊猫",
+    "itemId": 1911,
+    "appId": 1002,
+    "code": "wackyPanda",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "wackyPanda.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Wicked Tales Dark Red",
+    "name": "黑暗故事神秘深红",
+    "itemId": 2064,
+    "appId": 1002,
+    "code": "wickedTalesDarkRed",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "wickedTalesDarkRed.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Wild Orient",
+    "name": "东方珍兽",
+    "itemId": 1164,
+    "appId": 1002,
+    "code": "wildOrient",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "wildOrient.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Wild Scarabs",
+    "name": "百搭圣甲虫",
+    "itemId": 1992,
+    "appId": 1002,
+    "code": "wildScarabs",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "wildScarabs.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Win Sum Dim Sum",
+    "name": "开心点心",
+    "itemId": 1345,
+    "appId": 1002,
+    "code": "winSumDimSum",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "winSumDimSum.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  },
+  {
+    "eName": "Zombie Hoard",
+    "name": "丧尸来袭",
+    "itemId": 2085,
+    "appId": 1002,
+    "code": "zombieHoard",
+    "category": "MGS",
+    "type": "SLO",
+    "subType": "",
+    "line": "",
+    "state": 1,
+    "pic": "zombieHoard.jpg",
+    "tag": [
+      "SLO",
+      "NEW",
+      "HOT"
+    ]
+  }
+]

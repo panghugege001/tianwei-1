@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE validators PUBLIC "-//OpenSymphony Group//XWork Validator 1.0.2//EN"
+ "http://struts.apache.org/dtds/xwork-validator-1.0.2.dtd">
+
+<validators>
+	<field name="loginname">
+		<field-validator type="requiredstring" short-circuit="true">
+			<param name="trim">true</param>
+			<message>请输入下级会员账号</message>
+		</field-validator>
+	</field>
+	<field name="retypeLoginname">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message>确定下级会员必填</message>
+		</field-validator>
+		<field-validator type="fieldexpression">
+			<param name="expression">
+				loginname.equals(retypeLoginname)
+			</param>
+			<message>输入的确定下级会员不正确</message>
+		</field-validator>
+	</field>
+	<field name="partner">
+		<field-validator type="requiredstring" short-circuit="true">
+			<param name="trim">true</param>
+			<message>请输入合作伙伴账号</message>
+		</field-validator>
+	</field>
+	<field name="retypePartner">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message>确定合作伙伴必填</message>
+		</field-validator>
+		<field-validator type="fieldexpression">
+			<param name="expression">
+				partner.equals(retypePartner)
+			</param>
+			<message>输入的确定合作伙伴账号不正确</message>
+		</field-validator>
+	</field>
+</validators>

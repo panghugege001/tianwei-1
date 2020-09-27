@@ -1,0 +1,4421 @@
+[
+	{
+		"eName": "Multiplier Man",
+		"name": "超级英雄大乱斗",
+		"code": "RG-multiplierman",
+		"id": "RG-multiplierman",	
+		"pic": "RG-multiplierman.jpg",
+		"line": "25-25",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"NEW"
+		]
+	},
+	{
+		"eName": "Lotto Lucky",
+		"name": "幸运大乐透",
+		"code": "RG-lottolucky",
+		"id": "RG-lottolucky",
+		"pic": "RG-lottolucky.jpg",
+		"line": "25-25",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"NEW"
+		]
+	},
+	{
+		"eName": "Neo Spin",
+		"name": "新世纪炫风",
+		"code": "FNG-neospin",
+		"id": "FNG-neospin",
+		"pic": "FNG-neospin.jpg",
+		"line": "25-25",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"NEW"
+		]
+	},
+	{
+		"eName": "Vegas Diamonds",
+		"name": "维加斯宝石",
+		"code": "ELK-vegasdiamonds",
+		"id": "ELK-vegasdiamonds",
+		"pic": "ELK-vegasdiamonds.jpg",
+		"line": "25-25",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"NEW"
+		]
+	},
+	{
+		"eName": "Supreme Fortune",
+		"name": "福大门",
+		"code": "BNG-supremefortune",
+		"id": "BNG-supremefortune",
+		"pic": "BNG-supremefortune.jpg",
+		"line": "25-25",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"NEW"
+		]
+	},
+	{
+		"eName": "Pumpkin Patch",
+		"name": "快乐南瓜",
+		"code": "HAB-pumpkinpatch",
+		"id": "HAB-pumpkinpatch",
+		"pic": "HAB-pumpkinpatch.jpg",
+		"line": "25-25",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"NEW"
+		]
+	},
+	{
+		"eName": "Tiger Rush",
+		"name": "老虎宝石",
+		"code": "TK-tigerrush",
+		"id": "TK-tigerrush",
+		"pic": "TK-tigerrush.jpg",
+		"line": "25-25",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"NEW"
+		]
+	},
+	{
+		"eName": "Robots Energy Conflict",
+		"name": "星际机器人",
+		"code": "EVP-robotsenergyconflict",
+		"id": "EVP-robotsenergyconflict",
+		"pic": "EVP-robotsenergyconflict.jpg",
+		"line": "25-25",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"NEW"
+		]
+	},
+	{
+		"eName": "Buffalo Rising Megaways",
+		"name": "水牛崛起",
+		"code": "BPG-buffalorisingmegaways",
+		"id": "BPG-buffalorisingmegaways",
+		"pic": "BPG-buffalorisingmegaways.jpg",
+		"line": "25-25",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"NEW"
+		]
+	},
+	{
+		"eName": "Hot Zone",
+		"name": "热区",
+		"code": "BPG-hotzone",
+		"id": "BPG-hotzone",
+		"pic": "BPG-hotzone.jpg",
+		"line": "25-25",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"NEW"
+		]
+	},
+	{
+		"eName": "Napoleon",
+		"name": "拿破仑",
+		"code": "BPG-napoleon",
+		"id": "BPG-napoleon",
+		"pic": "BPG-napoleon.jpg",
+		"line": "25-25",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"NEW"
+		]
+	},
+	{
+		"eName": "Red Hot Repeater",
+		"name": "红热重复器",
+		"code": "BPG-redhotrepeater",
+		"id": "BPG-redhotrepeater",
+		"pic": "BPG-redhotrepeater.jpg",
+		"line": "25-25",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"NEW"
+		]
+	},
+	{
+		"eName": "Ark Of Mystery",
+		"name": "至尊宝箱",
+		"code": "QS-arkofmystery",
+		"id": "QS-arkofmystery",
+		"pic": "QS-arkofmystery.jpg",
+		"line": "5-10",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"NEW",
+			"HOT"
+		]
+	},
+	{
+		"eName": "Dungeon Quest",
+		"name": "勇闯地下城",
+		"code": "NLC-dungeonquest",
+		"id": "NLC-dungeonquest",
+		"pic": "NLC-dungeonquest.jpg",
+		"line": "5-10",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"NEW",
+			"HOT"
+		]
+	},
+	{
+		"eName": "Jump!",
+		"name": "疯狂百搭",
+		"code": "HAB-jump",
+		"id": "HAB-jump",
+		"pic": "HAB-jump.jpg",
+		"line": "5-10",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"NEW",
+			"HOT"
+		]
+	},
+	{
+		"eName": "Wild 888",
+		"name": "8星报喜",
+		"code": "BNG-wild888",
+		"id": "BNG-wild888",
+		"pic": "BNG-wild888.jpg",
+		"line": "5-10",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"NEW",
+			"HOT"
+		]
+	},
+	{
+		"eName": "Genie Jackpots Megaways",
+		"name": "精灵奖池",
+		"code": "BPG-geniejackpotsmegaways",
+		"id": "BPG-geniejackpotsmegaways",
+		"pic": "BPG-geniejackpotsmegaways.jpg",
+		"line": "5-10",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"NEW",
+			"HOT"
+		]
+	},
+	{
+		"eName": "Convertus Aurum",
+		"name": "黄金大转换",
+		"code": "BPG-convertusaurum",
+		"id": "BPG-convertusaurum",
+		"pic": "BPG-convertusaurum.jpg",
+		"line": "5-10",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"NEW",
+			"HOT"
+		]
+	},
+	{
+		"eName": "Lucky 8 Fortune Cat",
+		"name": "幸运8财富猫",
+		"code": "BPG-lucky8fortunecat",
+		"id": "BPG-lucky8fortunecat",
+		"pic": "BPG-lucky8fortunecat.jpg",
+		"line": "5-10",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"NEW",
+			"HOT"
+		]
+	},
+	{
+		"eName": "Windfall",
+		"name": "幸运飞财",
+		"code": "BPG-windfall",
+		"id": "BPG-windfall",
+		"pic": "BPG-windfall.jpg",
+		"line": "5-10",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"NEW",
+			"HOT"
+		]
+	},
+	{
+		"eName": "The Magical Lamp",
+		"name": "神奇宝灯",
+		"code": "AUG-themagicallamp",
+		"id": "AUG-themagicallamp",
+		"pic": "AUG-themagicallamp.jpg",
+		"line": "5-10",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"NEW",
+			"HOT"
+		]
+	},
+	{
+		"eName": "Magic Mirror Deluxe II",
+		"name": "豪华魔镜2",
+		"code": "BPG-magicmirror",
+		"id": "BPG-magicmirror",
+		"pic": "BPG-magicmirror.jpg",
+		"line": "5-10",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"NEW",
+			"HOT"
+		]
+	},
+	{
+		"eName": "Super Fortune Dragon",
+		"name": "超级祥龙",
+		"code": "BPG-superfortunedragon",
+		"id": "BPG-superfortunedragon",
+		"pic": "BPG-superfortunedragon.jpg",
+		"line": "5-10",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"NEW",
+			"HOT"
+		]
+	},
+	{
+		"eName": "Lucky Pharaoh",
+		"name": "幸运法老",
+		"code": "BPG-luckypharaoh",
+		"id": "BPG-luckypharaoh",
+		"pic": "BPG-luckypharaoh.jpg",
+		"line": "5-10",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"NEW",
+			"HOT"
+		]
+	},
+	{
+		"eName": "Fortune Spins",
+		"name": "爱尔兰好运到财富转转赚",
+		"code": "BPG-fortunespins",
+		"id": "BPG-fortunespins",
+		"pic": "BPG-fortunespins.jpg",
+		"line": "5-10",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"NEW",
+			"HOT"
+		]
+	},
+	{
+		"eName": "Fortunes of Sparta",
+		"name": "命运的斯巴达",
+		"id": "BPG-legendofsparta",
+		"code": "BPG-legendofsparta",
+		"pic": "BPG-legendofsparta.jpg",
+		"line": "25-25",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"NEW",
+			"HOT"
+		]
+	},
+	{
+		"eName": "Jokers Cap",
+		"name": "小丑帽",
+		"id": "BPG-jokerscap",
+		"code": "BPG-jokerscap",
+		"pic": "BPG-jokerscap.jpg",
+		"line": "5-10",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"NEW",
+			"HOT"
+		]
+	},
+	{
+		"eName": "Big Bot Crew",
+		"name": "超能陆战队",
+		"id": "QS-bigbotcrew",
+		"code": "QS-bigbotcrew",
+		"pic": "QS-bigbotcrew.jpg",
+		"line": "25-25",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"NEW",
+			"HOT"
+		]
+	},
+	{
+		"eName": "Jaguar Temple",
+		"name": "美洲虎神庙",
+		"id": "TK-jaguartemple",
+		"code": "TK-jaguartemple",
+		"pic": "TK-jaguartemple.jpg",
+		"line": "15-20",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"NEW",
+			"HOT"
+		]
+	},
+	{
+		"eName": "Joker Gems",
+		"name": "小丑宝石",
+		"id": "ELK-jokergems",
+		"code": "ELK-jokergems",
+		"pic": "ELK-jokergems.png",
+		"line": "5",
+		"state": 1,
+		"category": "QT",
+		"subType": "",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Egyptian Dreams Deluxe",
+		"name": "神秘埃及",
+		"id": "HAB-egyptiandreamsdeluxe",
+		"code": "HAB-egyptiandreamsdeluxe",
+		"pic": "HAB-egyptiandreamsdeluxe.png",
+		"line": "5",
+		"state": 1,
+		"category": "QT",
+		"subType": "",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Hidden Valley HD",
+		"name": "神秘山谷HD",
+		"id": "QS-hiddenvalleyhd",
+		"code": "QS-hiddenvalleyhd",
+		"pic": "QS-hiddenvalleyhd.jpg",
+		"line": "5",
+		"state": 1,
+		"category": "QT",
+		"subType": "",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Shen Long Mi Bao",
+		"name": "神龙秘宝",
+		"id": "BNG-shenlongmibao",
+		"code": "BNG-shenlongmibao",
+		"pic": "BNG-shenlongmibao.jpg",
+		"line": "5",
+		"state": 1,
+		"category": "QT",
+		"subType": "",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Double Triple Chance",
+		"name": "双重三倍机会",
+		"id": "BPG-doubletriplechance",
+		"code": "BPG-doubletriplechance",
+		"pic": "BPG-doubletriplechance.jpg",
+		"line": "5",
+		"state": 1,
+		"category": "QT",
+		"subType": "",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Extra Wild",
+		"name": "更多百搭",
+		"id": "BPG-extrawild",
+		"code": "BPG-extrawild",
+		"pic": "BPG-extrawild.jpg",
+		"line": "5",
+		"state": 1,
+		"category": "QT",
+		"subType": "",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Eye of Horus",
+		"name": "荷鲁斯之眼",
+		"id": "BPG-eyeofhorus",
+		"code": "BPG-eyeofhorus",
+		"pic": "BPG-eyeofhorus.png",
+		"line": "5",
+		"state": 1,
+		"category": "QT",
+		"subType": "",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Gold Cup",
+		"name": "金杯",
+		"id": "BPG-goldcup",
+		"code": "BPG-goldcup",
+		"pic": "BPG-goldcup.jpg",
+		"line": "5",
+		"state": 1,
+		"category": "QT",
+		"subType": "",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Jewel Strike",
+		"name": "宝石激斗",
+		"id": "BPG-jewelstrike",
+		"code": "BPG-jewelstrike",
+		"pic": "BPG-jewelstrike.png",
+		"line": "5",
+		"state": 1,
+		"category": "QT",
+		"subType": "",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Jewel Twist",
+		"name": "扭扭宝石",
+		"id": "BPG-jeweltwist",
+		"code": "BPG-jeweltwist",
+		"pic": "BPG-jeweltwist.jpg",
+		"line": "5",
+		"state": 1,
+		"category": "QT",
+		"subType": "",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Multi Wild",
+		"name": "多重百搭",
+		"id": "BPG-multiwild",
+		"code": "BPG-multiwild",
+		"pic": "BPG-multiwild.jpg",
+		"line": "5",
+		"state": 1,
+		"category": "QT",
+		"subType": "",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Imperial Dragon",
+		"name": "帝王之龙",
+		"id": "BPG-imperialdragon",
+		"code": "BPG-imperialdragon",
+		"pic": "BPG-imperialdragon.png",
+		"line": "5",
+		"state": 1,
+		"category": "QT",
+		"subType": "",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Blazing Star",
+		"name": "闪闪之星",
+		"id": "BPG-blazingstar",
+		"code": "BPG-blazingstar",
+		"pic": "BPG-blazingstar.jpg",
+		"line": "5",
+		"state": 1,
+		"category": "QT",
+		"subType": "",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Dragons Treasure",
+		"name": "龙之宝藏",
+		"id": "BPG-dragonstreasure",
+		"code": "BPG-dragonstreasure",
+		"pic": "BPG-dragonstreasure.jpg",
+		"line": "5",
+		"state": 1,
+		"category": "QT",
+		"subType": "",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Fishing Frenzy",
+		"name": "疯狂钓鱼",
+		"id": "BPG-fishingfrenzy",
+		"code": "BPG-fishingfrenzy",
+		"pic": "BPG-fishingfrenzy.jpg",
+		"line": "10",
+		"state": 1,
+		"category": "QT",
+		"subType": "",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Spooky 5000",
+		"name": "幽灵 5000",
+		"id": "FNG-spooky5000",
+		"code": "FNG-spooky5000",
+		"pic": "FNG-spooky5000.jpg",
+		"line": "5",
+		"state": 1,
+		"category": "QT",
+		"subType": "",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Ways Of Fortune",
+		"name": "寻宝记",
+		"id": "HAB-waysoffortune",
+		"code": "HAB-waysoffortune",
+		"pic": "HAB-waysoffortune.jpg",
+		"line": "576",
+		"state": 1,
+		"category": "QT",
+		"subType": "",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Hot Nudge",
+		"name": "火热助推器",
+		"id": "NLC-hotnudge",
+		"code": "NLC-hotnudge",
+		"pic": "NLC-hotnudge.jpg",
+		"line": "40",
+		"state": 1,
+		"category": "QT",
+		"subType": "",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "God's Temple Deluxe",
+		"name": "上帝的殿堂豪华版",
+		"id": "BNG-godstempledeluxe",
+		"code": "BNG-godstempledeluxe",
+		"pic": "BNG-godstempledeluxe.jpg",
+		"line": "64",
+		"state": 1,
+		"category": "QT",
+		"subType": "",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Viking's Gods Gold ",
+		"name": "维京神灵黄金",
+		"id": "BNG-vikingsgodsgold",
+		"code": "BNG-vikingsgodsgold",
+		"pic": "BNG-vikingsgodsgold.jpg",
+		"line": "50",
+		"state": 1,
+		"category": "QT",
+		"subType": "",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Mystery Planet",
+		"name": "星球隐秘",
+		"id": "EVP-mysteryplanet",
+		"code": "EVP-mysteryplanet",
+		"pic": "EVP-mysteryplanet.jpg",
+		"line": "20",
+		"state": 1,
+		"category": "QT",
+		"subType": "",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Charming Queens",
+		"name": "女王的诱惑",
+		"id": "EVP-charmingqueens",
+		"code": "EVP-charmingqueens",
+		"pic": "EVP-charmingqueens.jpg",
+		"line": "20",
+		"state": 1,
+		"category": "QT",
+		"subType": "",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Necromancer",
+		"name": "亡灵巫师",
+		"id": "EVP-necromancer",
+		"code": "EVP-necromancer",
+		"pic": "EVP-necromancer.jpg",
+		"line": "40",
+		"state": 1,
+		"category": "QT",
+		"subType": "",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Fruits Land",
+		"name": "午夜水果园",
+		"id": "EVP-fruitsland",
+		"code": "EVP-fruitsland",
+		"pic": "EVP-fruitsland.jpg",
+		"line": "9",
+		"state": 1,
+		"category": "QT",
+		"subType": "",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Diamond Mine Megaways",
+		"name": "钻石矿",
+		"id": "BPG-diamondminemegaways",
+		"code": "BPG-diamondminemegaways",
+		"pic": "BPG-diamondminemegaways.jpg",
+		"line": "243",
+		"state": 1,
+		"category": "QT",
+		"subType": "",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Wish Upon A Jackpot",
+		"name": "许愿中奖",
+		"id": "BPG-wishuponajackpot",
+		"code": "BPG-wishuponajackpot",
+		"pic": "BPG-wishuponajackpot.jpg",
+		"line": "20",
+		"state": 1,
+		"category": "QT",
+		"subType": "",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Jungle Jackpots",
+		"name": "丛林累计奖金",
+		"id": "BPG-junglejackpots",
+		"code": "BPG-junglejackpots",
+		"pic": "BPG-junglejackpots.jpg",
+		"line": "20",
+		"state": 1,
+		"category": "QT",
+		"subType": "",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Mistress of Fortune",
+		"name": "财富女士",
+		"id": "BPG-mistressoffortune",
+		"code": "BPG-mistressoffortune",
+		"pic": "BPG-mistressoffortune.jpg",
+		"line": "20",
+		"state": 1,
+		"category": "QT",
+		"subType": "",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "King Kong Cash",
+		"name": "金刚钞票",
+		"id": "BPG-kingkongcash",
+		"code": "BPG-kingkongcash",
+		"pic": "BPG-kingkongcash.jpg",
+		"line": "243",
+		"state": 1,
+		"category": "QT",
+		"subType": "",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "El Jackpotto",
+		"name": "摔跤冠军",
+		"id": "BPG-eljackpotto",
+		"code": "BPG-eljackpotto",
+		"pic": "BPG-eljackpotto.jpg",
+		"line": "20",
+		"state": 1,
+		"category": "QT",
+		"subType": "",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Wild Antics",
+		"name": "蚂蚁特攻队",
+		"id": "BPG-wildantics",
+		"code": "BPG-wildantics",
+		"pic": "BPG-wildantics.jpg",
+		"line": "20",
+		"state": 1,
+		"category": "QT",
+		"subType": "",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Super Lucky Frog",
+		"name": "好运青蛙",
+		"id": "BPG-superluckyfrog",
+		"code": "BPG-superluckyfrog",
+		"pic": "BPG-superluckyfrog.jpg",
+		"line": "20",
+		"state": 1,
+		"category": "QT",
+		"subType": "",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Knockout Football",
+		"name": "黄金足球",
+		"id": "HAB-knockoutfootball",
+		"code": "HAB-knockoutfootball",
+		"pic": "HAB-knockoutfootball.jpg",
+		"line": "243",
+		"state": 1,
+		"category": "QT",
+		"subType": "",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Platooners",
+		"name": "野战排",
+		"id": "ELK-platooners",
+		"code": "ELK-platooners",
+		"pic": "ELK-platooners.jpg",
+		"line": "178",
+		"state": 1,
+		"category": "QT",
+		"subType": "",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Coins of Fortune",
+		"name": "幸运币",
+		"id": "NLC-coinsoffortune",
+		"code": "NLC-coinsoffortune",
+		"pic": "NLC-coinsoffortune.jpg",
+		"line": "20",
+		"state": 1,
+		"category": "QT",
+		"subType": "",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "5 Blessings",
+		"name": "五福临门",
+		"id": "AUG-5blessings",
+		"code": "AUG-5blessings",
+		"pic": "AUG-5blessings.jpg",
+		"line": "243",
+		"state": 1,
+		"category": "QT",
+		"subType": "",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Empress Dowager Cixi",
+		"name": "慈禧太后",
+		"id": "AUG-empressdowagercixi",
+		"code": "AUG-empressdowagercixi",
+		"pic": "AUG-empressdowagercixi.jpg",
+		"line": "243",
+		"state": 1,
+		"category": "QT",
+		"subType": "",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Mr Tiger",
+		"name": "雷老虎",
+		"id": "AUG-mrtiger",
+		"code": "AUG-mrtiger",
+		"pic": "AUG-mrtiger.jpg",
+		"line": "50",
+		"state": 1,
+		"category": "QT",
+		"subType": "",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Hail The Emperor",
+		"name": "皇上吉祥",
+		"id": "AUG-hailtheemperor",
+		"code": "AUG-hailtheemperor",
+		"pic": "AUG-hailtheemperor.jpg",
+		"line": "25",
+		"state": 1,
+		"category": "QT",
+		"subType": "",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Mega Fortune God",
+		"name": "超级财神爷",
+		"id": "AUG-megafortunegod",
+		"code": "AUG-megafortunegod",
+		"pic": "AUG-megafortunegod.jpg",
+		"line": "243",
+		"state": 1,
+		"category": "QT",
+		"subType": "",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Star Gems",
+		"name": "宝石星球",
+		"id": "BNG-stargems",
+		"code": "BNG-stargems",
+		"pic": "BNG-stargems.jpg",
+		"line": "10",
+		"state": 1,
+		"category": "QT",
+		"subType": "",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Mythical Fire Qilin",
+		"name": "神话火麒麟",
+		"id": "AUG-mythicalfireqilin",
+		"code": "AUG-mythicalfireqilin",
+		"pic": "AUG-mythicalfireqilin.jpg",
+		"line": "50",
+		"state": 1,
+		"category": "QT",
+		"subType": "",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Eastern Emeralds",
+		"name": "至尊宝玉",
+		"id": "QS-easternemeralds",
+		"code": "QS-easternemeralds",
+		"pic": "QS-easternemeralds.jpg",
+		"line": "20",
+		"state": 1,
+		"category": "QT",
+		"subType": "",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Double 88",
+		"name": "88对对",
+		"id": "AUG-double88",
+		"code": "AUG-double88",
+		"pic": "AUG-double88.jpg",
+		"line": "",
+		"state": 1,
+		"category": "QT",
+		"subType": "",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Numbers Deluxe",
+		"name": "豪华数字",
+		"id": "AUG-numbersdeluxe",
+		"code": "AUG-numbersdeluxe",
+		"pic": "AUG-numbersdeluxe.jpg",
+		"line": "",
+		"state": 1,
+		"category": "QT",
+		"subType": "",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "SuperFruit",
+		"name": "超级水果",
+		"id": "AUG-superfruit",
+		"code": "AUG-superfruit",
+		"pic": "AUG-superfruit.jpg",
+		"line": "",
+		"state": 1,
+		"category": "QT",
+		"subType": "",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Lucky Panda",
+		"name": "幸运熊猫",
+		"id": "AUG-luckypanda",
+		"code": "AUG-luckypanda",
+		"pic": "AUG-luckypanda.jpg",
+		"line": "",
+		"state": 1,
+		"category": "QT",
+		"subType": "",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Samurai Warrior",
+		"name": "武士道",
+		"id": "AUG-samuraiwarrior",
+		"code": "AUG-samuraiwarrior",
+		"pic": "AUG-samuraiwarrior.jpg",
+		"line": "",
+		"state": 1,
+		"category": "QT",
+		"subType": "",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Dwarfs Gone Wild",
+		"name": "疯狂小矮人",
+		"id": "QS-dwarfsgonewild",
+		"code": "QS-dwarfsgonewild",
+		"pic": "QS-dwarfsgonewild.jpg",
+		"line": "",
+		"state": 1,
+		"category": "QT",
+		"subType": "",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "88 Dragon",
+		"name": "霸龙",
+		"id": "BNG-88dragon",
+		"code": "BNG-88dragon",
+		"pic": "BNG-88dragon.jpg",
+		"line": "",
+		"state": 1,
+		"category": "QT",
+		"subType": "",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Yeti",
+		"name": "夜帝",
+		"id": "TK-yeti",
+		"code": "TK-yeti",
+		"pic": "OGS-yeti.jpg",
+		"line": "",
+		"state": 1,
+		"category": "QT",
+		"subType": "",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Fortune Dogs",
+		"name": "富贵旺旺",
+		"id": "HAB-fortunedogs",
+		"code": "HAB-fortunedogs",
+		"pic": "HAB-fortunedogs.jpg",
+		"line": "",
+		"state": 1,
+		"category": "QT",
+		"subType": "",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "The Third Lotus Prince",
+		"name": "哪吒三太子",
+		"id": "AUG-thethirdlotusprince",
+		"code": "AUG-thethirdlotusprince",
+		"pic": "AUG-thethirdlotusprince.jpg",
+		"line": "",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Fortune Luck",
+		"name": "大吉大利",
+		"id": "AUG-fortuneluck",
+		"code": "AUG-fortuneluck",
+		"pic": "AUG-fortuneluck.jpg",
+		"line": "",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "The Red Phoenix",
+		"name": "凤凰传奇",
+		"id": "AUG-theredphoenix",
+		"code": "AUG-theredphoenix",
+		"pic": "AUG-theredphoenix.jpg",
+		"line": "",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Zhuge Liang",
+		"name": "诸葛亮",
+		"id": "AUG-zhugeliang",
+		"code": "AUG-zhugeliang",
+		"pic": "AUG-zhugeliang.jpg",
+		"line": "",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "3 Treasures",
+		"name": "吉祥三宝",
+		"id": "AUG-3treasures",
+		"code": "AUG-3treasures",
+		"pic": "AUG-3treasures.jpg",
+		"line": "",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "The Grid",
+		"name": "极速网格",
+		"id": "FNG-thegrid",
+		"code": "FNG-thegrid",
+		"pic": "FNG-thegrid.jpg",
+		"line": "",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Birthday!",
+		"name": "生日快乐！",
+		"id": "ELK-birthday",
+		"code": "ELK-birthday",
+		"pic": "ELK-birthday.jpg",
+		"line": "",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Age of Caesar",
+		"name": "罗马帝国",
+		"id": "BNG-ageofcaesar",
+		"code": "BNG-ageofcaesar",
+		"pic": "BNG-ageofcaesar.jpg",
+		"line": "",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "USSR Grocery",
+		"name": "苏联食品店",
+		"id": "EVP-ussrgrocery",
+		"code": "EVP-ussrgrocery",
+		"pic": "EVP-ussrgrocery.jpg",
+		"line": "",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Dolphins Treasure",
+		"name": "海豚宝宝",
+		"id": "EVP-dolphinstreasure",
+		"code": "EVP-dolphinstreasure",
+		"pic": "EVP-dolphinstreasure.jpg",
+		"line": "",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Pirate’s Charm",
+		"name": "神秘海盗",
+		"id": "QS-piratescharm",
+		"code": "QS-piratescharm",
+		"pic": "QS-piratescharm.jpg",
+		"line": "",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Wild Heist at Peacock Manor",
+		"name": "孔雀庄园",
+		"id": "TK-wildheistatpeacockmanor",
+		"code": "TK-wildheistatpeacockmanor",
+		"pic": "OGS-wildheistatpeacockmanor.jpg",
+		"line": "",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Fortune Multiplier",
+		"name": "水果传奇",
+		"id": "BNG-fortunemultiplier",
+		"code": "BNG-fortunemultiplier",
+		"pic": "BNG-fortunemultiplier.jpg",
+		"line": "",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Christmas Charm",
+		"name": "圣诞快乐",
+		"id": "BNG-christmascharm",
+		"code": "BNG-christmascharm",
+		"pic": "BNG-christmascharm.jpg",
+		"line": "",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Halloween Witch",
+		"name": "万圣美魔女",
+		"id": "BNG-halloweenwitch",
+		"code": "BNG-halloweenwitch",
+		"pic": "BNG-halloweenwitch.jpg",
+		"line": "",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Singles Day",
+		"name": "11.11光棍节",
+		"id": "BNG-singlesday",
+		"code": "BNG-singlesday",
+		"pic": "BNG-singlesday.jpg",
+		"line": "",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "The Witch",
+		"name": "女巫的青蛙",
+		"id": "BNG-thewitch",
+		"code": "BNG-thewitch",
+		"pic": "BNG-thewitch.jpg",
+		"line": "",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Secret of Nefertiti 2",
+		"name": "埃及艳后的任务2",
+		"id": "BNG-secretofnefertiti2",
+		"code": "BNG-secretofnefertiti2",
+		"pic": "BNG-secretofnefertiti2.jpg",
+		"line": "",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "The Great Conflict",
+		"name": "人兽争霸",
+		"id": "EVP-thegreatconflict",
+		"code": "EVP-thegreatconflict",
+		"pic": "EVP-thegreatconflict.jpg",
+		"line": "",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Battle Tanks",
+		"name": "坦克大战",
+		"id": "EVP-battletanks",
+		"code": "EVP-battletanks",
+		"pic": "EVP-battletanks.jpg",
+		"line": "",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Monster Lab",
+		"name": "怪物实验室",
+		"id": "EVP-monsterlab",
+		"code": "EVP-monsterlab",
+		"pic": "EVP-monsterlab.jpg",
+		"line": "",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Mammoth",
+		"name": "猛犸象",
+		"id": "RKI-mammoth",
+		"code": "RKI-mammoth",
+		"pic": "RKI-mammoth.jpg",
+		"line": "",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Samurai Ken",
+		"name": "肯恩武士",
+		"id": "FNG-samuraiken",
+		"code": "FNG-samuraiken",
+		"pic": "FNG-samuraiken.jpg",
+		"line": "",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Prohibition",
+		"name": "禁令",
+		"id": "EVP-prohibition",
+		"code": "EVP-prohibition",
+		"pic": "EVP-Prohibition.jpg",
+		"line": "",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Aeronauts",
+		"name": "蒸汽朋克",
+		"id": "EVP-aeronauts",
+		"code": "EVP-aeronauts",
+		"pic": "EVP-Aeronauts.jpg",
+		"line": "",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Lucky Xmas",
+		"name": "淘气圣诞",
+		"id": "BNG-luckyxmas",
+		"code": "BNG-luckyxmas",
+		"pic": "BNG-luckyxmas.jpg",
+		"line": "",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Goddess Of The Moon",
+		"name": "嫦娥与后羿",
+		"id": "BNG-goddessofthemoon",
+		"code": "BNG-goddessofthemoon",
+		"pic": "BNG-goddessofthemoon.jpg",
+		"line": "",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Presto",
+		"name": "魔幻大财",
+		"id": "HAB-presto",
+		"code": "HAB-presto",
+		"pic": "HAB-Presto.jpg",
+		"line": "",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Lakes Five ",
+		"name": "莱克五人团",
+		"id": "ELK-lakesfive",
+		"code": "ELK-lakesfive",
+		"pic": "ELK-lakesfive1.jpg",
+		"line": "",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Joker Strike",
+		"name": "暴击小丑",
+		"id": "QS-jokerstrike",
+		"code": "QS-jokerstrike",
+		"pic": "QS-jokerstrike.jpg",
+		"line": "",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Tesla Jolt",
+		"name": "特斯拉",
+		"id": "NLC-teslajolt",
+		"code": "NLC-teslajolt",
+		"pic": "NLC-teslajolt.jpg",
+		"line": "",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Bork the Berzerker",
+		"name": "邪恶的魔法师",
+		"id": "TK-borktheberzerker",
+		"code": "TK-borktheberzerker",
+		"pic": "OGS-borktheberzerker.jpg",
+		"line": "",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "USSR Seventies",
+		"name": "苏联-70年代",
+		"id": "EVP-ussrseventies",
+		"code": "EVP-ussrseventies",
+		"pic": "EVP-ussrseventies.jpg",
+		"line": "",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "The Slavs",
+		"name": "斯拉夫人",
+		"id": "EVP-theslavs",
+		"code": "EVP-theslavs",
+		"pic": "EVP-theslavs.jpg",
+		"line": "",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Gods Temple",
+		"name": "上帝的殿堂",
+		"id": "BNG-godstemple",
+		"code": "BNG-godstemple",
+		"pic": "BNG-godstemple.jpg",
+		"line": "",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Zodiac",
+		"name": "魔幻王座",
+		"id": "BNG-zodiac",
+		"code": "BNG-zodiac",
+		"pic": "BNG-zodiac.jpg",
+		"line": "",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "London Hunter",
+		"name": "伦敦猎人",
+		"id": "HAB-londonhunter",
+		"code": "HAB-londonhunter",
+		"pic": "HAB-londonhunter.jpg",
+		"line": "1-20",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Volcano Riches",
+		"name": "火焰山",
+		"id": "QS-volcanoriches",
+		"code": "QS-volcanoriches",
+		"pic": "QS-volcanoriches.jpg",
+		"line": "1-20",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Fruity Wild",
+		"name": "疯狂水果店",
+		"id": "BNG-fruitywild",
+		"code": "BNG-fruitywild",
+		"pic": "BNG-fruitywild.jpg",
+		"line": "1-20",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Fruiterra",
+		"name": "欢乐水果盘",
+		"id": "BNG-fruiterra",
+		"code": "BNG-fruiterra",
+		"pic": "BNG-fruiterra.jpg",
+		"line": "1-20",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Diego Fortune",
+		"name": "失落的乐园",
+		"id": "BNG-diegofortune",
+		"code": "BNG-diegofortune",
+		"pic": "BNG-diegofortune.jpg",
+		"line": "1-20",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Fruity Frost",
+		"name": "果冻",
+		"id": "BNG-fruityfrost",
+		"code": "BNG-fruityfrost",
+		"pic": "BNG-fruityfrost.jpg",
+		"line": "1-20",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Secret Of Nefertiti",
+		"name": "埃及艳后的任务",
+		"id": "BNG-secretofnefertiti",
+		"code": "BNG-secretofnefertiti",
+		"pic": "BNG-secretofnefertiti.jpg",
+		"line": "1-20",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "15 Golden Eggs",
+		"name": "快乐鸟",
+		"id": "BNG-15goldeneggs",
+		"code": "BNG-15goldeneggs",
+		"pic": "BNG-15goldeneggs.jpg",
+		"line": "1-20",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Nords War",
+		"name": "北欧争霸战",
+		"id": "BNG-nordswar",
+		"code": "BNG-nordswar",
+		"pic": "BNG-nordswar.jpg",
+		"line": "1-20",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "The Falcon Huntress",
+		"name": "猎鹰女猎手",
+		"id": "TK-thefalconhuntress",
+		"code": "TK-thefalconhuntress",
+		"pic": "OGS-thefalconhuntress.jpg",
+		"line": "1-20",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Kaiju",
+		"name": "环太平洋",
+		"id": "ELK-kaiju",
+		"code": "ELK-kaiju",
+		"pic": "ELK-kaiju.jpg",
+		"line": "1-20",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Northern Sky",
+		"name": "北方的天空",
+		"id": "QS-northernsky",
+		"code": "QS-northernsky",
+		"pic": "QS-northernsky.jpg",
+		"line": "1-20",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Four Divine Beasts",
+		"name": "四大神兽",
+		"id": "HAB-fourdivinebeasts",
+		"code": "HAB-fourdivinebeasts",
+		"pic": "HAB-fourdivinebeasts.jpg",
+		"line": "1-20",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Thunder Zeus",
+		"name": "希腊神话",
+		"id": "BNG-thunderzeus",
+		"code": "BNG-thunderzeus",
+		"pic": "BNG-thunderzeus.jpg",
+		"line": "1-20",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Patricks Pub",
+		"name": "牛逼爱尔兰大佬",
+		"id": "BNG-patrickspub",
+		"code": "BNG-patrickspub",
+		"pic": "BNG-patrickspub.jpg",
+		"line": "1-20",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "African Spirit",
+		"name": "非洲之魂",
+		"id": "BNG-africanspirit",
+		"code": "BNG-africanspirit",
+		"pic": "BNG-africanspirit.jpg",
+		"line": "1-20",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Hells Band",
+		"name": "摇滚地狱",
+		"id": "BNG-hellsband",
+		"code": "BNG-hellsband",
+		"pic": "BNG-hellsband.jpg",
+		"line": "1-20",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Poisoned Apple",
+		"name": "致命毒苹果",
+		"id": "BNG-poisonedapple",
+		"code": "BNG-poisonedapple",
+		"pic": "BNG-poisonedapple.jpg",
+		"line": "1-20",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Gnomes Gems",
+		"name": "小矮人寻宝记",
+		"id": "BNG-gnomesgems",
+		"code": "BNG-gnomesgems",
+		"pic": "BNG-gnomesgems.jpg",
+		"line": "1-20",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Casino Win Spin",
+		"name": "幸运大旋转",
+		"id": "NLC-casinowinspin",
+		"code": "NLC-casinowinspin",
+		"pic": "NLC-casinowinspin.jpg",
+		"line": "1-20",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Candy Dreams",
+		"name": "梦幻糖果屋",
+		"id": "EVP-candydreams",
+		"code": "EVP-candydreams",
+		"pic": "EVP-candydreams.jpg",
+		"line": "1-20",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Robinson",
+		"name": "鲁滨逊",
+		"id": "EVP-robinson",
+		"code": "EVP-robinson",
+		"pic": "EVP-robinson.jpg",
+		"line": "1-20",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Wild Galaxy",
+		"name": "怪客星球",
+		"id": "BNG-wildgalaxy",
+		"code": "BNG-wildgalaxy",
+		"pic": "BNG-wildgalaxy.jpg",
+		"line": "1-20",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Fruiterra Fortune",
+		"name": "经典小玛莉",
+		"id": "BNG-fruiterrafortune",
+		"code": "BNG-fruiterrafortune",
+		"pic": "BNG-fruiterrafortune.jpg",
+		"line": "1-20",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Crazy Gems",
+		"name": "疯狂水晶洞",
+		"id": "BNG-crazygems",
+		"code": "BNG-crazygems",
+		"pic": "BNG-crazygems.jpg",
+		"line": "1-20",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Kailash Mystery",
+		"name": "神灵之山的传奇",
+		"id": "BNG-kailashmystery",
+		"code": "BNG-kailashmystery",
+		"pic": "BNG-kailashmystery.jpg",
+		"line": "1-20",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "88 Wild Dragon",
+		"name": "走运一路8",
+		"id": "BNG-88wilddragon",
+		"code": "BNG-88wilddragon",
+		"pic": "BNG-88wilddragon.jpg",
+		"line": "1-20",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "12 Animals",
+		"name": "12发财星",
+		"id": "BNG-12animals",
+		"code": "BNG-12animals",
+		"pic": "BNG-12animals.jpg",
+		"line": "1-20",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Happy Chinese New Year",
+		"name": "春节快乐",
+		"id": "BNG-happychinesenewyear",
+		"code": "BNG-happychinesenewyear",
+		"pic": "BNG-happychinesenewyear.jpg",
+		"line": "1-20",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Football",
+		"name": "旋风少女",
+		"id": "EVP-football",
+		"code": "EVP-football",
+		"pic": "EVP-football.jpg",
+		"line": "1-20",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Wild Seas",
+		"name": "海上霸王号",
+		"id": "ELK-wildseas",
+		"code": "ELK-wildseas",
+		"pic": "ELK-wildseas.jpg",
+		"line": "",
+		"state": 1,
+		"category": "QT",
+		"subType": "",
+		"type": "SLO",
+		"tag": [
+			"NEW"
+		]
+	},
+	{
+		"eName": "Pied Piper",
+		"name": "花衣魔笛手",
+		"id": "QS-piedpiper",
+		"code": "QS-piedpiper",
+		"pic": "QS-piedpiper.jpg",
+		"line": "",
+		"state": 1,
+		"category": "QT",
+		"subType": "",
+		"type": "SLO",
+		"tag": [
+			"NEW"
+		]
+	},
+	{
+		"eName": "5 Mariachis",
+		"name": "街头乐队",
+		"id": "HAB-5mariachis",
+		"code": "HAB-5mariachis",
+		"pic": "HAB-5mariachis.jpg",
+		"line": "",
+		"state": 1,
+		"category": "QT",
+		"subType": "",
+		"type": "SLO",
+		"tag": [
+			"NEW"
+		]
+	},
+	{
+		"eName": "Totem Island",
+		"name": "图腾岛",
+		"id": "EVP-totemisland",
+		"code": "EVP-totemisland",
+		"pic": "EVP-totemisland.jpg",
+		"line": "",
+		"state": 1,
+		"category": "QT",
+		"subType": "",
+		"type": "SLO",
+		"tag": [
+			"NEW"
+		]
+	},
+	{
+		"eName": "Sindbad",
+		"name": "航海家辛巴达",
+		"id": "EVP-sindbad",
+		"code": "EVP-sindbad",
+		"pic": "EVP-sindbad.jpg",
+		"line": "",
+		"state": 1,
+		"category": "QT",
+		"subType": "",
+		"type": "SLO",
+		"tag": [
+			"NEW"
+		]
+	},
+	{
+		"eName": "Naughty Girls Cabaret",
+		"name": "顽皮女孩歌舞秀",
+		"id": "EVP-naughtygirlscabaret",
+		"code": "EVP-naughtygirlscabaret",
+		"pic": "EVP-naughtygirlscabaret.jpg",
+		"line": "1-20",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Epic Gladiators",
+		"name": "角斗士大战僵尸",
+		"id": "EVP-epicgladiators",
+		"code": "EVP-epicgladiators",
+		"pic": "EVP-epicgladiators.jpg",
+		"line": "1-20",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Atlantis",
+		"name": "亚特兰蒂斯",
+		"id": "EVP-atlantis",
+		"code": "EVP-atlantis",
+		"pic": "EVP-atlantis.jpg",
+		"line": "1-20",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Rapunzels Tower",
+		"name": "长发公主",
+		"id": "QS-rapunzelstower",
+		"code": "QS-rapunzelstower",
+		"pic": "QS-rapunzelstower.jpg",
+		"line": "1-20",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Kitchen Drama BBQ Frenzy",
+		"name": "疯狂烧烤趴",
+		"id": "NLC-kitchendramabbqfrenzy",
+		"code": "NLC-kitchendramabbqfrenzy",
+		"pic": "NLC-kitchendramabbqfrenzy.jpg",
+		"line": "1-20",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Not Enough Kittens",
+		"name": "顽皮猫咪",
+		"id": "TK-notenoughkittens",
+		"code": "TK-notenoughkittens",
+		"pic": "OGS-notenoughkittens.jpg",
+		"line": "1-20",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Santas Village",
+		"name": "圣诞乐村",
+		"id": "HAB-santasvillage",
+		"code": "HAB-santasvillage",
+		"pic": "HAB-santasvillage.jpg",
+		"line": "1-20",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Legend of Ra",
+		"name": "太阳神传说",
+		"id": "EVP-legendofra",
+		"code": "EVP-legendofra",
+		"pic": "EVP-legendofra.jpg",
+		"line": "1-20",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Indianas Quest",
+		"name": "印第安纳的任务",
+		"id": "EVP-indianasquest",
+		"code": "EVP-indianasquest",
+		"pic": "EVP-indianasquest.jpg",
+		"line": "1-20",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Fruit Burst",
+		"name": "水果爆裂",
+		"id": "EVP-fruitburst",
+		"code": "EVP-fruitburst",
+		"pic": "EVP-fruitburst.jpg",
+		"line": "1-20",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "The Emperors Tomb",
+		"name": "皇帝陵墓",
+		"id": "EVP-theemperorstomb",
+		"code": "EVP-theemperorstomb",
+		"pic": "EVP-theemperorstomb.jpg",
+		"line": "1-20",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Elven Princesses",
+		"name": "精灵公主",
+		"id": "EVP-elvenprincesses",
+		"code": "EVP-elvenprincesses",
+		"pic": "EVP-elvenprincesses.jpg",
+		"line": "1-20",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Ace Round",
+		"name": "ACE枪王",
+		"id": "EVP-aceround",
+		"code": "EVP-aceround",
+		"pic": "EVP-aceround.jpg",
+		"line": "1-20",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Mighty Arthur",
+		"name": "亚瑟王",
+		"id": "QS-mightyarthur",
+		"code": "QS-mightyarthur",
+		"pic": "QS-mightyarthur.jpg",
+		"line": "1-20",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Ho Ho Tower",
+		"name": "HoHo大楼",
+		"id": "ELK-hohotower",
+		"code": "ELK-hohotower",
+		"pic": "ELK-hohotower.jpg",
+		"line": "1-20",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Route777",
+		"name": "公路777",
+		"id": "ELK-route777",
+		"code": "ELK-route777",
+		"pic": "ELK-route777.jpg",
+		"line": "1-20",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "WiXX",
+		"name": "炫彩水晶",
+		"id": "NLC-wixx",
+		"code": "NLC-wixx",
+		"pic": "NLC-wixx.jpg",
+		"line": "1-20",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Pink Elephants",
+		"name": "粉象",
+		"id": "TK-pinkelephants",
+		"code": "TK-pinkelephants",
+		"pic": "OGS-pinkelephants.jpg",
+		"line": "1-20",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Rolling Roger",
+		"name": "刺猬宝宝",
+		"id": "HAB-rollingroger",
+		"code": "HAB-rollingroger",
+		"pic": "HAB-rollingroger.jpg",
+		"line": "1-20",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Clash of Pirates",
+		"name": "海盗之战",
+		"id": "EVP-clashofpirates",
+		"code": "EVP-clashofpirates",
+		"pic": "EVP-clashofpirates.jpg",
+		"line": "1-20",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Great Wall",
+		"name": "长城探宝",
+		"id": "EVP-greatwall",
+		"code": "EVP-greatwall",
+		"pic": "EVP-greatwall.jpg",
+		"line": "1-20",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Chinese New Year",
+		"name": "新春大吉",
+		"id": "EVP-chinesenewyear",
+		"code": "EVP-chinesenewyear",
+		"pic": "EVP-chinesenewyear.jpg",
+		"line": "1-20",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Talismans of Fortune",
+		"name": "转运护身符",
+		"id": "EVP-talismansoffortune",
+		"code": "EVP-talismansoffortune",
+		"pic": "EVP-talismansoffortune.jpg",
+		"line": "1-20",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "The Legend of Shaolin",
+		"name": "少林传奇",
+		"id": "EVP-thelegendofshaolin",
+		"code": "EVP-thelegendofshaolin",
+		"pic": "EVP-thelegendofshaolin.jpg",
+		"line": "1-20",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Vegas Nights",
+		"name": "拉斯维加斯之夜",
+		"id": "EVP-vegasnights",
+		"code": "EVP-vegasnights",
+		"pic": "EVP-vegasnights.jpg",
+		"line": "1-20",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Robin Hood",
+		"name": "罗宾汉",
+		"id": "EVP-robinhood",
+		"code": "EVP-robinhood",
+		"pic": "EVP-robinhood.jpg",
+		"line": "1-20",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Jewellery Store",
+		"name": "珠宝店",
+		"id": "EVP-jewellerystore",
+		"code": "EVP-jewellerystore",
+		"pic": "EVP-jewellerystore.jpg",
+		"line": "1-20",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Egypt Gods",
+		"name": "埃及众神",
+		"id": "EVP-egyptgods",
+		"code": "EVP-egyptgods",
+		"pic": "EVP-egyptgods.jpg",
+		"line": "1-20",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Basketball",
+		"name": "激情篮球",
+		"id": "EVP-basketball",
+		"code": "EVP-basketball",
+		"pic": "EVP-basketball.jpg",
+		"line": "1-20",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Red Cliff",
+		"name": "赤壁之战",
+		"id": "EVP-redcliff",
+		"code": "EVP-redcliff",
+		"pic": "EVP-redcliff.jpg",
+		"line": "1-20",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Lucky Mahjong Box",
+		"name": "神秘麻将盒",
+		"id": "EVP-luckymahjongbox",
+		"code": "EVP-luckymahjongbox",
+		"pic": "EVP-luckymahjongbox.jpg",
+		"line": "1-20",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Journey to The West",
+		"name": "西游记",
+		"id": "EVP-journeytothewest",
+		"code": "EVP-journeytothewest",
+		"pic": "EVP-journeytothewest.jpg",
+		"line": "1-20",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Cake Valley",
+		"name": "蛋糕谷",
+		"id": "HAB-cakevalley",
+		"code": "HAB-cakevalley",
+		"pic": "HAB-cakevalley.jpg",
+		"line": "1-20",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Mayana",
+		"name": "玛雅人",
+		"id": "QS-mayana",
+		"code": "QS-mayana",
+		"pic": "QS-mayana.jpg",
+		"line": "1-20",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Full Moon Romance",
+		"name": "满月传说",
+		"id": "TK-fullmoonromance",
+		"code": "TK-fullmoonromance",
+		"pic": "OGS-fullmoonromance.jpg",
+		"line": "1-20",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Scruffy Scallywags",
+		"name": "欢乐帮",
+		"id": "HAB-scruffyscallywags",
+		"code": "HAB-scruffyscallywags",
+		"pic": "HAB-scruffyscallywags.jpg",
+		"line": "1-20",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Hidden",
+		"name": "古埃法老王",
+		"id": "ELK-hidden",
+		"code": "ELK-hidden",
+		"pic": "ELK-hidden.jpg",
+		"line": "1-20",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Fairy Gate",
+		"name": "仙境之门",
+		"id": "QS-fairygate",
+		"code": "QS-fairygate",
+		"pic": "QS-fairygate.jpg",
+		"line": "1-20",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Sticky Bandits",
+		"name": "西部劫匪",
+		"id": "QS-stickybandits",
+		"code": "QS-stickybandits",
+		"pic": "QS-stickybandits.jpg",
+		"line": "5-10",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "The Dead Escape",
+		"name": "死海逃生",
+		"id": "HAB-thedeadescape",
+		"code": "HAB-thedeadescape",
+		"pic": "HAB-thedeadescape.jpg",
+		"line": "5-10",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Goldilocks",
+		"name": "金发姑娘",
+		"id": "QS-goldilocks",
+		"code": "QS-goldilocks",
+		"pic": "QS-goldilocks.jpg",
+		"line": "5-10",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Ivanhoe",
+		"name": "劫后英雄传",
+		"id": "ELK-ivanhoe",
+		"code": "ELK-ivanhoe",
+		"pic": "ELK-ivanhoe.jpg",
+		"line": "25-25",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Wins of Fortune",
+		"name": "美猴王",
+		"id": "QS-winsoffortune",
+		"code": "QS-winsoffortune",
+		"pic": "QS-winsoffortune.jpg",
+		"line": "25-25",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Panda Panda",
+		"name": "双喜熊猫",
+		"id": "HAB-pandapanda",
+		"code": "HAB-pandapanda",
+		"pic": "HAB-pandapanda.jpg",
+		"line": "25-25",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Roasty McFry and The Flame Busters",
+		"name": "灭火特工队",
+		"id": "TK-roastymcfryandtheflamebusters",
+		"code": "TK-roastymcfryandtheflamebusters",
+		"pic": "OGS-roastymcfryandtheflamebusters.jpg",
+		"line": "25-25",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Sushi Mania",
+		"name": "寿司大餐",
+		"id": "NLC-sushimania",
+		"code": "NLC-sushimania",
+		"pic": "NLC-sushimania.jpg",
+		"line": "25-25",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Space Arcade",
+		"name": "太空游乐场",
+		"id": "NLC-spacearcade",
+		"code": "NLC-spacearcade",
+		"pic": "NLC-spacearcade.jpg",
+		"line": "25-25",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Oktoberfest",
+		"name": "慕尼黑啤酒节",
+		"id": "NLC-oktoberfest",
+		"code": "NLC-oktoberfest",
+		"pic": "NLC-oktoberfest.jpg",
+		"line": "25-25",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Creepy Carnival",
+		"name": "惊悚嘉年华",
+		"id": "NLC-creepycarnival",
+		"code": "NLC-creepycarnival",
+		"pic": "NLC-creepycarnival.jpg",
+		"line": "25-25",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Luchadora",
+		"name": "拳击场",
+		"id": "TK-luchadora",
+		"code": "TK-luchadora",
+		"pic": "OGS-luchadora.jpg",
+		"line": "25-25",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Bird of Thunder",
+		"name": "雷鸟",
+		"id": "HAB-birdofthunder",
+		"code": "HAB-birdofthunder",
+		"pic": "HAB-birdofthunder.jpg",
+		"line": "25-25",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Hongkong Tower",
+		"name": "香港摩天大楼",
+		"id": "ELK-hongkongtower",
+		"code": "ELK-hongkongtower",
+		"pic": "ELK-hongkongtower.jpg",
+		"line": "5-10",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Sakura Fortune",
+		"name": "樱花侠女",
+		"id": "QS-sakurafortune",
+		"code": "QS-sakurafortune",
+		"pic": "QS-sakurafortune.jpg",
+		"line": "5-10",
+		"state": 1,
+		"category": "QT",
+		"subType": " ",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Well of Wonders",
+		"name": "魔幻森林",
+		"id": "TK-wellofwonders",
+		"code": "TK-wellofwonders",
+		"pic": "OGS-wellofwonders.jpg",
+		"line": "5-10",
+		"state": 1,
+		"category": "QT",
+		"subType": "H5",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Leprechaun Hills",
+		"name": "精灵山",
+		"id": "QS-leprechaunhills",
+		"code": "QS-leprechaunhills",
+		"pic": "QS-leprechaunhills.jpg",
+		"line": "5-10",
+		"state": 1,
+		"category": "QT",
+		"subType": "H5",
+		"type": "SLO",
+		"tag": [
+			"HOT",
+			"NEW"
+		]
+	},
+	{
+		"eName": "Fenghuang",
+		"name": "凤凰",
+		"id": "HAB-fenghuang",
+		"code": "HAB-fenghuang",
+		"pic": "HAB-fenghuang.jpg",
+		"line": "25-40",
+		"state": 1,
+		"category": "QT",
+		"type": "SLO",
+		"subType": "H5",
+		"tag": [
+			"NEW"
+		],
+		"language": ""
+	},
+	{
+		"eName": "Fire Rooster",
+		"name": "公鸡王",
+		"id": "HAB-firerooster",
+		"code": "HAB-firerooster",
+		"pic": "HAB-firerooster.jpg",
+		"line": "100-1296",
+		"state": 1,
+		"category": "QT",
+		"type": "SLO",
+		"subType": "H5",
+		"tag": [
+			"NEW"
+		],
+		"language": ""
+	},
+	{
+		"eName": "Phoenix Sun",
+		"name": "凤凰的涅槃",
+		"id": "QS-phoenixsun",
+		"code": "QS-phoenixsun",
+		"pic": "QS-phoenixsun.jpg",
+		"line": "100-1296",
+		"state": 1,
+		"category": "QT",
+		"type": "SLO",
+		"subType": "H5",
+		"tag": [
+			"NEW"
+		],
+		"language": ""
+	},
+	{
+		"eName": "Taco Brothers Saving Christmas",
+		"name": "塔科的圣诞使命",
+		"id": "ELK-tacobrotherssavingchristmas",
+		"code": "ELK-tacobrotherssavingchristmas",
+		"pic": "ELK-tacobrotherssavingchristmas.jpg",
+		"line": "100-1296",
+		"state": 1,
+		"category": "QT",
+		"type": "SLO",
+		"subType": "H5",
+		"tag": [
+			"NEW"
+		],
+		"language": ""
+	},
+	{
+		"eName": "Turning Totems",
+		"name": "旋转图腾",
+		"id": "TK-turningtotems",
+		"code": "TK-turningtotems",
+		"pic": "OGS-turningtotems.jpg",
+		"line": "1-20",
+		"state": 1,
+		"category": "QT",
+		"type": "SLO",
+		"subType": "H5",
+		"tag": [
+			"NEW"
+		],
+		"language": ""
+	},
+	{
+		"eName": "Jugglenaut",
+		"name": "惊喜秀",
+		"id": "HAB-jugglenaut",
+		"code": "HAB-jugglenaut",
+		"pic": "HAB-jugglenaut.jpg",
+		"line": "45-100",
+		"state": 1,
+		"category": "QT",
+		"type": "SLO",
+		"subType": "H5",
+		"tag": [
+			"NEW"
+		],
+		"language": ""
+	},
+	{
+		"eName": "Dragon Shrine",
+		"name": "龙神殿",
+		"id": "QS-dragonshrine",
+		"code": "QS-dragonshrine",
+		"pic": "QS-dragonshrine.jpg",
+		"line": "25-40",
+		"state": 1,
+		"category": "QT",
+		"type": "SLO",
+		"subType": "H5",
+		"tag": [
+			"NEW"
+		],
+		"language": ""
+	},
+	{
+		"eName": "Wild Toro",
+		"name": "卑鄙的斗牛士",
+		"id": "ELK-wildtoro",
+		"code": "ELK-wildtoro",
+		"pic": "ELK-wildtoro.jpg",
+		"line": "100-1296",
+		"state": 1,
+		"category": "QT",
+		"type": "SLO",
+		"subType": "H5",
+		"tag": [
+			"NEW"
+		],
+		"language": ""
+	},
+	{
+		"eName": "Frog Grog",
+		"name": "格罗格醉蛙",
+		"id": "TK-froggrog",
+		"code": "TK-froggrog",
+		"pic": "OGS-froggrog.jpg",
+		"line": "25-40",
+		"state": 1,
+		"category": "QT",
+		"type": "SLO",
+		"subType": "H5",
+		"tag": [
+			"NEW"
+		],
+		"language": ""
+	},
+	{
+		"eName": "Oceans Call",
+		"name": "海洋之音",
+		"id": "HAB-oceanscall",
+		"code": "HAB-oceanscall",
+		"pic": "HAB-oceanscall.jpg",
+		"line": "1-20",
+		"state": 1,
+		"category": "QT",
+		"type": "SLO",
+		"subType": "H5",
+		"tag": [
+			"NEW"
+		],
+		"language": ""
+	},
+	{
+		"eName": "Bloopers",
+		"name": "幕后花絮",
+		"id": "ELK-bloopers",
+		"code": "ELK-bloopers",
+		"pic": "ELK-bloopers.jpg",
+		"line": "",
+		"state": "0",
+		"category": "QT",
+		"type": "SLO",
+		"subType": "H5",
+		"tag": [
+			"NEW"
+		],
+		"language": ""
+	},
+	{
+		"eName": "Champions Goal",
+		"name": "足球宝贝",
+		"id": "ELK-championsgoal",
+		"code": "ELK-championsgoal",
+		"pic": "ELK-championsgoal.jpg",
+		"line": "1-20",
+		"state": 1,
+		"category": "QT",
+		"type": "SLO",
+		"subType": "H5",
+		"tag": [
+			"NEW"
+		],
+		"language": ""
+	},
+	{
+		"eName": "DJ Wild",
+		"name": "狂野DJ",
+		"id": "ELK-djwild",
+		"code": "ELK-djwild",
+		"pic": "ELK-djwild.jpg",
+		"line": "1-20",
+		"state": 1,
+		"category": "QT",
+		"type": "SLO",
+		"subType": "H5",
+		"tag": [
+			"NEW"
+		],
+		"language": ""
+	},
+	{
+		"eName": "Electric Sam",
+		"name": "美女和野兽",
+		"id": "ELK-electricsam",
+		"code": "ELK-electricsam",
+		"pic": "ELK-electricsam.jpg",
+		"line": "100-1296",
+		"state": 1,
+		"category": "QT",
+		"type": "SLO",
+		"subType": "H5",
+		"tag": [
+			"NEW"
+		],
+		"language": ""
+	},
+	{
+		"eName": "Poltava",
+		"name": "波尔塔瓦之战",
+		"id": "ELK-poltava",
+		"code": "ELK-poltava",
+		"pic": "ELK-poltava.jpg",
+		"line": "25-40",
+		"state": 1,
+		"category": "QT",
+		"type": "SLO",
+		"subType": "H5",
+		"tag": [
+			"NEW"
+		],
+		"language": ""
+	},
+	{
+		"eName": "Taco Brothers",
+		"name": "塔科兄弟",
+		"id": "ELK-tacobrothers",
+		"code": "ELK-tacobrothers",
+		"pic": "ELK-tacobrothers.jpg",
+		"line": "100-1296",
+		"state": 1,
+		"category": "QT",
+		"type": "SLO",
+		"subType": "H5",
+		"tag": [
+			"NEW"
+		],
+		"language": ""
+	},
+	{
+		"eName": "The Lab",
+		"name": "神奇实验室",
+		"id": "ELK-thelab",
+		"code": "ELK-thelab",
+		"pic": "ELK-thelab.jpg",
+		"line": "1-20",
+		"state": 1,
+		"category": "QT",
+		"type": "SLO",
+		"subType": "H5",
+		"tag": [
+			"NEW"
+		],
+		"language": ""
+	},
+	{
+		"eName": "Genie’s Touch",
+		"name": "阿拉丁神灯",
+		"id": "QS-geniestouch",
+		"pic": "QS-geniestouch.jpg",
+		"state": 1,
+		"type": "SLO",
+		"tag": [
+			"NEW"
+		],
+		"line": "1-20",
+		"code": "QS-geniestouch",
+		"category": "QT",
+		"subType": "",
+		"language": ""
+	},
+	{
+		"eName": "Jewel Blast",
+		"name": "宝石爆炸",
+		"id": "QS-jewelblast",
+		"pic": "QS-jewelblast.jpg",
+		"state": 1,
+		"type": "SLO",
+		"tag": [
+			"NEW"
+		],
+		"line": "25-40",
+		"code": "QS-jewelblast",
+		"category": "QT",
+		"subType": "",
+		"language": ""
+	},
+	{
+		"eName": "King Colossus",
+		"name": "国王巨像",
+		"id": "QS-kingcolossus",
+		"pic": "QS-kingcolossus.jpg",
+		"state": 1,
+		"type": "SLO",
+		"tag": [
+			"NEW"
+		],
+		"line": "25-40",
+		"code": "QS-kingcolossus",
+		"category": "QT",
+		"subType": "",
+		"language": ""
+	},
+	{
+		"eName": "Second Strike",
+		"name": "连环炮",
+		"id": "QS-secondstrike",
+		"pic": "QS-secondstrike.jpg",
+		"state": 1,
+		"type": "SLO",
+		"tag": [
+			"NEW"
+		],
+		"line": "1-20",
+		"code": "QS-secondstrike",
+		"category": "QT",
+		"subType": "",
+		"language": ""
+	},
+	{
+		"eName": "Gangsters",
+		"name": "黑手党",
+		"id": "HAB-gangsters",
+		"pic": "HAB-gangsters.jpg",
+		"state": 1,
+		"type": "SLO",
+		"tag": [
+			"NEW"
+		],
+		"line": "25-40",
+		"code": "HAB-gangsters",
+		"category": "QT",
+		"subType": "",
+		"language": ""
+	},
+	{
+		"eName": "Crystal Queen",
+		"name": "冰雪奇缘",
+		"id": "QS-crystalqueen",
+		"pic": "QS-crystalqueen.jpg",
+		"state": 1,
+		"type": "SLO",
+		"tag": [
+			"XC"
+		],
+		"line": "45-100",
+		"code": "QS-crystalqueen",
+		"category": "QT",
+		"subType": "",
+		"language": ""
+	},
+	{
+		"eName": "Sinbad",
+		"name": "辛巴达",
+		"id": "QS-sinbad",
+		"pic": "QS-sinbad.jpg",
+		"state": 1,
+		"type": "SLO",
+		"tag": [
+			"NEW"
+		],
+		"line": "25-40",
+		"code": "QS-sinbad",
+		"category": "QT",
+		"subType": "",
+		"language": ""
+	},
+	{
+		"eName": "Sugar Trail",
+		"name": "糖果传奇",
+		"id": "QS-sugartrail",
+		"pic": "QS-sugartrail.jpg",
+		"state": "1",
+		"type": "SLO",
+		"tag": [
+			"NEW"
+		],
+		"line": "25-40",
+		"code": "QS-sugartrail",
+		"category": "QT",
+		"subType": "",
+		"language": ""
+	},
+	{
+		"eName": "Babushkas",
+		"name": "俄罗斯老太",
+		"id": "TK-babushkas",
+		"pic": "OGS-babushkas.jpg",
+		"state": 1,
+		"type": "SLO",
+		"tag": [
+			"NEW"
+		],
+		"line": "1-20",
+		"code": "TK-babushkas",
+		"category": "QT",
+		"subType": "",
+		"language": ""
+	},
+	{
+		"eName": "Spectra",
+		"name": "光谱",
+		"id": "TK-spectra",
+		"pic": "OGS-spectra.jpg",
+		"state": 1,
+		"type": "SLO",
+		"tag": [
+			"NEW"
+		],
+		"line": "25-40",
+		"code": "TK-spectra",
+		"category": "QT",
+		"subType": "",
+		"language": ""
+	},
+	{
+		"eName": "Sunset Delight",
+		"name": "日落余晖",
+		"id": "TK-sunsetdelight",
+		"pic": "OGS-sunsetdelight.jpg",
+		"state": 1,
+		"type": "SLO",
+		"tag": [
+			"NEW"
+		],
+		"line": "1-20",
+		"code": "TK-sunsetdelight",
+		"category": "QT",
+		"subType": "",
+		"language": ""
+	},
+	{
+		"eName": "Illuminous",
+		"name": "嗨翻珠宝",
+		"id": "QS-illuminous",
+		"pic": "QS-illuminous.jpg",
+		"state": 1,
+		"type": "SLO",
+		"tag": [
+			"NEW"
+		],
+		"line": "1-20",
+		"code": "QS-illuminous",
+		"category": "QT",
+		"subType": "",
+		"language": ""
+	},
+	{
+		"eName": "Royal Frog",
+		"name": "皇族青蛙",
+		"id": "QS-royalfrog",
+		"pic": "QS-royalfrog.jpg",
+		"state": 1,
+		"type": "SLO",
+		"tag": [
+			"NEW"
+		],
+		"line": "25-40",
+		"code": "QS-royalfrog",
+		"category": "QT",
+		"subType": "",
+		"language": ""
+	},
+	{
+		"eName": "The Epic Journey",
+		"name": "史诗之旅",
+		"id": "QS-theepicjourney",
+		"pic": "QS-theepicjourney.jpg",
+		"state": 1,
+		"type": "SLO",
+		"tag": [
+			"NEW"
+		],
+		"line": "25-40",
+		"code": "QS-theepicjourney",
+		"category": "QT",
+		"subType": "",
+		"language": ""
+	},
+	{
+		"eName": "Hidden Valley",
+		"name": "神秘山谷",
+		"id": "QS-hiddenvalley",
+		"pic": "QS-hiddenvalley.jpg",
+		"state": 1,
+		"type": "SLO",
+		"tag": [
+			"NEW",
+			"HOT"
+		],
+		"line": "25-40",
+		"code": "QS-hiddenvalley",
+		"category": "QT",
+		"subType": "",
+		"language": ""
+	},
+	{
+		"eName": "Sevens High",
+		"name": "疯狂777",
+		"id": "QS-sevenshigh",
+		"pic": "QS-sevenshigh.jpg",
+		"state": 1,
+		"type": "SLO",
+		"tag": [
+			"NEW",
+			"HOT"
+		],
+		"line": "25-40",
+		"code": "QS-sevenshigh",
+		"category": "QT",
+		"subType": "",
+		"language": ""
+	},
+	{
+		"eName": "The Wild Chase",
+		"name": "侠盗猎车手",
+		"id": "QS-thewildchase",
+		"pic": "QS-thewildchase.jpg",
+		"state": 1,
+		"type": "SLO",
+		"tag": [
+			"NEW",
+			"HOT"
+		],
+		"line": "25-40",
+		"code": "QS-thewildchase",
+		"category": "QT",
+		"subType": "",
+		"language": ""
+	},
+	{
+		"eName": "Treasure Island",
+		"name": "宝藏岛",
+		"id": "QS-treasureisland",
+		"pic": "QS-treasureisland.jpg",
+		"state": 1,
+		"type": "SLO",
+		"tag": [
+			"NEW",
+			"HOT"
+		],
+		"line": "25-40",
+		"code": "QS-treasureisland",
+		"category": "QT",
+		"subType": "",
+		"language": ""
+	},
+	{
+		"eName": "Titan Thunder",
+		"name": "灰太狼",
+		"id": "QS-bigbadwolf",
+		"pic": "QS-bigbadwolf.jpg",
+		"state": 1,
+		"type": "SLO",
+		"tag": [
+			"NEW",
+			"HOT"
+		],
+		"line": "25-40",
+		"code": "QS-bigbadwolf",
+		"category": "QT",
+		"subType": "",
+		"language": ""
+	},
+	{
+		"eName": "Firestorm",
+		"name": "火暴",
+		"id": "QS-firestorm",
+		"pic": "QS-firestorm.jpg",
+		"state": 1,
+		"type": "SLO",
+		"tag": [
+			"NEW",
+			"HOT"
+		],
+		"line": "25-40",
+		"code": "QS-firestorm",
+		"category": "QT",
+		"subType": "",
+		"language": ""
+	},
+	{
+		"eName": "Razortooth",
+		"name": "虎口狼牙",
+		"id": "QS-razortooth",
+		"pic": "QS-razortooth.jpg",
+		"state": 1,
+		"type": "SLO",
+		"tag": [
+			"NEW",
+			"HOT"
+		],
+		"line": "100-1296",
+		"code": "QS-razortooth",
+		"category": "QT",
+		"subType": "",
+		"language": ""
+	},
+	{
+		"eName": "The Three Musketeers",
+		"name": "三剑客",
+		"id": "QS-thethreemusketeers",
+		"pic": "QS-thethreemusketeers.jpg",
+		"state": 1,
+		"type": "SLO",
+		"tag": [
+			"NEW",
+			"HOT"
+		],
+		"line": "1-20",
+		"code": "QS-thethreemusketeers",
+		"category": "QT",
+		"subType": "",
+		"language": ""
+	},
+	{
+		"eName": "Titan Thunder",
+		"name": "泰坦雷霆",
+		"id": "QS-titanthunder",
+		"pic": "QS-titanthunder.jpg",
+		"state": 1,
+		"type": "SLO",
+		"tag": [
+			"NEW",
+			"HOT"
+		],
+		"line": "45-100",
+		"code": "QS-titanthunder",
+		"category": "QT",
+		"subType": "",
+		"language": ""
+	},
+	{
+		"eName": "Sparta",
+		"name": "斯巴达",
+		"id": "HAB-sparta",
+		"pic": "HAB-sparta.jpg",
+		"state": 1,
+		"type": "SLO",
+		"tag": [
+			"NEW",
+			"CLA",
+			"HOT"
+		],
+		"line": "25-40",
+		"code": "HAB-sparta",
+		"category": "QT",
+		"subType": "",
+		"language": ""
+	},
+	{
+		"eName": "Gold Rush",
+		"name": "淘金疯狂",
+		"id": "HAB-goldrush",
+		"pic": "HAB-goldrush.jpg",
+		"state": 1,
+		"type": "SLO",
+		"tag": [
+			"NEW",
+			"CLA",
+			"HOT"
+		],
+		"line": "25-40",
+		"code": "HAB-goldrush",
+		"category": "QT",
+		"subType": "",
+		"language": ""
+	},
+	{
+		"eName": "Monster Mash Cash",
+		"name": "怪物聚集",
+		"id": "HAB-monstermashcash",
+		"pic": "HAB-monstermashcash.jpg",
+		"state": 1,
+		"type": "SLO",
+		"tag": [
+			"NEW",
+			"CLA",
+			"HOT"
+		],
+		"line": "45-100",
+		"code": "HAB-monstermashcash",
+		"category": "QT",
+		"subType": "",
+		"language": ""
+	},
+	{
+		"eName": "Shaolin Fortunes",
+		"name": "少林宝藏",
+		"id": "HAB-shaolinfortunes",
+		"pic": "HAB-shaolinfortunes.jpg",
+		"state": 1,
+		"type": "SLO",
+		"tag": [
+			"NEW",
+			"CLA",
+			"HOT"
+		],
+		"line": "100-1296",
+		"code": "HAB-shaolinfortunes",
+		"category": "QT",
+		"subType": "",
+		"language": ""
+	},
+	{
+		"eName": "Wicked Witch",
+		"name": "巫婆大财",
+		"id": "HAB-wickedwitch",
+		"pic": "HAB-wickedwitch.jpg",
+		"state": 1,
+		"type": "SLO",
+		"tag": [
+			"NEW",
+			"CLA",
+			"HOT"
+		],
+		"line": "1-20",
+		"code": "HAB-wickedwitch",
+		"category": "QT",
+		"subType": "",
+		"language": ""
+	},
+	{
+		"eName": "Dragons Realm",
+		"name": "神龙之境",
+		"id": "HAB-dragonsrealm",
+		"pic": "HAB-dragonsrealm.jpg",
+		"state": 1,
+		"type": "SLO",
+		"tag": [
+			"NEW",
+			"CLA",
+			"HOT"
+		],
+		"line": "25-40",
+		"code": "HAB-dragonsrealm",
+		"category": "QT",
+		"subType": "",
+		"language": ""
+	},
+	{
+		"eName": "Zoom",
+		"name": "印第安追梦",
+		"id": "HAB-indiancashcatcher",
+		"pic": "HAB-indiancashcatcher.jpg",
+		"state": 1,
+		"type": "SLO",
+		"tag": [
+			"NEW",
+			"CLA",
+			"HOT"
+		],
+		"line": "100-1296",
+		"code": "HAB-indiancashcatcher",
+		"category": "QT",
+		"subType": "",
+		"language": ""
+	},
+	{
+		"eName": "Roman Empire",
+		"name": "罗马帝国",
+		"id": "HAB-romanempire",
+		"pic": "HAB-romanempire.jpg",
+		"state": 1,
+		"type": "SLO",
+		"tag": [
+			"NEW",
+			"CLA",
+			"HOT"
+		],
+		"line": "45-100",
+		"code": "HAB-romanempire",
+		"category": "QT",
+		"subType": "",
+		"language": ""
+	},
+	{
+		"eName": "Ruffled Up",
+		"name": "触电的小鸟",
+		"id": "HAB-ruffledup",
+		"pic": "HAB-ruffledup.jpg",
+		"state": 1,
+		"type": "SLO",
+		"tag": [
+			"NEW",
+			"CLA",
+			"HOT"
+		],
+		"line": "100-1296",
+		"code": "HAB-ruffledup",
+		"category": "QT",
+		"subType": "",
+		"language": ""
+	},
+	{
+		"eName": "Zoom",
+		"name": "水果幻灯片",
+		"id": "TK-zoom",
+		"pic": "OGS-zoom.jpg",
+		"state": 1,
+		"type": "SLO",
+		"tag": [
+			"NEW",
+			"CLA",
+			"HOT"
+		],
+		"line": "45-100",
+		"code": "TK-zoom",
+		"category": "QT",
+		"subType": "",
+		"language": ""
+	},
+	{
+		"eName": "Arcane Elements",
+		"name": "神秘元素",
+		"id": "HAB-arcaneelements",
+		"pic": "HAB-arcaneelements.jpg",
+		"state": 1,
+		"type": "SLO",
+		"tag": [
+			"NEW",
+			"CLA",
+			"HOT"
+		],
+		"line": "45-100",
+		"code": "HAB-arcaneelements",
+		"category": "QT",
+		"subType": "",
+		"language": ""
+	},
+	{
+		"eName": "Coyote Crash",
+		"name": "狼贼夺宝",
+		"id": "HAB-coyotecrash",
+		"pic": "HAB-coyotecrash.jpg",
+		"state": 1,
+		"type": "SLO",
+		"tag": [
+			"NEW",
+			"CLA",
+			"HOT"
+		],
+		"line": "25-40",
+		"code": "HAB-coyotecrash",
+		"category": "QT",
+		"subType": "",
+		"language": ""
+	},
+	{
+		"eName": "Mystic Fortune",
+		"name": "神秘宝藏",
+		"id": "HAB-mysticfortune",
+		"pic": "HAB-mysticfortune.jpg",
+		"state": 1,
+		"type": "SLO",
+		"tag": [
+			"NEW",
+			"CLA",
+			"HOT"
+		],
+		"line": "25-40",
+		"code": "HAB-mysticfortune",
+		"category": "QT",
+		"subType": "",
+		"language": ""
+	},
+	{
+		"eName": "Super Twister",
+		"name": "超级龙卷风",
+		"id": "HAB-supertwister",
+		"pic": "HAB-supertwister.jpg",
+		"state": 1,
+		"type": "SLO",
+		"tag": [
+			"NEW",
+			"CLA",
+			"HOT"
+		],
+		"line": "45-100",
+		"code": "HAB-supertwister",
+		"category": "QT",
+		"subType": "",
+		"language": ""
+	},
+	{
+		"eName": "Facai Shen",
+		"name": "发财神",
+		"id": "HAB-facaishen",
+		"pic": "HAB-facaishen.jpg",
+		"state": 1,
+		"type": "SLO",
+		"tag": [
+			"CLA"
+		],
+		"line": "25-40",
+		"code": "HAB-facaishen",
+		"category": "QT",
+		"subType": "",
+		"language": ""
+	},
+	{
+		"eName": "12 Zodiacs",
+		"name": "十二生肖",
+		"id": "HAB-12zodiacs",
+		"pic": "HAB-12zodiacs.jpg",
+		"state": 1,
+		"type": "SLO",
+		"tag": [
+			"CLA"
+		],
+		"line": "1-20",
+		"code": "HAB-12zodiacs",
+		"category": "QT",
+		"subType": "",
+		"language": ""
+	},
+	{
+		"eName": "Dragons Thrones",
+		"name": "龙之宝座",
+		"id": "HAB-dragonsthrone",
+		"pic": "HAB-dragonsthrone.jpg",
+		"state": 1,
+		"type": "SLO",
+		"tag": [
+			"CLA"
+		],
+		"line": "45-100",
+		"code": "HAB-dragonsthrone",
+		"category": "QT",
+		"subType": "",
+		"language": ""
+	},
+	{
+		"eName": "Bombs Away",
+		"name": "炸弹追击",
+		"id": "HAB-bombsaway",
+		"pic": "HAB-bombsaway.jpg",
+		"state": 1,
+		"type": "SLO",
+		"tag": [
+			"CLA"
+		],
+		"line": "45-100",
+		"code": "HAB-bombsaway",
+		"category": "QT",
+		"subType": "",
+		"language": ""
+	},
+	{
+		"eName": "The Rift",
+		"name": "密室逃亡",
+		"id": "TK-therift",
+		"pic": "OGS-therift.jpg",
+		"state": 1,
+		"type": "SLO",
+		"tag": [
+			"CLA"
+		],
+		"line": "1-20",
+		"code": "TK-therift",
+		"category": "QT",
+		"subType": "",
+		"language": ""
+	},
+	{
+		"eName": "Fruit Warp",
+		"name": "水果大战",
+		"id": "TK-fruitwarp",
+		"pic": "OGS-fruitwarp.jpg",
+		"state": 1,
+		"type": "SLO",
+		"tag": [
+			"CLA",
+			"HOT"
+		],
+		"line": "1-20",
+		"code": "TK-fruitwarp",
+		"category": "QT",
+		"subType": "",
+		"language": ""
+	},
+	{
+		"eName": "Toki Time",
+		"name": "开心消消乐",
+		"id": "TK-tokitime",
+		"pic": "OGS-tokitime.jpg",
+		"state": 1,
+		"type": "SLO",
+		"tag": [
+			"CLA"
+		],
+		"line": "1-20",
+		"code": "TK-tokitime",
+		"category": "QT",
+		"subType": "",
+		"language": ""
+	},
+	{
+		"eName": "Esqueleto Explosivo",
+		"name": "骷髅乐队",
+		"id": "TK-esqueletoexplosivo",
+		"pic": "OGS-esqueletoexplosivo.jpg",
+		"state": 1,
+		"type": "SLO",
+		"tag": [
+			"CX"
+		],
+		"line": "1-20",
+		"code": "TK-esqueletoexplosivo",
+		"category": "QT",
+		"subType": "",
+		"language": ""
+	},
+	{
+		"eName": "Magicious",
+		"name": "魔术大师",
+		"id": "TK-magicious",
+		"pic": "OGS-magicious.jpg",
+		"state": 1,
+		"type": "SLO",
+		"tag": [
+			"CLA"
+		],
+		"line": "1-20",
+		"code": "TK-magicious",
+		"category": "QT",
+		"subType": "",
+		"language": ""
+	},
+	{
+		"eName": "1429 Uncharted Seas",
+		"name": "未知海洋探险-1429",
+		"id": "TK-1429unchartedseas",
+		"pic": "OGS-1429unchartedseas.jpg",
+		"state": 1,
+		"type": "SLO",
+		"tag": [
+			"CLA"
+		],
+		"line": "",
+		"code": "TK-1429unchartedseas",
+		"category": "QT"
+	},
+	{
+		"eName": "Flux",
+		"name": "水晶宝藏",
+		"id": "TK-flux",
+		"pic": "OGS-flux.jpg",
+		"state": 1,
+		"type": "SLO",
+		"tag": [
+			"CLA"
+		],
+		"line": "1-20",
+		"code": "TK-flux",
+		"category": "QT",
+		"subType": "",
+		"language": ""
+	},
+	{
+		"eName": "Arcader",
+		"name": "神秘的巨石",
+		"id": "TK-arcader",
+		"pic": "OGS-arcader.jpg",
+		"state": 1,
+		"type": "SLO",
+		"tag": [
+			"CLA"
+		],
+		"line": "1-20",
+		"code": "TK-arcader",
+		"category": "QT",
+		"subType": "",
+		"language": ""
+	},
+	{
+		"eName": "Birds On A Wire",
+		"name": "愤怒的小鸟",
+		"id": "TK-birdsonawire",
+		"pic": "OGS-birdsonawire.jpg",
+		"state": 1,
+		"type": "SLO",
+		"tag": [
+			"XC"
+		],
+		"line": "1-20",
+		"code": "TK-birdsonawire",
+		"category": "QT",
+		"subType": "",
+		"language": ""
+	},
+	{
+		"eName": "Cosmic Crystals",
+		"name": "宇宙水晶",
+		"id": "IDS-cosmiccrystals",
+		"pic": "OGS-birdsonawire.jpg",
+		"state": 1,
+		"type": "SLO",
+		"tag": [
+			"XC"
+		],
+		"line": "1-20",
+		"code": "IDS-cosmiccrystals",
+		"category": "QT",
+		"subType": "",
+		"language": ""
+	}
+]

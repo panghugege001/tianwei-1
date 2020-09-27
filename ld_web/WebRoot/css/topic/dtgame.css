@@ -1,0 +1,193 @@
+body{
+    color: #606060;
+    background-color: #0c0100;
+    font: 14px/1.5 tahoma, arial, 'Microsoft YaHei', sans-serif;
+}
+p{ margin-bottom: 0; }
+
+
+.c-orange{
+    color: #be7703;
+}
+.m-row .col-3{
+    float: left;
+    width: 25%;
+}
+.mt20{
+    margin-top:20px;
+}
+.mb20{
+    margin-bottom: 20px;
+}
+.mb40{
+    margin-bottom: 40px;
+}
+.m-content{
+    padding:0 56px 60px;
+    color: #e9b882;
+}
+.m-content h3{
+    color: #fb9b08;
+    font-size: 16px;
+}
+
+.container{
+    width: 1200px;
+}
+
+
+/*头部
+=======*/
+.header{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 84px;
+    padding-top: 5px;
+    background-color: #0b1426;
+    background-color: rgba(0,0,0,.5);
+    z-index: 99;
+}
+.header-inner{
+    width: 1200px;
+    margin: 0 auto;
+}
+.header .toplink{
+    padding-top: 28px;
+}
+.header .toplink a{
+    display: inline-block;
+    line-height: 16px;
+    margin-right: 4px;
+    text-align: center;
+    font-size: 14px;
+    padding:0 16px;
+    color: #fff;
+    vertical-align: middle;
+    border-left: 1px solid #fff;
+}
+.header .toplink a:first-child{
+    border-left: none;
+}
+.header .toplink .i-btn{
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    width: 80px;
+    background-color: #fb9b08;
+    color: #fff;
+    padding: 0;
+    border:none;
+}
+.header .toplink .i-btn.two{
+    background-color: #24406c;
+}
+
+/*main
+=======*/
+
+.index-bg{
+    background:#0c0100 url('../../images/topic/dtgame/banner-top.jpg') no-repeat 50% 0;
+    padding-top: 700px;
+}
+
+.btnlist{
+    background: url("../../images/topic/dtgame/btn-list.png") no-repeat 50% top;
+    height:77px;
+    margin-bottom: 50px;
+}
+.btnlist a{
+    float: left;
+    width: 33.33%;
+    height: 100%;
+    text-indent: -999em;
+}
+
+.game-list{
+    padding-left: 16px;
+}
+.game-info{
+    width: 268px;
+    float: left;
+    margin: 0 28px 44px 0px;
+    position: relative;
+    cursor: pointer;
+    /* display: inline-block; */
+    /* vertical-align: top; */
+}
+.game-info .game-pic{
+    height: 164px;
+    border: 6px solid #606060;
+    overflow: hidden;
+}
+.game-info:hover .game-pic{
+    border: 6px solid #da7d4e;
+    overflow: hidden;
+}
+.game-info .game-pic img{
+    height: 100%;
+    width: 100%;
+}
+.game-info .name{
+    height: 71px;
+    padding-top: 10px;
+    /* padding-bottom: 10px; */
+    border-bottom:1px dashed #da7d4e;
+    text-align: left;
+    transition: background 0.2s;
+    -webkit-transition: background 0.2s;
+    overflow: hidden;
+}
+.game-info .name h4{
+    color: #ffd504;
+    font-size: 22px;
+}
+.game-info .name h4 sub{
+    display: block;
+    color: #606060;
+    font-size: 14px;
+}
+.game-info .scroe{
+    font-size: 40px;
+    line-height: 1;
+}
+.game-info .game-brief{
+    height: 64px;
+    padding-top: 10px;
+}
+.game-info .btn-game{
+    float: right;
+    width: 138px;
+    height: 36px;
+    line-height: 36px;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 8px;
+    background-color: #ff5e1e;
+    transition:all .3s;
+}
+.game-info .btn-game:hover{
+    background-color: #e6551b;
+}
+.btn-game.forward{
+    background-color: #eee;
+    color: #555;
+    cursor: not-allowed;
+}
+.btn-game.forward:hover{
+    background-color: #eee;
+}
+.game-info .like{
+    font-size: 22px;
+    color: #ff5e1e;
+    line-height: 1;
+}
+
+
+
+
+
+
+
