@@ -28,6 +28,8 @@ public interface Constant {
 	String NEWPT = "NEWPT";
 	// MG平台名称
 	String MG = "MG";
+	//BG平台
+	String BG = "BG";
 	// SW平台名称
 	String SW = "SW";
 	// DT平台名称

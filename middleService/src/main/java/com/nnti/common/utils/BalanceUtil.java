@@ -50,13 +50,21 @@ public class BalanceUtil {
 
 				msg = "转入" + Constant.CQ9 + "账户出现错误，请稍后重试！";
 			}
-		}else if (Constant.PG.equalsIgnoreCase(platform)) {
+		} else if (Constant.PG.equalsIgnoreCase(platform)) {
 
 			String result = PGUtil.transferIn(loginName, giftMoney);
 
 			if (StringUtils.isEmpty(result)) {
 
 				msg = "转入" + Constant.PG + "账户出现错误，请稍后重试！";
+			}
+		} else if (Constant.BG.equalsIgnoreCase(platform)) {
+
+			String result = BGUtil.transfer(loginName, Math.abs(giftMoney));
+
+			if (StringUtils.isEmpty(result)) {
+
+				msg = "转入" + Constant.BG + "账户出现错误，请稍后重试！";
 			}
 		} else if (Constant.SW.equalsIgnoreCase(platform)) {
 
@@ -242,6 +250,14 @@ public class BalanceUtil {
 		} else if (Constant.PG.equalsIgnoreCase(platform)) {
 
 			String result = PGUtil.transferOut(loginName, giftMoney);
+
+			if (StringUtils.isEmpty(result)) {
+
+				msg = Constant.PG + "账户转出出现错误，请稍后重试！";
+			}
+		}else if (Constant.BG.equalsIgnoreCase(platform)) {
+
+			String result = BGUtil.transfer(loginName, -Math.abs(giftMoney));
 
 			if (StringUtils.isEmpty(result)) {
 

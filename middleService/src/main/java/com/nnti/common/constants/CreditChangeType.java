@@ -18,10 +18,14 @@ public interface CreditChangeType {
 	String TRANSFER_CQ9_IN = "TRANSFER_CQ9IN";
 	// 额度转入(PG)
 	String TRANSFER_PG_IN = "TRANSFER_PGIN";
+	// 额度转入(BG)
+	String TRANSFER_BG_IN = "TRANSFER_BGIN";
 	// 额度转出(CQ9)
 	String TRANSFER_CQ9_OUT = "TRANSFER_CQ9OUT";
 	// 额度转出(PG)
 	String TRANSFER_PG_OUT = "TRANSFER_PGOUT";
+	// 额度转出(BG)
+	String TRANSFER_BG_OUT = "TRANSFER_BGOUT";
 	// 额度转入(SW)
 	String TRANSFER_SW_IN = "TRANSFER_SWIN";
 	// 额度转出(SW)
@@ -90,6 +94,8 @@ public interface CreditChangeType {
 	String TRANSFER_REDCOUPONS_CQ9IN = "TRANSFER_REDCOUPONS_CQ9IN";
 	// 红包优惠券(PG)
 	String TRANSFER_REDCOUPONS_PGIN = "TRANSFER_REDCOUPONS_PGIN";
+	// 红包优惠券(BG)
+	String TRANSFER_REDCOUPONS_BGIN = "TRANSFER_REDCOUPONS_BGIN";
 	// 红包优惠券(SW)
 	String TRANSFER_REDCOUPONS_SWIN = "TRANSFER_REDCOUPONS_SWIN";
 	// 红包优惠券(DT)
@@ -112,8 +118,10 @@ public interface CreditChangeType {
 	String TRANSFER_MG_COUPON = "TRANSFER_MG_COUPON";
 	// 存送优惠券(CQ9)
 	String TRANSFER_CQ9_COUPON = "TRANSFER_CQ9_COUPON";
-	// 存送优惠券(CQ9)
+	// 存送优惠券(PG)
 	String TRANSFER_PG_COUPON = "TRANSFER_PG_COUPON";
+	// 存送优惠券(BG)
+	String TRANSFER_BG_COUPON = "TRANSFER_BG_COUPON";
 	// 存送优惠券(SW)
 	String TRANSFER_SW_COUPON = "TRANSFER_SW_COUPON";
 	// 存送优惠券(DT)

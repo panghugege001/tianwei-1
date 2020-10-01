@@ -62,6 +62,21 @@ public final class StaticData {
 		map.put("type", "OUT");
 		//PG转主账户
 		transferMap.put("PGSELF", map);
+		
+		map.put("beanId", "bgTransferService");
+		map.put("method", "transferIn");
+		map.put("platform", Constant.BG);
+		map.put("type", "IN");
+		// 主账户转BG
+		transferMap.put("SELFBG", map);
+		
+		map = new HashMap<String, String>();
+		map.put("beanId", "bgTransferService");
+		map.put("method", "transferOut");
+		map.put("platform", Constant.BG);
+		map.put("type", "OUT");
+		//BG转主账户
+		transferMap.put("BGSELF", map);
 
 		map = new HashMap<String, String>();
 		map.put("beanId", "ntwoLiveTransferService");
@@ -366,6 +381,15 @@ public final class StaticData {
 		map.put("christmasActivitiesMethd", "christmasActivities");
 		// PG
 		preferentialMap.put(Constant.PG, map);
+		
+		map = new HashMap<String, String>();
+		map.put("beanId", "bgTransferService");
+		map.put("redEnvelopeMethod", "redEnvelopeCoupon");
+		map.put("depositMethod", "depositCoupon");
+		map.put("experienceMethod", "experienceGold");
+		map.put("christmasActivitiesMethd", "christmasActivities");
+		// BG
+		preferentialMap.put(Constant.BG, map);
 
 		map = new HashMap<String, String>();
 		map.put("beanId", "ntwoLiveTransferService");
@@ -465,6 +489,8 @@ public final class StaticData {
 		creditMap.put("SELFDT", CreditChangeType.TRANSFER_DT_IN);
 		// CQ9
 		creditMap.put("SELFCQ9", CreditChangeType.TRANSFER_CQ9_IN);
+		// BG
+		creditMap.put("SELFBG", CreditChangeType.TRANSFER_BG_IN);
 		// PG
 		creditMap.put("SELFPG", CreditChangeType.TRANSFER_PG_IN);
 		// N2LIVE
