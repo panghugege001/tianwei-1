@@ -106,6 +106,7 @@
 		<action class="MobileMemberActionClass" name="systemConfig" method="mobileSystemConfig"></action>
 		<action class="MobileMemberActionClass" name="getWXValidateDepositInfo" method="mobileWXValidateDepositInfo"></action>
 		<action class="MobileMemberActionClass" name="gameAginRedirect" method="mobileGetAginGame" />
+		<action class="MobileMemberActionClass" name="gameBgRedirect" method="mobileGetBgGame" />
 		<action class="MobileMemberActionClass" name="getEbetToken" method="mobileGetEbetToken" />
 		<action class="MobileMemberActionClass" name="getWorkZfbqr2" method="mobileGetWorkZfbqr2"></action>
 		<!-- app下载彩金 -->

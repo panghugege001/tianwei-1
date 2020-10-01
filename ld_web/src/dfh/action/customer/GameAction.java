@@ -300,6 +300,32 @@ public class GameAction extends SubActionSupport {
         }
     }
     
+    public String reqGameRedirectBgXyFish() {
+        try {
+        	
+            Users user = getCustomerFromSession();
+            
+ 
+        	int port = this.getRequest().getServerPort();
+			String reloadUrl = this.getRequest().getScheme()+"://"+this.getRequest().getServerName() + ((port == 0 || port == 80 || port == 443)? "":":" + port);
+			
+   			gameUrl = AxisUtil.getObjectOne(AxisUtil.getClient(AxisUtil.PUBLICWEBSERVICEURL_2 + "UserWebService", false), AxisUtil.NAMESPACE, "getBgXyFishGameUrl",
+ 					   new Object[] {user}, String.class);
+ 
+   			if (StringUtil.equals("MAINTAIN", gameUrl)) {
+   				  GsonUtil.GsonObjectNoReturn("游戏维护中,稍后再试");
+			      return INPUT;
+   			}
+   			if (gameUrl==null) 
+			      return INPUT;
+            return SUCCESS;
+           
+        } catch (Exception e) {
+        	log.info(e.getMessage());
+            return ERROR;
+        }
+    }
+    
     /**
      * 登录cg761棋牌游戏验证
      *

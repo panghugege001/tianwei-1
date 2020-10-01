@@ -604,6 +604,14 @@ public class AxisSecurityEncryptUtil {
 			return "系统繁忙"  ;
 		}
 	}
+	public static String getBgAppBalance(String loginname,String gameCode){  
+		try {
+			return AxisUtil.getObjectOne(AxisUtil.getClient(AxisUtil.PUBLICWEBSERVICEURL_2 + "UserWebService", false), AxisUtil.NAMESPACE, "getBGBalance", new Object[] { loginname,gameCode }, String.class);
+		} catch (AxisFault e) {
+			e.printStackTrace();
+			return "系统繁忙"  ;
+		}
+	}
 	public static String getPngBalance(String loginname){  
 		try {
 			return AxisUtil.getObjectOne(AxisUtil.getClient(AxisUtil.PUBLICWEBSERVICEURL_2 + "UserWebService", false), AxisUtil.NAMESPACE, "getPNGBalance", new Object[] { loginname }, String.class);

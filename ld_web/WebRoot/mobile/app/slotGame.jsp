@@ -849,19 +849,20 @@
 
 		</div>
 		<div class="slot_game_item_list">
-			<div class="live-item" id="aglivegame"><img src="/mobile/img/live_1.png" alt="" /></div>
+		    <div class="live-item" id="bglivegame"><img src="/mobile/img/live_bg.png" alt="" /></div>
+			<!-- <div class="live-item" id="aglivegame"><img src="/mobile/img/live_1.png" alt="" /></div>
 			<div class="live-item" id="n2livegame"><img src="/mobile/img/live_2.png" alt="" /></div>
-			<div class="live-item" id="bbinlivegame"><img src="/mobile/img/live_3.png" alt="" /></div>
+			<div class="live-item" id="bbinlivegame"><img src="/mobile/img/live_3.png" alt="" /></div> -->
 		</div>
 		<div class="slot_game_item_list">
-			<div class="slot_game_item game-info">
+	<!-- 		<div class="slot_game_item game-info">
 				<div class="layout_image_hover_text">
 					<img class="game_img lazy" src="/mobile/img/fish_1.png"></div>
 				<div class="game_item_operations">
 					<div class="game-text">AG捕鱼</div>
 					<div class="o-btn btn-play" id="agfishgame">立即游戏</div>
 				</div>
-			</div>
+			</div> -->
 			<!--<div class="slot_game_item game-info">
 				<div class="layout_image_hover_text">
 					<img class="game_img lazy" src="/mobile/img/fish_2.png"></div>
@@ -870,7 +871,7 @@
 					<div class="o-btn btn-play" id='agfishweb'>立即游戏</div>
 				</div>
 			</div>-->
-<!-- 			<div class="slot_game_item game-info">
+ <!-- 			<div class="slot_game_item game-info">
 				<div class="layout_image_hover_text">
 					<img class="game_img lazy" src="/mobile/img/fish_3.png"></div>
 				<div class="game_item_operations">
@@ -879,6 +880,22 @@
 				</div>
 			</div> -->
 			<div class="slot_game_item game-info">
+				<div class="layout_image_hover_text">
+					<img class="game_img lazy" src="/mobile/img/xyfish.png"></div>
+				<div class="game_item_operations tc">
+					<div class="game-text">西游捕鱼</div>
+					<div class="o-btn btn-play" id="xyfishgame">立即游戏</div>
+				</div>
+			</div> 
+			<div class="slot_game_item game-info">
+				<div class="layout_image_hover_text">
+					<img class="game_img lazy" src="/mobile/img/byds.jpg"></div>
+				<div class="game_item_operations tc">
+					<div class="game-text">捕鱼大师</div>
+					<div class="o-btn btn-play" id="bydsfishgame">立即游戏</div>
+				</div>
+			</div> 
+<!-- 			<div class="slot_game_item game-info">
 				<div class="layout_image_hover_text">
 					<img class="game_img lazy" src="/mobile/img/fish_4.png"></div>
 				<div class="game_item_operations">
@@ -893,7 +910,7 @@
 					<div class="game-text">钱来捕鱼</div>
 					<a class="o-btn btn-play" href="/game/gameLoginDTFish.aspx">立即游戏</a>
 				</div>
-			</div> 
+			</div>  -->
 		</div>
 
 		<div class="slot_game_item_list">
@@ -1053,9 +1070,21 @@
 	$("#aglivegame").on("click", function() {
 		loginAGLiveGame();
 	});
+	//bg真人
+	$("#bglivegame").on("click", function() {
+		loginBGLiveGame();
+	});
 	//AG捕鱼
 	$("#agfishgame").on("click", function() {
 		loginAGFishGame();
+	});
+	//西游捕鱼
+	$("#xyfishgame").on("click", function() {
+		loginXYFishGame();
+	});
+	//捕鱼大师
+	$("#bydsfishgame").on("click", function() {
+		loginBydsFishGame();
 	});
 	$("#ebetgame").on("click", function() {
 		//loginEBETGame();
@@ -1219,6 +1248,95 @@
 			}
 		});
 	}
+	
+	//西游捕魚
+	function loginXYFishGame() {
+		if('${session.customer==null}' == 'true') {
+			layer.open({
+				content: '登录您的账号，才可进入游戏。',
+				btn: '我知道了'
+			});
+		}
+		mobileManage.ajax({
+			// 1西游捕鱼 2 捕鱼大师
+			url: 'mobi/gameBgRedirect.aspx?bgType=1',
+			callback: function(result) {
+				layer.closeAll();
+				if('${session.customer==null}' == 'true') {
+					layer.open({
+						content: '登录您的账号，才可进入游戏。',
+						btn: '我知道了'
+					});
+				} else {
+					if(result.data != '') {
+						window.location.href = result.data;
+					} else {
+						layer.open({
+							content: result.message,
+							btn: '我知道了'
+						});
+					}
+				}
+			}
+		});
+	}
+	//捕鱼大师
+	function loginBydsFishGame() {
+		if('${session.customer==null}' == 'true') {
+			layer.open({
+				content: '登录您的账号，才可进入游戏。',
+				btn: '我知道了'
+			});
+		}
+		mobileManage.ajax({
+			// 1西游捕鱼 2 捕鱼大师
+			url: 'mobi/gameBgRedirect.aspx?bgType=2',
+			callback: function(result) {
+				layer.closeAll();
+				if('${session.customer==null}' == 'true') {
+					layer.open({
+						content: '登录您的账号，才可进入游戏。',
+						btn: '我知道了'
+					});
+				} else {
+					if(result.data != '') {
+						window.location.href = result.data;
+					} else {
+						layer.open({
+							content: result.message,
+							btn: '我知道了'
+						});
+					}
+				}
+			}
+		});
+	}
+	
+	//BG真人
+	function loginBGLiveGame() {
+		mobileManage.ajax({
+			url: 'mobi/gameBgRedirect.aspx?bgType=3',
+			callback: function(result) {
+				layer.closeAll();
+				if('${session.customer==null}' == 'true') {
+					layer.open({
+						content: '登录您的账号，才可进入游戏。',
+						btn: '我知道了'
+					});
+				} else {
+					if(result.data != '') {
+						window.location.href = result.data;
+					} else {
+						layer.open({
+							content: result.message,
+							btn: '我知道了'
+						});
+					}
+				}
+			}
+		});
+
+	}
 	//AG捕鱼网页版
 	$('#agfishweb').click(function() {
 		loginAGwebGame();
@@ -1334,6 +1452,8 @@
 		});
 
 	}
+	
+
 
 	//Ebet真人
 	function loginEBETGame() {

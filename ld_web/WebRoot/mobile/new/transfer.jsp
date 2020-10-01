@@ -140,6 +140,10 @@
 						value: 'pg',
 						name: 'PG老虎机账户'
 					},
+					{
+						value: 'bg',
+						name: 'BG账户'
+					},
 					/* {
 						value: 'agin',
 						name: 'AG国际厅账户'
@@ -251,6 +255,10 @@
 					{
 					 	value: 'pg',
 					 	name: 'PG老虎机账户'
+					},
+					{
+					 	value: 'bg',
+					 	name: 'BG账户'
 					},
 					{
 						value: 'qd',
@@ -476,7 +484,8 @@
 								'<option value="mg"> MG账户</option>' +
 								'<option value="dt"> DT账户</option>'+
 								'<option value="cq9"> CQ9账户</option>'+
-								'<option value="pg"> PG账户</option>' 
+								'<option value="pg"> PG账户</option>' +
+								'<option value="bg"> BG账户</option>' 
 								//'<option value="slot"> 老虎机钱包(SW,MG,DT,PNG,QT,NT)</option>'
 							)
 						}

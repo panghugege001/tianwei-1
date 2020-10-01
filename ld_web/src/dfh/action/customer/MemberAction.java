@@ -2587,6 +2587,11 @@ public class MemberAction extends SubActionSupport {
 				GsonUtil.GsonObject(result==null?"系统繁忙":result.toString()+" 元");
 				return null;
 			}
+			if(gameCode.equals("bg")){
+				Double result = AxisUtil.getObjectOne(AxisUtil.getClient(AxisUtil.PUBLICWEBSERVICEURL + "UserWebService", false), AxisUtil.NAMESPACE, "getBGBalance", new Object[] { customer.getLoginname() }, Double.class);
+				GsonUtil.GsonObject(result==null?"系统繁忙":result.toString()+" 元");
+				return null;
+			}
 			if(gameCode.equals("nt")){
 				String result = AxisUtil.getObjectOne(AxisUtil.getClient(AxisUtil.PUBLICWEBSERVICEURL_2 + "UserWebService", false), AxisUtil.NAMESPACE, "getNTBalance", new Object[] { customer.getLoginname() }, String.class);
 				JSONObject rj = JSONObject.fromObject(result);

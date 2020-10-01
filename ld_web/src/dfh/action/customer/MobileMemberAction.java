@@ -101,6 +101,7 @@ public class MobileMemberAction extends SubActionSupport {
 
 	private final String websiteKey = "68aca137-f3c5-457b-87a4-8a46880b1e66";
 	private final String privateKey = "60ccd51f-5df3-4f49-bdeb-5c36eed2329c";
+	
 
 	private final SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
@@ -237,11 +238,22 @@ public class MobileMemberAction extends SubActionSupport {
 
 	private String ticket;
 	private int agFish;
+	private int bgType;
 	static NumberFormat decimalFormat = new DecimalFormat("###,##0.00");
 	private String birthday;
 
 	public String getBirthday() {
 		return birthday;
+	}
+
+
+
+	public int getBgType() {
+		return bgType;
+	}
+
+	public void setBgType(int bgType) {
+		this.bgType = bgType;
 	}
 
 	public void setBirthday(String birthday) {
@@ -1575,6 +1587,8 @@ public class MobileMemberAction extends SubActionSupport {
 				money = AxisSecurityEncryptUtil.getCq9AppBalance(customer.getLoginname(), gameCode);
 			}  else if ("pg".equals(gameCode)) {
 				money = AxisSecurityEncryptUtil.getPgAppBalance(customer.getLoginname(), gameCode);
+			}else if ("bg".equals(gameCode)) {
+				money = AxisSecurityEncryptUtil.getBgAppBalance(customer.getLoginname(), gameCode);
 			}else if ("png".equals(gameCode)) {
 				money = AxisSecurityEncryptUtil.getPngBalance(customer.getLoginname());
 			} else if ("qd".equals(gameCode)) {
@@ -2397,6 +2411,30 @@ public class MobileMemberAction extends SubActionSupport {
 			GsonUtil.GsonObject(toResultJson("系统繁忙,请稍后再试，或者直接与客服联系！", false));
 		}
 		return null;
+	}
+	
+	public String mobileGetBgGame() {
+		Users customer = null;
+		ReturnInfo ri = new ReturnInfo();
+		try {
+			customer = getCustomerFromSession();
+			if (customer == null) {
+				ri.setCode("-1");
+				ri.setMsg("请登录后，在进行操作");
+				return	GsonUtil.GsonObject(ri);
+			}
+			String loginUrl = AxisUtil.getObjectOne(
+					AxisUtil.getClient(AxisUtil.PUBLICWEBSERVICEURL + "UserWebService", false), AxisUtil.NAMESPACE,
+					"getBgFishGameUrl", new Object[] { customer.getLoginname(), String.valueOf(bgType)}, String.class);// 手机登录
+			ri.setCode("0");
+			ri.setMsg("");
+			ri.setData(loginUrl);
+		} catch (Exception e) {
+			e.printStackTrace();
+			ri.setCode("-2");
+			ri.setMsg("系统异常请稍后再试！");
+		}
+		return GsonUtil.GsonObject(ri);
 	}
 
 	public String mobileGetAginGame() {
