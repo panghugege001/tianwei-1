@@ -1,9 +1,11 @@
 package com.gsmc.png.utils;
 
+import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.Locale;
 import java.util.regex.Pattern;
 import org.apache.log4j.Logger;
 
@@ -267,6 +269,16 @@ public class DateUtil {
 		}
 	}
 
+	public static Date parseDateForYYYYmmDDHHSS(String dateText) {
+		try {
+			SimpleDateFormat YYYY_MM_DD = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+			return YYYY_MM_DD.parse(dateText);
+		} catch (ParseException e) {
+			e.printStackTrace();
+			return null;
+		}
+	}
+
 	public static String fmtYYYY_MM_DD(Date date) {
 		SimpleDateFormat YYYY_MM_DD = new SimpleDateFormat("yyyy-MM-dd");
 		return YYYY_MM_DD.format(date);
@@ -314,12 +326,89 @@ public class DateUtil {
 	 * @param time
 	 * @return
 	 */
-	public static Date getTimeStampToDateTime(long time) {	
+	public static Date getTimeStampToDateTime(long time) {
 		Date date = new Date(time);
 		return date;
 	}
 
+	public static Date getUSToAMES(Date date) {
+		return getHour(date, -12);
+	}
+
+	public static Date getHour(Date date, int n) {
+		try {
+			Calendar cal = Calendar.getInstance();
+			cal.setTime(date);
+			cal.add(10, n);
+			return cal.getTime();
+		} catch (Exception var3) {
+			return null;
+		}
+	}
+
+	public static String dateToYMDHMS(Date date) {
+		return dateToStr(date, "yyyy-MM-dd HH:mm:ss");
+	}
+
+	public static String dateToStr(Date date, String pattern) {
+		return dateToStr(date, pattern, Locale.getDefault());
+	}
+
+	public static String dateToStr(Date date, String pattern, Locale locale) {
+		if (date == null) {
+			return null;
+		} else {
+			DateFormat dateformat = simpleDateFormat(pattern, locale);
+			return dateformat.format(date);
+		}
+	}
+
+	public static SimpleDateFormat simpleDateFormat(String format, Locale locale) {
+		return new SimpleDateFormat(format, locale);
+	}
+
+	public static SimpleDateFormat simpleDateFormat(String format) {
+		return simpleDateFormat(format, Locale.getDefault());
+	}
+	
+    public static Date getAMESToUS(Date date) {
+        return getHour(date, 12);
+    }
+    
+    public static String dateToYMD(Date date) {
+        return dateToStr(date, "yyyy-MM-dd");
+    }
+
+	public static Date strToDate(String str) {
+		if (StringUtil.isBlank(str)) {
+			return null;
+		} else {
+			DateFormat dateformat = simpleDateFormat("yyyy-MM-dd HH:mm:ss");
+			Date tmp = null;
+
+			try {
+				tmp = dateformat.parse(str);
+			} catch (ParseException var8) {
+				dateformat = simpleDateFormat("yyyy-MM-dd HH:mm");
+
+				try {
+					tmp = dateformat.parse(str);
+				} catch (ParseException var7) {
+					dateformat = simpleDateFormat("yyyy-MM-dd");
+
+					try {
+						tmp = dateformat.parse(str);
+					} catch (ParseException var6) {
+						tmp = new Date();
+					}
+				}
+			}
+
+			return tmp;
+		}
+	}
+
 	public static void main(String[] args) {
-		//System.out.println(DateUtil.getTimeStampToDateTime(1601190180000L));
+		// System.out.println(DateUtil.getTimeStampToDateTime(1601190180000L));
 	}
 }

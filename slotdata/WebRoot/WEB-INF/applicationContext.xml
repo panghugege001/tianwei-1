@@ -83,6 +83,7 @@
 				<value>com.gsmc.png.model.AgData</value>
 				<value>com.gsmc.png.model.CqData</value>
 				<value>com.gsmc.png.model.PgData</value>
+				<value>com.gsmc.png.model.BgData</value>
 			</list>
 		</property>
 	</bean>

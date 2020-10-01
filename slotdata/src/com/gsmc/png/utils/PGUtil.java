@@ -95,7 +95,7 @@ public class PGUtil {
 	}
 
 	public static void main(String[] args) {
-		//getbets("2020-09-27 18:45:00","2020-09-27 19:30:00");
+		getbets("2020-09-27 18:45:00","2020-09-27 19:30:00");
 	}
 
 }

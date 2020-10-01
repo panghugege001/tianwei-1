@@ -81,7 +81,7 @@ public class CQ9Util {
 		String userToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50IjoiYXVzdGluOTkwIiwib3duZXIiOiI1ZDI1NGVmYjAxOTg4ZTAwMDFhNmFkNTEiLCJjdXJyZW5jeSI6IkNOWSIsInBhcmVudCI6IjVmNTMwYTMxNzgwN2FhMDAwMWU5OGVjMSIsInVzZXJpZCI6IjVmNjRiZDMzN2E3YTE2MDAwMTEzNTRiNiIsIm5pY2tuYW1lIjoiYXVzdGluOTkwIiwidHlwZSI6IlBMQVlFUiIsIm1heGltdW0iOjAsIm1pbmltdW0iOjAsImRlZmF1bHQiOjAsInJvbGUiOiIiLCJ3dXJsIjoiaHR0cDovL3RyYW5zYWN0aW9uOjEzMjQiLCJ3dG9rZW4iOiIiLCJpcCI6IjEwLjAuMC4xNDAiLCJsb2NhdGlvbiI6InRhaXdhbiIsImdhbWV0ZWFtIjoiIiwiQmV0VGhyZXNob2xkcyI6IiIsImp0aSI6IjgyODg2MDMiLCJpYXQiOjE2MDA0MzkxNzYsImlzcyI6IkN5cHJlc3MiLCJzdWIiOiJVc2VyVG9rZW4ifQ.CHvP1ZS2SbtK1J3CX6MnA_h6fZJEyi8FCd41qt7AFRM";
 
 		// System.out.print(getGameUrl(userToken, "105", "mobile", true));
-		// System.out.print(getBalance("kavin998"));
+		 //System.out.print(getbets("2020-10-01 15:30:00","2020-10-01 16:30:00"));
 		// System.out.print(transferIn("kavin998","guo138688",500.00));
 		// System.out.print(transferOut("kavin998","guo138688",300.00));
 		// System.out.print(loginOut("kavin998"));
