@@ -142,9 +142,6 @@ public interface ISelfYouHuiService {
 
 	String selfTransferMgRedRain(String loginname, Double remit);
 	String selfTransferDtRedRain(String loginname, Double remit);
-
-	String selfTransferCq9RedRain(String loginname, Double remit);
-	
-	String selfTransferPgRedRain(String loginname, Double remit);
+	String selfTransferRedRain(String loginname, Double remit, String platform);
  
 }

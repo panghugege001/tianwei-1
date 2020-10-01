@@ -851,4 +851,38 @@ public class TransferDao extends UniversalDao {
 		c.add(Restrictions.eq("loginname", loginname));
 		return c.list();
 	}
+
+	public Transfer addTransferforPlat(Long transID, String loginname, Double localCredit, Double remit, Boolean in,
+			Boolean flag, String paymentid, String remark, String plat) {
+		Transfer transfer = new Transfer();
+		String target = "";
+		if(!paymentid.equals("")||StringUtils.isNotEmpty(paymentid)){
+			transfer.setPaymentid(paymentid);
+		}
+		if(plat.equals("BG")){
+			 target = RemoteConstant.PAGESITEBG;
+		}else if(plat.equals("PG")){
+			target = RemoteConstant.PAGESITEPG;
+		}else if(plat.equals("CQ9")){
+			target = RemoteConstant.PAGESITECQ9;
+		}
+		if (in.booleanValue()) {		
+			transfer.setSource(RemoteConstant.WEBSITE);
+			transfer.setTarget(target);
+			transfer.setNewCredit(Double.valueOf(localCredit.doubleValue() - remit.doubleValue()));
+		} else {
+			transfer.setSource(target);
+			transfer.setTarget(RemoteConstant.WEBSITE);
+			transfer.setNewCredit(Double.valueOf(localCredit.doubleValue() + remit.doubleValue()));
+		}
+		transfer.setId(transID);
+		transfer.setLoginname(loginname);
+		transfer.setCredit(localCredit);
+		transfer.setRemit(remit);
+		transfer.setCreatetime(DateUtil.getCurrentTimestamp());
+		transfer.setFlag(Constants.FLAG_TRUE);
+		transfer.setRemark("转入成功");
+		save(transfer);
+		return transfer;
+	}
 }

@@ -440,8 +440,8 @@ public interface TransferService extends UniversalService{
 
 	//红包雨转入DT
 	public String selfConpon4DT4RedRain(String transID, String loginname, Double remit, String youhuiType, String remark);
-	//红包雨转入CQ9
-	String selfConpon4CQ9RedRain(String transID, String loginname, Double remit, String text, String remark);
-	//红包雨转入pg
-	String selfConpon4PGRedRain(String transID, String loginname, Double remit, String text, String remark);
+
+	public Transfer addTransferforPlat(Long transID, String loginname, Double localCredit, Double remit, Boolean in, Boolean flag, String paymentid, String remark,String plat);
+
+	String selfConpon4RedRain(String transID, String loginname, Double remit, String text, String remark, String plat);
 }

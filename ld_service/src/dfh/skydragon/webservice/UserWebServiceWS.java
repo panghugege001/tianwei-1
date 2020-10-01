@@ -50,8 +50,10 @@ import dfh.model.bean.GiftVo;
 import dfh.model.bean.ServiceStatus;
 import dfh.model.bean.SuggestionVo;
 import dfh.model.enums.ActionLogType;
+import dfh.model.enums.BYKindEnum;
 import dfh.model.enums.ConcertDateType;
 import dfh.model.enums.DXWErrorCode;
+import dfh.model.enums.GameKindEnum;
 import dfh.model.enums.GamePlatform;
 import dfh.model.enums.Goddesses;
 import dfh.model.enums.PayOrderFlagType;
@@ -7657,9 +7659,13 @@ public class UserWebServiceWS {
 	public Double getCQ9Balance(String loginname, String password) throws HttpException, IOException {
 		return CQ9Util.getBalance(loginname);
 	}
-	
+
 	public Double getPGBalance(String loginname, String password) throws HttpException, IOException {
 		return PGUtil.getBalance(loginname);
+	}
+	
+	public Double getBGBalance(String loginname, String password) throws HttpException, IOException {
+		return BGUtil.getBalance(loginname);
 	}
 
 	public String isExistConcertRecord(String loginName, String now, Integer type) {
@@ -8881,6 +8887,28 @@ public class UserWebServiceWS {
 			return SlotUtil.MAINTAIN;
 		}
 		return SlotUtil.getDTFishGameLogin(users);
+	}
+
+	public String getBgFishGameUrl(String userName, String fishType) {
+		Const ct = null;
+		String gameCode = BYKindEnum.XY_FISH.getCode();
+		String gameType = GameKindEnum.BY.getCode();
+		if (fishType.equals("1")) {
+			// 控制游戏开关
+			ct = transferService.getConsts("西游捕鱼");
+		} else if (fishType.equals("2")) {
+			ct = transferService.getConsts("捕鱼大师");
+			gameCode = BYKindEnum.BYDS_FISH.getCode();
+		} else {
+			ct = transferService.getConsts("BG视讯");
+			gameType = GameKindEnum.LIVE.getCode();
+			gameCode = "";
+		}
+		if (null == ct || ct.getValue().equals("0")) {
+			return SlotUtil.MAINTAIN;
+		}
+		Boolean isMode = false;
+		return BGUtil.play(userName, gameType, gameCode, true, false);
 	}
 
 	/**

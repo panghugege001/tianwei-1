@@ -1175,7 +1175,7 @@ public class SynchronizedUtil {
 					return str;
 				}
 			} else if (type.equals("cq9")) {
-				String str = selfYouHuiService.selfTransferCq9RedRain(loginname, remit);
+				String str = selfYouHuiService.selfTransferRedRain(loginname, remit,"CQ9");
 				if (null == str) {
 					String b = CQ9Util.transferIn(loginname, user.getPassword(), remit);
 					if (StringUtils.isNotEmpty(b) && "success".equals(b)) {
@@ -1187,7 +1187,7 @@ public class SynchronizedUtil {
 					return str;
 				}
 			}else if (type.equals("pg")) {
-				String str = selfYouHuiService.selfTransferPgRedRain(loginname, remit);
+				String str = selfYouHuiService.selfTransferRedRain(loginname, remit,"PG");
 				if (null == str) {
 					String b = PGUtil.transferIn(loginname, remit);
 					if (StringUtils.isNotEmpty(b) && "success".equals(b)) {
@@ -1198,7 +1198,19 @@ public class SynchronizedUtil {
 				} else {
 					return str;
 				}
-			} else {
+			} else if (type.equals("bg")) {
+				String str = selfYouHuiService.selfTransferRedRain(loginname, remit,"BG");
+				if (null == str) {
+					String b = BGUtil.transfer(loginname, remit);
+					if (StringUtils.isNotEmpty(b) && "success".equals(b)) {
+						return null;
+					} else {
+						return "系统繁忙，请稍后再试";
+					}
+				} else {
+					return str;
+				}
+			}else {
 				return "暂不支持转入此平台";
 			}
 

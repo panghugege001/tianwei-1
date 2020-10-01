@@ -118,6 +118,9 @@ public class RemoteConstant {
 	public static String PAGESITEPT = "pt";
 	public static String PAGESITEDT = "dt";
 	public static String PAGESITEMG = "mg";
+	public static String PAGESITEPG = "pg";
+	public static String PAGESITECQ9 = "cq9";
+	public static String PAGESITEBG = "bg";
 	public static String PAGESITEPNG = "png";
 	public static String PAGESITENEWPT = "newpt";
 	public static String PAGESITESIXLOTTERY = "sixlottery";
