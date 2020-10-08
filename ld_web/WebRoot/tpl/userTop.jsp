@@ -59,22 +59,20 @@
                         <label>元</label>
                         <i class="iconfont icon-shuaxin" onclick="refreshBalance();"><img src="../images/new_index/shuaxin_icon.png"></i>
                     </li>
-                    <li class="active" style="    padding-left: 20px;">
+                    <li class="active" style="padding-left: 20px;">
                         <label>签到余额：</label>
-                        <span class="u_money">0</span>
-                        <label>元</label>
-                        <i class="iconfont icon-shuaxin" onclick="refreshBalance();"><img src="../images/new_index/shuaxin_icon.png"></i>
+                        <span class="u_qdmoney">0</span>
+                        <i class="iconfont icon-shuaxin" onclick="refreshQdBalance();"><img src="../images/new_index/shuaxin_icon.png"></i>
                     </li>
-                    <li class="active" style="    padding-left: 20px;">
+                    <li class="active" style="padding-left: 20px;">
                         <label>红包余额：</label>
-                        <span class="u_money">0</span>
-                        <label>元</label>
-                        <i class="iconfont icon-shuaxin" onclick="refreshBalance();"><img src="../images/new_index/shuaxin_icon.png"></i>
+                        <span class="u_redmoney">0</span>
+                        <i class="iconfont icon-shuaxin" onclick="refreshHbBalance();"><img src="../images/new_index/shuaxin_icon.png"></i>
                     </li>
 
                     <li style="margin-top: 10px; font-size: 14px;">
-                        <label class="datatype">中午好，</label>
-                        <span class="span_name">windtest</span>
+                        <label class="datatype">中午好,</label>
+                        <span class="span_name">${session.customer.loginname}</span>
                         <label>欢迎回来</label>
                     </li>
                     <li style="width: 100%;">
@@ -241,39 +239,30 @@
             <div class="get_money_box">
                 <ul class="ul">
                     <li>
-                        <span class="span_gamename">PT账户</span>
+                        <span class="span_gamename">DT账户</span>
                         <div class="show_moneyget">
-                            <span>PT账户</span>
+                            <span>DT账户</span>
                             <span class="get_user"><i class="shuaxin_i"></i>元</span>
-                            <input type="hidden" value="newpt" />
+                            <input type="hidden" value="dt" />
                         </div>
                         <i class="fenge_rigth"></i>
                     </li>
                     <li>
-                        <span class="span_gamename">TTG账户</span>
+                        <span class="span_gamename">PG账户</span>
                         <div class="show_moneyget">
-                            <span>TTG账户</span>
+                            <span>PG账户</span>
                             <span class="get_user"><i class="shuaxin_i"></i>元</span>
-                            <input type="hidden" value="ttg" />
+                            <input type="hidden" value="pg" />
                         </div>
                         <i class="fenge_rigth"></i>
                     </li>                   
                     <li>
-                        <span class="span_gamename">老虎机账户</span>
+                        <span class="span_gamename">MG账户</span>
                         <i class="fenge_rigth"></i>
                         <div class="show_moneyget">
-                            <span>老虎机账户</span>
+                            <span>MG账户</span>
                             <span class="get_user"><i class="shuaxin_i"></i>元</span>
-                            <input type="hidden" value="slot" />
-                        </div>                      
-                    </li>
-                    <li>
-                        <span class="span_gamename">AG账户</span>
-                        <i class="fenge_rigth"></i>
-                        <div class="show_moneyget">
-                            <span>AG账户</span>
-                            <span class="get_user"><i class="shuaxin_i"></i>元</span>
-                            <input type="hidden" value="agin" />
+                            <input type="hidden" value="mg" />
                         </div>                      
                     </li>                                       
                     <li>
@@ -281,30 +270,38 @@
                         <i class="fenge_rigth"></i>
                         <div class="show_moneyget">
                             <span>沙巴体育账户</span>
-                            <span class="get_user"><i class="shuaxin_i"></i>元</span>
-                            
+                            <span class="get_user"><i class="shuaxin_i"></i>元</span>                         
                             <input type="hidden" value="sba" />
                         </div>                      
                     </li>                   
                     <li>
-                        <span class="span_gamename">N2账户</span>
+                        <span class="span_gamename">CQ9账户</span>
                         <i class="fenge_rigth"></i>
                         <div class="show_moneyget">
-                            <span>N2账户</span>
-                            <input type="hidden" value="n2live" />
+                            <span>CQ9账户</span>
+                            <input type="hidden" value="cq9" />
                             <span class="get_user"><i class="shuaxin_i"></i>元</span>
                         </div>                      
                     </li>
                     <li>
-                        <span class="span_gamename">MW账户</span>
+                        <span class="span_gamename">BG账户</span>
                         <i class="fenge_rigth"></i>
                         <div class="show_moneyget">
-                            <span>MW账户</span>
-                            <input type="hidden" value="mwg" />
+                            <span>BG账户</span>
+                            <input type="hidden" value="bg" />
                             <span class="get_user"><i class="shuaxin_i"></i>元</span>
                         </div>                      
-                    </li>                   
+                    </li>
                     <li>
+                        <span class="span_gamename">BBIN</span>
+                        <i class="fenge_rigth"></i>
+                        <div class="show_moneyget">
+                            <span>BBIN</span>
+                            <input type="hidden" value="bbin" />
+                            <span class="get_user"><i class="shuaxin_i"></i>元</span>
+                        </div>                      
+                    </li>                               
+                    <!-- <li>
                         <span class="span_gamename">761账户</span>
                         <i class="fenge_rigth"></i>
                         <div class="show_moneyget">
@@ -348,16 +345,8 @@
                             <input type="hidden" value="pb" />
                             <span class="get_user"><i class="shuaxin_i"></i>元</span>
                         </div>                      
-                    </li>  
-                    <li>
-                        <span class="span_gamename">BBIN</span>
-                        <i class="fenge_rigth"></i>
-                        <div class="show_moneyget">
-                            <span>BBIN</span>
-                            <input type="hidden" value="bbin" />
-                            <span class="get_user"><i class="shuaxin_i"></i>元</span>
-                        </div>                      
-                    </li>                 
+                    </li>   -->
+                       
                 </ul>
             </div>
         </div>
@@ -498,7 +487,6 @@
         }
     //查询签到总余额
         function checkInSignAmount(){
-
             $.ajax({
                 url : "/asp/querySignAmount.aspx",
                 type : "post", // 请求方式

@@ -2,7 +2,7 @@
  * ie兼容性处理,添加为数组添加includes 和 filter 方法
  * */
 if (!Array.prototype.includes) {
-    Array.prototype.includes = function(searchElement /*, fromIndex*/) {
+    Array.prototype.includes = function(searchElement /* , fromIndex */) {
         'use strict';
         if (this == null) {
             throw new TypeError('Array.prototype.includes called on null or undefined');
@@ -25,7 +25,9 @@ if (!Array.prototype.includes) {
         while (k < len) {
             currentElement = O[k];
             if (searchElement === currentElement ||
-                (searchElement !== searchElement && currentElement !== currentElement)) { // NaN !== NaN
+                (searchElement !== searchElement && currentElement !== currentElement)) { // NaN
+																							// !==
+																							// NaN
                 return true;
             }
             k++;
@@ -35,7 +37,7 @@ if (!Array.prototype.includes) {
 }
 
 if (!Array.prototype.filter) {
-    Array.prototype.filter = function(fun/*, thisArg*/) {
+    Array.prototype.filter = function(fun/* , thisArg */) {
         'use strict';
 
         if (this === void 0 || this === null) {
@@ -55,10 +57,10 @@ if (!Array.prototype.filter) {
                 var val = t[i];
 
                 // NOTE: Technically this should Object.defineProperty at
-                //       the next index, as push can be affected by
-                //       properties on Object.prototype and Array.prototype.
-                //       But that method's new, and collisions should be
-                //       rare, so use the more-compatible alternative.
+                // the next index, as push can be affected by
+                // properties on Object.prototype and Array.prototype.
+                // But that method's new, and collisions should be
+                // rare, so use the more-compatible alternative.
                 if (fun.call(thisArg, val, i, t)) {
                     res.push(val);
                 }
@@ -92,9 +94,9 @@ function arrayContain(array,values){
         $gameMenu=$('#j-gameMenu'),
         $toggleBtn=$('#j-toggleBtn'),
         $gameContainer=$('#j-gameContainer'),
-        isLogin=false,  //登录状态
-        collectGames=[], //收藏游戏数据
-        historyGames=[], //游戏历史记录数据
+        isLogin=false,  // 登录状态
+        collectGames=[], // 收藏游戏数据
+        historyGames=[], // 游戏历史记录数据
         collectTmpGames=[], // 缓存的收藏游戏数据
         tpl=['<div class="game-info {{class}}" id="{{id}}" data-subtype="{{subType}}" data-tag="{{tag}}" data-json=\'{{json}}\'>',
             ' <i class="{{jackpot}}"></i>',
@@ -106,10 +108,10 @@ function arrayContain(array,values){
             '       </div>',
             '       <div class="hover-bar">',
             '       <div class="game-brief">',
-      /*      '           <div class="biref-top">',
-            '               <p class="fl">人气:<span>{{like}}</span></p>',
-            '               <p class="fr like">★★★☆☆</p>',
-            '           </div>',*/
+      /*
+		 * ' <div class="biref-top">', ' <p class="fl">人气:<span>{{like}}</span></p>', '
+		 * <p class="fr like">★★★☆☆</p>', ' </div>',
+		 */
             '           <div class="btn-wp text-center">{{linkDemo}}{{linkPlay}}</div>',
             '<div class="game_titlename">{{name}}<br><span class="eName_text">{{eName}}</span></div>', 
             '       </div>',
@@ -125,28 +127,32 @@ function arrayContain(array,values){
     SlotMg.Reg=null;
     SlotMg.DataList=[];
     SlotMg.DataUrl={
-        PT:['/data/slot/ptNew.json?v=90000007'], 
+        /*PT:['/data/slot/ptNew.json?v=90000007'], 
         TTG: ['/data/slot/ttg.json?v=90000009'],
-        PTSW:['/data/slot/ptsw.json?v=90000007'],   
+        PTSW:['/data/slot/ptsw.json?v=90000007'],   */
         MGS:['/data/slot/mgs.json?v=90000007'],
         BBIN:['/data/slot/bbin.json?v=90000007'],
-        PNG:['/data/slot/png.json?v=90000007'],
-        QT:['/data/slot/qt.json?v=90000007'],
+       /* PNG:['/data/slot/png.json?v=90000007'],
+        QT:['/data/slot/qt.json?v=90000007'],*/
         DT:['/data/slot/dt.json?v=90000007'],
-        NT:['/data/slot/nt.json?v=90000007'],
-        AG:['/data/slot/ag.json?v=90000007']
+        CQ9:['/data/slot/cq9.json?v=90000007'],
+        PG:['/data/slot/pg.json?v=90000007']
+        /*NT:['/data/slot/nt.json?v=90000007'],
+        AG:['/data/slot/ag.json?v=90000007']*/
         
     };
 
     SlotMg.init=function(){ 
         isLogin=$('#j-isLogin').val()==='true';
 
-        /*SlotMg.DataList=getPt();
-         SlotMg.DataList=SlotMg.DataList.concat(getTtg());
-         SlotMg.DataList=SlotMg.DataList.concat(getQt());
-         SlotMg.DataList=SlotMg.DataList.concat(getNt());
-         SlotMg.DataList=SlotMg.DataList.concat(getMg());
-         SlotMg.DataList=SlotMg.DataList.concat(getDt());*/
+        /*
+		 * SlotMg.DataList=getPt();
+		 * SlotMg.DataList=SlotMg.DataList.concat(getTtg());
+		 * SlotMg.DataList=SlotMg.DataList.concat(getQt());
+		 * SlotMg.DataList=SlotMg.DataList.concat(getNt());
+		 * SlotMg.DataList=SlotMg.DataList.concat(getMg());
+		 * SlotMg.DataList=SlotMg.DataList.concat(getDt());
+		 */
 
         SlotMg.event();
         SlotMg.menu();
@@ -178,34 +184,34 @@ function arrayContain(array,values){
             });
 
             function favoriteInit(){
-                //收藏游戏点击事件
+                // 收藏游戏点击事件
                 $(document).on('click','.game-info .collect',function(){
                     var $that=$(this),
                         state=$that.attr('data-state'),
                         tmpObj=$that.closest('.game-info').data('json');
 
-                    if(state=='0'){ //没有收藏
+                    if(state=='0'){ // 没有收藏
                         $that.attr('data-state',1)
                             .html('<i class="iconfont icon-heart2"></i>已收藏');
                         tmpObj.isCollect=true;
                         SlotMg.saveCollectGames(tmpObj,false);
-                        //console.table(collectGames);
-                    }else if(state=='1'){//已经收藏
+                        // console.table(collectGames);
+                    }else if(state=='1'){// 已经收藏
                         $that.attr('data-state',0)
                             .html('<i class="iconfont icon-heart"></i>添加收藏');
                         SlotMg.saveCollectGames(tmpObj,true);
-                        //console.table(collectGames);
+                        // console.table(collectGames);
                     }
                 });
                 $(document).on('click','.game-info .collect[data-favorite]',function(){
                     var $that=$(this),
                         tmpObj=$that.closest('.game-info').data('json');
                     SlotMg.saveCollectGames(tmpObj,true);
-                    //console.table(collectGames);
+                    // console.table(collectGames);
                     $that.closest('.game-info').remove();
                 });
 
-                //收藏游戏列表
+                // 收藏游戏列表
                 $('#j-favoriteAction').on('click',function(){
                     if(isLogin===true){
                         SlotMg.builHtml(collectGames);
@@ -216,8 +222,8 @@ function arrayContain(array,values){
 
         }
 
-        //游戏记录
-        //=======
+        // 游戏记录
+        // =======
 
         try{
             if(localStorage.getItem('hisotryGames')) {
@@ -233,7 +239,7 @@ function arrayContain(array,values){
         }catch(err){
             console.log('游戏记录出错');
         }
-        //游戏历史记录列表
+        // 游戏历史记录列表
         $('#j-historyAction').on('click',function(){
             SlotMg.builHtml(historyGames);
             SlotMg.lazyload();
@@ -264,10 +270,11 @@ function arrayContain(array,values){
     };
 
     /**
-     * 根据游戏的大类动态获取游戏数据
-     * @param type
-     * @param callback
-     */
+	 * 根据游戏的大类动态获取游戏数据
+	 * 
+	 * @param type
+	 * @param callback
+	 */
     SlotMg.getByCategory=function(type,callback){
         var urls=SlotMg.DataUrl[type];
         if(!urls) return;
@@ -284,7 +291,7 @@ function arrayContain(array,values){
         }
         $.when.apply(null,dfds)
             .done(function(){
-                //console.log('done')
+                // console.log('done')
                 SlotMg.DataUrl[type]='load';
                 callback();
             })
@@ -294,13 +301,13 @@ function arrayContain(array,values){
     };
 
     /**
-     *设置过滤信息
-     */
+	 * 设置过滤信息
+	 */
     SlotMg.setFilter=function(){
         var $btn=$filter.find('.tab-hd a.active,.tab-panel.active a.active');
         var tmpObj={
-            'category':'', //老虎机平台类型
-            'type':'',  //老虎机类型 :经典,电动吃角子
+            'category':'', // 老虎机平台类型
+            'type':'',  // 老虎机类型 :经典,电动吃角子
             'line':'', // 老虎机线性类型
             'subType':'', // 第二种类型类型
             'tag':[]
@@ -329,20 +336,20 @@ function arrayContain(array,values){
             for (var i = 0; i < filterArr.length; i++) {
                 retStr += '(?=.*,'+filterArr[i]+')';
             }
-            //retStr=retStr.replace(/\|+$/, '');
+            // retStr=retStr.replace(/\|+$/, '');
             SlotMg.Reg=new RegExp('^'+retStr+'.*$');
 
         }
-       /* console.group('filter信息');
-        console.log(ret);
-        console.log(SlotMg.Reg);
-        console.groupEnd();*/
+       /*
+		 * console.group('filter信息'); console.log(ret); console.log(SlotMg.Reg);
+		 * console.groupEnd();
+		 */
 
         return ret;
     };
     /**
-     * 获取查询条件返回数组的形式
-     */
+	 * 获取查询条件返回数组的形式
+	 */
     SlotMg.getWhere=function(arr){
         var ret=[];
         for(var p in arr){
@@ -350,7 +357,7 @@ function arrayContain(array,values){
                 if(p=='tag'){
                     arr[p].length>0
                     && ret.push('SlotMg.Reg.test(","+el.'+p+'.join(","))');
-                    //ret.push('el.'+p+'.includes("'+FilterObj[p]+'")');
+                    // ret.push('el.'+p+'.includes("'+FilterObj[p]+'")');
                 }else{
                     ret.push('el.'+p+'=="'+arr[p]+'"');
                 }
@@ -359,8 +366,8 @@ function arrayContain(array,values){
         return ret;
     };
     /**
-     * 多条件查找游戏获取游戏
-     */
+	 * 多条件查找游戏获取游戏
+	 */
     SlotMg.showGames=function(){
 
         var filter=SlotMg.setFilter();
@@ -371,9 +378,8 @@ function arrayContain(array,values){
                 var _funStr=' return '+whereArr.join(' && ');
                 var _tmpFun = new Function("el",_funStr);  // 根据动态生成查询条件,动态生成方法
 /*
-                console.group('动态function字符串');
-                console.log(_funStr);
-                console.groupEnd();*/
+ * console.group('动态function字符串'); console.log(_funStr); console.groupEnd();
+ */
                 var _d= SlotMg.DataList.filter(_tmpFun);
 
                 SlotMg.builHtml(_d);
@@ -384,11 +390,11 @@ function arrayContain(array,values){
             SlotMg.setCollectState();
         });
 
-        //JSON.stringify(getPt());
+        // JSON.stringify(getPt());
     };
     /**
-     * 游戏顶部菜单点击事件
-     */
+	 * 游戏顶部菜单点击事件
+	 */
     SlotMg.menu=function(){
         $gameMenu.find('a').on('click',function(e){
             SlotMg.reset();
@@ -420,8 +426,8 @@ function arrayContain(array,values){
     };
 
     /**
-     * 过滤查询信息
-     */
+	 * 过滤查询信息
+	 */
     SlotMg.reset=function(){
         var _tmp=$filter.find('.search-row a:first-child');
         SlotMg.setActiveClass(_tmp);
@@ -430,12 +436,16 @@ function arrayContain(array,values){
 
     };
     /**
-     * 获取随机数
-     * @param min 开始的数
-     * @param max 结束的数
-     * @param int 小数点位数
-     * @returns {string}
-     */
+	 * 获取随机数
+	 * 
+	 * @param min
+	 *            开始的数
+	 * @param max
+	 *            结束的数
+	 * @param int
+	 *            小数点位数
+	 * @returns {string}
+	 */
     SlotMg.getRandom=function(min, max,int) {
         var ret= Math.random() * (max - min) + min;
         int=int||0;
@@ -446,14 +456,14 @@ function arrayContain(array,values){
         $filter.slideToggle();
     };
     /**
-     * 查找输入框
-     */
+	 * 查找输入框
+	 */
     SlotMg.search=function(){
         var $searchForm=$('#j-searchForm'), // 查找表单
             $searchIpt=$searchForm.find('.j-ipt'), // 查找输入框
             $searchSelect=$searchForm.find('.j-select'), // 查找结果显示在下拉菜单
-            $searchBtn=$searchForm.find('.j-btnSearch'), //查找按钮
-            $selectAction=$searchSelect.find('a'),//下拉菜单的item
+            $searchBtn=$searchForm.find('.j-btnSearch'), // 查找按钮
+            $selectAction=$searchSelect.find('a'),// 下拉菜单的item
             searchList=[];
 
         function get(v){
@@ -511,15 +521,15 @@ function arrayContain(array,values){
         });
     };
     /**
-     * 获取收藏游戏
-     */
+	 * 获取收藏游戏
+	 */
     SlotMg.queryCollectGames=function(){
         return $.getJSON('/asp/queryGameStatus.aspx');
     };
 
     /**
-     * 保存收藏游戏
-     */
+	 * 保存收藏游戏
+	 */
     SlotMg.saveCollectGames=function(obj,isDel){
         if(!obj) return;
         var tmpIndex=-1;
@@ -530,11 +540,11 @@ function arrayContain(array,values){
                     return false;
                 }
             });
-            if(tmpIndex!==-1&&!isDel){ //添加模式，找不到才进行添加操作
+            if(tmpIndex!==-1&&!isDel){ // 添加模式，找不到才进行添加操作
                 return;
             }
         }
-        if(isDel){ //删除操作
+        if(isDel){ // 删除操作
             collectGames.splice(tmpIndex,1);
         }else{
             collectGames.unshift(obj);
@@ -575,14 +585,15 @@ function arrayContain(array,values){
     };
 
     /**
-     * 获取试玩连接
-     * @param obj
-     * @returns {string}
-     */
+	 * 获取试玩连接
+	 * 
+	 * @param obj
+	 * @returns {string}
+	 */
     SlotMg.getLinkDemo=function(obj){
-        //if(obj.category=='TTG-MG') return '';
         if(obj.state=='PLA') return '';
         if (obj.category == 'BBIN') return '';
+        if (obj.category == 'CQ9') return '';
         if(obj.category=='MGS'&&obj.state=='DEM') return ''
         var _tmp='';
         switch(obj.category){ 
@@ -627,6 +638,9 @@ function arrayContain(array,values){
             case 'AG':
                 _tmp = '/asp/agTryLogin.aspx?gameType={{id}}';
                 break;
+            case 'PG':
+                _tmp="/game/pgLogin.aspx?gameCode="+obj.code+"&demoMode=1";
+                break;
             default:
                 break;
         }
@@ -637,12 +651,13 @@ function arrayContain(array,values){
         return '<a href="'+_tmp+'" target="_blank" class="btn btn-demo">试玩游戏</a>';
     };
     /**
-     * 获取进入游戏连接
-     * @param obj
-     * @returns {string}
-     */
+	 * 获取进入游戏连接
+	 * 
+	 * @param obj
+	 * @returns {string}
+	 */
     SlotMg.getLinkPlay=function(obj){
-        if(obj.category=='DT'&&obj.state=='DEM') return ''; //判断状态是否为试玩
+        if(obj.category=='DT'&&obj.state=='DEM') return ''; // 判断状态是否为试玩
         
         var _tmp='';
         switch(obj.category){
@@ -666,19 +681,22 @@ function arrayContain(array,values){
 				_tmp = '/asp/ttLogin.aspx?gameName={{code}}&gameId={{id}}&lang=zh-cn';
 				break;
             case 'DT':
-                //_tmp='{{gameurl}}/publishr/gamestart.php?slotKey={{slotKey}}&language={{language}}&gameCode={{id}}&isfun=0&closeUrl={{referWebsite}}';
-                ///loginDT.aspx?&language={{language}}&gameCode={{id}}&isfun=0&language=zh_CN&clientType=0&closeUrl={{referWebsite}}&closeUrl={{referWebsite}}
+                // _tmp='{{gameurl}}/publishr/gamestart.php?slotKey={{slotKey}}&language={{language}}&gameCode={{id}}&isfun=0&closeUrl={{referWebsite}}';
+                // /loginDT.aspx?&language={{language}}&gameCode={{id}}&isfun=0&language=zh_CN&clientType=0&closeUrl={{referWebsite}}&closeUrl={{referWebsite}}
                 _tmp='/game/gameLoginDT.aspx?&gameCode={{id}}&isfun=0&language=zh_CN&clientType=0';
-
-              /*  _tmp= _tmp.replace(/\{\{slotKey\}\}/g,DtConfig.slotKey)
-                    .replace(/\{\{closeUrl\}\}/g,DtConfig.referWebsite);*/
                 break;
             case 'MGS':
                 if(obj.subType=='H5'){
                     _tmp='/gameMGS4H5Desktop.aspx?gameCode={{id}}'
                 }else{
-                    _tmp='/gameMGS.aspx?gameCode={{id}}';
+                    _tmp="/gameMGS.aspx?itemId="+obj.itemId+"&appId="+obj.appId+"&demoMode=0";
                 }
+                break;
+            case 'CQ9':
+                _tmp="/game/cq9Login.aspx?gameCode="+obj.code;
+                break;
+            case 'PG':
+                _tmp="/game/pgLogin.aspx?gameCode="+obj.code+"&demoMode=0";
                 break;
             case 'PNG':
                 _tmp='/gamePNGFlashForTp.aspx?practice=0&gameCode={{id}}';
@@ -687,7 +705,7 @@ function arrayContain(array,values){
                 _tmp = '/asp/loginAgSlot.aspx?gameType={{id}}';
                 break;
             case 'BBIN':
-                _tmp = '/game/bbinLogin.aspx?gameKind=game&gameCode={{id}}&mode={{mode}}';
+                _tmp = '/game/bbinSlotLogin.aspx?gameCode={{id}}';
                 break;
             default:
                 break;
@@ -695,7 +713,9 @@ function arrayContain(array,values){
         _tmp= _tmp.replace(/\{\{id\}\}/g,obj.id)
             .replace(/\{\{mode\}\}/g, obj.mode)
             .replace(/\{\{code\}\}/g,obj.code)
-            .replace(/\{\{type\}\}/g,obj.type);
+            .replace(/\{\{type\}\}/g,obj.type)
+            .replace(/\{\{itemId\}\}/g,obj.itemId)
+            .replace(/\{\{appId\}\}/g,obj.appId);
 
         return '<a href="'+_tmp+'" target="'+obj.category+'Game" class="j-login btn btn-play">进入游戏</a>';
     };
@@ -709,9 +729,9 @@ function arrayContain(array,values){
             var caPic=o.category.toLowerCase();
             if(o.category=='TTG-MG'){
                 caPic='ttg';
-            }/*else if(o.category=='TTG'){
-                caPic='/images/'+caPic;
-            }*/else{
+            }/*
+				 * else if(o.category=='TTG'){ caPic='/images/'+caPic; }
+				 */else{
                 caPic='/images/'+caPic;
             }
             if(o.category == 'DT' && o.subType =='jackpot'){
@@ -731,7 +751,7 @@ function arrayContain(array,values){
                 .replace(/\{\{score\}\}/g,SlotMg.getRandom(5,10,1))
                 .replace(/\{\{collectAction\}\}/g,o.isCollect?'<i class="iconfont icon-heart2"></i>已收藏':'<i class="iconfont icon-heart"></i>添加收藏')
                 .replace(/\{\{isFavorite\}\}/g,o.isCollect?' data-favorite ':'')
-                /*.replace(/\{\{like\}\}/g,SlotMg.getRandom(18859,70059))*/
+                /* .replace(/\{\{like\}\}/g,SlotMg.getRandom(18859,70059)) */
                 .replace(/\{\{linkDemo\}\}/g,SlotMg.getLinkDemo(o))
                 .replace(/\{\{linkPlay\}\}/g,SlotMg.getLinkPlay(o)));
         });
@@ -752,7 +772,7 @@ function arrayContain(array,values){
 
     }
 
-    //游戏转账
+    // 游戏转账
     function transferMonery(){
         var transferGameOut=$("#j-transferGameOut").val();
         var transferGameIn=$("#j-transferGameIn").val();
@@ -779,10 +799,10 @@ function arrayContain(array,values){
             alert("天威账户不能转账到天威账户！");
             return false;
         }
-        /* if(transferGameIn=='newpt' && parseInt(transferGameMoney)<20){
-         alert('PT转入金额不能少于20元');
-         return false;
-         }*/
+        /*
+		 * if(transferGameIn=='newpt' && parseInt(transferGameMoney)<20){
+		 * alert('PT转入金额不能少于20元'); return false; }
+		 */
         if(transferGameOut=="ld" || transferGameIn=="ld"){
             openProgressBar();
             $.post("/asp/updateGameMoney.aspx", {
@@ -791,8 +811,8 @@ function arrayContain(array,values){
                 "transferGameMoney":transferGameMoney
             }, function (returnedData, status) {
                 if ("success" == status) {
-                    //transferMoneryOut(transferGameOut);
-                    //transferMoneryIn(transferGameIn);
+                    // transferMoneryOut(transferGameOut);
+                    // transferMoneryIn(transferGameIn);
                     closeProgressBar();
                     alert(returnedData);
                 }
@@ -826,7 +846,7 @@ $(function () {
  
     // subType="DT-1" 类型的老虎机判断
     $(document).on('click','.game-info[data-subtype="DT-1"] .btn',function(){
-        if(isIE()||!checkwebgl()){ //ie 浏览器及不支持webgl的
+        if(isIE()||!checkwebgl()){ // ie 浏览器及不支持webgl的
             $('#j-tip').modal('show');
             return false;
         }
@@ -859,7 +879,7 @@ $(function () {
         }
         return false;
     }
-    //ie?  判断是否是ie浏览器
+    // ie? 判断是否是ie浏览器
     function isIE() {
         if (!!window.ActiveXObject || "ActiveXObject" in window)
             return true;
@@ -884,8 +904,8 @@ $(function () {
     }
 
         /**
-     * 获取中奖名单
-     */
+		 * 获取中奖名单
+		 */
     function getWinner(){
         $.getJSON('/data/winner.json',function (data) {
             var tmp= builHtml(data);
@@ -910,11 +930,12 @@ $(function () {
         });
     }
     /**
-     * 数字转化为中文单位
-     * @param input
-     * @returns {string}
-     * @constructor
-     */
+	 * 数字转化为中文单位
+	 * 
+	 * @param input
+	 * @returns {string}
+	 * @constructor
+	 */
     function numberUpperFormat(input) {
         // num - 位数
         // 简单理解后面要有三个0，则是千，4个零，则是万。当然不一定是零，位数到了就行，反正都会省略掉（未做四舍五入）

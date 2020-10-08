@@ -106,8 +106,10 @@
 			//查询玩家红包余额
 			function getHBMoney(type) {
 				$("#hbMoney").html("<img src='/images/waiting.gif'>");
-				$.post("/asp/getHBMoney.aspx", {
-					"type": 0
+				//$.post("/asp/getHBMoney.aspx", {
+				$.post("/asp/getGameMoney.aspx", {
+					//"type": 0
+					"gameCode": "redrain"
 				}, function(returnedData, status) {
 					if("success" == status && returnedData != '') {
 						$("#hbMoney").html(returnedData);

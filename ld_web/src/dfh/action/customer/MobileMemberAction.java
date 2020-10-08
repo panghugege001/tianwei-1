@@ -66,7 +66,6 @@ import dfh.remote.bean.KenoResponseBean;
 import dfh.security.DESEncrypt;
 import dfh.security.EncryptionUtil;
 import dfh.security.SpecialEnvironmentStringPBEConfig;
-import dfh.service.interfaces.GuestBookService;
 import dfh.skydragon.webservice.model.LoginInfo;
 import dfh.skydragon.webservice.model.RecordInfo;
 import dfh.utils.AESUtil;
@@ -101,7 +100,6 @@ public class MobileMemberAction extends SubActionSupport {
 
 	private final String websiteKey = "68aca137-f3c5-457b-87a4-8a46880b1e66";
 	private final String privateKey = "60ccd51f-5df3-4f49-bdeb-5c36eed2329c";
-	
 
 	private final SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
@@ -239,6 +237,7 @@ public class MobileMemberAction extends SubActionSupport {
 	private String ticket;
 	private int agFish;
 	private int bgType;
+	private int bbType;
 	static NumberFormat decimalFormat = new DecimalFormat("###,##0.00");
 	private String birthday;
 
@@ -246,7 +245,13 @@ public class MobileMemberAction extends SubActionSupport {
 		return birthday;
 	}
 
+	public int getBbType() {
+		return bbType;
+	}
 
+	public void setBbType(int bbType) {
+		this.bbType = bbType;
+	}
 
 	public int getBgType() {
 		return bgType;
@@ -1585,11 +1590,11 @@ public class MobileMemberAction extends SubActionSupport {
 				money = AxisSecurityEncryptUtil.getMgAppBalance(customer.getLoginname(), gameCode);
 			} else if ("cq9".equals(gameCode)) {
 				money = AxisSecurityEncryptUtil.getCq9AppBalance(customer.getLoginname(), gameCode);
-			}  else if ("pg".equals(gameCode)) {
+			} else if ("pg".equals(gameCode)) {
 				money = AxisSecurityEncryptUtil.getPgAppBalance(customer.getLoginname(), gameCode);
-			}else if ("bg".equals(gameCode)) {
+			} else if ("bg".equals(gameCode)) {
 				money = AxisSecurityEncryptUtil.getBgAppBalance(customer.getLoginname(), gameCode);
-			}else if ("png".equals(gameCode)) {
+			} else if ("png".equals(gameCode)) {
 				money = AxisSecurityEncryptUtil.getPngBalance(customer.getLoginname());
 			} else if ("qd".equals(gameCode)) {
 				money = AxisSecurityEncryptUtil.getQdBalance(customer.getLoginname());
@@ -2413,6 +2418,58 @@ public class MobileMemberAction extends SubActionSupport {
 		return null;
 	}
 	
+	
+	/**
+	 * 登入BBIN Mobile
+	 * 
+	 * @return
+	 */
+	public String mobileGetBBINGame() {
+		ReturnInfo ri = new ReturnInfo();
+		try {
+			Users customer = getCustomerFromSession();
+			if (customer == null) {
+				ri.setCode("-1");
+				ri.setMsg("请您从首页登录");
+				return GsonUtil.GsonObject(ri);
+			}
+			if (customer.getRole().equals("AGENT")) {
+				ri.setCode("-1");
+				ri.setMsg("代理玩家不可游玩");
+				return GsonUtil.GsonObject(ri);
+			}
+			// DspResponseBean createaccount =
+			// DocumentParser.parseBBinDspResponseRequest(
+			// AxisSecurityEncryptUtil.bbinCheckOrCreateGameAccount(customer.getLoginname()));
+			String code = AxisSecurityEncryptUtil.bbinCheckOrCreateGameAccount(customer.getLoginname());
+			if (StringUtils.isNotEmpty(code) && code.equals("21100")) { // 表示创建成功
+				// 处理字符串,开始登录游戏
+				url = AxisSecurityEncryptUtil.bbinForwardGame(customer.getLoginname(), bbType);
+				ri.setCode("0");
+				ri.setMsg("");
+				ri.setData(url);
+			} else if (StringUtils.isNotEmpty(code) && code.equals("21001")) {// 表示已经存在该帐号
+				url = AxisSecurityEncryptUtil.bbinForwardGame(customer.getLoginname(), bbType);
+				ri.setCode("0");
+				ri.setMsg("");
+				ri.setData(url);
+			} else {
+				if (StringUtil.isNotEmpty(code)) {
+					ri.setCode("-2");
+					ri.setMsg("登录游戏过程中出现问题**" + code + "**,请联系在线客服");
+				} else {
+					ri.setCode("-2");
+					ri.setMsg("登录游戏过程中出现问题,请联系在线客服");
+				}
+			}
+		} catch (Exception e) {
+			ri.setCode("-2");
+			ri.setMsg("系统繁忙,请稍后再试，或者直接与客服联系！"+e.getMessage());
+		}
+		return GsonUtil.GsonObject(ri);
+	}
+
+
 	public String mobileGetBgGame() {
 		Users customer = null;
 		ReturnInfo ri = new ReturnInfo();
@@ -2421,11 +2478,11 @@ public class MobileMemberAction extends SubActionSupport {
 			if (customer == null) {
 				ri.setCode("-1");
 				ri.setMsg("请登录后，在进行操作");
-				return	GsonUtil.GsonObject(ri);
+				return GsonUtil.GsonObject(ri);
 			}
 			String loginUrl = AxisUtil.getObjectOne(
 					AxisUtil.getClient(AxisUtil.PUBLICWEBSERVICEURL + "UserWebService", false), AxisUtil.NAMESPACE,
-					"getBgFishGameUrl", new Object[] { customer.getLoginname(), String.valueOf(bgType)}, String.class);// 手机登录
+					"getBgGameUrl", new Object[] { customer.getLoginname(), String.valueOf(bgType) }, String.class);// 手机登录
 			ri.setCode("0");
 			ri.setMsg("");
 			ri.setData(loginUrl);
@@ -2598,7 +2655,7 @@ public class MobileMemberAction extends SubActionSupport {
 			GsonUtil.GsonObject(toResultJson("系统繁忙,请稍后再试，或者直接与客服联系！", false));
 		}
 	}
-	
+
 	/**
 	 * pg Html5 登入
 	 * 
@@ -2643,7 +2700,6 @@ public class MobileMemberAction extends SubActionSupport {
 			GsonUtil.GsonObject(toResultJson("系统繁忙,请稍后再试，或者直接与客服联系！", false));
 		}
 	}
-
 
 	/**
 	 * 登入NT Mobile
@@ -2690,50 +2746,7 @@ public class MobileMemberAction extends SubActionSupport {
 		return null;
 	}
 
-	/**
-	 * 登入BBIN Mobile
-	 * 
-	 * @return
-	 */
-	public String mobileGetBBINGame() {
-
-		try {
-			Users customer = getCustomerFromSession();
-			if (customer == null) {
-				GsonUtil.GsonObject(toResultJson("请您从首页登录", false));
-				return null;
-			}
-			if (customer.getRole().equals("AGENT")) {
-				GsonUtil.GsonObject(toResultJson("代理玩家不可游玩", false));
-				return null;
-			}
-			DspResponseBean createaccount = DocumentParser.parseBBinDspResponseRequest(
-					AxisSecurityEncryptUtil.bbinCheckOrCreateGameAccount(customer.getLoginname()));
-
-			Map<String, Object> data = new HashMap<String, Object>();
-			if (createaccount != null && createaccount.getInfo().equals("21100")) { // 表示创建成功
-				// 处理字符串,开始登录游戏
-				url = AxisSecurityEncryptUtil.bbinForwardGame(customer.getLoginname());
-				data.put("url", url);
-				GsonUtil.GsonObject(toResultJson("", data, true));
-			} else if (createaccount != null && createaccount.getInfo().equals("21001")) {// 表示已经存在该帐号
-				url = AxisSecurityEncryptUtil.bbinForwardGame(customer.getLoginname());
-				data.put("url", url);
-				GsonUtil.GsonObject(toResultJson("", data, true));
-			} else {
-				if (createaccount.getInfo() != null) {
-					GsonUtil.GsonObject(toResultJson("登录游戏过程中出现问题**" + createaccount.getInfo() + "**,请联系在线客服", false));
-				} else {
-					GsonUtil.GsonObject(toResultJson("登录游戏过程中出现问题,请联系在线客服", false));
-				}
-			}
-		} catch (Exception e) {
-			e.printStackTrace();
-			GsonUtil.GsonObject(toResultJson("系统繁忙,请稍后再试，或者直接与客服联系！", false));
-		}
-		return null;
-	}
-
+	
 	/**
 	 * ebet
 	 *

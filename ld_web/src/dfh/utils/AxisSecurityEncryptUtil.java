@@ -403,7 +403,8 @@ public class AxisSecurityEncryptUtil {
 	//BBin登录验证
 	public static String bbinCheckOrCreateGameAccount(String loginname){
 		try {
-			return AxisUtil.getObjectOne(AxisUtil.getClient(AxisUtil.PUBLICWEBSERVICEURL + "UserWebService", false), AxisUtil.NAMESPACE, "bbinCheckOrCreateGameAccount", new Object[] {loginname}, String.class);
+			String result = AxisUtil.getObjectOne(AxisUtil.getClient(AxisUtil.PUBLICWEBSERVICEURL + "UserWebService", false), AxisUtil.NAMESPACE, "bbinCheckOrCreateGameAccount", new Object[] {loginname}, String.class);
+			return result;
 		} catch (AxisFault e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -412,9 +413,10 @@ public class AxisSecurityEncryptUtil {
 	}
 	
 	//BBin验证
-	public static String bbinForwardGame(String loginname){
+	public static String bbinForwardGame(String loginname,int gameType){
 		try {
-			return AxisUtil.getObjectOne(AxisUtil.getClient(AxisUtil.PUBLICWEBSERVICEURL + "UserWebService", false), AxisUtil.NAMESPACE, "bbinForwardGame", new Object[] {loginname}, String.class);
+			//return AxisUtil.getObjectOne(AxisUtil.getClient(AxisUtil.PUBLICWEBSERVICEURL + "UserWebService", false), AxisUtil.NAMESPACE, "bbinForwardGame", new Object[] {loginname,gameCode}, String.class);
+			return AxisUtil.getObjectOne(AxisUtil.getClient(AxisUtil.PUBLICWEBSERVICEURL + "UserWebService", false), AxisUtil.NAMESPACE, "bbinLogin", new Object[] {loginname,gameType,"h5"}, String.class);
 		} catch (AxisFault e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

@@ -187,8 +187,8 @@
             <div class="gallery_list1 gallery_list">
               <div class="gallery_list1_box">
                 <ul>
-                  <li> AG国际厅 <a href="/gameAginRedirect.aspx" class="j-check">进入游戏</a> </li>
-                  <li> VR彩票 <a href="/gameNTwoRedirect.aspx" class="j-check">进入游戏</a> </li>
+                  <li> BG国际厅 <a href="javascript:;" onclick="bgLiveGame()">进入游戏</a> </li>
+<!--                   <li> VR彩票 <a href="/gameNTwoRedirect.aspx" class="j-check">进入游戏</a> </li> -->
                 </ul>
               </div>
             </div>
@@ -198,15 +198,8 @@
           <div class="pic">
             <div class="gallery_list2 gallery_list">
               <ul style="margin-left: 285px;">
-                <li> AG捕鱼 <a href="/gameAginBuyuRedirect.aspx" class="j-check">进入游戏</a> </li>
-                <%--<li>--%>
-                <%--PT捕鱼--%>
-                <%--<a href="/loginGame.aspx?gameCode=cashfi" class="j-check">进入游戏</a>--%>
-                <%--</li>--%>
-<!--                 <li> GG捕鱼 <a href="/asp/ttLogin.aspx?gameName=EGIGame&gameType=0&gameId=14900&lang=zh-cn&deviceType=web"
-                                       class="j-check">进入游戏</a> </li> -->
-                <li> 开元棋牌 <a href="javascript:;" onclick="#">进入游戏</a> </li>
-                <li> 761棋牌 <a class="j-check" href="#">进入游戏</a> </li>
+                 <li>捕鱼达人<a href="javascript:;" onclick="bbinFishLogin('30599')" title="捕鱼游戏">进入游戏</a> </li>
+                 <li>捕鱼大师<a href="javascript:;" onclick="bbinFishLogin('38001')" title="捕鱼游戏">进入游戏</a> </li>
               </ul>
             </div>
             <i class="gallery-icon gallery2"></i> </div>
@@ -215,8 +208,8 @@
           <div class="pic">
             <div class="gallery_list3 gallery_list">
               <ul>
-                <li> 敬请期待<a href="javascript:;" class="pbLogin">进入游戏</a> </li>
-                <li> 沙巴体育<a href="javascript:;" class="sbLogin">进入游戏</a> </li>
+                <li>BB体育<a href="javascript:;" onclick="bbSportGame()" class="pbLogin"> 进入游戏</a> </li>
+                <li>沙巴体育<a href="javascript:;" onclick="sportGame()" class="sbLogin">进入游戏</a> </li>
               </ul>
             </div>
             <i class="gallery-icon gallery3"></i> </div>
@@ -489,6 +482,73 @@ style="display: none;">
             alert('您好，请先登录！');
         }
     }
+    
+    function sportGame(type) {
+		if ($("#j-isLogin").val()) {
+			openProgressBar();
+			$.post("/game/sbLogin.aspx", function(response) {
+				closeProgressBar();
+				if (response.code == 0) {
+					window.location.href = response.data;
+				} else {
+					alert(response.msg);
+				}
+			})
+		} else {
+			alert('您好，请先登录！');
+		}
+	}
+
+	
+	function bbSportGame(type) {
+		if ($("#j-isLogin").val()) {
+			openProgressBar();
+			$.post("/game/bbinPcLogin.aspx", function(response) {
+				closeProgressBar();
+				if (response.code == 0) {
+					window.location.href = response.data;
+				} else {
+					alert(response.msg);
+				}
+			})
+		} else {
+			alert('您好，请先登录！');
+		}
+	}
+	
+	function bgLiveGame(type) {
+		if ($("#j-isLogin").val()) {
+			openProgressBar();
+			$.post("/game/bgLogin.aspx", function(response) {
+				closeProgressBar();
+				if (response.code == 0) {
+					window.location.href = response.data;
+				} else {
+					alert(response.msg);
+				}
+			})
+		} else {
+			alert('您好，请先登录！');
+		}
+	}
+	
+	function bbinFishLogin(type) {
+		if ($("#j-isLogin").val()) {
+			openProgressBar();
+		$.post("/game/bbinFishLogin.aspx", {
+				"gameCode" : type
+			},  function(response) {
+				closeProgressBar();
+				if (response.code == 0) {
+					window.location.href = response.data;
+				} else {
+					alert(response.msg);
+				}
+			})
+		} else {
+			alert('您好，请先登录！');
+		}
+	}
 </script>
 
 </body>

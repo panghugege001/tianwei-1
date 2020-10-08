@@ -134,15 +134,17 @@
         </div> 
         <div class="cl"></div>
         <ul id="j-gameMenu" class="tab-menu cfx">
-            <li><a data-tab="PT" data-value='{"category":"PT"}' href="javascript:;"><span class="s1">PT 老虎机</span></a></li>
-            <li><a data-tab="DT" data-value='{"category":"DT"}' href="javascript:;"></i><span class="s1">DT 老虎机</span></a></li>
-            <li><a data-tab="PTSW" data-value='{"category":"PTSW"}' href="javascript:;"><span class="s1">SW老虎机</span></a></li>    
+            <%-- <li><a data-tab="PT" data-value='{"category":"PT"}' href="javascript:;"><span class="s1">PT 老虎机</span></a></li> --%>
+            <li><a data-tab="DT" data-value='{"category":"DT"}' href="javascript:;"><span class="s1">DT 老虎机</span></a></li>
+           <%--  <li><a data-tab="PTSW" data-value='{"category":"PTSW"}' href="javascript:;"><span class="s1">SW老虎机</span></a></li>  --%>   
             <li><a data-tab="MGS" data-value='{"category":"MGS"}' href="javascript:;"><span class="s1">MG 老虎机</span></a></li>
-            <li><a data-tab="PNG" data-value='{"category":"PNG"}' href="javascript:;"><span class="s1">PNG 老虎机</span></a></li>
+            <li><a data-tab="CQ9" data-value='{"category":"CQ9"}' href="javascript:;"><span class="s1">CQ9 老虎机</span></a></li>
+            <li><a data-tab="PG" data-value='{"category":"PG"}' href="javascript:;"><span class="s1">PG 老虎机</span></a></li>
+       <%--      <li><a data-tab="PNG" data-value='{"category":"PNG"}' href="javascript:;"><span class="s1">PNG 老虎机</span></a></li>
             <li><a data-tab="TTG" data-value='{"category":"TTG"}' href="javascript:;"><span class="s1">TTG 老虎机</span></a></li>
             <li><a data-tab="NT" data-value='{"category":"NT"}' href="javascript:;"><span class="s1">NT 老虎机</span></a></li>
             <li><a data-tab="QT" data-value='{"category":"QT"}' href="javascript:;"><span class="s1">QT 老虎机</span></a></li>
-            <li><a data-tab="AG" data-value='{"category":"AG"}' href="javascript:;"><span class="s1">AG 老虎机</span></a></li>
+            <li><a data-tab="AG" data-value='{"category":"AG"}' href="javascript:;"><span class="s1">AG 老虎机</span></a></li> --%>
             <li style="width: 149px;"><a data-tab="BBIN" data-value='{"category":"BBIN"}' href="javascript:;"><span class="s1">BBIN 老虎机</span></a></li>
         </ul>
         <div class="game_1200">
@@ -154,17 +156,19 @@
                             <dl class="tab-hd search-row show_gametype">
                                 <dt>游戏平台:</dt>
                                 <dd><%--<a class="active" data-type="category" data-value="" href="#">全选</a>--%>
-                                    <a data-toggle="game-tab" data-value='{"category":"PT"}' href="#tab-pt">PT</a>
-                                    <a data-toggle="game-tab" data-value='{"category":"PTSW"}' href="#tab-ptsw">SW</a>
+                                    <!-- <a data-toggle="game-tab" data-value='{"category":"PT"}' href="#tab-pt">PT</a>
+                                    <a data-toggle="game-tab" data-value='{"category":"PTSW"}' href="#tab-ptsw">SW</a> -->
                                     <a data-toggle="game-tab" data-value='{"category":"DT"}' href="#tab-dt">DT</a>                                    
                                     <a data-toggle="game-tab" data-value='{"category":"MGS"}' href="#tab-mg">MG</a>
-                                    <a data-toggle="game-tab" data-value='{"category":"PNG"}' href="#tab-png">PNG</a>
-                                    <a data-toggle="game-tab" data-value='{"category":"TTG"}' href="#tab-ttg">TTG</a>
+                                    <a data-toggle="game-tab" data-value='{"category":"CQ9"}' href="#tab-cq9">CQ9</a>
+                                    <a data-toggle="game-tab" data-value='{"category":"PG"}' href="#tab-pg">PG</a>
+                            <!--         <a data-toggle="game-tab" data-value='{"category":"PNG"}' href="#tab-png">PNG</a>
+                                    <a data-toggle="game-tab" data-value='{"category":"TTG"}' href="#tab-ttg">TTG</a> -->
 
                                     <%--<a data-value='TTG-MG" href="#tab-TTG小游戏">TTG小游戏</a>--%>
-                                    <a data-toggle="game-tab" data-value='{"category":"NT"}' href="#tab-nt">NT</a>                                    
-                                    <a data-toggle="game-tab" data-value='{"category":"QT"}' href="#tab-qt">QT</a>
-                                    <a data-toggle="game-tab" data-value='{"category":"AG"}' href="#tab-ag">AG</a>
+                                    <!-- <a data-toggle="game-tab" data-value='{"category":"NT"}' href="#tab-nt">NT</a>                                    
+                                    <a data-toggle="game-tab" data-value='{"category":"QT"}' href="#tab-qt">QT</a> -->
+                                    <!-- <a data-toggle="game-tab" data-value='{"category":"AG"}' href="#tab-ag">AG</a> -->
                                     <a data-toggle="game-tab" data-value='{"category":"BBIN"}' href="#tab-bbin">BBIN</a>
                                 </dd>
 
@@ -324,13 +328,27 @@
                                         </dd>
                                     </dl>
                                 </div>
-                                <div id="tab-nt" class="tab-panel">
+                                <div id="tab-cq9" class="tab-panel">
                                     <dl class="search-row">
                                         <dt>游戏类型:</dt>
                                         <dd> <a class="active" data-value="" href="javascript:;">全选</a>
                                             <a data-value='{"tag":"CLA"}' href="javascript:;">经典</a>
-                                            <a data-value='{"tag":"ELE"}' href="javascript:;">电动</a>
-                                            <a data-value='{"tag":"MIN"}' href="javascript:;">迷你</a>
+                                        </dd>
+                                    </dl>
+                                    <dl class="search-row">
+                                        <dt>游戏风格:</dt>
+                                        <dd><a class="active" data-value="" href="javascript:;">全选</a>
+                                            <a data-type="tag" data-value='{"tag":"AMA"}' href="javascript:;">奖池游戏</a>
+                                            <a data-type="tag" data-value='{"tag":"HOT"}' href="javascript:;">热门</a>
+                                            <a data-type="tag" data-value='{"tag":"NEW"}' href="javascript:;">最新</a>
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <div id="tab-pg" class="tab-panel">
+                                    <dl class="search-row">
+                                        <dt>游戏类型:</dt>
+                                        <dd> <a class="active" data-value="" href="javascript:;">全选</a>
+                                            <a data-value='{"tag":"CLA"}' href="javascript:;">经典</a>
                                         </dd>
                                     </dl>
                                     <dl class="search-row">

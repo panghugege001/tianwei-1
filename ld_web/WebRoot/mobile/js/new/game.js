@@ -728,7 +728,7 @@ function arrayContain(array, values) {
 					//window.location.href = "/game/gameLoginDT.aspx?isfun=0&gameCode=" + obj.id + "&language=zh_CN&clientType=1";
 
 					                    $.post('/mobi/loginDT.aspx',function(result){
-					                        var dtUrl= '/dtGames.aspx?slotKey={0}&language=zh_cn&gameCode={1}&isfun=0&type=null&closeUrl={2}';
+					                        var dtUrl= '/dtGames.aspx?slotKey={0}&language=zh_CN&gameCode={1}&isfun=0&type=null&closeUrl={2}';
 					                        if(result.success){
 					                            window.location.href = result.data.url+String.format(dtUrl,result.data.key,obj.id,result.data.referWebsite);
 					                        }else{

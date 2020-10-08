@@ -28,13 +28,13 @@ public class SpecialEnvironmentStringPBEConfig extends EnvironmentStringPBEConfi
 		BasicTextEncryptor textEncryptor = new BasicTextEncryptor();
 		textEncryptor.setPassword("YS9cZeiEeWK2a0I");
 //		String newPassword = textEncryptor.encrypt("http://69.172.80.19:6066/services/");
-		String newPassword = textEncryptor.encrypt("http://127.0.0.1:8084");
+		String newPassword = textEncryptor.encrypt("root123456");
 		System.out.println(newPassword);
 		//解密
 		BasicTextEncryptor textEncryptor2 = new BasicTextEncryptor();
 		textEncryptor2.setPassword("YS9cZeiEeWK2a0I");
 		String oldPassword = textEncryptor2.decrypt("1P6jDZzJwHwbvMhqGQITYhYohJNKaueFig3agbgVxsI=");
-		System.out.println(textEncryptor2.decrypt("nRNLokPX8FZdk3Wrg9S12KlVXDq9ZDvhD5W5ki9XwQ4="));
+		System.out.println(textEncryptor2.decrypt("c6/Tqdir2paiterYF3wWow=="));
 		System.out.println(oldPassword);
 	}
 

@@ -32,7 +32,7 @@ public class BaseAction extends SubActionSupport {
 	private static final long serialVersionUID = 1L;
 
 	private static Logger log = Logger.getLogger(SubActionSupport.class);
-	
+
 	private String kenoInfo;
 	private String sportInfo;
 	private String agUrl;
@@ -41,30 +41,30 @@ public class BaseAction extends SubActionSupport {
 	private String gameCode;
 	private Integer ptLogin;
 	private ActivityCalendarVO actVo;
-	
-	private String sixLotteryUrl ;
-	private String errorMsg ;
-	
-	private String payType;
-	
-	private String ebetLoginUrl;
-	
-	private String gpiLoginUrl;
-	private int isfun;   //gpi是否试玩, 1 试玩模式   0：真实游戏
 
-	private String demoMode; //是否试玩，true试玩，false真钱
+	private String sixLotteryUrl;
+	private String errorMsg;
+
+	private String payType;
+
+	private String ebetLoginUrl;
+
+	private String gpiLoginUrl;
+	private int isfun; // gpi是否试玩, 1 试玩模式 0：真实游戏
+
+	private String demoMode; // 是否试玩，1试玩，0真钱
 	private String gameUrl;
 	private String mobileKind;
-	
-	//#####live800信任信息
+
+	// #####live800信任信息
 	private String userId;
 	private String timestamp;
 	private String hashCode;
-	//#####live800信任信息
+	// #####live800信任信息
 	private String type;
-	private String practice;//png 0表示正式，1表示试玩
-	private String game;//NTgameCode
-	
+	private String practice;// png 0表示正式，1表示试玩
+	private String game;// NTgameCode
+
 	public String getGame() {
 		return game;
 	}
@@ -72,8 +72,11 @@ public class BaseAction extends SubActionSupport {
 	public void setGame(String game) {
 		this.game = game;
 	}
+
 	private String fromApp;
-	
+	private String itemId;
+	private String appId;
+
 	public String getFromApp() {
 		return fromApp;
 	}
@@ -81,7 +84,7 @@ public class BaseAction extends SubActionSupport {
 	public void setFromApp(String fromApp) {
 		this.fromApp = fromApp;
 	}
-	
+
 	public String getPayType() {
 		return payType;
 	}
@@ -89,13 +92,31 @@ public class BaseAction extends SubActionSupport {
 	public void setPayType(String payType) {
 		this.payType = payType;
 	}
-	
+
 	public String getPractice() {
 		return practice;
 	}
 
 	public void setPractice(String practice) {
 		this.practice = practice;
+	}
+	
+	
+
+	public String getItemId() {
+		return itemId;
+	}
+
+	public void setItemId(String itemId) {
+		this.itemId = itemId;
+	}
+
+	public String getAppId() {
+		return appId;
+	}
+
+	public void setAppId(String appId) {
+		this.appId = appId;
 	}
 
 	/**
@@ -109,14 +130,16 @@ public class BaseAction extends SubActionSupport {
 			if (user == null || user.getRole().equals("AGENT")) {
 				return ERROR;
 			}
-			EBetResp ebetResp = AxisUtil.getObjectOne(AxisUtil.getClient(AxisUtil.PUBLICWEBSERVICEURL + "UserWebService", false), AxisUtil.NAMESPACE, "ebetLogin", new Object[] { user.getLoginname(), getRequest().getServerName() }, EBetResp.class);
+			EBetResp ebetResp = AxisUtil.getObjectOne(
+					AxisUtil.getClient(AxisUtil.PUBLICWEBSERVICEURL + "UserWebService", false), AxisUtil.NAMESPACE,
+					"ebetLogin", new Object[] { user.getLoginname(), getRequest().getServerName() }, EBetResp.class);
 			// GsonUtil.GsonObject(result==null?"系统繁忙":result.toString()+" 元");
 			if (ebetResp != null) {
-				if(ebetResp.getCode()==10000){
-					ebetLoginUrl=ebetResp.getMsg();
+				if (ebetResp.getCode() == 10000) {
+					ebetLoginUrl = ebetResp.getMsg();
 					return SUCCESS;
 				}
-				System.out.println("登录EBET失败" + user.getLoginname()+"**********"+ebetResp.getMsg());
+				System.out.println("登录EBET失败" + user.getLoginname() + "**********" + ebetResp.getMsg());
 				return ERROR;
 			} else {
 				System.out.println("登录EBET失败" + user.getLoginname());
@@ -127,7 +150,7 @@ public class BaseAction extends SubActionSupport {
 			return ERROR;
 		}
 	}
-	
+
 	public String gameSixLottery() {
 		try {
 			Users user = (Users) this.getHttpSession().getAttribute(Constants.SESSION_CUSTOMERID);
@@ -138,11 +161,13 @@ public class BaseAction extends SubActionSupport {
 			if (user.getRole().equals("AGENT")) {
 				return ERROR;
 			}
-			String password = (String) getHttpSession().getAttribute(Constants.PT_SESSION_USER); //玩家密码
-			sixLotteryUrl = AxisUtil.getObjectOne(AxisUtil.getClient(AxisUtil.PUBLICWEBSERVICEURL + "UserWebService", false), AxisUtil.NAMESPACE, "sixLotteryLogin", new Object[] { user.getLoginname() , password}, String.class);
-			if(sixLotteryUrl.contains("http")){
+			String password = (String) getHttpSession().getAttribute(Constants.PT_SESSION_USER); // 玩家密码
+			sixLotteryUrl = AxisUtil.getObjectOne(
+					AxisUtil.getClient(AxisUtil.PUBLICWEBSERVICEURL + "UserWebService", false), AxisUtil.NAMESPACE,
+					"sixLotteryLogin", new Object[] { user.getLoginname(), password }, String.class);
+			if (sixLotteryUrl.contains("http")) {
 				return SUCCESS;
-			}else{
+			} else {
 				setErrorMsg(sixLotteryUrl);
 				return ERROR;
 			}
@@ -171,26 +196,29 @@ public class BaseAction extends SubActionSupport {
 	 */
 	public String gameEbetLoginNew() {
 		try {
-			
+
 			Users user = (Users) this.getHttpSession().getAttribute(Constants.SESSION_CUSTOMERID);
 			if (user == null || user.getRole().equals("AGENT")) {
 				return ERROR;
 			}
-			
-			EbetH5VO ebetH5VO = AxisUtil.getObjectOne(AxisUtil.getClient(AxisUtil.PUBLICWEBSERVICEURL + "UserWebService", false), AxisUtil.NAMESPACE, "getEBetVO", new Object[] {user.getLoginname() }, EbetH5VO.class);
-			if(ebetH5VO == null){
+
+			EbetH5VO ebetH5VO = AxisUtil.getObjectOne(
+					AxisUtil.getClient(AxisUtil.PUBLICWEBSERVICEURL + "UserWebService", false), AxisUtil.NAMESPACE,
+					"getEBetVO", new Object[] { user.getLoginname() }, EbetH5VO.class);
+			if (ebetH5VO == null) {
 				return ERROR;
 			}
 			this.getHttpSession().setAttribute("channelId", ebetH5VO.getChannelId());
 			this.getHttpSession().setAttribute("accessToken", ebetH5VO.getAccessToken());
-			log.info("loginname:" + user.getLoginname() + ",gameEbetLoginNew success , channelId" + ebetH5VO.getAccessToken() + ", accessToken:" + ebetH5VO.getChannelId());
+			log.info("loginname:" + user.getLoginname() + ",gameEbetLoginNew success , channelId"
+					+ ebetH5VO.getAccessToken() + ", accessToken:" + ebetH5VO.getChannelId());
 			return SUCCESS;
 		} catch (Exception e) {
 			e.printStackTrace();
 			return ERROR;
 		}
 	}
-	
+
 	/**
 	 * 访问代理管理页面
 	 * 
@@ -205,26 +233,29 @@ public class BaseAction extends SubActionSupport {
 		if (user.getRole().equals("MONEY_CUSTOMER")) {
 			return ERROR;
 		}
-		//查询代理的老虎机佣金额度
+		// 查询代理的老虎机佣金额度
 		try {
-			Userstatus userstatus = AxisUtil.getObjectOne(AxisUtil.getClient(AxisUtil.PUBLICWEBSERVICEURL + "UserWebService", false), AxisUtil.NAMESPACE, "getAgentSlot", new Object[] { user.getLoginname() }, Userstatus.class);
-			if(userstatus.getSlotaccount() == null){
+			Userstatus userstatus = AxisUtil.getObjectOne(
+					AxisUtil.getClient(AxisUtil.PUBLICWEBSERVICEURL + "UserWebService", false), AxisUtil.NAMESPACE,
+					"getAgentSlot", new Object[] { user.getLoginname() }, Userstatus.class);
+			if (userstatus.getSlotaccount() == null) {
 				userstatus.setSlotaccount(0.0);
 			}
 			this.getHttpSession().setAttribute("slotAccount", userstatus.getSlotaccount());
-			
-			String result = AxisUtil.getObjectOne(AxisUtil.getClient(AxisUtil.PUBLICWEBSERVICEURL + "UserWebService", false), 
-					AxisUtil.NAMESPACE, "agentMonthlyReport", new Object[] {user.getLoginname()}, String.class);
+
+			String result = AxisUtil.getObjectOne(
+					AxisUtil.getClient(AxisUtil.PUBLICWEBSERVICEURL + "UserWebService", false), AxisUtil.NAMESPACE,
+					"agentMonthlyReport", new Object[] { user.getLoginname() }, String.class);
 			Gson gson = new Gson();
-			HashMap<String, String> valmap = gson.fromJson(result, new TypeToken<HashMap<String, String>>(){}.getType());
+			HashMap<String, String> valmap = gson.fromJson(result, new TypeToken<HashMap<String, String>>() {
+			}.getType());
 			getRequest().setAttribute("report", valmap);
-			
+
 		} catch (AxisFault e) {
 			e.printStackTrace();
 		}
 		return SUCCESS;
 	}
-
 
 	/**
 	 * 登录体育游戏
@@ -234,9 +265,9 @@ public class BaseAction extends SubActionSupport {
 	public String gameSport() {
 		try {
 			Users user = (Users) this.getHttpSession().getAttribute(Constants.SESSION_CUSTOMERID);
-			// 登录成功过后才能登录游戏 ---   改为未登录也可以进入游戏
+			// 登录成功过后才能登录游戏 --- 改为未登录也可以进入游戏
 			if (user == null) {
-				sportInfo = "http://sb.e68ph.net/Sportsbook/Launch?t=&l=&g=CHS&tz=GMT%2B08%3A00&mid=F5623D1F57F64952iofWkynFF%2BDRdxFz78p8Vw%3D%3D" ;
+				sportInfo = "http://sb.e68ph.net/Sportsbook/Launch?t=&l=&g=CHS&tz=GMT%2B08%3A00&mid=F5623D1F57F64952iofWkynFF%2BDRdxFz78p8Vw%3D%3D";
 				return SUCCESS;
 			}
 			// 代理不能登录邮箱
@@ -291,15 +322,18 @@ public class BaseAction extends SubActionSupport {
 			}
 			if (user == null || gameCode == null || "".equals(gameCode)) {
 				return ERROR;
-			} 
-			//判断pt是否在线
-			Boolean ptOnline= AxisUtil.getObjectOne(AxisUtil.getClient(AxisUtil.PUBLICWEBSERVICEURL + "UserWebService", false), AxisUtil.NAMESPACE, "getPlayerOnlineInfo", new Object[] { user.getLoginname()}, Boolean.class);
-			//Boolean ptOnline = PtUtil.getPlayerOnlineInfo(user.getLoginname());
+			}
+			// 判断pt是否在线
+			Boolean ptOnline = AxisUtil.getObjectOne(
+					AxisUtil.getClient(AxisUtil.PUBLICWEBSERVICEURL + "UserWebService", false), AxisUtil.NAMESPACE,
+					"getPlayerOnlineInfo", new Object[] { user.getLoginname() }, Boolean.class);
+			// Boolean ptOnline =
+			// PtUtil.getPlayerOnlineInfo(user.getLoginname());
 			if (ptOnline) {
-				Integer ptId=(Integer)this.getHttpSession().getAttribute(Constants.PT_SESSION_ID);
-				if(ptId!=null){
+				Integer ptId = (Integer) this.getHttpSession().getAttribute(Constants.PT_SESSION_ID);
+				if (ptId != null) {
 					this.getHttpSession().removeAttribute(Constants.PT_SESSION_ID);
-				    this.getHttpSession().setAttribute(Constants.PT_SESSION_ID, 1);
+					this.getHttpSession().setAttribute(Constants.PT_SESSION_ID, 1);
 				}
 			} else {
 				this.getHttpSession().removeAttribute(Constants.PT_SESSION_ID);
@@ -310,18 +344,18 @@ public class BaseAction extends SubActionSupport {
 			return ERROR;
 		}
 	}
-	
-	public String loginGamePt(){
-		if(ptLogin!=null){
+
+	public String loginGamePt() {
+		if (ptLogin != null) {
 			this.getHttpSession().removeAttribute(Constants.PT_SESSION_ID);
 			this.getHttpSession().setAttribute(Constants.PT_SESSION_ID, ptLogin);
 			GsonUtil.GsonObject("SUCCESS");
-		}else{
+		} else {
 			GsonUtil.GsonObject("ERROR");
 		}
 		return null;
 	}
-	
+
 	public String gameQT() {
 		try {
 			String domain = getRequest().getRequestURL().toString().replace(getRequest().getServletPath(), "");
@@ -332,12 +366,17 @@ public class BaseAction extends SubActionSupport {
 			if (user != null && user.getRole().equals("AGENT")) {
 				return ERROR;
 			}
-			if(StringUtils.isEmpty(gameCode)){
+			if (StringUtils.isEmpty(gameCode)) {
 				return ERROR;
 			}
 			// 获取游戏链接地址
-			//String isflash = "1";	//1为flash，否则html5 1108 modify by jalen 改成前端传入的type
-			gameUrl = AxisUtil.getObjectOne(AxisUtil.getClient(AxisUtil.PUBLICWEBSERVICEURL + "UserWebService", false), AxisUtil.NAMESPACE, "qtGameUrl", new Object[] { isfun==1?"DEMOPLAY":user.getLoginname(), gameCode, isfun, type, domain}, String.class);
+			// String isflash = "1"; //1为flash，否则html5 1108 modify by jalen
+			// 改成前端传入的type
+			gameUrl = AxisUtil
+					.getObjectOne(AxisUtil.getClient(AxisUtil.PUBLICWEBSERVICEURL + "UserWebService", false),
+							AxisUtil.NAMESPACE, "qtGameUrl", new Object[] {
+									isfun == 1 ? "DEMOPLAY" : user.getLoginname(), gameCode, isfun, type, domain },
+							String.class);
 			if (gameUrl == null || "".equals(gameUrl) || "FAIL".equals(gameUrl)) {
 				return ERROR;
 			}
@@ -346,9 +385,7 @@ public class BaseAction extends SubActionSupport {
 			return ERROR;
 		}
 	}
-	
-	
-	
+
 	public String gameQTForTp() {
 		try {
 			String domain = getRequest().getRequestURL().toString().replace(getRequest().getServletPath(), "");
@@ -359,41 +396,44 @@ public class BaseAction extends SubActionSupport {
 			if (user != null && user.getRole().equals("AGENT")) {
 				return ERROR;
 			}
-			if(StringUtils.isEmpty(gameCode)){
+			if (StringUtils.isEmpty(gameCode)) {
 				return ERROR;
 			}
-			
+
 			// 获取游戏链接地址
-			String isflash = "1";	//1为flash，否则html5
-			
-			
-			if(StringUtils.isNotBlank(this.getFromApp())){
-				
+			String isflash = "1"; // 1为flash，否则html5
+
+			if (StringUtils.isNotBlank(this.getFromApp())) {
+
 				isflash = "0";
 			}
-			
-			gameUrl = AxisUtil.getObjectOne(AxisUtil.getClient(AxisUtil.PUBLICWEBSERVICEURL + "UserWebService", false), AxisUtil.NAMESPACE, "qtGameUrlForTp", new Object[] { isfun==1?"DEMOPLAY":user.getLoginname(), gameCode, isfun, isflash, domain}, String.class);
+
+			gameUrl = AxisUtil
+					.getObjectOne(AxisUtil.getClient(AxisUtil.PUBLICWEBSERVICEURL + "UserWebService", false),
+							AxisUtil.NAMESPACE, "qtGameUrlForTp", new Object[] {
+									isfun == 1 ? "DEMOPLAY" : user.getLoginname(), gameCode, isfun, isflash, domain },
+							String.class);
 			if (gameUrl == null || "".equals(gameUrl) || "FAIL".equals(gameUrl)) {
 				return ERROR;
 			}
-			
-			if(StringUtils.isNotBlank(this.getFromApp())){
-				
-				Map<String,Object> data = new HashMap<String,Object>();
+
+			if (StringUtils.isNotBlank(this.getFromApp())) {
+
+				Map<String, Object> data = new HashMap<String, Object>();
 				data.put("url", gameUrl);
-				GsonUtil.GsonObject(toResultJson("",data,true));
+				GsonUtil.GsonObject(toResultJson("", data, true));
 				return null;
 			}
-			
+
 			return SUCCESS;
 		} catch (Exception e) {
 			return ERROR;
 		}
-	}	
-	
-	
+	}
+
 	/**
 	 * 登入GPI
+	 * 
 	 * @return
 	 */
 	public String gameGPI() {
@@ -405,11 +445,13 @@ public class BaseAction extends SubActionSupport {
 			if (user.getRole().equals("AGENT")) {
 				return ERROR;
 			}
-			if(StringUtils.isEmpty(gameCode)){
+			if (StringUtils.isEmpty(gameCode)) {
 				return ERROR;
 			}
 			// 获取游戏链接地址
-			gpiLoginUrl = AxisUtil.getObjectOne(AxisUtil.getClient(AxisUtil.PUBLICWEBSERVICEURL + "UserWebService", false), AxisUtil.NAMESPACE, "gpiLogin", new Object[] { user.getLoginname(), gameCode, isfun}, String.class);
+			gpiLoginUrl = AxisUtil.getObjectOne(
+					AxisUtil.getClient(AxisUtil.PUBLICWEBSERVICEURL + "UserWebService", false), AxisUtil.NAMESPACE,
+					"gpiLogin", new Object[] { user.getLoginname(), gameCode, isfun }, String.class);
 			if (gpiLoginUrl == null || gpiLoginUrl.equals("")) {
 				return ERROR;
 			}
@@ -418,12 +460,13 @@ public class BaseAction extends SubActionSupport {
 			return ERROR;
 		}
 	}
-	
+
 	/**
 	 * GPI PNG、BS、CTXM登入
+	 * 
 	 * @return
 	 */
-	public String gamePNGOfGPI(){
+	public String gamePNGOfGPI() {
 		Users user = (Users) this.getHttpSession().getAttribute(Constants.SESSION_CUSTOMERID);
 		if (user == null) {
 			return ERROR;
@@ -431,27 +474,30 @@ public class BaseAction extends SubActionSupport {
 		if (user.getRole().equals("AGENT")) {
 			return ERROR;
 		}
-		if(StringUtils.isEmpty(gameCode)){
+		if (StringUtils.isEmpty(gameCode)) {
 			return ERROR;
 		}
 		try {
 			// 获取游戏链接地址
-			gpiLoginUrl = AxisUtil.getObjectOne(AxisUtil.getClient(AxisUtil.PUBLICWEBSERVICEURL + "UserWebService", false), AxisUtil.NAMESPACE, "gpiOtherLogin", new Object[] { user.getLoginname(), gameCode, isfun, type}, String.class);
+			gpiLoginUrl = AxisUtil.getObjectOne(
+					AxisUtil.getClient(AxisUtil.PUBLICWEBSERVICEURL + "UserWebService", false), AxisUtil.NAMESPACE,
+					"gpiOtherLogin", new Object[] { user.getLoginname(), gameCode, isfun, type }, String.class);
 			if (gpiLoginUrl == null || gpiLoginUrl.equals("")) {
 				return ERROR;
 			}
-			if(type.equalsIgnoreCase("png")){
+			if (type.equalsIgnoreCase("png")) {
 				return "PNG";
-			}else{
+			} else {
 				return SUCCESS;
 			}
 		} catch (Exception e) {
 			return ERROR;
 		}
 	}
-	
+
 	/**
 	 * 登入GPI Mobile
+	 * 
 	 * @return
 	 */
 	public String gameGPIMobile() {
@@ -464,11 +510,14 @@ public class BaseAction extends SubActionSupport {
 			if (user.getRole().equals("AGENT")) {
 				return ERROR;
 			}
-			if(StringUtils.isEmpty(gameCode)){
+			if (StringUtils.isEmpty(gameCode)) {
 				return ERROR;
 			}
 			// 获取游戏链接地址
-			gpiLoginUrl = AxisUtil.getObjectOne(AxisUtil.getClient(AxisUtil.PUBLICWEBSERVICEURL + "UserWebService", false), AxisUtil.NAMESPACE, "gpiMobileLogin", new Object[] { user.getLoginname(), gameCode, isfun, type, domain}, String.class);
+			gpiLoginUrl = AxisUtil.getObjectOne(
+					AxisUtil.getClient(AxisUtil.PUBLICWEBSERVICEURL + "UserWebService", false), AxisUtil.NAMESPACE,
+					"gpiMobileLogin", new Object[] { user.getLoginname(), gameCode, isfun, type, domain },
+					String.class);
 			if (gpiLoginUrl == null || gpiLoginUrl.equals("")) {
 				return ERROR;
 			}
@@ -477,34 +526,35 @@ public class BaseAction extends SubActionSupport {
 			return ERROR;
 		}
 	}
-	
-	public String loginGameJc(){
+
+	public String loginGameJc() {
 		try {
-			//TODO 禁止用户登录JC, 直接跳回首页
+			// TODO 禁止用户登录JC, 直接跳回首页
 			return ERROR;
-			/*Users user = (Users) this.getHttpSession().getAttribute(Constants.SESSION_CUSTOMERID);
-			if (user == null) {
-			}
-			if (user.getRole().equals("AGENT")) {
-				return ERROR;
-			}
-			String uuid = AxisUtil.getObjectOne(AxisUtil.getClient(AxisUtil.PUBLICWEBSERVICEURL + "UserWebService", false), AxisUtil.NAMESPACE, "loginJc", new Object[] { user.getLoginname(), user.getPassword() }, String.class);
-			if (StringUtils.isNotEmpty(uuid)){
-				this.getHttpSession().setAttribute(Constants.JC_LOGINID, uuid);
-				return SUCCESS;
-			}
-			return ERROR;*/
+			/*
+			 * Users user = (Users)
+			 * this.getHttpSession().getAttribute(Constants.SESSION_CUSTOMERID);
+			 * if (user == null) { } if (user.getRole().equals("AGENT")) {
+			 * return ERROR; } String uuid =
+			 * AxisUtil.getObjectOne(AxisUtil.getClient(AxisUtil.
+			 * PUBLICWEBSERVICEURL + "UserWebService", false),
+			 * AxisUtil.NAMESPACE, "loginJc", new Object[] {
+			 * user.getLoginname(), user.getPassword() }, String.class); if
+			 * (StringUtils.isNotEmpty(uuid)){
+			 * this.getHttpSession().setAttribute(Constants.JC_LOGINID, uuid);
+			 * return SUCCESS; } return ERROR;
+			 */
 		} catch (Exception e) {
 			return ERROR;
 		}
 	}
-	
 
 	/**
 	 * 登录NT游戏
+	 * 
 	 * @return
 	 */
-	public String loginGameNT(){
+	public String loginGameNT() {
 		String res = ERROR;
 		try {
 			Users user = (Users) this.getHttpSession().getAttribute(Constants.SESSION_CUSTOMERID);
@@ -514,60 +564,64 @@ public class BaseAction extends SubActionSupport {
 			if (user.getRole().equals("AGENT")) {
 				return ERROR;
 			}
-			String sion = AxisUtil.getObjectOne(AxisUtil.getClient(AxisUtil.PUBLICWEBSERVICEURL + "UserWebService", false), AxisUtil.NAMESPACE, "loginGWNT", new Object[] { user.getLoginname(), this.game }, String.class);
-			if (StringUtils.isNotEmpty(sion)){
-				JSONObject json = JSONObject.fromObject(sion); //返回值sion为json字符串,方便做判断与提示信息
-				if (json.getBoolean("result")){
+			String sion = AxisUtil.getObjectOne(
+					AxisUtil.getClient(AxisUtil.PUBLICWEBSERVICEURL + "UserWebService", false), AxisUtil.NAMESPACE,
+					"loginGWNT", new Object[] { user.getLoginname(), this.game }, String.class);
+			if (StringUtils.isNotEmpty(sion)) {
+				JSONObject json = JSONObject.fromObject(sion); // 返回值sion为json字符串,方便做判断与提示信息
+				if (json.getBoolean("result")) {
 					String key = json.getString("key");
 					getRequest().getSession().setAttribute(Constants.NT_SESSION, key);
 					res = SUCCESS;
 				} else {
 					String msg = NTErrorCode.compare(json.getString("error"));
-					log.error("loginGameNT错误, 错误消息: "+msg);
+					log.error("loginGameNT错误, 错误消息: " + msg);
 				}
 				return res;
 			}
 		} catch (Exception e) {
-			log.error("loginGameNT error:",e);
-		}
-		return res;
-	}
-	
-	/**
-	 * 获取玩家一段时间内的NT游戏投注记录
-	 * @return
-	 */
-	public String gameNTRecord(){
-		String res=ERROR;
-		try {
-			Users user = (Users) this.getHttpSession().getAttribute(Constants.SESSION_CUSTOMERID);
-			if (null==user){
-				return ERROR;
-			}
-			String fws=AxisUtil.getObjectOne(AxisUtil.getClient(AxisUtil.PUBLICWEBSERVICEURL + "UserWebService", false), AxisUtil.NAMESPACE, "loginNT", new Object[] { user.getId() }, String.class);
-			JSONObject record = JSONObject.fromObject(fws);
-			if (null!=record && record.getBoolean("result")){
-				
-				res=SUCCESS;
-			} else {
-				res=ERROR;
-			}
-		} catch (Exception e) {
-			log.error("gameNTRecord error:",e);
+			log.error("loginGameNT error:", e);
 		}
 		return res;
 	}
 
-	
+	/**
+	 * 获取玩家一段时间内的NT游戏投注记录
+	 * 
+	 * @return
+	 */
+	public String gameNTRecord() {
+		String res = ERROR;
+		try {
+			Users user = (Users) this.getHttpSession().getAttribute(Constants.SESSION_CUSTOMERID);
+			if (null == user) {
+				return ERROR;
+			}
+			String fws = AxisUtil.getObjectOne(
+					AxisUtil.getClient(AxisUtil.PUBLICWEBSERVICEURL + "UserWebService", false), AxisUtil.NAMESPACE,
+					"loginNT", new Object[] { user.getId() }, String.class);
+			JSONObject record = JSONObject.fromObject(fws);
+			if (null != record && record.getBoolean("result")) {
+
+				res = SUCCESS;
+			} else {
+				res = ERROR;
+			}
+		} catch (Exception e) {
+			log.error("gameNTRecord error:", e);
+		}
+		return res;
+	}
+
 	@SuppressWarnings("unchecked")
-	public String playerInfo4Live800(){
+	public String playerInfo4Live800() {
 		log.info("########################live800 获取信任信息");
-		if(StringUtils.isEmpty(userId)){
+		if (StringUtils.isEmpty(userId)) {
 			return "error";
 		}
 		try {
 			String tmpHashCode = Live800Encode.getMD5Encode(userId + timestamp + Constants.LIVE800KEY);
-			if(!tmpHashCode.equals(hashCode)){
+			if (!tmpHashCode.equals(hashCode)) {
 				log.error("live信任信息hashcode检查未通过");
 				return "error";
 			}
@@ -577,147 +631,117 @@ public class BaseAction extends SubActionSupport {
 		}
 		String result;
 		try {
-			result = AxisUtil.getObjectOne(AxisUtil.getClient(AxisUtil.PUBLICWEBSERVICEURL_2 + "UserWebService", false), 
-					AxisUtil.NAMESPACE, "getUserInfo4Live800", new Object[] {userId}, String.class);
+			result = AxisUtil.getObjectOne(AxisUtil.getClient(AxisUtil.PUBLICWEBSERVICEURL_2 + "UserWebService", false),
+					AxisUtil.NAMESPACE, "getUserInfo4Live800", new Object[] { userId }, String.class);
 		} catch (AxisFault e) {
 			log.error(e.getMessage());
 			return "error";
 		}
 		JSONObject jsonObj = JSONObject.fromObject(result);
-		//账号信息
+		// 账号信息
 		String playerStr = jsonObj.getString("playerInfo");
 		Users player = (Users) JSONObject.toBean(JSONObject.fromObject(playerStr), Users.class);
 		getRequest().setAttribute("playerInfo", player);
 		List recordList = new ArrayList();
-		//在线支付
+		// 在线支付
 		String payOrderStr = jsonObj.getString("payOrder");
 		List payOrderList = (List) JSONSerializer.toJava(JSONSerializer.toJSON(payOrderStr));
 		for (Object object : payOrderList) {
-			 JSONObject jsonObject = JSONObject.fromObject(object);  
-			 recordList.add((Payorder) JSONObject.toBean(jsonObject, Payorder.class));
+			JSONObject jsonObject = JSONObject.fromObject(object);
+			recordList.add((Payorder) JSONObject.toBean(jsonObject, Payorder.class));
 		}
 		getRequest().setAttribute("payOrder", recordList);
-		
-		//网银存款
+
+		// 网银存款
 		recordList = new ArrayList();
 		String depositStr = jsonObj.getString("deposit");
 		List depositList = (List) JSONSerializer.toJava(JSONSerializer.toJSON(depositStr));
 		for (Object object : depositList) {
-			 JSONObject jsonObject = JSONObject.fromObject(object);  
-			 recordList.add((Proposal) JSONObject.toBean(jsonObject, Proposal.class));
+			JSONObject jsonObject = JSONObject.fromObject(object);
+			recordList.add((Proposal) JSONObject.toBean(jsonObject, Proposal.class));
 		}
 		getRequest().setAttribute("deposit", recordList);
-		
-		//提款
+
+		// 提款
 		recordList = new ArrayList();
 		String withdrawalStr = jsonObj.getString("withdrawal");
 		List withdrawalList = (List) JSONSerializer.toJava(JSONSerializer.toJSON(withdrawalStr));
 		for (Object object : withdrawalList) {
-			 JSONObject jsonObject = JSONObject.fromObject(object);  
-			 recordList.add((Proposal) JSONObject.toBean(jsonObject, Proposal.class));
+			JSONObject jsonObject = JSONObject.fromObject(object);
+			recordList.add((Proposal) JSONObject.toBean(jsonObject, Proposal.class));
 		}
 		getRequest().setAttribute("withdrawal", recordList);
-		
-		//优惠
+
+		// 优惠
 		recordList = new ArrayList();
 		String couponStr = jsonObj.getString("coupon");
 		List couponList = (List) JSONSerializer.toJava(JSONSerializer.toJSON(couponStr));
 		for (Object object : couponList) {
-			 JSONObject jsonObject = JSONObject.fromObject(object);  
-			 recordList.add((Proposal) JSONObject.toBean(jsonObject, Proposal.class));
+			JSONObject jsonObject = JSONObject.fromObject(object);
+			recordList.add((Proposal) JSONObject.toBean(jsonObject, Proposal.class));
 		}
 		getRequest().setAttribute("coupon", recordList);
-		
-		//转账记录
+
+		// 转账记录
 		recordList = new ArrayList();
 		String transferStr = jsonObj.getString("transfer");
 		List transferList = (List) JSONSerializer.toJava(JSONSerializer.toJSON(transferStr));
 		for (Object object : transferList) {
-			 JSONObject jsonObject = JSONObject.fromObject(object);  
-			 recordList.add((Transfer) JSONObject.toBean(jsonObject, Transfer.class));
+			JSONObject jsonObject = JSONObject.fromObject(object);
+			recordList.add((Transfer) JSONObject.toBean(jsonObject, Transfer.class));
 		}
 		getRequest().setAttribute("transfer", recordList);
 		return SUCCESS;
 	}
-	
+
 	/**
 	 * 查询代理每月汇总数据(已移至上方agentManage中处理)
+	 * 
 	 * @return
 	 */
-	public String agentMonthlyReport(){
+	public String agentMonthlyReport() {
 		Users user = (Users) this.getHttpSession().getAttribute(Constants.SESSION_CUSTOMERID);
 		if (user == null || user.getRole().equals("AGENT")) {
 			return ERROR;
 		}
 		try {
-			String result = AxisUtil.getObjectOne(AxisUtil.getClient(AxisUtil.PUBLICWEBSERVICEURL + "UserWebService", false), 
-					AxisUtil.NAMESPACE, "getAgentMonthlyReport", new Object[] {user.getLoginname()}, String.class);
+			String result = AxisUtil.getObjectOne(
+					AxisUtil.getClient(AxisUtil.PUBLICWEBSERVICEURL + "UserWebService", false), AxisUtil.NAMESPACE,
+					"getAgentMonthlyReport", new Object[] { user.getLoginname() }, String.class);
 			Gson gson = new Gson();
-			HashMap<String, String> valmap = gson.fromJson(result, new TypeToken<HashMap<String, String>>(){}.getType());
+			HashMap<String, String> valmap = gson.fromJson(result, new TypeToken<HashMap<String, String>>() {
+			}.getType());
 			getRequest().setAttribute("report", valmap);
 		} catch (Exception e) {
 			log.error("agentMonthlyReport : ", e);
-		} finally{
-			
+		} finally {
+
 		}
 		return SUCCESS;
 	}
-	
+
 	/*
-	public String gamePtPlay() {
-		try {
-			Users user = (Users) this.getHttpSession().getAttribute(Constants.SESSION_CUSTOMERID);
-			// 登录成功过后才能登录游戏
-			if (user == null) {
-				return ERROR;
-			}
-			// 代理不能登录邮箱
-			if (user.getRole().equals("AGENT")) {
-				return ERROR;
-			}
-			if (user != null && gameCode != null && !"".equals(gameCode)) {
-				String loginString = SkyUtils.loginSkyGame(user.getId());
-				JSONObject jsonObj = JSONObject.fromObject(loginString);
-				try {
-					if (jsonObj.containsKey("error")) {
-						Integer error = jsonObj.getInt("error");
-						if (error == 1) {
-							agResult = "参数错误";
-						} else if (error == 2) {
-							agResult = "货币错误";
-						} else if (error == 3) {
-							agResult = "token或secret key 有误";
-						} else if (error == 4) {
-							agResult = "jackpot group id错误";
-						} else if (error == 5) {
-							agResult = "会员id错误";
-						} else if (error == 6) {
-							agResult = "用户名不能进入游戏";
-						} else if (error == 7) {
-							agResult = "资金不足";
-						} else if (error == 8) {
-							agResult = "日期错误";
-						}
-					} else if (jsonObj.containsKey("key")) {
-						String key = jsonObj.getString("key");
-						if (key != null && !"".equals(key)) {
-							ptUrl = "http://115.28.78.88/zh-cn1/client/?game=" + gameCode + "&key=" + key;
-						} else {
-							agResult = "获取登录游戏key失败！";
-						}
-					}
-				} catch (Exception e) {
-					agResult = "网络繁忙！请稍后再试！";
-				}
-			} else {
-				agResult = "请选择游戏！";
-			}
-			return SUCCESS;
-		} catch (Exception e) {
-			return ERROR;
-		}
-	}*/
-	
+	 * public String gamePtPlay() { try { Users user = (Users)
+	 * this.getHttpSession().getAttribute(Constants.SESSION_CUSTOMERID); //
+	 * 登录成功过后才能登录游戏 if (user == null) { return ERROR; } // 代理不能登录邮箱 if
+	 * (user.getRole().equals("AGENT")) { return ERROR; } if (user != null &&
+	 * gameCode != null && !"".equals(gameCode)) { String loginString =
+	 * SkyUtils.loginSkyGame(user.getId()); JSONObject jsonObj =
+	 * JSONObject.fromObject(loginString); try { if
+	 * (jsonObj.containsKey("error")) { Integer error = jsonObj.getInt("error");
+	 * if (error == 1) { agResult = "参数错误"; } else if (error == 2) { agResult =
+	 * "货币错误"; } else if (error == 3) { agResult = "token或secret key 有误"; } else
+	 * if (error == 4) { agResult = "jackpot group id错误"; } else if (error == 5)
+	 * { agResult = "会员id错误"; } else if (error == 6) { agResult = "用户名不能进入游戏"; }
+	 * else if (error == 7) { agResult = "资金不足"; } else if (error == 8) {
+	 * agResult = "日期错误"; } } else if (jsonObj.containsKey("key")) { String key
+	 * = jsonObj.getString("key"); if (key != null && !"".equals(key)) { ptUrl =
+	 * "http://115.28.78.88/zh-cn1/client/?game=" + gameCode + "&key=" + key; }
+	 * else { agResult = "获取登录游戏key失败！"; } } } catch (Exception e) { agResult =
+	 * "网络繁忙！请稍后再试！"; } } else { agResult = "请选择游戏！"; } return SUCCESS; } catch
+	 * (Exception e) { return ERROR; } }
+	 */
+
 	/**
 	 * 登录游戏验证
 	 * 
@@ -735,7 +759,7 @@ public class BaseAction extends SubActionSupport {
 			return ERROR;
 		}
 	}
-	
+
 	public String gameNTwoAppRedirect() {
 		try {
 			Users user = (Users) this.getHttpSession().getAttribute(Constants.SESSION_CUSTOMERID);
@@ -743,14 +767,15 @@ public class BaseAction extends SubActionSupport {
 			if (user != null && !user.getRole().equals("AGENT")) {
 				loginName = user.getLoginname();
 			}
-			gameUrl = AxisUtil.getObjectOne(AxisUtil.getClient(AxisUtil.PUBLICWEBSERVICEURL + "UserWebService", false), AxisUtil.NAMESPACE, "nTwoAppLoginUrl", new Object[] {loginName}, String.class);
+			gameUrl = AxisUtil.getObjectOne(AxisUtil.getClient(AxisUtil.PUBLICWEBSERVICEURL + "UserWebService", false),
+					AxisUtil.NAMESPACE, "nTwoAppLoginUrl", new Object[] { loginName }, String.class);
 			return SUCCESS;
 		} catch (Exception e) {
 			e.printStackTrace();
 			return ERROR;
 		}
 	}
-	
+
 	public String gameNTwoRedirect() {
 		try {
 			Users user = (Users) this.getHttpSession().getAttribute(Constants.SESSION_CUSTOMERID);
@@ -758,16 +783,18 @@ public class BaseAction extends SubActionSupport {
 			if (user != null && !user.getRole().equals("AGENT")) {
 				loginName = user.getLoginname();
 			}
-			gameUrl = AxisUtil.getObjectOne(AxisUtil.getClient(AxisUtil.PUBLICWEBSERVICEURL + "UserWebService", false), AxisUtil.NAMESPACE, "nTwoSingleLoginUrl", new Object[] {loginName}, String.class);
+			gameUrl = AxisUtil.getObjectOne(AxisUtil.getClient(AxisUtil.PUBLICWEBSERVICEURL + "UserWebService", false),
+					AxisUtil.NAMESPACE, "nTwoSingleLoginUrl", new Object[] { loginName }, String.class);
 			return SUCCESS;
 		} catch (Exception e) {
 			e.printStackTrace();
 			return ERROR;
 		}
 	}
-	
+
 	/**
 	 * mg 登入
+	 * 
 	 * @return
 	 */
 	public String gameMGS() {
@@ -779,12 +806,13 @@ public class BaseAction extends SubActionSupport {
 			if (user.getRole().equals("AGENT")) {
 				return "MG";
 			}
-			if(StringUtils.isEmpty(gameCode)){
-				return "MG";
-			}
-			String lobbyUrl = getRequest().getRequestURL().toString().replace(getRequest().getServletPath(), "") + "/slotGame.jsp?showtype=MGS";
-			// 获取游戏链接地址
-			gameUrl = AxisUtil.getObjectOne(AxisUtil.getClient(AxisUtil.PUBLICWEBSERVICEURL + "UserWebService", false), AxisUtil.NAMESPACE, "mgsLogin", new Object[] { user.getLoginname(),user.getPassword(), gameCode,demoMode,Utils.getIpAddr(),this.getHttpSession()}, String.class);
+			String lobbyUrl = getRequest().getRequestURL().toString().replace(getRequest().getServletPath(), "")
+					+ "/slotGame.jsp?showtype=MGS";
+			System.out.print(itemId+appId+demoMode);
+			gameUrl = AxisUtil.getObjectOne(AxisUtil.getClient(AxisUtil.PUBLICWEBSERVICEURL + "UserWebService", false),
+					AxisUtil.NAMESPACE, "mgsLogin", new Object[] { user.getLoginname(), user.getPassword(), itemId,
+							appId, demoMode },
+					String.class);
 			if (gameUrl == null || gameUrl.equals("")) {
 				return "MG";
 			}
@@ -793,9 +821,10 @@ public class BaseAction extends SubActionSupport {
 			return "MG";
 		}
 	}
-	
+
 	/**
 	 * mg 桌面H5游戏登入
+	 * 
 	 * @return
 	 */
 	public String gameMGS4H5Desktop() {
@@ -808,11 +837,14 @@ public class BaseAction extends SubActionSupport {
 			if (user.getRole().equals("AGENT")) {
 				return "MG";
 			}
-			if(StringUtils.isEmpty(gameCode)){
+			if (StringUtils.isEmpty(gameCode)) {
 				return "MG";
 			}
 			// 获取游戏链接地址
-			gameUrl = AxisUtil.getObjectOne(AxisUtil.getClient(AxisUtil.PUBLICWEBSERVICEURL + "UserWebService", false), AxisUtil.NAMESPACE, "mgsH5Login", new Object[] { user.getLoginname(),user.getPassword(), gameCode,demoMode,Utils.getIpAddr(),this.getHttpSession()}, String.class);
+			gameUrl = AxisUtil.getObjectOne(AxisUtil.getClient(AxisUtil.PUBLICWEBSERVICEURL + "UserWebService", false),
+					AxisUtil.NAMESPACE, "mgsH5Login", new Object[] { user.getLoginname(), user.getPassword(), gameCode,
+							demoMode, Utils.getIpAddr(), this.getHttpSession() },
+					String.class);
 			if (gameUrl == null || gameUrl.equals("")) {
 				return "MG";
 			}
@@ -822,22 +854,26 @@ public class BaseAction extends SubActionSupport {
 			return "MG";
 		}
 	}
-	
+
 	/**
 	 * 手机PNG登入
+	 * 
 	 * @return
 	 */
 	public String gamePNGRedirect() {
 		try {
 			Users user = getCustomerFromSession();
-			if (user == null||user.getRole().equals("AGENT")||StringUtils.isEmpty(this.gameCode)) {
+			if (user == null || user.getRole().equals("AGENT") || StringUtils.isEmpty(this.gameCode)) {
 				return ERROR;
 			}
 			int port = this.getRequest().getServerPort();
-			String reloadUrl = this.getRequest().getScheme()+"://"+this.getRequest().getServerName() + ((port == 0 || port == 80 || port == 443)? "":":" + port);
+			String reloadUrl = this.getRequest().getScheme() + "://" + this.getRequest().getServerName()
+					+ ((port == 0 || port == 80 || port == 443) ? "" : ":" + port);
 			// 获取游戏链接地址
-			this.gameUrl = AxisUtil.getObjectOne(AxisUtil.getClient(AxisUtil.PUBLICWEBSERVICEURL + "UserWebService", false), AxisUtil.NAMESPACE, "getPNGMobileUrl", new Object[] { user.getLoginname(), this.gameCode, reloadUrl}, String.class);
-			
+			this.gameUrl = AxisUtil.getObjectOne(
+					AxisUtil.getClient(AxisUtil.PUBLICWEBSERVICEURL + "UserWebService", false), AxisUtil.NAMESPACE,
+					"getPNGMobileUrl", new Object[] { user.getLoginname(), this.gameCode, reloadUrl }, String.class);
+
 			if (StringUtils.isNotBlank(this.gameUrl)) {
 				return SUCCESS;
 			} else {
@@ -848,136 +884,144 @@ public class BaseAction extends SubActionSupport {
 			return ERROR;
 		}
 	}
-	
+
 	public String gamePNGFlash() {
 		try {
-			if(StringUtils.isEmpty(this.gameCode)){
+			if (StringUtils.isEmpty(this.gameCode)) {
 				return ERROR;
 			}
 			Users user = (Users) this.getHttpSession().getAttribute(Constants.SESSION_CUSTOMERID);
 			if (user != null && "AGENT".equals(user.getRole())) {
 				return ERROR;
 			}
-			
-			if("0".equals(this.practice)){//正式
-				if(user == null){
+
+			if ("0".equals(this.practice)) {// 正式
+				if (user == null) {
 					return ERROR;
 				}
 				// 获取游戏链接地址
-				this.gameUrl = AxisUtil.getObjectOne(AxisUtil.getClient(AxisUtil.PUBLICWEBSERVICEURL + "UserWebService", false), AxisUtil.NAMESPACE, "getPNGFlashUrl", new Object[] {user.getLoginname(), gameCode}, String.class);
+				this.gameUrl = AxisUtil.getObjectOne(
+						AxisUtil.getClient(AxisUtil.PUBLICWEBSERVICEURL + "UserWebService", false), AxisUtil.NAMESPACE,
+						"getPNGFlashUrl", new Object[] { user.getLoginname(), gameCode }, String.class);
 				if (StringUtils.isBlank(gameUrl)) {
 					return ERROR;
 				}
 			} else {
-				//试玩
-				this.gameUrl = "https://bsicw.playngonetwork.com/Casino/js?div=pngCasinoGame&practice=1&lang=zh_CN&pid=292&gid=" + this.gameCode + "&width=100%&height=100%";
+				// 试玩
+				this.gameUrl = "https://bsicw.playngonetwork.com/Casino/js?div=pngCasinoGame&practice=1&lang=zh_CN&pid=292&gid="
+						+ this.gameCode + "&width=100%&height=100%";
 			}
-			
+
 			return SUCCESS;
 		} catch (Exception e) {
 			log.error("gamePNGFlash ERROR：", e);
 			return ERROR;
 		}
 	}
-	
-	
-public String gamePNGFlashForTp() {
-		
+
+	public String gamePNGFlashForTp() {
+
 		String rootUrl = "https://bsicw.playngonetwork.com";
-		//String rootUrl = "https://bsistage.playngonetwork.com";
-		
+		// String rootUrl = "https://bsistage.playngonetwork.com";
+
 		try {
-			if(StringUtils.isEmpty(this.gameCode)){
+			if (StringUtils.isEmpty(this.gameCode)) {
 				return ERROR;
 			}
 			Users user = (Users) this.getHttpSession().getAttribute(Constants.SESSION_CUSTOMERID);
 			if (user != null && "AGENT".equals(user.getRole())) {
 				return ERROR;
 			}
-			
-			if("0".equals(this.practice)){//正式
-				if(user == null){
+
+			if ("0".equals(this.practice)) {// 正式
+				if (user == null) {
 					return ERROR;
 				}
 				// 获取游戏链接地址
-				String result =  AxisUtil.getObjectOne(AxisUtil.getClient(AxisUtil.PUBLICWEBSERVICEURL + "UserWebService", false), AxisUtil.NAMESPACE, "getPNGLoadingTicket", new Object[] {user.getLoginname(), gameCode}, String.class);
-				
-				if(StringUtils.isEmpty(result)){
-					//GsonUtil.GsonObject(toResultJson("PNG游戏维护中",null,false));
+				String result = AxisUtil.getObjectOne(
+						AxisUtil.getClient(AxisUtil.PUBLICWEBSERVICEURL + "UserWebService", false), AxisUtil.NAMESPACE,
+						"getPNGLoadingTicket", new Object[] { user.getLoginname(), gameCode }, String.class);
+
+				if (StringUtils.isEmpty(result)) {
+					// GsonUtil.GsonObject(toResultJson("PNG游戏维护中",null,false));
 					log.error("png获取ticket失败");
 					return ERROR;
 				}
-				
+
 				JSONObject resultObj = JSONObject.fromObject(result);
-				
-				if(!StringUtils.equals(resultObj.getString("code"),"10000")){
-					
+
+				if (!StringUtils.equals(resultObj.getString("code"), "10000")) {
+
 					log.error("png获取ticket异常");
 					return ERROR;
 				}
-				
-				
+
 				Map<String, String> dataMap = (Map<String, String>) resultObj.get("data");
-				
-				
-				
-				if(StringUtils.isNotBlank(this.getFromApp())){
-					
+
+				if (StringUtils.isNotBlank(this.getFromApp())) {
+
 					int port = this.getRequest().getServerPort();
-					String reloadUrl = this.getRequest().getScheme()+"://"+this.getRequest().getServerName() + ((port == 0 || port == 80 || port == 443)? "":":" + port);
-					
-					this.gameUrl = rootUrl + "/casino/PlayMobile" + "?pid=365" + "&gid=" + this.gameCode + "&lang=" + "zh_CN" + 
-								"&practice=0&user=" + dataMap.get("ticket") + "&width=100%&height=100%" + "lobby=" + reloadUrl;
-					Map<String,Object> data = new HashMap<String,Object>();
+					String reloadUrl = this.getRequest().getScheme() + "://" + this.getRequest().getServerName()
+							+ ((port == 0 || port == 80 || port == 443) ? "" : ":" + port);
+
+					this.gameUrl = rootUrl + "/casino/PlayMobile" + "?pid=365" + "&gid=" + this.gameCode + "&lang="
+							+ "zh_CN" + "&practice=0&user=" + dataMap.get("ticket") + "&width=100%&height=100%"
+							+ "lobby=" + reloadUrl;
+					Map<String, Object> data = new HashMap<String, Object>();
 					data.put("url", this.gameUrl);
-					GsonUtil.GsonObject(toResultJson("",data,true));
+					GsonUtil.GsonObject(toResultJson("", data, true));
 					return null;
 				}
-				
-				this.gameUrl = rootUrl + "/Casino/js" + "?div=pngCasinoGame&pid=365" + "&gid=" + this.gameCode + "&lang=" + "zh_CN" + "&practice=0&username=" + dataMap.get("ticket") + "&width=100%&height=100%";
-				
+
+				this.gameUrl = rootUrl + "/Casino/js" + "?div=pngCasinoGame&pid=365" + "&gid=" + this.gameCode
+						+ "&lang=" + "zh_CN" + "&practice=0&username=" + dataMap.get("ticket")
+						+ "&width=100%&height=100%";
+
 			} else {
-				//试玩
-				
-				if(StringUtils.isNotBlank(this.getFromApp())){
-					
+				// 试玩
+
+				if (StringUtils.isNotBlank(this.getFromApp())) {
+
 					int port = this.getRequest().getServerPort();
-					String reloadUrl = this.getRequest().getScheme()+"://"+this.getRequest().getServerName() + ((port == 0 || port == 80 || port == 443)? "":":" + port);
-					
-					this.gameUrl = rootUrl + "/casino/PlayMobile" + "?pid=365" + "&gid=" + this.gameCode + "&lang=" + "zh_CN" + 
-								   "&practice=0&&width=100%&height=100%" + "lobby=" + reloadUrl;
-					Map<String,Object> data = new HashMap<String,Object>();
+					String reloadUrl = this.getRequest().getScheme() + "://" + this.getRequest().getServerName()
+							+ ((port == 0 || port == 80 || port == 443) ? "" : ":" + port);
+
+					this.gameUrl = rootUrl + "/casino/PlayMobile" + "?pid=365" + "&gid=" + this.gameCode + "&lang="
+							+ "zh_CN" + "&practice=0&&width=100%&height=100%" + "lobby=" + reloadUrl;
+					Map<String, Object> data = new HashMap<String, Object>();
 					data.put("url", this.gameUrl);
-					GsonUtil.GsonObject(toResultJson("",data,true));
+					GsonUtil.GsonObject(toResultJson("", data, true));
 					return null;
 				}
-				
-			
-				this.gameUrl = rootUrl + "/Casino/js?div=pngCasinoGame&practice=1&lang=zh_CN&pid=365&gid=" + this.gameCode + "&width=100%&height=100%";
+
+				this.gameUrl = rootUrl + "/Casino/js?div=pngCasinoGame&practice=1&lang=zh_CN&pid=365&gid="
+						+ this.gameCode + "&width=100%&height=100%";
 			}
-			
+
 			return SUCCESS;
 		} catch (Exception e) {
 			log.error("gamePNGFlash ERROR：", e);
 			return ERROR;
 		}
-	}	
+	}
 
 	/**
 	 * 
-	 * @param message 訊息
-	 * @param success 成功/失敗
+	 * @param message
+	 *            訊息
+	 * @param success
+	 *            成功/失敗
 	 * @return map
 	 */
-	private Object toResultJson(Object message,Object data,boolean success){
-		Map<String,Object> result = new HashMap<String,Object>();
+	private Object toResultJson(Object message, Object data, boolean success) {
+		Map<String, Object> result = new HashMap<String, Object>();
 		result.put("success", success);
 		result.put("message", message);
 		result.put("data", data);
 		return result;
 	}
-	
-	public String indexGame(){
+
+	public String indexGame() {
 		return SUCCESS;
 	}
 
@@ -1116,7 +1160,7 @@ public String gamePNGFlashForTp() {
 	public void setType(String type) {
 		this.type = type;
 	}
-	
+
 	public String getMobileKind() {
 		return mobileKind;
 	}
@@ -1132,7 +1176,7 @@ public String gamePNGFlashForTp() {
 	public void setActVo(ActivityCalendarVO actVo) {
 		this.actVo = actVo;
 	}
-	
+
 	public String getDemoMode() {
 		return demoMode;
 	}
