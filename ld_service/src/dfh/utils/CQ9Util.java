@@ -139,6 +139,9 @@ public class CQ9Util {
 		if (isApp == true) {
 			isAppOnline = "Y";
 		}
+		if(StringUtil.isEmpty(type)){
+			type = "web";
+		}
 		String userToken = login(accountNo, password);
 		if (StringUtils.isNotBlank(userToken)) {
 			NameValuePair[] value = { new NameValuePair("usertoken", userToken),

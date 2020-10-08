@@ -12,7 +12,7 @@ import com.fasterxml.jackson.databind.type.MapType;
 
 public class NewJsonUtil {
 	 private static final ObjectMapper mapper = new ObjectMapper();
-	    private static final ObjectMapper mapperForHtml = new ObjectMapper();
+	 private static final ObjectMapper mapperForHtml = new ObjectMapper();
 
 	    private NewJsonUtil() {
 	    }

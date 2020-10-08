@@ -1210,6 +1210,18 @@ public class SynchronizedUtil {
 				} else {
 					return str;
 				}
+			} else if (type.equals("sba")) {
+				String str = selfYouHuiService.selfTransferRedRain(loginname, remit,"SBA");
+				if (null == str) {
+					Boolean b = SbSportUtil.transfer(loginname, remit, seqid);
+					if (b == true) {
+						return null;
+					} else {
+						return "系统繁忙，请稍后再试";
+					}
+				} else {
+					return str;
+				}
 			}else {
 				return "暂不支持转入此平台";
 			}

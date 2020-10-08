@@ -7234,7 +7234,7 @@ public class SelfYouHuiServiceImpl implements ISelfYouHuiService {
 	
 
 	/**
-	 * 红包雨转入平台(BG )
+	 * 红包雨转入平台( )
 	 */
 	@Override
 	public String selfTransferRedRain(String loginname, Double remit, String plat) {
@@ -7303,8 +7303,10 @@ public class SelfYouHuiServiceImpl implements ISelfYouHuiService {
 			platform = "bg";
 		} else if (plat.equals("CQ9")) {
 			platform = "cq9";
-		} else if (plat.equals("pg")) {
+		} else if (plat.equals("PG")) {
 			platform = "pg";
+		}else if (plat.equals("SBA")) {
+			platform = "sba";
 		}
 		PreferentialRecord record = new PreferentialRecord(pno, loginname, platform, null, new Date(), 0);
 		proposalService.save(record);

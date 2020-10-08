@@ -2,7 +2,6 @@ package dfh.skydragon.webservice;
 
 import java.io.IOException;
 import java.math.BigInteger;
-import java.math.RoundingMode;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.*;
@@ -17,9 +16,9 @@ import org.apache.axis2.AxisFault;
 import org.apache.commons.httpclient.HttpException;
 import org.apache.commons.lang.StringUtils;
 import org.apache.commons.lang3.RandomStringUtils;
-import org.apache.curator.framework.CuratorFramework;
 import org.apache.curator.framework.recipes.locks.InterProcessMutex;
 import org.apache.log4j.Logger;
+import org.codehaus.jettison.json.JSONException;
 import org.hibernate.HibernateException;
 import org.hibernate.LockMode;
 import org.hibernate.Query;
@@ -33,6 +32,8 @@ import org.hibernate.criterion.Projections;
 import org.hibernate.criterion.Property;
 import org.hibernate.criterion.Restrictions;
 import org.jasypt.util.text.BasicTextEncryptor;
+
+import com.alibaba.fastjson.JSON;
 
 import dfh.action.vo.ActivityCalendarVO;
 import dfh.action.vo.AnnouncementVO;
@@ -54,7 +55,6 @@ import dfh.model.enums.BYKindEnum;
 import dfh.model.enums.ConcertDateType;
 import dfh.model.enums.DXWErrorCode;
 import dfh.model.enums.GameKindEnum;
-import dfh.model.enums.GamePlatform;
 import dfh.model.enums.Goddesses;
 import dfh.model.enums.PayOrderFlagType;
 import dfh.model.enums.ProposalFlagType;
@@ -69,7 +69,6 @@ import dfh.remote.bean.EBetResp;
 import dfh.remote.bean.KenoResponseBean;
 import dfh.remote.bean.LoginValidationBean;
 import dfh.remote.bean.NTwoCheckClientResponseBean;
-import dfh.remote.bean.SportBookLoginValidationBean;
 import dfh.service.interfaces.ActivityCalendarService;
 import dfh.service.interfaces.AgTryGameService;
 import dfh.service.interfaces.AgentService;
@@ -3831,7 +3830,7 @@ public class UserWebServiceWS {
 	public String getSbaGameMoney(String loginname) {
 		log.info("function-->getSbaGameMoney");
 		try {
-			Object output = (loginname != null ? ShaBaUtils.CheckUserBalance(loginname) : null);
+			Object output = (loginname != null ? SbSportUtil.getBalance(loginname) : null);
 			return output == null ? "系统繁忙" : output.toString();
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -3856,13 +3855,20 @@ public class UserWebServiceWS {
 
 	// BBin登录验证
 	public static String bbinCheckOrCreateGameAccount(String loginname) {
-		// return BBinUtils.CheckOrCreateGameAccount(loginname);
+		String jsonResult = BBinUtils.CreateMember(loginname);
+		try {
+			org.codehaus.jettison.json.JSONObject json = new org.codehaus.jettison.json.JSONObject(jsonResult);
+			com.alibaba.fastjson.JSONObject obj = JSON.parseObject(json.getString("data"));
+			String code = obj.getString("Code");
+			return code;
+		} catch (JSONException e) {
+			log.error("BBIN检查会员账号是否重复异常：" + e.getMessage());
+		}
 		return null;
 	}
 
 	// BBin登录验证
 	public static String bbinForwardGame(String loginname) {
-		// return BBinUtils.bbinForwardGame(loginname);
 		return null;
 	}
 
@@ -7638,12 +7644,33 @@ public class UserWebServiceWS {
 		}
 		return CQ9Util.getGameUrl(loginname, password, gameCode, "mobile", true, demoMode);
 	}
+	
+	/**
+	 * cq9 web
+	 * @param loginname
+	 * @param password
+	 * @param gameCode
+	 * @param demoMode
+	 * @return
+	 * @throws HttpException
+	 * @throws IOException
+	 */
+	public String cq9WebLogin(String loginname, String password, String gameCode, String demoMode)
+			throws HttpException, IOException {
+		Const ct = transferService.getConsts("CQ9游戏");
+		if (null == ct || ct.getValue().equals("0")) {
+			return null;
+		}
+		return CQ9Util.getGameUrl(loginname, password, gameCode, "web", false, demoMode);
+	}
+	
 
 	public String pgH5Login(String loginname, String password, String gameCode, String demoMode)
 			throws HttpException, IOException {
 		Boolean mode = true;
 		Const ct = transferService.getConsts("PG游戏");
 		if (demoMode.equals("0")) {
+			// true 试玩  false正式
 			mode = false;
 		}
 		if (null == ct || ct.getValue().equals("0")) {
@@ -7663,7 +7690,7 @@ public class UserWebServiceWS {
 	public Double getPGBalance(String loginname, String password) throws HttpException, IOException {
 		return PGUtil.getBalance(loginname);
 	}
-	
+
 	public Double getBGBalance(String loginname, String password) throws HttpException, IOException {
 		return BGUtil.getBalance(loginname);
 	}
@@ -8153,38 +8180,6 @@ public class UserWebServiceWS {
 		return SlotUtil.getPngLoadingTicket(loginname, gameCode);
 	}
 
-	/**
-	 * 转入PNG
-	 * 
-	 * @param loginname
-	 * @param remit
-	 * @return
-	 */
-	/**
-	 * 获取bbin路径
-	 * 
-	 * @param loginname
-	 * @return
-	 * @throws Exception
-	 */
-	public String bbinLogin(String loginname, String gameKind, String gameCode, String mode) throws Exception {
-		// 控制游戏开关
-		Const ct = transferService.getConsts("BBIN游戏");
-		if (null == ct || ct.getValue().equals("0")) {
-			return ChessUtil.MAINTAIN;
-		}
-		if (StringUtils.isBlank(gameCode)) {
-			return BBinUtils.Login(loginname, gameKind);
-		} else {
-			if ("h5".equals(mode)) {
-				return BBinUtils.ForwardGameH5By5(loginname, gameCode);
-			}
-			if ("flash".equals(mode)) {
-				return BBinUtils.bbinFlashLogin(loginname, gameCode);
-			}
-		}
-		return null;
-	}
 
 	/**
 	 * 获取泛亚竞技游戏url
@@ -8214,23 +8209,71 @@ public class UserWebServiceWS {
 	}
 
 	/**
+	 * 沙巴体育获取连接 mobile
+	 * 
+	 * @param loginname
+	 * @param gameCode
+	 * @return
+	 * @throws Exception
+	 */
+	public String sbSportLogin(String loginname, String type) throws Exception {
+		// 控制游戏开关
+		Const ct = transferService.getConsts("SBA体育");
+		if (null == ct || ct.getValue().equals("0")) {
+			return ChessUtil.MAINTAIN;
+		}
+		Boolean isMobile = false;
+		if (type.equals("mobile")) {
+			isMobile = true;
+		}
+		return SbSportUtil.play(loginname, "", "", isMobile);
+	}
+
+	/**
 	 * 获取bbin路径(web)
 	 * 
 	 * @param loginname
 	 * @return
 	 * @throws Exception
 	 */
-	public String bbinMobiLogin(String loginname, String gameCode) throws Exception {
+	public String bbinLogin(String loginname, String gameCode, String loginType) throws Exception {
 		// 控制游戏开关
 		Const ct = transferService.getConsts("BBIN游戏");
 		if (null == ct || ct.getValue().equals("0")) {
 			return ChessUtil.MAINTAIN;
 		}
-		if (StringUtils.isBlank(gameCode)) {
-			return BBinUtils.PlayGameByH5(loginname);
-		} else {
-			return BBinUtils.ForwardGameH5By5(loginname, gameCode);
+		// 1：網頁版、2：手機網頁版、4：App 9其他
+		int ingress = 4;
+		if(StringUtils.isNotEmpty(loginType)){
+			if(!loginType.equals("h5") && !loginType.equals("app") ){
+				ingress = 1;
+			}
 		}
+		if (StringUtils.isEmpty(gameCode)) {
+			// 体育
+			return BBinUtils.Login(loginname, "ball", Integer.parseInt(loginType));
+		}
+		if(gameCode.equals("fisharea")){
+			//pc 捕鱼登录
+			return BBinUtils.Login(loginname, gameCode, 1);
+		}
+		return BBinUtils.playGame(loginname, Integer.parseInt(gameCode), ingress);
+	}
+	
+	/**
+	 * 获取bbin FISH路径(web)
+	 * 
+	 * @param loginname
+	 * @return
+	 * @throws Exception
+	 */
+	public String bbFishLogin(String loginname, String gameCode) throws Exception {
+		// 控制游戏开关
+		Const ct = transferService.getConsts("BBIN游戏");
+		if (null == ct || ct.getValue().equals("0")) {
+			return ChessUtil.MAINTAIN;
+		}
+		return BBinUtils.playWebFishGame(loginname, Integer.parseInt(gameCode));
 	}
 
 	/**
@@ -8871,7 +8914,10 @@ public class UserWebServiceWS {
 		if (null == ct || ct.getValue().equals("0")) {
 			return SlotUtil.MAINTAIN;
 		}
-		return SlotUtil.getDTFlashGameLogin(users, gameCode, urlLobby, mode, ip);
+		DtVO dtvo = DtUtil.login(users.getLoginname(), users.getPassword());
+		String dtUrl = dtvo.getGameurl() + "/dtGames.aspx?slotKey="+dtvo.getSlotKey()+"&language=zh_CN&gameCode=" + gameCode
+				+ "&isfun=0&type=null";
+		return dtUrl;
 	}
 
 	/**
@@ -8889,7 +8935,7 @@ public class UserWebServiceWS {
 		return SlotUtil.getDTFishGameLogin(users);
 	}
 
-	public String getBgFishGameUrl(String userName, String fishType) {
+	public String getBgGameUrl(String userName, String fishType) {
 		Const ct = null;
 		String gameCode = BYKindEnum.XY_FISH.getCode();
 		String gameType = GameKindEnum.BY.getCode();

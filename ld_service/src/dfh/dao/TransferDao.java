@@ -865,6 +865,8 @@ public class TransferDao extends UniversalDao {
 			target = RemoteConstant.PAGESITEPG;
 		}else if(plat.equals("CQ9")){
 			target = RemoteConstant.PAGESITECQ9;
+		}else if(plat.equals("SBA")){
+			target = RemoteConstant.PAGESITESBA;
 		}
 		if (in.booleanValue()) {		
 			transfer.setSource(RemoteConstant.WEBSITE);

@@ -16097,8 +16097,10 @@ public class TransferServiceImpl extends UniversalServiceImpl implements Transfe
 			platform = "bg";
 		} else if (plat.equals("CQ9")) {
 			platform = "cq9";
-		} else if (plat.equals("pg")) {
+		} else if (plat.equals("PG")) {
 			platform = "pg";
+		}else if (plat.equals("SBA")) {
+			platform = "sba";
 		}
 		// 将之前使用的MG存送优惠，修改为已达到流水要求
 		DetachedCriteria selfDc = DetachedCriteria.forClass(SelfRecord.class);
