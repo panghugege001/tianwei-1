@@ -81,7 +81,7 @@ public class BbinTransferServiceImpl extends BaseService implements IPlatformTra
 		}
 
 		// 获取BBIN账户余额
-		Double remoteCredit = BBinUtils.GetBalance(product, loginName);
+		Double remoteCredit = BBinUtils.GetBalance(loginName);
 
 		if (null == remoteCredit) {
 
@@ -194,7 +194,7 @@ public class BbinTransferServiceImpl extends BaseService implements IPlatformTra
 		}
 
 		// 获取BBIN账户余额
-		Double remoteCredit = BBinUtils.GetBalance(product, loginName);
+		Double remoteCredit = BBinUtils.GetBalance(loginName);
 
 		if (null == remoteCredit) {
 

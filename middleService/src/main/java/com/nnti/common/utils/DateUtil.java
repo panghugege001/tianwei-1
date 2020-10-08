@@ -298,6 +298,12 @@ public class DateUtil {
 		timeStemp = d.getTime();
 		return timeStemp;
 	}
+	
+	public static String fmtyyyyMMdd(Date date) {
+		SimpleDateFormat yyyyMMdd = new SimpleDateFormat("yyyyMMdd");
+		return yyyyMMdd.format(date);
+	}
+	
 	public static void main(String[] args) throws Exception {
 
 //		System.out.println(DateUtil.getYearByFirstDay(2018));

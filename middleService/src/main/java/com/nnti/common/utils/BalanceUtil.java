@@ -116,12 +116,16 @@ public class BalanceUtil {
 			}
 		} else if (Constant.SBA.equalsIgnoreCase(platform)) {
 
-			Boolean b = ShaBaUtil.transferInAccount(product, loginName, giftMoney, referenceId);
-
-			if (!b) {
-
+			Boolean b;
+			try {
+				b = SbSportUtil.transfer(loginName, giftMoney, referenceId);
+				if (!b) {
+					msg = "转入" + Constant.SBA + "账户出现错误，请稍后重试！";
+				}
+			} catch (Exception e) {
 				msg = "转入" + Constant.SBA + "账户出现错误，请稍后重试！";
 			}
+
 		} else if (Constant.MWG.equalsIgnoreCase(platform)) {
 
 			Boolean b = MWGUtils.transferInAccount(product, loginName, giftMoney, referenceId);
@@ -172,7 +176,7 @@ public class BalanceUtil {
 			}
 		} else if (Constant.BBIN.equalsIgnoreCase(platform)) {
 
-			Boolean b = BBinUtils.transferToBbin(product, loginName, giftMoney, referenceId);
+			Boolean b = BBinUtils.transferToBbin(loginName, giftMoney, referenceId);
 
 			if (!b) {
 
@@ -255,7 +259,7 @@ public class BalanceUtil {
 
 				msg = Constant.PG + "账户转出出现错误，请稍后重试！";
 			}
-		}else if (Constant.BG.equalsIgnoreCase(platform)) {
+		} else if (Constant.BG.equalsIgnoreCase(platform)) {
 
 			String result = BGUtil.transfer(loginName, -Math.abs(giftMoney));
 
@@ -297,12 +301,16 @@ public class BalanceUtil {
 			}
 		} else if (Constant.SBA.equalsIgnoreCase(platform)) {
 
-			Boolean b = ShaBaUtil.transferOutAccount(product, loginName, giftMoney, referenceId);
-
-			if (!b) {
-
+			Boolean b;
+			try {
+				b = SbSportUtil.transfer(loginName, -giftMoney, referenceId);
+				if (!b) {
+					msg = Constant.SBA + "账户转出出现错误，请稍后重试！";
+				}
+			} catch (Exception e) {
 				msg = Constant.SBA + "账户转出出现错误，请稍后重试！";
 			}
+
 		} else if (Constant.MWG.equalsIgnoreCase(platform)) {
 
 			Boolean b = MWGUtils.transferOutAccount(product, loginName, giftMoney, referenceId);
@@ -353,7 +361,7 @@ public class BalanceUtil {
 			}
 		} else if (Constant.BBIN.equalsIgnoreCase(platform)) {
 
-			Boolean b = BBinUtils.transferFromBbin(product, loginName, giftMoney, referenceId);
+			Boolean b = BBinUtils.transferFromBbin(loginName, giftMoney, referenceId);
 
 			if (!b) {
 

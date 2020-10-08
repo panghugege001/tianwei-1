@@ -5,7 +5,6 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 import org.apache.commons.lang3.StringUtils;
-//import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -26,7 +25,7 @@ import com.nnti.common.service.interfaces.IUserService;
 import com.nnti.common.utils.BalanceUtil;
 import com.nnti.common.utils.DateUtil;
 import com.nnti.common.utils.NumericUtil;
-import com.nnti.common.utils.ShaBaUtil;
+import com.nnti.common.utils.SbSportUtil;
 import com.nnti.personal.model.dto.AccountTransferDTO;
 import com.nnti.personal.model.dto.SelfExperienceDTO;
 import com.nnti.personal.service.interfaces.IPlatformTransferService;
@@ -82,7 +81,7 @@ public class ShaBaTransferServiceImpl extends BaseService implements IPlatformTr
 		}
 
 		// 获取SBA账户余额
-		Double remoteCredit = ShaBaUtil.getUserBalance(product, loginName);
+		Double remoteCredit = SbSportUtil.getBalance(loginName);
 
 		if (null == remoteCredit) {
 
@@ -202,7 +201,7 @@ public class ShaBaTransferServiceImpl extends BaseService implements IPlatformTr
 		}
 
 		// 获取SBA账户余额
-		Double remoteCredit = ShaBaUtil.getUserBalance(product, loginName);
+		Double remoteCredit = SbSportUtil.getBalance(loginName);
 
 		if (null == remoteCredit) {
 
