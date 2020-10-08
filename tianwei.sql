@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50730
 File Encoding         : 65001
 
-Date: 2020-09-28 00:41:12
+Date: 2020-10-09 05:13:03
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -84,7 +84,7 @@ CREATE TABLE `actionlogs` (
   KEY `loginname` (`loginname`) USING BTREE,
   KEY `action` (`action`) USING BTREE,
   KEY `createtime` (`createtime`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=6706914 DEFAULT CHARSET=utf8 COMMENT='InnoDB free: 11264 kB';
+) ENGINE=InnoDB AUTO_INCREMENT=6707006 DEFAULT CHARSET=utf8 COMMENT='InnoDB free: 11264 kB';
 
 -- ----------------------------
 -- Records of actionlogs
@@ -303,6 +303,98 @@ INSERT INTO `actionlogs` VALUES ('6706910', 'kavin998', 'LOGIN', '2020-09-27 21:
 INSERT INTO `actionlogs` VALUES ('6706911', 'kavin998', 'WRONG_PWD', '2020-09-27 23:31:27', '0:0:0:0:0:0:0:1');
 INSERT INTO `actionlogs` VALUES ('6706912', 'kavin998', 'LOGIN', '2020-09-27 23:31:34', 'ip:0:0:0:0:0:0:0:1;最后登录地址：;客户操作系统：Macintosh');
 INSERT INTO `actionlogs` VALUES ('6706913', 'kavin998', 'LOGIN', '2020-09-28 00:07:27', 'ip:0:0:0:0:0:0:0:1;最后登录地址：;客户操作系统：Macintosh');
+INSERT INTO `actionlogs` VALUES ('6706914', 'kavin998', 'LOGIN', '2020-09-29 13:20:57', 'ip:0:0:0:0:0:0:0:1;最后登录地址：;客户操作系统：Linux');
+INSERT INTO `actionlogs` VALUES ('6706915', 'kavin998', 'LOGIN', '2020-09-29 16:28:56', 'ip:0:0:0:0:0:0:0:1;最后登录地址：;客户操作系统：Linux');
+INSERT INTO `actionlogs` VALUES ('6706916', 'kavin998', 'LOGIN', '2020-09-29 16:50:54', 'ip:0:0:0:0:0:0:0:1;最后登录地址：;客户操作系统：Macintosh');
+INSERT INTO `actionlogs` VALUES ('6706917', 'kavin998', 'LOGIN', '2020-09-29 19:20:17', 'ip:0:0:0:0:0:0:0:1;最后登录地址：;客户操作系统：Macintosh');
+INSERT INTO `actionlogs` VALUES ('6706918', 'kavin998', 'LOGIN', '2020-09-29 19:23:59', 'ip:0:0:0:0:0:0:0:1;最后登录地址：;客户操作系统：Macintosh');
+INSERT INTO `actionlogs` VALUES ('6706919', 'kavin998', 'LOGIN', '2020-09-29 22:25:13', 'ip:0:0:0:0:0:0:0:1;最后登录地址：;客户操作系统：Macintosh');
+INSERT INTO `actionlogs` VALUES ('6706920', 'kavin998', 'LOGIN', '2020-09-29 23:59:46', 'ip:0:0:0:0:0:0:0:1;最后登录地址：;客户操作系统：Macintosh');
+INSERT INTO `actionlogs` VALUES ('6706921', 'kavin998', 'LOGIN', '2020-09-30 00:42:53', 'ip:0:0:0:0:0:0:0:1;最后登录地址：;客户操作系统：Macintosh');
+INSERT INTO `actionlogs` VALUES ('6706922', 'kavin998', 'LOGIN', '2020-09-30 00:48:52', 'ip:0:0:0:0:0:0:0:1;最后登录地址：;客户操作系统：Macintosh');
+INSERT INTO `actionlogs` VALUES ('6706923', 'kavin998', 'LOGIN', '2020-10-01 14:02:07', 'ip:0:0:0:0:0:0:0:1;最后登录地址：;客户操作系统：Macintosh');
+INSERT INTO `actionlogs` VALUES ('6706924', 'kavin998', 'LOGIN', '2020-10-01 15:25:41', 'ip:0:0:0:0:0:0:0:1;最后登录地址：;客户操作系统：Macintosh');
+INSERT INTO `actionlogs` VALUES ('6706925', 'kavin998', 'LOGIN', '2020-10-01 16:31:31', 'ip:0:0:0:0:0:0:0:1;最后登录地址：;客户操作系统：Macintosh');
+INSERT INTO `actionlogs` VALUES ('6706926', 'kavin998', 'LOGIN', '2020-10-01 20:24:05', 'ip:0:0:0:0:0:0:0:1;最后登录地址：;客户操作系统：Macintosh');
+INSERT INTO `actionlogs` VALUES ('6706927', 'kavin998', 'LOGIN', '2020-10-02 15:34:02', 'ip:0:0:0:0:0:0:0:1;最后登录地址：;客户操作系统：Macintosh');
+INSERT INTO `actionlogs` VALUES ('6706928', 'kavin998', 'LOGIN', '2020-10-02 23:15:14', 'ip:0:0:0:0:0:0:0:1;最后登录地址：;客户操作系统：Macintosh');
+INSERT INTO `actionlogs` VALUES ('6706929', 'kavin998', 'LOGIN', '2020-10-02 23:29:15', 'ip:0:0:0:0:0:0:0:1;最后登录地址：;客户操作系统：Macintosh');
+INSERT INTO `actionlogs` VALUES ('6706930', 'kavin998', 'LOGIN', '2020-10-02 23:48:02', 'ip:0:0:0:0:0:0:0:1;最后登录地址：;客户操作系统：Macintosh');
+INSERT INTO `actionlogs` VALUES ('6706931', 'kavin998', 'LOGIN', '2020-10-02 23:50:58', 'ip:0:0:0:0:0:0:0:1;最后登录地址：;客户操作系统：Macintosh');
+INSERT INTO `actionlogs` VALUES ('6706932', 'kavin998', 'LOGIN', '2020-10-02 23:53:56', 'ip:0:0:0:0:0:0:0:1;最后登录地址：;客户操作系统：Macintosh');
+INSERT INTO `actionlogs` VALUES ('6706933', 'kavin998', 'LOGIN', '2020-10-02 23:56:48', 'ip:0:0:0:0:0:0:0:1;最后登录地址：;客户操作系统：Macintosh');
+INSERT INTO `actionlogs` VALUES ('6706934', 'kavin998', 'LOGIN', '2020-10-03 00:27:52', 'ip:0:0:0:0:0:0:0:1;最后登录地址：;客户操作系统：Macintosh');
+INSERT INTO `actionlogs` VALUES ('6706935', 'kavin998', 'LOGIN', '2020-10-03 13:25:20', 'ip:0:0:0:0:0:0:0:1;最后登录地址：;客户操作系统：Macintosh');
+INSERT INTO `actionlogs` VALUES ('6706936', 'kavin998', 'LOGIN', '2020-10-03 13:35:59', 'ip:0:0:0:0:0:0:0:1;最后登录地址：;客户操作系统：Macintosh');
+INSERT INTO `actionlogs` VALUES ('6706937', 'kavin998', 'LOGIN', '2020-10-03 14:50:20', 'ip:0:0:0:0:0:0:0:1;最后登录地址：;客户操作系统：Macintosh');
+INSERT INTO `actionlogs` VALUES ('6706938', 'kavin998', 'LOGIN', '2020-10-03 14:59:11', 'ip:0:0:0:0:0:0:0:1;最后登录地址：;客户操作系统：Macintosh');
+INSERT INTO `actionlogs` VALUES ('6706939', 'kavin998', 'LOGIN', '2020-10-03 16:25:59', 'ip:0:0:0:0:0:0:0:1;最后登录地址：;客户操作系统：Macintosh');
+INSERT INTO `actionlogs` VALUES ('6706940', 'kavin998', 'LOGIN', '2020-10-03 16:44:44', 'ip:0:0:0:0:0:0:0:1;最后登录地址：;客户操作系统：Macintosh');
+INSERT INTO `actionlogs` VALUES ('6706941', 'kavin998', 'LOGIN', '2020-10-03 19:48:50', 'ip:0:0:0:0:0:0:0:1;最后登录地址：;客户操作系统：Macintosh');
+INSERT INTO `actionlogs` VALUES ('6706942', 'austin998', 'LOGIN', '2020-10-03 20:35:05', 'ip:0:0:0:0:0:0:0:1;最后登录地址：;客户操作系统：Macintosh');
+INSERT INTO `actionlogs` VALUES ('6706943', 'kavin998', 'LOGIN', '2020-10-04 18:48:44', 'ip:0:0:0:0:0:0:0:1;最后登录地址：;客户操作系统：Macintosh');
+INSERT INTO `actionlogs` VALUES ('6706944', 'austin998', 'LOGIN', '2020-10-04 18:50:27', 'ip:0:0:0:0:0:0:0:1;最后登录地址：;客户操作系统：Macintosh');
+INSERT INTO `actionlogs` VALUES ('6706945', 'kavin998', 'LOGIN', '2020-10-05 00:45:34', 'ip:0:0:0:0:0:0:0:1;最后登录地址：;客户操作系统：Linux');
+INSERT INTO `actionlogs` VALUES ('6706946', 'kavin998', 'LOGIN', '2020-10-05 12:19:12', 'ip:0:0:0:0:0:0:0:1;最后登录地址：;客户操作系统：Linux');
+INSERT INTO `actionlogs` VALUES ('6706947', 'austin998', 'LOGIN', '2020-10-05 13:23:29', 'ip:0:0:0:0:0:0:0:1;最后登录地址：;客户操作系统：Linux');
+INSERT INTO `actionlogs` VALUES ('6706948', 'kavin998', 'LOGIN', '2020-10-05 13:38:12', 'ip:0:0:0:0:0:0:0:1;最后登录地址：;客户操作系统：Linux');
+INSERT INTO `actionlogs` VALUES ('6706949', 'austin998', 'LOGIN', '2020-10-05 13:44:07', 'ip:0:0:0:0:0:0:0:1;最后登录地址：;客户操作系统：Linux');
+INSERT INTO `actionlogs` VALUES ('6706950', 'kavin998', 'LOGIN', '2020-10-05 15:30:58', 'ip:0:0:0:0:0:0:0:1;最后登录地址：;客户操作系统：Linux');
+INSERT INTO `actionlogs` VALUES ('6706951', 'kavin998', 'LOGIN', '2020-10-05 23:13:34', 'ip:0:0:0:0:0:0:0:1;最后登录地址：;客户操作系统：Linux');
+INSERT INTO `actionlogs` VALUES ('6706952', 'kavin998', 'LOGIN', '2020-10-06 12:47:26', 'ip:0:0:0:0:0:0:0:1;最后登录地址：;客户操作系统：未知');
+INSERT INTO `actionlogs` VALUES ('6706953', 'kavin998', 'LOGIN', '2020-10-06 16:27:57', 'ip:0:0:0:0:0:0:0:1;最后登录地址：;客户操作系统：未知');
+INSERT INTO `actionlogs` VALUES ('6706954', 'kavin998', 'LOGIN', '2020-10-06 16:53:11', 'ip:0:0:0:0:0:0:0:1;最后登录地址：;客户操作系统：未知');
+INSERT INTO `actionlogs` VALUES ('6706955', 'kavin998', 'LOGIN', '2020-10-06 17:02:05', 'ip:0:0:0:0:0:0:0:1;最后登录地址：;客户操作系统：未知');
+INSERT INTO `actionlogs` VALUES ('6706956', 'austin998', 'LOGIN', '2020-10-06 17:03:02', 'ip:0:0:0:0:0:0:0:1;最后登录地址：;客户操作系统：未知');
+INSERT INTO `actionlogs` VALUES ('6706957', 'kavin998', 'LOGIN', '2020-10-06 17:22:54', 'ip:0:0:0:0:0:0:0:1;最后登录地址：;客户操作系统：未知');
+INSERT INTO `actionlogs` VALUES ('6706958', 'austin998', 'LOGIN', '2020-10-06 18:04:56', 'ip:0:0:0:0:0:0:0:1;最后登录地址：;客户操作系统：未知');
+INSERT INTO `actionlogs` VALUES ('6706959', 'kavin998', 'LOGIN', '2020-10-06 18:45:19', 'ip:0:0:0:0:0:0:0:1;最后登录地址：;客户操作系统：未知');
+INSERT INTO `actionlogs` VALUES ('6706960', 'kavin998', 'LOGIN', '2020-10-06 19:45:42', 'ip:0:0:0:0:0:0:0:1;最后登录地址：;客户操作系统：未知');
+INSERT INTO `actionlogs` VALUES ('6706961', 'kavin998', 'LOGIN', '2020-10-06 21:46:01', 'ip:0:0:0:0:0:0:0:1;最后登录地址：;客户操作系统：未知');
+INSERT INTO `actionlogs` VALUES ('6706962', 'kavin998', 'LOGIN', '2020-10-06 22:10:03', 'ip:0:0:0:0:0:0:0:1;最后登录地址：;客户操作系统：未知');
+INSERT INTO `actionlogs` VALUES ('6706963', 'kavin998', 'LOGIN', '2020-10-06 22:23:11', 'ip:0:0:0:0:0:0:0:1;最后登录地址：;客户操作系统：未知');
+INSERT INTO `actionlogs` VALUES ('6706964', 'kavin998', 'LOGIN', '2020-10-06 22:30:29', 'ip:0:0:0:0:0:0:0:1;最后登录地址：;客户操作系统：未知');
+INSERT INTO `actionlogs` VALUES ('6706965', 'kavin998', 'LOGIN', '2020-10-06 22:33:53', 'ip:0:0:0:0:0:0:0:1;最后登录地址：;客户操作系统：未知');
+INSERT INTO `actionlogs` VALUES ('6706966', 'kavin998', 'LOGIN', '2020-10-06 22:42:53', 'ip:0:0:0:0:0:0:0:1;最后登录地址：;客户操作系统：未知');
+INSERT INTO `actionlogs` VALUES ('6706967', 'kavin998', 'LOGIN', '2020-10-06 22:47:34', 'ip:0:0:0:0:0:0:0:1;最后登录地址：;客户操作系统：未知');
+INSERT INTO `actionlogs` VALUES ('6706968', 'kavin998', 'LOGIN', '2020-10-06 22:51:16', 'ip:0:0:0:0:0:0:0:1;最后登录地址：;客户操作系统：未知');
+INSERT INTO `actionlogs` VALUES ('6706969', 'kavin998', 'LOGIN', '2020-10-06 22:59:26', 'ip:0:0:0:0:0:0:0:1;最后登录地址：;客户操作系统：未知');
+INSERT INTO `actionlogs` VALUES ('6706970', 'kavin998', 'LOGIN', '2020-10-07 01:04:25', 'ip:0:0:0:0:0:0:0:1;最后登录地址：;客户操作系统：未知');
+INSERT INTO `actionlogs` VALUES ('6706971', 'austin998', 'LOGIN', '2020-10-07 01:15:12', 'ip:0:0:0:0:0:0:0:1;最后登录地址：;客户操作系统：未知');
+INSERT INTO `actionlogs` VALUES ('6706972', 'kavin998', 'LOGIN', '2020-10-07 10:41:34', 'ip:0:0:0:0:0:0:0:1;最后登录地址：;客户操作系统：未知');
+INSERT INTO `actionlogs` VALUES ('6706973', 'austin998', 'LOGIN', '2020-10-07 10:42:02', 'ip:0:0:0:0:0:0:0:1;最后登录地址：;客户操作系统：未知');
+INSERT INTO `actionlogs` VALUES ('6706974', 'austin998', 'LOGIN', '2020-10-07 15:08:45', 'ip:0:0:0:0:0:0:0:1;最后登录地址：;客户操作系统：未知');
+INSERT INTO `actionlogs` VALUES ('6706975', 'austin998', 'LOGIN', '2020-10-07 16:15:04', 'ip:0:0:0:0:0:0:0:1;最后登录地址：;客户操作系统：未知');
+INSERT INTO `actionlogs` VALUES ('6706976', 'austin998', 'LOGIN', '2020-10-07 16:41:12', 'ip:0:0:0:0:0:0:0:1;最后登录地址：;客户操作系统：未知');
+INSERT INTO `actionlogs` VALUES ('6706977', 'austin998', 'LOGIN', '2020-10-07 17:24:57', 'ip:0:0:0:0:0:0:0:1;最后登录地址：;客户操作系统：未知');
+INSERT INTO `actionlogs` VALUES ('6706978', 'kavin998', 'LOGIN', '2020-10-07 17:29:19', 'ip:0:0:0:0:0:0:0:1;最后登录地址：;客户操作系统：未知');
+INSERT INTO `actionlogs` VALUES ('6706979', 'austin998', 'LOGIN', '2020-10-07 17:29:38', 'ip:0:0:0:0:0:0:0:1;最后登录地址：;客户操作系统：未知');
+INSERT INTO `actionlogs` VALUES ('6706980', 'austin998', 'LOGIN', '2020-10-07 17:36:20', 'ip:0:0:0:0:0:0:0:1;最后登录地址：;客户操作系统：未知');
+INSERT INTO `actionlogs` VALUES ('6706981', 'austin998', 'LOGIN', '2020-10-07 17:36:50', 'ip:0:0:0:0:0:0:0:1;最后登录地址：;客户操作系统：未知');
+INSERT INTO `actionlogs` VALUES ('6706982', 'austin998', 'LOGIN', '2020-10-07 17:40:32', 'ip:0:0:0:0:0:0:0:1;最后登录地址：;客户操作系统：未知');
+INSERT INTO `actionlogs` VALUES ('6706983', 'kavin998', 'LOGIN', '2020-10-07 17:43:51', 'ip:0:0:0:0:0:0:0:1;最后登录地址：;客户操作系统：未知');
+INSERT INTO `actionlogs` VALUES ('6706984', 'austin998', 'LOGIN', '2020-10-08 01:52:56', 'ip:0:0:0:0:0:0:0:1;最后登录地址：;客户操作系统：未知');
+INSERT INTO `actionlogs` VALUES ('6706985', 'austin998', 'LOGIN', '2020-10-08 01:57:44', 'ip:0:0:0:0:0:0:0:1;最后登录地址：;客户操作系统：未知');
+INSERT INTO `actionlogs` VALUES ('6706986', 'austin998', 'LOGIN', '2020-10-08 02:16:47', 'ip:0:0:0:0:0:0:0:1;最后登录地址：;客户操作系统：未知');
+INSERT INTO `actionlogs` VALUES ('6706987', 'austin998', 'LOGIN', '2020-10-08 02:19:33', 'ip:0:0:0:0:0:0:0:1;最后登录地址：;客户操作系统：未知');
+INSERT INTO `actionlogs` VALUES ('6706988', 'austin998', 'LOGIN', '2020-10-08 13:03:03', 'ip:0:0:0:0:0:0:0:1;最后登录地址：;客户操作系统：未知');
+INSERT INTO `actionlogs` VALUES ('6706989', 'austin998', 'LOGIN', '2020-10-08 14:19:55', 'ip:0:0:0:0:0:0:0:1;最后登录地址：;客户操作系统：未知');
+INSERT INTO `actionlogs` VALUES ('6706990', 'austin998', 'LOGIN', '2020-10-08 15:16:14', 'ip:0:0:0:0:0:0:0:1;最后登录地址：;客户操作系统：未知');
+INSERT INTO `actionlogs` VALUES ('6706991', 'austin998', 'LOGIN', '2020-10-08 16:36:59', 'ip:0:0:0:0:0:0:0:1;最后登录地址：;客户操作系统：未知');
+INSERT INTO `actionlogs` VALUES ('6706992', 'austin998', 'LOGIN', '2020-10-08 18:10:28', 'ip:0:0:0:0:0:0:0:1;最后登录地址：;客户操作系统：未知');
+INSERT INTO `actionlogs` VALUES ('6706993', 'austin998', 'LOGIN', '2020-10-08 19:27:44', 'ip:0:0:0:0:0:0:0:1;最后登录地址：;客户操作系统：未知');
+INSERT INTO `actionlogs` VALUES ('6706994', 'kavin998', 'LOGIN', '2020-10-08 19:44:10', 'ip:0:0:0:0:0:0:0:1;最后登录地址：;客户操作系统：未知');
+INSERT INTO `actionlogs` VALUES ('6706995', 'austin998', 'LOGIN', '2020-10-08 19:44:55', 'ip:0:0:0:0:0:0:0:1;最后登录地址：;客户操作系统：未知');
+INSERT INTO `actionlogs` VALUES ('6706996', 'austin998', 'LOGIN', '2020-10-08 19:48:53', 'ip:0:0:0:0:0:0:0:1;最后登录地址：;客户操作系统：未知');
+INSERT INTO `actionlogs` VALUES ('6706997', 'austin998', 'LOGIN', '2020-10-08 19:55:31', 'ip:0:0:0:0:0:0:0:1;最后登录地址：;客户操作系统：未知');
+INSERT INTO `actionlogs` VALUES ('6706998', 'austin998', 'LOGIN', '2020-10-09 00:54:20', 'ip:0:0:0:0:0:0:0:1;最后登录地址：;客户操作系统：Linux');
+INSERT INTO `actionlogs` VALUES ('6706999', 'austin998', 'LOGIN', '2020-10-09 02:16:51', 'ip:0:0:0:0:0:0:0:1;最后登录地址：;客户操作系统：Linux');
+INSERT INTO `actionlogs` VALUES ('6707000', 'austin998', 'LOGIN', '2020-10-09 02:25:43', 'ip:0:0:0:0:0:0:0:1;最后登录地址：;客户操作系统：Linux');
+INSERT INTO `actionlogs` VALUES ('6707001', 'austin998', 'LOGIN', '2020-10-09 03:57:10', 'ip:0:0:0:0:0:0:0:1;最后登录地址：;客户操作系统：未知');
+INSERT INTO `actionlogs` VALUES ('6707002', 'austin998', 'LOGIN', '2020-10-09 04:04:32', 'ip:0:0:0:0:0:0:0:1;最后登录地址：;客户操作系统：未知');
+INSERT INTO `actionlogs` VALUES ('6707003', 'kavin998', 'LOGIN', '2020-10-09 04:21:19', 'ip:0:0:0:0:0:0:0:1;最后登录地址：;客户操作系统：未知');
+INSERT INTO `actionlogs` VALUES ('6707004', 'austin998', 'LOGIN', '2020-10-09 04:21:43', 'ip:0:0:0:0:0:0:0:1;最后登录地址：;客户操作系统：未知');
+INSERT INTO `actionlogs` VALUES ('6707005', 'kavin998', 'LOGIN', '2020-10-09 05:04:58', 'ip:0:0:0:0:0:0:0:1;最后登录地址：;客户操作系统：未知');
 
 -- ----------------------------
 -- Table structure for `activity`
@@ -321,7 +413,7 @@ CREATE TABLE `activity` (
   `userrole` varchar(50) DEFAULT NULL,
   `remark` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=35 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=50 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of activity
@@ -349,6 +441,21 @@ INSERT INTO `activity` VALUES ('31', '红包雨活动', null, null, null, null, 
 INSERT INTO `activity` VALUES ('32', '红包雨活动', null, null, null, null, null, '2020-09-27 13:37:34', null, 'kavin998', '红包雨余额转入CQ9 54.0->43.0');
 INSERT INTO `activity` VALUES ('33', '红包雨活动', null, null, null, null, null, '2020-09-27 14:00:24', null, 'kavin998', '红包雨余额转入PG 43.0->32.0');
 INSERT INTO `activity` VALUES ('34', '红包雨活动', null, null, null, null, null, '2020-09-27 14:02:34', null, 'kavin998', '红包雨余额转入PG 32.0->12.0');
+INSERT INTO `activity` VALUES ('35', '红包雨活动', null, null, null, null, null, '2020-09-30 00:43:20', null, 'kavin998', '主账户转入红包雨账户 12.0->912.0');
+INSERT INTO `activity` VALUES ('36', '红包雨活动', null, null, null, null, null, '2020-09-30 00:43:37', null, 'kavin998', '红包雨余额转入BG912.0->900.0');
+INSERT INTO `activity` VALUES ('37', '红包雨活动', null, null, null, null, null, '2020-09-30 00:44:04', null, 'kavin998', '红包雨余额转入BG900.0->888.0');
+INSERT INTO `activity` VALUES ('38', '红包雨活动', null, null, null, null, null, '2020-09-30 00:45:15', null, 'kavin998', '红包雨余额转入BG888.0->876.0');
+INSERT INTO `activity` VALUES ('39', '红包雨活动', null, null, null, null, null, '2020-09-30 00:49:07', null, 'kavin998', '红包雨余额转入BG876.0->864.0');
+INSERT INTO `activity` VALUES ('40', '红包雨活动', null, null, null, null, null, '2020-10-05 00:46:19', null, 'kavin998', '红包雨余额转入MG 864.0->853.0');
+INSERT INTO `activity` VALUES ('41', '红包雨活动', null, null, null, null, null, '2020-10-05 15:12:37', null, 'austin998', '红包雨余额转入SBA157.0->147.0');
+INSERT INTO `activity` VALUES ('42', '红包雨活动', null, null, null, null, null, '2020-10-05 15:13:37', null, 'austin998', '红包雨余额转入MG 147.0->137.0');
+INSERT INTO `activity` VALUES ('43', '红包雨活动', null, null, null, null, null, '2020-10-05 15:20:59', null, 'austin998', '红包雨余额转入SBA137.0->126.0');
+INSERT INTO `activity` VALUES ('44', '红包雨活动', null, null, null, null, null, '2020-10-05 15:34:10', null, 'kavin998', '红包雨余额转入SBA853.0->842.0');
+INSERT INTO `activity` VALUES ('45', '红包雨活动', null, null, null, null, null, '2020-10-05 15:34:35', null, 'kavin998', '红包雨余额转入SBA842.0->831.0');
+INSERT INTO `activity` VALUES ('46', '红包雨活动', null, null, null, null, null, '2020-10-05 15:38:22', null, 'kavin998', '红包雨余额转入SBA831.0->820.0');
+INSERT INTO `activity` VALUES ('47', '红包雨活动', null, null, null, null, null, '2020-10-05 15:41:41', null, 'kavin998', '红包雨余额转入SBA820.0->670.0');
+INSERT INTO `activity` VALUES ('48', '红包雨活动', null, null, null, null, null, '2020-10-08 18:41:19', null, 'austin998', '主账户转入红包雨账户 126.0->137.0');
+INSERT INTO `activity` VALUES ('49', '红包雨活动', null, null, null, null, null, '2020-10-08 18:41:26', null, 'austin998', '红包雨余额转入QT 137.0->126.0');
 
 -- ----------------------------
 -- Table structure for `activity_calendar`
@@ -938,6 +1045,22 @@ CREATE TABLE `announcement` (
 
 -- ----------------------------
 -- Records of announcement
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `api_call_record`
+-- ----------------------------
+DROP TABLE IF EXISTS `api_call_record`;
+CREATE TABLE `api_call_record` (
+  `version_key` varchar(255) NOT NULL,
+  `frequency` int(11) NOT NULL DEFAULT '0',
+  `createtime` timestamp NULL DEFAULT NULL COMMENT '创建时间',
+  `updatetime` timestamp NULL DEFAULT NULL COMMENT '更新时间',
+  PRIMARY KEY (`version_key`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of api_call_record
 -- ----------------------------
 
 -- ----------------------------
@@ -1794,6 +1917,45 @@ CREATE TABLE `betrecords` (
 -- ----------------------------
 
 -- ----------------------------
+-- Table structure for `bg_data`
+-- ----------------------------
+DROP TABLE IF EXISTS `bg_data`;
+CREATE TABLE `bg_data` (
+  `billNo` varchar(50) NOT NULL COMMENT '游戏平台记录id',
+  `account` varchar(50) DEFAULT NULL COMMENT '会员名称',
+  `gameType` varchar(255) DEFAULT NULL COMMENT '下注游戏类型',
+  `betAmount` double(20,3) DEFAULT '0.000' COMMENT '下注额',
+  `validAmount` double(20,3) DEFAULT '0.000' COMMENT '有效投注额',
+  `winAmount` double(20,3) DEFAULT '0.000' COMMENT '输赢',
+  `betTime` timestamp NULL DEFAULT NULL COMMENT '下注时间',
+  `settle` int(11) DEFAULT '0' COMMENT '-1撒消,0未结算,1已结算',
+  `gameKind` varchar(30) DEFAULT NULL COMMENT '游戏种类',
+  `firstKind` varchar(20) DEFAULT NULL COMMENT '一级分类',
+  `addTime` timestamp NULL DEFAULT NULL COMMENT '时间',
+  `gmtBetTime` timestamp NULL DEFAULT NULL COMMENT '下注时间转北京时间',
+  `statTime` date DEFAULT NULL COMMENT '报表统计时间',
+  `updateTime` timestamp NULL DEFAULT NULL COMMENT '修改时间',
+  `amesTime` timestamp NULL DEFAULT NULL COMMENT '美东时间',
+  `rebateTime` date DEFAULT NULL COMMENT '返水统计时间',
+  `betContent` text COMMENT '投注内容',
+  PRIMARY KEY (`billNo`),
+  UNIQUE KEY `index_bill_no` (`billNo`),
+  KEY `idx_account` (`account`,`gmtBetTime`),
+  KEY `idx_ames_time` (`amesTime`),
+  KEY `idx_bet_time` (`betTime`),
+  KEY `idx_gmt_bet_time` (`gmtBetTime`),
+  KEY `idx_rebate_time` (`rebateTime`,`settle`,`account`,`gameKind`),
+  KEY `idx_stat_time` (`statTime`,`settle`,`account`,`gameKind`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of bg_data
+-- ----------------------------
+INSERT INTO `bg_data` VALUES ('7231989322', 'tw_live_kavin998', '1', '60.000', '0.000', '0.000', '2020-10-01 06:07:32', '1', '下注庄赢', 'LIVE', '2020-10-01 18:15:00', '2020-10-01 18:07:32', '2020-10-01', '2020-10-01 18:15:00', '2020-10-01 06:07:32', '2020-10-01', null);
+INSERT INTO `bg_data` VALUES ('7231992284', 'tw_live_kavin998', '1', '70.000', '70.000', '70.000', '2020-10-01 06:08:36', '1', '下注庄赢', 'LIVE', '2020-10-01 18:15:00', '2020-10-01 18:08:36', '2020-10-01', '2020-10-01 18:15:00', '2020-10-01 06:08:36', '2020-10-01', null);
+INSERT INTO `bg_data` VALUES ('7232003708', 'tw_live_kavin998', '1', '50.000', '47.500', '-47.500', '2020-10-01 06:09:48', '1', '下注庄赢', 'LIVE', '2020-10-01 18:15:00', '2020-10-01 18:09:48', '2020-10-01', '2020-10-01 18:15:00', '2020-10-01 06:09:48', '2020-10-01', null);
+
+-- ----------------------------
 -- Table structure for `businessproposal`
 -- ----------------------------
 DROP TABLE IF EXISTS `businessproposal`;
@@ -2217,6 +2379,7 @@ INSERT INTO `const` VALUES ('761游戏', '1', '');
 INSERT INTO `const` VALUES ('AGIN游戏', '1', null);
 INSERT INTO `const` VALUES ('bbinele', '1', null);
 INSERT INTO `const` VALUES ('BBIN游戏', '1', '');
+INSERT INTO `const` VALUES ('BG视讯', '1', null);
 INSERT INTO `const` VALUES ('cq9', '1', null);
 INSERT INTO `const` VALUES ('CQ9游戏', '1', null);
 INSERT INTO `const` VALUES ('dt', '1', null);
@@ -2230,6 +2393,7 @@ INSERT INTO `const` VALUES ('PNG游戏', '1', '');
 INSERT INTO `const` VALUES ('PT8元自助优惠', '1', null);
 INSERT INTO `const` VALUES ('pttiger', '1', null);
 INSERT INTO `const` VALUES ('qt', '1', null);
+INSERT INTO `const` VALUES ('SBA体育', '1', null);
 INSERT INTO `const` VALUES ('sw', '1', null);
 INSERT INTO `const` VALUES ('SW游戏', '1', null);
 INSERT INTO `const` VALUES ('ttg', '1', null);
@@ -2237,10 +2401,13 @@ INSERT INTO `const` VALUES ('代付', '1', null);
 INSERT INTO `const` VALUES ('体验金周赛', '1', null);
 INSERT INTO `const` VALUES ('体验金短信', '1', null);
 INSERT INTO `const` VALUES ('信付通代付', '1', null);
+INSERT INTO `const` VALUES ('捕鱼大师', '1', null);
 INSERT INTO `const` VALUES ('短信反转验证', '0', null);
 INSERT INTO `const` VALUES ('自助体验金', '1', null);
+INSERT INTO `const` VALUES ('西游捕鱼', '1', null);
 INSERT INTO `const` VALUES ('转账AGIN', '1', null);
 INSERT INTO `const` VALUES ('转账BBIN', '1', null);
+INSERT INTO `const` VALUES ('转账BG', '1', null);
 INSERT INTO `const` VALUES ('转账CHESS', '1', '');
 INSERT INTO `const` VALUES ('转账CQ9', '1', null);
 INSERT INTO `const` VALUES ('转账DT', '1', null);
@@ -2420,7 +2587,7 @@ CREATE TABLE `creditlogs` (
   KEY `type` (`type`) USING BTREE,
   KEY `remit` (`remit`) USING BTREE,
   KEY `remark` (`remark`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=211 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=272 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of creditlogs
@@ -2501,6 +2668,67 @@ INSERT INTO `creditlogs` VALUES ('207', 'kavin998', '2020-09-27 15:20:22', 'TRAN
 INSERT INTO `creditlogs` VALUES ('208', 'kavin998', '2020-09-27 21:02:53', 'TRANSFER_DTIN', '9260.10', '9149.10', '-111.00', 'referenceNo:2509272102535479558;');
 INSERT INTO `creditlogs` VALUES ('209', 'kavin998', '2020-09-27 21:14:40', 'TRANSFER_MGIN', '9149.10', '9137.10', '-12.00', 'referenceNo:2509272114412283971;');
 INSERT INTO `creditlogs` VALUES ('210', 'kavin998', '2020-09-27 21:15:16', 'TRANSFER_MGIN', '9137.10', '9125.10', '-12.00', 'referenceNo:2509272115547640341;');
+INSERT INTO `creditlogs` VALUES ('211', 'kavin998', '2020-09-29 22:41:49', 'TRANSFER_BGIN', '9125.10', '9014.10', '-111.00', 'referenceNo:2509292241500691244;');
+INSERT INTO `creditlogs` VALUES ('212', 'kavin998', '2020-09-29 22:58:44', 'TRANSFER_BGIN', '9014.10', '8902.10', '-112.00', 'referenceNo:2509292258459878076;');
+INSERT INTO `creditlogs` VALUES ('213', 'kavin998', '2020-09-29 23:12:38', 'TRANSFER_BGIN', '8902.10', '8779.10', '-123.00', 'referenceNo:2509292312382544342;');
+INSERT INTO `creditlogs` VALUES ('214', 'kavin998', '2020-09-29 23:15:31', 'TRANSFER_BGIN', '8779.10', '8768.10', '-11.00', 'referenceNo:2509292315315291093;');
+INSERT INTO `creditlogs` VALUES ('215', 'kavin998', '2020-09-29 23:26:37', 'TRANSFER_BGIN', '8768.10', '8657.10', '-111.00', 'referenceNo:2509292327523501228;');
+INSERT INTO `creditlogs` VALUES ('216', 'kavin998', '2020-09-29 23:28:04', 'TRANSFER_BGIN', '8657.10', '8646.10', '-11.00', 'referenceNo:2509292328044872024;');
+INSERT INTO `creditlogs` VALUES ('217', 'kavin998', '2020-09-29 23:30:55', 'TRANSFER_BGIN', '8646.10', '8635.10', '-11.00', 'referenceNo:2509292330566470705;');
+INSERT INTO `creditlogs` VALUES ('218', 'kavin998', '2020-09-29 23:33:05', 'TRANSFER_BGIN', '8635.10', '8633.10', '-2.00', 'referenceNo:2509292333060310819;');
+INSERT INTO `creditlogs` VALUES ('219', 'kavin998', '2020-09-29 23:35:34', 'TRANSFER_BGIN', '8633.10', '8631.10', '-2.00', 'referenceNo:2509292335358151445;');
+INSERT INTO `creditlogs` VALUES ('220', 'kavin998', '2020-09-29 23:36:12', 'TRANSFER_BGIN', '8631.10', '8629.10', '-2.00', 'referenceNo:2509292337365965150;');
+INSERT INTO `creditlogs` VALUES ('221', 'kavin998', '2020-09-29 23:43:34', 'TRANSFER_BGIN', '8629.10', '8627.10', '-2.00', 'referenceNo:2509292343354258566;');
+INSERT INTO `creditlogs` VALUES ('222', 'kavin998', '2020-09-29 23:44:13', 'TRANSFER_BGIN', '8627.10', '8625.10', '-2.00', 'referenceNo:2509292344134712107;');
+INSERT INTO `creditlogs` VALUES ('223', 'kavin998', '2020-09-29 23:54:48', 'TRANSFER_BGIN', '8625.10', '8503.10', '-122.00', 'referenceNo:2509292354497067541;');
+INSERT INTO `creditlogs` VALUES ('224', 'kavin998', '2020-09-29 23:55:32', 'TRANSFER_BGOUT', '8503.10', '8505.10', '2.00', 'referenceNo:2509292355329169314;');
+INSERT INTO `creditlogs` VALUES ('225', 'kavin998', '2020-09-30 00:43:20', 'TRANSFER_REDRAINOUT', '8505.10', '7605.10', '-900.00', 'referenceNo:2509300043199774223;用户主账户转入红包雨账户900.0元');
+INSERT INTO `creditlogs` VALUES ('226', 'kavin998', '2020-09-30 00:43:37', 'TRANSFER_REDRAIN_OUT', '7605.10', '7605.10', '0.00', 'referenceNo:2509300043375888421;红包雨余额转入BG平台,10倍流水，转入12.0');
+INSERT INTO `creditlogs` VALUES ('227', 'kavin998', '2020-09-30 00:44:04', 'TRANSFER_REDRAIN_OUT', '7605.10', '7605.10', '0.00', 'referenceNo:2509300044042767139;红包雨余额转入BG平台,10倍流水，转入12.0');
+INSERT INTO `creditlogs` VALUES ('228', 'kavin998', '2020-09-30 00:45:15', 'TRANSFER_REDRAIN_OUT', '7605.10', '7605.10', '0.00', 'referenceNo:2509300045156775794;红包雨余额转入BG平台,10倍流水，转入12.0');
+INSERT INTO `creditlogs` VALUES ('229', 'kavin998', '2020-09-30 00:49:07', 'TRANSFER_REDRAIN_OUT', '7605.10', '7605.10', '0.00', 'referenceNo:2509300049070071472;红包雨余额转入BG平台,10倍流水，转入12.0');
+INSERT INTO `creditlogs` VALUES ('230', 'kavin998', '2020-10-01 14:05:16', 'TRANSFER_BGIN', '7605.10', '4271.10', '-3334.00', 'referenceNo:2510011405162754712;');
+INSERT INTO `creditlogs` VALUES ('231', 'kavin998', '2020-10-01 14:06:18', 'TRANSFER_BGIN', '4271.10', '4269.10', '-2.00', 'referenceNo:2510011406181995260;');
+INSERT INTO `creditlogs` VALUES ('232', 'kavin998', '2020-10-01 14:06:29', 'TRANSFER_BGIN', '4269.10', '4035.10', '-234.00', 'referenceNo:2510011406289288915;');
+INSERT INTO `creditlogs` VALUES ('233', 'kavin998', '2020-10-01 14:06:39', 'TRANSFER_BGIN', '4035.10', '4000.10', '-35.00', 'referenceNo:2510011406394948935;');
+INSERT INTO `creditlogs` VALUES ('234', 'kavin998', '2020-10-01 16:32:24', 'TRANSFER_BGIN', '4000.10', '3778.10', '-222.00', 'referenceNo:2510011632260282327;');
+INSERT INTO `creditlogs` VALUES ('235', 'kavin998', '2020-10-01 16:33:01', 'TRANSFER_BGIN', '3778.10', '3776.10', '-2.00', 'referenceNo:2510011633020690621;');
+INSERT INTO `creditlogs` VALUES ('236', 'kavin998', '2020-10-01 16:33:08', 'TRANSFER_BGIN', '3776.10', '3554.10', '-222.00', 'referenceNo:2510011633101712364;');
+INSERT INTO `creditlogs` VALUES ('237', 'kavin998', '2020-10-01 16:33:19', 'TRANSFER_BGIN', '3554.10', '3464.10', '-90.00', 'referenceNo:2510011633190424926;');
+INSERT INTO `creditlogs` VALUES ('238', 'austin998', '2020-10-03 21:15:22', 'TRANSFER_BBININ', '9647.12', '9425.12', '-222.00', 'referenceNo:2510032115248633230;');
+INSERT INTO `creditlogs` VALUES ('239', 'austin998', '2020-10-03 21:42:53', 'TRANSFER_BBINOUT', '9425.12', '9437.12', '12.00', 'referenceNo:2510032142553464306;');
+INSERT INTO `creditlogs` VALUES ('240', 'austin998', '2020-10-04 19:25:26', 'TRANSFER_BBININ', '9437.12', '9005.12', '-432.00', 'referenceNo:2510041925268025625;');
+INSERT INTO `creditlogs` VALUES ('241', 'kavin998', '2020-10-05 00:46:19', 'TRANSFER_REDRAIN_OUT', '3464.10', '3464.10', '0.00', 'referenceNo:2510050046195463692;红包雨余额转入MG平台,10倍流水，转入11.0');
+INSERT INTO `creditlogs` VALUES ('242', 'austin998', '2020-10-05 14:05:09', 'TRANSFER_SBAIN', '9005.12', '8983.12', '-22.00', 'referenceNo:2510051405172420496;');
+INSERT INTO `creditlogs` VALUES ('243', 'austin998', '2020-10-05 14:05:27', 'TRANSFER_SBAIN', '8983.12', '8961.12', '-22.00', 'referenceNo:2510051405272854133;');
+INSERT INTO `creditlogs` VALUES ('244', 'austin998', '2020-10-05 14:06:50', 'TRANSFER_SBAIN', '8961.12', '8939.12', '-22.00', 'referenceNo:2510051406498136706;');
+INSERT INTO `creditlogs` VALUES ('245', 'austin998', '2020-10-05 14:07:33', 'TRANSFER_SBAIN', '8939.12', '8917.12', '-22.00', 'referenceNo:2510051407333084950;');
+INSERT INTO `creditlogs` VALUES ('246', 'austin998', '2020-10-05 14:11:31', 'TRANSFER_SBAIN', '8917.12', '8895.12', '-22.00', 'referenceNo:2510051411311373061;');
+INSERT INTO `creditlogs` VALUES ('247', 'austin998', '2020-10-05 14:12:05', 'TRANSFER_SBAIN', '8895.12', '8873.12', '-22.00', 'referenceNo:2510051412047734551;');
+INSERT INTO `creditlogs` VALUES ('248', 'austin998', '2020-10-05 14:12:28', 'TRANSFER_SBAIN', '8873.12', '8851.12', '-22.00', 'referenceNo:2510051412280713891;');
+INSERT INTO `creditlogs` VALUES ('249', 'austin998', '2020-10-05 14:15:09', 'TRANSFER_SBAIN', '8851.12', '8829.12', '-22.00', 'referenceNo:2510051415091828189;');
+INSERT INTO `creditlogs` VALUES ('250', 'austin998', '2020-10-05 14:15:22', 'TRANSFER_SBAIN', '8829.12', '8807.12', '-22.00', 'referenceNo:2510051415220546793;');
+INSERT INTO `creditlogs` VALUES ('251', 'austin998', '2020-10-05 14:15:52', 'TRANSFER_SBAIN', '8807.12', '8785.12', '-22.00', 'referenceNo:2510051415524310408;');
+INSERT INTO `creditlogs` VALUES ('252', 'austin998', '2020-10-05 14:18:38', 'TRANSFER_SBAIN', '8785.12', '8763.12', '-22.00', 'referenceNo:2510051418385347512;');
+INSERT INTO `creditlogs` VALUES ('253', 'austin998', '2020-10-05 14:19:15', 'TRANSFER_SBAIN', '8763.12', '8741.12', '-22.00', 'referenceNo:2510051419154124382;');
+INSERT INTO `creditlogs` VALUES ('254', 'austin998', '2020-10-05 14:19:40', 'TRANSFER_SBAIN', '8741.12', '8719.12', '-22.00', 'referenceNo:2510051420340744864;');
+INSERT INTO `creditlogs` VALUES ('255', 'austin998', '2020-10-05 14:22:45', 'TRANSFER_SBAIN', '8719.12', '8697.12', '-22.00', 'referenceNo:2510051422448633680;');
+INSERT INTO `creditlogs` VALUES ('256', 'austin998', '2020-10-05 14:24:03', 'TRANSFER_SBAIN', '8697.12', '8675.12', '-22.00', 'referenceNo:2510051424027231452;');
+INSERT INTO `creditlogs` VALUES ('257', 'austin998', '2020-10-05 14:31:17', 'TRANSFER_SBAIN', '8675.12', '8653.12', '-22.00', 'referenceNo:2510051431168752139;');
+INSERT INTO `creditlogs` VALUES ('258', 'austin998', '2020-10-05 14:31:31', 'TRANSFER_SBAIN', '8653.12', '8631.12', '-22.00', 'referenceNo:2510051433049834247;');
+INSERT INTO `creditlogs` VALUES ('259', 'austin998', '2020-10-05 15:08:08', 'TRANSFER_SBAIN', '8631.12', '8609.12', '-22.00', 'referenceNo:2510051508085363313;');
+INSERT INTO `creditlogs` VALUES ('260', 'austin998', '2020-10-05 15:08:22', 'TRANSFER_SBAIN', '8609.12', '8409.12', '-200.00', 'referenceNo:2510051508223879700;');
+INSERT INTO `creditlogs` VALUES ('261', 'austin998', '2020-10-05 15:12:37', 'TRANSFER_REDRAIN_OUT', '8409.12', '8409.12', '0.00', 'referenceNo:2510051512370429742;红包雨余额转入SBA平台,10倍流水，转入10.0');
+INSERT INTO `creditlogs` VALUES ('262', 'austin998', '2020-10-05 15:13:37', 'TRANSFER_REDRAIN_OUT', '8409.12', '8409.12', '0.00', 'referenceNo:2510051513372869889;红包雨余额转入MG平台,10倍流水，转入10.0');
+INSERT INTO `creditlogs` VALUES ('263', 'austin998', '2020-10-05 15:20:59', 'TRANSFER_REDRAIN_OUT', '8409.12', '8409.12', '0.00', 'referenceNo:2510051520598370979;红包雨余额转入SBA平台,10倍流水，转入11.0');
+INSERT INTO `creditlogs` VALUES ('264', 'kavin998', '2020-10-05 15:34:10', 'TRANSFER_REDRAIN_OUT', '3464.10', '3464.10', '0.00', 'referenceNo:2510051534109666732;红包雨余额转入SBA平台,10倍流水，转入11.0');
+INSERT INTO `creditlogs` VALUES ('265', 'kavin998', '2020-10-05 15:34:35', 'TRANSFER_REDRAIN_OUT', '3464.10', '3464.10', '0.00', 'referenceNo:2510051534354061885;红包雨余额转入SBA平台,10倍流水，转入11.0');
+INSERT INTO `creditlogs` VALUES ('266', 'kavin998', '2020-10-05 15:38:22', 'TRANSFER_REDRAIN_OUT', '3464.10', '3464.10', '0.00', 'referenceNo:2510051538227345512;红包雨余额转入SBA平台,10倍流水，转入11.0');
+INSERT INTO `creditlogs` VALUES ('267', 'kavin998', '2020-10-05 15:41:41', 'TRANSFER_REDRAIN_OUT', '3464.10', '3464.10', '0.00', 'referenceNo:2510051541417749202;红包雨余额转入SBA平台,10倍流水，转入150.0');
+INSERT INTO `creditlogs` VALUES ('268', 'austin998', '2020-10-08 18:33:04', 'TRANSFER_DTIN', '8409.12', '8399.12', '-10.00', 'referenceNo:2510081833041560962;');
+INSERT INTO `creditlogs` VALUES ('269', 'austin998', '2020-10-08 18:33:14', 'TRANSFER_DTIN', '8399.12', '8389.12', '-10.00', 'referenceNo:2510081833139792441;');
+INSERT INTO `creditlogs` VALUES ('270', 'austin998', '2020-10-08 18:41:19', 'TRANSFER_REDRAINOUT', '8389.12', '8378.12', '-11.00', 'referenceNo:2510081841197363470;用户主账户转入红包雨账户11.0元');
+INSERT INTO `creditlogs` VALUES ('271', 'austin998', '2020-10-08 18:41:26', 'TRANSFER_REDRAIN_OUT', '8378.12', '8378.12', '0.00', 'referenceNo:2510081841265400997;红包雨余额转入DT平台,0倍流水，转入11.0');
 
 -- ----------------------------
 -- Table structure for `creditlog_extend`
@@ -2613,6 +2841,43 @@ INSERT INTO `experience_gold_t` VALUES ('4', '自助体验金', 'DT自助体验�
 INSERT INTO `experience_gold_t` VALUES ('5', '自助体验金', 'QT自助体验金', '2018-12-24 14:23:16', '2018-12-24 14:23:19', '38', '388', '1', '1', '2018-12-26 00:00:00', '2022-12-24 00:00:00', '1', '4', '0,1,2,3,4,5,6,7,8', '1', '1', 'QT', '1,2,3,4');
 INSERT INTO `experience_gold_t` VALUES ('6', '自助体验金', 'PNG自助体验金', '2018-12-24 14:44:35', '2018-12-24 14:44:39', '38', '388', '1', '1', '2018-12-26 00:00:00', '2022-12-24 00:00:00', '1', '4', '0,1,2,3,4,5,6,7,8', '1', '1', 'PNG', '1,2,3,4');
 INSERT INTO `experience_gold_t` VALUES ('7', '自助体验金', 'TTG自助体验金', '2018-12-24 14:45:14', '2018-12-24 14:45:18', '38', '100', '1', '1', '2018-12-26 00:00:00', '2022-12-24 00:00:00', '1', '4', '0,1,2,3,4,5,6,7,8', '1', '1', 'TTG', '1,2,3,4');
+
+-- ----------------------------
+-- Table structure for `friendbonus`
+-- ----------------------------
+DROP TABLE IF EXISTS `friendbonus`;
+CREATE TABLE `friendbonus` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `toplineuser` varchar(32) DEFAULT NULL,
+  `money` double(32,2) DEFAULT NULL COMMENT '奖励积分',
+  `createtime` datetime DEFAULT NULL,
+  `remark` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of friendbonus
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `friendbonusrecord`
+-- ----------------------------
+DROP TABLE IF EXISTS `friendbonusrecord`;
+CREATE TABLE `friendbonusrecord` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `toplineuser` varchar(32) DEFAULT NULL,
+  `downlineuser` varchar(32) DEFAULT NULL,
+  `type` varchar(2) DEFAULT NULL COMMENT '类型，1收入 2支出',
+  `money` double(24,2) DEFAULT NULL COMMENT '奖励金额',
+  `createtime` datetime DEFAULT NULL,
+  `remark` varchar(255) DEFAULT NULL,
+  `distributedate` varchar(10) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of friendbonusrecord
+-- ----------------------------
 
 -- ----------------------------
 -- Table structure for `guestbook`
@@ -3516,6 +3781,19 @@ INSERT INTO `offer` VALUES ('1012009277rm9gg0223', 'MONEY_CUSTOMER', 'kavin998',
 INSERT INTO `offer` VALUES ('101200927fqno4qg542', 'MONEY_CUSTOMER', 'kavin998', '0.00', '12.00', '红包雨余额转入CQ9平台,10倍流水，转入12.0');
 INSERT INTO `offer` VALUES ('101200927lfmgh6l3qp', 'MONEY_CUSTOMER', 'kavin998', '0.00', '11.00', '红包雨余额转入PG平台,10倍流水，转入11.0');
 INSERT INTO `offer` VALUES ('101200927xhqnmqauad', 'MONEY_CUSTOMER', 'kavin998', '0.00', '20.00', '红包雨余额转入PG平台,10倍流水，转入20.0');
+INSERT INTO `offer` VALUES ('101200930gf2zbdgh5f', 'MONEY_CUSTOMER', 'kavin998', '0.00', '12.00', '红包雨余额转入BG平台,10倍流水，转入12.0');
+INSERT INTO `offer` VALUES ('101200930hixnjrxgj7', 'MONEY_CUSTOMER', 'kavin998', '0.00', '12.00', '红包雨余额转入BG平台,10倍流水，转入12.0');
+INSERT INTO `offer` VALUES ('101200930m10bxunakg', 'MONEY_CUSTOMER', 'kavin998', '0.00', '12.00', '红包雨余额转入BG平台,10倍流水，转入12.0');
+INSERT INTO `offer` VALUES ('101200930pmqlltukju', 'MONEY_CUSTOMER', 'kavin998', '0.00', '12.00', '红包雨余额转入BG平台,10倍流水，转入12.0');
+INSERT INTO `offer` VALUES ('1012010050e2sbl3o8k', 'MONEY_CUSTOMER', 'kavin998', '0.00', '11.00', '红包雨余额转入SBA平台,10倍流水，转入11.0');
+INSERT INTO `offer` VALUES ('1012010058bzzchcjwe', 'MONEY_CUSTOMER', 'kavin998', '0.00', '150.00', '红包雨余额转入SBA平台,10倍流水，转入150.0');
+INSERT INTO `offer` VALUES ('101201005b8mgb6ifl3', 'MONEY_CUSTOMER', 'kavin998', '0.00', '11.00', '红包雨余额转入SBA平台,10倍流水，转入11.0');
+INSERT INTO `offer` VALUES ('101201005bnao064ocp', 'MONEY_CUSTOMER', 'kavin998', '0.00', '11.00', '红包雨余额转入SBA平台,10倍流水，转入11.0');
+INSERT INTO `offer` VALUES ('101201005etg63bsddi', 'MONEY_CUSTOMER', 'austin998', '0.00', '10.00', '红包雨余额转入MG平台,10倍流水，转入10.0');
+INSERT INTO `offer` VALUES ('101201005q9s57kdsjw', 'MONEY_CUSTOMER', 'austin998', '0.00', '10.00', '红包雨余额转入SBA平台,10倍流水，转入10.0');
+INSERT INTO `offer` VALUES ('101201005r8rslgdarh', 'MONEY_CUSTOMER', 'austin998', '0.00', '11.00', '红包雨余额转入SBA平台,10倍流水，转入11.0');
+INSERT INTO `offer` VALUES ('101201005ycwc1xumsz', 'MONEY_CUSTOMER', 'kavin998', '0.00', '11.00', '红包雨余额转入MG平台,10倍流水，转入11.0');
+INSERT INTO `offer` VALUES ('101201008ukdlqp4vyy', 'MONEY_CUSTOMER', 'austin998', '0.00', '11.00', '红包雨余额转入DT平台,0倍流水，转入11.0');
 
 -- ----------------------------
 -- Table structure for `online_token`
@@ -3532,6 +3810,8 @@ CREATE TABLE `online_token` (
 -- ----------------------------
 -- Records of online_token
 -- ----------------------------
+INSERT INTO `online_token` VALUES ('k_kavin998', 'k_0q3CulMsfkqr5KZNGbhi0fRvkJRxHwQaWyhiOiB3de90Ahs', '2020-10-03 16:44:50', null);
+INSERT INTO `online_token` VALUES ('k_austin998', 'k_ZkJDQNVAHc3F4FyaIGV4vlcEqFaEU2Y9xGspkAii0eo6glK', '2020-10-04 20:52:44', null);
 
 -- ----------------------------
 -- Table structure for `operationlogs`
@@ -4149,6 +4429,19 @@ INSERT INTO `preferential_record` VALUES ('1012009273q4fpfztpt', 'kavin998', 'cq
 INSERT INTO `preferential_record` VALUES ('1012009277rm9gg0223', 'kavin998', 'cq9', null, '2020-09-27 13:37:34', '0');
 INSERT INTO `preferential_record` VALUES ('101200927lfmgh6l3qp', 'kavin998', 'pg', null, '2020-09-27 14:00:24', '0');
 INSERT INTO `preferential_record` VALUES ('101200927xhqnmqauad', 'kavin998', 'pg', null, '2020-09-27 14:02:34', '0');
+INSERT INTO `preferential_record` VALUES ('101200930m10bxunakg', 'kavin998', 'bg', null, '2020-09-30 00:43:37', '0');
+INSERT INTO `preferential_record` VALUES ('101200930gf2zbdgh5f', 'kavin998', 'bg', null, '2020-09-30 00:44:04', '0');
+INSERT INTO `preferential_record` VALUES ('101200930pmqlltukju', 'kavin998', 'bg', null, '2020-09-30 00:45:15', '0');
+INSERT INTO `preferential_record` VALUES ('101200930hixnjrxgj7', 'kavin998', 'bg', null, '2020-09-30 00:49:07', '0');
+INSERT INTO `preferential_record` VALUES ('101201005ycwc1xumsz', 'kavin998', 'mg', null, '2020-10-05 00:46:19', '0');
+INSERT INTO `preferential_record` VALUES ('101201005q9s57kdsjw', 'austin998', '', null, '2020-10-05 15:12:37', '0');
+INSERT INTO `preferential_record` VALUES ('101201005etg63bsddi', 'austin998', 'mg', null, '2020-10-05 15:13:37', '0');
+INSERT INTO `preferential_record` VALUES ('101201005r8rslgdarh', 'austin998', 'sba', null, '2020-10-05 15:20:59', '0');
+INSERT INTO `preferential_record` VALUES ('101201005b8mgb6ifl3', 'kavin998', 'sba', null, '2020-10-05 15:34:10', '0');
+INSERT INTO `preferential_record` VALUES ('1012010050e2sbl3o8k', 'kavin998', 'sba', null, '2020-10-05 15:34:35', '0');
+INSERT INTO `preferential_record` VALUES ('101201005bnao064ocp', 'kavin998', 'sba', null, '2020-10-05 15:38:22', '0');
+INSERT INTO `preferential_record` VALUES ('1012010058bzzchcjwe', 'kavin998', 'sba', null, '2020-10-05 15:41:41', '0');
+INSERT INTO `preferential_record` VALUES ('101201008ukdlqp4vyy', 'austin998', 'dt', '0.00', '2020-10-08 18:41:26', '0');
 
 -- ----------------------------
 -- Table structure for `prefer_transfer_record`
@@ -4291,6 +4584,19 @@ INSERT INTO `proposal` VALUES ('1012009277rm9gg0223', 'system', '2020-09-27 13:3
 INSERT INTO `proposal` VALUES ('101200927fqno4qg542', 'system', '2020-09-27 13:30:38', '101', '0', 'kavin998', '0.00', '', '2', '前台', '红包雨余额转入CQ9平台,10倍流水，转入12.0', null, null, null, null, null, null, null, null, null, null, null, null, '2020-09-27 13:30:38', null, '0', '0', '0', '0', '1', '12.00', '10', null, null, '0');
 INSERT INTO `proposal` VALUES ('101200927lfmgh6l3qp', 'system', '2020-09-27 14:00:24', '101', '0', 'kavin998', '0.00', '', '2', '前台', '红包雨余额转入PG平台,10倍流水，转入11.0', null, null, null, null, null, null, null, null, null, null, null, null, '2020-09-27 14:00:24', null, '0', '0', '0', '0', '1', '11.00', '10', null, null, '0');
 INSERT INTO `proposal` VALUES ('101200927xhqnmqauad', 'system', '2020-09-27 14:02:34', '101', '0', 'kavin998', '0.00', '', '2', '前台', '红包雨余额转入PG平台,10倍流水，转入20.0', null, null, null, null, null, null, null, null, null, null, null, null, '2020-09-27 14:02:34', null, '0', '0', '0', '0', '1', '20.00', '10', null, null, '0');
+INSERT INTO `proposal` VALUES ('101200930gf2zbdgh5f', 'system', '2020-09-30 00:44:04', '101', '0', 'kavin998', '0.00', '', '2', '前台', '红包雨余额转入BG平台,10倍流水，转入12.0', null, null, null, null, null, null, null, null, null, null, null, null, '2020-09-30 00:44:04', null, '0', '0', '0', '0', '1', '12.00', '10', null, null, '0');
+INSERT INTO `proposal` VALUES ('101200930hixnjrxgj7', 'system', '2020-09-30 00:49:07', '101', '0', 'kavin998', '0.00', '', '2', '前台', '红包雨余额转入BG平台,10倍流水，转入12.0', null, null, null, null, null, null, null, null, null, null, null, null, '2020-09-30 00:49:07', null, '0', '0', '0', '0', '1', '12.00', '10', null, null, '0');
+INSERT INTO `proposal` VALUES ('101200930m10bxunakg', 'system', '2020-09-30 00:43:37', '101', '0', 'kavin998', '0.00', '', '2', '前台', '红包雨余额转入BG平台,10倍流水，转入12.0', null, null, null, null, null, null, null, null, null, null, null, null, '2020-09-30 00:43:37', null, '0', '0', '0', '0', '1', '12.00', '10', null, null, '0');
+INSERT INTO `proposal` VALUES ('101200930pmqlltukju', 'system', '2020-09-30 00:45:15', '101', '0', 'kavin998', '0.00', '', '2', '前台', '红包雨余额转入BG平台,10倍流水，转入12.0', null, null, null, null, null, null, null, null, null, null, null, null, '2020-09-30 00:45:15', null, '0', '0', '0', '0', '1', '12.00', '10', null, null, '0');
+INSERT INTO `proposal` VALUES ('1012010050e2sbl3o8k', 'system', '2020-10-05 15:34:35', '101', '0', 'kavin998', '0.00', '', '2', '前台', '红包雨余额转入SBA平台,10倍流水，转入11.0', null, null, null, null, null, null, null, null, null, null, null, null, '2020-10-05 15:34:35', null, '0', '0', '0', '0', '1', '11.00', '10', null, null, '0');
+INSERT INTO `proposal` VALUES ('1012010058bzzchcjwe', 'system', '2020-10-05 15:41:41', '101', '0', 'kavin998', '0.00', '', '2', '前台', '红包雨余额转入SBA平台,10倍流水，转入150.0', null, null, null, null, null, null, null, null, null, null, null, null, '2020-10-05 15:41:41', null, '0', '0', '0', '0', '1', '150.00', '10', null, null, '0');
+INSERT INTO `proposal` VALUES ('101201005b8mgb6ifl3', 'system', '2020-10-05 15:34:10', '101', '0', 'kavin998', '0.00', '', '2', '前台', '红包雨余额转入SBA平台,10倍流水，转入11.0', null, null, null, null, null, null, null, null, null, null, null, null, '2020-10-05 15:34:10', null, '0', '0', '0', '0', '1', '11.00', '10', null, null, '0');
+INSERT INTO `proposal` VALUES ('101201005bnao064ocp', 'system', '2020-10-05 15:38:22', '101', '0', 'kavin998', '0.00', '', '2', '前台', '红包雨余额转入SBA平台,10倍流水，转入11.0', null, null, null, null, null, null, null, null, null, null, null, null, '2020-10-05 15:38:22', null, '0', '0', '0', '0', '1', '11.00', '10', null, null, '0');
+INSERT INTO `proposal` VALUES ('101201005etg63bsddi', 'system', '2020-10-05 15:13:37', '101', '0', 'austin998', '0.00', '', '2', '前台', '红包雨余额转入MG平台,10倍流水，转入10.0', null, null, null, null, null, null, null, null, null, null, null, null, '2020-10-05 15:13:37', null, '0', '0', '0', '0', '1', '10.00', '10', null, null, '0');
+INSERT INTO `proposal` VALUES ('101201005q9s57kdsjw', 'system', '2020-10-05 15:12:37', '101', '0', 'austin998', '0.00', '', '2', '前台', '红包雨余额转入SBA平台,10倍流水，转入10.0', null, null, null, null, null, null, null, null, null, null, null, null, '2020-10-05 15:12:37', null, '0', '0', '0', '0', '1', '10.00', '10', null, null, '0');
+INSERT INTO `proposal` VALUES ('101201005r8rslgdarh', 'system', '2020-10-05 15:20:59', '101', '0', 'austin998', '0.00', '', '2', '前台', '红包雨余额转入SBA平台,10倍流水，转入11.0', null, null, null, null, null, null, null, null, null, null, null, null, '2020-10-05 15:20:59', null, '0', '0', '0', '0', '1', '11.00', '10', null, null, '0');
+INSERT INTO `proposal` VALUES ('101201005ycwc1xumsz', 'system', '2020-10-05 00:46:19', '101', '0', 'kavin998', '0.00', '', '2', '前台', '红包雨余额转入MG平台,10倍流水，转入11.0', null, null, null, null, null, null, null, null, null, null, null, null, '2020-10-05 00:46:19', null, '0', '0', '0', '0', '1', '11.00', '10', null, null, '0');
+INSERT INTO `proposal` VALUES ('101201008ukdlqp4vyy', 'system', '2020-10-08 18:41:26', '101', '0', 'austin998', '11.00', '', '2', '前台', null, null, null, null, null, null, null, null, null, null, null, null, null, '2020-10-08 18:41:26', null, '0', '0', '0', '0', '1', '0.00', '0', null, null, '0');
 INSERT INTO `proposal` VALUES ('629200917rrkqhuep4o', 'kavin998', '2020-09-17 20:39:12', '629', '0', 'kavin998', '4.10', '', '2', '前台', 'mg自助洗码;秒反水;executed;自动审核', 'customer', null, null, null, null, null, null, null, null, null, null, null, '2020-09-17 20:39:12', null, '0', '0', '0', '1', '1', null, null, null, null, '0');
 INSERT INTO `proposal` VALUES ('633200921lufizym2gq', 'austin998', '2020-09-21 21:06:53', '633', '0', 'austin998', '6.12', '', '2', '前台', 'cq9自助洗码;秒反水;executed;自动审核', 'customer', null, null, null, null, null, null, null, null, null, null, null, '2020-09-21 21:06:53', null, '0', '0', '0', '1', '1', null, null, null, null, '0');
 
@@ -4730,7 +5036,7 @@ CREATE TABLE `raincoupon_record` (
   `updatetime` datetime DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `loginname` (`loginname`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4;
 
 -- ----------------------------
 -- Records of raincoupon_record
@@ -4740,6 +5046,8 @@ INSERT INTO `raincoupon_record` VALUES ('2', 'kavin998', '0', '11.00', null, nul
 INSERT INTO `raincoupon_record` VALUES ('3', 'kavin998', '0', '100.00', '0', null, '主账户转入红包雨账户 11.0->111.0', '2020-09-15 10:42:11', '10', null, null);
 INSERT INTO `raincoupon_record` VALUES ('4', 'austin998', '0', '150.00', null, null, '主账户转入红包雨账户 10.0->160.0', '2020-09-20 18:43:18', '10', null, null);
 INSERT INTO `raincoupon_record` VALUES ('5', 'austin998', '0', '112.00', null, null, '主账户转入红包雨账户 67.0->179.0', '2020-09-20 20:10:44', '10', null, null);
+INSERT INTO `raincoupon_record` VALUES ('6', 'kavin998', '0', '900.00', null, null, '主账户转入红包雨账户 12.0->912.0', '2020-09-30 00:43:20', '10', null, null);
+INSERT INTO `raincoupon_record` VALUES ('7', 'austin998', '0', '11.00', '0', null, '主账户转入红包雨账户 126.0->137.0', '2020-10-08 18:41:19', '10', null, null);
 
 -- ----------------------------
 -- Table structure for `rebankinfo`
@@ -4797,8 +5105,8 @@ CREATE TABLE `red_rain_wallet` (
 -- ----------------------------
 -- Records of red_rain_wallet
 -- ----------------------------
-INSERT INTO `red_rain_wallet` VALUES ('austin998', '157', '红包雨余额转入CQ9 179.0->157.0');
-INSERT INTO `red_rain_wallet` VALUES ('kavin998', '12', '红包雨余额转入PG 32.0->12.0');
+INSERT INTO `red_rain_wallet` VALUES ('austin998', '126', '红包雨余额转入QT 137.0->126.0');
+INSERT INTO `red_rain_wallet` VALUES ('kavin998', '670', '红包雨余额转入SBA820.0->670.0');
 
 -- ----------------------------
 -- Table structure for `remoteurls`
@@ -4840,15 +5148,19 @@ CREATE TABLE `replyinfo` (
 -- ----------------------------
 DROP TABLE IF EXISTS `sba_data_tw`;
 CREATE TABLE `sba_data_tw` (
-  `transId` varchar(255) NOT NULL,
-  `playerName` varchar(32) DEFAULT NULL,
-  `transactionTime` varchar(19) DEFAULT NULL COMMENT '下注的交易时间',
-  `matchDatetime` varchar(19) DEFAULT NULL,
-  `ticketStatus` varchar(10) DEFAULT NULL COMMENT '票据状态',
+  `transId` varchar(255) NOT NULL COMMENT '沙巴体育上的下注ID',
+  `vendorMemberId` varchar(32) DEFAULT NULL COMMENT '供应商的成员编号',
+  `operatorId` varchar(32) DEFAULT NULL COMMENT '操作符号',
+  `matchDatetime` varchar(19) DEFAULT NULL COMMENT '比赛开球时间',
   `stake` varchar(20) DEFAULT NULL COMMENT '投注额',
+  `transactionTime` varchar(19) DEFAULT NULL COMMENT '下注的交易时间',
+  `ticketStatus` varchar(10) DEFAULT NULL COMMENT '票据状态 Half WON/Half LOSE/WON/LOSE/VOID/running/DRAW/Reject/Refund/Waiting）Half WON/Half LOSE/WON/LOSE/DRAW/Refund状态为已结算',
   `winLoseAmount` varchar(20) DEFAULT NULL COMMENT '最终输赢金额',
   `afterAmount` varchar(20) DEFAULT NULL COMMENT '结算后的余额',
   `winLostDateTime` varchar(19) DEFAULT NULL COMMENT '最终下注输赢时间',
+  `currency` varchar(20) DEFAULT NULL COMMENT '货币种类id',
+  `oddsType` varchar(32) DEFAULT NULL COMMENT '赔率类型',
+  `versionKey` varchar(32) DEFAULT NULL COMMENT '版本号',
   PRIMARY KEY (`transId`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -4929,6 +5241,19 @@ INSERT INTO `self_record` VALUES ('1012009273q4fpfztpt', 'kavin998', 'cq9', '红
 INSERT INTO `self_record` VALUES ('1012009277rm9gg0223', 'kavin998', 'cq9', '红包雨', '0', '2020-09-27 13:37:34', null, null);
 INSERT INTO `self_record` VALUES ('101200927lfmgh6l3qp', 'kavin998', 'pg', '红包雨', '1', '2020-09-27 14:00:24', '2020-09-27 14:02:34', null);
 INSERT INTO `self_record` VALUES ('101200927xhqnmqauad', 'kavin998', 'pg', '红包雨', '0', '2020-09-27 14:02:34', null, null);
+INSERT INTO `self_record` VALUES ('101200930m10bxunakg', 'kavin998', 'bg', '红包雨', '1', '2020-09-30 00:43:37', '2020-09-30 00:44:04', null);
+INSERT INTO `self_record` VALUES ('101200930gf2zbdgh5f', 'kavin998', 'bg', '红包雨', '1', '2020-09-30 00:44:04', '2020-09-30 00:45:15', null);
+INSERT INTO `self_record` VALUES ('101200930pmqlltukju', 'kavin998', 'bg', '红包雨', '1', '2020-09-30 00:45:15', '2020-09-30 00:49:07', null);
+INSERT INTO `self_record` VALUES ('101200930hixnjrxgj7', 'kavin998', 'bg', '红包雨', '0', '2020-09-30 00:49:07', null, null);
+INSERT INTO `self_record` VALUES ('101201005ycwc1xumsz', 'kavin998', 'mg', '红包雨', '0', '2020-10-05 00:46:19', null, null);
+INSERT INTO `self_record` VALUES ('101201005q9s57kdsjw', 'austin998', '', '红包雨', '0', '2020-10-05 15:12:37', null, null);
+INSERT INTO `self_record` VALUES ('101201005etg63bsddi', 'austin998', 'mg', '红包雨', '0', '2020-10-05 15:13:37', null, null);
+INSERT INTO `self_record` VALUES ('101201005r8rslgdarh', 'austin998', 'sba', '红包雨', '0', '2020-10-05 15:20:59', null, null);
+INSERT INTO `self_record` VALUES ('101201005b8mgb6ifl3', 'kavin998', 'sba', '红包雨', '1', '2020-10-05 15:34:10', '2020-10-05 15:34:35', null);
+INSERT INTO `self_record` VALUES ('1012010050e2sbl3o8k', 'kavin998', 'sba', '红包雨', '1', '2020-10-05 15:34:35', '2020-10-05 15:38:22', null);
+INSERT INTO `self_record` VALUES ('101201005bnao064ocp', 'kavin998', 'sba', '红包雨', '1', '2020-10-05 15:38:22', '2020-10-05 15:41:41', null);
+INSERT INTO `self_record` VALUES ('1012010058bzzchcjwe', 'kavin998', 'sba', '红包雨', '0', '2020-10-05 15:41:41', null, null);
+INSERT INTO `self_record` VALUES ('101201008ukdlqp4vyy', 'austin998', 'dt', '红包雨', '0', '2020-10-08 18:41:26', null, null);
 
 -- ----------------------------
 -- Table structure for `sendemail`
@@ -5613,6 +5938,65 @@ INSERT INTO `transfer` VALUES ('2509271520217850746', 'tianwei', 'dt', '12.00', 
 INSERT INTO `transfer` VALUES ('2509272102535479558', 'tianwei', 'dt', '111.00', 'kavin998', '2020-09-27 21:02:53', '9260.1', '9149.1', '0', null, '转入成功');
 INSERT INTO `transfer` VALUES ('2509272114412283971', 'tianwei', 'mg', '12.00', 'kavin998', '2020-09-27 21:14:40', '9149.1', '9137.1', '0', null, '转入成功');
 INSERT INTO `transfer` VALUES ('2509272115547640341', 'tianwei', 'mg', '12.00', 'kavin998', '2020-09-27 21:15:16', '9137.1', '9125.1', '0', null, '转入成功');
+INSERT INTO `transfer` VALUES ('2509292241500691244', 'tianwei', '', '111.00', 'kavin998', '2020-09-29 22:41:49', '9125.1', '9014.1', '0', null, '转入成功');
+INSERT INTO `transfer` VALUES ('2509292258459878076', 'tianwei', '', '112.00', 'kavin998', '2020-09-29 22:58:44', '9014.1', '8902.1', '0', null, '转入成功');
+INSERT INTO `transfer` VALUES ('2509292312382544342', 'tianwei', '', '123.00', 'kavin998', '2020-09-29 23:12:38', '8902.1', '8779.1', '0', null, '转入成功');
+INSERT INTO `transfer` VALUES ('2509292315315291093', 'tianwei', '', '11.00', 'kavin998', '2020-09-29 23:15:31', '8779.1', '8768.1', '0', null, '转入成功');
+INSERT INTO `transfer` VALUES ('2509292327523501228', 'tianwei', '', '111.00', 'kavin998', '2020-09-29 23:26:37', '8768.1', '8657.1', '0', null, '转入成功');
+INSERT INTO `transfer` VALUES ('2509292328044872024', 'tianwei', '', '11.00', 'kavin998', '2020-09-29 23:28:04', '8657.1', '8646.1', '0', null, '转入成功');
+INSERT INTO `transfer` VALUES ('2509292330566470705', 'tianwei', '', '11.00', 'kavin998', '2020-09-29 23:30:55', '8646.1', '8635.1', '0', null, '转入成功');
+INSERT INTO `transfer` VALUES ('2509292333060310819', 'tianwei', '', '2.00', 'kavin998', '2020-09-29 23:33:05', '8635.1', '8633.1', '0', null, '转入成功');
+INSERT INTO `transfer` VALUES ('2509292335358151445', 'tianwei', '', '2.00', 'kavin998', '2020-09-29 23:35:34', '8633.1', '8631.1', '0', null, '转入成功');
+INSERT INTO `transfer` VALUES ('2509292337365965150', 'tianwei', '', '2.00', 'kavin998', '2020-09-29 23:36:12', '8631.1', '8629.1', '0', null, '转入成功');
+INSERT INTO `transfer` VALUES ('2509292343354258566', 'tianwei', '', '2.00', 'kavin998', '2020-09-29 23:43:34', '8629.1', '8627.1', '0', null, '转入成功');
+INSERT INTO `transfer` VALUES ('2509292344134712107', 'tianwei', '', '2.00', 'kavin998', '2020-09-29 23:44:13', '8627.1', '8625.1', '0', null, '转入成功');
+INSERT INTO `transfer` VALUES ('2509292354497067541', 'tianwei', '', '122.00', 'kavin998', '2020-09-29 23:54:48', '8625.1', '8503.1', '0', null, '转入成功');
+INSERT INTO `transfer` VALUES ('2509292355329169314', '', 'tianwei', '2.00', 'kavin998', '2020-09-29 23:55:32', '8503.1', '8505.1', '0', null, '转出成功');
+INSERT INTO `transfer` VALUES ('2509300043375888421', 'tianwei', 'bg', '12.00', 'kavin998', '2020-09-30 00:43:37', '7605.1', '7593.1', '0', null, '转入成功');
+INSERT INTO `transfer` VALUES ('2509300044042767139', 'tianwei', 'bg', '12.00', 'kavin998', '2020-09-30 00:44:04', '7605.1', '7593.1', '0', null, '转入成功');
+INSERT INTO `transfer` VALUES ('2509300045156775794', 'tianwei', 'bg', '12.00', 'kavin998', '2020-09-30 00:45:15', '7605.1', '7593.1', '0', null, '转入成功');
+INSERT INTO `transfer` VALUES ('2509300049070071472', 'tianwei', 'bg', '12.00', 'kavin998', '2020-09-30 00:49:07', '7605.1', '7593.1', '0', null, '转入成功');
+INSERT INTO `transfer` VALUES ('2510011405162754712', 'tianwei', '', '3334.00', 'kavin998', '2020-10-01 14:05:16', '7605.1', '4271.1', '0', null, '转入成功');
+INSERT INTO `transfer` VALUES ('2510011406181995260', 'tianwei', '', '2.00', 'kavin998', '2020-10-01 14:06:18', '4271.1', '4269.1', '0', null, '转入成功');
+INSERT INTO `transfer` VALUES ('2510011406289288915', 'tianwei', '', '234.00', 'kavin998', '2020-10-01 14:06:29', '4269.1', '4035.1', '0', null, '转入成功');
+INSERT INTO `transfer` VALUES ('2510011406394948935', 'tianwei', '', '35.00', 'kavin998', '2020-10-01 14:06:39', '4035.1', '4000.1', '0', null, '转入成功');
+INSERT INTO `transfer` VALUES ('2510011632260282327', 'tianwei', '', '222.00', 'kavin998', '2020-10-01 16:32:24', '4000.1', '3778.1', '0', null, '转入成功');
+INSERT INTO `transfer` VALUES ('2510011633020690621', 'tianwei', '', '2.00', 'kavin998', '2020-10-01 16:33:01', '3778.1', '3776.1', '0', null, '转入成功');
+INSERT INTO `transfer` VALUES ('2510011633101712364', 'tianwei', '', '222.00', 'kavin998', '2020-10-01 16:33:08', '3776.1', '3554.1', '0', null, '转入成功');
+INSERT INTO `transfer` VALUES ('2510011633190424926', 'tianwei', '', '90.00', 'kavin998', '2020-10-01 16:33:19', '3554.1', '3464.1', '0', null, '转入成功');
+INSERT INTO `transfer` VALUES ('2510032115248633230', 'tianwei', 'bbin', '222.00', 'austin998', '2020-10-03 21:15:22', '9647.12', '9425.12', '0', null, '转入成功');
+INSERT INTO `transfer` VALUES ('2510032142553464306', 'bbin', 'tianwei', '12.00', 'austin998', '2020-10-03 21:42:53', '9425.12', '9437.12', '0', null, '转出成功');
+INSERT INTO `transfer` VALUES ('2510041925268025625', 'tianwei', 'bbin', '432.00', 'austin998', '2020-10-04 19:25:26', '9437.12', '9005.12', '0', null, '转入成功');
+INSERT INTO `transfer` VALUES ('2510050046195463692', 'tianwei', 'mg', '11.00', 'kavin998', '2020-10-05 00:46:19', '3464.1', '3453.1', '0', null, '转入成功');
+INSERT INTO `transfer` VALUES ('2510051405172420496', 'tianwei', 'sba', '22.00', 'austin998', '2020-10-05 14:05:09', '9005.12', '8983.12', '0', null, '转入成功');
+INSERT INTO `transfer` VALUES ('2510051405272854133', 'tianwei', 'sba', '22.00', 'austin998', '2020-10-05 14:05:27', '8983.12', '8961.12', '0', null, '转入成功');
+INSERT INTO `transfer` VALUES ('2510051406498136706', 'tianwei', 'sba', '22.00', 'austin998', '2020-10-05 14:06:50', '8961.12', '8939.12', '0', null, '转入成功');
+INSERT INTO `transfer` VALUES ('2510051407333084950', 'tianwei', 'sba', '22.00', 'austin998', '2020-10-05 14:07:33', '8939.12', '8917.12', '0', null, '转入成功');
+INSERT INTO `transfer` VALUES ('2510051411311373061', 'tianwei', 'sba', '22.00', 'austin998', '2020-10-05 14:11:31', '8917.12', '8895.12', '0', null, '转入成功');
+INSERT INTO `transfer` VALUES ('2510051412047734551', 'tianwei', 'sba', '22.00', 'austin998', '2020-10-05 14:12:05', '8895.12', '8873.12', '0', null, '转入成功');
+INSERT INTO `transfer` VALUES ('2510051412280713891', 'tianwei', 'sba', '22.00', 'austin998', '2020-10-05 14:12:28', '8873.12', '8851.12', '0', null, '转入成功');
+INSERT INTO `transfer` VALUES ('2510051415091828189', 'tianwei', 'sba', '22.00', 'austin998', '2020-10-05 14:15:09', '8851.12', '8829.12', '0', null, '转入成功');
+INSERT INTO `transfer` VALUES ('2510051415220546793', 'tianwei', 'sba', '22.00', 'austin998', '2020-10-05 14:15:22', '8829.12', '8807.12', '0', null, '转入成功');
+INSERT INTO `transfer` VALUES ('2510051415524310408', 'tianwei', 'sba', '22.00', 'austin998', '2020-10-05 14:15:52', '8807.12', '8785.12', '0', null, '转入成功');
+INSERT INTO `transfer` VALUES ('2510051418385347512', 'tianwei', 'sba', '22.00', 'austin998', '2020-10-05 14:18:38', '8785.12', '8763.12', '0', null, '转入成功');
+INSERT INTO `transfer` VALUES ('2510051419154124382', 'tianwei', 'sba', '22.00', 'austin998', '2020-10-05 14:19:15', '8763.12', '8741.12', '0', null, '转入成功');
+INSERT INTO `transfer` VALUES ('2510051420340744864', 'tianwei', 'sba', '22.00', 'austin998', '2020-10-05 14:19:40', '8741.12', '8719.12', '0', null, '转入成功');
+INSERT INTO `transfer` VALUES ('2510051422448633680', 'tianwei', 'sba', '22.00', 'austin998', '2020-10-05 14:22:45', '8719.12', '8697.12', '0', null, '转入成功');
+INSERT INTO `transfer` VALUES ('2510051424027231452', 'tianwei', 'sba', '22.00', 'austin998', '2020-10-05 14:24:03', '8697.12', '8675.12', '0', null, '转入成功');
+INSERT INTO `transfer` VALUES ('2510051431168752139', 'tianwei', 'sba', '22.00', 'austin998', '2020-10-05 14:31:17', '8675.12', '8653.12', '0', null, '转入成功');
+INSERT INTO `transfer` VALUES ('2510051433049834247', 'tianwei', 'sba', '22.00', 'austin998', '2020-10-05 14:31:31', '8653.12', '8631.12', '0', null, '转入成功');
+INSERT INTO `transfer` VALUES ('2510051508085363313', 'tianwei', 'sba', '22.00', 'austin998', '2020-10-05 15:08:08', '8631.12', '8609.12', '0', null, '转入成功');
+INSERT INTO `transfer` VALUES ('2510051508223879700', 'tianwei', 'sba', '200.00', 'austin998', '2020-10-05 15:08:22', '8609.12', '8409.12', '0', null, '转入成功');
+INSERT INTO `transfer` VALUES ('2510051512370429742', 'tianwei', '', '10.00', 'austin998', '2020-10-05 15:12:37', '8409.12', '8399.12', '0', null, '转入成功');
+INSERT INTO `transfer` VALUES ('2510051513372869889', 'tianwei', 'mg', '10.00', 'austin998', '2020-10-05 15:13:37', '8409.12', '8399.12', '0', null, '转入成功');
+INSERT INTO `transfer` VALUES ('2510051520598370979', 'tianwei', 'sba', '11.00', 'austin998', '2020-10-05 15:20:59', '8409.12', '8398.12', '0', null, '转入成功');
+INSERT INTO `transfer` VALUES ('2510051534109666732', 'tianwei', 'sba', '11.00', 'kavin998', '2020-10-05 15:34:10', '3464.1', '3453.1', '0', null, '转入成功');
+INSERT INTO `transfer` VALUES ('2510051534354061885', 'tianwei', 'sba', '11.00', 'kavin998', '2020-10-05 15:34:35', '3464.1', '3453.1', '0', null, '转入成功');
+INSERT INTO `transfer` VALUES ('2510051538227345512', 'tianwei', 'sba', '11.00', 'kavin998', '2020-10-05 15:38:22', '3464.1', '3453.1', '0', null, '转入成功');
+INSERT INTO `transfer` VALUES ('2510051541417749202', 'tianwei', 'sba', '150.00', 'kavin998', '2020-10-05 15:41:41', '3464.1', '3314.1', '0', null, '转入成功');
+INSERT INTO `transfer` VALUES ('2510081833041560962', 'tianwei', 'dt', '10.00', 'austin998', '2020-10-08 18:33:04', '8409.12', '8399.12', '0', null, '转入成功');
+INSERT INTO `transfer` VALUES ('2510081833139792441', 'tianwei', 'dt', '10.00', 'austin998', '2020-10-08 18:33:14', '8399.12', '8389.12', '0', null, '转入成功');
+INSERT INTO `transfer` VALUES ('2510081841265400997', 'tianwei', 'dt', '11.00', 'austin998', '2020-10-08 18:41:26', '8378.12', '8367.12', '0', null, '转入成功');
 
 -- ----------------------------
 -- Table structure for `triosentered`
@@ -8120,9 +8504,9 @@ CREATE TABLE `users` (
 -- ----------------------------
 -- Records of users
 -- ----------------------------
-INSERT INTO `users` VALUES ('austin998', '41f6536b91ba0e1874a9b427bc0f7b0f', '9647.12', '2020-09-26 22:39:00', '0', 'whjfgf5y', null, null, '李海', 'o3jPTCyBXJaYn+hiEC3HLQ==', '0', '', 'G/DybRoMgqUqqkRYQxYd6x+x2HlmLfFWDcSk9S9KGkI=', null, 'zfd6mqm5nn', '2020-09-20 14:53:57', 'MONEY_CUSTOMER', null, '8', '0:0:0:0:0:0:0:1', '', '', '', '有同IP或者同姓名注册', 'http://localhost', 'VYoU2fXXgBHdJ3acL7sq5yoVbzLIWnn+', '0:0:0:0:0:0:0:1', '', '0', '1', '1992-09-20 12:00:00', '30009', '3', '', '0.006', '0.006', '0.008', '0.008', '0.015', '0.004', null, 'cs9', null, null, null, '-1', '389', '2020-09-20', 'LkYA', '0', null, '28888', '28888', '28888', '28888', '28888', '28888', '28888', 'Macintosh', '0', '', null, null, null);
+INSERT INTO `users` VALUES ('austin998', '41f6536b91ba0e1874a9b427bc0f7b0f', '8378.12', '2020-10-09 04:21:43', '0', 'whjfgf5y', null, null, '李海', 'o3jPTCyBXJaYn+hiEC3HLQ==', '0', '', 'G/DybRoMgqUqqkRYQxYd6x+x2HlmLfFWDcSk9S9KGkI=', null, 'grepk9azpq', '2020-09-20 14:53:57', 'MONEY_CUSTOMER', null, '43', '0:0:0:0:0:0:0:1', '', '', '', '有同IP或者同姓名注册', 'http://localhost', 'VYoU2fXXgBHdJ3acL7sq5yoVbzLIWnn+', '0:0:0:0:0:0:0:1', '', '0', '1', '1992-09-20 12:00:00', '30009', '3', '', '0.006', '0.006', '0.008', '0.008', '0.015', '0.004', null, 'cs9', null, null, null, '-1', '31', '2020-10-08', 'LkYA', '0', null, '28888', '28888', '28888', '28888', '28888', '28888', '28888', '未知', '0', '', null, null, null);
 INSERT INTO `users` VALUES ('kavin123', '41f6536b91ba0e1874a9b427bc0f7b0f', '0.00', null, '0', '9v336hlg', null, null, '李海论', 'UddJ8KqJis/XWac8CU8uxw==', '0', '', 'oW9dX3cigPbaKtO76cHL2Ovto086NmvusEWOkhilV64=', null, '45e524hv78', '2020-09-27 15:38:44', 'MONEY_CUSTOMER', null, '0', null, '', '', '', '有同IP或者同姓名注册', 'http://localhost', 'X33JZisqDg2xUntwezCGX0c3g2p1piQs', '0:0:0:0:0:0:0:1', '', '0', '1', '1998-09-27 12:00:00', '30010', '2', null, '0.006', '0.006', '0.008', '0.008', '0.015', '0.004', null, 'cs10', null, null, null, '-1', '0', null, null, '0', null, '28888', '28888', '28888', '28888', '28888', '28888', '28888', null, '0', '', null, null, null);
-INSERT INTO `users` VALUES ('kavin998', '41f6536b91ba0e1874a9b427bc0f7b0f', '9125.10', '2020-09-28 00:07:27', '0', '60d7e05j', null, null, '李四', '2s9u1ZUKlhVCLlABbsMmWw==', '0', '', '2tFgHRgqXt3qL9ePSyOu5uvto086NmvusEWOkhilV64=', null, '07u31b6km3', '2020-09-02 21:06:26', 'MONEY_CUSTOMER', null, '83', '0:0:0:0:0:0:0:1', '', '', '', '', 'http://localhost', '45Q/zGn4E1+qny9oMSy7CU8d1kaEFNvQ', '0:0:0:0:0:0:0:1', '', '0', '1', '1992-08-02 12:00:00', '30008', '0', null, '0.006', '0.006', '0.008', '0.008', '0.015', '0.004', null, 'cs8', null, null, null, '-1', '320', '2020-09-27', 'gJuG', '0', null, '28888', '28888', '28888', '28888', '28888', '28888', '28888', 'Macintosh', '0', '', '', null, null);
+INSERT INTO `users` VALUES ('kavin998', '41f6536b91ba0e1874a9b427bc0f7b0f', '3464.10', '2020-10-09 05:04:58', '0', '60d7e05j', null, null, '李四', '2s9u1ZUKlhVCLlABbsMmWw==', '0', '', '2tFgHRgqXt3qL9ePSyOu5uvto086NmvusEWOkhilV64=', null, 'srzgub5joh', '2020-09-02 21:06:26', 'MONEY_CUSTOMER', null, '140', '0:0:0:0:0:0:0:1', '', '', '', '', 'http://localhost', '45Q/zGn4E1+qny9oMSy7CU8d1kaEFNvQ', '0:0:0:0:0:0:0:1', '', '0', '1', '1992-08-02 12:00:00', '30008', '0', null, '0.006', '0.006', '0.008', '0.008', '0.015', '0.004', null, 'cs8', null, null, null, '-1', '0', '2020-10-05', 'gJuG', '0', null, '28888', '28888', '28888', '28888', '28888', '28888', '28888', '未知', '0', '', '', null, null);
 INSERT INTO `users` VALUES ('skytest', '9d797696abf9b713338e5fece6130952', '0.00', '2018-12-28 12:06:38', '2', 'fdtqjvo6', null, null, '姚博', 'iX5YyqAyJrKjfSBmVOCWUA==', '0', null, 'ko7fLQzyboYTWO5Ga9ZV49CpKtGHtS6EbxPLiE5ZNrc=', null, 'wvulu8ko79', '2018-12-19 16:19:56', 'MONEY_CUSTOMER', 'http://167.179.80.135', '9', '45.32.9.147', '美国', '', null, '有同IP或者同姓名注册', 'http://167.179.80.135', 'XYJBu2s7Pvf5J6fx2uguLrknJfhbMrZ3', '45.32.9.147', '日本 东京Choopa数据中心', '0', '1', '2018-12-11 12:00:00', '30006', '2', null, '0.006', '0.006', '0.008', '0.008', '0.015', '0.004', null, 'cs6', null, null, null, '-1', '0', null, 'fk2V', '0', null, '28888', '28888', '28888', '28888', '28888', '28888', '28888', 'Windows 7', '0', null, null, null, null);
 INSERT INTO `users` VALUES ('test01', 'dc483e80a7a0bd9ef71d8cf973673924', '0.00', '2018-11-28 18:05:16', '0', 'vbu7v0pk', null, null, null, 'rtAMIhPQVcKxu2FwLGGeLA==', '0', null, null, null, '1ihyoqh284', '2018-11-27 17:17:01', 'MONEY_CUSTOMER', 'http://167.179.80.135', '2', '45.32.9.147', '美国', '', null, '', 'http://167.179.80.135', 'CK288uslOhlUju13Fm2PqQ==', '45.32.9.147', '美国', '0', '1', null, '30002', '0', null, '0.006', '0.006', '0.008', '0.008', '0.015', '0.004', null, 'cs2', null, null, null, '-1', '0', null, 'zXI0', '0', null, '28888', '28888', '28888', '28888', '28888', '28888', '28888', 'Windows 7', '0', null, null, null, null);
 INSERT INTO `users` VALUES ('twnick', '505e6e7f902970dd843312173b1e9e5b', '0.00', '2018-12-25 03:05:15', '0', 'occ7no7k', null, null, '张三', '2t6ZP2UUaReI/fWqkHVWVw==', '0', null, 'vnAio41CQmMil0fbBO+nzw==', null, 's30b5lxzsj', '2018-12-21 01:31:22', 'MONEY_CUSTOMER', 'http://tianweiyule.com', '1', '45.32.9.147', '美国', '', '55123132', '有同IP或者同姓名注册', 'http://tianweiyule.com', 'phV2qQqfB45xt0/K49CrajTwFCdBPH3y', '45.32.9.147', '日本 东京Choopa数据中心', '0', '1', '2017-12-25 12:00:00', '30007', '2', null, '0.006', '0.006', '0.008', '0.008', '0.015', '0.004', null, 'cs7', null, null, null, '-1', '0', null, 'nK3q', '0', null, '28888', '28888', '28888', '28888', '28888', '28888', '28888', '未知', '0', null, '51532', null, null);

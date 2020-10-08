@@ -1,0 +1,48 @@
+2020-10-08 01:25:06,499  WARN (org.apache.commons.httpclient.HttpMethodBase:682) 
+ Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+2020-10-08 01:25:06,502  INFO (dfh.utils.BBinUtils:52) 
+ 请求的url:http://linkapi.tcy789.net/app/WebService/JSON/display.php/CreateSession?website=avia&username=ktest9844&uppername=dtianweiyule&lang=zh-cn&key=o4bv7ftt76ce5fb27d73a75925d13ffb11bff9d2v
+2020-10-08 01:25:06,503  INFO (dfh.utils.BBinUtils:53) 
+ 响应代码:200
+2020-10-08 01:25:06,503  INFO (dfh.utils.BBinUtils:54) 
+ 响应报文:{"result":true,"data":{"sessionid":"a94625d738a2cbaf756c9c1110984189031b82ed"}}
+2020-10-08 01:25:56,983  WARN (org.apache.commons.httpclient.HttpMethodBase:682) 
+ Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+2020-10-08 01:25:56,994  INFO (dfh.utils.BBinUtils:52) 
+ 请求的url:http://linkapi.tcy789.net/app/WebService/JSON/display.php/CreateSession?website=avia&username=ktest9844&uppername=dtianweiyule&lang=zh-cn&key=v6gmz31a76ce5fb27d73a75925d13ffb11bff9d29
+2020-10-08 01:25:56,994  INFO (dfh.utils.BBinUtils:53) 
+ 响应代码:200
+2020-10-08 01:25:56,995  INFO (dfh.utils.BBinUtils:54) 
+ 响应报文:{"result":true,"data":{"sessionid":"a94625d738a2cbaf756c9c1110984189031b82ed"}}
+2020-10-08 01:32:49,361  WARN (org.apache.commons.httpclient.HttpMethodBase:682) 
+ Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+2020-10-08 01:32:49,369  INFO (dfh.utils.BBinUtils:52) 
+ 请求的url:http://linkapi.tcy789.net/app/WebService/JSON/display.php/CreateSession?website=avia&username=ktest9844&uppername=dtianweiyule&lang=zh-cn&key=acobnhjy76ce5fb27d73a75925d13ffb11bff9d25
+2020-10-08 01:32:49,370  INFO (dfh.utils.BBinUtils:53) 
+ 响应代码:200
+2020-10-08 01:32:49,371  INFO (dfh.utils.BBinUtils:54) 
+ 响应报文:{"result":true,"data":{"sessionid":"a94625d738a2cbaf756c9c1110984189031b82ed"}}
+2020-10-08 01:32:49,965  WARN (org.apache.commons.httpclient.HttpMethodBase:682) 
+ Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+2020-10-08 01:32:49,966  INFO (dfh.utils.BBinUtils:52) 
+ 请求的url:http://linkapi.tcy789.net/app/WebService/JSON/display.php/GameUrlBy38?website=avia&gametype=38001&sessionid=a94625d738a2cbaf756c9c1110984189031b82ed&lang=zh-cn&key=ggh4hthf473dc01eacd9732409fc5404b6a483c4ydgeby3z
+2020-10-08 01:32:49,966  INFO (dfh.utils.BBinUtils:53) 
+ 响应代码:200
+2020-10-08 01:32:49,966  INFO (dfh.utils.BBinUtils:54) 
+ 响应报文:{"result":true,"data":[{"gametype":"38001","html5":"http:\/\/777.tcy789.net\/elibom5\/mobileIndex.php?gameType=38001&otsid=f226f21b784e4341f104f6330b93afcf6276af4d&lang=zh-cn&platform=app"}]}
+2020-10-08 02:03:44,176  WARN (org.apache.commons.httpclient.HttpMethodBase:682) 
+ Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+2020-10-08 02:03:44,184  INFO (dfh.utils.BBinUtils:48) 
+ 请求的url:http://linkapi.tcy789.net/app/WebService/JSON/display.php/CreateSession?website=avia&username=ktest9844&uppername=dtianweiyule&lang=zh-cn&key=5v6dwqx676ce5fb27d73a75925d13ffb11bff9d2i
+2020-10-08 02:03:44,185  INFO (dfh.utils.BBinUtils:49) 
+ 响应代码:200
+2020-10-08 02:03:44,186  INFO (dfh.utils.BBinUtils:50) 
+ 响应报文:{"result":true,"data":{"sessionid":"a94625d738a2cbaf756c9c1110984189031b82ed"}}
+2020-10-08 02:03:44,787  WARN (org.apache.commons.httpclient.HttpMethodBase:682) 
+ Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+2020-10-08 02:03:44,788  INFO (dfh.utils.BBinUtils:48) 
+ 请求的url:http://linkapi.tcy789.net/app/WebService/JSON/display.php/GameUrlBy38?website=avia&gametype=38001&sessionid=a94625d738a2cbaf756c9c1110984189031b82ed&lang=zh-cn&key=89ef6t5x473dc01eacd9732409fc5404b6a483c4wg1mlasx
+2020-10-08 02:03:44,788  INFO (dfh.utils.BBinUtils:49) 
+ 响应代码:200
+2020-10-08 02:03:44,788  INFO (dfh.utils.BBinUtils:50) 
+ 响应报文:{"result":true,"data":[{"gametype":"38001","html5":"http:\/\/777.tcy789.net\/elibom5\/mobileIndex.php?gameType=38001&otsid=2eb8e2cc8b5949882f8100498acd69acdf743b99&lang=zh-cn&platform=app"}]}

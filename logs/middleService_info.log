@@ -1,0 +1,113 @@
+[INFO ]_2020-10-05 14:36:48 129 : [main] transfer [SB]额度转换，请求参数：{vendor_member_id=TW_kavin998, amount=22.0, wallet_id=1, vendor_id=l5jo1y1pql, vendor_trans_id=4343434312, currency=20, direction=1}
+[ERROR]_2020-10-05 14:36:49 098 : [main] transfer [SB]额度转换，异常：
+LiveBaseException{code='12', message='操作异常，请联系客服人员。12', params='{vendor_member_id=TW_kavin998, amount=22.0, wallet_id=1, vendor_id=l5jo1y1pql, vendor_trans_id=4343434312, currency=20, direction=1}', response='{"error_code":12,"message":"please prefix OperatorID: 'TW_' to vendor_trans_id."}', api='http://tsa.l0030.ig128.com/api/FundTransfer'}
+	at com.nnti.common.utils.SbSportUtil.doPost(SbSportUtil.java:48)
+	at com.nnti.common.utils.SbSportUtil.transfer(SbSportUtil.java:170)
+	at com.nnti.common.utils.SbSportUtil.main(SbSportUtil.java:390)
+[INFO ]_2020-10-05 14:37:23 838 : [main] transfer [SB]额度转换，请求参数：{vendor_member_id=TW_kavin998, amount=22.0, wallet_id=1, vendor_id=l5jo1y1pql, vendor_trans_id=4343434312, currency=20, direction=1}
+[ERROR]_2020-10-05 14:37:24 774 : [main] transfer [SB]额度转换，异常：
+LiveBaseException{code='12', message='操作异常，请联系客服人员。12', params='{vendor_member_id=TW_kavin998, amount=22.0, wallet_id=1, vendor_id=l5jo1y1pql, vendor_trans_id=4343434312, currency=20, direction=1}', response='{"error_code":12,"message":"please prefix OperatorID: 'TW_' to vendor_trans_id."}', api='http://tsa.l0030.ig128.com/api/FundTransfer'}
+	at com.nnti.common.utils.SbSportUtil.doPost(SbSportUtil.java:48)
+	at com.nnti.common.utils.SbSportUtil.transfer(SbSportUtil.java:170)
+	at com.nnti.common.utils.SbSportUtil.main(SbSportUtil.java:390)
+[INFO ]_2020-10-05 14:39:57 193 : [main] transfer [SB]额度转换，请求参数：{vendor_member_id=TW_kavin998, amount=22.0, wallet_id=1, vendor_id=l5jo1y1pql, vendor_trans_id=TW_4343434312, currency=20, direction=1}
+[INFO ]_2020-10-05 14:40:01 260 : [main] queryOrderStatus [SB]转账查询，请求参数：{wallet_id=1, vendor_id=l5jo1y1pql, vendor_trans_id=4343434312}
+[ERROR]_2020-10-05 14:40:02 388 : [main] queryOrderStatus [SB]转账查询，异常：
+LiveBaseException{code='2', message='操作异常，请联系客服人员。2', params='{wallet_id=1, vendor_id=l5jo1y1pql, vendor_trans_id=4343434312}', response='{"error_code":2,"message":"Transaction record does not exist"}', api='http://tsa.l0030.ig128.com/api/CheckFundTransfer'}
+	at com.nnti.common.utils.SbSportUtil.doPost(SbSportUtil.java:48)
+	at com.nnti.common.utils.SbSportUtil.queryOrderStatus(SbSportUtil.java:116)
+	at com.nnti.common.utils.SbSportUtil.transfer(SbSportUtil.java:212)
+	at com.nnti.common.utils.SbSportUtil.main(SbSportUtil.java:390)
+[ERROR]_2020-10-05 14:40:02 390 : [main] transfer [SB]额度转换，参数：{vendor_member_id=TW_kavin998, amount=22.0, wallet_id=1, vendor_id=l5jo1y1pql, vendor_trans_id=TW_4343434312, currency=20, direction=1}
+java.lang.ClassCastException: java.util.LinkedHashMap cannot be cast to java.util.List
+	at com.nnti.common.utils.SbSportUtil.transfer(SbSportUtil.java:172)
+	at com.nnti.common.utils.SbSportUtil.main(SbSportUtil.java:390)
+[INFO ]_2020-10-05 14:40:07 390 : [main] transfer [SB]额度转换，请求参数：{vendor_member_id=TW_kavin998, amount=22.0, wallet_id=1, vendor_id=l5jo1y1pql, vendor_trans_id=TW_4343434312, currency=20, direction=1}
+[INFO ]_2020-10-05 15:00:29 724 : [main] transfer [SB]额度转换，请求参数：{vendor_member_id=TW_kavin998, amount=22.0, wallet_id=1, vendor_id=l5jo1y1pql, vendor_trans_id=TW_4343434312, currency=20, direction=1}
+[INFO ]_2020-10-05 15:00:58 179 : [main] transfer [SB]额度转换，请求参数：{vendor_member_id=TW_kavin998, amount=1.0, wallet_id=1, vendor_id=l5jo1y1pql, vendor_trans_id=TW_4343434312, currency=20, direction=1}
+[INFO ]_2020-10-05 15:03:42 882 : [main] transfer [SB]额度转换，请求参数：{vendor_member_id=TW_kavin998, amount=1.0, wallet_id=1, vendor_id=l5jo1y1pql, vendor_trans_id=TW_43434343122, currency=20, direction=1}
+[INFO ]_2020-10-05 15:03:59 241 : [main] transfer [SB]额度转换，请求参数：{vendor_member_id=TW_kavin998, amount=22.0, wallet_id=1, vendor_id=l5jo1y1pql, vendor_trans_id=TW_43434343123, currency=20, direction=1}
+[INFO ]_2020-10-05 15:27:57 504 : [main] transfer [SB]额度转换，请求参数：{vendor_member_id=TW_test0002, amount=22.0, wallet_id=1, vendor_id=l5jo1y1pql, vendor_trans_id=TW_43434343124, currency=20, direction=1}
+[INFO ]_2020-10-05 15:28:20 131 : [main] queryOrderStatus [SB]转账查询，请求参数：{wallet_id=1, vendor_id=l5jo1y1pql, vendor_trans_id=43434343124}
+[ERROR]_2020-10-05 15:28:21 388 : [main] queryOrderStatus [SB]转账查询，异常：
+LiveBaseException{code='2', message='操作异常，请联系客服人员。2', params='{wallet_id=1, vendor_id=l5jo1y1pql, vendor_trans_id=43434343124}', response='{"error_code":2,"message":"Transaction record does not exist"}', api='http://tsa.l0030.ig128.com/api/CheckFundTransfer'}
+	at com.nnti.common.utils.SbSportUtil.doPost(SbSportUtil.java:48)
+	at com.nnti.common.utils.SbSportUtil.queryOrderStatus(SbSportUtil.java:116)
+	at com.nnti.common.utils.SbSportUtil.transfer(SbSportUtil.java:209)
+	at com.nnti.common.utils.SbSportUtil.main(SbSportUtil.java:387)
+[ERROR]_2020-10-05 15:28:21 390 : [main] transfer [SB]额度转换，参数：{vendor_member_id=TW_test0002, amount=22.0, wallet_id=1, vendor_id=l5jo1y1pql, vendor_trans_id=TW_43434343124, currency=20, direction=1}
+org.apache.http.conn.HttpHostConnectException: Connect to tsa.l0030.ig128.com:80 [tsa.l0030.ig128.com/103.25.199.147] failed: Connection timed out: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:151)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at com.nnti.common.utils.HttpClientUtils.post(HttpClientUtils.java:210)
+	at com.nnti.common.utils.HttpClientUtils.doPost(HttpClientUtils.java:91)
+	at com.nnti.common.utils.SbSportUtil.doPost(SbSportUtil.java:40)
+	at com.nnti.common.utils.SbSportUtil.transfer(SbSportUtil.java:170)
+	at com.nnti.common.utils.SbSportUtil.main(SbSportUtil.java:387)
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
+	... 14 more
+[INFO ]_2020-10-05 15:28:26 390 : [main] transfer [SB]额度转换，请求参数：{vendor_member_id=TW_test0002, amount=22.0, wallet_id=1, vendor_id=l5jo1y1pql, vendor_trans_id=TW_43434343124, currency=20, direction=1}
+[INFO ]_2020-10-05 15:28:41 152 : [main] transfer [SB]额度转换，请求参数：{vendor_member_id=TW_test0002, amount=22.0, wallet_id=1, vendor_id=l5jo1y1pql, vendor_trans_id=TW_434343431245, currency=20, direction=1}
+[INFO ]_2020-10-05 15:28:42 113 : [main] createMember [SB]创建会员，请求参数：{vendor_member_id=TW_test0002, firstname=, mintransfer=1, vendor_id=l5jo1y1pql, currency=20, operatorId=TW, lastname=test0002, username=TW_test0002, oddstype=2, maxtransfer=100}
+[INFO ]_2020-10-05 15:28:42 261 : [main] setMemberBetSetting [SB]创建会员投注额度，请求参数：{vendor_member_id=TW_test0002, bet_setting=[{"max_bet":10,"max_bet_per_match":100,"min_bet":1,"sport_type":1},{"max_bet":10,"max_bet_per_match":100,"min_bet":1,"sport_type":2},{"max_bet":10,"max_bet_per_match":100,"min_bet":1,"sport_type":3},{"max_bet":10,"max_bet_per_match":100,"min_bet":1,"sport_type":5},{"max_bet":10,"max_bet_per_match":100,"min_bet":1,"sport_type":8},{"max_bet":10,"max_bet_per_match":100,"min_bet":1,"sport_type":10},{"max_bet":10,"max_bet_per_match":100,"min_bet":1,"sport_type":11},{"max_bet":10,"max_bet_per_match":100,"min_bet":1,"sport_type":99},{"max_bet":10,"max_bet_per_match":100,"min_bet":1,"max_bet_per_ball":10,"sport_type":"99MP"}], vendor_id=l5jo1y1pql}
+[ERROR]_2020-10-05 15:28:42 427 : [main] transfer [SB]额度转换，异常：
+LiveBaseException{code='2', message='操作异常，请联系客服人员。2', params='{vendor_member_id=TW_test0002, amount=22.0, wallet_id=1, vendor_id=l5jo1y1pql, vendor_trans_id=TW_434343431245, currency=20, direction=1}', response='{"error_code":2,"message":"Account information error.","Data":{"status":1}}', api='http://tsa.l0030.ig128.com/api/FundTransfer'}
+	at com.nnti.common.utils.SbSportUtil.doPost(SbSportUtil.java:48)
+	at com.nnti.common.utils.SbSportUtil.transfer(SbSportUtil.java:170)
+	at com.nnti.common.utils.SbSportUtil.main(SbSportUtil.java:387)
+[INFO ]_2020-10-05 15:28:47 407 : [main] queryOrderStatus [SB]转账查询，请求参数：{wallet_id=1, vendor_id=l5jo1y1pql, vendor_trans_id=43434343124}
+[ERROR]_2020-10-05 15:28:48 545 : [main] queryOrderStatus [SB]转账查询，异常：
+LiveBaseException{code='2', message='操作异常，请联系客服人员。2', params='{wallet_id=1, vendor_id=l5jo1y1pql, vendor_trans_id=43434343124}', response='{"error_code":2,"message":"Transaction record does not exist"}', api='http://tsa.l0030.ig128.com/api/CheckFundTransfer'}
+	at com.nnti.common.utils.SbSportUtil.doPost(SbSportUtil.java:48)
+	at com.nnti.common.utils.SbSportUtil.queryOrderStatus(SbSportUtil.java:116)
+	at com.nnti.common.utils.SbSportUtil.transfer(SbSportUtil.java:209)
+	at com.nnti.common.utils.SbSportUtil.main(SbSportUtil.java:387)
+[ERROR]_2020-10-05 15:28:48 545 : [main] transfer [SB]额度转换，参数：{vendor_member_id=TW_test0002, amount=22.0, wallet_id=1, vendor_id=l5jo1y1pql, vendor_trans_id=TW_43434343124, currency=20, direction=1}
+org.apache.http.conn.HttpHostConnectException: Connect to tsa.l0030.ig128.com:80 [tsa.l0030.ig128.com/103.25.199.147] failed: Connection timed out: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:151)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at com.nnti.common.utils.HttpClientUtils.post(HttpClientUtils.java:210)
+	at com.nnti.common.utils.HttpClientUtils.doPost(HttpClientUtils.java:91)
+	at com.nnti.common.utils.SbSportUtil.doPost(SbSportUtil.java:40)
+	at com.nnti.common.utils.SbSportUtil.transfer(SbSportUtil.java:170)
+	at com.nnti.common.utils.SbSportUtil.main(SbSportUtil.java:387)
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
+	... 14 more
+[INFO ]_2020-10-05 15:29:12 036 : [main] transfer [SB]额度转换，请求参数：{vendor_member_id=TW_test0002, amount=22.0, wallet_id=1, vendor_id=l5jo1y1pql, vendor_trans_id=TW_434343431245, currency=20, direction=1}
+[INFO ]_2020-10-05 15:29:36 775 : [main] transfer [SB]额度转换，请求参数：{vendor_member_id=TW_test0002, amount=22.0, wallet_id=1, vendor_id=l5jo1y1pql, vendor_trans_id=TW_4343434312456, currency=20, direction=1}

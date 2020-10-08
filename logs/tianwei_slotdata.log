@@ -1,0 +1,26 @@
+2020-10-06 00:14:09,816  INFO (com.gsmc.png.utils.ShaBaUtils:55) 
+ 请求的url:http://tsa.l0030.ig128.com/api/GetBetDetail
+2020-10-06 00:14:09,820  INFO (com.gsmc.png.utils.ShaBaUtils:56) 
+ 请求参数:vendor_id=l5jo1y1pql&version_key=0&options=
+2020-10-06 00:14:09,820  INFO (com.gsmc.png.utils.ShaBaUtils:57) 
+ 响应代码:401
+2020-10-06 00:19:29,784  INFO (com.gsmc.png.utils.ShaBaUtils:58) 
+ 请求的url:http://tsa.l0030.ig128.com/api/GetBetDetail
+2020-10-06 00:19:29,787  INFO (com.gsmc.png.utils.ShaBaUtils:59) 
+ 响应代码:200
+2020-10-06 00:26:53,535  INFO (org.apache.commons.httpclient.HttpMethodDirector:439) 
+ I/O exception (java.net.ConnectException) caught when processing request: Connection timed out: connect
+2020-10-06 00:26:53,540  INFO (org.apache.commons.httpclient.HttpMethodDirector:445) 
+ Retrying request
+2020-10-06 00:26:53,656  INFO (com.gsmc.png.utils.ShaBaUtils:56) 
+ 请求的url:http://tsa.l0030.ig128.com/api/GetBetDetail
+2020-10-06 00:26:53,656  INFO (com.gsmc.png.utils.ShaBaUtils:57) 
+ 响应代码:200
+2020-10-06 00:31:05,430  INFO (com.gsmc.png.utils.ShaBaUtils:56) 
+ 请求的url:http://tsa.l0030.ig128.com/api/GetBetDetail
+2020-10-06 00:31:05,432  INFO (com.gsmc.png.utils.ShaBaUtils:57) 
+ 响应代码:200
+2020-10-06 00:33:01,250  INFO (com.gsmc.png.utils.ShaBaUtils:56) 
+ 请求的url:http://tsa.l0030.ig128.com/api/GetAllBetDetail
+2020-10-06 00:33:01,252  INFO (com.gsmc.png.utils.ShaBaUtils:57) 
+ 响应代码:200

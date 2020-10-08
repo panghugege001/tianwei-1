@@ -1,0 +1,110 @@
+2020-10-05 12:21:19,148  INFO (dfh.utils.SbSportUtil:262) 
+ [SB]创建会员，请求参数：{vendor_member_id=tw_test002, firstname=, mintransfer=1, vendor_id=l5jo1y1pql, currency=13, operatorId=TW, lastname=test002, username=tw_test002, oddstype=2, maxtransfer=100000}
+2020-10-05 12:21:23,368 ERROR (dfh.utils.SbSportUtil:532) 
+ [SB]创建会员，响应数据：{vendor_member_id=tw_test002, firstname=, mintransfer=1, vendor_id=l5jo1y1pql, currency=13, operatorId=TW, lastname=test002, username=tw_test002, oddstype=2, maxtransfer=100000}
+java.lang.NullPointerException
+	at dfh.utils.SbSportUtil.doPost(SbSportUtil.java:49)
+	at dfh.utils.SbSportUtil.createMember(SbSportUtil.java:321)
+	at dfh.utils.SbSportUtil.checkAndCreateMember(SbSportUtil.java:293)
+	at dfh.utils.SbSportUtil.play(SbSportUtil.java:228)
+	at dfh.utils.SbSportUtil.main(SbSportUtil.java:424)
+2020-10-05 12:21:28,370  INFO (dfh.utils.SbSportUtil:262) 
+ [SB]创建会员，请求参数：{vendor_member_id=tw_test002, firstname=, mintransfer=1, vendor_id=l5jo1y1pql, currency=13, operatorId=TW, lastname=test002, username=tw_test002, oddstype=2, maxtransfer=100000}
+2020-10-05 12:21:28,483 ERROR (dfh.utils.SbSportUtil:532) 
+ [SB]创建会员，响应数据：{vendor_member_id=tw_test002, firstname=, mintransfer=1, vendor_id=l5jo1y1pql, currency=13, operatorId=TW, lastname=test002, username=tw_test002, oddstype=2, maxtransfer=100000}
+java.lang.NullPointerException
+	at dfh.utils.SbSportUtil.doPost(SbSportUtil.java:49)
+	at dfh.utils.SbSportUtil.createMember(SbSportUtil.java:321)
+	at dfh.utils.SbSportUtil.checkAndCreateMember(SbSportUtil.java:293)
+	at dfh.utils.SbSportUtil.play(SbSportUtil.java:228)
+	at dfh.utils.SbSportUtil.main(SbSportUtil.java:424)
+2020-10-05 12:21:49,023  INFO (dfh.utils.SbSportUtil:262) 
+ [SB]创建会员，请求参数：{vendor_member_id=tw_test002, firstname=, mintransfer=1, vendor_id=l5jo1y1pql, currency=13, operatorId=TW, lastname=test002, username=tw_test002, oddstype=2, maxtransfer=100000}
+2020-10-05 12:21:49,947 ERROR (dfh.utils.SbSportUtil:532) 
+ [SB]创建会员，响应数据：{vendor_member_id=tw_test002, firstname=, mintransfer=1, vendor_id=l5jo1y1pql, currency=13, operatorId=TW, lastname=test002, username=tw_test002, oddstype=2, maxtransfer=100000}
+java.lang.NullPointerException
+	at dfh.utils.SbSportUtil.doPost(SbSportUtil.java:49)
+	at dfh.utils.SbSportUtil.createMember(SbSportUtil.java:321)
+	at dfh.utils.SbSportUtil.checkAndCreateMember(SbSportUtil.java:293)
+	at dfh.utils.SbSportUtil.play(SbSportUtil.java:228)
+	at dfh.utils.SbSportUtil.main(SbSportUtil.java:424)
+2020-10-05 12:21:54,950  INFO (dfh.utils.SbSportUtil:262) 
+ [SB]创建会员，请求参数：{vendor_member_id=tw_test002, firstname=, mintransfer=1, vendor_id=l5jo1y1pql, currency=13, operatorId=TW, lastname=test002, username=tw_test002, oddstype=2, maxtransfer=100000}
+2020-10-05 12:21:55,069 ERROR (dfh.utils.SbSportUtil:532) 
+ [SB]创建会员，响应数据：{vendor_member_id=tw_test002, firstname=, mintransfer=1, vendor_id=l5jo1y1pql, currency=13, operatorId=TW, lastname=test002, username=tw_test002, oddstype=2, maxtransfer=100000}
+java.lang.NullPointerException
+	at dfh.utils.SbSportUtil.doPost(SbSportUtil.java:49)
+	at dfh.utils.SbSportUtil.createMember(SbSportUtil.java:321)
+	at dfh.utils.SbSportUtil.checkAndCreateMember(SbSportUtil.java:293)
+	at dfh.utils.SbSportUtil.play(SbSportUtil.java:228)
+	at dfh.utils.SbSportUtil.main(SbSportUtil.java:424)
+2020-10-05 12:22:00,069  INFO (dfh.utils.SbSportUtil:262) 
+ [SB]创建会员，请求参数：{vendor_member_id=tw_test002, firstname=, mintransfer=1, vendor_id=l5jo1y1pql, currency=13, operatorId=TW, lastname=test002, username=tw_test002, oddstype=2, maxtransfer=100000}
+2020-10-05 12:22:00,167 ERROR (dfh.utils.SbSportUtil:532) 
+ [SB]创建会员，响应数据：{vendor_member_id=tw_test002, firstname=, mintransfer=1, vendor_id=l5jo1y1pql, currency=13, operatorId=TW, lastname=test002, username=tw_test002, oddstype=2, maxtransfer=100000}
+java.lang.NullPointerException
+	at dfh.utils.SbSportUtil.doPost(SbSportUtil.java:49)
+	at dfh.utils.SbSportUtil.createMember(SbSportUtil.java:321)
+	at dfh.utils.SbSportUtil.checkAndCreateMember(SbSportUtil.java:293)
+	at dfh.utils.SbSportUtil.play(SbSportUtil.java:228)
+	at dfh.utils.SbSportUtil.main(SbSportUtil.java:424)
+2020-10-05 12:22:05,168  INFO (dfh.utils.SbSportUtil:262) 
+ [SB]创建会员，请求参数：{vendor_member_id=tw_test002, firstname=, mintransfer=1, vendor_id=l5jo1y1pql, currency=13, operatorId=TW, lastname=test002, username=tw_test002, oddstype=2, maxtransfer=100000}
+2020-10-05 12:22:05,689 ERROR (dfh.utils.SbSportUtil:532) 
+ [SB]创建会员，响应数据：{vendor_member_id=tw_test002, firstname=, mintransfer=1, vendor_id=l5jo1y1pql, currency=13, operatorId=TW, lastname=test002, username=tw_test002, oddstype=2, maxtransfer=100000}
+java.lang.NullPointerException
+	at dfh.utils.SbSportUtil.doPost(SbSportUtil.java:49)
+	at dfh.utils.SbSportUtil.createMember(SbSportUtil.java:321)
+	at dfh.utils.SbSportUtil.checkAndCreateMember(SbSportUtil.java:293)
+	at dfh.utils.SbSportUtil.play(SbSportUtil.java:228)
+	at dfh.utils.SbSportUtil.main(SbSportUtil.java:424)
+2020-10-05 12:22:40,873  INFO (dfh.utils.SbSportUtil:262) 
+ [SB]创建会员，请求参数：{vendor_member_id=tw_test002, firstname=, mintransfer=1, vendor_id=l5jo1y1pql, currency=13, operatorId=TW, lastname=test002, username=tw_test002, oddstype=2, maxtransfer=100000}
+2020-10-05 12:24:12,064 ERROR (dfh.utils.SbSportUtil:532) 
+ [SB]创建会员，响应数据：{vendor_member_id=tw_test002, firstname=, mintransfer=1, vendor_id=l5jo1y1pql, currency=13, operatorId=TW, lastname=test002, username=tw_test002, oddstype=2, maxtransfer=100000}
+java.lang.NullPointerException
+	at dfh.utils.SbSportUtil.doPost(SbSportUtil.java:49)
+	at dfh.utils.SbSportUtil.createMember(SbSportUtil.java:321)
+	at dfh.utils.SbSportUtil.checkAndCreateMember(SbSportUtil.java:293)
+	at dfh.utils.SbSportUtil.play(SbSportUtil.java:228)
+	at dfh.utils.SbSportUtil.main(SbSportUtil.java:424)
+2020-10-05 12:24:17,066  INFO (dfh.utils.SbSportUtil:262) 
+ [SB]创建会员，请求参数：{vendor_member_id=tw_test002, firstname=, mintransfer=1, vendor_id=l5jo1y1pql, currency=13, operatorId=TW, lastname=test002, username=tw_test002, oddstype=2, maxtransfer=100000}
+2020-10-05 12:24:24,882 ERROR (dfh.utils.SbSportUtil:532) 
+ [SB]创建会员，响应数据：{vendor_member_id=tw_test002, firstname=, mintransfer=1, vendor_id=l5jo1y1pql, currency=13, operatorId=TW, lastname=test002, username=tw_test002, oddstype=2, maxtransfer=100000}
+java.lang.NullPointerException
+	at dfh.utils.SbSportUtil.doPost(SbSportUtil.java:49)
+	at dfh.utils.SbSportUtil.createMember(SbSportUtil.java:321)
+	at dfh.utils.SbSportUtil.checkAndCreateMember(SbSportUtil.java:293)
+	at dfh.utils.SbSportUtil.play(SbSportUtil.java:228)
+	at dfh.utils.SbSportUtil.main(SbSportUtil.java:424)
+2020-10-05 12:24:29,883  INFO (dfh.utils.SbSportUtil:262) 
+ [SB]创建会员，请求参数：{vendor_member_id=tw_test002, firstname=, mintransfer=1, vendor_id=l5jo1y1pql, currency=13, operatorId=TW, lastname=test002, username=tw_test002, oddstype=2, maxtransfer=100000}
+2020-10-05 12:24:37,427 ERROR (dfh.utils.SbSportUtil:532) 
+ [SB]创建会员，响应数据：{vendor_member_id=tw_test002, firstname=, mintransfer=1, vendor_id=l5jo1y1pql, currency=13, operatorId=TW, lastname=test002, username=tw_test002, oddstype=2, maxtransfer=100000}
+java.lang.NullPointerException
+	at dfh.utils.SbSportUtil.doPost(SbSportUtil.java:49)
+	at dfh.utils.SbSportUtil.createMember(SbSportUtil.java:321)
+	at dfh.utils.SbSportUtil.checkAndCreateMember(SbSportUtil.java:293)
+	at dfh.utils.SbSportUtil.play(SbSportUtil.java:228)
+	at dfh.utils.SbSportUtil.main(SbSportUtil.java:424)
+2020-10-05 12:26:16,735  INFO (dfh.utils.SbSportUtil:262) 
+ [SB]创建会员，请求参数：{vendor_member_id=tw_test002, firstname=, mintransfer=1, vendor_id=l5jo1y1pql, currency=13, operatorId=TW, lastname=test002, username=tw_test002, oddstype=2, maxtransfer=100000}
+2020-10-05 12:30:02,438  INFO (dfh.utils.SbSportUtil:262) 
+ [SB]创建会员，请求参数：{vendor_member_id=tw_test002, firstname=, mintransfer=1, vendor_id=l5jo1y1pql, currency=20, operatorId=TW, lastname=test002, username=tw_test002, oddstype=2, maxtransfer=100000}
+2020-10-05 12:30:47,644  INFO (dfh.utils.SbSportUtil:262) 
+ [SB]创建会员，请求参数：{vendor_member_id=TW_test002, firstname=, mintransfer=1, vendor_id=l5jo1y1pql, currency=20, operatorId=TW, lastname=test002, username=TW_test002, oddstype=2, maxtransfer=100000}
+2020-10-05 12:30:48,653  INFO (dfh.utils.SbSportUtil:262) 
+ [SB]创建会员投注额度，请求参数：{vendor_member_id=TW_test002, bet_setting=[{"max_bet":100000,"max_bet_per_match":100000,"min_bet":1,"sport_type":1},{"max_bet":100000,"max_bet_per_match":100000,"min_bet":1,"sport_type":2},{"max_bet":100000,"max_bet_per_match":100000,"min_bet":1,"sport_type":3},{"max_bet":100000,"max_bet_per_match":100000,"min_bet":1,"sport_type":5},{"max_bet":100000,"max_bet_per_match":100000,"min_bet":1,"sport_type":8},{"max_bet":100000,"max_bet_per_match":100000,"min_bet":1,"sport_type":10},{"max_bet":100000,"max_bet_per_match":100000,"min_bet":1,"sport_type":11},{"max_bet":100000,"max_bet_per_match":100000,"min_bet":1,"sport_type":99},{"max_bet":100000,"max_bet_per_match":100000,"min_bet":1,"max_bet_per_ball":100000,"sport_type":"99MP"}], vendor_id=l5jo1y1pql}
+2020-10-05 12:30:48,780 ERROR (dfh.utils.SbSportUtil:532) 
+ [SB]创建会员投注额度，异常：
+LiveBaseException{code='3', message='操作异常，请联系客服人员。3', params='{vendor_member_id=TW_test002, bet_setting=[{"max_bet":100000,"max_bet_per_match":100000,"min_bet":1,"sport_type":1},{"max_bet":100000,"max_bet_per_match":100000,"min_bet":1,"sport_type":2},{"max_bet":100000,"max_bet_per_match":100000,"min_bet":1,"sport_type":3},{"max_bet":100000,"max_bet_per_match":100000,"min_bet":1,"sport_type":5},{"max_bet":100000,"max_bet_per_match":100000,"min_bet":1,"sport_type":8},{"max_bet":100000,"max_bet_per_match":100000,"min_bet":1,"sport_type":10},{"max_bet":100000,"max_bet_per_match":100000,"min_bet":1,"sport_type":11},{"max_bet":100000,"max_bet_per_match":100000,"min_bet":1,"sport_type":99},{"max_bet":100000,"max_bet_per_match":100000,"min_bet":1,"max_bet_per_ball":100000,"sport_type":"99MP"}], vendor_id=l5jo1y1pql}', response='{"error_code":3,"message":"max_bet>currency.max_bet(100000>10.0000)\r\nmax_bet_per_match>max_bet_per_match.min_bet(100000>100.0000)\r\ncust:*sport_type=1; min_bet=1; max_bet=100000; max_bet_per_match=100000; \r\ncurrency:*sport_type=1; min_bet=1.0000; max_bet=10.0000; max_bet_per_match=100.0000; \r\nmax_bet>currency.max_bet(100000>10.0000)\r\nmax_bet_per_match>max_bet_per_match.min_bet(100000>100.0000)\r\ncust:*sport_type=2; min_bet=1; max_bet=100000; max_bet_per_match=100000; \r\ncurrency:*sport_type=2; min_bet=1.0000; max_bet=10.0000; max_bet_per_match=100.0000; \r\nmax_bet>currency.max_bet(100000>10.0000)\r\nmax_bet_per_match>max_bet_per_match.min_bet(100000>100.0000)\r\ncust:*sport_type=3; min_bet=1; max_bet=100000; max_bet_per_match=100000; \r\ncurrency:*sport_type=3; min_bet=1.0000; max_bet=10.0000; max_bet_per_match=100.0000; \r\nmax_bet>currency.max_bet(100000>10.0000)\r\nmax_bet_per_match>max_bet_per_match.min_bet(100000>100.0000)\r\ncust:*sport_type=5; min_bet=1; max_bet=100000; max_bet_per_match=100000; \r\ncurrency:*sport_type=5; min_bet=1.0000; max_bet=10.0000; max_bet_per_match=100.0000; \r\nmax_bet>currency.max_bet(100000>10.0000)\r\nmax_bet_per_match>max_bet_per_match.min_bet(100000>100.0000)\r\ncust:*sport_type=8; min_bet=1; max_bet=100000; max_bet_per_match=100000; \r\ncurrency:*sport_type=8; min_bet=1.0000; max_bet=10.0000; max_bet_per_match=100.0000; \r\nmax_bet>currency.max_bet(100000>10.0000)\r\nmax_bet_per_match>max_bet_per_match.min_bet(100000>100.0000)\r\ncust:*sport_type=10; min_bet=1; max_bet=100000; max_bet_per_match=100000; \r\ncurrency:*sport_type=10; min_bet=1.0000; max_bet=10.0000; max_bet_per_match=100.0000; \r\nmax_bet>currency.max_bet(100000>10.0000)\r\nmax_bet_per_match>max_bet_per_match.min_bet(100000>100.0000)\r\ncust:*sport_type=11; min_bet=1; max_bet=100000; max_bet_per_match=100000; \r\ncurrency:*sport_type=11; min_bet=1.0000; max_bet=10.0000; max_bet_per_match=100.0000; \r\nmax_bet>currency.max_bet(100000>10.0000)\r\nmax_bet_per_match>max_bet_per_match.min_bet(100000>100.0000)\r\ncust:*sport_type=99; min_bet=1; max_bet=100000; max_bet_per_match=100000; \r\ncurrency:*sport_type=99; min_bet=1.0000; max_bet=10.0000; max_bet_per_match=100.0000; \r\nmax_bet>currency.max_bet(100000>10.0000)\r\nmax_bet_per_match>max_bet_per_match.min_bet(100000>100.0000)\r\ncust:sport_type=99MP; min_bet=1; max_bet=100000; max_bet_per_match=100000; \r\ncurrency:sport_type=99MP; min_bet=1.0000; max_bet=10.0000; max_bet_per_match=100.0000; \r\n"}', api='http://tsa.l0030.ig128.com/api/SetMemberBetSetting'}
+	at dfh.utils.SbSportUtil.doPost(SbSportUtil.java:52)
+	at dfh.utils.SbSportUtil.setMemberBetSetting(SbSportUtil.java:406)
+	at dfh.utils.SbSportUtil.checkAndCreateMember(SbSportUtil.java:301)
+	at dfh.utils.SbSportUtil.play(SbSportUtil.java:227)
+	at dfh.utils.SbSportUtil.main(SbSportUtil.java:424)
+2020-10-05 12:33:36,701  INFO (dfh.utils.SbSportUtil:262) 
+ [SB]创建会员，请求参数：{vendor_member_id=TW_test002, firstname=, mintransfer=1, vendor_id=l5jo1y1pql, currency=20, operatorId=TW, lastname=test002, username=TW_test002, oddstype=2, maxtransfer=100000}
+2020-10-05 12:40:30,436  INFO (dfh.utils.SbSportUtil:262) 
+ [SB]创建会员，请求参数：{vendor_member_id=TW_test002, firstname=, mintransfer=1, vendor_id=l5jo1y1pql, currency=20, operatorId=TW, lastname=test002, username=TW_test002, oddstype=2, maxtransfer=100000}

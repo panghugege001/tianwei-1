@@ -1,0 +1,24 @@
+2020-10-07 19:36:56,489  WARN (org.apache.commons.httpclient.HttpMethodBase:682) 
+ Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+2020-10-07 19:36:56,492  INFO (dfh.utils.BBinUtils:50) 
+ 请求的url:http://linkapi.tcy789.net/app/WebService/JSON/display.php/CreateSession?website=avia&username=ktest9844&uppername=dtianweiyule&lang=zh-cn&key=xgxzi8sx76ce5fb27d73a75925d13ffb11bff9d2k
+2020-10-07 19:36:56,493  INFO (dfh.utils.BBinUtils:51) 
+ 响应代码:200
+2020-10-07 19:36:56,493  INFO (dfh.utils.BBinUtils:52) 
+ 响应报文:{"result":true,"data":{"sessionid":"a94625d738a2cbaf756c9c1110984189031b82ed"}}
+2020-10-07 19:50:40,270  WARN (org.apache.commons.httpclient.HttpMethodBase:682) 
+ Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+2020-10-07 19:50:40,272  INFO (dfh.utils.BBinUtils:50) 
+ 请求的url:http://linkapi.tcy789.net/app/WebService/JSON/display.php/CreateSession?website=avia&username=ktest9844&uppername=dtianweiyule&lang=zh-cn&key=oatnofta76ce5fb27d73a75925d13ffb11bff9d2q
+2020-10-07 19:50:40,272  INFO (dfh.utils.BBinUtils:51) 
+ 响应代码:200
+2020-10-07 19:50:40,272  INFO (dfh.utils.BBinUtils:52) 
+ 响应报文:{"result":true,"data":{"sessionid":"a94625d738a2cbaf756c9c1110984189031b82ed"}}
+2020-10-07 19:52:04,350  WARN (org.apache.commons.httpclient.HttpMethodBase:682) 
+ Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+2020-10-07 19:52:04,352  INFO (dfh.utils.BBinUtils:50) 
+ 请求的url:http://linkapi.tcy789.net/app/WebService/JSON/display.php/CreateSession?website=avia&username=ktest9844&uppername=dtianweiyule&lang=zh-cn&key=3142hsyt76ce5fb27d73a75925d13ffb11bff9d27
+2020-10-07 19:52:04,352  INFO (dfh.utils.BBinUtils:51) 
+ 响应代码:200
+2020-10-07 19:52:04,353  INFO (dfh.utils.BBinUtils:52) 
+ 响应报文:{"result":true,"data":{"sessionid":"a94625d738a2cbaf756c9c1110984189031b82ed"}}

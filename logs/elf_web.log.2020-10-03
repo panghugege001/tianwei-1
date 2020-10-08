@@ -1,0 +1,136 @@
+2020-10-03 14:32:52,877  WARN (org.apache.commons.httpclient.HttpMethodBase:682) 
+ Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+2020-10-03 14:32:52,881  INFO (dfh.utils.BBinUtils:48) 
+ 请求的url:http://linkapi.tcy789.net/app/WebService/JSON/display.php/CreateSession?website=avia&username=ktest987&uppername=dlongdu&lang=zh-cn&key=09gjusm4c7ed00dd434a9c3e9431614305883b43
+2020-10-03 14:32:52,881  INFO (dfh.utils.BBinUtils:49) 
+ 响应代码:200
+2020-10-03 14:32:52,882  INFO (dfh.utils.BBinUtils:50) 
+ 响应报文:{"result":false,"data":{"Code":"44000","Message":"Key error"}}
+2020-10-03 14:33:14,396  WARN (org.apache.commons.httpclient.HttpMethodBase:682) 
+ Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+2020-10-03 14:33:14,402  INFO (dfh.utils.BBinUtils:48) 
+ 请求的url:http://linkapi.tcy789.net/app/WebService/JSON/display.php/CreateSession?website=avia&username=ktest987&uppername=dlongdu&lang=zh-cn&key=cz3ewjzd4c7ed00dd434a9c3e9431614305883b4z
+2020-10-03 14:33:14,402  INFO (dfh.utils.BBinUtils:49) 
+ 响应代码:200
+2020-10-03 14:33:14,402  INFO (dfh.utils.BBinUtils:50) 
+ 响应报文:{"result":true,"data":{"sessionid":"fd5336ec8c0a72d12a835e0de976c31224b56efd"}}
+2020-10-03 14:47:27,981  WARN (org.apache.commons.httpclient.HttpMethodBase:682) 
+ Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+2020-10-03 14:47:27,983  INFO (dfh.utils.BBinUtils:50) 
+ 请求的url:http://linkapi.tcy789.net/app/WebService/JSON/display.php/CreateSession?website=avia&username=ktest987&uppername=dlongdu&lang=zh-cn&key=fty3z2jj4c7ed00dd434a9c3e9431614305883b4n
+2020-10-03 14:47:27,983  INFO (dfh.utils.BBinUtils:51) 
+ 响应代码:200
+2020-10-03 14:47:27,983  INFO (dfh.utils.BBinUtils:52) 
+ 响应报文:{"result":true,"data":{"sessionid":"fd5336ec8c0a72d12a835e0de976c31224b56efd"}}
+2020-10-03 14:47:39,792  WARN (org.apache.commons.httpclient.HttpMethodBase:682) 
+ Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+2020-10-03 14:47:39,794  INFO (dfh.utils.BBinUtils:50) 
+ 请求的url:http://linkapi.tcy789.net/app/WebService/JSON/display.php/CreateSession?website=avia&username=ktest987&uppername=dlongdu&lang=zh-cn&key=g39kuwm14c7ed00dd434a9c3e9431614305883b40
+2020-10-03 14:47:39,794  INFO (dfh.utils.BBinUtils:51) 
+ 响应代码:200
+2020-10-03 14:47:39,794  INFO (dfh.utils.BBinUtils:52) 
+ 响应报文:{"result":true,"data":{"sessionid":"fd5336ec8c0a72d12a835e0de976c31224b56efd"}}
+2020-10-03 15:12:05,355  WARN (org.apache.commons.httpclient.HttpMethodBase:682) 
+ Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+2020-10-03 15:12:05,357  INFO (dfh.utils.BBinUtils:50) 
+ 请求的url:https://888.tcy789.net/app/WebService/JSON/display.php/Login2?website=avia&username=ktest987&uppername=dlongdu&lang=zh-cn&key=4c3a8qo34c7ed00dd434a9c3e9431614305883b49
+2020-10-03 15:12:05,357  INFO (dfh.utils.BBinUtils:51) 
+ 响应代码:200
+2020-10-03 15:12:05,357  INFO (dfh.utils.BBinUtils:52) 
+ 响应报文:{"result":true,"data":{"Code":99999,"Message":"Login Successful"}}
+2020-10-03 15:29:26,331  WARN (org.apache.commons.httpclient.HttpMethodBase:682) 
+ Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+2020-10-03 15:29:26,333  INFO (dfh.utils.BBinUtils:50) 
+ 请求的url:https://888.tcy789.net/app/WebService/JSON/display.php/Login2?website=avia&username=ktest987&uppername=dtianweiyule&lang=zh-cn&key=22axyd9a4c7ed00dd434a9c3e9431614305883b4p
+2020-10-03 15:29:26,333  INFO (dfh.utils.BBinUtils:51) 
+ 响应代码:200
+2020-10-03 15:29:26,333  INFO (dfh.utils.BBinUtils:52) 
+ 响应报文:{"result":false,"data":{"Code":"23000","Message":"Hierarchy Error"}}
+2020-10-03 15:38:48,991  WARN (org.apache.commons.httpclient.HttpMethodBase:682) 
+ Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+2020-10-03 15:38:48,993  INFO (dfh.utils.BBinUtils:50) 
+ 请求的url:http://linkapi.tcy789.net/app/WebService/JSON/display.php/CreateMember?website=avia&username=ktest987&uppername=dtianweiyule&key=ws61tfj1996925c86242e9a0d98428d180b4c8fh
+2020-10-03 15:38:48,993  INFO (dfh.utils.BBinUtils:51) 
+ 响应代码:200
+2020-10-03 15:38:48,993  INFO (dfh.utils.BBinUtils:52) 
+ 响应报文:{"result":false,"data":{"Code":"21001","Message":"The account is repeated."}}
+2020-10-03 15:40:32,321  WARN (org.apache.commons.httpclient.HttpMethodBase:682) 
+ Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+2020-10-03 15:40:32,323  INFO (dfh.utils.BBinUtils:50) 
+ 请求的url:http://linkapi.tcy789.net/app/WebService/JSON/display.php/CreateMember?website=avia&username=ktest9876&uppername=dtianweiyule&key=l8frtaqea99bd9a666eddd514dda3ccb14995a64
+2020-10-03 15:40:32,323  INFO (dfh.utils.BBinUtils:51) 
+ 响应代码:200
+2020-10-03 15:40:32,323  INFO (dfh.utils.BBinUtils:52) 
+ 响应报文:{"result":true,"data":{"Code":"21100","Message":"Add account successful."}}
+2020-10-03 15:57:47,992  WARN (org.apache.commons.httpclient.HttpMethodBase:682) 
+ Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+2020-10-03 15:57:47,994  INFO (dfh.utils.BBinUtils:50) 
+ 请求的url:http://linkapi.tcy789.net/app/WebService/JSON/display.php/CreateMember?website=avia&username=ktest9876&uppername=dtianweiyule&key=460kbqiea99bd9a666eddd514dda3ccb14995a60
+2020-10-03 15:57:47,994  INFO (dfh.utils.BBinUtils:51) 
+ 响应代码:200
+2020-10-03 15:57:47,995  INFO (dfh.utils.BBinUtils:52) 
+ 响应报文:{"result":false,"data":{"Code":"21001","Message":"The account is repeated."}}
+2020-10-03 16:02:16,523  WARN (org.apache.commons.httpclient.HttpMethodBase:682) 
+ Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+2020-10-03 16:02:16,525  INFO (dfh.utils.BBinUtils:50) 
+ 请求的url:http://linkapi.tcy789.net/app/WebService/JSON/display.php/CreateMember?website=avia&username=ktest9878&uppername=dtianweiyule&key=2osrv701140ebe27d134729f0de01084bac7aba2
+2020-10-03 16:02:16,525  INFO (dfh.utils.BBinUtils:51) 
+ 响应代码:200
+2020-10-03 16:02:16,525  INFO (dfh.utils.BBinUtils:52) 
+ 响应报文:{"result":true,"data":{"Code":"21100","Message":"Add account successful."}}
+2020-10-03 19:40:06,586  WARN (org.apache.commons.httpclient.HttpMethodBase:682) 
+ Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+2020-10-03 19:40:06,588  INFO (dfh.utils.BBinUtils:50) 
+ 请求的url:http://linkapi.tcy789.net/app/WebService/JSON/display.php/CreateMember?website=avia&username=ktest9878&uppername=dtianweiyule&key=yf8j2s21140ebe27d134729f0de01084bac7aba2
+2020-10-03 19:40:06,588  INFO (dfh.utils.BBinUtils:51) 
+ 响应代码:200
+2020-10-03 19:40:06,588  INFO (dfh.utils.BBinUtils:52) 
+ 响应报文:{"result":false,"data":{"Code":"21001","Message":"The account is repeated."}}
+2020-10-03 19:41:16,282  WARN (org.apache.commons.httpclient.HttpMethodBase:682) 
+ Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+2020-10-03 19:41:16,286  INFO (dfh.utils.BBinUtils:50) 
+ 请求的url:http://linkapi.tcy789.net/app/WebService/JSON/display.php/CreateMember?website=avia&username=ktest9878&uppername=dtianweiyule&key=2k8k63r1140ebe27d134729f0de01084bac7aban
+2020-10-03 19:41:16,286  INFO (dfh.utils.BBinUtils:51) 
+ 响应代码:200
+2020-10-03 19:41:16,287  INFO (dfh.utils.BBinUtils:52) 
+ 响应报文:{"result":false,"data":{"Code":"21001","Message":"The account is repeated."}}
+2020-10-03 19:55:27,122  WARN (org.apache.commons.httpclient.HttpMethodBase:682) 
+ Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+2020-10-03 19:55:27,124  INFO (dfh.utils.BBinUtils:50) 
+ 请求的url:http://linkapi.tcy789.net/app/WebService/JSON/display.php/CreateMember?website=avia&username=kkavin998&uppername=dtianweiyule&key=bo6vduae52a1b6f024d8171eb15b08d8996abe78
+2020-10-03 19:55:27,125  INFO (dfh.utils.BBinUtils:51) 
+ 响应代码:200
+2020-10-03 19:55:27,125  INFO (dfh.utils.BBinUtils:52) 
+ 响应报文:{"result":false,"globalIp":false,"data":{"Code":"44900","Message":"IP is not accepted."}}
+2020-10-03 19:55:49,681  WARN (org.apache.commons.httpclient.HttpMethodBase:682) 
+ Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+2020-10-03 19:55:49,682  INFO (dfh.utils.BBinUtils:50) 
+ 请求的url:http://linkapi.tcy789.net/app/WebService/JSON/display.php/CreateMember?website=avia&username=kkavin998&uppername=dtianweiyule&key=l1hk614e52a1b6f024d8171eb15b08d8996abe7m
+2020-10-03 19:55:49,683  INFO (dfh.utils.BBinUtils:51) 
+ 响应代码:200
+2020-10-03 19:55:49,683  INFO (dfh.utils.BBinUtils:52) 
+ 响应报文:{"result":false,"data":{"Code":"21001","Message":"The account is repeated."}}
+2020-10-03 19:56:24,186  WARN (org.apache.commons.httpclient.HttpMethodBase:682) 
+ Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+2020-10-03 19:56:24,188  INFO (dfh.utils.BBinUtils:50) 
+ 请求的url:http://linkapi.tcy789.net/app/WebService/JSON/display.php/CreateMember?website=avia&username=ktest9878&uppername=dtianweiyule&key=8iepgzs1140ebe27d134729f0de01084bac7aba9
+2020-10-03 19:56:24,188  INFO (dfh.utils.BBinUtils:51) 
+ 响应代码:200
+2020-10-03 19:56:24,188  INFO (dfh.utils.BBinUtils:52) 
+ 响应报文:{"result":false,"data":{"Code":"21001","Message":"The account is repeated."}}
+2020-10-03 20:09:40,284  WARN (org.apache.commons.httpclient.HttpMethodBase:682) 
+ Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+2020-10-03 20:09:40,286  INFO (dfh.utils.BBinUtils:50) 
+ 请求的url:http://linkapi.tcy789.net/app/WebService/JSON/display.php/CreateMember?website=avia&username=ktest9879&uppername=dtianweiyule&key=1hmtatu6809adc00fea69b5fb64f54a4396a6d80
+2020-10-03 20:09:40,286  INFO (dfh.utils.BBinUtils:51) 
+ 响应代码:200
+2020-10-03 20:09:40,286  INFO (dfh.utils.BBinUtils:52) 
+ 响应报文:{"result":true,"data":{"Code":"21100","Message":"Add account successful."}}
+2020-10-03 20:11:40,754  WARN (org.apache.commons.httpclient.HttpMethodBase:682) 
+ Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+2020-10-03 20:11:40,756  INFO (dfh.utils.BBinUtils:50) 
+ 请求的url:http://linkapi.tcy789.net/app/WebService/JSON/display.php/CreateMember?website=avia&username=kkavin998&uppername=dtianweiyule&key=z4lttwie52a1b6f024d8171eb15b08d8996abe7i
+2020-10-03 20:11:40,757  INFO (dfh.utils.BBinUtils:51) 
+ 响应代码:200
+2020-10-03 20:11:40,757  INFO (dfh.utils.BBinUtils:52) 
+ 响应报文:{"result":false,"data":{"Code":"21001","Message":"The account is repeated."}}
