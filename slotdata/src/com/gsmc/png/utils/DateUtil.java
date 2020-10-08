@@ -12,6 +12,8 @@ import org.apache.log4j.Logger;
 public class DateUtil {
 
 	private static Logger log = Logger.getLogger(DateUtil.class);
+	
+	public static final String YYYY_MM_DD = "yyyy-MM-dd";
 
 	public static String fmtDate(String fmt, Date date) {
 		SimpleDateFormat defaultFormat = new SimpleDateFormat(fmt);
@@ -407,6 +409,32 @@ public class DateUtil {
 			return tmp;
 		}
 	}
+	
+    public static Date getDateStart(Date date) {
+        if (date != null) {
+            String day = dateToStr(date, "yyyy-MM-dd");
+            return strToDate1(day + " 00:00:00", "yyyy-MM-dd HH:mm:ss");
+        } else {
+            return null;
+        }
+    }
+    
+    public static Date strToDate1(String string, String format) {
+        Date tmp = null;
+        if (!StringUtil.isBlank(string) && !StringUtil.isBlank(format)) {
+            SimpleDateFormat dateformat = simpleDateFormat(format);
+
+            try {
+                tmp = dateformat.parse(string);
+            } catch (ParseException var5) {
+                var5.printStackTrace();
+            }
+
+            return tmp;
+        } else {
+            return tmp;
+        }
+    }
 
 	public static void main(String[] args) {
 		// System.out.println(DateUtil.getTimeStampToDateTime(1601190180000L));

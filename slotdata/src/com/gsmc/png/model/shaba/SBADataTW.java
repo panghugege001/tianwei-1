@@ -5,10 +5,9 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "SBA_DATA_WS")
+@Table(name = "sba_data_tw")
 @org.hibernate.annotations.Entity(dynamicUpdate = true, dynamicInsert = true)
-public class SBADataWS extends SBAData4OracleVO implements java.io.Serializable {
-
+public class SBADataTW extends SBAData4OracleVO implements java.io.Serializable {
 	private static final long serialVersionUID = 1L;
 	
 	public String trans_id;// 沙巴体育上的下注ID
@@ -104,5 +103,4 @@ public class SBADataWS extends SBAData4OracleVO implements java.io.Serializable 
 	public void setVersion_key(String version_key) {
 		this.version_key = version_key;
 	}
-
 }

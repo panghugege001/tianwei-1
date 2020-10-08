@@ -24,13 +24,14 @@ public enum GamePlatform {
 	SB("SB沙巴体育", GamePlatform.SPORT),
 	BBIN("BBIN老虎机", GamePlatform.SLOT),//bbin（真人娱乐，电子游戏，体育竞技，彩票，捕鱼大师，捕鱼达人）
 	BBIN_SPORT("BBIN体育", GamePlatform.SPORT),//bbin（真人娱乐，电子游戏，体育竞技，彩票，捕鱼大师，捕鱼达人）
-	BBIN_LOTTERY("BBIN彩票", GamePlatform.LIVE),//bbin（真人娱乐，电子游戏，体育竞技，彩票，捕鱼大师，捕鱼达人）
-	BBIN_LIVE("BBIN真人", GamePlatform.LIVE),//bbin（真人娱乐，电子游戏，体育竞技，彩票，捕鱼大师，捕鱼达人）
+	BBIN_LIVE("BBIN视讯", GamePlatform.LIVE),//bbin（真人娱乐，电子游戏，体育竞技，彩票，捕鱼大师，捕鱼达人）
+	BBIN_FISH("BBIN捕鱼", GamePlatform.FISH),//bbin（真人娱乐，电子游戏，体育竞技，彩票，捕鱼大师，捕鱼达人）
 	;
 
 	public static final int SLOT = 1;
 	public static final int LIVE = 2;
 	public static final int SPORT = 3;//体育
+	public static final int FISH = 4;//捕鱼
 	public static final int EXCLUDE = -1;
 	public static final int ALL = 0;
 	private String desc;

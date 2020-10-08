@@ -79,7 +79,8 @@
 	</bean>
 	<bean id="fetchSbaDataTrigger" class="org.springframework.scheduling.quartz.CronTriggerBean">
 		<property name="jobDetail" ref="jobSbaDataDetail" />
-		<property name="cronExpression" value="0 0/30 * * * ?" />
+		<!-- <property name="cronExpression" value="0 0/30 * * * ?" /> -->
+		<property name="cronExpression" value="0 0/3 * * * ?" />
 		<!-- <property name="cronExpression" value="*/3 * * * * ?" /> -->
 	</bean>
 
@@ -216,6 +217,7 @@
 				<ref bean="fetchMgData" />
 				<ref bean="fetchPgData" />
 				<ref bean="fetchBgData" />
+				<ref bean="fetchSbaDataTrigger"/>
 				<!-- <ref bean="fetchAgData"/> <ref bean="fetchTTGTrigger" /> <ref bean="fetchQtTrigger"/> 
 					<ref bean="fetchSwData"/> <ref bean="fetchMgData"/> <ref bean="fetchBbinEleBetting"/> 
 					<ref bean="fetchPTSlot"/> <ref bean="fetchSbaDataTrigger"/> <ref bean="fetchAgTrigger" 

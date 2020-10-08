@@ -1,16 +1,16 @@
 package com.gsmc.png.quart.fetch;
-import java.math.BigInteger;
-import java.util.HashMap;
+import java.util.Date;
 import java.util.List;
+import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-
+import java.util.concurrent.Future;
 import org.apache.log4j.Logger;
-
 import com.gsmc.png.model.BbinData;
+import com.gsmc.png.model.enums.GamePlatform;
 import com.gsmc.png.quart.thread.BBINThread;
 import com.gsmc.png.service.interfaces.CommonService;
-import com.gsmc.png.utils.BBinUtils;
+import com.gsmc.png.utils.DateUtil;
 
 public class FetchBbinDataJobService {
 	
@@ -23,37 +23,100 @@ public class FetchBbinDataJobService {
 	}
 
 
-	@SuppressWarnings("rawtypes")
-	public void execute(){
-		ExecutorService fixedThreadPool = Executors.newFixedThreadPool(10);
+	public void execute() {
 		try {
-			//最大10个并发的线程池，超出部分在队列中等待
-			String sql = "select type, MAX(VendorId) vendorId from bbin_data group by type ";
-			List list = commonService.excuteQuerySql(sql, new HashMap<String, Object>());
-			BigInteger vendorid = new BigInteger("1");
-			//gebrbv电子 gfbrbv捕鱼 gbrbv真人 gsbrbvbbin体育 glbrbv彩票
-			String[] arr = {"gebrbv","gfbrbv","gbrbv","gsbrbvbbin","glbrbv"};
-			for (int i = 0; i < arr.length; i++) {
-				String method = arr[i];
-				if (list != null && list.size() > 0 && list.get(0) != null) {
-					for (int j = 0; j < list.size(); j++) {
-						Object[] obj = (Object[]) list.get(j);
-						String type = (String) obj[0];
-						if(method.equals(type)){
-							vendorid = (BigInteger) obj[1];
-						}
-					}
-				}
-				List<BbinData> datas = BBinUtils.GetBettingRecord(vendorid,method);
-				if(datas != null && datas.size() > 0){
-					fixedThreadPool.execute(new BBINThread(commonService, datas));
-				}
-			}
-		} catch (Exception e) {
-			log.error("获取bbin投注数据错误：" + e.getMessage(), e);
-		}finally {
-			fixedThreadPool.shutdown();
+			log.info("定时器开始获取bbin输赢数据...");
+			long delta1 = new Date().getTime();
+			long delta2 = delta1 - 8 * 60 * 1000L;
+			//8分钟前
+			String startTime = DateUtil.transferLongToDate("yyyy-MM-dd HH:mm:ss.SSS", delta2);// 8分钟之前
+			String endTime = DateUtil.transferLongToDate("yyyy-MM-dd HH:mm:ss.SSS", delta1);
+			processStatusData(startTime, endTime);
+			log.info("获取 bbin" + startTime + "至" + endTime + "输赢数据完毕。");
+		} catch (ExecutionException e) {
+			e.printStackTrace();
+			log.error(e.getMessage());
 		}
 	}
 
+	/**
+	 * 给quartz用 , 已经处理 Excpetion.
+	 */
+	public synchronized void processStatusData(String startTime, String endTime) throws ExecutionException {
+		try {
+			List<BbinData> bbinDataList = processData(startTime, endTime);
+			if (org.springframework.util.CollectionUtils.isEmpty(bbinDataList)) {
+				log.info(GamePlatform.BBIN.name() + "本地次抓取到有游戏输赢的玩家数量为0");
+			} else {
+				log.info(GamePlatform.BBIN.name() + "本地次抓取到有游戏输赢的玩家数量为：" + bbinDataList.size());
+				for (BbinData bbinData : bbinDataList) {
+					commonService.saveOrUpdate(bbinData);
+				}
+			}
+			List<BbinData> bbinByDataList = byProcessData(startTime, endTime);
+			if (org.springframework.util.CollectionUtils.isEmpty(bbinByDataList)) {
+				log.info(GamePlatform.BBIN.name() + "本地次抓取到捕鱼游戏输赢的玩家数量为0");
+			} else {
+				log.info(GamePlatform.BBIN.name() + "本地次抓取到捕鱼游戏输赢的玩家数量为：" + bbinDataList.size());
+				for (BbinData bgData : bbinByDataList) {
+					commonService.saveOrUpdate(bgData);
+				}
+			}
+		} catch (ExecutionException e) {
+			e.printStackTrace();
+			log.error("执行FetchCq9DataJobService 失败 , message : " + e.getMessage());
+		}
+	}
+
+	/**
+	 * 给外部呼叫用. 会抛出Exceptioin.
+	 * 
+	 * @throws ExecutionException
+	 */
+	public synchronized List<BbinData> processData(String startTime, String endTime) throws ExecutionException {
+		try {
+			Future<List<BbinData>> processFuture = getProcessFuture(startTime, endTime);
+			return processFuture.get();
+		} catch (InterruptedException e) {
+			log.error("执行FetchPgDataJobService 失败 , message : " + e.getMessage());
+			throw new ExecutionException(e.getMessage(), e);
+		} catch (ExecutionException e) {
+			e.printStackTrace();
+			log.error("执行FetchPgDataJobService 失败 , message : " + e.getMessage());
+			throw e;
+		}
+	}
+
+	private Future<List<BbinData>> getProcessFuture(String startTime, String endTime) {
+		ExecutorService executorService = Executors.newSingleThreadExecutor();
+		BBINThread thread = new BBINThread(startTime, endTime);
+		Future<List<BbinData>> future = executorService.submit(thread);
+		return future;
+	}
+	
+	/**
+	 * 给外部呼叫用. 会抛出Exceptioin.
+	 * 
+	 * @throws ExecutionException
+	 */
+	public synchronized List<BbinData> byProcessData(String startTime, String endTime) throws ExecutionException {
+		try {
+			Future<List<BbinData>> processFuture = getByProcessFuture(startTime, endTime);
+			return processFuture.get();
+		} catch (InterruptedException e) {
+			log.error("执行FetchPgDataJobService 失败 , message : " + e.getMessage());
+			throw new ExecutionException(e.getMessage(), e);
+		} catch (ExecutionException e) {
+			e.printStackTrace();
+			log.error("执行FetchPgDataJobService 失败 , message : " + e.getMessage());
+			throw e;
+		}
+	}
+
+	private Future<List<BbinData>> getByProcessFuture(String startTime, String endTime) {
+		ExecutorService executorService = Executors.newSingleThreadExecutor();
+		BBINThread thread = new BBINThread(startTime, endTime);
+		Future<List<BbinData>> future = executorService.submit(thread);
+		return future;
+	}
 }

@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.apache.commons.lang3.StringUtils;
 import org.apache.log4j.Logger;
 
 import com.gsmc.png.service.interfaces.ISBADataProcessorService;
@@ -17,11 +18,11 @@ public class FetchSbaDataJob {
 
 	public void execute() {
 		try {
-			Long version_key = sbaService.getVersionKey();
+			String version_key = sbaService.getVersionKey();
 			Map map = null;
-			if (version_key != null) {
-				if(version_key.longValue() != 0){
-					map = ShaBaUtils.GetBetDetail(version_key, "");
+			if (StringUtils.isNotEmpty(version_key)) {
+				if(!version_key.equals("0")){
+					map = ShaBaUtils.GetBetDetail(version_key);
 					if(map != null && map.size() > 0){
 						sbaService.processData(version_key,map);
 					}
@@ -33,7 +34,7 @@ public class FetchSbaDataJob {
 					sbaService.processData(version_key,map);
 				}
 			}else{
-				map = ShaBaUtils.GetBetDetail(0L, "");
+				map = ShaBaUtils.GetBetDetail("0");
 				if(map != null){
 					sbaService.processData(version_key,map);
 				}
