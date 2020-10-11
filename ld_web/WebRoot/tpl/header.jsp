@@ -310,7 +310,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill
 						class="laohugame"> <label>老虎机</label> <span class="en_text">SLOTS</span>
 							<!--<i class="icon-hot"></i>--> <i></i>
 					</a></li>
-					<li class="liafter"><a href="/live.jsp" class="live_game">
+					<li class="liafter"><a href="#" class="live_game">
 							<label>真人彩票</label> <span class="en_text">LIVE&LOTTERY</span> <i></i>
 					</a></li>
 					<li class="liafter"><a href="#" class="sport_box"> <label>电竞体育</label>
