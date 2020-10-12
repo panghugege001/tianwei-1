@@ -102,7 +102,7 @@
 		</where>
 	</select>
     <select id="findBankInfo" parameterType="Map"   resultType="BankCardinfo">
-		select id,issuebankname, cardname , cardlength, masteraccount, identifylegth ,identifycode, cardtype  from  bankCardinfo
+		select id,issuebankname, cardname , cardlength, masteraccount, identifylegth ,identifycode, cardtype  from  bankcardinfo
 		<where>
 		     <if test="identifylegth != null">
 		     AND identifylegth = #{identifylegth}
